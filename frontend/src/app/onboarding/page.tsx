@@ -201,6 +201,7 @@ export default function OnboardingPage() {
 
           {currentQuestion.type === 'vocabulary' && (
             <div className="audio-control text-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={currentQuestion.image_url} alt="Object" className="image-preview" />
               <p className="mb-4 font-semibold">What is this object?</p>
               <button 
@@ -215,6 +216,7 @@ export default function OnboardingPage() {
 
           {currentQuestion.type === 'picture_description' && (
             <div className="audio-control text-center w-full">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={currentQuestion.image_url} alt="Scene" className="image-preview" />
               <p className="mb-4">Describe this scene in detail.</p>
               
@@ -275,7 +277,7 @@ export default function OnboardingPage() {
           )}
 
           <div className="mt-8 text-center text-blue-500 font-medium cursor-pointer">
-            I don't know
+            I don&apos;t know
           </div>
         </motion.div>
       </AnimatePresence>

@@ -1,6 +1,7 @@
 # ── Thingual FastAPI Backend ─────────────────────────────────────
 # Shared auth API used by both the web frontend and mobile app.
 
+setuptools
 fastapi==0.110.1
 uvicorn[standard]==0.29.0
 python-dotenv==1.0.1

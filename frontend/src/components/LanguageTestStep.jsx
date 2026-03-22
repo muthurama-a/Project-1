@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { onboardingService } from '../services/onboarding';
 import thingualLogoAsset from '../assets/thingual_logo.png';
@@ -313,7 +314,7 @@ const LanguageTestStep = ({ onFinish, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
                 </div>
 
                 <div className="onboarding-status-pill">
@@ -499,6 +500,7 @@ const LanguageTestStep = ({ onFinish, onBack }) => {
 
                         {(currentQuestion?.type === 'vocabulary' || currentQuestion?.type === 'picture_description') && (
                             <div className="audio-control text-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src={currentQuestion?.image_url} alt="Test" className="image-preview" style={{ width: '100%', borderRadius: '20px', marginBottom: '30px', maxHeight: '280px', objectFit: 'cover' }} />
                                 
                                 {!useTextInput ? (

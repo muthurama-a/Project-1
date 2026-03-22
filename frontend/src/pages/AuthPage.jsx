@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import GoogleButton from '../components/GoogleButton';
 import OtpInput from '../components/OtpInput';
@@ -55,7 +56,7 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
             </div>
 
             <h1 className="auth-heading">Welcome to the Club.</h1>
@@ -136,7 +137,7 @@ const SignupStep = ({ email, onSignupSuccess, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Create your profile.</h1>
@@ -185,7 +186,7 @@ const SignupStep = ({ email, onSignupSuccess, onBack }) => {
 const LoginChoiceStep = ({ email, onPasswordChoice, onOtpChoice, onBack }) => (
     <React.Fragment>
         <div className="auth-logo">
-            <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+            <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
         </div>
         <button className="back-btn" onClick={onBack}>← Back</button>
         <h1 className="auth-heading">Welcome back.</h1>
@@ -229,7 +230,7 @@ const PasswordStep = ({ email, onVerified, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Enter password.</h1>
@@ -329,7 +330,7 @@ const OtpStep = ({ email, onVerified, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Check your inbox.</h1>
@@ -362,7 +363,7 @@ const SuccessState = ({ user, onStart, onBack }) => (
                         <polyline points="12 19 5 12 12 5"></polyline>
                     </svg>
                 </button>
-                <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
             </div>
             <div className="onboarding-status-pill">Ready</div>
         </div>
@@ -399,7 +400,7 @@ const GoalSelectionStep = ({ onNext, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -439,7 +440,7 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <img src={thingualLogoAsset.src || thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -472,7 +473,7 @@ const HeroPanel = () => (
         <div className="hero-logo"><ThingualLogo variant="light" height={48} /></div>
         <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
         <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>
-        <img src={heroIllustration.src || heroIllustration} alt="Hero" className="hero-illustration" />
+        <Image src={heroIllustration} alt="Hero" className="hero-illustration" />
     </div>
 );
 
