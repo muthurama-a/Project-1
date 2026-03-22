@@ -470,7 +470,9 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
 // ════════════════════════════════════
 const HeroPanel = () => (
     <div className="auth-right">
-        <div className="hero-logo"><ThingualLogo variant="light" height={48} /></div>
+        <div className="hero-logo">
+            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" style={{ filter: 'brightness(0) invert(1)' }} />
+        </div>
         <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
         <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>
         <Image src={heroIllustration} alt="Hero" className="hero-illustration" />
