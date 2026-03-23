@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { onboardingService } from '../services/onboarding';
 import thingualLogoAsset from '../assets/thingual_logo.png';
+import thingualIconAsset from '../assets/Thingual-icon.png';
 import '../styles/onboarding.css';
 
 const LanguageTestStep = ({ onFinish, onBack }) => {

@@ -151,16 +151,16 @@ const SignupStep = ({ email, onSignupSuccess, onBack }) => {
                 <div className="form-group">
                     <label className="form-label">Password</label>
                     <div className="password-input-wrapper">
-                        <input 
-                            className="form-input" 
-                            type={showPassword ? "text" : "password"} 
-                            placeholder="Min. 8 characters" 
-                            value={password} 
-                            onChange={e => { setPassword(e.target.value); setError(''); }} 
+                        <input
+                            className="form-input"
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Min. 8 characters"
+                            value={password}
+                            onChange={e => { setPassword(e.target.value); setError(''); }}
                         />
-                        <button 
-                            type="button" 
-                            className="password-toggle-icon" 
+                        <button
+                            type="button"
+                            className="password-toggle-icon"
                             onClick={() => setShowPassword(!showPassword)}
                             tabIndex="-1"
                         >
@@ -240,16 +240,16 @@ const PasswordStep = ({ email, onVerified, onBack }) => {
                 <div className="form-group">
                     <label className="form-label">Password</label>
                     <div className="password-input-wrapper">
-                        <input 
-                            className="form-input" 
-                            type={showPassword ? "text" : "password"} 
-                            placeholder="Enter your password" 
-                            value={password} 
-                            onChange={e => { setPassword(e.target.value); setError(''); }} 
+                        <input
+                            className="form-input"
+                            type={showPassword ? "text" : "password"}
+                            placeholder="Enter your password"
+                            value={password}
+                            onChange={e => { setPassword(e.target.value); setError(''); }}
                         />
-                        <button 
-                            type="button" 
-                            className="password-toggle-icon" 
+                        <button
+                            type="button"
+                            className="password-toggle-icon"
                             onClick={() => setShowPassword(!showPassword)}
                             tabIndex="-1"
                         >
@@ -447,12 +447,12 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
                 <div className="step-indicator-centered">Step 2 of 3</div>
                 <h2 className="onboarding-heading-main">Tailor your curriculum.</h2>
                 <p className="onboarding-subtext">Select your interests</p>
-                
+
                 <div className="interests-grid-optimized">
                     {interests.map(i => (
-                        <button 
-                            key={i} 
-                            className={`interest-tag-v2 ${selected.includes(i) ? 'selected' : ''}`} 
+                        <button
+                            key={i}
+                            className={`interest-tag-v2 ${selected.includes(i) ? 'selected' : ''}`}
                             onClick={() => setSelected(prev => prev.includes(i) ? prev.filter(x => x !== i) : [...prev, i])}
                         >
                             {i}

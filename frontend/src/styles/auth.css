@@ -79,7 +79,7 @@ body {
 .onboarding-form-card {
   width: 100%;
   max-width: 500px;
-  margin-top: 80px;
+  margin-top: 130px;
   /* space for top nav */
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .auth-logo-img {
-  height: 150px;
+  height: 220px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -99,14 +99,14 @@ body {
 }
 
 .onboarding-logo-img {
-  height: 34px;
+  height: 95px;
   width: auto;
   display: block;
   object-fit: contain;
 }
 
 .hero-logo-img {
-  height: 44px;
+  height: 60px;
   width: auto;
   display: block;
   object-fit: contain;
