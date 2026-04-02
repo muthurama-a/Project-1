@@ -220,18 +220,13 @@ def get_onboarding_result(
 ):
     """
     Calculates total score across all 10 questions and determines the user's level.
+    If no results exist (e.g. some answers failed to save), defaults to A1.
     """
     user_id = current_user.id
     
-    # Fetch all results for this user (ideally taking the latest set of 10)
-    # For a robust system, we would group by attempt session ID.
-    # Here we assume just querying their latest responses per question type.
     results = db.query(TestResult).filter(TestResult.user_id == user_id).all()
     
-    if not results:
-        raise HTTPException(status_code=404, detail="No test results found")
-        
-    # Group scores by question type (scores are already AVT-weighted)
+    # Group scores by question type
     scores_by_type = {
         "grammar": [],
         "sentence_correction": [],
@@ -244,35 +239,33 @@ def get_onboarding_result(
         if r.question_type in scores_by_type:
             scores_by_type[r.question_type].append(r.score)
             
-    # Calculate section scores (already AVT-weighted)
-    g_score = sum(scores_by_type["grammar"]) if scores_by_type["grammar"] else 0
+    g_score  = sum(scores_by_type["grammar"]) if scores_by_type["grammar"] else 0
     sc_score = sum(scores_by_type["sentence_correction"]) if scores_by_type["sentence_correction"] else 0
-    l_score = sum(scores_by_type["listening"]) if scores_by_type["listening"] else 0
-    v_score = sum(scores_by_type["vocabulary"]) if scores_by_type["vocabulary"] else 0
+    l_score  = sum(scores_by_type["listening"]) if scores_by_type["listening"] else 0
+    v_score  = sum(scores_by_type["vocabulary"]) if scores_by_type["vocabulary"] else 0
     pd_score = sum(scores_by_type["picture_description"]) if scores_by_type["picture_description"] else 0
     
-    # Total AVT-weighted score
     total_score = g_score + sc_score + l_score + v_score + pd_score
-    # Calculate proficiency out of the total potential (typically 10 questions)
-    # But we use the actual count in case some were missing/skipped
-    num_questions = 10 
+    num_questions = 10
     
-    # Determine CEFR level using AVT-weighted total
-    level = calculate_final_level(total_score, num_questions)
+    # Always determine level — defaults to A1 if no results
+    level = calculate_final_level(total_score, num_questions) if results else "A1"
     
     print(f"=== CEFR Result for user {user_id} ===")
+    print(f"  Results found: {len(results)}")
     print(f"  Grammar: {g_score:.2f}, Sentence: {sc_score:.2f}, Listening: {l_score:.2f}")
     print(f"  Vocabulary: {v_score:.2f}, Picture: {pd_score:.2f}")
     print(f"  Total (AVT-weighted): {total_score:.2f}/{num_questions}")
     print(f"  CEFR Level: {level}")
     
-    # Save level back to database
-    user_level = UserLevel(
-        user_id=user_id,
-        level=level,
-        score=total_score
-    )
-    db.add(user_level)
+    # Save or update user level
+    existing_level = db.query(UserLevel).filter(UserLevel.user_id == user_id).first()
+    if existing_level:
+        existing_level.level = level
+        existing_level.score = total_score
+    else:
+        user_level = UserLevel(user_id=user_id, level=level, score=total_score)
+        db.add(user_level)
     db.commit()
     
     return OnboardingResultResponse(

@@ -17,7 +17,7 @@ from passlib.context import CryptContext
 from sqlalchemy.exc import OperationalError
 from database import engine, SessionLocal, Base
 from models import User
-from routers import auth, onboarding
+from routers import auth, onboarding, lessons
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -91,6 +91,7 @@ async def global_exception_handler(request, exc):
 # ── Routers ──────────────────────────────────────────────────────
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
 app.include_router(onboarding.router, prefix="/onboarding", tags=["Onboarding"])
+app.include_router(lessons.router, prefix="/lessons", tags=["Lessons"])
 
 
 @app.get("/health")

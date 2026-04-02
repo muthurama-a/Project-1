@@ -87,11 +87,11 @@ body {
 .auth-logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 2px;
+  margin-bottom: 24px;
 }
 
 .auth-logo-img {
-  height: 220px;
+  height: 56px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -99,7 +99,7 @@ body {
 }
 
 .onboarding-logo-img {
-  height: 95px;
+  height: 40px;
   width: auto;
   display: block;
   object-fit: contain;

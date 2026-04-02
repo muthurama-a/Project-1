@@ -10,12 +10,28 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('thingual_token');
+  // Try both keys for compatibility
+  const token = localStorage.getItem('token') || localStorage.getItem('thingual_token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('token');
+        localStorage.removeItem('thingual_token');
+        localStorage.removeItem('thingual_user');
+        window.location.href = '/';
+      }
+    }
+    return Promise.reject(error);
+  }
+);
 
 export const onboardingService = {
   startTest: async () => {

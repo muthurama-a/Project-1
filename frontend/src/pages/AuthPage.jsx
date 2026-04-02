@@ -524,7 +524,11 @@ const AuthPage = () => {
     };
 
     const onVerified = (data) => {
-        if (data.token) localStorage.setItem('thingual_token', data.token);
+        const token = data.token || data.access_token;
+        if (token) {
+            localStorage.setItem('token', token);
+            localStorage.setItem('thingual_token', token); // compatibility
+        }
         localStorage.setItem('thingual_user', JSON.stringify(data));
         setAuthedUser(data);
         setDirection(1);
@@ -532,7 +536,11 @@ const AuthPage = () => {
     };
 
     const onGoogleSuccess = (data) => {
-        if (data.token) localStorage.setItem('thingual_token', data.token);
+        const token = data.token || data.access_token;
+        if (token) {
+            localStorage.setItem('token', token);
+            localStorage.setItem('thingual_token', token); // compatibility
+        }
         localStorage.setItem('thingual_user', JSON.stringify(data));
         setAuthedUser(data);
         setUserEmail(data.email || '');
