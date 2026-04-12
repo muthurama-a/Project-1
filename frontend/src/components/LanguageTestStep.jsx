@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { onboardingService } from '../services/onboarding';
-import thingualLogoAsset from '../assets/thingual_logo.png';
-import thingualIconAsset from '../assets/Thingual-icon.png';
+import thingualLogoAsset from '@/assets/thingual-logo.png';
 import '../styles/onboarding.css';
 
 const LanguageTestStep = ({ onFinish, onBack }) => {
@@ -328,7 +327,7 @@ const LanguageTestStep = ({ onFinish, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
                 </div>
 
                 <div className="onboarding-status-pill">

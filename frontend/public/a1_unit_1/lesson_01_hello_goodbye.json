@@ -1,0 +1,257 @@
+{
+  "lesson_id": "a1_unit1_lesson01",
+  "unit": 1,
+  "lesson_number": 1,
+  "level": "A1",
+  "title": "Hello & Goodbye",
+  "description": "Learn how to greet people and say goodbye in different situations.",
+  "estimated_minutes": 15,
+  "xp_reward": 100,
+  "tasks": [
+    {
+      "task_id": "t01_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Formal vs informal greetings",
+      "content": {
+        "explanation": "In English, we use different greetings depending on who we talk to.",
+        "items": [
+          { "phrase": "Hello", "note": "Formal and informal — always safe to use" },
+          { "phrase": "Hi", "note": "Informal — with friends, classmates" },
+          { "phrase": "Hey", "note": "Very informal — close friends only" },
+          { "phrase": "Good morning", "note": "Formal — use before 12pm" },
+          { "phrase": "Good afternoon", "note": "Formal — use 12pm to 6pm" },
+          { "phrase": "Good evening", "note": "Formal — use after 6pm" }
+        ]
+      }
+    },
+    {
+      "task_id": "t01_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Asking how someone is",
+      "content": {
+        "explanation": "After greeting, we usually ask how the other person is feeling.",
+        "items": [
+          { "phrase": "How are you?", "note": "Standard question — formal" },
+          { "phrase": "How are you doing?", "note": "Slightly informal" },
+          { "phrase": "How's it going?", "note": "Casual — with friends" },
+          { "phrase": "I'm fine, thank you.", "note": "Standard polite reply" },
+          { "phrase": "I'm great, thanks!", "note": "Positive reply" },
+          { "phrase": "Not bad, thanks.", "note": "Neutral reply" }
+        ]
+      }
+    },
+    {
+      "task_id": "t01_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Saying goodbye",
+      "content": {
+        "explanation": "There are many ways to end a conversation in English.",
+        "items": [
+          { "phrase": "Goodbye", "note": "Formal — use in professional settings" },
+          { "phrase": "Bye", "note": "Informal — everyday use" },
+          { "phrase": "See you later", "note": "When you will meet again soon" },
+          { "phrase": "See you tomorrow", "note": "When you will meet next day" },
+          { "phrase": "Take care", "note": "Warm, friendly goodbye" },
+          { "phrase": "Nice to meet you", "note": "First meeting only — very important" }
+        ]
+      }
+    },
+    {
+      "task_id": "t01_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Listen to each phrase and repeat it aloud. Focus on natural rhythm.",
+        "phrases": [
+          { "text": "Hello, how are you?", "audio_key": "hello_how_are_you" },
+          { "text": "I'm fine, thank you.", "audio_key": "im_fine_thank_you" },
+          { "text": "Nice to meet you.", "audio_key": "nice_to_meet_you" },
+          { "text": "Goodbye! See you later.", "audio_key": "goodbye_see_you_later" }
+        ]
+      }
+    },
+    {
+      "task_id": "t01_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "Choose the correct greeting",
+      "content": {
+        "question": "You arrive at work at 9am and see your manager. What do you say?",
+        "options": [
+          "Hey!",
+          "Good morning!",
+          "Good evening!",
+          "See you later!"
+        ],
+        "correct_index": 1,
+        "explanation": "'Good morning' is correct — it's formal and appropriate before 12pm."
+      }
+    },
+    {
+      "task_id": "t01_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "Correct reply",
+      "content": {
+        "question": "Someone says: 'How are you?' — What is the best reply?",
+        "options": [
+          "Good morning!",
+          "Nice to meet you.",
+          "I'm fine, thank you.",
+          "Goodbye!"
+        ],
+        "correct_index": 2,
+        "explanation": "'I'm fine, thank you' is the standard polite reply to 'How are you?'"
+      }
+    },
+    {
+      "task_id": "t01_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "First meeting",
+      "content": {
+        "question": "You meet someone for the very first time. What do you say at the end?",
+        "options": [
+          "See you tomorrow!",
+          "Not bad, thanks.",
+          "Nice to meet you.",
+          "How's it going?"
+        ],
+        "correct_index": 2,
+        "explanation": "'Nice to meet you' is used when meeting someone for the first time."
+      }
+    },
+    {
+      "task_id": "t01_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "knowledge_check",
+      "title": "Fill in the blank",
+      "content": {
+        "sentence": "Good _____, Mr. Kumar. How are you?",
+        "options": ["morning", "bye", "later", "hey"],
+        "correct": "morning",
+        "explanation": "'Good morning' is the formal greeting used in the morning."
+      }
+    },
+    {
+      "task_id": "t01_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "knowledge_check",
+      "title": "Fill in the blank",
+      "content": {
+        "sentence": "It was great meeting you! _____  to meet you too!",
+        "options": ["Good", "Nice", "Bye", "Hey"],
+        "correct": "Nice",
+        "explanation": "'Nice to meet you too' is the reply when someone says 'Nice to meet you'."
+      }
+    },
+    {
+      "task_id": "t01_10",
+      "order": 10,
+      "type": "match_pairs",
+      "category": "knowledge_check",
+      "title": "Match the conversation",
+      "content": {
+        "instruction": "Match each phrase on the left with the correct reply on the right.",
+        "pairs": [
+          { "prompt": "How are you?", "answer": "I'm fine, thanks." },
+          { "prompt": "Good morning!", "answer": "Good morning! How are you?" },
+          { "prompt": "Nice to meet you.", "answer": "Nice to meet you too." },
+          { "prompt": "See you tomorrow!", "answer": "Bye! Take care." }
+        ]
+      }
+    },
+    {
+      "task_id": "t01_11",
+      "order": 11,
+      "type": "sort_words",
+      "category": "knowledge_check",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Arrange the words to make a correct sentence.",
+        "words": ["you", "to", "nice", "meet"],
+        "correct_sentence": "Nice to meet you.",
+        "explanation": "This is the standard phrase when meeting someone for the first time."
+      }
+    },
+    {
+      "task_id": "t01_12",
+      "order": 12,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "It is 7pm. You walk into a shop and see the shopkeeper.",
+        "question": "What is the most appropriate greeting?",
+        "options": [
+          "Good morning!",
+          "Good afternoon!",
+          "Good evening!",
+          "Good night!"
+        ],
+        "correct_index": 2,
+        "explanation": "After 6pm we say 'Good evening'. 'Good night' is only used when leaving at night or going to sleep."
+      }
+    },
+    {
+      "task_id": "t01_13",
+      "order": 13,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking practice — Greet someone",
+      "content": {
+        "instruction": "Speak aloud! Imagine you are meeting a new colleague at work.",
+        "prompt": "Greet them, ask how they are, and say goodbye.",
+        "example_response": "Good morning! My name is Priya. How are you? It's nice to meet you! See you later. Goodbye!",
+        "key_phrases": ["Good morning", "How are you?", "Nice to meet you", "See you later"],
+        "min_words": 15
+      }
+    },
+    {
+      "task_id": "t01_14",
+      "order": 14,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking practice — Reply to a greeting",
+      "content": {
+        "instruction": "Listen to this sentence and reply naturally, then say goodbye.",
+        "prompt": "Someone says: 'Hi! How are you doing today?'",
+        "example_response": "I'm doing great, thank you! How about you? Nice to meet you. Goodbye, see you later!",
+        "key_phrases": ["I'm fine", "I'm great", "Not bad", "Thank you"],
+        "min_words": 10
+      }
+    },
+    {
+      "task_id": "t01_15",
+      "order": 15,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Formal greetings: Hello, Good morning, Good afternoon, Good evening",
+          "Informal greetings: Hi, Hey, How's it going?",
+          "Asking how someone is: How are you? / How are you doing?",
+          "Replies: I'm fine, thanks / I'm great / Not bad",
+          "Goodbyes: Goodbye, Bye, See you later, Take care",
+          "First meeting: Nice to meet you / Nice to meet you too"
+        ],
+        "next_lesson": "a1_unit1_lesson02",
+        "next_lesson_title": "Who am I? — Introducing yourself"
+      }
+    }
+  ]
+}

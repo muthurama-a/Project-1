@@ -24,6 +24,9 @@ class LessonResponse(BaseModel):
     class Config:
         from_attributes = True
 
+class CompleteLessonRequest(BaseModel):
+    accuracy: float = 1.0
+
 class UnitResponse(BaseModel):
     id: int
     title: str

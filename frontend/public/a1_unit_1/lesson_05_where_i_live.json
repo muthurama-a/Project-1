@@ -1,0 +1,298 @@
+{
+  "lesson_id": "a1_unit1_lesson05",
+  "unit": 1,
+  "lesson_number": 5,
+  "level": "A1",
+  "title": "Where I live — places & locations",
+  "description": "Learn vocabulary for places in your area and how to describe your neighbourhood.",
+  "estimated_minutes": 20,
+  "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t05_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Types of homes",
+      "content": {
+        "explanation": "Learn the different words for where people live.",
+        "items": [
+          { "phrase": "house", "note": "A building where a family lives — usually has a garden" },
+          { "phrase": "apartment / flat", "note": "A home inside a large building — many floors" },
+          { "phrase": "room", "note": "A single room, usually rented" },
+          { "phrase": "city", "note": "A large urban area with many people" },
+          { "phrase": "town", "note": "Smaller than a city" },
+          { "phrase": "village", "note": "Very small, rural area" }
+        ]
+      }
+    },
+    {
+      "task_id": "t05_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Places in a neighbourhood",
+      "content": {
+        "explanation": "These are common places you find in a city or town.",
+        "items": [
+          { "phrase": "park", "note": "Open green area for relaxing and walking" },
+          { "phrase": "market / supermarket", "note": "Where you buy food and things" },
+          { "phrase": "hospital", "note": "Where sick people go for treatment" },
+          { "phrase": "school / university", "note": "Where people study" },
+          { "phrase": "restaurant", "note": "Where you eat food" },
+          { "phrase": "bus stop / train station", "note": "For public transport" },
+          { "phrase": "bank", "note": "Where you manage your money" },
+          { "phrase": "pharmacy", "note": "Where you buy medicine" }
+        ]
+      }
+    },
+    {
+      "task_id": "t05_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: There is / There are",
+      "content": {
+        "explanation": "We use 'There is' for one thing and 'There are' for many things.",
+        "examples": [
+          {
+            "sentence": "There is a park near my house.",
+            "note": "One park → There is"
+          },
+          {
+            "sentence": "There are many shops on my street.",
+            "note": "Many shops → There are"
+          },
+          {
+            "sentence": "Is there a hospital nearby?",
+            "note": "Question form: Is there...?"
+          },
+          {
+            "sentence": "There isn't a school in my village.",
+            "note": "Negative: There isn't (is not)"
+          },
+          {
+            "sentence": "There aren't many restaurants here.",
+            "note": "Negative plural: There aren't (are not)"
+          }
+        ],
+        "rule": "There is + singular noun. There are + plural noun."
+      }
+    },
+    {
+      "task_id": "t05_04",
+      "order": 4,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Location words — prepositions",
+      "content": {
+        "explanation": "Use these words to describe WHERE something is.",
+        "items": [
+          { "phrase": "near / close to", "note": "Not far — There is a park near my house." },
+          { "phrase": "far from", "note": "Not close — The school is far from here." },
+          { "phrase": "next to", "note": "Beside — The bank is next to the market." },
+          { "phrase": "opposite", "note": "Directly across — The park is opposite my building." },
+          { "phrase": "in", "note": "Inside a place — I live in Chennai." },
+          { "phrase": "on", "note": "On a street — I live on MG Road." }
+        ]
+      }
+    },
+    {
+      "task_id": "t05_05",
+      "order": 5,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these sentences about your neighbourhood.",
+        "phrases": [
+          { "text": "I live in a flat in the city.", "audio_key": "live_in_flat" },
+          { "text": "There is a park near my home.", "audio_key": "park_near_home" },
+          { "text": "There are many restaurants on my street.", "audio_key": "restaurants_on_street" },
+          { "text": "The hospital is next to the school.", "audio_key": "hospital_next_to_school" }
+        ]
+      }
+    },
+    {
+      "task_id": "t05_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "There is or There are?",
+      "content": {
+        "question": "Choose the correct sentence: 'There ___ a supermarket near my house.'",
+        "options": ["There are", "There is", "There am", "There be"],
+        "correct_index": 1,
+        "explanation": "'A supermarket' is singular → use 'There is'."
+      }
+    },
+    {
+      "task_id": "t05_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "There is or There are?",
+      "content": {
+        "question": "'___ many parks in this city.'",
+        "options": ["There is", "There are", "There am", "Is there"],
+        "correct_index": 1,
+        "explanation": "'Many parks' is plural → use 'There are'."
+      }
+    },
+    {
+      "task_id": "t05_08",
+      "order": 8,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "What is it?",
+      "content": {
+        "question": "Where do you go if you need to buy medicine?",
+        "options": ["Bank", "Hospital", "Pharmacy", "Market"],
+        "correct_index": 2,
+        "explanation": "A pharmacy is a shop where you buy medicine."
+      }
+    },
+    {
+      "task_id": "t05_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — There is / are",
+      "content": {
+        "sentence": "There _____ three parks in my neighbourhood.",
+        "options": ["is", "are", "am", "be"],
+        "correct": "are",
+        "explanation": "'Three parks' is plural — use 'There are'."
+      }
+    },
+    {
+      "task_id": "t05_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the preposition",
+      "content": {
+        "sentence": "I live _____ a small apartment _____ the city centre.",
+        "blanks": [
+          { "position": 1, "options": ["in", "at", "on", "to"], "correct": "in" },
+          { "position": 2, "options": ["in", "at", "on", "near"], "correct": "in" }
+        ],
+        "explanation": "We use 'in' for buildings and for areas/cities."
+      }
+    },
+    {
+      "task_id": "t05_11",
+      "order": 11,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the location word",
+      "content": {
+        "sentence": "The pharmacy is _____ the hospital — they are right beside each other.",
+        "options": ["far from", "opposite", "next to", "in"],
+        "correct": "next to",
+        "explanation": "'Next to' means beside something — right next to it."
+      }
+    },
+    {
+      "task_id": "t05_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange the words to make a correct sentence.",
+        "words": ["a", "my", "near", "There", "school", "is", "house"],
+        "correct_sentence": "There is a school near my house.",
+        "explanation": "Structure: There is + a + [noun] + [location word] + my house."
+      }
+    },
+    {
+      "task_id": "t05_13",
+      "order": 13,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match the place to its description",
+      "content": {
+        "instruction": "Match each place with what you do there.",
+        "pairs": [
+          { "prompt": "park", "answer": "walk, relax, and enjoy nature" },
+          { "prompt": "hospital", "answer": "get treatment when you are sick" },
+          { "prompt": "bank", "answer": "save money and pay bills" },
+          { "prompt": "supermarket", "answer": "buy food and household items" },
+          { "prompt": "train station", "answer": "catch a train to travel" }
+        ]
+      }
+    },
+    {
+      "task_id": "t05_14",
+      "order": 14,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct?",
+        "wrong_sentence": "There are a park near my house.",
+        "options": [
+          "There are a park near my house.",
+          "There is a park near my house.",
+          "There am a park near my house.",
+          "There is parks near my house."
+        ],
+        "correct_index": 1,
+        "explanation": "'A park' is singular → 'There is'. Plural 'parks' (no article) → 'There are parks'."
+      }
+    },
+    {
+      "task_id": "t05_15",
+      "order": 15,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "A new friend asks you: 'Is your area a good place to live?'",
+        "question": "Which is the best reply?",
+        "options": [
+          "Yes, there is many shops and a big park near my home.",
+          "Yes, there are many shops and a big park near my home.",
+          "Yes, there are many shops and a big park near my home. It's very convenient.",
+          "Yes, it have shops and park."
+        ],
+        "correct_index": 2,
+        "explanation": "'There are many shops' (plural) + adding extra detail makes it the best, most natural reply."
+      }
+    },
+    {
+      "task_id": "t05_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Describe where you live",
+      "content": {
+        "instruction": "Speak for 45–60 seconds about where you live.",
+        "prompt": "Describe your home and neighbourhood. Use 'There is / There are' and location words.",
+        "example_response": "I live in an apartment in Chennai. It's in a busy area. There is a supermarket near my home and there are two parks close by. There is a school opposite my building. It's a great neighbourhood — everything is close!",
+        "key_phrases": ["I live in", "There is a", "There are many", "near / next to / opposite"],
+        "min_words": 35
+      }
+    },
+    {
+      "task_id": "t05_17",
+      "order": 17,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Home types: house, apartment/flat, room",
+          "Area types: city, town, village",
+          "Places: park, market, hospital, school, restaurant, pharmacy, bank",
+          "There is + singular / There are + plural",
+          "Negative: There isn't / There aren't",
+          "Location words: near, next to, opposite, far from, in, on"
+        ],
+        "next_lesson": "a1_unit1_lesson06",
+        "next_lesson_title": "My day — daily routines"
+      }
+    }
+  ]
+}

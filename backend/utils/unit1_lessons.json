@@ -1,0 +1,1927 @@
+{
+  "unit": {
+    "id": "A1-U1",
+    "level": "A1",
+    "title": "First Steps in English",
+    "description": "Greetings to Daily Life — 8 lessons covering the core of everyday English",
+    "lessons": [
+      {
+        "id": "L1",
+        "order": 1,
+        "title": "Hello & goodbye",
+        "tags": ["vocabulary", "speaking"],
+        "description": "Learn everyday greetings and farewells used in English.",
+        "tasks": [
+          {
+            "id": "L1T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Meet the greetings",
+            "instruction": "Read each greeting and its meaning.",
+            "content": {
+              "cards": [
+                { "front": "Hello", "back": "A formal or casual way to greet someone." },
+                { "front": "Hi", "back": "An informal greeting." },
+                { "front": "Good morning", "back": "Used before 12:00 noon." },
+                { "front": "Good afternoon", "back": "Used between 12:00 and 6:00 PM." },
+                { "front": "Good evening", "back": "Used after 6:00 PM." },
+                { "front": "Goodbye", "back": "A formal farewell." },
+                { "front": "Bye / Bye-bye", "back": "An informal farewell." },
+                { "front": "See you later", "back": "A casual way to say goodbye." },
+                { "front": "Good night", "back": "Said when leaving at night or before sleeping." },
+                { "front": "Take care", "back": "A warm way to say goodbye." }
+              ]
+            }
+          },
+          {
+            "id": "L1T2",
+            "order": 2,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "When do you say it?",
+            "instruction": "Choose the correct greeting for the time shown.",
+            "questions": [
+              {
+                "id": "L1T2Q1",
+                "prompt": "It is 9:00 AM. You meet your teacher. What do you say?",
+                "options": ["Good evening", "Good morning", "Good night", "Goodbye"],
+                "correct": "Good morning",
+                "explanation": "'Good morning' is used in the morning, before noon."
+              },
+              {
+                "id": "L1T2Q2",
+                "prompt": "It is 3:00 PM. You see your friend. What do you say?",
+                "options": ["Good morning", "Good night", "Good afternoon", "See you"],
+                "correct": "Good afternoon",
+                "explanation": "'Good afternoon' is used between noon and 6 PM."
+              },
+              {
+                "id": "L1T2Q3",
+                "prompt": "You are leaving your friend's house at 9:00 PM. What do you say?",
+                "options": ["Good morning", "Hello", "Good night", "Hi"],
+                "correct": "Good night",
+                "explanation": "'Good night' is used as a farewell in the evening or before sleep."
+              },
+              {
+                "id": "L1T2Q4",
+                "prompt": "You meet someone at a party. Which is the most informal greeting?",
+                "options": ["Good evening", "Hello", "Hi", "Good afternoon"],
+                "correct": "Hi",
+                "explanation": "'Hi' is the most casual and informal greeting."
+              }
+            ]
+          },
+          {
+            "id": "L1T3",
+            "order": 3,
+            "type": "match_pairs",
+            "difficulty": "beginner",
+            "title": "Match the pairs",
+            "instruction": "Match each greeting with the correct farewell.",
+            "pairs": [
+              { "left": "Hello!", "right": "Goodbye!" },
+              { "left": "Good morning!", "right": "Good night!" },
+              { "left": "Hi there!", "right": "See you later!" },
+              { "left": "How are you?", "right": "I'm fine, thanks!" }
+            ]
+          },
+          {
+            "id": "L1T4",
+            "order": 4,
+            "type": "fill_in_blank",
+            "difficulty": "beginner",
+            "title": "Complete the greeting",
+            "instruction": "Fill in the blank with the correct word.",
+            "questions": [
+              {
+                "id": "L1T4Q1",
+                "sentence": "Good _____, everyone! It's 10 o'clock.",
+                "answer": "morning",
+                "hint": "10 AM is in the morning."
+              },
+              {
+                "id": "L1T4Q2",
+                "sentence": "_____ you later! I have to go now.",
+                "answer": "See",
+                "hint": "A casual farewell phrase."
+              },
+              {
+                "id": "L1T4Q3",
+                "sentence": "Good _____, sir. Nice to meet you.",
+                "answer": "evening",
+                "hint": "It is 7:00 PM."
+              }
+            ]
+          },
+          {
+            "id": "L1T5",
+            "order": 5,
+            "type": "learn_dialogue",
+            "difficulty": "beginner",
+            "title": "Watch a real conversation",
+            "instruction": "Read this short dialogue carefully.",
+            "dialogue": [
+              { "speaker": "Ana", "line": "Hi! Good morning!" },
+              { "speaker": "Ben", "line": "Good morning! How are you?" },
+              { "speaker": "Ana", "line": "I'm fine, thank you. And you?" },
+              { "speaker": "Ben", "line": "I'm great, thanks! See you later!" },
+              { "speaker": "Ana", "line": "Bye-bye! Take care!" }
+            ]
+          },
+          {
+            "id": "L1T6",
+            "order": 6,
+            "type": "reorder_sentence",
+            "difficulty": "elementary",
+            "title": "Build the sentence",
+            "instruction": "Arrange the words to make a correct greeting.",
+            "questions": [
+              {
+                "id": "L1T6Q1",
+                "words": ["morning", "Good", "teacher", "my"],
+                "correct": "Good morning my teacher",
+                "note": "A polite morning greeting to your teacher."
+              },
+              {
+                "id": "L1T6Q2",
+                "words": ["later", "you", "See"],
+                "correct": "See you later",
+                "note": "A common informal farewell."
+              },
+              {
+                "id": "L1T6Q3",
+                "words": ["evening", "good", "everyone", "Good"],
+                "correct": "Good evening everyone",
+                "note": "An evening greeting to a group."
+              }
+            ]
+          },
+          {
+            "id": "L1T7",
+            "order": 7,
+            "type": "true_false",
+            "difficulty": "elementary",
+            "title": "True or false?",
+            "instruction": "Decide if the statement is true or false.",
+            "questions": [
+              {
+                "id": "L1T7Q1",
+                "statement": "'Good morning' is used after 6:00 PM.",
+                "answer": false,
+                "explanation": "'Good morning' is used before noon."
+              },
+              {
+                "id": "L1T7Q2",
+                "statement": "'Hi' is more informal than 'Hello'.",
+                "answer": true,
+                "explanation": "'Hi' is casual and friendly; 'Hello' is slightly more formal."
+              },
+              {
+                "id": "L1T7Q3",
+                "statement": "'See you later' is a way to say goodbye.",
+                "answer": true,
+                "explanation": "Yes, it is a common informal farewell."
+              }
+            ]
+          },
+          {
+            "id": "L1T8",
+            "order": 8,
+            "type": "image_label",
+            "difficulty": "elementary",
+            "title": "What time is it?",
+            "instruction": "Look at the clock. Choose the correct greeting.",
+            "questions": [
+              {
+                "id": "L1T8Q1",
+                "image_description": "Clock showing 8:00 AM",
+                "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
+                "correct": "Good morning"
+              },
+              {
+                "id": "L1T8Q2",
+                "image_description": "Clock showing 2:00 PM",
+                "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
+                "correct": "Good afternoon"
+              },
+              {
+                "id": "L1T8Q3",
+                "image_description": "Clock showing 8:30 PM",
+                "options": ["Good morning", "Good afternoon", "Good evening", "Good night"],
+                "correct": "Good evening"
+              }
+            ]
+          },
+          {
+            "id": "L1T9",
+            "order": 9,
+            "type": "speaking_prompt",
+            "difficulty": "elementary",
+            "title": "Say it out loud",
+            "instruction": "Read the situation and say the correct greeting aloud. Record your voice.",
+            "prompts": [
+              "You arrive at school at 8 AM. Greet your teacher.",
+              "You meet a friend at 4 PM. Say hello informally.",
+              "You are leaving home at 10 PM. Say goodbye to your family."
+            ],
+            "audio_input": true
+          },
+          {
+            "id": "L1T10",
+            "order": 10,
+            "type": "multiple_choice",
+            "difficulty": "intermediate",
+            "title": "Formal or informal?",
+            "instruction": "Choose whether the situation calls for a FORMAL or INFORMAL greeting.",
+            "questions": [
+              {
+                "id": "L1T10Q1",
+                "prompt": "You are meeting your company's CEO for the first time.",
+                "options": ["Hi! What's up?", "Good afternoon, sir. It's a pleasure to meet you.", "Hey! How's it going?"],
+                "correct": "Good afternoon, sir. It's a pleasure to meet you.",
+                "explanation": "Formal situations require formal language."
+              },
+              {
+                "id": "L1T10Q2",
+                "prompt": "You are texting your best friend.",
+                "options": ["Good morning. I hope this message finds you well.", "Heyyy! What are you up to? 😄", "Good day to you."],
+                "correct": "Heyyy! What are you up to? 😄",
+                "explanation": "Casual texting with close friends is informal."
+              }
+            ]
+          },
+          {
+            "id": "L1T11",
+            "order": 11,
+            "type": "dialogue_complete",
+            "difficulty": "intermediate",
+            "title": "Finish the dialogue",
+            "instruction": "Choose the best response to complete the conversation.",
+            "dialogue": [
+              { "speaker": "Tom", "line": "Hi there! How are you today?" },
+              {
+                "speaker": "You",
+                "line": "___",
+                "options": [
+                  "Good morning, moon.",
+                  "I'm doing well, thank you! How about you?",
+                  "Goodbye!",
+                  "See you!"
+                ],
+                "correct": "I'm doing well, thank you! How about you?",
+                "explanation": "The natural response to 'How are you?' is to answer and ask back."
+              }
+            ]
+          },
+          {
+            "id": "L1T12",
+            "order": 12,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: First day at work",
+            "instruction": "You are starting a new job. Greet your manager and two colleagues appropriately. Use at least 3 different greetings or farewells. Record or write your responses.",
+            "scenario": "It is Monday morning, 9:00 AM. You walk into the office. Your manager, Sarah, is at the door. Your colleagues, Mike and Lily, are at their desks.",
+            "characters": [
+              { "name": "Sarah (Manager)", "line": "Good morning! You must be the new team member." },
+              { "name": "Mike (Colleague)", "line": "Hey! Welcome! Great to have you here." },
+              { "name": "Lily (Colleague)", "line": "Hi! Nice to meet you!" }
+            ],
+            "user_task": "Respond to each person with an appropriate greeting. At the end of the day (scenario skip), say goodbye to all three.",
+            "audio_input": true,
+            "text_input": true
+          },
+          {
+            "id": "L1T13",
+            "order": 13,
+            "type": "writing",
+            "difficulty": "advanced",
+            "title": "Write a short greeting message",
+            "instruction": "Write a short message (3–5 sentences) introducing yourself to a new classmate. Use at least 2 greetings or farewell expressions.",
+            "example_output": "Hi! My name is Priya. It's great to meet you. I hope we can be good friends. See you in class tomorrow!",
+            "min_words": 20,
+            "max_words": 60,
+            "text_input": true
+          }
+        ]
+      },
+      {
+        "id": "L2",
+        "order": 2,
+        "title": "Who am I? — Introducing yourself",
+        "tags": ["vocabulary", "grammar", "speaking"],
+        "description": "Learn how to introduce yourself: name, age, nationality, and job.",
+        "tasks": [
+          {
+            "id": "L2T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Key vocabulary",
+            "instruction": "Study these important words for introducing yourself.",
+            "content": {
+              "cards": [
+                { "front": "name", "back": "What you are called. 'My name is Ana.'" },
+                { "front": "age", "back": "How old you are. 'I am 25 years old.'" },
+                { "front": "nationality", "back": "The country you are from. 'I am Indian.'" },
+                { "front": "job / occupation", "back": "What you do for work. 'I am a teacher.'" },
+                { "front": "hometown", "back": "The city where you are from. 'I am from Mumbai.'" },
+                { "front": "language", "back": "What you speak. 'I speak Hindi and English.'" }
+              ]
+            }
+          },
+          {
+            "id": "L2T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: 'To be' — I am / My name is",
+            "instruction": "Study the grammar pattern for introducing yourself.",
+            "content": {
+              "pattern": "Subject + am/is/are + [information]",
+              "examples": [
+                "I am Carlos.",
+                "My name is Carlos.",
+                "I am 28 years old.",
+                "I am from Spain.",
+                "I am a student.",
+                "I am not a doctor."
+              ],
+              "note": "Use 'am' only with 'I'. Use 'is' with he/she/it. Use 'are' with you/we/they."
+            }
+          },
+          {
+            "id": "L2T3",
+            "order": 3,
+            "type": "fill_in_blank",
+            "difficulty": "beginner",
+            "title": "Complete with am / is / are",
+            "instruction": "Fill in the blank with am, is, or are.",
+            "questions": [
+              { "id": "L2T3Q1", "sentence": "I ___ a student.", "answer": "am" },
+              { "id": "L2T3Q2", "sentence": "She ___ a doctor.", "answer": "is" },
+              { "id": "L2T3Q3", "sentence": "They ___ from Japan.", "answer": "are" },
+              { "id": "L2T3Q4", "sentence": "My name ___ Alex.", "answer": "is" },
+              { "id": "L2T3Q5", "sentence": "We ___ classmates.", "answer": "are" }
+            ]
+          },
+          {
+            "id": "L2T4",
+            "order": 4,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the correct sentence",
+            "instruction": "Pick the grammatically correct introduction.",
+            "questions": [
+              {
+                "id": "L2T4Q1",
+                "prompt": "How does Carlos introduce his name correctly?",
+                "options": [
+                  "My name are Carlos.",
+                  "My name is Carlos.",
+                  "I name Carlos.",
+                  "I am name Carlos."
+                ],
+                "correct": "My name is Carlos.",
+                "explanation": "Use 'is' with 'my name'."
+              },
+              {
+                "id": "L2T4Q2",
+                "prompt": "How does Priya say her age correctly?",
+                "options": [
+                  "I am have 22 years.",
+                  "I has 22 years old.",
+                  "I am 22 years old.",
+                  "I is 22."
+                ],
+                "correct": "I am 22 years old.",
+                "explanation": "Use 'I am + number + years old' to state your age."
+              }
+            ]
+          },
+          {
+            "id": "L2T5",
+            "order": 5,
+            "type": "learn_dialogue",
+            "difficulty": "beginner",
+            "title": "A self-introduction",
+            "instruction": "Read this dialogue. Notice how the person introduces themselves.",
+            "dialogue": [
+              { "speaker": "Sara", "line": "Hi! My name is Sara. I am from Brazil." },
+              { "speaker": "James", "line": "Nice to meet you, Sara! I am James. I am from the UK." },
+              { "speaker": "Sara", "line": "How old are you, James?" },
+              { "speaker": "James", "line": "I am 24 years old. And you?" },
+              { "speaker": "Sara", "line": "I am 22. I am a student. What do you do?" },
+              { "speaker": "James", "line": "I am a teacher." }
+            ]
+          },
+          {
+            "id": "L2T6",
+            "order": 6,
+            "type": "reorder_sentence",
+            "difficulty": "elementary",
+            "title": "Build the introduction",
+            "instruction": "Arrange the words into a correct sentence.",
+            "questions": [
+              { "id": "L2T6Q1", "words": ["name", "is", "My", "Priya"], "correct": "My name is Priya" },
+              { "id": "L2T6Q2", "words": ["am", "I", "India", "from"], "correct": "I am from India" },
+              { "id": "L2T6Q3", "words": ["years", "am", "old", "I", "30"], "correct": "I am 30 years old" },
+              { "id": "L2T6Q4", "words": ["engineer", "an", "am", "I"], "correct": "I am an engineer" }
+            ]
+          },
+          {
+            "id": "L2T7",
+            "order": 7,
+            "type": "match_pairs",
+            "difficulty": "elementary",
+            "title": "Match question and answer",
+            "instruction": "Match each question with the correct answer.",
+            "pairs": [
+              { "left": "What is your name?", "right": "My name is Ali." },
+              { "left": "Where are you from?", "right": "I am from Egypt." },
+              { "left": "How old are you?", "right": "I am 28 years old." },
+              { "left": "What do you do?", "right": "I am a nurse." }
+            ]
+          },
+          {
+            "id": "L2T8",
+            "order": 8,
+            "type": "vocabulary_select",
+            "difficulty": "elementary",
+            "title": "Choose the right occupation",
+            "instruction": "Select the correct job title based on the description.",
+            "questions": [
+              {
+                "id": "L2T8Q1",
+                "description": "This person teaches students in a school.",
+                "options": ["driver", "teacher", "chef", "engineer"],
+                "correct": "teacher"
+              },
+              {
+                "id": "L2T8Q2",
+                "description": "This person cooks food in a restaurant.",
+                "options": ["pilot", "nurse", "chef", "lawyer"],
+                "correct": "chef"
+              },
+              {
+                "id": "L2T8Q3",
+                "description": "This person flies an airplane.",
+                "options": ["pilot", "doctor", "artist", "builder"],
+                "correct": "pilot"
+              }
+            ]
+          },
+          {
+            "id": "L2T9",
+            "order": 9,
+            "type": "speaking_prompt",
+            "difficulty": "elementary",
+            "title": "Introduce yourself",
+            "instruction": "Record a short self-introduction covering: name, age, country, and job.",
+            "prompt": "Hello! My name is _____. I am _____ years old. I am from _____. I am a _____.",
+            "audio_input": true
+          },
+          {
+            "id": "L2T10",
+            "order": 10,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Fix the mistakes",
+            "instruction": "Find and correct the grammar mistake in each sentence.",
+            "questions": [
+              {
+                "id": "L2T10Q1",
+                "sentence": "My name are David.",
+                "error": "are",
+                "correction": "is",
+                "corrected": "My name is David."
+              },
+              {
+                "id": "L2T10Q2",
+                "sentence": "I is from Canada.",
+                "error": "is",
+                "correction": "am",
+                "corrected": "I am from Canada."
+              },
+              {
+                "id": "L2T10Q3",
+                "sentence": "She am a lawyer.",
+                "error": "am",
+                "correction": "is",
+                "corrected": "She is a lawyer."
+              }
+            ]
+          },
+          {
+            "id": "L2T11",
+            "order": 11,
+            "type": "negative_form",
+            "difficulty": "intermediate",
+            "title": "Negative introductions",
+            "instruction": "Rewrite the sentence in negative form.",
+            "content": {
+              "note": "To make 'to be' negative, add 'not': I am not, She is not, They are not.",
+              "questions": [
+                { "id": "L2T11Q1", "positive": "I am a student.", "answer": "I am not a student." },
+                { "id": "L2T11Q2", "positive": "She is from France.", "answer": "She is not from France." },
+                { "id": "L2T11Q3", "positive": "They are engineers.", "answer": "They are not engineers." }
+              ]
+            }
+          },
+          {
+            "id": "L2T12",
+            "order": 12,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Write your introduction",
+            "instruction": "Write a paragraph of 5–7 sentences introducing yourself. Include: name, age, nationality, job or studies, a hobby, and a language you speak.",
+            "example_output": "Hi! My name is Meera. I am 26 years old. I am from Chennai, India. I am a software engineer. I love reading and cooking. I speak Tamil, Hindi, and English.",
+            "min_words": 30,
+            "max_words": 80,
+            "text_input": true
+          },
+          {
+            "id": "L2T13",
+            "order": 13,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: Speed networking event",
+            "instruction": "You have 60 seconds to introduce yourself to a new contact at a professional event. Speak naturally and confidently.",
+            "scenario": "You are at a professional networking event. A stranger approaches you.",
+            "characters": [
+              { "name": "Stranger", "line": "Hello! I don't think we've met. Who are you?" }
+            ],
+            "checklist": [
+              "Said your name",
+              "Said where you are from",
+              "Mentioned your job or field",
+              "Said something personal (hobby, language, goal)"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 60
+          },
+          {
+            "id": "L2T14",
+            "order": 14,
+            "type": "reading_comprehension",
+            "difficulty": "advanced",
+            "title": "Read and answer",
+            "instruction": "Read the introduction below and answer the questions.",
+            "passage": "My name is Lena Müller. I am 31 years old. I am from Berlin, Germany, but I now live in London. I am a graphic designer. I work for a media company. I speak German and English, and I am learning Spanish. In my free time, I enjoy hiking and cooking.",
+            "questions": [
+              {
+                "id": "L2T14Q1",
+                "question": "Where is Lena originally from?",
+                "answer": "Berlin, Germany"
+              },
+              {
+                "id": "L2T14Q2",
+                "question": "What is her job?",
+                "answer": "She is a graphic designer."
+              },
+              {
+                "id": "L2T14Q3",
+                "question": "How many languages does Lena speak or is learning?",
+                "answer": "Three — German, English, and Spanish (learning)."
+              },
+              {
+                "id": "L2T14Q4",
+                "question": "Name one of her hobbies.",
+                "answer": "Hiking or cooking."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L3",
+        "order": 3,
+        "title": "Asking about others",
+        "tags": ["grammar", "exercise"],
+        "description": "Learn how to ask questions about other people using question words.",
+        "tasks": [
+          {
+            "id": "L3T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Question words",
+            "content": {
+              "cards": [
+                { "front": "What", "back": "Asks about a thing. 'What is your name?'" },
+                { "front": "Who", "back": "Asks about a person. 'Who is she?'" },
+                { "front": "Where", "back": "Asks about a place. 'Where are you from?'" },
+                { "front": "When", "back": "Asks about time. 'When is your birthday?'" },
+                { "front": "How old", "back": "Asks about age. 'How old are you?'" },
+                { "front": "How many", "back": "Asks about number. 'How many siblings do you have?'" }
+              ]
+            }
+          },
+          {
+            "id": "L3T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: Forming questions with 'to be'",
+            "content": {
+              "pattern": "Question word + am/is/are + subject?",
+              "examples": [
+                "What is her name?",
+                "Where is he from?",
+                "How old are they?",
+                "Who is your teacher?",
+                "Are you a student? (Yes/No question)"
+              ]
+            }
+          },
+          {
+            "id": "L3T3",
+            "order": 3,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the correct question word",
+            "questions": [
+              {
+                "id": "L3T3Q1",
+                "prompt": "___ is her name?",
+                "options": ["Where", "Who", "What", "When"],
+                "correct": "What"
+              },
+              {
+                "id": "L3T3Q2",
+                "prompt": "___ is he from?",
+                "options": ["What", "Who", "When", "Where"],
+                "correct": "Where"
+              },
+              {
+                "id": "L3T3Q3",
+                "prompt": "___ old is your brother?",
+                "options": ["What", "How", "Who", "When"],
+                "correct": "How"
+              },
+              {
+                "id": "L3T3Q4",
+                "prompt": "___ is your birthday?",
+                "options": ["Where", "Who", "When", "What"],
+                "correct": "When"
+              }
+            ]
+          },
+          {
+            "id": "L3T4",
+            "order": 4,
+            "type": "match_pairs",
+            "difficulty": "beginner",
+            "title": "Match question to answer",
+            "pairs": [
+              { "left": "What is your job?", "right": "I am a nurse." },
+              { "left": "Where is she from?", "right": "She is from Korea." },
+              { "left": "How old is he?", "right": "He is 35 years old." },
+              { "left": "Who is your teacher?", "right": "Mr. Smith is my teacher." }
+            ]
+          },
+          {
+            "id": "L3T5",
+            "order": 5,
+            "type": "reorder_sentence",
+            "difficulty": "elementary",
+            "title": "Build the question",
+            "questions": [
+              { "id": "L3T5Q1", "words": ["name", "is", "What", "your"], "correct": "What is your name" },
+              { "id": "L3T5Q2", "words": ["from", "is", "she", "Where"], "correct": "Where is she from" },
+              { "id": "L3T5Q3", "words": ["old", "How", "are", "they"], "correct": "How old are they" }
+            ]
+          },
+          {
+            "id": "L3T6",
+            "order": 6,
+            "type": "fill_in_blank",
+            "difficulty": "elementary",
+            "title": "Complete the question",
+            "questions": [
+              { "id": "L3T6Q1", "sentence": "___ is your favourite colour?", "answer": "What" },
+              { "id": "L3T6Q2", "sentence": "___ are your parents from?", "answer": "Where" },
+              { "id": "L3T6Q3", "sentence": "___ is your best friend?", "answer": "Who" },
+              { "id": "L3T6Q4", "sentence": "___ old is your sister?", "answer": "How" }
+            ]
+          },
+          {
+            "id": "L3T7",
+            "order": 7,
+            "type": "yes_no_questions",
+            "difficulty": "elementary",
+            "title": "Ask yes/no questions",
+            "instruction": "Rewrite each statement as a yes/no question.",
+            "content": {
+              "note": "For yes/no questions: move 'am/is/are' before the subject.",
+              "questions": [
+                { "id": "L3T7Q1", "statement": "She is a teacher.", "answer": "Is she a teacher?" },
+                { "id": "L3T7Q2", "statement": "They are from Italy.", "answer": "Are they from Italy?" },
+                { "id": "L3T7Q3", "statement": "He is 30 years old.", "answer": "Is he 30 years old?" }
+              ]
+            }
+          },
+          {
+            "id": "L3T8",
+            "order": 8,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Find the mistake",
+            "questions": [
+              {
+                "id": "L3T8Q1",
+                "sentence": "What are your name?",
+                "correction": "What is your name?",
+                "explanation": "'name' is singular, so use 'is'."
+              },
+              {
+                "id": "L3T8Q2",
+                "sentence": "Where she is from?",
+                "correction": "Where is she from?",
+                "explanation": "In questions, 'is' comes before the subject 'she'."
+              },
+              {
+                "id": "L3T8Q3",
+                "sentence": "How old is they?",
+                "correction": "How old are they?",
+                "explanation": "Use 'are' with 'they'."
+              }
+            ]
+          },
+          {
+            "id": "L3T9",
+            "order": 9,
+            "type": "speaking_prompt",
+            "difficulty": "intermediate",
+            "title": "Ask the question",
+            "instruction": "Look at the answer. Ask the correct question using a question word.",
+            "questions": [
+              { "id": "L3T9Q1", "answer": "Her name is Sofia.", "expected_question": "What is her name?" },
+              { "id": "L3T9Q2", "answer": "He is from Mexico.", "expected_question": "Where is he from?" },
+              { "id": "L3T9Q3", "answer": "She is 19 years old.", "expected_question": "How old is she?" }
+            ],
+            "audio_input": true
+          },
+          {
+            "id": "L3T10",
+            "order": 10,
+            "type": "dialogue_complete",
+            "difficulty": "intermediate",
+            "title": "Complete the interview",
+            "instruction": "Fill in the questions in the interview.",
+            "dialogue": [
+              { "speaker": "Interviewer", "line": "[Q1: Ask for her name]", "answer": "What is your name?" },
+              { "speaker": "Applicant", "line": "My name is Lin Wei." },
+              { "speaker": "Interviewer", "line": "[Q2: Ask where she is from]", "answer": "Where are you from?" },
+              { "speaker": "Applicant", "line": "I am from Shanghai, China." },
+              { "speaker": "Interviewer", "line": "[Q3: Ask her job/role]", "answer": "What do you do?" },
+              { "speaker": "Applicant", "line": "I am a software developer." }
+            ]
+          },
+          {
+            "id": "L3T11",
+            "order": 11,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Write 5 questions",
+            "instruction": "Imagine you are interviewing a new student in your class. Write 5 questions you would ask them.",
+            "example_output": "1. What is your name? 2. Where are you from? 3. How old are you? 4. What do you study? 5. What are your hobbies?",
+            "min_questions": 5,
+            "text_input": true
+          },
+          {
+            "id": "L3T12",
+            "order": 12,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: Getting to know a new classmate",
+            "scenario": "You are in your first English class. You meet a classmate you don't know. Ask them at least 5 different questions about themselves and respond when they ask you.",
+            "characters": [
+              { "name": "Classmate", "line": "Hi! I don't think we've spoken before. I'm really curious to know more about you!" }
+            ],
+            "checklist": [
+              "Asked about their name",
+              "Asked where they are from",
+              "Asked about their age",
+              "Asked about their job or studies",
+              "Asked one additional question of your choice"
+            ],
+            "audio_input": true
+          }
+        ]
+      },
+      {
+        "id": "L4",
+        "order": 4,
+        "title": "People around me — family & friends",
+        "tags": ["vocabulary", "grammar"],
+        "description": "Learn family vocabulary and how to describe relationships using possessive pronouns.",
+        "tasks": [
+          {
+            "id": "L4T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Family vocabulary",
+            "content": {
+              "cards": [
+                { "front": "mother / mom", "back": "Your female parent." },
+                { "front": "father / dad", "back": "Your male parent." },
+                { "front": "parents", "back": "Your mother and father together." },
+                { "front": "brother", "back": "A male sibling." },
+                { "front": "sister", "back": "A female sibling." },
+                { "front": "grandparents", "back": "Your parents' parents." },
+                { "front": "grandmother / grandma", "back": "Your grandparent who is a woman." },
+                { "front": "grandfather / grandpa", "back": "Your grandparent who is a man." },
+                { "front": "uncle", "back": "Your parent's brother." },
+                { "front": "aunt", "back": "Your parent's sister." },
+                { "front": "cousin", "back": "Your aunt or uncle's child." },
+                { "front": "husband / wife", "back": "Your married partner." },
+                { "front": "son / daughter", "back": "Your male/female child." },
+                { "front": "friend", "back": "A person you like and trust." }
+              ]
+            }
+          },
+          {
+            "id": "L4T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: Possessives — my, your, his, her, our, their",
+            "content": {
+              "table": [
+                { "pronoun": "I", "possessive": "my", "example": "my mother" },
+                { "pronoun": "you", "possessive": "your", "example": "your brother" },
+                { "pronoun": "he", "possessive": "his", "example": "his sister" },
+                { "pronoun": "she", "possessive": "her", "example": "her father" },
+                { "pronoun": "we", "possessive": "our", "example": "our family" },
+                { "pronoun": "they", "possessive": "their", "example": "their parents" }
+              ]
+            }
+          },
+          {
+            "id": "L4T3",
+            "order": 3,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the correct possessive",
+            "questions": [
+              {
+                "id": "L4T3Q1",
+                "prompt": "That is Carlos. ___ sister is a doctor.",
+                "options": ["My", "Her", "His", "Their"],
+                "correct": "His"
+              },
+              {
+                "id": "L4T3Q2",
+                "prompt": "Sara and Tom are married. ___ son is 5 years old.",
+                "options": ["My", "His", "Her", "Their"],
+                "correct": "Their"
+              },
+              {
+                "id": "L4T3Q3",
+                "prompt": "___ grandmother lives in the countryside.",
+                "options": ["I", "My", "Me", "Mine"],
+                "correct": "My"
+              }
+            ]
+          },
+          {
+            "id": "L4T4",
+            "order": 4,
+            "type": "image_label",
+            "difficulty": "beginner",
+            "title": "Label the family tree",
+            "instruction": "Look at the family tree and answer the relationship questions.",
+            "questions": [
+              {
+                "id": "L4T4Q1",
+                "context": "Maria is Tom's mother. What is Tom to Maria?",
+                "answer": "son"
+              },
+              {
+                "id": "L4T4Q2",
+                "context": "Tom and Lisa are children of the same parents. What is Lisa to Tom?",
+                "answer": "sister"
+              },
+              {
+                "id": "L4T4Q3",
+                "context": "Maria's father is still alive. What does Tom call Maria's father?",
+                "answer": "grandfather"
+              }
+            ]
+          },
+          {
+            "id": "L4T5",
+            "order": 5,
+            "type": "fill_in_blank",
+            "difficulty": "elementary",
+            "title": "Complete the description",
+            "questions": [
+              { "id": "L4T5Q1", "sentence": "My father's sister is my ___.", "answer": "aunt" },
+              { "id": "L4T5Q2", "sentence": "My mother's mother is my ___.", "answer": "grandmother" },
+              { "id": "L4T5Q3", "sentence": "My uncle's son is my ___.", "answer": "cousin" },
+              { "id": "L4T5Q4", "sentence": "I have one brother and one sister. We are ___.", "answer": "siblings" }
+            ]
+          },
+          {
+            "id": "L4T6",
+            "order": 6,
+            "type": "match_pairs",
+            "difficulty": "elementary",
+            "title": "Match the relationship",
+            "pairs": [
+              { "left": "My father's brother", "right": "uncle" },
+              { "left": "My sister's son", "right": "nephew" },
+              { "left": "My mother's father", "right": "grandfather" },
+              { "left": "My married female partner", "right": "wife" }
+            ]
+          },
+          {
+            "id": "L4T7",
+            "order": 7,
+            "type": "true_false",
+            "difficulty": "elementary",
+            "title": "True or false?",
+            "questions": [
+              { "id": "L4T7Q1", "statement": "Your aunt is your father's sister.", "answer": true },
+              { "id": "L4T7Q2", "statement": "Your cousin is your grandparent's child.", "answer": false, "explanation": "Your cousin is your uncle's or aunt's child." },
+              { "id": "L4T7Q3", "statement": "'His' is used for a female.", "answer": false, "explanation": "'His' is used for males; 'her' is for females." }
+            ]
+          },
+          {
+            "id": "L4T8",
+            "order": 8,
+            "type": "speaking_prompt",
+            "difficulty": "elementary",
+            "title": "Talk about your family",
+            "instruction": "Describe your family in 4–6 sentences. Mention who they are and one fact about each person.",
+            "prompt": "I have a ___. My ___ is ___. My ___ works as a ___...",
+            "audio_input": true
+          },
+          {
+            "id": "L4T9",
+            "order": 9,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Correct the possessive",
+            "questions": [
+              { "id": "L4T9Q1", "sentence": "She has two brother.", "correction": "She has two brothers.", "explanation": "Plural: brothers." },
+              { "id": "L4T9Q2", "sentence": "His parents lives in Madrid.", "correction": "His parents live in Madrid.", "explanation": "'parents' is plural, so use 'live'." },
+              { "id": "L4T9Q3", "sentence": "I have a sister. Her name are Mia.", "correction": "Her name is Mia.", "explanation": "'name' is singular, use 'is'." }
+            ]
+          },
+          {
+            "id": "L4T10",
+            "order": 10,
+            "type": "reading_comprehension",
+            "difficulty": "intermediate",
+            "title": "Read about a family",
+            "passage": "My name is Ahmed. I have a small family. My mother's name is Fatima and my father's name is Hassan. I have one older sister named Nadia. She is 28 years old and she is a dentist. My father is a retired teacher and my mother is a homemaker. We also have a dog named Max. My best friend is called Omar. His family lives next door.",
+            "questions": [
+              { "id": "L4T10Q1", "question": "What is Ahmed's sister's job?", "answer": "She is a dentist." },
+              { "id": "L4T10Q2", "question": "What did Ahmed's father do?", "answer": "He was a teacher (now retired)." },
+              { "id": "L4T10Q3", "question": "What is the dog's name?", "answer": "Max." },
+              { "id": "L4T10Q4", "question": "Where does Omar's family live?", "answer": "Next door (to Ahmed's family)." }
+            ]
+          },
+          {
+            "id": "L4T11",
+            "order": 11,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Describe your family",
+            "instruction": "Write a paragraph about your family (real or imaginary). Include: number of people, names, relationships, and one fact about each person.",
+            "min_words": 40,
+            "max_words": 100,
+            "text_input": true
+          },
+          {
+            "id": "L4T12",
+            "order": 12,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: Show a family photo",
+            "scenario": "You are showing a photo of your family to a new friend. Describe who everyone is and tell something interesting about each person.",
+            "characters": [
+              { "name": "Friend", "line": "Oh, is that a family photo? Tell me about everyone in it!" }
+            ],
+            "checklist": [
+              "Used at least 5 family vocabulary words",
+              "Used possessives correctly (my, his, her, their)",
+              "Gave at least one fact about each person mentioned"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 90
+          }
+        ]
+      },
+      {
+        "id": "L5",
+        "order": 5,
+        "title": "Where I live — places & locations",
+        "tags": ["vocabulary", "grammar", "exercise"],
+        "description": "Learn vocabulary for places in a town and prepositions of place.",
+        "tasks": [
+          {
+            "id": "L5T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Places in a town",
+            "content": {
+              "cards": [
+                { "front": "house / home", "back": "Where you live." },
+                { "front": "apartment / flat", "back": "A home in a building with many units." },
+                { "front": "school", "back": "Where children study." },
+                { "front": "hospital", "back": "Where sick people are treated." },
+                { "front": "supermarket", "back": "A large shop selling food and goods." },
+                { "front": "park", "back": "An outdoor green area for relaxing." },
+                { "front": "bank", "back": "Where you keep or get money." },
+                { "front": "restaurant", "back": "A place to eat cooked meals." },
+                { "front": "library", "back": "A place with books you can read or borrow." },
+                { "front": "bus stop", "back": "Where you wait for the bus." },
+                { "front": "train station", "back": "Where trains arrive and depart." },
+                { "front": "street / road", "back": "A path for vehicles and people." }
+              ]
+            }
+          },
+          {
+            "id": "L5T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: Prepositions of place",
+            "content": {
+              "prepositions": [
+                { "word": "in", "meaning": "inside an enclosed space", "example": "The cat is in the house." },
+                { "word": "on", "meaning": "touching a surface", "example": "The book is on the table." },
+                { "word": "at", "meaning": "a specific point or location", "example": "I am at the bus stop." },
+                { "word": "next to", "meaning": "beside something", "example": "The bank is next to the park." },
+                { "word": "near", "meaning": "not far from", "example": "I live near the school." },
+                { "word": "between", "meaning": "in the middle of two things", "example": "The library is between the bank and the hospital." }
+              ]
+            }
+          },
+          {
+            "id": "L5T3",
+            "order": 3,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the right preposition",
+            "questions": [
+              {
+                "id": "L5T3Q1",
+                "prompt": "The supermarket is ___ the park.",
+                "options": ["in", "next to", "on", "under"],
+                "correct": "next to"
+              },
+              {
+                "id": "L5T3Q2",
+                "prompt": "I wait for the bus ___ the bus stop.",
+                "options": ["in", "on", "at", "near"],
+                "correct": "at"
+              },
+              {
+                "id": "L5T3Q3",
+                "prompt": "She lives ___ a small apartment.",
+                "options": ["on", "in", "at", "next to"],
+                "correct": "in"
+              }
+            ]
+          },
+          {
+            "id": "L5T4",
+            "order": 4,
+            "type": "match_pairs",
+            "difficulty": "beginner",
+            "title": "Match the place to its purpose",
+            "pairs": [
+              { "left": "library", "right": "borrow books" },
+              { "left": "hospital", "right": "see a doctor" },
+              { "left": "restaurant", "right": "eat a meal" },
+              { "left": "bank", "right": "deposit money" }
+            ]
+          },
+          {
+            "id": "L5T5",
+            "order": 5,
+            "type": "fill_in_blank",
+            "difficulty": "elementary",
+            "title": "Describe the location",
+            "questions": [
+              { "id": "L5T5Q1", "sentence": "The school is ___ the hospital and the park.", "answer": "between" },
+              { "id": "L5T5Q2", "sentence": "I live ___ a flat in the city.", "answer": "in" },
+              { "id": "L5T5Q3", "sentence": "There is a café ___ to the library.", "answer": "next" },
+              { "id": "L5T5Q4", "sentence": "The bus stop is ___ the supermarket.", "answer": "near" }
+            ]
+          },
+          {
+            "id": "L5T6",
+            "order": 6,
+            "type": "image_label",
+            "difficulty": "elementary",
+            "title": "Read the map",
+            "instruction": "Look at the description and choose the correct place.",
+            "questions": [
+              {
+                "id": "L5T6Q1",
+                "context": "It is next to the park, and between the bank and the restaurant.",
+                "options": ["library", "hospital", "school", "supermarket"],
+                "correct": "library"
+              },
+              {
+                "id": "L5T6Q2",
+                "context": "It is on Main Street, across from the park.",
+                "options": ["bus stop", "supermarket", "park", "train station"],
+                "correct": "supermarket"
+              }
+            ]
+          },
+          {
+            "id": "L5T7",
+            "order": 7,
+            "type": "true_false",
+            "difficulty": "elementary",
+            "title": "Prepositions: True or false?",
+            "questions": [
+              { "id": "L5T7Q1", "statement": "'In' is used for a specific point, like a bus stop.", "answer": false, "explanation": "'At' is used for specific points. 'In' is for enclosed spaces." },
+              { "id": "L5T7Q2", "statement": "'Between' means in the middle of two things.", "answer": true },
+              { "id": "L5T7Q3", "statement": "You say: 'I live at a house.'", "answer": false, "explanation": "Correct: 'I live in a house.'" }
+            ]
+          },
+          {
+            "id": "L5T8",
+            "order": 8,
+            "type": "speaking_prompt",
+            "difficulty": "elementary",
+            "title": "Describe your neighbourhood",
+            "instruction": "Describe where you live using at least 4 place words and 3 prepositions.",
+            "prompts": [
+              "Where do you live?",
+              "What places are near your home?",
+              "What is next to or between places near you?"
+            ],
+            "audio_input": true
+          },
+          {
+            "id": "L5T9",
+            "order": 9,
+            "type": "reorder_sentence",
+            "difficulty": "elementary",
+            "title": "Build the location sentence",
+            "questions": [
+              { "id": "L5T9Q1", "words": ["is", "park", "The", "the", "near", "school"], "correct": "The school is near the park" },
+              { "id": "L5T9Q2", "words": ["between", "and", "The", "bank", "is", "library", "the", "the", "restaurant"], "correct": "The bank is between the library and the restaurant" }
+            ]
+          },
+          {
+            "id": "L5T10",
+            "order": 10,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Correct the preposition",
+            "questions": [
+              { "id": "L5T10Q1", "sentence": "I am in the bus stop.", "correction": "I am at the bus stop." },
+              { "id": "L5T10Q2", "sentence": "She lives at a big house.", "correction": "She lives in a big house." },
+              { "id": "L5T10Q3", "sentence": "The café is next the bank.", "correction": "The café is next to the bank." }
+            ]
+          },
+          {
+            "id": "L5T11",
+            "order": 11,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Describe your ideal neighbourhood",
+            "instruction": "Write 5–7 sentences describing your ideal neighbourhood. Use place vocabulary and prepositions.",
+            "min_words": 40,
+            "max_words": 100,
+            "text_input": true
+          },
+          {
+            "id": "L5T12",
+            "order": 12,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Give directions",
+            "scenario": "A tourist stops you on the street and asks for help finding the library. Use prepositions and place words to give clear directions.",
+            "characters": [
+              { "name": "Tourist", "line": "Excuse me! Could you help me? I'm looking for the library. I'm new here." }
+            ],
+            "checklist": [
+              "Used 'next to', 'near', or 'between'",
+              "Mentioned at least 2 landmarks",
+              "Directions are clear and complete"
+            ],
+            "audio_input": true
+          },
+          {
+            "id": "L5T13",
+            "order": 13,
+            "type": "reading_comprehension",
+            "difficulty": "advanced",
+            "title": "Read: A description of a town",
+            "passage": "I live in a small but lively town called Greenfield. My house is on Oak Street, near the central park. There is a supermarket next to my house, which is very convenient. The library is between the town hall and the bank, just five minutes on foot. There is also a good hospital at the north end of the town. I love living here because everything is close.",
+            "questions": [
+              { "id": "L5T13Q1", "question": "What street does the writer live on?", "answer": "Oak Street." },
+              { "id": "L5T13Q2", "question": "What is between the town hall and the bank?", "answer": "The library." },
+              { "id": "L5T13Q3", "question": "Where is the hospital?", "answer": "At the north end of the town." },
+              { "id": "L5T13Q4", "question": "Why does the writer like the town?", "answer": "Because everything is close / convenient." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L6",
+        "order": 6,
+        "title": "My day — daily routines",
+        "tags": ["vocabulary", "grammar", "speaking"],
+        "description": "Learn to talk about your daily routine using time expressions and the simple present tense.",
+        "tasks": [
+          {
+            "id": "L6T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Daily routine vocabulary",
+            "content": {
+              "cards": [
+                { "front": "wake up", "back": "Stop sleeping and open your eyes." },
+                { "front": "get up", "back": "Get out of bed." },
+                { "front": "brush teeth", "back": "Clean your teeth with a toothbrush." },
+                { "front": "have breakfast", "back": "Eat the first meal of the day." },
+                { "front": "go to work/school", "back": "Leave home to get to work or school." },
+                { "front": "have lunch", "back": "Eat the midday meal." },
+                { "front": "come home", "back": "Return to your house." },
+                { "front": "have dinner", "back": "Eat the evening meal." },
+                { "front": "watch TV", "back": "Watch television." },
+                { "front": "go to bed", "back": "Go to sleep." }
+              ]
+            }
+          },
+          {
+            "id": "L6T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: Simple present tense for routines",
+            "content": {
+              "pattern": "I/You/We/They + verb | He/She/It + verb+s",
+              "examples": [
+                "I wake up at 7 AM.",
+                "She brushes her teeth every morning.",
+                "He goes to work at 9 AM.",
+                "They have dinner at 7 PM.",
+                "We watch TV in the evening."
+              ],
+              "note": "Add -s or -es to the verb when the subject is he, she, or it."
+            }
+          },
+          {
+            "id": "L6T3",
+            "order": 3,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Time expressions",
+            "content": {
+              "cards": [
+                { "front": "in the morning", "back": "Time: before noon." },
+                { "front": "in the afternoon", "back": "Time: noon to 6 PM." },
+                { "front": "in the evening", "back": "Time: after 6 PM." },
+                { "front": "at night", "back": "Time: late at night." },
+                { "front": "every day", "back": "Happening daily." },
+                { "front": "always", "back": "100% of the time." },
+                { "front": "usually", "back": "Most of the time." },
+                { "front": "sometimes", "back": "Occasionally." },
+                { "front": "never", "back": "0% of the time." }
+              ]
+            }
+          },
+          {
+            "id": "L6T4",
+            "order": 4,
+            "type": "reorder_sentence",
+            "difficulty": "beginner",
+            "title": "Put the routine in order",
+            "instruction": "Put the daily activities in a logical order from morning to night.",
+            "items": [
+              { "activity": "have dinner", "correct_order": 6 },
+              { "activity": "wake up", "correct_order": 1 },
+              { "activity": "have breakfast", "correct_order": 3 },
+              { "activity": "brush teeth", "correct_order": 2 },
+              { "activity": "go to bed", "correct_order": 7 },
+              { "activity": "come home", "correct_order": 5 },
+              { "activity": "go to work", "correct_order": 4 }
+            ]
+          },
+          {
+            "id": "L6T5",
+            "order": 5,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the correct verb form",
+            "questions": [
+              {
+                "id": "L6T5Q1",
+                "prompt": "She ___ up at 6 AM every day.",
+                "options": ["wake", "wakes", "waking", "waked"],
+                "correct": "wakes"
+              },
+              {
+                "id": "L6T5Q2",
+                "prompt": "We ___ dinner at 7 PM.",
+                "options": ["has", "have", "haves", "having"],
+                "correct": "have"
+              },
+              {
+                "id": "L6T5Q3",
+                "prompt": "He ___ to school by bus.",
+                "options": ["go", "gone", "goes", "going"],
+                "correct": "goes"
+              }
+            ]
+          },
+          {
+            "id": "L6T6",
+            "order": 6,
+            "type": "fill_in_blank",
+            "difficulty": "elementary",
+            "title": "Complete the routine",
+            "questions": [
+              { "id": "L6T6Q1", "sentence": "I wake up ___ 7 o'clock in the morning.", "answer": "at" },
+              { "id": "L6T6Q2", "sentence": "She ___ her teeth after breakfast.", "answer": "brushes" },
+              { "id": "L6T6Q3", "sentence": "They ___ never late for work.", "answer": "are" },
+              { "id": "L6T6Q4", "sentence": "He usually ___ TV in the evening.", "answer": "watches" }
+            ]
+          },
+          {
+            "id": "L6T7",
+            "order": 7,
+            "type": "match_pairs",
+            "difficulty": "elementary",
+            "title": "Time and activity",
+            "pairs": [
+              { "left": "7:00 AM", "right": "have breakfast" },
+              { "left": "12:30 PM", "right": "have lunch" },
+              { "left": "6:00 PM", "right": "come home" },
+              { "left": "10:30 PM", "right": "go to bed" }
+            ]
+          },
+          {
+            "id": "L6T8",
+            "order": 8,
+            "type": "learn_dialogue",
+            "difficulty": "elementary",
+            "title": "Read a daily routine story",
+            "dialogue": [
+              { "speaker": "Narrator", "line": "Maria wakes up at 6:30 AM every day." },
+              { "speaker": "Narrator", "line": "She brushes her teeth and has breakfast at 7 AM." },
+              { "speaker": "Narrator", "line": "She goes to work at 8 AM by train." },
+              { "speaker": "Narrator", "line": "She has lunch at 1 PM with her colleagues." },
+              { "speaker": "Narrator", "line": "She comes home at 6 PM and cooks dinner." },
+              { "speaker": "Narrator", "line": "She watches TV for an hour and goes to bed at 10 PM." }
+            ]
+          },
+          {
+            "id": "L6T9",
+            "order": 9,
+            "type": "true_false",
+            "difficulty": "elementary",
+            "title": "About Maria's routine",
+            "instruction": "Based on the story above, is the statement true or false?",
+            "questions": [
+              { "id": "L6T9Q1", "statement": "Maria wakes up at 7:00 AM.", "answer": false, "explanation": "She wakes up at 6:30 AM." },
+              { "id": "L6T9Q2", "statement": "She goes to work by train.", "answer": true },
+              { "id": "L6T9Q3", "statement": "She goes to bed at 11 PM.", "answer": false, "explanation": "She goes to bed at 10 PM." }
+            ]
+          },
+          {
+            "id": "L6T10",
+            "order": 10,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Correct the sentence",
+            "questions": [
+              { "id": "L6T10Q1", "sentence": "He wake up at 8 AM.", "correction": "He wakes up at 8 AM.", "explanation": "Add -s for he/she/it." },
+              { "id": "L6T10Q2", "sentence": "She never is late.", "correction": "She is never late.", "explanation": "Adverbs of frequency go before the main verb but after 'to be'." },
+              { "id": "L6T10Q3", "sentence": "We has dinner at 6.", "correction": "We have dinner at 6.", "explanation": "Use 'have' with we/I/you/they." }
+            ]
+          },
+          {
+            "id": "L6T11",
+            "order": 11,
+            "type": "speaking_prompt",
+            "difficulty": "intermediate",
+            "title": "Describe your daily routine",
+            "instruction": "Talk about your typical weekday from morning to night. Use at least 6 routine verbs and 3 time expressions.",
+            "audio_input": true,
+            "time_limit_seconds": 90
+          },
+          {
+            "id": "L6T12",
+            "order": 12,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Write about your routine",
+            "instruction": "Write a paragraph about your daily routine (6–8 sentences). Include times and frequency adverbs.",
+            "min_words": 50,
+            "max_words": 110,
+            "text_input": true
+          },
+          {
+            "id": "L6T13",
+            "order": 13,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: My new routine",
+            "scenario": "You have just moved to a new city and started a new job. A friend calls to ask what your new daily life is like.",
+            "characters": [
+              { "name": "Friend", "line": "Hey! So, what's your new routine like? I'm so curious — how's the new job and new city?" }
+            ],
+            "checklist": [
+              "Used simple present tense correctly",
+              "Used he/she/it -s verb form at least once (while describing a colleague etc.)",
+              "Used at least 3 frequency adverbs (always, usually, sometimes, never)",
+              "Mentioned morning, afternoon, and evening activities"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 120
+          },
+          {
+            "id": "L6T14",
+            "order": 14,
+            "type": "reading_comprehension",
+            "difficulty": "advanced",
+            "title": "Read and compare routines",
+            "passage": "Jake is a student. He usually wakes up at 8 AM. He never eats breakfast — he just drinks coffee. He goes to university at 9 AM. He has lunch at 2 PM and sometimes does sport in the afternoon. He always studies in the evening and goes to bed at midnight. His flatmate, Leo, is different. Leo wakes up at 6 AM and always has a big breakfast. He goes to work at 7:30 AM and comes home at 5 PM. Leo always goes to bed before 10 PM.",
+            "questions": [
+              { "id": "L6T14Q1", "question": "What does Jake drink instead of eating breakfast?", "answer": "Coffee." },
+              { "id": "L6T14Q2", "question": "When does Jake study?", "answer": "In the evening." },
+              { "id": "L6T14Q3", "question": "What is different about Leo's morning routine compared to Jake's?", "answer": "Leo wakes up earlier and always has breakfast; Jake doesn't eat breakfast." },
+              { "id": "L6T14Q4", "question": "Who goes to bed later — Jake or Leo?", "answer": "Jake (midnight vs before 10 PM)." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L7",
+        "order": 7,
+        "title": "What I like — hobbies & preferences",
+        "tags": ["vocabulary", "grammar", "exercise"],
+        "description": "Learn to talk about hobbies, likes, and dislikes using 'like', 'love', 'hate', and 'enjoy'.",
+        "tasks": [
+          {
+            "id": "L7T1",
+            "order": 1,
+            "type": "learn_flashcard",
+            "difficulty": "beginner",
+            "title": "Hobbies vocabulary",
+            "content": {
+              "cards": [
+                { "front": "reading", "back": "Reading books, magazines, or articles." },
+                { "front": "cooking", "back": "Preparing food." },
+                { "front": "swimming", "back": "Moving through water." },
+                { "front": "playing football", "back": "Playing the sport of football/soccer." },
+                { "front": "watching movies", "back": "Viewing films at home or cinema." },
+                { "front": "listening to music", "back": "Enjoying music through headphones or speakers." },
+                { "front": "travelling", "back": "Going to new places." },
+                { "front": "painting", "back": "Creating art with paint." },
+                { "front": "cycling", "back": "Riding a bicycle." },
+                { "front": "gardening", "back": "Growing plants and flowers." },
+                { "front": "dancing", "back": "Moving to music." },
+                { "front": "gaming", "back": "Playing video games." }
+              ]
+            }
+          },
+          {
+            "id": "L7T2",
+            "order": 2,
+            "type": "learn_grammar",
+            "difficulty": "beginner",
+            "title": "Grammar: like / love / hate / enjoy + -ing",
+            "content": {
+              "pattern": "Subject + like/love/hate/enjoy + verb-ing",
+              "examples": [
+                "I love swimming.",
+                "She likes reading books.",
+                "He hates cooking.",
+                "They enjoy travelling.",
+                "We don't like getting up early."
+              ],
+              "scale": [
+                { "word": "love", "meaning": "very strong positive feeling" },
+                { "word": "like", "meaning": "positive feeling" },
+                { "word": "don't mind", "meaning": "neutral — it's OK" },
+                { "word": "dislike", "meaning": "negative feeling" },
+                { "word": "hate", "meaning": "very strong negative feeling" }
+              ]
+            }
+          },
+          {
+            "id": "L7T3",
+            "order": 3,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Choose the correct form",
+            "questions": [
+              {
+                "id": "L7T3Q1",
+                "prompt": "She loves ___ in the sea.",
+                "options": ["swim", "to swim", "swimming", "swims"],
+                "correct": "swimming",
+                "explanation": "After 'love/like/hate/enjoy', use verb+ing."
+              },
+              {
+                "id": "L7T3Q2",
+                "prompt": "I don't like ___ up early.",
+                "options": ["getting", "get", "gets", "to getting"],
+                "correct": "getting",
+                "explanation": "After 'don't like', use verb+ing."
+              }
+            ]
+          },
+          {
+            "id": "L7T4",
+            "order": 4,
+            "type": "fill_in_blank",
+            "difficulty": "beginner",
+            "title": "Complete with -ing",
+            "questions": [
+              { "id": "L7T4Q1", "sentence": "He enjoys ___ (cook) Italian food.", "answer": "cooking" },
+              { "id": "L7T4Q2", "sentence": "They love ___ (travel) to new countries.", "answer": "travelling" },
+              { "id": "L7T4Q3", "sentence": "I hate ___ (wait) in a queue.", "answer": "waiting" },
+              { "id": "L7T4Q4", "sentence": "She likes ___ (listen) to jazz music.", "answer": "listening" }
+            ]
+          },
+          {
+            "id": "L7T5",
+            "order": 5,
+            "type": "match_pairs",
+            "difficulty": "beginner",
+            "title": "Match hobby to category",
+            "pairs": [
+              { "left": "swimming", "right": "sport" },
+              { "left": "painting", "right": "art" },
+              { "left": "cooking", "right": "home activity" },
+              { "left": "travelling", "right": "outdoor activity" }
+            ]
+          },
+          {
+            "id": "L7T6",
+            "order": 6,
+            "type": "learn_dialogue",
+            "difficulty": "elementary",
+            "title": "Talking about hobbies",
+            "dialogue": [
+              { "speaker": "Ali", "line": "What do you like doing in your free time?" },
+              { "speaker": "Sophie", "line": "I love reading and cooking. What about you?" },
+              { "speaker": "Ali", "line": "I enjoy playing football and listening to music. Do you like sport?" },
+              { "speaker": "Sophie", "line": "I don't really like sport, but I don't mind cycling." },
+              { "speaker": "Ali", "line": "That's cool! I hate cycling — it's too tiring!" }
+            ]
+          },
+          {
+            "id": "L7T7",
+            "order": 7,
+            "type": "true_false",
+            "difficulty": "elementary",
+            "title": "About Ali and Sophie",
+            "questions": [
+              { "id": "L7T7Q1", "statement": "Sophie loves cooking.", "answer": true },
+              { "id": "L7T7Q2", "statement": "Ali dislikes music.", "answer": false },
+              { "id": "L7T7Q3", "statement": "Sophie hates cycling.", "answer": false, "explanation": "She doesn't mind cycling — neutral, not hate." }
+            ]
+          },
+          {
+            "id": "L7T8",
+            "order": 8,
+            "type": "speaking_prompt",
+            "difficulty": "elementary",
+            "title": "Talk about your hobbies",
+            "instruction": "Answer these questions about your hobbies. Record your response.",
+            "prompts": [
+              "What do you love doing in your free time?",
+              "What do you hate doing?",
+              "Is there something you don't mind doing but don't love?"
+            ],
+            "audio_input": true
+          },
+          {
+            "id": "L7T9",
+            "order": 9,
+            "type": "error_correction",
+            "difficulty": "intermediate",
+            "title": "Correct the mistake",
+            "questions": [
+              { "id": "L7T9Q1", "sentence": "She likes play tennis.", "correction": "She likes playing tennis." },
+              { "id": "L7T9Q2", "sentence": "I love to cooking pasta.", "correction": "I love cooking pasta." },
+              { "id": "L7T9Q3", "sentence": "He don't enjoy reading.", "correction": "He doesn't enjoy reading.", "explanation": "Use 'doesn't' for he/she/it." }
+            ]
+          },
+          {
+            "id": "L7T10",
+            "order": 10,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Describe a hobby in detail",
+            "instruction": "Choose one hobby you love. Write 4–6 sentences explaining: what it is, when you do it, why you love it, and who you do it with.",
+            "text_input": true,
+            "min_words": 40,
+            "max_words": 90
+          },
+          {
+            "id": "L7T11",
+            "order": 11,
+            "type": "reading_comprehension",
+            "difficulty": "intermediate",
+            "title": "Read: My hobbies",
+            "passage": "My name is Pablo. I have lots of hobbies. I love cooking — I especially enjoy making Spanish food. I like watching films on weekends, but I don't like horror movies. I also enjoy running in the mornings. It helps me feel energetic. My sister and I both like gardening. We grow vegetables and flowers. My brother hates gardening — he prefers gaming. What do you like doing?",
+            "questions": [
+              { "id": "L7T11Q1", "question": "What type of cooking does Pablo enjoy?", "answer": "Spanish food." },
+              { "id": "L7T11Q2", "question": "What type of movies doesn't Pablo like?", "answer": "Horror movies." },
+              { "id": "L7T11Q3", "question": "What do Pablo and his sister grow?", "answer": "Vegetables and flowers." },
+              { "id": "L7T11Q4", "question": "What does Pablo's brother prefer?", "answer": "Gaming." }
+            ]
+          },
+          {
+            "id": "L7T12",
+            "order": 12,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Roleplay: Finding a hobby partner",
+            "scenario": "You join an online community for people with shared interests. You are chatting with a new member to see if you have hobbies in common.",
+            "characters": [
+              { "name": "NewMember", "line": "Hi! I'm looking for someone to share hobbies with. What are you into?" }
+            ],
+            "checklist": [
+              "Used love/like/enjoy/hate/don't mind at least once each",
+              "Used verb+ing correctly throughout",
+              "Asked the other person about their hobbies",
+              "Expressed agreement or disagreement naturally"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 120
+          },
+          {
+            "id": "L7T13",
+            "order": 13,
+            "type": "writing",
+            "difficulty": "advanced",
+            "title": "Write a hobby profile",
+            "instruction": "Write a short profile (80–120 words) for a hobby-sharing app. Include: hobbies you love, hobbies you like, one thing you don't mind, and one hobby you hate. Explain why for each.",
+            "text_input": true,
+            "min_words": 80,
+            "max_words": 120
+          }
+        ]
+      },
+      {
+        "id": "L8",
+        "order": 8,
+        "title": "Unit 1 review — putting it all together",
+        "tags": ["speaking", "exercise"],
+        "description": "A comprehensive review and practice of all Unit 1 topics.",
+        "tasks": [
+          {
+            "id": "L8T1",
+            "order": 1,
+            "type": "multiple_choice",
+            "difficulty": "beginner",
+            "title": "Mixed vocabulary quiz",
+            "instruction": "Choose the correct answer.",
+            "questions": [
+              {
+                "id": "L8T1Q1",
+                "prompt": "You meet your boss at 9 AM. What do you say?",
+                "options": ["Good night!", "Good morning!", "Goodbye!", "See you!"],
+                "correct": "Good morning!"
+              },
+              {
+                "id": "L8T1Q2",
+                "prompt": "My father's sister is my ___.",
+                "options": ["grandmother", "cousin", "aunt", "sister"],
+                "correct": "aunt"
+              },
+              {
+                "id": "L8T1Q3",
+                "prompt": "The hospital is ___ the bank and the library.",
+                "options": ["next", "near", "between", "in"],
+                "correct": "between"
+              },
+              {
+                "id": "L8T1Q4",
+                "prompt": "She ___ up at 7 AM every day.",
+                "options": ["wake", "wakes", "waking", "waked"],
+                "correct": "wakes"
+              },
+              {
+                "id": "L8T1Q5",
+                "prompt": "I love ___ Italian food.",
+                "options": ["cook", "to cooking", "cooked", "cooking"],
+                "correct": "cooking"
+              }
+            ]
+          },
+          {
+            "id": "L8T2",
+            "order": 2,
+            "type": "fill_in_blank",
+            "difficulty": "beginner",
+            "title": "Mixed grammar fill-in",
+            "questions": [
+              { "id": "L8T2Q1", "sentence": "My name ___ Kenji. I ___ from Japan.", "answers": ["is", "am"] },
+              { "id": "L8T2Q2", "sentence": "___ is your teacher? — Mr. Johnson.", "answer": "Who" },
+              { "id": "L8T2Q3", "sentence": "They ___ their dinner at 8 PM.", "answer": "have" },
+              { "id": "L8T2Q4", "sentence": "I live ___ a small flat near the park.", "answer": "in" }
+            ]
+          },
+          {
+            "id": "L8T3",
+            "order": 3,
+            "type": "match_pairs",
+            "difficulty": "elementary",
+            "title": "Match: All topics",
+            "pairs": [
+              { "left": "Good afternoon", "right": "greeting used at 2 PM" },
+              { "left": "my cousin", "right": "my uncle's child" },
+              { "left": "at the bus stop", "right": "specific location" },
+              { "left": "She wakes up", "right": "3rd person singular routine" },
+              { "left": "I enjoy dancing", "right": "hobby + -ing" }
+            ]
+          },
+          {
+            "id": "L8T4",
+            "order": 4,
+            "type": "error_correction",
+            "difficulty": "elementary",
+            "title": "Find all the mistakes",
+            "instruction": "Each sentence has one error. Find and correct it.",
+            "questions": [
+              { "id": "L8T4Q1", "sentence": "Good morning! I am name Carlos.", "correction": "Good morning! My name is Carlos." },
+              { "id": "L8T4Q2", "sentence": "He don't like waking up early.", "correction": "He doesn't like waking up early." },
+              { "id": "L8T4Q3", "sentence": "She live in London.", "correction": "She lives in London." },
+              { "id": "L8T4Q4", "sentence": "The café is next the bank.", "correction": "The café is next to the bank." },
+              { "id": "L8T4Q5", "sentence": "What is your age? I am have 25 years.", "correction": "I am 25 years old." }
+            ]
+          },
+          {
+            "id": "L8T5",
+            "order": 5,
+            "type": "reading_comprehension",
+            "difficulty": "intermediate",
+            "title": "Read: A day in the life",
+            "passage": "Hello! My name is Yuki. I am 24 years old and I am from Tokyo, Japan. I live in a small apartment near the train station. My flat is between a supermarket and a park, which is very convenient. I am a graphic designer. I usually wake up at 7:30 AM, have breakfast, and go to work at 9 AM. I always have lunch with my colleague, Hana. In the evenings, I like cooking and watching films. I love Japanese food, but I also enjoy making Italian pasta. My hobby is photography — I love taking pictures of the city. On weekends, I usually go cycling with my brother and sometimes visit my grandparents.",
+            "questions": [
+              { "id": "L8T5Q1", "question": "Where does Yuki live?", "answer": "In a small apartment near the train station in Tokyo." },
+              { "id": "L8T5Q2", "question": "What is Yuki's job?", "answer": "She is a graphic designer." },
+              { "id": "L8T5Q3", "question": "What are Yuki's two cooking interests?", "answer": "Japanese food and Italian pasta." },
+              { "id": "L8T5Q4", "question": "What does Yuki do on weekends?", "answer": "Goes cycling with her brother and visits her grandparents." },
+              { "id": "L8T5Q5", "question": "What is Yuki's main hobby?", "answer": "Photography." }
+            ]
+          },
+          {
+            "id": "L8T6",
+            "order": 6,
+            "type": "writing",
+            "difficulty": "intermediate",
+            "title": "Write your own 'Day in the Life'",
+            "instruction": "Write a paragraph like Yuki's (100–130 words) about yourself, covering: greeting + name + age + nationality, your home and its location, your job or studies, your daily routine, and your hobbies.",
+            "text_input": true,
+            "min_words": 100,
+            "max_words": 130
+          },
+          {
+            "id": "L8T7",
+            "order": 7,
+            "type": "speaking_prompt",
+            "difficulty": "intermediate",
+            "title": "Unit 1 speaking summary",
+            "instruction": "Record a 2-minute talk covering all Unit 1 topics: introduce yourself, describe your family, your home location, your daily routine, and your hobbies.",
+            "checklist": [
+              "Greeted the listener",
+              "Introduced yourself (name, age, nationality, job)",
+              "Described your family",
+              "Described where you live",
+              "Described your daily routine",
+              "Mentioned your hobbies"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 120
+          },
+          {
+            "id": "L8T8",
+            "order": 8,
+            "type": "speaking_roleplay",
+            "difficulty": "advanced",
+            "title": "Final roleplay: Full conversation",
+            "scenario": "You meet a new student from another country at your English language school. Have a full natural conversation covering all Unit 1 topics.",
+            "characters": [
+              { "name": "NewStudent", "line": "Hi! I just joined this class today. I don't know anyone yet. Is it OK if we chat for a bit?" }
+            ],
+            "checklist": [
+              "Used 3+ greeting expressions",
+              "Introduced yourself fully",
+              "Asked at least 4 questions about the other person",
+              "Talked about your family",
+              "Described where you live",
+              "Shared your daily routine",
+              "Discussed hobbies — both yours and asked about theirs",
+              "Said a proper farewell"
+            ],
+            "audio_input": true,
+            "time_limit_seconds": 180
+          },
+          {
+            "id": "L8T9",
+            "order": 9,
+            "type": "unit_quiz",
+            "difficulty": "advanced",
+            "title": "Unit 1 final quiz",
+            "instruction": "Answer all 10 questions to complete Unit 1.",
+            "questions": [
+              {
+                "id": "L8T9Q1",
+                "prompt": "Choose the correct sentence: introducing yourself.",
+                "options": ["I am name Sara.", "My name are Sara.", "My name is Sara.", "I name Sara."],
+                "correct": "My name is Sara."
+              },
+              {
+                "id": "L8T9Q2",
+                "prompt": "Which is a farewell expression?",
+                "options": ["Good morning", "Nice to meet you", "See you later", "What is your name?"],
+                "correct": "See you later"
+              },
+              {
+                "id": "L8T9Q3",
+                "prompt": "My mother's father is my ___.",
+                "options": ["uncle", "grandfather", "cousin", "brother"],
+                "correct": "grandfather"
+              },
+              {
+                "id": "L8T9Q4",
+                "prompt": "___ is she from? — She is from Brazil.",
+                "options": ["What", "Who", "When", "Where"],
+                "correct": "Where"
+              },
+              {
+                "id": "L8T9Q5",
+                "prompt": "I live ___ an apartment near the school.",
+                "options": ["at", "on", "in", "next"],
+                "correct": "in"
+              },
+              {
+                "id": "L8T9Q6",
+                "prompt": "He ___ up at 6 AM every day.",
+                "options": ["wake", "wakes", "waking", "woke"],
+                "correct": "wakes"
+              },
+              {
+                "id": "L8T9Q7",
+                "prompt": "She always ___ (have) breakfast before work.",
+                "options": ["having", "have", "has", "haves"],
+                "correct": "has"
+              },
+              {
+                "id": "L8T9Q8",
+                "prompt": "I love ___ in the mountains.",
+                "options": ["hike", "to hiking", "hikes", "hiking"],
+                "correct": "hiking"
+              },
+              {
+                "id": "L8T9Q9",
+                "prompt": "Correct the sentence: 'She don't like cooking.'",
+                "options": ["She doesn't likes cooking.", "She doesn't like cooking.", "She don't likes cooking.", "She not like cooking."],
+                "correct": "She doesn't like cooking."
+              },
+              {
+                "id": "L8T9Q10",
+                "prompt": "The bank is ___ the library and the park.",
+                "options": ["next", "near", "between", "in"],
+                "correct": "between"
+              }
+            ],
+            "pass_score": 7
+          },
+          {
+            "id": "L8T10",
+            "order": 10,
+            "type": "unit_completion",
+            "difficulty": "advanced",
+            "title": "Unit 1 complete!",
+            "message": "Congratulations! You have completed Unit 1 — First Steps in English. You can now greet people, introduce yourself, talk about your family, describe where you live, explain your daily routine, and discuss hobbies. You're ready for Unit 2!",
+            "skills_unlocked": [
+              "Basic greetings and farewells",
+              "Self-introduction",
+              "Asking about others",
+              "Family vocabulary and possessives",
+              "Places and prepositions",
+              "Daily routine — simple present",
+              "Hobbies — like/love/hate + -ing"
+            ],
+            "next_unit": "A1-U2"
+          }
+        ]
+      }
+    ]
+  }
+}

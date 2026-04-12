@@ -1,0 +1,301 @@
+{
+  "lesson_id": "a1_unit1_lesson04",
+  "unit": 1,
+  "lesson_number": 4,
+  "level": "A1",
+  "title": "People around me — family & friends",
+  "description": "Learn vocabulary for family members and how to describe people using adjectives.",
+  "estimated_minutes": 20,
+  "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t04_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Family members",
+      "content": {
+        "explanation": "These are the most important words for describing your family.",
+        "items": [
+          { "phrase": "mother / mom", "note": "Your female parent" },
+          { "phrase": "father / dad", "note": "Your male parent" },
+          { "phrase": "parents", "note": "Mother and father together" },
+          { "phrase": "brother", "note": "Male sibling" },
+          { "phrase": "sister", "note": "Female sibling" },
+          { "phrase": "husband", "note": "Your male partner (married)" },
+          { "phrase": "wife", "note": "Your female partner (married)" },
+          { "phrase": "son", "note": "Your male child" },
+          { "phrase": "daughter", "note": "Your female child" },
+          { "phrase": "grandmother / grandma", "note": "Parent's mother" },
+          { "phrase": "grandfather / grandpa", "note": "Parent's father" }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_01b",
+      "order": 2,
+      "type": "family_tree",
+      "category": "vocabulary",
+      "title": "Family Tree — Who is who? 🌳",
+      "content": {
+        "explanation": "Look at this family tree. See how everyone is connected! Click 'Continue' when you understand the relationships.",
+        "members": [
+          { "name": "Grandpa",   "role": "grandfather", "relation": "father's father", "emoji": "👴", "generation": 0 },
+          { "name": "Grandma",   "role": "grandmother", "relation": "father's mother", "emoji": "👵", "generation": 0 },
+          { "name": "Dad",       "role": "father",       "relation": "male parent",     "emoji": "👨", "generation": 1 },
+          { "name": "Mum",       "role": "mother",       "relation": "female parent",   "emoji": "👩", "generation": 1 },
+          { "name": "Bro",       "role": "brother",      "relation": "male sibling",    "emoji": "🧑", "generation": 2 },
+          { "name": "YOU",       "role": "son/daughter", "relation": "",                "emoji": "🌟", "generation": 2, "isYou": true },
+          { "name": "Sis",       "role": "sister",       "relation": "female sibling",  "emoji": "👧", "generation": 2 }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Describing people — adjectives",
+      "content": {
+        "explanation": "Use these adjectives to describe people around you.",
+        "items": [
+          { "phrase": "tall / short", "note": "Describing height" },
+          { "phrase": "old / young", "note": "Describing age" },
+          { "phrase": "friendly / kind", "note": "Describing personality" },
+          { "phrase": "smart / intelligent", "note": "Describing intelligence" },
+          { "phrase": "funny / serious", "note": "Describing personality" },
+          { "phrase": "busy / hardworking", "note": "Describing work style" }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: Possessive adjectives",
+      "content": {
+        "explanation": "Possessive adjectives show who something belongs to.",
+        "table": [
+          { "subject": "I", "possessive": "my", "example": "My mother is a teacher." },
+          { "subject": "You", "possessive": "your", "example": "Your brother is tall." },
+          { "subject": "He", "possessive": "his", "example": "His father is kind." },
+          { "subject": "She", "possessive": "her", "example": "Her sister is young." },
+          { "subject": "We", "possessive": "our", "example": "Our parents are friendly." },
+          { "subject": "They", "possessive": "their", "example": "Their grandmother is old." }
+        ],
+        "rule": "Possessive adjective + noun: my sister, his father, her mother"
+      }
+    },
+    {
+      "task_id": "t04_04",
+      "order": 4,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Describing with 'to be' + adjective",
+      "content": {
+        "explanation": "Use 'to be' + adjective to describe a person.",
+        "examples": [
+          { "sentence": "My mother is kind.", "structure": "Subject + is/are + adjective" },
+          { "sentence": "My brothers are tall.", "structure": "Subject + is/are + adjective" },
+          { "sentence": "Her father is very busy.", "structure": "Subject + is/are + very + adjective" },
+          { "sentence": "His grandma is old but funny.", "structure": "Linking two adjectives with 'but'" }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_05",
+      "order": 5,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these sentences describing family members.",
+        "phrases": [
+          { "text": "My mother is very kind.", "audio_key": "my_mother_is_kind" },
+          { "text": "His brother is tall and funny.", "audio_key": "his_brother_is_tall" },
+          { "text": "Her grandmother is old but friendly.", "audio_key": "grandmother_friendly" },
+          { "text": "Our parents are hardworking.", "audio_key": "parents_hardworking" }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Family vocabulary",
+      "content": {
+        "question": "What do you call your father's mother?",
+        "options": ["sister", "aunt", "grandmother", "daughter"],
+        "correct_index": 2,
+        "explanation": "Your father's or mother's mother is your grandmother."
+      }
+    },
+    {
+      "task_id": "t04_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Possessive adjective",
+      "content": {
+        "question": "Complete: 'She has a brother. ___ brother is a doctor.'",
+        "options": ["My", "His", "Her", "Our"],
+        "correct_index": 2,
+        "explanation": "'She' → 'her'. We use 'her' for a female person."
+      }
+    },
+    {
+      "task_id": "t04_08",
+      "order": 8,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Possessive adjective",
+      "content": {
+        "question": "Complete: 'I have two sisters. ___ sisters are very funny.'",
+        "options": ["His", "Her", "My", "Their"],
+        "correct_index": 2,
+        "explanation": "The speaker is talking about their own sisters, so we use 'My'."
+      }
+    },
+    {
+      "task_id": "t04_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — possessive",
+      "content": {
+        "sentence": "He has a wife. _____ wife is a nurse.",
+        "options": ["My", "His", "Her", "Their"],
+        "correct": "His",
+        "explanation": "'He' → 'His'. We use 'His' for a male person."
+      }
+    },
+    {
+      "task_id": "t04_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the correct family word",
+      "content": {
+        "sentence": "My father's sister is my _____.",
+        "options": ["grandmother", "aunt", "daughter", "wife"],
+        "correct": "aunt",
+        "explanation": "Your father's or mother's sister is your aunt."
+      }
+    },
+    {
+      "task_id": "t04_11",
+      "order": 11,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — adjective sentence",
+      "content": {
+        "sentence": "My brother is very _____ and he makes everyone laugh.",
+        "options": ["tall", "funny", "busy", "old"],
+        "correct": "funny",
+        "explanation": "'Funny' means someone who makes people laugh — matches 'makes everyone laugh'."
+      }
+    },
+    {
+      "task_id": "t04_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange the words to make a correct sentence.",
+        "words": ["is", "sister", "My", "tall", "very"],
+        "correct_sentence": "My sister is very tall.",
+        "explanation": "Structure: My + [noun] + is + very + [adjective]."
+      }
+    },
+    {
+      "task_id": "t04_13",
+      "order": 13,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match the family word",
+      "content": {
+        "instruction": "Match each description with the correct family word.",
+        "pairs": [
+          { "prompt": "Your male parent", "answer": "father" },
+          { "prompt": "Your female sibling", "answer": "sister" },
+          { "prompt": "Your female child", "answer": "daughter" },
+          { "prompt": "Your male partner (married)", "answer": "husband" },
+          { "prompt": "Your parent's father", "answer": "grandfather" }
+        ]
+      }
+    },
+    {
+      "task_id": "t04_14",
+      "order": 14,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct?",
+        "wrong_sentence": "She has a brother. His brother is a teacher.",
+        "options": [
+          "She has a brother. His brother is a teacher.",
+          "She has a brother. Her brother is a teacher.",
+          "She has a brother. My brother is a teacher.",
+          "She has a brother. Our brother is a teacher."
+        ],
+        "correct_index": 1,
+        "explanation": "We are talking about 'She', so we use 'Her brother', not 'His'."
+      }
+    },
+    {
+      "task_id": "t04_15",
+      "order": 15,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You are showing a photo of your family to a new friend.",
+        "question": "You point to your mother. What do you say?",
+        "options": [
+          "This is her mother. She is kind.",
+          "This is my mother. She is kind.",
+          "This is my mother. He is kind.",
+          "This is our mother. Their is kind."
+        ],
+        "correct_index": 1,
+        "explanation": "Use 'my' (I am speaking about my own mother) and 'She' (mother is female)."
+      }
+    },
+    {
+      "task_id": "t04_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Talk about your family",
+      "content": {
+        "instruction": "Describe 2–3 people in your family. Say their relationship, their job, and one adjective.",
+        "prompt": "Tell me about someone in your family.",
+        "example_response": "My mother is a teacher. She is very kind and hardworking. My brother is a student. He is young and funny. My father is an engineer. He is tall and very smart.",
+        "key_phrases": ["My ___ is a ___", "She is / He is", "very + adjective", "and / but"],
+        "min_words": 30
+      }
+    },
+    {
+      "task_id": "t04_17",
+      "order": 17,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Family words: mother, father, brother, sister, husband, wife, son, daughter, grandparents",
+          "Adjectives: tall, short, old, young, kind, friendly, funny, smart, hardworking",
+          "Possessives: my, your, his, her, our, their",
+          "Rule: He → His, She → Her, I → My",
+          "Structure: My [family member] is [adjective]."
+        ],
+        "next_lesson": "a1_unit1_lesson05",
+        "next_lesson_title": "Where I live — places & locations"
+      }
+    }
+  ]
+}

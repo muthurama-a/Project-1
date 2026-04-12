@@ -40,88 +40,243 @@ def _get_a1_units():
     ]
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# UNIT 1 — Greetings & Introductions (10 lessons)
+# UNIT 1 — First Steps in English (8 lessons from unit1_lessons.json)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+def _convert_json_task(task: dict, lesson_id: str) -> list:
+    """Convert a single unit1_lessons.json task into one or more frontend-compatible task dicts."""
+    t = task.get("type", "")
+    tid = task.get("id", "t")
+    title = task.get("title", "")
+    instruction = task.get("instruction", "")
+    out = []
+
+    if t == "learn_flashcard":
+        cards = task.get("content", {}).get("cards", [])
+        out.append({"id": f"{tid}_tip", "type": "LEARNING_TIP",
+                    "data": {"title": title, "explanation": instruction or "Study these key words.",
+                             "example": f"{cards[0]['front']} — {cards[0]['back']}" if cards else ""}})
+        for i, card in enumerate(cards[:4]):
+            out.append({"id": f"{tid}_fc{i}", "type": "FLASHCARD",
+                        "data": {"primary_text": card.get("front", ""), "secondary_text": card.get("back", "")}})
+
+    elif t == "learn_grammar":
+        c = task.get("content", {})
+        pattern = c.get("pattern", "")
+        note = c.get("note", "")
+        examples = c.get("examples", [])
+        explanation = f"{pattern}. {note}".strip(". ") if pattern else note
+        example_str = " | ".join(examples[:3])
+        out.append({"id": tid, "type": "LEARNING_TIP",
+                    "data": {"title": title, "explanation": explanation, "example": example_str}})
+
+    elif t == "learn_dialogue":
+        dialogue = task.get("dialogue", [])
+        example_str = " | ".join([f"{d['speaker']}: {d['line']}" for d in dialogue[:4]])
+        out.append({"id": tid, "type": "LEARNING_TIP",
+                    "data": {"title": title, "explanation": instruction or "Read this conversation.", "example": example_str}})
+
+    elif t == "multiple_choice":
+        for q in task.get("questions", [])[:2]:
+            opts = q.get("options", [])
+            correct_val = q.get("correct", "")
+            ci = opts.index(correct_val) if correct_val in opts else 0
+            out.append({"id": q.get("id", tid), "type": "MULTIPLE_CHOICE",
+                        "data": {"question": q.get("prompt", ""), "options": opts,
+                                 "correct_index": ci, "explanation": q.get("explanation", "")}})
+
+    elif t == "match_pairs":
+        pairs = task.get("pairs", [])[:4]
+        out.append({"id": tid, "type": "MATCHING",
+                    "data": {"pairs": [{"left": p["left"], "right": p["right"]} for p in pairs]}})
+
+    elif t == "fill_in_blank":
+        for q in task.get("questions", [])[:2]:
+            sentence = q.get("sentence", "")
+            answer = q.get("answer", "")
+            out.append({"id": q.get("id", tid), "type": "TRANSLATE",
+                        "data": {"source_text": sentence.replace("___", "___?"),
+                                 "target_language": "English",
+                                 "correct_variants": [answer]}})
+
+    elif t == "reorder_sentence":
+        for q in task.get("questions", [])[:2]:
+            words = q.get("words", [])
+            correct = q.get("correct", " ".join(words))
+            out.append({"id": q.get("id", tid), "type": "SCRAMBLE",
+                        "data": {"shuffled_words": words, "correct_sequence": correct}})
+
+    elif t == "true_false":
+        for q in task.get("questions", [])[:2]:
+            statement = q.get("statement", "")
+            answer = q.get("answer", True)
+            ci = 0 if answer is True else 1
+            out.append({"id": q.get("id", tid), "type": "MULTIPLE_CHOICE",
+                        "data": {"question": statement, "options": ["True", "False"],
+                                 "correct_index": ci, "explanation": q.get("explanation", "")}})
+
+    elif t == "image_label":
+        for q in task.get("questions", [])[:2]:
+            opts = q.get("options", [])
+            correct_val = q.get("correct", opts[0] if opts else "")
+            ci = opts.index(correct_val) if correct_val in opts else 0
+            out.append({"id": q.get("id", tid), "type": "MULTIPLE_CHOICE",
+                        "data": {"question": q.get("image_description", q.get("context", title)),
+                                 "options": opts, "correct_index": ci}})
+
+    elif t in ("speaking_prompt", "speaking_roleplay"):
+        chars = task.get("characters", [])
+        prompts = task.get("prompts", [])
+        if chars:
+            script = chars[0].get("line", "")
+        elif prompts:
+            script = prompts[0] if isinstance(prompts, list) else str(prompts)
+        else:
+            script = task.get("prompt", instruction or "Speak naturally.")
+        out.append({"id": tid, "type": "SPEAKING",
+                    "data": {"script": script, "difficulty_threshold": 0.8}})
+
+    elif t == "error_correction":
+        for q in task.get("questions", [])[:2]:
+            sentence = q.get("sentence", "")
+            correction = q.get("corrected", q.get("correction", sentence))
+            explanation = q.get("explanation", f"Correct: {correction}")
+            out.append({"id": q.get("id", tid), "type": "ERROR_CORRECTION",
+                        "data": {"sentence": sentence,
+                                 "question": "Which is the correct version?",
+                                 "options": [sentence, correction],
+                                 "correct_index": 1,
+                                 "explanation": explanation}})
+
+    elif t == "vocabulary_select":
+        for q in task.get("questions", [])[:2]:
+            opts = q.get("options", [])
+            correct_val = q.get("correct", "")
+            ci = opts.index(correct_val) if correct_val in opts else 0
+            out.append({"id": q.get("id", tid), "type": "MULTIPLE_CHOICE",
+                        "data": {"question": q.get("description", ""), "options": opts, "correct_index": ci}})
+
+    elif t == "dialogue_complete":
+        for entry in task.get("dialogue", []):
+            opts = entry.get("options")
+            if opts:
+                correct_val = entry.get("correct", opts[0])
+                ci = opts.index(correct_val) if correct_val in opts else 0
+                out.append({"id": tid, "type": "MULTIPLE_CHOICE",
+                            "data": {"question": f"What is the best reply? ({title})",
+                                     "options": opts, "correct_index": ci,
+                                     "explanation": entry.get("explanation", "")}})
+                break
+
+    elif t in ("negative_form", "yes_no_questions"):
+        c = task.get("content", {})
+        note = c.get("note", "")
+        if note:
+            out.append({"id": f"{tid}_tip", "type": "LEARNING_TIP",
+                        "data": {"title": title, "explanation": note, "example": ""}})
+        for q in c.get("questions", [])[:2]:
+            answer = q.get("answer", "")
+            words = answer.split() if answer else []
+            positive = q.get("positive", q.get("statement", ""))
+            action_text = "Make it negative" if t == "negative_form" else "Make it a question"
+            out.append({"id": q.get("id", tid), "type": "SENTENCE_BUILDER",
+                        "data": {"prompt": f'{action_text}: "{positive}"',
+                                 "options": words, "correct_answer": answer}})
+
+    elif t == "writing":
+        example = task.get("example_output", "")
+        out.append({"id": tid, "type": "LISTENING",
+                    "data": {"correct_answer": example,
+                             "prompt": instruction}})
+
+    elif t == "reading_comprehension":
+        for q in task.get("questions", [])[:2]:
+            out.append({"id": q.get("id", tid), "type": "TRANSLATE",
+                        "data": {"source_text": q.get("question", ""),
+                                 "target_language": "English",
+                                 "correct_variants": [q.get("answer", "")]}})
+
+    elif t == "unit_quiz":
+        for q in task.get("questions", [])[:3]:
+            opts = q.get("options", [])
+            correct_val = q.get("correct", opts[0] if opts else "")
+            ci = opts.index(correct_val) if correct_val in opts else 0
+            out.append({"id": q.get("id", tid), "type": "REVIEW",
+                        "data": {"origin": "Unit 1",
+                                 "question": q.get("prompt", ""),
+                                 "options": opts, "correct_index": ci}})
+
+    elif t == "unit_completion":
+        skills = task.get("skills_unlocked", ["Unit 1 Complete!"])
+        out.append({"id": tid, "type": "REVIEW",
+                    "data": {"origin": "Unit 1",
+                             "question": "What have you mastered in Unit 1?",
+                             "options": skills[:4] if len(skills) >= 4 else skills + ["Keep going!"] * (4 - len(skills)),
+                             "correct_index": 0}})
+
+    return out
+
+
+def _build_unit1_lessons_from_json() -> list:
+    """Load unit1_lessons.json and convert to interactive lesson format."""
+    json_path = os.path.join(os.path.dirname(__file__), "unit1_lessons.json")
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"[lesson_generator] Could not load unit1_lessons.json: {e}")
+        return []
+
+    lessons_json = data.get("unit", {}).get("lessons", [])
+    result = []
+
+    for lesson in lessons_json:
+        lid = lesson.get("id", "L?")
+        order = lesson.get("order", 1)
+        title = lesson.get("title", "Lesson")
+        description = lesson.get("description", "")
+        all_tasks = []
+
+        for task in lesson.get("tasks", []):
+            converted = _convert_json_task(task, lid)
+            all_tasks.extend(converted)
+
+        # Assign sequential IDs
+        for i, t in enumerate(all_tasks):
+            t["id"] = i + 1
+
+        result.append({
+            "title": title,
+            "content_type": "interactive",
+            "order": order,
+            "content_data": {
+                "metadata": {
+                    "lesson_id": f"A1_U1_{lid}",
+                    "unit_number": 1,
+                    "lesson_title": title,
+                    "total_tasks": len(all_tasks)
+                },
+                "content_manifest": {
+                    "vocabulary": [],
+                    "grammar_point": description
+                },
+                "tasks": all_tasks
+            }
+        })
+
+    return result
+
+
 def _unit1():
+    lessons = _build_unit1_lessons_from_json()
     return {
-        "title": "Greetings & Introductions",
-        "description": "Say hello, introduce yourself, and meet new people.",
+        "title": "First Steps in English",
+        "description": "Greetings to Daily Life — master the core of everyday English.",
         "level": "A1", "order": 1, "icon": "👋",
-        "lessons": [
-            _make("Hello & Goodbye", "theory", 1,
-                "Greetings are the first step. Use 'Hello' or 'Hi' anytime. 'Good morning' before noon, 'Good afternoon' until 6 PM, 'Good evening' after 6 PM. To say farewell: 'Goodbye', 'Bye', 'See you later'.",
-                vocab=[_v("Hello","A standard greeting","Hello, how are you?"), _v("Hi","Informal greeting","Hi there!"), _v("Good morning","Before noon greeting","Good morning, class!"), _v("Goodbye","Farewell","Goodbye, see you!"), _v("See you later","Informal farewell","See you later!")],
-                examples=["Hello, how are you?", "Good morning, everyone!", "Goodbye, have a nice day!"],
-                flashcards=[_fc("Hello","A greeting used anytime"), _fc("Good morning","Before 12 PM"), _fc("Goodbye","Said when leaving")]),
-
-            _make("Introducing Yourself", "theory", 2,
-                "To introduce yourself say: 'My name is ___.' or 'I am ___.' Tell where you are from: 'I am from ___.' End with 'Nice to meet you!'",
-                vocab=[_v("My name is","Used to tell your name","My name is Priya."), _v("I am from","Tell your origin","I am from Chennai."), _v("Nice to meet you","First meeting phrase","Nice to meet you, Tom!")],
-                examples=["Hello! My name is Raj. I am from Mumbai. Nice to meet you!", "Hi, I am Sara. I am from Delhi."],
-                flashcards=[_fc("My name is ___","Introduce your name"), _fc("Nice to meet you","Said when meeting someone new")]),
-
-            _make("Greetings Practice", "speaking", 3,
-                "Practice greeting and introducing yourself out loud.",
-                prompt="Say: 'Hello! My name is [your name]. I am from [your city]. Nice to meet you!'",
-                tip="Speak slowly and clearly. Smile when you greet!", keywords=["name","from","nice","meet"],
-                model_answer="Hello! My name is Priya. I am from Chennai. Nice to meet you!"),
-
-            _make("Asking About Others", "theory", 4,
-                "To learn about someone, ask: 'What is your name?', 'Where are you from?', 'How are you?' Answer 'How are you?' with 'I am fine, thank you.' or 'I am good.'",
-                vocab=[_v("What is your name?","Ask someone's name","What is your name?"), _v("Where are you from?","Ask someone's origin","Where are you from?"), _v("How are you?","Ask about wellbeing","How are you today?"), _v("I am fine","Response to How are you","I am fine, thank you.")],
-                examples=["What is your name? – My name is Raj.", "How are you? – I am fine, thank you!"],
-                flashcards=[_fc("What is your name?","Ask for someone's name"), _fc("How are you?","Ask about someone's wellbeing")]),
-
-            _make("Greetings Quiz", "quiz", 5,
-                "Test your knowledge of greetings and introductions.",
-                questions=[
-                    _q("Which greeting is used in the morning?", ["Good night","Good morning","Good evening","Goodbye"], "Good morning"),
-                    _q("How do you introduce your name?", ["I am from ___","My name is ___","How are you?","Goodbye"], "My name is ___"),
-                    _q("What do you say when you meet someone new?", ["See you later","Good night","Nice to meet you","Goodbye"], "Nice to meet you"),
-                    _q("'How are you?' — What is a good answer?", ["My name is Raj","I am fine, thank you","Goodbye","Good morning"], "I am fine, thank you")
-                ]),
-
-            _make("Polite Expressions", "theory", 6,
-                "Polite words make conversations friendly. 'Please' when asking, 'Thank you' when receiving, 'Sorry' when apologizing, 'Excuse me' to get attention.",
-                vocab=[_v("Please","Polite request word","Can I have water, please?"), _v("Thank you","Gratitude expression","Thank you very much!"), _v("Sorry","Apology word","Sorry, I am late."), _v("Excuse me","Get attention politely","Excuse me, where is the bus stop?"), _v("You're welcome","Response to thank you","You're welcome!")],
-                examples=["Please sit down.", "Thank you for your help!", "Sorry, I don't understand.", "Excuse me, can you help me?"],
-                flashcards=[_fc("Please","Used for polite requests"), _fc("Thank you","Express gratitude"), _fc("Sorry","Apologize"), _fc("Excuse me","Get someone's attention")]),
-
-            _make("Pronunciation: Greetings", "speaking", 7,
-                "Practice the pronunciation of common greeting words.",
-                prompt="Repeat each word clearly: Hello. Good morning. Good afternoon. Good evening. Goodbye. Thank you. Please. Sorry.",
-                tip="Focus on the stress: HEL-lo, good MOR-ning, THANK you.",
-                keywords=["hello","morning","afternoon","evening","goodbye","thank","please","sorry"],
-                model_answer="Hello. Good morning. Good afternoon. Good evening. Goodbye. Thank you. Please. Sorry."),
-
-            _make("Reading: A Short Conversation", "theory", 8,
-                "Read this conversation:\n\nAnna: Hello! My name is Anna. What is your name?\nBen: Hi Anna! My name is Ben. Nice to meet you.\nAnna: Nice to meet you too! Where are you from?\nBen: I am from London. And you?\nAnna: I am from Paris. How are you?\nBen: I am fine, thank you!",
-                examples=["Hello! My name is Anna.", "Nice to meet you too!", "I am from London.", "I am fine, thank you!"],
-                flashcards=[_fc("What is your name?","Ask someone's name"), _fc("Where are you from?","Ask someone's hometown")]),
-
-            _make("Sentence Building", "quiz", 9,
-                "Put together correct English sentences about greetings.",
-                questions=[
-                    _q("Complete: '___ to meet you!'", ["Good","Nice","Sorry","Please"], "Nice"),
-                    _q("Complete: 'I ___ from India.'", ["is","are","am","be"], "am"),
-                    _q("Which is correct?", ["My name are Raj","My name is Raj","My name am Raj","My name be Raj"], "My name is Raj"),
-                    _q("What comes after 'Thank you'?", ["Sorry","Goodbye","You're welcome","Hello"], "You're welcome")
-                ]),
-
-            _make("Unit 1 Review", "quiz", 10,
-                "Final review of Greetings & Introductions.",
-                questions=[
-                    _q("'Good evening' is used ___", ["before noon","after 6 PM","at midnight","anytime"], "after 6 PM"),
-                    _q("How do you ask someone's name?", ["How are you?","Where are you from?","What is your name?","Goodbye"], "What is your name?"),
-                    _q("'___, can you help me?' (polite)", ["Sorry","Excuse me","Goodbye","Hi"], "Excuse me"),
-                    _q("Match: 'I am fine' answers ___", ["What is your name?","Where are you from?","How are you?","Goodbye"], "How are you?")
-                ])
-        ]
+        "lessons": lessons
     }
 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# UNIT 2 — Numbers, Colors & Descriptions (10 lessons)
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 def _unit2():
     return {
         "title": "Numbers, Colors & Descriptions",

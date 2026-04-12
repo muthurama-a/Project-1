@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import thingualLogo from '@/assets/thingual_logo.png';
+import thingualLogo from '@/assets/thingual-logo.png';
 
 interface Props {
   children: React.ReactNode;
@@ -85,7 +85,7 @@ export default function DashboardLayout({ children, title = 'Dashboard', user_na
       }}>
         {/* Logo */}
         <div style={{ padding: '0 20px', marginBottom: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Image src={thingualLogo} alt="Thingual" width={180} height={60} style={{ objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '180px' }} priority />
+          <Image src={thingualLogo} alt="Thingual" width={180} height={60} style={{ objectFit: 'contain', width: '100%', height: 'auto', maxWidth: '180px', mixBlendMode: 'multiply' }} priority />
         </div>
 
         {/* Nav */}

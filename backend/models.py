@@ -10,6 +10,8 @@ class User(Base):
     email = Column(String, unique=True, index=True)
     password_hash = Column(String)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
+    current_streak = Column(Integer, default=0)
+    last_active_date = Column(DateTime(timezone=True), nullable=True)
 
 class TestResult(Base):
     __tablename__ = "test_results"

@@ -1,0 +1,301 @@
+{
+  "lesson_id": "a1_unit1_lesson03",
+  "unit": 1,
+  "lesson_number": 3,
+  "level": "A1",
+  "title": "Asking about others",
+  "description": "Learn to ask basic questions about other people — name, age, job, and origin.",
+  "estimated_minutes": 18,
+  "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t03_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Question words (Wh- questions)",
+      "content": {
+        "explanation": "These are the most common question words in English.",
+        "items": [
+          { "phrase": "What", "note": "Asking about a thing or name — What's your name?" },
+          { "phrase": "Where", "note": "Asking about a place — Where are you from?" },
+          { "phrase": "Who", "note": "Asking about a person — Who is she?" },
+          { "phrase": "How", "note": "Asking about condition — How are you?" },
+          { "phrase": "How old", "note": "Asking about age — How old are you?" }
+        ]
+      }
+    },
+    {
+      "task_id": "t03_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Useful questions to ask someone",
+      "content": {
+        "explanation": "These questions are very common when you first meet someone.",
+        "items": [
+          { "phrase": "What's your name?", "note": "Asking someone's name (What + is = What's)" },
+          { "phrase": "Where are you from?", "note": "Asking their country or city" },
+          { "phrase": "How old are you?", "note": "Asking their age" },
+          { "phrase": "What do you do?", "note": "Asking their job or study" },
+          { "phrase": "Do you speak English?", "note": "Asking about language ability" },
+          { "phrase": "Are you a student?", "note": "Yes/No question about job" }
+        ]
+      }
+    },
+    {
+      "task_id": "t03_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: Yes/No questions with 'to be'",
+      "content": {
+        "explanation": "To make a Yes/No question, put 'am / is / are' BEFORE the subject.",
+        "examples": [
+          {
+            "statement": "She is a doctor.",
+            "question": "Is she a doctor?",
+            "yes_reply": "Yes, she is.",
+            "no_reply": "No, she isn't."
+          },
+          {
+            "statement": "You are from India.",
+            "question": "Are you from India?",
+            "yes_reply": "Yes, I am.",
+            "no_reply": "No, I'm not."
+          },
+          {
+            "statement": "He is a student.",
+            "question": "Is he a student?",
+            "yes_reply": "Yes, he is.",
+            "no_reply": "No, he isn't."
+          }
+        ],
+        "rule": "Statement: Subject + am/is/are. Question: Am/Is/Are + Subject?"
+      }
+    },
+    {
+      "task_id": "t03_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat — questions",
+      "content": {
+        "instruction": "Listen to each question and repeat it with the correct intonation. Questions go UP at the end.",
+        "phrases": [
+          { "text": "What's your name?", "audio_key": "whats_your_name" },
+          { "text": "Where are you from?", "audio_key": "where_are_you_from" },
+          { "text": "How old are you?", "audio_key": "how_old_are_you" },
+          { "text": "Are you a student?", "audio_key": "are_you_a_student" },
+          { "text": "What do you do?", "audio_key": "what_do_you_do" }
+        ]
+      }
+    },
+    {
+      "task_id": "t03_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "Which question word?",
+      "content": {
+        "question": "You want to know someone's job. Which question do you ask?",
+        "options": [
+          "Where are you from?",
+          "How old are you?",
+          "What do you do?",
+          "Are you from India?"
+        ],
+        "correct_index": 2,
+        "explanation": "'What do you do?' is the standard question to ask about someone's job or study."
+      }
+    },
+    {
+      "task_id": "t03_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "Correct question",
+      "content": {
+        "question": "You want to know where someone lives. Which question do you ask?",
+        "options": [
+          "What are you?",
+          "Who are you from?",
+          "Where are you from?",
+          "How are you from?"
+        ],
+        "correct_index": 2,
+        "explanation": "'Where are you from?' asks about the place someone is from."
+      }
+    },
+    {
+      "task_id": "t03_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Make the Yes/No question",
+      "content": {
+        "question": "Turn this into a question: 'She is a nurse.'",
+        "options": [
+          "She is a nurse?",
+          "Is she a nurse?",
+          "Does she is a nurse?",
+          "Are she a nurse?"
+        ],
+        "correct_index": 1,
+        "explanation": "Yes/No question: move 'is' to the front → Is + she + a nurse?"
+      }
+    },
+    {
+      "task_id": "t03_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "knowledge_check",
+      "title": "Fill in the question word",
+      "content": {
+        "sentence": "_____ are you from? — I'm from Lagos, Nigeria.",
+        "options": ["What", "Who", "Where", "How"],
+        "correct": "Where",
+        "explanation": "'Where' asks about a place."
+      }
+    },
+    {
+      "task_id": "t03_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — Yes/No reply",
+      "content": {
+        "sentence": "Are you a teacher? — Yes, I _____.",
+        "options": ["am", "is", "are", "do"],
+        "correct": "am",
+        "explanation": "Short answer to 'Are you...?' is 'Yes, I am.' Never 'Yes, I are.'"
+      }
+    },
+    {
+      "task_id": "t03_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — negative reply",
+      "content": {
+        "sentence": "Is he from France? — No, he _____.",
+        "options": ["isn't", "aren't", "am not", "don't"],
+        "correct": "isn't",
+        "explanation": "Short negative: No, he isn't. (is + not = isn't)"
+      }
+    },
+    {
+      "task_id": "t03_11",
+      "order": 11,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the question",
+      "content": {
+        "instruction": "Rearrange the words to make a correct question.",
+        "words": ["are", "old", "How", "you"],
+        "correct_sentence": "How old are you?",
+        "explanation": "The structure is: How old + are + you?"
+      }
+    },
+    {
+      "task_id": "t03_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the question",
+      "content": {
+        "instruction": "Rearrange the words to make a correct Yes/No question.",
+        "words": ["a", "Are", "student", "you"],
+        "correct_sentence": "Are you a student?",
+        "explanation": "Yes/No question: Are + you + a student?"
+      }
+    },
+    {
+      "task_id": "t03_13",
+      "order": 13,
+      "type": "match_pairs",
+      "category": "knowledge_check",
+      "title": "Match question and answer",
+      "content": {
+        "instruction": "Match each question with the correct answer.",
+        "pairs": [
+          { "prompt": "What's your name?", "answer": "My name is Ravi." },
+          { "prompt": "Where are you from?", "answer": "I'm from Mumbai." },
+          { "prompt": "How old are you?", "answer": "I'm 30 years old." },
+          { "prompt": "What do you do?", "answer": "I work as a teacher." },
+          { "prompt": "Are you married?", "answer": "Yes, I am." }
+        ]
+      }
+    },
+    {
+      "task_id": "t03_14",
+      "order": 14,
+      "type": "error_correction",
+      "category": "knowledge_check",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is grammatically correct?",
+        "wrong_sentence": "Where you are from?",
+        "options": [
+          "Where you are from?",
+          "Where are you from?",
+          "Where from are you?",
+          "Where you from are?"
+        ],
+        "correct_index": 1,
+        "explanation": "In questions with 'to be', the verb comes before the subject: Where + are + you?"
+      }
+    },
+    {
+      "task_id": "t03_15",
+      "order": 15,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You're at a party. You want to know if the new person you just met is from your city.",
+        "question": "What is the most natural question to ask?",
+        "options": [
+          "Who are you from?",
+          "Are you from Chennai?",
+          "Where is you from?",
+          "What are you from?"
+        ],
+        "correct_index": 1,
+        "explanation": "'Are you from Chennai?' is a Yes/No question. Natural and polite."
+      }
+    },
+    {
+      "task_id": "t03_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Ask and answer",
+      "content": {
+        "instruction": "Imagine you are meeting a new person. Ask them 4 questions and answer them yourself, as if you are both sides of the conversation.",
+        "prompt": "Practice this conversation: Ask their name, where they're from, their age, and their job.",
+        "example_response": "Hi! What's your name? — My name is Sara. Where are you from? — I'm from Delhi. How old are you? — I'm 28. What do you do? — I work as a designer.",
+        "key_phrases": ["What's your name?", "Where are you from?", "How old are you?", "What do you do?"],
+        "min_words": 30
+      }
+    },
+    {
+      "task_id": "t03_17",
+      "order": 17,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Question words: What, Where, Who, How, How old",
+          "Questions: What's your name? / Where are you from? / How old are you? / What do you do?",
+          "Yes/No questions: move is/are to the front → Is she a nurse?",
+          "Short answers: Yes, I am. / No, I'm not. / Yes, she is. / No, he isn't.",
+          "Intonation: questions go UP at the end"
+        ],
+        "next_lesson": "a1_unit1_lesson04",
+        "next_lesson_title": "People around me — family & friends"
+      }
+    }
+  ]
+}

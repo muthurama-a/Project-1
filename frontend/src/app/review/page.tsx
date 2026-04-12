@@ -46,7 +46,19 @@ export default function ReviewPage() {
   const flipTimeRef = useRef<number>(0);
   const hesitationRef = useRef<number>(0);
 
+  // Heatmap state (real data from backend)
+  const currentYearInt = new Date().getFullYear();
+  const currentMonthInt = new Date().getMonth(); // 0-indexed
+  const [heatmap, setHeatmap] = useState<{ date: string; day: string; count: number; level: number }[]>([]);
+  const [selectedYear, setSelectedYear] = useState<number>(currentYearInt);
+  const [selectedMonth, setSelectedMonth] = useState<number>(currentMonthInt);
+  const [availableYears, setAvailableYears] = useState<number[]>([currentYearInt]);
+  const [heatmapLoading, setHeatmapLoading] = useState(true);
+  const [totalYearlyReviews, setTotalYearlyReviews] = useState(0);
+  const [hoveredDay, setHoveredDay] = useState<string | null>(null);
+
   useEffect(() => { fetchCards(); }, []);
+  useEffect(() => { fetchHeatmap(selectedYear); }, [selectedYear]);
 
   const fetchCards = async () => {
     setLoading(true);
@@ -62,6 +74,26 @@ export default function ReviewPage() {
       setWeakCards(MOCK_WEAK_CARDS);
     }
     setLoading(false);
+  };
+
+  const fetchHeatmap = async (year: number) => {
+    setHeatmapLoading(true);
+    try {
+      const prog = await lessonService.getProgress(year);
+      setHeatmap(prog.heatmap || []);
+      const total = (prog.heatmap || []).reduce((acc: number, day: any) => acc + day.count, 0);
+      setTotalYearlyReviews(total);
+      if (prog.first_year) {
+        const first = Number(prog.first_year);
+        const current = new Date().getFullYear();
+        const years = [];
+        for (let y = current; y >= first; y--) years.push(y);
+        setAvailableYears(years.length > 0 ? years : [currentYearInt]);
+      }
+    } catch {
+      setHeatmap([]);
+    }
+    setHeatmapLoading(false);
   };
 
   const startSession = (type: 'due' | 'weak') => {
@@ -140,8 +172,52 @@ export default function ReviewPage() {
     fetchCards(); // Refresh counts
   };
 
-  // ── Intensity calendar (last 35 days mock) ──────────────────────────────
-  const intensityData = Array.from({ length: 35 }, (_, i) => Math.random() > 0.45 ? Math.ceil(Math.random() * 3) : 0);
+  // ── Build Full Year GitHub-style week grid ────────────────────────────────
+  // Group days into columns of 7 (Sunday to Saturday or Monday to Sunday).
+  // Assuming days are sequential from start of the year.
+  const buildFullYearGrid = () => {
+    if (!heatmap.length) return [];
+    
+    // Find the weekday of the first day to pad the first column
+    const firstDayStr = heatmap[0].date;
+    const firstDate = new Date(firstDayStr);
+    // JS getDay() is 0=Sun, 1=Mon. Let's make our weeks start on Monday (0=Mon, 6=Sun)
+    const dayOfWeek = firstDate.getDay(); 
+    const padCount = dayOfWeek === 0 ? 6 : dayOfWeek - 1; 
+    
+    // Pad the start with empty slots
+    const paddedDays = [
+      ...Array.from({ length: padCount }, () => ({ date: '', day: '', count: 0, level: 0 })),
+      ...heatmap
+    ];
+    
+    const weeks: typeof heatmap[] = [];
+    for (let i = 0; i < paddedDays.length; i += 7) {
+      weeks.push(paddedDays.slice(i, i + 7));
+    }
+    return weeks;
+  };
+  
+  const weekGrid = buildFullYearGrid();
+  // Using Monday start for days
+  const DAY_LABELS = ['Mon', 'Wed', 'Fri']; // Usually only show a few labels
+  const HEAT_COLORS = ['#ede9fe', '#c4b5fd', '#7c3aed', '#4f46e5'];
+
+  // Identify months transitions to show month labels above the grid
+  const monthLabels: { label: string; colIndex: number }[] = [];
+  let lastMonth = -1;
+  weekGrid.forEach((week, index) => {
+    // Find first valid date in the week
+    const d = week.find(day => day.date);
+    if (!d) return;
+    const dateObj = new Date(d.date);
+    if (isNaN(dateObj.getTime())) return;
+    const month = dateObj.getMonth();
+    if (month !== lastMonth) {
+      monthLabels.push({ label: dateObj.toLocaleString('default', { month: 'short' }), colIndex: index });
+      lastMonth = month;
+    }
+  });
 
   // ── Session card ────────────────────────────────────────────────────────
   if (sessionActive && !sessionDone) {
@@ -316,25 +392,197 @@ export default function ReviewPage() {
 
         <div className="review-grid">
 
-          {/* Intensity Calendar */}
-          <section className="intensity-calendar">
-            <h4 className="intensity-title">Review Intensity Calendar</h4>
-            <div className="calendar-grid">
-              {intensityData.map((lvl, i) => (
-                <div
-                  key={i}
-                  className={`calendar-cell lvl-${lvl}`}
-                  title={`${lvl === 0 ? 'No reviews' : lvl === 1 ? 'Light' : lvl === 2 ? 'Moderate' : 'Heavy'}`}
-                />
-              ))}
-            </div>
-            <div className="calendar-legend">
-              <span>LESS</span>
-              <div className="calendar-legend-dots">
-                {[0, 1, 2, 3].map(l => <div key={l} className={`legend-dot lvl-${l}`} />)}
-              </div>
-              <span>MORE</span>
-            </div>
+          {/* ── INTENSITY CALENDAR ─────────────────────────────────── */}
+          <section className="intensity-calendar" style={{ paddingBottom: '20px' }}>
+
+            {/* ── Nav: Month ‹ April 2026 › Year ── */}
+            {(() => {
+              const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+              const DAY_LABELS  = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+              const HEAT_BG     = ['#f1f5f9','#ddd6fe','#a78bfa','#7c3aed','#4f46e5'];
+              const HEAT_BORDER = ['#e2e8f0','#c4b5fd','#8b5cf6','#6d28d9','#3730a3'];
+              const HEAT_TEXT   = ['#94a3b8','#6d28d9','#fff','#fff','#fff'];
+
+              // Navigation helpers
+              const prevMonth = () => {
+                if (selectedMonth === 0) { setSelectedMonth(11); setSelectedYear(y => y - 1); }
+                else setSelectedMonth(m => m - 1);
+              };
+              const nextMonth = () => {
+                const now = new Date();
+                if (selectedYear === now.getFullYear() && selectedMonth === now.getMonth()) return;
+                if (selectedMonth === 11) { setSelectedMonth(0); setSelectedYear(y => y + 1); }
+                else setSelectedMonth(m => m + 1);
+              };
+              const isAtMax = selectedYear === new Date().getFullYear() && selectedMonth === new Date().getMonth();
+              const isAtMin = selectedYear === Math.min(...availableYears) && selectedMonth === 0;
+
+              // Build day map
+              const dayMap: Record<string, { count: number }> = {};
+              heatmap.forEach(h => { if (h.date) dayMap[h.date] = { count: h.count }; });
+
+              // Stats — compute BEFORE building cells so we have maxMonthCount
+              const monthKey = `${selectedYear}-${String(selectedMonth + 1).padStart(2, '0')}`;
+              const monthEntries = Object.entries(dayMap).filter(([d]) => d.startsWith(monthKey));
+              const monthTotal  = monthEntries.reduce((s, [, v]) => s + v.count, 0);
+              const activeDays  = monthEntries.filter(([, v]) => v.count > 0).length;
+              const bestDay     = monthEntries.reduce((best, [, v]) => Math.max(best, v.count), 0);
+              const maxMonthCount = bestDay || 1; // avoid divide-by-zero
+
+              // Dynamic level helper: 0=none, 1=low, 2=mid-low, 3=mid-high, 4=high
+              const dynLevel = (count: number): number => {
+                if (count === 0) return 0;
+                const ratio = count / maxMonthCount;
+                if (ratio <= 0.25) return 1;
+                if (ratio <= 0.5)  return 2;
+                if (ratio <= 0.75) return 3;
+                return 4;
+              };
+
+              // Build month cells
+              const daysInMonth = new Date(selectedYear, selectedMonth + 1, 0).getDate();
+              const firstDow = new Date(selectedYear, selectedMonth, 1).getDay(); // 0=Sun
+              const cells: { day: number; dateStr: string; count: number; level: number }[] = [];
+              for (let b = 0; b < firstDow; b++) cells.push({ day: 0, dateStr: '', count: 0, level: 0 });
+              for (let d = 1; d <= daysInMonth; d++) {
+                const dateStr = `${selectedYear}-${String(selectedMonth + 1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                const count = dayMap[dateStr]?.count ?? 0;
+                cells.push({ day: d, dateStr, count, level: dynLevel(count) });
+              }
+              while (cells.length % 7 !== 0) cells.push({ day: 0, dateStr: '', count: 0, level: 0 });
+              const weeks: typeof cells[] = [];
+              for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+
+              // Today
+              const today = new Date();
+              const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+
+              return (
+                <div>
+                  {/* Header row */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                    <div>
+                      <h4 style={{ margin: 0, fontSize: '15px', fontWeight: 800, color: '#1e293b' }}>📅 Review Intensity</h4>
+                      <p style={{ fontSize: '12px', color: '#64748b', margin: '3px 0 0', fontWeight: 500 }}>
+                        {heatmapLoading ? 'Loading…' : monthTotal > 0 ? `${monthTotal} reviews this month` : 'No activity this month'}
+                      </p>
+                    </div>
+                    {/* Month ‹ Apr 2026 › nav */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <button onClick={prevMonth} disabled={isAtMin} style={{
+                        width: '32px', height: '32px', borderRadius: '10px', border: '1.5px solid #e2e8f0',
+                        background: 'white', cursor: isAtMin ? 'not-allowed' : 'pointer', fontSize: '16px',
+                        color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        opacity: isAtMin ? 0.3 : 1, fontWeight: 700,
+                      }}>‹</button>
+                      <div style={{ textAlign: 'center', minWidth: '120px' }}>
+                        <div style={{ fontSize: '15px', fontWeight: 800, color: '#1e293b' }}>
+                          {MONTH_NAMES[selectedMonth]}
+                        </div>
+                        <div style={{ fontSize: '12px', fontWeight: 700, color: '#4f46e5' }}>{selectedYear}</div>
+                      </div>
+                      <button onClick={nextMonth} disabled={isAtMax} style={{
+                        width: '32px', height: '32px', borderRadius: '10px', border: '1.5px solid #e2e8f0',
+                        background: 'white', cursor: isAtMax ? 'not-allowed' : 'pointer', fontSize: '16px',
+                        color: '#4f46e5', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        opacity: isAtMax ? 0.3 : 1, fontWeight: 700,
+                      }}>›</button>
+                    </div>
+                  </div>
+
+                  {/* Stats pills */}
+                  <div style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
+                    {[
+                      { label: 'Total Reviews', value: monthTotal, icon: '📝', color: '#eef2ff', text: '#4f46e5' },
+                      { label: 'Active Days',   value: activeDays,  icon: '🔥', color: '#fef3c7', text: '#d97706' },
+                      { label: 'Best Day',      value: bestDay,     icon: '⚡', color: '#f0fdf4', text: '#16a34a' },
+                    ].map(stat => (
+                      <div key={stat.label} style={{
+                        flex: 1, background: stat.color, borderRadius: '12px', padding: '12px 14px',
+                        display: 'flex', flexDirection: 'column', gap: '2px',
+                      }}>
+                        <span style={{ fontSize: '11px', fontWeight: 600, color: stat.text, opacity: 0.75 }}>{stat.icon} {stat.label}</span>
+                        <span style={{ fontSize: '20px', fontWeight: 900, color: stat.text, lineHeight: 1.1 }}>{stat.value || '—'}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {heatmapLoading ? (
+                    <div style={{ height: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontSize: '13px' }}>
+                      Loading your activity…
+                    </div>
+                  ) : (
+                    <div style={{ background: '#f8fafc', borderRadius: '16px', padding: '16px', border: '1px solid #f1f5f9' }}>
+                      {/* Day-of-week headers */}
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', marginBottom: '6px' }}>
+                        {DAY_LABELS.map(d => (
+                          <div key={d} style={{ textAlign: 'center', fontSize: '11px', fontWeight: 700, color: '#94a3b8', padding: '4px 0' }}>{d}</div>
+                        ))}
+                      </div>
+                      {/* Day cells */}
+                      {weeks.map((week, wi) => (
+                        <div key={wi} style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', marginBottom: '4px' }}>
+                          {week.map((cell, di) => {
+                            const isToday = cell.dateStr === todayStr;
+                            const isEmpty = cell.day === 0;
+                            return (
+                              <div
+                                key={di}
+                                title={cell.count > 0 ? `${cell.count} review${cell.count > 1 ? 's' : ''} on ${cell.dateStr}` : cell.dateStr || ''}
+                                onMouseEnter={() => cell.dateStr && setHoveredDay(cell.dateStr)}
+                                onMouseLeave={() => setHoveredDay(null)}
+                                style={{
+                                  borderRadius: '10px',
+                                  background: isEmpty ? 'transparent' : cell.level === 0 ? 'white' : HEAT_BG[Math.min(cell.level, 4)],
+                                  border: isEmpty ? 'none' : isToday ? '2px solid #4f46e5' : `1.5px solid ${cell.level === 0 ? '#e2e8f0' : HEAT_BORDER[Math.min(cell.level, 4)]}`,
+                                  padding: '8px 4px',
+                                  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                                  cursor: cell.count > 0 ? 'pointer' : 'default',
+                                  transition: 'transform 0.15s, box-shadow 0.15s',
+                                  transform: hoveredDay === cell.dateStr ? 'scale(1.08)' : 'scale(1)',
+                                  boxShadow: hoveredDay === cell.dateStr ? '0 4px 12px rgba(79,70,229,0.15)' : 'none',
+                                  minHeight: '52px',
+                                }}
+                              >
+                                {!isEmpty && (
+                                  <>
+                                    <span style={{
+                                      fontSize: '13px', fontWeight: isToday ? 900 : 600,
+                                      color: cell.level > 1 ? 'white' : isToday ? '#4f46e5' : '#475569',
+                                      lineHeight: 1,
+                                    }}>{cell.day}</span>
+                                    {cell.count > 0 && (
+                                      <span style={{
+                                        fontSize: '10px', fontWeight: 800, marginTop: '4px',
+                                        color: cell.level > 1 ? 'rgba(255,255,255,0.9)' : '#7c3aed',
+                                        background: cell.level > 1 ? 'rgba(255,255,255,0.2)' : '#ede9fe',
+                                        borderRadius: '4px', padding: '0 4px', lineHeight: '16px',
+                                      }}>{cell.count}</span>
+                                    )}
+                                  </>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Legend */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px', marginTop: '14px' }}>
+                    <span style={{ fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>Less</span>
+                    {HEAT_BG.map((c, i) => (
+                      <div key={i} title={['0','1–4','5–9','10–14','15+'][i]} style={{
+                        width: '14px', height: '14px', borderRadius: '4px', background: c,
+                        border: `1.5px solid ${HEAT_BORDER[i]}`,
+                      }} />
+                    ))}
+                    <span style={{ fontSize: '11px', color: '#94a3b8', fontWeight: 600 }}>More</span>
+                  </div>
+                </div>
+              );
+            })()}
           </section>
 
           {/* Card List */}

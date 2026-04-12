@@ -1,0 +1,272 @@
+{
+  "lesson_id": "a1_unit1_lesson02",
+  "unit": 1,
+  "lesson_number": 2,
+  "level": "A1",
+  "title": "Who am I? — Introducing yourself",
+  "description": "Learn to introduce yourself with your name, country, age, and job.",
+  "estimated_minutes": 18,
+  "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t02_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Introducing yourself — key phrases",
+      "content": {
+        "explanation": "These are the most important phrases to introduce yourself in English.",
+        "items": [
+          { "phrase": "My name is ___.", "note": "State your name clearly" },
+          { "phrase": "I'm ___ (name).", "note": "Short and natural version" },
+          { "phrase": "I'm from ___ (city/country).", "note": "Tell people where you are from" },
+          { "phrase": "I live in ___.", "note": "Tell people where you live now" },
+          { "phrase": "I'm ___ years old.", "note": "Share your age" },
+          { "phrase": "I work as a ___.", "note": "Share your job" },
+          { "phrase": "I'm a student.", "note": "If you are studying" }
+        ]
+      }
+    },
+    {
+      "task_id": "t02_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: verb 'to be' — am / is / are",
+      "content": {
+        "explanation": "The verb 'to be' changes depending on who we are talking about.",
+        "table": [
+          { "subject": "I", "verb": "am", "example": "I am from India." },
+          { "subject": "You", "verb": "are", "example": "You are a student." },
+          { "subject": "He / She / It", "verb": "is", "example": "She is from Brazil." },
+          { "subject": "We / They", "verb": "are", "example": "They are teachers." }
+        ],
+        "short_forms": [
+          { "full": "I am", "short": "I'm" },
+          { "full": "You are", "short": "You're" },
+          { "full": "He is", "short": "He's" },
+          { "full": "She is", "short": "She's" },
+          { "full": "They are", "short": "They're" }
+        ]
+      }
+    },
+    {
+      "task_id": "t02_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Jobs and occupations",
+      "content": {
+        "explanation": "Common jobs you might use when introducing yourself.",
+        "items": [
+          { "phrase": "teacher", "note": "" },
+          { "phrase": "doctor", "note": "" },
+          { "phrase": "engineer", "note": "" },
+          { "phrase": "student", "note": "" },
+          { "phrase": "nurse", "note": "" },
+          { "phrase": "designer", "note": "" },
+          { "phrase": "manager", "note": "" },
+          { "phrase": "chef", "note": "" }
+        ]
+      }
+    },
+    {
+      "task_id": "t02_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat — introductions",
+      "content": {
+        "instruction": "Listen to this self-introduction and repeat each line aloud.",
+        "phrases": [
+          { "text": "Hi! My name is Arun.", "audio_key": "my_name_is_arun" },
+          { "text": "I'm from Chennai, India.", "audio_key": "from_chennai" },
+          { "text": "I'm 25 years old.", "audio_key": "25_years_old" },
+          { "text": "I work as an engineer.", "audio_key": "work_as_engineer" },
+          { "text": "Nice to meet you!", "audio_key": "nice_to_meet_you" }
+        ]
+      }
+    },
+    {
+      "task_id": "t02_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Choose the correct verb",
+      "content": {
+        "question": "Complete the sentence: 'She ___ from Japan.'",
+        "options": ["am", "is", "are", "be"],
+        "correct_index": 1,
+        "explanation": "We use 'is' with He / She / It."
+      }
+    },
+    {
+      "task_id": "t02_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Choose the correct verb",
+      "content": {
+        "question": "Complete the sentence: 'They ___ teachers at the school.'",
+        "options": ["am", "is", "are", "be"],
+        "correct_index": 2,
+        "explanation": "We use 'are' with We / You / They."
+      }
+    },
+    {
+      "task_id": "t02_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "knowledge_check",
+      "title": "What does it mean?",
+      "content": {
+        "question": "Which sentence is used to say where you come from?",
+        "options": [
+          "I'm 30 years old.",
+          "I'm from Brazil.",
+          "I work as a teacher.",
+          "My name is Sara."
+        ],
+        "correct_index": 1,
+        "explanation": "'I'm from ___' tells people your home country or city."
+      }
+    },
+    {
+      "task_id": "t02_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — verb to be",
+      "content": {
+        "sentence": "Hi! My name ___ Carlos and I ___ from Mexico.",
+        "blanks": [
+          { "position": 1, "options": ["am", "is", "are"], "correct": "is" },
+          { "position": 2, "options": ["am", "is", "are"], "correct": "am" }
+        ],
+        "explanation": "'name is' — we use 'is' because 'name' is third person. 'I am' — first person."
+      }
+    },
+    {
+      "task_id": "t02_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank",
+      "content": {
+        "sentence": "I ___ a nurse. I work at a hospital.",
+        "options": ["am", "is", "are", "be"],
+        "correct": "am",
+        "explanation": "With 'I' we always use 'am'."
+      }
+    },
+    {
+      "task_id": "t02_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "knowledge_check",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange the words to make a correct introduction sentence.",
+        "words": ["name", "is", "My", "Sofia"],
+        "correct_sentence": "My name is Sofia.",
+        "explanation": "The structure is: My name + is + [your name]."
+      }
+    },
+    {
+      "task_id": "t02_11",
+      "order": 11,
+      "type": "sort_words",
+      "category": "knowledge_check",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange the words to make a correct sentence.",
+        "words": ["from", "I'm", "India", "Chennai", "in"],
+        "correct_sentence": "I'm from Chennai in India.",
+        "explanation": "We say 'from [city] in [country]' to be more specific."
+      }
+    },
+    {
+      "task_id": "t02_12",
+      "order": 12,
+      "type": "match_pairs",
+      "category": "grammar",
+      "title": "Match subject with correct verb",
+      "content": {
+        "instruction": "Match each subject with 'am', 'is', or 'are'.",
+        "pairs": [
+          { "prompt": "I", "answer": "am" },
+          { "prompt": "She", "answer": "is" },
+          { "prompt": "They", "answer": "are" },
+          { "prompt": "He", "answer": "is" },
+          { "prompt": "We", "answer": "are" }
+        ]
+      }
+    },
+    {
+      "task_id": "t02_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "knowledge_check",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "This sentence has a grammar mistake. Choose the correct version.",
+        "wrong_sentence": "I are from India and I is a student.",
+        "options": [
+          "I is from India and I am a student.",
+          "I am from India and I am a student.",
+          "I am from India and I is a student.",
+          "I are from India and I are a student."
+        ],
+        "correct_index": 1,
+        "explanation": "With 'I' we always use 'am'. Never 'is' or 'are' with 'I'."
+      }
+    },
+    {
+      "task_id": "t02_14",
+      "order": 14,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Introduce yourself",
+      "content": {
+        "instruction": "Speak for 30–45 seconds. Introduce yourself completely.",
+        "prompt": "Say your name, where you are from, how old you are, and what you do.",
+        "example_response": "Hello! My name is Priya. I'm from Chennai, India. I'm 27 years old. I work as a software engineer. Nice to meet you!",
+        "key_phrases": ["My name is", "I'm from", "I'm ___ years old", "I work as"],
+        "min_words": 25
+      }
+    },
+    {
+      "task_id": "t02_15",
+      "order": 15,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Introduce a friend",
+      "content": {
+        "instruction": "Now introduce a friend or family member using 'He is' or 'She is'.",
+        "prompt": "Talk about someone you know. Say their name, where they are from, and their job.",
+        "example_response": "This is my friend Kavya. She's from Bangalore. She's 25 years old. She's a doctor.",
+        "key_phrases": ["This is my friend", "He is / She is", "He's / She's from", "He / She works as"],
+        "min_words": 20
+      }
+    },
+    {
+      "task_id": "t02_16",
+      "order": 16,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "How to say your name: My name is ___ / I'm ___",
+          "How to say where you're from: I'm from ___",
+          "Verb 'to be': I am, You are, He/She/It is, We/They are",
+          "Short forms: I'm, You're, He's, She's, They're",
+          "Common jobs: teacher, doctor, engineer, student, nurse",
+          "How to introduce someone else: This is my friend ___. She is a ___."
+        ],
+        "next_lesson": "a1_unit1_lesson03",
+        "next_lesson_title": "Asking about others"
+      }
+    }
+  ]
+}

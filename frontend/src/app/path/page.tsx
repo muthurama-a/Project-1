@@ -10,7 +10,7 @@ import '@/styles/path.css';
 
 /* ─── Types ──────────────────────────────────────────────────── */
 type Lesson = {
-  id: number;
+  id: string | number;
   title: string;
   content_type: 'theory' | 'quiz' | 'speaking' | 'listening';
   order: number;
@@ -76,16 +76,43 @@ export default function PathPage() {
   const [interestLabel, setInterestLabel] = useState('Your Interests');
   const [selectedLesson, setSelectedLesson] = useState<{ lesson: Lesson; unitTitle: string } | null>(null);
 
+  // ── A1 Unit 1 lesson slugs — must match /public/a1_unit_1/ filenames ──
+  const A1_UNIT1_LESSONS: Lesson[] = [
+    { id: 'a1_unit1_lesson01', title: 'Hello & Goodbye',                    content_type: 'theory',   order: 1, is_completed: false },
+    { id: 'a1_unit1_lesson02', title: 'Who am I? — Introducing yourself',   content_type: 'speaking', order: 2, is_completed: false },
+    { id: 'a1_unit1_lesson03', title: 'Asking about others',                content_type: 'quiz',     order: 3, is_completed: false },
+    { id: 'a1_unit1_lesson04', title: 'Family & Friends',                   content_type: 'theory',   order: 4, is_completed: false },
+    { id: 'a1_unit1_lesson05', title: 'Where I live',                       content_type: 'theory',   order: 5, is_completed: false },
+    { id: 'a1_unit1_lesson06', title: 'Daily Routines',                     content_type: 'quiz',     order: 6, is_completed: false },
+    { id: 'a1_unit1_lesson07', title: 'Hobbies & Preferences',              content_type: 'speaking', order: 7, is_completed: false },
+    { id: 'a1_unit1_lesson08', title: 'Unit 1 Review',                      content_type: 'quiz',     order: 8, is_completed: false },
+  ];
+
   useEffect(() => {
     setInterestLabel(getInterestLabel());
     lessonService.getDashboard()
-      .then((res: DashData) => setData(res))
+      .then((res: DashData) => {
+        // Always inject local JSON slugs for Unit 1 so lesson routing works
+        if (res?.units) {
+          const u1 = res.units.find((u: Unit) =>
+            u.title.toLowerCase().includes('greet') || u.order === 1 || u.id === 1
+          );
+          if (u1) {
+            const dbCompleted = (u1.lessons ?? []).map(l => Boolean(l.is_completed));
+            u1.lessons = A1_UNIT1_LESSONS.map((l, i) => ({
+              ...l,
+              is_completed: dbCompleted[i] ?? false
+            }));
+          }
+        }
+        setData(res);
+      })
       .catch(() => setData(FALLBACK_DATA))
       .finally(() => setLoading(false));
   }, []);
 
   /* Find first active lesson (first not completed) */
-  let firstActiveId: number | null = null;
+  let firstActiveId: string | number | null = null;
   if (data?.units) {
     outer: for (const u of data.units) {
       for (const l of u.lessons) {
@@ -381,14 +408,19 @@ const FALLBACK_DATA: DashData = {
   current_level: 'A1',
   units: [
     {
-      id: 1, title: 'Greetings & Introductions', description: 'Learn hello, goodbye and introduce yourself.',
+      id: 1, title: 'Greetings & Introductions',
+      description: 'Learn how to say hello, introduce yourself, and talk about your life.',
       icon: '👋', order: 1,
+      // ⚠️ IDs must be the a1_unit1_lessonXX slugs — lesson page loads JSON from /public/a1_unit_1/
       lessons: [
-        { id: 1, title: 'Basic Greetings', content_type: 'theory', order: 1, is_completed: true },
-        { id: 2, title: 'Introducing Yourself', content_type: 'speaking', order: 2, is_completed: false },
-        { id: 3, title: 'Asking About Someone', content_type: 'quiz', order: 3, is_completed: false },
-        { id: 4, title: 'Greetings Listening', content_type: 'listening', order: 4, is_completed: false },
-        { id: 5, title: 'Polite Expressions', content_type: 'theory', order: 5, is_completed: false },
+        { id: 'a1_unit1_lesson01', title: 'Hello & Goodbye',                  content_type: 'theory',   order: 1, is_completed: false },
+        { id: 'a1_unit1_lesson02', title: 'Who am I? — Introducing yourself', content_type: 'speaking', order: 2, is_completed: false },
+        { id: 'a1_unit1_lesson03', title: 'Asking about others',              content_type: 'quiz',     order: 3, is_completed: false },
+        { id: 'a1_unit1_lesson04', title: 'Family & Friends',                 content_type: 'theory',   order: 4, is_completed: false },
+        { id: 'a1_unit1_lesson05', title: 'Where I live',                     content_type: 'theory',   order: 5, is_completed: false },
+        { id: 'a1_unit1_lesson06', title: 'Daily Routines',                   content_type: 'quiz',     order: 6, is_completed: false },
+        { id: 'a1_unit1_lesson07', title: 'Hobbies & Preferences',            content_type: 'speaking', order: 7, is_completed: false },
+        { id: 'a1_unit1_lesson08', title: 'Unit 1 Review',                    content_type: 'quiz',     order: 8, is_completed: false },
       ]
     },
     {

@@ -1,0 +1,315 @@
+{
+  "lesson_id": "a1_unit1_lesson06",
+  "unit": 1,
+  "lesson_number": 6,
+  "level": "A1",
+  "title": "My day — daily routines",
+  "description": "Learn to talk about what you do every day using the simple present tense.",
+  "estimated_minutes": 22,
+  "xp_reward": 140,
+  "tasks": [
+    {
+      "task_id": "t06_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Daily routine verbs",
+      "content": {
+        "explanation": "These action words (verbs) describe what we do every day.",
+        "items": [
+          { "phrase": "wake up", "note": "Stop sleeping and open your eyes" },
+          { "phrase": "get up", "note": "Get out of bed" },
+          { "phrase": "have breakfast / lunch / dinner", "note": "Eat your meals" },
+          { "phrase": "go to work / school", "note": "Travel to your workplace or school" },
+          { "phrase": "come home", "note": "Return to your house" },
+          { "phrase": "cook", "note": "Make food" },
+          { "phrase": "clean the house", "note": "Tidy your home" },
+          { "phrase": "watch TV", "note": "See programmes on television" },
+          { "phrase": "go to sleep / go to bed", "note": "End the day and sleep" },
+          { "phrase": "exercise / go to the gym", "note": "Do physical activity" }
+        ]
+      }
+    },
+    {
+      "task_id": "t06_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Time words for routines",
+      "content": {
+        "explanation": "Use these words to say WHEN you do things.",
+        "items": [
+          { "phrase": "in the morning", "note": "From waking up to 12pm" },
+          { "phrase": "in the afternoon", "note": "From 12pm to about 6pm" },
+          { "phrase": "in the evening", "note": "From about 6pm to bedtime" },
+          { "phrase": "at night", "note": "Late, when it is dark" },
+          { "phrase": "every day", "note": "All days, daily" },
+          { "phrase": "usually / always / sometimes", "note": "Frequency words — how often" }
+        ]
+      }
+    },
+    {
+      "task_id": "t06_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: Simple present tense",
+      "content": {
+        "explanation": "We use the simple present to talk about habits and routines — things we do regularly.",
+        "rules": [
+          {
+            "subject": "I / You / We / They",
+            "rule": "Use the base verb",
+            "examples": ["I wake up at 7.", "They go to work at 9."]
+          },
+          {
+            "subject": "He / She / It",
+            "rule": "Add -s or -es to the verb",
+            "examples": ["She wakes up at 7.", "He goes to work at 9."]
+          }
+        ],
+        "common_exceptions": [
+          { "base": "go", "he_she": "goes" },
+          { "base": "have", "he_she": "has" },
+          { "base": "do", "he_she": "does" },
+          { "base": "watch", "he_she": "watches" }
+        ],
+        "negative_form": {
+          "i_you_we_they": "do not (don't) + verb — I don't cook every day.",
+          "he_she_it": "does not (doesn't) + verb — She doesn't wake up early."
+        }
+      }
+    },
+    {
+      "task_id": "t06_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat — daily routine",
+      "content": {
+        "instruction": "Listen and repeat these routine sentences.",
+        "phrases": [
+          { "text": "I wake up at seven in the morning.", "audio_key": "wake_up_seven" },
+          { "text": "She goes to work at nine o'clock.", "audio_key": "she_goes_to_work" },
+          { "text": "He doesn't cook — he eats at a restaurant.", "audio_key": "doesnt_cook" },
+          { "text": "We always have dinner together.", "audio_key": "dinner_together" }
+        ]
+      }
+    },
+    {
+      "task_id": "t06_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Simple present — He/She/It",
+      "content": {
+        "question": "Choose the correct sentence about your friend Sara:",
+        "options": [
+          "Sara wake up at 6 every morning.",
+          "Sara wakes up at 6 every morning.",
+          "Sara is wake up at 6 every morning.",
+          "Sara waking up at 6 every morning."
+        ],
+        "correct_index": 1,
+        "explanation": "He/She/It: add -s to the verb. wake → wakes."
+      }
+    },
+    {
+      "task_id": "t06_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Simple present — negative",
+      "content": {
+        "question": "'He ___ watch TV in the morning.' (negative)",
+        "options": [
+          "He don't watch",
+          "He doesn't watch",
+          "He isn't watch",
+          "He not watches"
+        ],
+        "correct_index": 1,
+        "explanation": "He/She/It negative → doesn't + base verb. Never 'don't' with He/She."
+      }
+    },
+    {
+      "task_id": "t06_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "What time of day?",
+      "content": {
+        "question": "You eat breakfast at 8am. When do you eat?",
+        "options": ["at night", "in the afternoon", "in the morning", "in the evening"],
+        "correct_index": 2,
+        "explanation": "8am is in the morning — before 12pm."
+      }
+    },
+    {
+      "task_id": "t06_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the correct verb form",
+      "content": {
+        "sentence": "My father _____ (wake) up at 5am every day.",
+        "options": ["wake", "wakes", "waking", "woked"],
+        "correct": "wakes",
+        "explanation": "'My father' = He → add -s. wake → wakes."
+      }
+    },
+    {
+      "task_id": "t06_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — exception verb",
+      "content": {
+        "sentence": "She _____ (have) lunch at 1pm at the office.",
+        "options": ["have", "haves", "has", "having"],
+        "correct": "has",
+        "explanation": "'Have' is irregular — He/She/It has (not 'haves')."
+      }
+    },
+    {
+      "task_id": "t06_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — negative",
+      "content": {
+        "sentence": "I _____ cook in the morning. I always have breakfast outside.",
+        "options": ["doesn't", "don't", "am not", "not"],
+        "correct": "don't",
+        "explanation": "'I' → negative is 'don't'. She/He → 'doesn't'."
+      }
+    },
+    {
+      "task_id": "t06_11",
+      "order": 11,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct daily routine sentence.",
+        "words": ["goes", "She", "school", "to", "morning", "in", "the"],
+        "correct_sentence": "She goes to school in the morning.",
+        "explanation": "She + goes (He/She form) + to school + time expression."
+      }
+    },
+    {
+      "task_id": "t06_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the negative sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct negative sentence.",
+        "words": ["He", "doesn't", "dinner", "cook"],
+        "correct_sentence": "He doesn't cook dinner.",
+        "explanation": "He/She/It negative: Subject + doesn't + base verb."
+      }
+    },
+    {
+      "task_id": "t06_13",
+      "order": 13,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match the routine to the time",
+      "content": {
+        "instruction": "Match each activity with the most likely time of day.",
+        "pairs": [
+          { "prompt": "wake up and have breakfast", "answer": "in the morning" },
+          { "prompt": "have lunch at the office", "answer": "in the afternoon" },
+          { "prompt": "cook dinner and watch TV", "answer": "in the evening" },
+          { "prompt": "go to sleep", "answer": "at night" }
+        ]
+      }
+    },
+    {
+      "task_id": "t06_14",
+      "order": 14,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is grammatically correct?",
+        "wrong_sentence": "My brother go to the gym every morning.",
+        "options": [
+          "My brother go to the gym every morning.",
+          "My brother goes to the gym every morning.",
+          "My brother going to the gym every morning.",
+          "My brother does go to the gym every morning."
+        ],
+        "correct_index": 1,
+        "explanation": "'My brother' = He → go + es = goes. He goes to the gym."
+      }
+    },
+    {
+      "task_id": "t06_15",
+      "order": 15,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "A colleague asks you: 'What time do you usually have lunch?'",
+        "question": "Which is the most natural and correct reply?",
+        "options": [
+          "I usually have lunch at 1 o'clock.",
+          "I usually having lunch at 1 o'clock.",
+          "I have usually lunch at 1.",
+          "Usually I lunch at 1 o'clock."
+        ],
+        "correct_index": 0,
+        "explanation": "Frequency adverb 'usually' goes before the main verb. 'I usually have...' is correct."
+      }
+    },
+    {
+      "task_id": "t06_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Your daily routine",
+      "content": {
+        "instruction": "Describe your typical day from morning to night. Use time words and frequency words.",
+        "prompt": "Tell me about your daily routine. What do you do every day?",
+        "example_response": "I wake up at 6 in the morning. I have breakfast at 6:30. Then I go to work at 8. I usually have lunch at 1pm. I come home at 6 in the evening. I cook dinner and watch TV. I go to sleep at 10:30 at night.",
+        "key_phrases": ["I wake up at", "I have breakfast", "I go to work", "in the morning / evening", "usually / always"],
+        "min_words": 40
+      }
+    },
+    {
+      "task_id": "t06_17",
+      "order": 17,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Someone else's routine",
+      "content": {
+        "instruction": "Now talk about a family member's routine. Use He/She + verb+s.",
+        "prompt": "Describe a typical day for your mother, father, or a friend.",
+        "example_response": "My mother wakes up very early — at 5am. She makes breakfast for the family. She goes to work at 8. She usually has lunch at the office. She comes home at 6 in the evening and cooks dinner. She goes to sleep at 10.",
+        "key_phrases": ["She wakes up", "He goes", "She has", "He doesn't", "She comes home"],
+        "min_words": 35
+      }
+    },
+    {
+      "task_id": "t06_18",
+      "order": 18,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Daily verbs: wake up, have breakfast, go to work, come home, cook, watch TV, go to sleep",
+          "Time words: in the morning, in the afternoon, in the evening, at night, every day",
+          "Simple present: I wake / She wakes / He goes / She has",
+          "Negative: I don't cook / She doesn't wake up early",
+          "Frequency words: always, usually, sometimes",
+          "He/She exceptions: go → goes, have → has, watch → watches"
+        ],
+        "next_lesson": "a1_unit1_lesson07",
+        "next_lesson_title": "What I like — hobbies & preferences"
+      }
+    }
+  ]
+}

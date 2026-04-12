@@ -17,6 +17,26 @@ export default function DashboardPage() {
   const fetchData = async () => {
     try {
       const res = await lessonService.getDashboard();
+      
+      // Replace Unit 1 lesson IDs with local JSON slugs but KEEP real is_completed from DB
+      if (res && res.units) {
+        const unit1 = res.units.find((u: any) => u.title.includes('Greetings') || u.order === 1 || u.id === 1);
+        if (unit1) {
+          // Grab is_completed state from DB lessons by order position
+          const dbCompleted: boolean[] = (unit1.lessons ?? []).map((l: any) => Boolean(l.is_completed));
+          unit1.lessons = [
+            { id: 'a1_unit1_lesson01', title: 'Hello & Goodbye',                  content_type: 'theory',   order: 1, is_completed: dbCompleted[0] ?? false },
+            { id: 'a1_unit1_lesson02', title: 'Who am I? — Introducing yourself', content_type: 'speaking', order: 2, is_completed: dbCompleted[1] ?? false },
+            { id: 'a1_unit1_lesson03', title: 'Asking about others',              content_type: 'quiz',     order: 3, is_completed: dbCompleted[2] ?? false },
+            { id: 'a1_unit1_lesson04', title: 'Family & Friends',                 content_type: 'theory',   order: 4, is_completed: dbCompleted[3] ?? false },
+            { id: 'a1_unit1_lesson05', title: 'Where I live',                     content_type: 'theory',   order: 5, is_completed: dbCompleted[4] ?? false },
+            { id: 'a1_unit1_lesson06', title: 'Daily Routines',                   content_type: 'quiz',     order: 6, is_completed: dbCompleted[5] ?? false },
+            { id: 'a1_unit1_lesson07', title: 'Hobbies & Preferences',            content_type: 'speaking', order: 7, is_completed: dbCompleted[6] ?? false },
+            { id: 'a1_unit1_lesson08', title: 'Unit 1 Review',                    content_type: 'quiz',     order: 8, is_completed: dbCompleted[7] ?? false },
+          ];
+        }
+      }
+      
       setData(res);
     } catch (err) {
       console.error('Dashboard fetch failed — using local fallback', err);
@@ -34,12 +54,18 @@ export default function DashboardPage() {
         units: [{
           id: 1,
           title: 'Greetings & Introductions',
-          description: 'Learn how to say hello and introduce yourself.',
+          description: 'Learn how to say hello, introduce yourself, and talk about your life.',
           icon: '👋',
           order: 1,
           lessons: [
-            { id: 1, title: 'Basic Greetings', content_type: 'theory', order: 1, is_completed: false },
-            { id: 2, title: 'Introducing Yourself', content_type: 'speaking', order: 2, is_completed: false },
+            { id: 'a1_unit1_lesson01', title: 'Hello & Goodbye', content_type: 'theory', order: 1, is_completed: false },
+            { id: 'a1_unit1_lesson02', title: 'Who am I? — Introducing yourself', content_type: 'speaking', order: 2, is_completed: false },
+            { id: 'a1_unit1_lesson03', title: 'Asking about others', content_type: 'quiz', order: 3, is_completed: false },
+            { id: 'a1_unit1_lesson04', title: 'Family & Friends', content_type: 'theory', order: 4, is_completed: false },
+            { id: 'a1_unit1_lesson05', title: 'Where I live', content_type: 'theory', order: 5, is_completed: false },
+            { id: 'a1_unit1_lesson06', title: 'Daily Routines', content_type: 'quiz', order: 6, is_completed: false },
+            { id: 'a1_unit1_lesson07', title: 'Hobbies & Preferences', content_type: 'speaking', order: 7, is_completed: false },
+            { id: 'a1_unit1_lesson08', title: 'Unit 1 Review', content_type: 'quiz', order: 8, is_completed: false },
           ],
         }],
       });
@@ -56,7 +82,7 @@ export default function DashboardPage() {
         new Intl.DateTimeFormat('en-US', { hour: 'numeric', hour12: false, timeZone: tz }).format(new Date()),
         10
       );
-      if (h >= 5  && h < 12) return 'Good morning,';
+      if (h >= 5 && h < 12) return 'Good morning,';
       if (h >= 12 && h < 17) return 'Good afternoon,';
       if (h >= 17 && h < 21) return 'Good evening,';
       return 'Good night,'; // 9 PM – 5 AM
@@ -82,14 +108,20 @@ export default function DashboardPage() {
 
   let activeUnit = data?.units?.[0];
   let activeLesson = activeUnit?.lessons?.[0];
+  let unitProgress = 0;
 
   if (data?.units) {
     outer: for (const u of data.units) {
       if (u.lessons) {
+        let completedInUnit = 0;
+        for (const l of u.lessons) {
+          if (l.is_completed) completedInUnit++;
+        }
         for (const l of u.lessons) {
           if (!l.is_completed) {
             activeUnit = u;
             activeLesson = l;
+            unitProgress = u.lessons.length ? Math.round((completedInUnit / u.lessons.length) * 100) : 0;
             break outer;
           }
         }
@@ -197,11 +229,11 @@ export default function DashboardPage() {
                   <motion.div
                     style={{ height: '100%', background: '#2563EB', borderRadius: '99px' }}
                     initial={{ width: 0 }}
-                    animate={{ width: '85%' }}
+                    animate={{ width: `${unitProgress}%` }}
                     transition={{ duration: 1, ease: 'easeOut' }}
                   />
                 </div>
-                <span style={{ fontSize: '11px', fontWeight: 700, color: '#2563EB' }}>85%</span>
+                <span style={{ fontSize: '11px', fontWeight: 700, color: '#2563EB' }}>{unitProgress}%</span>
               </div>
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '14px', borderTop: '1px solid #f8fafc' }}>
@@ -209,7 +241,7 @@ export default function DashboardPage() {
                   English · {data?.current_level || 'A1'}
                 </span>
                 <Link
-                  href="/path"
+                  href={activeLesson ? `/lesson/${activeLesson.id}` : "/path"}
                   style={{
                     width: '36px',
                     height: '36px',
@@ -234,71 +266,71 @@ export default function DashboardPage() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
               {/* Reviews Due */}
               <Link href="/review" style={{ textDecoration: 'none' }}>
-              <div style={{
-                background: 'white',
-                borderRadius: '14px',
-                padding: '20px',
-                border: '1px solid #f1f5f9',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                display: 'flex',
-                gap: '14px',
-                alignItems: 'center',
-                cursor: 'pointer',
-              }}>
                 <div style={{
-                  width: '44px',
-                  height: '44px',
-                  background: '#dcfce7',
-                  borderRadius: '12px',
+                  background: 'white',
+                  borderRadius: '14px',
+                  padding: '20px',
+                  border: '1px solid #f1f5f9',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                   display: 'flex',
+                  gap: '14px',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
+                  cursor: 'pointer',
                 }}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#16a34a">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
+                  <div style={{
+                    width: '44px',
+                    height: '44px',
+                    background: '#dcfce7',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                  }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#16a34a">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '20px', fontWeight: 900, color: '#1e293b', lineHeight: 1 }}>{data?.due_cards_count ?? 0}</div>
+                    <div style={{ fontSize: '11px', fontWeight: 600, color: '#94a3b8', margin: '2px 0' }}>Reviews Due</div>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: '#16a34a' }}>Start Review ›</div>
+                  </div>
                 </div>
-                <div>
-                  <div style={{ fontSize: '20px', fontWeight: 900, color: '#1e293b', lineHeight: 1 }}>{data?.due_cards_count ?? 0}</div>
-                  <div style={{ fontSize: '11px', fontWeight: 600, color: '#94a3b8', margin: '2px 0' }}>Reviews Due</div>
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#16a34a' }}>Start Review ›</div>
-                </div>
-              </div>
               </Link>
 
               {/* View Full Path */}
               <Link href="/path" style={{ textDecoration: 'none' }}>
-              <div style={{
-                background: 'white',
-                borderRadius: '14px',
-                padding: '20px',
-                border: '1px solid #f1f5f9',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                display: 'flex',
-                gap: '14px',
-                alignItems: 'center',
-                cursor: 'pointer',
-              }}>
                 <div style={{
-                  width: '44px',
-                  height: '44px',
-                  background: '#dbeafe',
-                  borderRadius: '12px',
+                  background: 'white',
+                  borderRadius: '14px',
+                  padding: '20px',
+                  border: '1px solid #f1f5f9',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                   display: 'flex',
+                  gap: '14px',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  fontSize: '22px'
+                  cursor: 'pointer',
                 }}>
-                  🗺️
+                  <div style={{
+                    width: '44px',
+                    height: '44px',
+                    background: '#dbeafe',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    fontSize: '22px'
+                  }}>
+                    🗺️
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '16px', fontWeight: 900, color: '#1e293b', lineHeight: 1.2 }}>All Units</div>
+                    <div style={{ fontSize: '11px', fontWeight: 600, color: '#94a3b8', margin: '2px 0' }}>Learning Path</div>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: '#2563EB' }}>View ›</div>
+                  </div>
                 </div>
-                <div>
-                  <div style={{ fontSize: '16px', fontWeight: 900, color: '#1e293b', lineHeight: 1.2 }}>All Units</div>
-                  <div style={{ fontSize: '11px', fontWeight: 600, color: '#94a3b8', margin: '2px 0' }}>Learning Path</div>
-                  <div style={{ fontSize: '11px', fontWeight: 700, color: '#2563EB' }}>View ›</div>
-                </div>
-              </div>
               </Link>
             </div>
           </div>

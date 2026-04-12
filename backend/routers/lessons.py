@@ -3,20 +3,181 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 from database import get_db
 from models import Unit, Lesson, User, UserLevel, TestResult, FlashCard, VelocityLog
 from schemas.lessons import (
     DashboardResponse, UnitResponse, LessonResponse,
     FlashCardResponse, SM2SubmitRequest, SM2SubmitResponse,
-    VelocityLogRequest, VelocityStatsResponse, SeedCardsResponse
+    VelocityLogRequest, VelocityStatsResponse, SeedCardsResponse,
+    CompleteLessonRequest
 )
 from routers.auth import get_current_user
 from utils.lesson_generator import generate_personalized_units
 from utils.sm2 import sm2_next, compute_due_date, compute_hesitation_score, compute_quality_from_velocity
 
 router = APIRouter()
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# /progress  — real-time user performance analytics
+# ─────────────────────────────────────────────────────────────────────────────
+
+@router.get("/progress")
+def get_progress(year: int = None, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    user_id = current_user.id
+    now_utc = datetime.now(timezone.utc)
+
+    # ── Lesson completion ────────────────────────────────────────────────────
+    all_units = db.query(Unit).filter(Unit.level == "A1").order_by(Unit.order).all()
+    units_data = []
+    total_lessons = 0
+    total_completed = 0
+    for u in all_units:
+        lessons = db.query(Lesson).filter(Lesson.unit_id == u.id).all()
+        done = sum(1 for l in lessons if l.is_completed)
+        total_lessons += len(lessons)
+        total_completed += done
+        units_data.append({
+            "id": u.id, "title": u.title, "icon": u.icon, "order": u.order,
+            "total": len(lessons), "completed": done,
+            "pct": round(done / len(lessons) * 100) if lessons else 0
+        })
+
+    overall_pct = round(total_completed / total_lessons * 100) if total_lessons else 0
+
+    # ── Accuracy from TestResults ─────────────────────────────────────────────
+    all_scores = db.query(TestResult.score).filter(TestResult.user_id == user_id).all()
+    accuracy = round(sum(r[0] for r in all_scores) / len(all_scores) * 100, 1) if all_scores else 0.0
+
+    # ── Time studied (VelocityLog as proxy: each log = ~1 question answered) ──
+    # Rough estimate: avg 30s per answered question
+    MS_PER_QUESTION = 30_000
+
+    def time_in_range(start: datetime, end: datetime) -> float:
+        """Returns study hours based on velocity log count in range."""
+        count = db.query(func.count(VelocityLog.id)).filter(
+            VelocityLog.user_id == user_id,
+            VelocityLog.created_at >= start,
+            VelocityLog.created_at <= end
+        ).scalar() or 0
+        return round(count * MS_PER_QUESTION / 3_600_000, 2)  # hours
+
+    today_start    = now_utc.replace(hour=0, minute=0, second=0, microsecond=0)
+    week_start     = today_start - timedelta(days=today_start.weekday())
+    month_start    = today_start.replace(day=1)
+    # Get user account creation year or min year
+    first_log = db.query(VelocityLog).filter(VelocityLog.user_id == user_id).order_by(VelocityLog.created_at.asc()).first()
+    first_year = first_log.created_at.year if first_log and first_log.created_at else now_utc.year
+    first_year = min(first_year, now_utc.year)
+    
+    target_year = year if year else now_utc.year
+    year_start_date = datetime(target_year, 1, 1, tzinfo=timezone.utc)
+    
+    if target_year == now_utc.year:
+        num_days = (today_start - year_start_date).days + 1
+    else:
+        year_end_date = datetime(target_year, 12, 31, tzinfo=timezone.utc)
+        num_days = (year_end_date - year_start_date).days + 1
+
+    time_today   = time_in_range(today_start, now_utc)
+    time_week    = time_in_range(week_start, now_utc)
+    time_month   = time_in_range(month_start, now_utc)
+    time_year    = time_in_range(year_start_date, now_utc if target_year == now_utc.year else year_start_date.replace(month=12, day=31, hour=23, minute=59, second=59))
+    time_total   = time_in_range(datetime(2000, 1, 1, tzinfo=timezone.utc), now_utc)
+
+    # ── Daily activity heatmap (full year) ─────────────────────────────────
+    from sqlalchemy.sql import cast
+    from sqlalchemy import Date
+    
+    # Simple approach: fetch all created_at dates for the year in python to group
+    logs = db.query(VelocityLog.created_at).filter(
+        VelocityLog.user_id == user_id,
+        VelocityLog.created_at >= year_start_date,
+        VelocityLog.created_at < year_start_date + timedelta(days=num_days + 1)
+    ).all()
+    
+    log_dict = {}
+    for (d,) in logs:
+        if d:
+            ds = d.strftime("%Y-%m-%d")
+            log_dict[ds] = log_dict.get(ds, 0) + 1
+            
+    heatmap = []
+    for i in range(num_days):
+        day = year_start_date + timedelta(days=i)
+        ds = day.strftime("%Y-%m-%d")
+        count = log_dict.get(ds, 0)
+        heatmap.append({
+            "date": ds,
+            "day": day.strftime("%a"),
+            "count": count,
+            "level": 0 if count == 0 else (1 if count < 5 else (2 if count < 15 else 3))
+        })
+
+    # ── Skill breakdown from lesson content_type completion ───────────────────
+    skill_map = {"theory": "grammar", "quiz": "vocabulary", "speaking": "speaking", "listening": "listening"}
+    skill_scores: dict = {"speaking": [], "vocabulary": [], "grammar": [], "listening": []}
+
+    completed_lessons = db.query(Lesson).join(Unit).filter(
+        Unit.level == "A1", Lesson.is_completed == 1
+    ).all()
+
+    for l in completed_lessons:
+        skill = skill_map.get(l.content_type, "vocabulary")
+        # Pull accuracy scores for this lesson from TestResults
+        scores = db.query(TestResult.score).filter(
+            TestResult.user_id == user_id, TestResult.question_id == l.id
+        ).all()
+        if scores:
+            skill_scores[skill].extend(r[0] for r in scores)
+        else:
+            skill_scores[skill].append(0.75)  # default 75% if no explicit record
+
+    def avg_pct(vals): return round(sum(vals) / len(vals) * 100) if vals else 0
+
+    skills = {
+        "speaking":   avg_pct(skill_scores["speaking"])   or 0,
+        "vocabulary": avg_pct(skill_scores["vocabulary"]) or 0,
+        "grammar":    avg_pct(skill_scores["grammar"])    or 0,
+        "listening":  avg_pct(skill_scores["listening"])  or 0,
+    }
+
+    # ── Words known estimate ──────────────────────────────────────────────────
+    words_known = total_completed * 15
+
+    # ── Due cards ─────────────────────────────────────────────────────────────
+    due_count = db.query(FlashCard).filter(
+        FlashCard.user_id == user_id, FlashCard.due_date <= now_utc
+    ).count()
+
+    # ── Streak ───────────────────────────────────────────────────────────────
+    streak = current_user.current_streak or 0
+
+    return {
+        "user_name": current_user.name,
+        "level": "A1",
+        "streak": streak,
+        "accuracy": accuracy,
+        "words_known": words_known,
+        "overall_pct": overall_pct,
+        "total_lessons": total_lessons,
+        "total_completed": total_completed,
+        "due_cards": due_count,
+        "units": units_data,
+        "skills": skills,
+        "study_time": {
+            "today": time_today,
+            "week":  time_week,
+            "month": time_month,
+            "year":  time_year,
+            "total": time_total,
+        },
+        "heatmap": heatmap,
+        "first_year": first_year,
+    }
+
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -273,7 +434,9 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
     completed_lessons_count = db.query(Lesson).join(Unit).filter(
         Unit.level == content_level, Lesson.is_completed == 1
     ).count()
-    words_known = 500 + (completed_lessons_count * 50)
+    
+    base_words = {"A1": 0, "A2": 500, "B1": 1500, "B2": 3000, "C1": 5000, "C2": 10000}.get(content_level, 0)
+    words_known = base_words + (completed_lessons_count * 15)
 
     # ── 4. SM-2 due cards + weak areas ────────────────────────────────────────
     now_utc = datetime.now(timezone.utc)
@@ -307,8 +470,7 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
             lessons=lesson_data
         ))
 
-    # Streak: days since last completed lesson (simplified: 1 if any done today)
-    streak = 1 if completed_lessons_count > 0 else 0
+    streak = current_user.current_streak if current_user.current_streak else 0
 
     return DashboardResponse(
         user_name=current_user.name or "Student",
@@ -339,11 +501,53 @@ def get_lesson_details(lesson_id: int, db: Session = Depends(get_db), current_us
 
 
 @router.post("/{lesson_id}/complete")
-def complete_lesson(lesson_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
-    lesson = db.query(Lesson).filter(Lesson.id == lesson_id).first()
+def complete_lesson(lesson_id: str, payload: CompleteLessonRequest, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    lesson = None
+    if lesson_id.startswith("a1_unit1_lesson"):
+        try:
+            order = int(lesson_id[-2:])
+            unit = db.query(Unit).filter(Unit.level == "A1", Unit.order == 1).first()
+            if unit:
+                lesson = db.query(Lesson).filter(Lesson.unit_id == unit.id, Lesson.order == order).first()
+        except ValueError:
+            pass
+    
+    if not lesson:
+        try:
+            lid = int(lesson_id)
+            lesson = db.query(Lesson).filter(Lesson.id == lid).first()
+        except ValueError:
+            pass
+
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
+        
     lesson.is_completed = 1
+
+    # Log accuracy as TestResult so dashboard query picks it up
+    tr = TestResult(
+        user_id=current_user.id,
+        question_type="lesson_completion",
+        question_id=lesson.id,
+        score=payload.accuracy,
+    )
+    db.add(tr)
+
+    # Update Streak
+    now_utc = datetime.now(timezone.utc)
+    now_date = now_utc.date()
+    # Check last active date
+    if current_user.last_active_date:
+        last_date = current_user.last_active_date.date()
+        if (now_date - last_date).days == 1:
+            current_user.current_streak += 1
+        elif (now_date - last_date).days > 1:
+            current_user.current_streak = 1
+    else:
+        current_user.current_streak = 1
+    
+    current_user.last_active_date = now_utc
+
     db.commit()
     _seed_cards_for_lesson(db, current_user.id, lesson)
     return {"message": "Lesson completed", "lesson_id": lesson_id}
@@ -359,7 +563,19 @@ def _seed_cards_for_lesson(db: Session, user_id: int, lesson: Lesson) -> int:
     except Exception:
         return 0
 
+    # Old format
     flashcards = data.get("flashcards", [])
+    
+    # New interactive format
+    tasks = data.get("tasks", [])
+    for task in tasks:
+        if task.get("type") == "FLASHCARD":
+            td = task.get("data", {})
+            front = td.get("primary_text", "")
+            back = td.get("secondary_text", "")
+            if front and back:
+                flashcards.append({"front": front, "back": back})
+
     count = 0
     for fc in flashcards:
         front = fc.get("front", "").strip()

@@ -1,0 +1,319 @@
+{
+  "lesson_id": "a1_unit1_lesson07",
+  "unit": 1,
+  "lesson_number": 7,
+  "level": "A1",
+  "title": "What I like — hobbies & preferences",
+  "description": "Learn to talk about your hobbies and express what you like or dislike.",
+  "estimated_minutes": 22,
+  "xp_reward": 140,
+  "tasks": [
+    {
+      "task_id": "t07_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Hobbies and free-time activities",
+      "content": {
+        "explanation": "These are popular hobbies and things people enjoy in their free time.",
+        "items": [
+          { "phrase": "cooking", "note": "Making food at home" },
+          { "phrase": "reading", "note": "Books, news, articles" },
+          { "phrase": "travelling", "note": "Going to new places" },
+          { "phrase": "watching movies / series", "note": "On TV or streaming" },
+          { "phrase": "listening to music", "note": "Songs, podcasts" },
+          { "phrase": "playing football / cricket", "note": "Sports outdoors" },
+          { "phrase": "playing chess / video games", "note": "Indoor games" },
+          { "phrase": "going to the gym", "note": "Exercise and fitness" },
+          { "phrase": "shopping", "note": "Buying clothes and things" },
+          { "phrase": "drawing / painting", "note": "Creative art" },
+          { "phrase": "hiking", "note": "Walking in nature" }
+        ]
+      }
+    },
+    {
+      "task_id": "t07_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Grammar: like / love / hate + -ing",
+      "content": {
+        "explanation": "We use 'like', 'love', 'enjoy', and 'hate' followed by the verb + -ing form.",
+        "structure": "Subject + like/love/hate + verb-ing",
+        "examples": [
+          { "sentence": "I love cooking.", "note": "Very positive" },
+          { "sentence": "I like reading.", "note": "Positive" },
+          { "sentence": "I enjoy hiking.", "note": "Positive" },
+          { "sentence": "I don't like shopping.", "note": "Negative" },
+          { "sentence": "I hate waking up early.", "note": "Strong negative" }
+        ],
+        "how_to_form_ing": [
+          { "verb": "cook", "ing_form": "cooking" },
+          { "verb": "read", "ing_form": "reading" },
+          { "verb": "travel", "ing_form": "travelling" },
+          { "verb": "listen", "ing_form": "listening" },
+          { "verb": "play", "ing_form": "playing" },
+          { "verb": "hike", "ing_form": "hiking (drop the -e)" }
+        ],
+        "rule": "Most verbs: add -ing. Verbs ending in -e: remove -e, add -ing."
+      }
+    },
+    {
+      "task_id": "t07_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Asking about preferences",
+      "content": {
+        "explanation": "Use these phrases to ask and answer about what people like.",
+        "examples": [
+          {
+            "question": "Do you like cooking?",
+            "yes": "Yes, I love it!",
+            "no": "No, I don't like it."
+          },
+          {
+            "question": "What do you like doing in your free time?",
+            "yes": "I like reading and listening to music.",
+            "no": ""
+          },
+          {
+            "question": "Do you enjoy travelling?",
+            "yes": "Yes, I enjoy it very much.",
+            "no": "Not really. I prefer staying at home."
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t07_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Listen and repeat these sentences about hobbies.",
+        "phrases": [
+          { "text": "I love listening to music.", "audio_key": "love_listening_music" },
+          { "text": "She doesn't like cooking.", "audio_key": "doesnt_like_cooking" },
+          { "text": "Do you enjoy hiking?", "audio_key": "enjoy_hiking" },
+          { "text": "He hates waking up early.", "audio_key": "hates_waking_up" },
+          { "text": "What do you like doing at the weekend?", "audio_key": "like_doing_weekend" }
+        ]
+      }
+    },
+    {
+      "task_id": "t07_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Correct -ing form",
+      "content": {
+        "question": "Complete: 'I enjoy _____ to new places.'",
+        "options": ["travel", "travelled", "travelling", "to travel"],
+        "correct_index": 2,
+        "explanation": "After 'enjoy', always use verb + -ing. travel → travelling."
+      }
+    },
+    {
+      "task_id": "t07_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Correct -ing form",
+      "content": {
+        "question": "Complete: 'She loves _____ movies on weekends.'",
+        "options": ["watch", "watches", "to watches", "watching"],
+        "correct_index": 3,
+        "explanation": "After 'loves', always use verb + -ing. watch → watching."
+      }
+    },
+    {
+      "task_id": "t07_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Negative preference",
+      "content": {
+        "question": "Which sentence means: 'Shopping is not something I enjoy.'",
+        "options": [
+          "I like shopping.",
+          "I don't like shopping.",
+          "I am not shopping.",
+          "I can't shopping."
+        ],
+        "correct_index": 1,
+        "explanation": "To express a negative preference: I don't like + verb-ing."
+      }
+    },
+    {
+      "task_id": "t07_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the correct -ing form",
+      "content": {
+        "sentence": "I love _____ (listen) to music when I come home from work.",
+        "options": ["listen", "listens", "listened", "listening"],
+        "correct": "listening",
+        "explanation": "After 'love', use verb + -ing. listen → listening."
+      }
+    },
+    {
+      "task_id": "t07_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — -ing form rule",
+      "content": {
+        "sentence": "He enjoys _____ (hike) in the mountains on weekends.",
+        "options": ["hike", "hikes", "hiking", "hiked"],
+        "correct": "hiking",
+        "explanation": "'hike' ends in -e, so remove -e and add -ing → hiking."
+      }
+    },
+    {
+      "task_id": "t07_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the blank — negative preference",
+      "content": {
+        "sentence": "My sister _____ (not like) cooking. She prefers eating out.",
+        "options": ["don't likes", "doesn't likes", "doesn't like", "don't like"],
+        "correct": "doesn't like",
+        "explanation": "'My sister' = She → doesn't + base verb (no -s on like)."
+      }
+    },
+    {
+      "task_id": "t07_11",
+      "order": 11,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the sentence",
+      "content": {
+        "instruction": "Rearrange the words to make a correct sentence.",
+        "words": ["drawing", "I", "love", "and", "painting"],
+        "correct_sentence": "I love drawing and painting.",
+        "explanation": "I + love + verb-ing + and + verb-ing."
+      }
+    },
+    {
+      "task_id": "t07_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the question",
+      "content": {
+        "instruction": "Rearrange the words to make a question about hobbies.",
+        "words": ["you", "Do", "like", "cooking", "enjoy", "or"],
+        "correct_sentence": "Do you like cooking or enjoy it?",
+        "hint": "Do + you + like + verb-ing",
+        "alternative_correct": "Do you like or enjoy cooking?",
+        "explanation": "'Do you like cooking?' is the standard question form."
+      }
+    },
+    {
+      "task_id": "t07_13",
+      "order": 13,
+      "type": "match_pairs",
+      "category": "grammar",
+      "title": "Match verb to correct -ing form",
+      "content": {
+        "instruction": "Match each verb with its correct -ing form.",
+        "pairs": [
+          { "prompt": "travel", "answer": "travelling" },
+          { "prompt": "read", "answer": "reading" },
+          { "prompt": "hike", "answer": "hiking" },
+          { "prompt": "cook", "answer": "cooking" },
+          { "prompt": "play", "answer": "playing" }
+        ]
+      }
+    },
+    {
+      "task_id": "t07_14",
+      "order": 14,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct?",
+        "wrong_sentence": "She likes to listen music every evening.",
+        "options": [
+          "She likes to listen music every evening.",
+          "She likes listen to music every evening.",
+          "She likes listening to music every evening.",
+          "She like listening to music every evening."
+        ],
+        "correct_index": 2,
+        "explanation": "After 'likes', use verb-ing. Also: 'listen TO music' (not 'listen music')."
+      }
+    },
+    {
+      "task_id": "t07_15",
+      "order": 15,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "At a new job, a colleague asks: 'What do you do in your free time?'",
+        "question": "Which is the most natural reply?",
+        "options": [
+          "I am liking to read and travel.",
+          "I like reading and I enjoy travelling.",
+          "I likes reading and travel.",
+          "Reading and travel is what I like do."
+        ],
+        "correct_index": 1,
+        "explanation": "'I like reading and I enjoy travelling' — both use verb + -ing correctly."
+      }
+    },
+    {
+      "task_id": "t07_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Talk about your hobbies",
+      "content": {
+        "instruction": "Speak for 40–50 seconds about your hobbies and preferences.",
+        "prompt": "What do you like doing in your free time? What do you not enjoy?",
+        "example_response": "In my free time, I love listening to music and watching movies. I also enjoy cooking on weekends — I like trying new recipes. I don't like shopping very much. I hate waking up early on weekends! I prefer staying home and reading a good book.",
+        "key_phrases": ["I love", "I like", "I enjoy", "I don't like", "I hate", "I prefer"],
+        "min_words": 40
+      }
+    },
+    {
+      "task_id": "t07_17",
+      "order": 17,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking — Ask your friend",
+      "content": {
+        "instruction": "Imagine you are asking a friend about their hobbies. Ask 3 questions and give example answers.",
+        "prompt": "Ask a friend about what they like doing and what they don't enjoy.",
+        "example_response": "Do you like cooking? — Yes, I love it! Do you enjoy hiking? — Not really. I prefer staying indoors. What do you like doing at weekends? — I love playing chess and listening to music.",
+        "key_phrases": ["Do you like ___ing?", "Do you enjoy ___ing?", "What do you like doing?"],
+        "min_words": 35
+      }
+    },
+    {
+      "task_id": "t07_18",
+      "order": 18,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Hobby vocabulary: cooking, reading, travelling, playing sports, listening to music",
+          "Grammar: like / love / enjoy / hate + verb-ing",
+          "Negative: I don't like + verb-ing / She doesn't like + verb-ing",
+          "-ing form rules: add -ing (cook→cooking), drop -e (hike→hiking)",
+          "Questions: Do you like ___ing? / What do you enjoy doing?",
+          "Replies: Yes, I love it! / Not really. / I prefer ___."
+        ],
+        "next_lesson": "a1_unit1_lesson08",
+        "next_lesson_title": "Unit 1 Review — putting it all together"
+      }
+    }
+  ]
+}

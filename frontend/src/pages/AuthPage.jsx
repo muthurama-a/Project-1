@@ -7,7 +7,8 @@ import OtpInput from '../components/OtpInput';
 import ThingualLogo from '../components/ThingualLogo';
 import LanguageTestStep from '../components/LanguageTestStep';
 import heroIllustration from '../assets/hero_illustration.png';
-import thingualLogoAsset from '../assets/thingual_logo.png';
+import thingualLogoAsset from '../assets/thingual-logo-gradient.png';
+import thingualLogoNormal from '@/assets/thingual-logo.png';
 import '../styles/auth.css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -363,7 +364,7 @@ const SuccessState = ({ user, onStart, onBack }) => (
                         <polyline points="12 19 5 12 12 5"></polyline>
                     </svg>
                 </button>
-                <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
             <div className="onboarding-status-pill">Ready</div>
         </div>
@@ -400,7 +401,7 @@ const GoalSelectionStep = ({ onNext, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -440,7 +441,7 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" />
+                    <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -471,7 +472,7 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
 const HeroPanel = () => (
     <div className="auth-right">
         <div className="hero-logo">
-            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" style={{ filter: 'brightness(0) invert(1)' }} />
+            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" />
         </div>
         <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
         <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>
@@ -494,8 +495,7 @@ const AuthPage = () => {
         const storedUser = localStorage.getItem('thingual_user');
         const storedToken = localStorage.getItem('thingual_token');
         if (storedUser && storedToken) {
-            setAuthedUser(JSON.parse(storedUser));
-            setStep('success');
+            window.location.href = '/dashboard';
         }
     }, []);
 
@@ -531,8 +531,15 @@ const AuthPage = () => {
         }
         localStorage.setItem('thingual_user', JSON.stringify(data));
         setAuthedUser(data);
-        setDirection(1);
-        setStep('success');
+        
+        // If onboarding already done, always go straight to dashboard
+        const alreadyOnboarded = localStorage.getItem('onboarding_done') === 'true';
+        if (!isNewUser || alreadyOnboarded) {
+            window.location.href = '/dashboard';
+        } else {
+            setDirection(1);
+            setStep('success');
+        }
     };
 
     const onGoogleSuccess = (data) => {
@@ -544,8 +551,14 @@ const AuthPage = () => {
         localStorage.setItem('thingual_user', JSON.stringify(data));
         setAuthedUser(data);
         setUserEmail(data.email || '');
-        setDirection(1);
-        setStep('success');
+        
+        const alreadyOnboarded = localStorage.getItem('onboarding_done') === 'true';
+        if (data.is_new === false || alreadyOnboarded) {
+             window.location.href = '/dashboard';
+        } else {
+             setDirection(1);
+             setStep('success');
+        }
     };
 
     const isOnboarding = step === 'success' || step.startsWith('onboarding_');
@@ -597,7 +610,10 @@ const AuthPage = () => {
                         )}
                         {step === 'onboarding_test' && (
                             <motion.div key="onboarding_test" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit">
-                                <LanguageTestStep onFinish={() => window.location.href = '/dashboard'} onBack={() => { setDirection(-1); setStep('onboarding_interests'); }} />
+                                <LanguageTestStep onFinish={() => {
+                                    localStorage.setItem('onboarding_done', 'true');
+                                    window.location.href = '/dashboard';
+                                }} onBack={() => { setDirection(-1); setStep('onboarding_interests'); }} />
                             </motion.div>
                         )}
                     </AnimatePresence>
