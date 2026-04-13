@@ -253,6 +253,9 @@ export default function LessonPage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [canContinue, setCanContinue] = useState(false);
 
+  const [lessonStartTime, setLessonStartTime] = useState<number>(0);
+  const [timeSpentStr, setTimeSpentStr] = useState<string>('');
+  
   const [stepStartTime, setStepStartTime] = useState(Date.now());
   const [totalQuiz, setTotalQuiz] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
@@ -297,6 +300,7 @@ export default function LessonPage() {
       .then((data: any) => {
         setLesson(data);
         setSteps(buildSteps(data));
+        setLessonStartTime(Date.now());
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -341,6 +345,14 @@ export default function LessonPage() {
 
     const step = steps[currentStep];
     if (!step) return;
+
+    if (step.type === 'SUMMARY' && lessonStartTime && !timeSpentStr) {
+      const ms = Date.now() - lessonStartTime;
+      const totalSec = Math.max(1, Math.floor(ms / 1000));
+      const m = Math.floor(totalSec / 60);
+      const s = totalSec % 60;
+      setTimeSpentStr(m > 0 ? `${m}m ${s}s` : `${s}s`);
+    }
 
     // Non-quiz steps: allow immediate continue
     if (['LEARNING_TIP', 'FLASHCARD', 'LEARN_CARD', 'LISTEN_REPEAT', 'FAMILY_TREE', 'SUMMARY', 'OLD_VOCAB', 'OLD_EXAMPLE'].includes(step.type)) {
@@ -1284,9 +1296,15 @@ export default function LessonPage() {
                     <div className="lesson-done-val">{Math.round((correctCount / Math.max(1, totalQuiz)) * 100)}%</div>
                     <div className="lesson-done-label">Accuracy</div>
                   </motion.div>
+                  {timeSpentStr && (
+                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6 }} className="lesson-done-stat">
+                      <div className="lesson-done-val" style={{ color: '#0ea5e9' }}>{timeSpentStr}</div>
+                      <div className="lesson-done-label">Time</div>
+                    </motion.div>
+                  )}
                 </div>
                 {lesson?.xp_reward && (
-                  <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.6 }}
+                  <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.7 }}
                     style={{ background: 'linear-gradient(135deg,#fbbf24,#f59e0b)', borderRadius: '99px', padding: '10px 28px', fontWeight: 900, fontSize: '18px', color: 'white', marginTop: '16px', boxShadow: '0 4px 16px rgba(245,158,11,0.4)' }}>
                     +{lesson.xp_reward} XP 🏆
                   </motion.div>
