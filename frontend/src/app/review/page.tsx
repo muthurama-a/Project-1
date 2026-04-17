@@ -490,19 +490,21 @@ export default function ReviewPage() {
                     </div>
                   </div>
 
-                  {/* Stats pills */}
                   <div style={{ display: 'flex', gap: '10px', marginBottom: '20px' }}>
                     {[
-                      { label: 'Total Reviews', value: monthTotal, icon: '📝', color: '#eef2ff', text: '#4f46e5' },
-                      { label: 'Active Days',   value: activeDays,  icon: '🔥', color: '#fef3c7', text: '#d97706' },
-                      { label: 'Best Day',      value: bestDay,     icon: '⚡', color: '#f0fdf4', text: '#16a34a' },
+                      { label: 'Total Reviews', value: monthTotal, icon: '📝', color: '#eef2ff', text: '#4f46e5', desc: 'cards reviewed' },
+                      { label: 'Active Days',   value: activeDays, icon: '🔥', color: '#fef3c7', text: '#d97706', desc: 'days practiced' },
+                      { label: 'Highest Output', value: bestDay,    icon: '⚡', color: '#f0fdf4', text: '#16a34a', desc: 'max in 1 day' },
                     ].map(stat => (
-                      <div key={stat.label} style={{
+                      <div key={stat.label} title={`${stat.label}: ${stat.desc}`} style={{
                         flex: 1, background: stat.color, borderRadius: '12px', padding: '12px 14px',
                         display: 'flex', flexDirection: 'column', gap: '2px',
                       }}>
                         <span style={{ fontSize: '11px', fontWeight: 600, color: stat.text, opacity: 0.75 }}>{stat.icon} {stat.label}</span>
-                        <span style={{ fontSize: '20px', fontWeight: 900, color: stat.text, lineHeight: 1.1 }}>{stat.value || '—'}</span>
+                        <div style={{ display: 'flex', alignItems: 'baseline', gap: '6px' }}>
+                          <span style={{ fontSize: '20px', fontWeight: 900, color: stat.text, lineHeight: 1.1 }}>{stat.value || '0'}</span>
+                          <span style={{ fontSize: '10px', fontWeight: 600, color: stat.text, opacity: 0.65 }}>{stat.desc}</span>
+                        </div>
                       </div>
                     ))}
                   </div>
