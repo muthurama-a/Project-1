@@ -196,21 +196,30 @@ def _convert_json_task(task: dict, lesson_id: str) -> list:
                                  "target_language": "English",
                                  "correct_variants": [q.get("answer", "")]}})
 
+    elif t in ("learn_card", "mcq", "scenario_mcq", "fill_blank", "sort_words", "match_pairs", "speaking", "listen_repeat", "error_correction", "family_tree", "lesson_summary"):
+        # These are already in the "professional" new format — pass through
+        # but ensure they have an id
+        if "id" not in task and "task_id" in task:
+            task["id"] = task["task_id"]
+        out.append(task)
+
     elif t == "unit_quiz":
+        unit_label = f"Unit {lesson_id.split('_')[1].replace('unit', '')}" if '_' in lesson_id else "Unit 1"
         for q in task.get("questions", [])[:3]:
             opts = q.get("options", [])
             correct_val = q.get("correct", opts[0] if opts else "")
             ci = opts.index(correct_val) if correct_val in opts else 0
             out.append({"id": q.get("id", tid), "type": "REVIEW",
-                        "data": {"origin": "Unit 1",
+                        "data": {"origin": unit_label,
                                  "question": q.get("prompt", ""),
                                  "options": opts, "correct_index": ci}})
 
     elif t == "unit_completion":
-        skills = task.get("skills_unlocked", ["Unit 1 Complete!"])
+        unit_label = f"Unit {lesson_id.split('_')[1].replace('unit', '')}" if '_' in lesson_id else "Unit 1"
+        skills = task.get("skills_unlocked", [f"{unit_label} Complete!"])
         out.append({"id": tid, "type": "REVIEW",
-                    "data": {"origin": "Unit 1",
-                             "question": "What have you mastered in Unit 1?",
+                    "data": {"origin": unit_label,
+                             "question": f"What have you mastered in {unit_label}?",
                              "options": skills[:4] if len(skills) >= 4 else skills + ["Keep going!"] * (4 - len(skills)),
                              "correct_index": 0}})
 
@@ -277,163 +286,130 @@ def _unit1():
     }
 
 
+def _build_unit2_lessons_from_json() -> list:
+    json_path = os.path.join(os.path.dirname(__file__), "unit2_lessons.json")
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"[lesson_generator] Could not load unit2_lessons.json: {e}")
+        return []
+
+    lessons_json = data.get("unit", {}).get("lessons", [])
+    result = []
+
+    for lesson in lessons_json:
+        lid = lesson.get("lesson_id", lesson.get("id", "L?"))
+        order = lesson.get("order", lesson.get("lesson_number", 1))
+        title = lesson.get("title", "Lesson")
+        description = lesson.get("description", "")
+        all_tasks = lesson.get("tasks", [])
+
+        # Assign sequential IDs if needed, but original JSON already has task_id.
+        for i, t in enumerate(all_tasks):
+            if "id" not in t:
+                t["id"] = t.get("task_id", i + 1)
+
+        converted_tasks = []
+        for t in all_tasks:
+            converted_tasks.extend(_convert_json_task(t, lid))
+
+        result.append({
+            "title": title,
+            "content_type": "interactive",
+            "order": order,
+            "content_data": {
+                "metadata": {
+                    "lesson_id": lid,
+                    "unit_number": 2,
+                    "lesson_title": title,
+                    "total_tasks": len(converted_tasks)
+                },
+                "content_manifest": {
+                    "vocabulary": [],
+                    "grammar_point": description
+                },
+                "tasks": converted_tasks
+            }
+        })
+
+    return result
+
+
 def _unit2():
+    lessons = _build_unit2_lessons_from_json()
     return {
-        "title": "Numbers, Colors & Descriptions",
-        "description": "Count, name colors, and describe things around you.",
-        "level": "A1", "order": 2, "icon": "🎨",
-        "lessons": [
-            _make("Numbers 1–10", "theory", 1,
-                "Learn to count from 1 to 10: one, two, three, four, five, six, seven, eight, nine, ten.",
-                vocab=[_v("One","The number 1","I have one book."), _v("Two","The number 2","Two cups of tea."), _v("Three","The number 3","Three cats."), _v("Five","The number 5","Five fingers."), _v("Ten","The number 10","Ten students in class.")],
-                examples=["I have one brother.", "There are five apples.", "She is ten years old."],
-                flashcards=[_fc("One","1"), _fc("Five","5"), _fc("Ten","10")]),
-
-            _make("Numbers 11–20", "theory", 2,
-                "Continue counting: eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty.",
-                vocab=[_v("Eleven","The number 11","Eleven players."), _v("Fifteen","The number 15","Fifteen minutes."), _v("Twenty","The number 20","Twenty rupees.")],
-                examples=["I am fifteen years old.", "There are twenty chairs.", "The bus comes in eleven minutes."],
-                flashcards=[_fc("Eleven","11"), _fc("Fifteen","15"), _fc("Twenty","20")]),
-
-            _make("Numbers Practice", "speaking", 3,
-                "Say the numbers out loud.",
-                prompt="Count from 1 to 20: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty.",
-                tip="Practice slowly first, then try faster!", keywords=["one","two","three"],
-                model_answer="One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty."),
-
-            _make("Basic Colors", "theory", 4,
-                "English has many color words. The basic colors are: red, blue, green, yellow, orange, purple, pink, black, white, brown.",
-                vocab=[_v("Red","The color of fire","The apple is red."), _v("Blue","The color of sky","The sky is blue."), _v("Green","The color of leaves","The grass is green."), _v("Yellow","The color of sun","The sunflower is yellow."), _v("Black","The darkest color","My shoes are black."), _v("White","The lightest color","Snow is white.")],
-                examples=["The car is red.", "I like blue.", "Her dress is green.", "The cat is black and white."],
-                flashcards=[_fc("Red","Color of fire/apple"), _fc("Blue","Color of sky/ocean"), _fc("Green","Color of leaves/grass")]),
-
-            _make("Colors Quiz", "quiz", 5,
-                "Test your color knowledge.",
-                questions=[
-                    _q("What color is the sky?", ["Red","Green","Blue","Yellow"], "Blue"),
-                    _q("What color are leaves?", ["Blue","Green","Red","White"], "Green"),
-                    _q("What color is snow?", ["Black","Yellow","White","Green"], "White"),
-                    _q("Complete: 'The banana is ___'", ["blue","red","yellow","green"], "yellow")
-                ]),
-
-            _make("Describing Size & Shape", "theory", 6,
-                "Adjectives describe things. Size: big, small, tall, short. Shape: round, square, long. Use them before the noun: 'a big house', 'a small cat'.",
-                vocab=[_v("Big","Large in size","A big elephant."), _v("Small","Little in size","A small bird."), _v("Tall","High in height","A tall building."), _v("Short","Low in height","A short boy."), _v("Round","Circle shape","A round ball.")],
-                examples=["The house is big.", "She has a small dog.", "He is a tall man.", "The table is round."],
-                flashcards=[_fc("Big","Large in size"), _fc("Small","Little/tiny"), _fc("Tall","High in height")]),
-
-            _make("Pronunciation: Colors & Numbers", "speaking", 7,
-                "Practice pronouncing colors and numbers clearly.",
-                prompt="Say each word: Red. Blue. Green. Yellow. One. Two. Three. Big. Small. Tall.",
-                tip="Pay attention to 'th' in three — tongue between teeth!",
-                keywords=["red","blue","green","yellow","one","two","three","big","small","tall"],
-                model_answer="Red. Blue. Green. Yellow. One. Two. Three. Big. Small. Tall."),
-
-            _make("Describing Objects", "theory", 8,
-                "Combine colors, sizes, and objects: 'a big red ball', 'a small green leaf'. The order is: size + color + noun.",
-                vocab=[_v("Ball","Round toy","A big red ball."), _v("Book","Pages to read","A small blue book."), _v("Flower","A plant blossom","A pretty yellow flower.")],
-                examples=["I have a big red ball.", "She reads a small blue book.", "There is a tall green tree."],
-                flashcards=[_fc("a big red ball","Size + Color + Noun"), _fc("a small blue book","Size + Color + Noun")]),
-
-            _make("Sentence Building: Descriptions", "quiz", 9,
-                "Build correct descriptive sentences.",
-                questions=[
-                    _q("Which order is correct?", ["red big ball","big ball red","big red ball","ball big red"], "big red ball"),
-                    _q("Complete: 'The elephant is ___'", ["small","big","short","thin"], "big"),
-                    _q("How many is 'fifteen'?", ["5","10","15","20"], "15"),
-                    _q("'___ is white' — what fits?", ["Grass","Sky","Snow","Leaf"], "Snow")
-                ]),
-
-            _make("Unit 2 Review", "quiz", 10,
-                "Final review of Numbers, Colors & Descriptions.",
-                questions=[
-                    _q("What number comes after twelve?", ["Eleven","Fourteen","Thirteen","Fifteen"], "Thirteen"),
-                    _q("Which is NOT a color?", ["Blue","Tall","Red","Green"], "Tall"),
-                    _q("'A ___ cat' — which word describes size?", ["red","small","happy","fast"], "small"),
-                    _q("What color is an orange?", ["Blue","Orange","Green","White"], "Orange")
-                ])
-        ]
+        "title": "Food, Taste & Ordering",
+        "description": "Learn vocabulary for food and drink, express preferences, and practise ordering politely.",
+        "level": "A1", "order": 2, "icon": "🛒",
+        "lessons": lessons
     }
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# UNIT 3 — Daily Routines & Time (10 lessons)
+# UNIT 3
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+def _build_unit3_lessons_from_json() -> list:
+    json_path = os.path.join(os.path.dirname(__file__), "unit3_lessons.json")
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"[lesson_generator] Could not load unit3_lessons.json: {e}")
+        return []
+
+    if "lessons" in data:
+        lessons_json = data["lessons"]
+    elif "unit" in data and isinstance(data["unit"], dict):
+        lessons_json = data["unit"].get("lessons", [])
+    else:
+        lessons_json = []
+
+    result = []
+
+    for lesson in lessons_json:
+        lid = lesson.get("lesson_id", lesson.get("id", "L?"))
+        order = lesson.get("order", lesson.get("lesson_number", 1))
+        title = lesson.get("title", "Lesson")
+        description = lesson.get("description", "")
+        all_tasks = lesson.get("tasks", [])
+
+        # Assign sequential IDs if needed
+        for i, t in enumerate(all_tasks):
+            if "id" not in t:
+                t["id"] = t.get("task_id", i + 1)
+
+        converted_tasks = []
+        for t in all_tasks:
+            converted_tasks.extend(_convert_json_task(t, lid))
+
+        result.append({
+            "title": title,
+            "content_type": "interactive",
+            "order": order,
+            "content_data": {
+                "metadata": {
+                    "lesson_id": lid,
+                    "unit_number": 3,
+                    "lesson_title": title,
+                    "total_tasks": len(converted_tasks)
+                },
+                "content_manifest": {
+                    "vocabulary": [],
+                    "grammar_point": description
+                },
+                "tasks": converted_tasks
+            }
+        })
+
+    return result
+
 def _unit3():
+    lessons = _build_unit3_lessons_from_json()
     return {
-        "title": "Daily Routines & Time",
-        "description": "Talk about your day, tell time, and learn daily verbs.",
-        "level": "A1", "order": 3, "icon": "⏰",
-        "lessons": [
-            _make("Telling the Time", "theory", 1,
-                "Use 'It is ___' to tell time. 'It is 8 o'clock.' For half: 'It is half past 3.' For quarters: 'It is quarter past / quarter to.'",
-                vocab=[_v("O'clock","Exact hour","It is 9 o'clock."), _v("Half past","30 minutes after","It is half past 2."), _v("Quarter past","15 minutes after","It is quarter past 4."), _v("Quarter to","15 minutes before","It is quarter to 6.")],
-                examples=["It is 7 o'clock.", "School starts at half past 8.", "It is quarter to 12."],
-                flashcards=[_fc("O'clock","Exact hour time"), _fc("Half past","30 minutes after the hour")]),
-
-            _make("Days of the Week", "theory", 2,
-                "The 7 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. Weekend = Saturday and Sunday.",
-                vocab=[_v("Monday","First day of the week","I go to school on Monday."), _v("Friday","Fifth day","Friday is my favorite day!"), _v("Sunday","Last day / rest day","We rest on Sunday."), _v("Weekend","Saturday and Sunday","I play cricket on weekends.")],
-                examples=["Today is Monday.", "I play football on Saturday.", "School is closed on Sunday."],
-                flashcards=[_fc("Monday","First weekday"), _fc("Weekend","Saturday & Sunday")]),
-
-            _make("Days & Time Practice", "speaking", 3,
-                "Practice saying days and times.",
-                prompt="Say: 'Today is Monday. It is 9 o'clock. I go to school at half past 8. My favorite day is Friday.'",
-                tip="Stress the day names: MON-day, TUES-day, WEDNES-day.",
-                keywords=["monday","friday","o'clock","half past"],
-                model_answer="Today is Monday. It is 9 o'clock. I go to school at half past 8. My favorite day is Friday."),
-
-            _make("Daily Actions (Verbs)", "theory", 4,
-                "Common daily verbs: wake up, eat, drink, go, come, sleep, read, write, play, study. Use 'I' + verb: 'I eat breakfast.'",
-                vocab=[_v("Wake up","Stop sleeping","I wake up at 7."), _v("Eat","Consume food","I eat breakfast."), _v("Go","Move to a place","I go to school."), _v("Sleep","Rest at night","I sleep at 10 PM."), _v("Study","Learn something","I study English."), _v("Play","Do a game/sport","I play cricket.")],
-                examples=["I wake up at 6 AM.", "She eats lunch at 1 PM.", "We go to school by bus.", "They play in the evening."],
-                flashcards=[_fc("Wake up","Start your day"), _fc("Eat","Consume food"), _fc("Go","Move to a place"), _fc("Sleep","Rest at night")]),
-
-            _make("Daily Routine Quiz", "quiz", 5,
-                "Test your daily routine vocabulary.",
-                questions=[
-                    _q("What do you do first in the morning?", ["Sleep","Eat dinner","Wake up","Play"], "Wake up"),
-                    _q("Which day comes after Monday?", ["Wednesday","Sunday","Tuesday","Friday"], "Tuesday"),
-                    _q("'It is ___ past 3' means 3:30", ["quarter","half","full","ten"], "half"),
-                    _q("What is the weekend?", ["Monday-Friday","Saturday-Sunday","Tuesday-Thursday","Only Sunday"], "Saturday-Sunday")
-                ]),
-
-            _make("My Morning Routine", "theory", 6,
-                "A typical morning: 'I wake up at 7. I brush my teeth. I take a bath. I eat breakfast. I go to school at 8.' Use present simple for routines.",
-                vocab=[_v("Brush teeth","Clean your teeth","I brush my teeth every morning."), _v("Take a bath","Wash your body","I take a bath before school."), _v("Breakfast","First meal","I eat breakfast at 7:30.")],
-                examples=["I wake up at 7 AM.", "I brush my teeth and take a bath.", "I eat breakfast at 7:30.", "I go to school at 8 o'clock."],
-                flashcards=[_fc("Brush my teeth","Clean teeth with a brush"), _fc("Take a bath","Wash the body"), _fc("Breakfast","Morning meal")]),
-
-            _make("Pronunciation: Daily Words", "speaking", 7,
-                "Practice pronouncing daily routine words.",
-                prompt="Repeat: Wake up. Breakfast. Lunch. Dinner. School. Study. Monday. Tuesday. Wednesday. Thursday. Friday.",
-                tip="'Wednesday' sounds like WENZ-day, not Wed-NES-day!",
-                keywords=["wake","breakfast","lunch","dinner","school","study"],
-                model_answer="Wake up. Breakfast. Lunch. Dinner. School. Study. Monday. Tuesday. Wednesday. Thursday. Friday."),
-
-            _make("Reading: A Student's Day", "theory", 8,
-                "Read about Ravi's day:\n\nRavi wakes up at 6:30 AM. He brushes his teeth and takes a bath. He eats breakfast at 7. He goes to school at 8 o'clock. He studies English and Maths. He eats lunch at 1 PM. He plays cricket at 4 PM. He eats dinner at 8 PM. He sleeps at 10 PM.",
-                examples=["Ravi wakes up at 6:30 AM.", "He goes to school at 8 o'clock.", "He plays cricket at 4 PM.", "He sleeps at 10 PM."],
-                flashcards=[_fc("Lunch","Afternoon meal"), _fc("Dinner","Evening meal")]),
-
-            _make("Sentence Building: Routines", "quiz", 9,
-                "Build correct sentences about daily routines.",
-                questions=[
-                    _q("Complete: 'I ___ breakfast at 7 AM.'", ["go","eat","sleep","play"], "eat"),
-                    _q("Complete: 'She ___ to school by bus.'", ["eats","sleeps","goes","plays"], "goes"),
-                    _q("What time expression means 3:15?", ["Half past 3","Quarter past 3","3 o'clock","Quarter to 3"], "Quarter past 3"),
-                    _q("'I ___ up at 6 AM every day.'", ["eat","go","wake","play"], "wake")
-                ]),
-
-            _make("Unit 3 Review", "quiz", 10,
-                "Final review of Daily Routines & Time.",
-                questions=[
-                    _q("How many days in a week?", ["5","6","7","10"], "7"),
-                    _q("What does 'half past 9' mean?", ["9:00","9:15","9:30","9:45"], "9:30"),
-                    _q("Which is a morning activity?", ["Sleep","Eat dinner","Wake up","Play cricket"], "Wake up"),
-                    _q("'I ___ my teeth' — fill in:", ["eat","brush","go","play"], "brush")
-                ])
-        ]
+        "title": "Daily Life & Surroundings",
+        "description": "Talk about your body, clothes, feelings, and the home you live in.",
+        "level": "A1", "order": 3, "icon": "🏠",
+        "lessons": lessons
     }
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

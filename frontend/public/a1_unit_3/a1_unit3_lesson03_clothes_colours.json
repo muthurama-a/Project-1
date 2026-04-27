@@ -1,0 +1,484 @@
+{
+  "lesson_id": "a1_unit3_lesson03",
+  "unit": 3,
+  "lesson_number": 3,
+  "level": "A1",
+  "title": "Clothes & colours \u2014 describing appearance",
+  "description": "Learn clothing vocabulary, colours, and how to describe what people are wearing.",
+  "estimated_minutes": 22,
+  "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0303_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Clothes vocabulary",
+      "content": {
+        "explanation": "Learn the most common words for clothes in English.",
+        "groups": [
+          {
+            "group": "Tops",
+            "items": [
+              "shirt",
+              "t-shirt",
+              "blouse",
+              "jacket",
+              "coat",
+              "sweater / jumper",
+              "hoodie"
+            ]
+          },
+          {
+            "group": "Bottoms",
+            "items": [
+              "trousers / pants",
+              "jeans",
+              "shorts",
+              "skirt",
+              "leggings"
+            ]
+          },
+          {
+            "group": "Full outfits",
+            "items": [
+              "dress",
+              "suit",
+              "uniform",
+              "saree / kurta"
+            ]
+          },
+          {
+            "group": "Accessories & shoes",
+            "items": [
+              "shoes",
+              "sandals",
+              "boots",
+              "socks",
+              "hat",
+              "scarf",
+              "bag",
+              "glasses"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0303_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Colours",
+      "content": {
+        "explanation": "Colours are adjectives \u2014 they come BEFORE the noun they describe.",
+        "items": [
+          {
+            "phrase": "red, orange, yellow",
+            "note": "Warm colours"
+          },
+          {
+            "phrase": "green, blue, purple",
+            "note": "Cool colours"
+          },
+          {
+            "phrase": "pink, brown, grey",
+            "note": "Neutral/soft colours"
+          },
+          {
+            "phrase": "black, white, cream",
+            "note": "Classic colours"
+          },
+          {
+            "phrase": "light blue / dark blue",
+            "note": "Add light/dark to describe shade"
+          },
+          {
+            "phrase": "bright / pale",
+            "note": "bright red = vivid, pale yellow = soft"
+          }
+        ],
+        "word_order": "colour + noun: a red shirt, blue jeans, a black jacket"
+      }
+    },
+    {
+      "task_id": "t0303_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Describing what someone is wearing",
+      "content": {
+        "explanation": "Use 'wearing' (present continuous) to describe clothes right now.",
+        "patterns": [
+          {
+            "pattern": "He/She is wearing ___.",
+            "examples": [
+              "She is wearing a red dress.",
+              "He is wearing jeans and a white shirt."
+            ]
+          },
+          {
+            "pattern": "He/She is wearing a ___ [colour] + [clothing].",
+            "examples": [
+              "She is wearing a dark blue jacket.",
+              "He is wearing black trousers."
+            ]
+          },
+          {
+            "pattern": "What are you wearing?",
+            "note": "Question about clothes right now"
+          },
+          {
+            "pattern": "I'm wearing ___.",
+            "note": "Describe your own outfit"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0303_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these clothing description sentences.",
+        "phrases": [
+          {
+            "text": "She is wearing a bright red saree.",
+            "audio_key": "red_saree"
+          },
+          {
+            "text": "He is wearing dark blue jeans and a white shirt.",
+            "audio_key": "jeans_white_shirt"
+          },
+          {
+            "text": "What colour is your jacket?",
+            "audio_key": "what_colour_jacket"
+          },
+          {
+            "text": "I'm wearing a light grey sweater today.",
+            "audio_key": "grey_sweater"
+          },
+          {
+            "text": "Those shoes are beautiful!",
+            "audio_key": "beautiful_shoes"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0303_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Correct word order",
+      "content": {
+        "question": "Which phrase has the correct word order?",
+        "options": [
+          "shirt blue a",
+          "a shirt blue",
+          "a blue shirt",
+          "blue shirt a"
+        ],
+        "correct_index": 2,
+        "explanation": "Colour comes BEFORE the noun: a + colour + noun = a blue shirt. \u2713"
+      }
+    },
+    {
+      "task_id": "t0303_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Which item?",
+      "content": {
+        "question": "You wear these on your feet when it is very cold outside.",
+        "options": [
+          "sandals",
+          "shorts",
+          "boots",
+          "scarves"
+        ],
+        "correct_index": 2,
+        "explanation": "Boots are warm, strong shoes for cold weather."
+      }
+    },
+    {
+      "task_id": "t0303_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Describing clothes",
+      "content": {
+        "question": "Complete: 'Look at Maya \u2014 she ___ a beautiful green dress today!'",
+        "options": [
+          "wears",
+          "wear",
+          "is wearing",
+          "wearing"
+        ],
+        "correct_index": 2,
+        "explanation": "Right now (Look!) \u2192 present continuous. She is wearing. \u2713"
+      }
+    },
+    {
+      "task_id": "t0303_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the colour",
+      "content": {
+        "sentence": "She is wearing a ___ blue jacket \u2014 not dark, quite soft and light.",
+        "options": [
+          "dark",
+          "bright",
+          "light",
+          "pale"
+        ],
+        "correct": "light",
+        "explanation": "Light blue = soft, pale shade of blue \u2014 not dark, not very vivid."
+      }
+    },
+    {
+      "task_id": "t0303_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in is wearing / are wearing",
+      "content": {
+        "sentence": "He ___ a grey suit and she ___ a red blouse with black trousers.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "wear",
+              "is wearing",
+              "are wearing"
+            ],
+            "correct": "is wearing"
+          },
+          {
+            "position": 2,
+            "options": [
+              "wear",
+              "is wearing",
+              "are wearing"
+            ],
+            "correct": "is wearing"
+          }
+        ],
+        "explanation": "He/She \u2192 is wearing (present continuous third person singular)."
+      }
+    },
+    {
+      "task_id": "t0303_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "vocabulary",
+      "title": "Build the description",
+      "content": {
+        "instruction": "Rearrange to describe what someone is wearing.",
+        "words": [
+          "wearing",
+          "is",
+          "She",
+          "white",
+          "a",
+          "and",
+          "dress",
+          "sandals",
+          "gold"
+        ],
+        "correct_sentence": "She is wearing a white dress and gold sandals.",
+        "explanation": "She + is wearing + a + colour + clothing + and + colour + clothing."
+      }
+    },
+    {
+      "task_id": "t0303_11",
+      "order": 11,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match clothes to occasion",
+      "content": {
+        "instruction": "Match each clothing item or outfit to the most suitable occasion.",
+        "pairs": [
+          {
+            "prompt": "suit and tie",
+            "answer": "formal business meeting"
+          },
+          {
+            "prompt": "jeans and t-shirt",
+            "answer": "casual weekend"
+          },
+          {
+            "prompt": "school uniform",
+            "answer": "going to school"
+          },
+          {
+            "prompt": "boots and coat",
+            "answer": "cold winter day"
+          },
+          {
+            "prompt": "sandals and shorts",
+            "answer": "hot summer day"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0303_12",
+      "order": 12,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Dialogue \u2014 Getting dressed for a party",
+      "content": {
+        "context": "Nisha is getting ready for a party. She asks her sister for advice.",
+        "dialogue": [
+          {
+            "speaker": "Nisha",
+            "line": "I don't know what to wear to the party tonight!"
+          },
+          {
+            "speaker": "Sister",
+            "line": "What about that blue dress? It looks beautiful on you."
+          },
+          {
+            "speaker": "Nisha",
+            "line": "The dark blue one or the light blue one?"
+          },
+          {
+            "speaker": "Sister",
+            "line": "The dark blue one. Wear it with your gold sandals."
+          },
+          {
+            "speaker": "Nisha",
+            "line": "Good idea! And should I wear a scarf?"
+          },
+          {
+            "speaker": "Sister",
+            "line": "Yes \u2014 your white scarf will look great with it."
+          },
+          {
+            "speaker": "Nisha",
+            "line": "Perfect! What are you wearing?"
+          },
+          {
+            "speaker": "Sister",
+            "line": "I'm wearing my red dress with black heels."
+          },
+          {
+            "speaker": "Nisha",
+            "line": "Oh, that's a great outfit! We'll both look amazing!"
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Which dress does the sister recommend?",
+            "options": [
+              "Light blue",
+              "Dark blue",
+              "Red",
+              "White"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "What shoes does the sister suggest with the dress?",
+            "options": [
+              "Black heels",
+              "White sandals",
+              "Gold sandals",
+              "Brown boots"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "What is the sister wearing to the party?",
+            "options": [
+              "A blue dress",
+              "A red dress with black heels",
+              "Jeans and a blouse",
+              "A white dress"
+            ],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0303_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "He is wearing a jacket black and trouser blue.",
+        "options": [
+          "He is wearing a jacket black and trouser blue.",
+          "He is wearing a black jacket and blue trousers.",
+          "He wear a black jacket and blue trousers.",
+          "He wearing black jacket and blue trouser."
+        ],
+        "correct_index": 1,
+        "explanation": "Colour BEFORE noun. 'Trousers' is plural. He is wearing. \u2713"
+      }
+    },
+    {
+      "task_id": "t0303_14",
+      "order": 14,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "A friend calls and asks what you are wearing for the office today.",
+        "question": "Which is the most natural reply?",
+        "options": [
+          "I wear blue jeans and shirt white.",
+          "I am wearing navy blue trousers and a white shirt.",
+          "I wearing navy trouser and white.",
+          "I have blue trouser and shirt."
+        ],
+        "correct_index": 1,
+        "explanation": "Present continuous (wearing), colour before noun, correct plural 'trousers'. \u2713"
+      }
+    },
+    {
+      "task_id": "t0303_15",
+      "order": 15,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking \u2014 Describe outfits",
+      "content": {
+        "instruction": "Speak for 45 seconds. Describe what you are wearing today AND describe one other person's outfit (real or imaginary).",
+        "prompt": "What are you wearing right now? Also describe someone else's clothes.",
+        "example_response": "Today I am wearing dark blue jeans and a light grey t-shirt. I also have white trainers. It's a casual day so I dressed comfortably. My colleague is wearing a formal black suit with a white shirt and a dark red tie. He looks very professional! My manager is wearing a beautiful purple dress with black heels.",
+        "key_phrases": [
+          "I am wearing ___",
+          "She/He is wearing ___",
+          "colour + clothing item",
+          "formal/casual"
+        ],
+        "min_words": 55
+      }
+    },
+    {
+      "task_id": "t0303_16",
+      "order": 16,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Clothes: shirt, jeans, dress, suit, jacket, coat, scarf, shoes, boots, sandals",
+          "Colours: red, blue, green, yellow, black, white, grey, pink, light/dark + colour",
+          "Word order: colour + noun (a blue shirt, dark jeans)",
+          "Describing: He/She is wearing + colour + clothing",
+          "Present continuous for clothes: is wearing / are wearing"
+        ],
+        "next_lesson": "a1_unit3_lesson04",
+        "next_lesson_title": "Feelings & emotions"
+      }
+    }
+  ]
+}

@@ -37,15 +37,28 @@ function buildSteps(lesson: any): any[] {
               title: task.title,
               explanation: c.explanation,
               items: c.items,               // [{phrase, note}]
+              groups: c.groups,             // [{group, items}]
               table: c.table,               // [{subject, verb, example}]
               short_forms: c.short_forms,
               examples: c.examples,         // [{statement, question, yes_reply, no_reply}]
               rule: c.rule,                 // grammar rule string
+              rules: c.rules,               // [{rule, examples}]
+              patterns: c.patterns,         // [{pattern, examples}]
               summary: c.summary,           // [{lesson, topic}] — for review cards
               congratulations: c.congratulations,
               all_grammar_covered: c.all_grammar_covered,
               all_vocabulary_covered: c.all_vocabulary_covered,
               what_you_learned: c.what_you_learned,
+              tip: c.tip,
+              time_patterns: c.time_patterns,
+              ordinals: c.ordinals,
+              saying_dates: c.saying_dates,
+              formation: c.formation,
+              structure: c.structure,
+              negative: c.negative,
+              question: c.question,
+              comparison: c.comparison,
+              key_signal_words: c.key_signal_words,
             },
           });
           break;
@@ -152,6 +165,18 @@ function buildSteps(lesson: any): any[] {
           break;
         }
 
+        case 'dialogue':
+          steps.push({
+            type: 'DIALOGUE',
+            data: {
+              title: task.title,
+              context: c.context,
+              dialogue: c.dialogue,
+              questions: c.comprehension_questions,
+            },
+          });
+          break;
+
         // ── Speaking ────────────────────────────────────────────────────────
         case 'speaking':
           steps.push({
@@ -202,6 +227,11 @@ function buildSteps(lesson: any): any[] {
 
         default:
           break;
+      }
+      
+      // Attach category to the last added step
+      if (steps.length > 0 && steps[steps.length - 1].type !== 'SUMMARY') {
+        steps[steps.length - 1].category = task.category || (task.type === 'speaking' ? 'speaking' : 'vocabulary');
       }
     }
 
@@ -259,6 +289,7 @@ export default function LessonPage() {
   const [stepStartTime, setStepStartTime] = useState(Date.now());
   const [totalQuiz, setTotalQuiz] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+  const accuracy_percent = Math.round((correctCount / Math.max(1, totalQuiz)) * 100);
 
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [inputText, setInputText] = useState('');
@@ -278,7 +309,10 @@ export default function LessonPage() {
   const [activeBlankIdx, setActiveBlankIdx] = useState(0);
 
   const [quizChecked, setQuizChecked] = useState(false);
-  const [feedback, setFeedback] = useState({ show: false, correct: false, msg: '' });
+  const [feedback, setFeedback] = useState<{ show: boolean; status: 'correct' | 'wrong' | 'almost'; title: string; msg: string; }>({ 
+    show: false, status: 'correct', title: '', msg: '' 
+  });
+  const [masteredSkills, setMasteredSkills] = useState<Set<string>>(new Set());
   const [isRecording, setIsRecording] = useState(false);
   const recognitionRef = useRef<any>(null);
 
@@ -294,7 +328,8 @@ export default function LessonPage() {
     setLoading(true);
     setTotalQuiz(0);
     setCorrectCount(0);
-    setFeedback({ show: false, correct: false, msg: '' });
+    setMasteredSkills(new Set());
+    setFeedback({ show: false, status: 'correct', title: '', msg: '' });
 
     lessonService.getLesson(id)
       .then((data: any) => {
@@ -335,7 +370,7 @@ export default function LessonPage() {
     setMatchingWrongPairs([]);
     setMatchingMistakes(0);
     setQuizChecked(false);
-    setFeedback({ show: false, correct: false, msg: '' });
+    setFeedback({ show: false, status: 'correct', title: '', msg: '' });
     setPlayedPhrases([]);
     setUseTypingFallback(false);
 
@@ -445,9 +480,14 @@ export default function LessonPage() {
 
     if (isCorrect) {
       setCorrectCount(prev => prev + 1);
-      setFeedback({ show: true, correct: true, msg: 'Excellent!' });
+      if (step.category) {
+        setMasteredSkills(prev => new Set(prev).add(step.category));
+      }
+      const comps = ['Awesome!', 'Good!', 'Quite well!', 'Perfect!', 'Excellent!', 'Great job!', 'Spot on!'];
+      const randomTitle = comps[Math.floor(Math.random() * comps.length)];
+      setFeedback({ show: true, status: 'correct', title: randomTitle, msg: step.data.explanation ? `Explanation: ${step.data.explanation}` : '' });
     } else {
-      setFeedback({ show: true, correct: false, msg: correctMsg });
+      setFeedback({ show: true, status: 'wrong', title: 'Correct answer:', msg: correctMsg });
     }
     setCanContinue(true);
     logStats(isCorrect);
@@ -503,7 +543,14 @@ export default function LessonPage() {
             setTotalQuiz(prev => prev + 1);
             if (matchingMistakes === 0) setCorrectCount(prev => prev + 1);
             logStats(matchingMistakes === 0);
-            setFeedback({ show: true, correct: matchingMistakes === 0, msg: matchingMistakes === 0 ? 'Great job!' : 'You matched them all, but made some mistakes!' });
+            
+            if (matchingMistakes === 0) {
+              const comps = ['Awesome!', 'Good!', 'Quite well!', 'Perfect!', 'Excellent!', 'Great job!', 'Spot on!'];
+              const randomTitle = comps[Math.floor(Math.random() * comps.length)];
+              setFeedback({ show: true, status: 'correct', title: randomTitle, msg: 'All pairs matched flawlessly!' });
+            } else {
+              setFeedback({ show: true, status: 'almost', title: 'Good try!', msg: 'You matched them all, but made some mistakes.' });
+            }
           }
         } else {
           setMatchingMistakes(prev => prev + 1);
@@ -520,7 +567,7 @@ export default function LessonPage() {
   if (loading) return <div className="lesson-loading">Loading the fun...</div>;
   if (!lesson || !step) return <div className="lesson-loading">Lesson not found.</div>;
 
-  const isCheckableTask = !['LEARNING_TIP', 'LEARN_CARD', 'LISTEN_REPEAT', 'FLASHCARD', 'FAMILY_TREE', 'MATCHING', 'OLD_VOCAB', 'OLD_EXAMPLE', 'SUMMARY'].includes(step.type);
+  const isCheckableTask = !['LEARNING_TIP', 'LEARN_CARD', 'LISTEN_REPEAT', 'FLASHCARD', 'FAMILY_TREE', 'MATCHING', 'OLD_VOCAB', 'OLD_EXAMPLE', 'SUMMARY', 'DIALOGUE', 'lesson_summary'].includes(step.type);
 
   const isInputEmpty =
     step.type === 'SCRAMBLE' ? scrambleAnswer.length === 0 :
@@ -567,6 +614,177 @@ export default function LessonPage() {
                     </div>
                   )}
 
+                  {/* Time Patterns */}
+                  {d.time_patterns && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginBottom: '16px' }}>
+                      {d.time_patterns.map((tp: any, i: number) => (
+                        <div key={i} style={{ background: '#f5f3ff', border: '1.5px solid #ddd6fe', borderRadius: '14px', padding: '14px' }}>
+                          <p style={{ fontSize: '11px', fontWeight: 900, color: '#6d28d9', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '4px' }}>{tp.pattern}</p>
+                          <p style={{ fontSize: '13px', color: '#4c1d95', fontWeight: 600, marginBottom: '8px' }}>{tp.use}</p>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                            {(tp.examples ?? []).map((ex: string, j: number) => (
+                              <span key={j} onClick={() => speak(ex)} style={{ background: 'white', border: '1px solid #c4b5fd', borderRadius: '8px', padding: '3px 8px', fontSize: '12px', fontWeight: 700, color: '#6d28d9', cursor: 'pointer' }}>{ex}</span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Ordinal Numbers */}
+                  {d.ordinals && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))', gap: '8px', marginBottom: '16px' }}>
+                      {d.ordinals.map((ord: any, i: number) => (
+                        <div key={i} style={{ background: '#fdf2f8', border: '1px solid #fbcfe8', borderRadius: '10px', padding: '8px', textAlign: 'center' }}>
+                          <p style={{ fontSize: '15px', fontWeight: 800, color: '#be185d', margin: 0 }}>{ord.number}</p>
+                          <p style={{ fontSize: '11px', fontWeight: 600, color: '#db2777', margin: 0 }}>{ord.say}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Saying Dates */}
+                  {d.saying_dates && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '16px' }}>
+                      <p style={{ fontSize: '13px', fontWeight: 800, color: '#be185d', textTransform: 'uppercase', marginBottom: '4px' }}>How to say dates:</p>
+                      {d.saying_dates.map((sd: any, i: number) => (
+                        <div key={i} onClick={() => speak(sd.spoken)} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'white', border: '1.5px solid #fbcfe8', borderRadius: '12px', padding: '10px 14px', cursor: 'pointer' }}>
+                          <span style={{ fontWeight: 800, color: '#1e293b', fontSize: '14px', minWidth: '80px' }}>{sd.written}</span>
+                          <span style={{ color: '#94a3b8' }}>→</span>
+                          <span style={{ fontWeight: 700, color: '#be185d', fontSize: '14px' }}>"{sd.spoken}"</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Grammar Structure */}
+                  {d.structure && (
+                    <div style={{ background: '#eef2ff', border: '2px solid #c7d2fe', borderRadius: '16px', padding: '16px 20px', marginBottom: '16px', textAlign: 'center' }}>
+                      <p style={{ fontSize: '11px', fontWeight: 900, color: '#4338ca', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Structure</p>
+                      {typeof d.structure === 'string' ? (
+                        <p style={{ fontSize: '18px', fontWeight: 800, color: '#1e1b4b', margin: 0 }}>{d.structure}</p>
+                      ) : (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', textAlign: 'left' }}>
+                          {Object.entries(d.structure).map(([key, val]: [string, any]) => (
+                            <div key={key} style={{ background: 'white', padding: '8px 12px', borderRadius: '10px', border: '1px solid #c7d2fe' }}>
+                              <span style={{ fontSize: '10px', fontWeight: 900, color: '#4338ca', textTransform: 'uppercase', display: 'block', marginBottom: '2px' }}>{key}</span>
+                              <span style={{ fontSize: '15px', fontWeight: 700, color: '#1e1b4b' }}>{val}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Grammar Formation */}
+                  {d.formation && (
+                    <div style={{ background: '#f8fafc', borderRadius: '16px', padding: '16px', border: '1.5px solid #e2e8f0', marginBottom: '16px' }}>
+                      <p style={{ fontSize: '11px', fontWeight: 900, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>How to form it:</p>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        {Array.isArray(d.formation) ? d.formation.map((f: any, i: number) => (
+                          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'white', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f1f5f9' }}>
+                            <span style={{ fontWeight: 800, color: '#4f46e5', minWidth: '40px' }}>{f.subject}</span>
+                            <span style={{ color: '#94a3b8' }}>+</span>
+                            <span style={{ fontWeight: 700, color: '#16a34a' }}>{f.helper}</span>
+                            <span style={{ color: '#94a3b8', marginLeft: 'auto' }}>→</span>
+                            <span style={{ fontWeight: 600, color: '#1e293b', fontSize: '13px' }}>{f.example}</span>
+                          </div>
+                        )) : typeof d.formation === 'string' ? (
+                          <p style={{ fontSize: '16px', fontWeight: 700, color: '#1e293b', margin: 0 }}>{d.formation}</p>
+                        ) : (
+                          Object.entries(d.formation).map(([k, v]: [string, any]) => (
+                            <div key={k} style={{ background: 'white', padding: '8px 12px', borderRadius: '10px', border: '1px solid #f1f5f9' }}>
+                               <span style={{ fontSize: '10px', fontWeight: 900, color: '#6366f1', textTransform: 'uppercase' }}>{k}</span>
+                               <p style={{ margin: 0, fontWeight: 700, color: '#1e293b' }}>{v}</p>
+                            </div>
+                          ))
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Summary (Lesson 8 Style) */}
+                  {d.summary && Array.isArray(d.summary) && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+                      {d.summary.map((s: any, i: number) => (
+                        <div key={i} style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '14px', padding: '12px 16px' }}>
+                          <p style={{ fontSize: '11px', fontWeight: 900, color: '#6366f1', textTransform: 'uppercase', marginBottom: '4px' }}>{s.lesson}</p>
+                          <p style={{ fontSize: '14px', fontWeight: 700, color: '#1e293b', margin: 0 }}>{s.topic}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Grammar Negative/Question Forms */}
+                  {(d.negative || d.question) && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
+                      {d.negative && (
+                        <div style={{ background: '#fef2f2', border: '1.5px solid #fecaca', borderRadius: '14px', padding: '12px 16px' }}>
+                          <p style={{ fontSize: '11px', fontWeight: 900, color: '#dc2626', textTransform: 'uppercase', marginBottom: '4px' }}>Negative Form:</p>
+                          {typeof d.negative === 'string' ? (
+                            <p style={{ fontSize: '14px', fontWeight: 600, color: '#991b1b', margin: 0 }}>{d.negative}</p>
+                          ) : (
+                             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                               {Object.entries(d.negative).map(([k, v]: [string, any]) => (
+                                 <p key={k} style={{ margin: 0, fontSize: '14px', fontWeight: 600, color: '#991b1b' }}><span style={{ textTransform: 'uppercase', fontSize: '10px', opacity: 0.7 }}>{k}:</span> {v}</p>
+                               ))}
+                             </div>
+                          )}
+                        </div>
+                      )}
+                      {d.question && (
+                        <div style={{ background: '#ecfdf5', border: '1.5px solid #a7f3d0', borderRadius: '14px', padding: '12px 16px' }}>
+                          <p style={{ fontSize: '11px', fontWeight: 900, color: '#059669', textTransform: 'uppercase', marginBottom: '4px' }}>Question Form:</p>
+                          {typeof d.question === 'string' ? (
+                            <p style={{ fontSize: '14px', fontWeight: 600, color: '#065f46', margin: 0 }}>{d.question}</p>
+                          ) : (
+                             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                               {Object.entries(d.question).map(([k, v]: [string, any]) => (
+                                 <p key={k} style={{ margin: 0, fontSize: '14px', fontWeight: 600, color: '#065f46' }}><span style={{ textTransform: 'uppercase', fontSize: '10px', opacity: 0.7 }}>{k}:</span> {v}</p>
+                               ))}
+                             </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* Comparison */}
+                  {d.comparison && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '16px' }}>
+                      {d.comparison.map((c: any, i: number) => (
+                        <div key={i} style={{ background: i === 0 ? '#eff6ff' : '#f0fdf4', border: `1.5px solid ${i === 0 ? '#bfdbfe' : '#bbf7d0'}`, borderRadius: '16px', padding: '16px' }}>
+                          <p style={{ fontSize: '14px', fontWeight: 800, color: i === 0 ? '#1e40af' : '#166534', marginBottom: '4px' }}>{c.tense}</p>
+                          <p style={{ fontSize: '12px', color: '#64748b', fontWeight: 600, marginBottom: '10px' }}>{c.use}</p>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                            {(c.examples ?? []).map((ex: string, j: number) => (
+                              <span key={j} onClick={() => speak(ex)} style={{ background: 'white', border: '1px solid #cbd5e1', borderRadius: '8px', padding: '4px 10px', fontSize: '13px', fontWeight: 700, color: '#334155', cursor: 'pointer' }}>{ex}</span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Signal Words */}
+                  {d.key_signal_words && (
+                    <div style={{ background: '#fffbeb', border: '1.5px solid #fde68a', borderRadius: '16px', padding: '16px', marginBottom: '16px' }}>
+                      <p style={{ fontSize: '11px', fontWeight: 900, color: '#b45309', textTransform: 'uppercase', marginBottom: '12px' }}>Signal Words:</p>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                        {Object.entries(d.key_signal_words).map(([key, words]: [string, any], i) => (
+                          <div key={i}>
+                            <p style={{ fontSize: '10px', fontWeight: 800, color: '#d97706', textTransform: 'uppercase', marginBottom: '6px' }}>{key.replace('_', ' ')}</p>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
+                              {words.map((w: string, j: number) => (
+                                <span key={j} style={{ background: 'white', borderRadius: '6px', padding: '2px 8px', fontSize: '12px', fontWeight: 700, color: '#92400e', border: '1px solid #fef3c7' }}>{w}</span>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Phrase items */}
                   {d.items && d.items.length > 0 && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -581,6 +799,22 @@ export default function LessonPage() {
                         >
                           <span style={{ fontWeight: 700, fontSize: '15px', color: '#1e293b' }}>{item.phrase}</span>
                           {item.note && <span style={{ fontSize: '12px', color: '#94a3b8', fontWeight: 500, textAlign: 'right', flexShrink: 0, maxWidth: '45%' }}>{item.note}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Vocabulary groups */}
+                  {d.groups && d.groups.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      {d.groups.map((g: any, i: number) => (
+                        <div key={i} style={{ background: '#f8fafc', borderRadius: '16px', padding: '16px', border: '1.5px solid #e2e8f0' }}>
+                          <p style={{ fontSize: '12px', fontWeight: 900, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>{g.group}</p>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                            {(g.items ?? []).map((word: string, j: number) => (
+                              <button key={j} style={{ background: 'white', border: '1.5px solid #e0e7ff', borderRadius: '10px', padding: '6px 14px', fontSize: '14px', fontWeight: 700, color: '#1e293b', cursor: 'pointer' }} onClick={() => speak(word)}>{word}</button>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -612,11 +846,21 @@ export default function LessonPage() {
 
                   {/* Grammar Examples — supports both {sentence,structure} and {statement,question,...} formats */}
                   {d.examples && d.examples.length > 0 && (() => {
-                    const isSentenceFormat = d.examples[0]?.sentence !== undefined;
+                    const firstEx = d.examples[0];
+                    const isSentenceFormat = firstEx?.sentence !== undefined;
+                    
                     return (
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
-                        {d.examples.map((ex: any, i: number) => (
-                          isSentenceFormat ? (
+                        {d.examples.map((ex: any, i: number) => {
+                          if (typeof ex === 'string') {
+                            return (
+                              <div key={i} style={{ background: 'white', borderRadius: '12px', padding: '13px 16px', border: '1.5px solid #e0e7ff', cursor: 'pointer' }} onClick={() => speak(ex)}>
+                                <span style={{ fontWeight: 700, fontSize: '15px', color: '#1e293b' }}>💬 {ex}</span>
+                              </div>
+                            );
+                          }
+                          
+                          return isSentenceFormat ? (
                             <div key={i} style={{
                               background: 'white', borderRadius: '12px', padding: '13px 16px',
                               border: '1.5px solid #e0e7ff', display: 'flex', flexDirection: 'column', gap: '4px',
@@ -634,16 +878,57 @@ export default function LessonPage() {
                                 {(ex.no_reply || ex.no) && <span style={{ color: '#ef4444', fontWeight: 'bold' }}>No: {ex.no_reply || ex.no}</span>}
                               </div>
                             </div>
-                          )
-                        ))}
+                          );
+                        })}
                       </div>
                     );
                   })()}
 
-                  {/* Grammar Rule */}
+                  {/* Grammar Pattern(s) */}
+                  {d.patterns && d.patterns.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '16px' }}>
+                      {d.patterns.map((p: any, i: number) => (
+                        <div key={i} style={{ background: '#f0f9ff', border: '1.5px solid #bae6fd', borderRadius: '16px', padding: '16px' }}>
+                          <p style={{ fontSize: '11px', fontWeight: 900, color: '#0284c7', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>Pattern: {p.pattern}</p>
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                            {(p.examples ?? []).map((ex: any, j: number) => (
+                              <div key={j} style={{ background: 'white', border: '1px solid #e0f2fe', borderRadius: '10px', padding: '10px 14px', cursor: 'pointer' }} onClick={() => speak(ex.phrase || ex)}>
+                                <span style={{ fontWeight: 700, fontSize: '14px', color: '#1e293b' }}>{ex.phrase || ex}</span>
+                                {ex.note && <span style={{ fontSize: '12px', color: '#64748b', marginLeft: '8px' }}>— {ex.note}</span>}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Grammar Rule(s) */}
+                  {d.rules && d.rules.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '16px' }}>
+                      {d.rules.map((r: any, i: number) => (
+                        <div key={i} style={{ background: '#fffbeb', borderLeft: '4px solid #fbbf24', padding: '14px 16px', borderRadius: '0 12px 12px 0' }}>
+                          <p style={{ margin: '0 0 8px 0', fontSize: '14px', color: '#92400e', fontWeight: 800 }}>💡 {r.rule}</p>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                            {(r.examples ?? []).map((ex: string, j: number) => (
+                              <span key={j} style={{ background: 'white', border: '1px solid #fde68a', borderRadius: '8px', padding: '4px 10px', fontSize: '13px', fontWeight: 700, color: '#4f46e5', cursor: 'pointer' }} onClick={() => speak(ex)}>{ex}</span>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
                   {d.rule && (
                     <div style={{ background: '#fffbeb', borderLeft: '4px solid #fbbf24', padding: '12px 16px', borderRadius: '0 8px 8px 0', marginBottom: '16px' }}>
                       <p style={{ margin: 0, fontSize: '14px', color: '#92400e', fontWeight: 600 }}>💡 {d.rule}</p>
+                    </div>
+                  )}
+
+                  {/* Tip */}
+                  {d.tip && (
+                    <div style={{ background: '#f0fdfa', border: '1.5px dashed #5eead4', borderRadius: '12px', padding: '12px 16px', marginBottom: '16px' }}>
+                      <p style={{ margin: 0, fontSize: '13px', color: '#0d9488', fontWeight: 600 }}>🌟 <strong>Tip:</strong> {d.tip}</p>
                     </div>
                   )}
 
@@ -711,6 +996,48 @@ export default function LessonPage() {
               );
             })()}
 
+            {/* ── LISTEN & REPEAT ───────────────────────────────────────── */}
+            {step.type === 'LISTEN_REPEAT' && (() => {
+              const d = step.data;
+              return (
+                <div style={{ width: '100%' }}>
+                  <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#4f46e5', margin: '0 0 6px 0' }}>{d.title}</h2>
+                  {d.instruction && <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px', lineHeight: 1.6 }}>{d.instruction}</p>}
+                  
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    {(d.phrases ?? []).map((p: any, i: number) => {
+                      const isPlayed = playedPhrases.includes(i);
+                      return (
+                        <div key={i} 
+                          onClick={() => {
+                            speak(p.text);
+                            if (!isPlayed) setPlayedPhrases(prev => [...prev, i]);
+                          }}
+                          style={{
+                            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                            background: 'white', borderRadius: '16px', padding: '16px 20px',
+                            border: `2px solid ${isPlayed ? '#e0e7ff' : '#f1f5f9'}`,
+                            boxShadow: isPlayed ? '0 4px 12px rgba(79,70,229,0.08)' : 'none',
+                            cursor: 'pointer', transition: 'all 0.2s',
+                            transform: isPlayed ? 'scale(1.02)' : 'scale(1)',
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: isPlayed ? '#4f46e5' : '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>
+                              {isPlayed ? '🔊' : '🔈'}
+                            </div>
+                            <span style={{ fontWeight: 800, fontSize: '16px', color: isPlayed ? '#4f46e5' : '#1e293b' }}>{p.text}</span>
+                          </div>
+                          {isPlayed && <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} style={{ color: '#16a34a', fontWeight: 900, fontSize: '12px' }}>READY! ✓</motion.span>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <p style={{ fontSize: '12px', color: '#94a3b8', textAlign: 'center', marginTop: '20px', fontWeight: 600 }}>Tap each phrase to listen and practice repeating it aloud.</p>
+                </div>
+              );
+            })()}
+
             {/* ── FAMILY TREE ─────────────────────────────────────────────── */}
             {step.type === 'FAMILY_TREE' && (() => {
               const d = step.data;
@@ -765,6 +1092,40 @@ export default function LessonPage() {
                       </div>
                     ))}
                   </div>
+                </div>
+              );
+            })()}
+
+            {/* ── LESSON SUMMARY ────────────────────────────────────────── */}
+            {step.type === 'lesson_summary' && (() => {
+              const sd = step.data;
+              return (
+                <div style={{ width: '100%', textAlign: 'center' }}>
+                  <div style={{ width: '80px', height: '80px', background: '#fef3c7', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                    <span style={{ fontSize: '40px' }}>🏆</span>
+                  </div>
+                  <h2 style={{ fontSize: '24px', fontWeight: 900, color: '#1e293b', marginBottom: '8px' }}>{sd.title || 'Lesson Complete!'}</h2>
+                  <p style={{ fontSize: '16px', color: '#64748b', marginBottom: '24px' }}>Excellent work! You've mastered these concepts.</p>
+                  
+                  {sd.what_you_learned && (
+                    <div style={{ textAlign: 'left', background: '#f8fafc', borderRadius: '20px', padding: '24px', border: '1.5px solid #e2e8f0', marginBottom: '24px' }}>
+                      <p style={{ fontSize: '12px', fontWeight: 900, color: '#4f46e5', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px' }}>What you learned:</p>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        {sd.what_you_learned.map((item: string, i: number) => (
+                          <div key={i} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                            <div style={{ width: '20px', height: '20px', background: '#e0e7ff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
+                              <div style={{ width: '8px', height: '8px', background: '#4f46e5', borderRadius: '50%' }} />
+                            </div>
+                            <p style={{ margin: 0, fontSize: '14px', color: '#334155', fontWeight: 600, lineHeight: 1.5 }}>{item}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {sd.next_lesson_title && (
+                    <p style={{ fontSize: '14px', color: '#94a3b8', fontWeight: 600 }}>Next: <span style={{ color: '#6366f1' }}>{sd.next_lesson_title}</span></p>
+                  )}
                 </div>
               );
             })()}
@@ -855,10 +1216,35 @@ export default function LessonPage() {
                 {/* Scenario / multi-line question support */}
                 {step.data.question?.includes('\n\n') ? (
                   <>
-                    <div style={{ background: '#fef9ec', border: '2px solid #fde68a', borderRadius: '14px', padding: '14px 18px', marginBottom: '16px', fontSize: '13px', color: '#92400e', fontWeight: 600, lineHeight: 1.6 }}>
-                      {step.data.question.split('\n\n')[0].replace('📍 ', '')}
+                    <div style={{ 
+                      background: '#fffbeb', 
+                      border: '2px solid #fde68a', 
+                      borderRadius: '20px', 
+                      padding: '20px 24px', 
+                      marginBottom: '28px', 
+                      position: 'relative',
+                      boxShadow: '0 4px 12px rgba(251,191,36,0.08)'
+                    }}>
+                      <span style={{
+                        position: 'absolute',
+                        top: '-12px',
+                        left: '24px',
+                        background: '#f59e0b',
+                        color: 'white',
+                        padding: '2px 14px',
+                        borderRadius: '99px',
+                        fontSize: '11px',
+                        fontWeight: 900,
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>Context</span>
+                      <p style={{ fontSize: '16px', color: '#92400e', fontWeight: 600, lineHeight: 1.6, margin: 0 }}>
+                        {step.data.question.split('\n\n')[0].replace('📍 ', '')}
+                      </p>
                     </div>
-                    <h2 className="quiz-question">{step.data.question.split('\n\n')[1]}</h2>
+                    <h2 className="quiz-question" style={{ fontSize: '24px', marginBottom: '24px' }}>
+                      {step.data.question.split('\n\n')[1]}
+                    </h2>
                   </>
                 ) : (
                   <h2 className="quiz-question">{step.data.question}</h2>
@@ -1071,6 +1457,57 @@ export default function LessonPage() {
               );
             })()}
 
+            {/* ── DIALOGUE ──────────────────────────────────────────────── */}
+            {step.type === 'DIALOGUE' && (() => {
+              const d = step.data;
+              return (
+                <div style={{ width: '100%' }}>
+                  <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#4f46e5', margin: '0 0 6px 0' }}>{d.title}</h2>
+                  {d.context && <p style={{ fontSize: '14px', color: '#64748b', marginBottom: '20px', lineHeight: 1.6, fontStyle: 'italic' }}>📍 {d.context}</p>}
+                  
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', background: '#f8fafc', padding: '20px', borderRadius: '20px', border: '1.5px solid #e2e8f0', marginBottom: '24px' }}>
+                    {d.dialogue.map((line: any, i: number) => {
+                      const isLeft = i % 2 === 0;
+                      return (
+                        <div key={i} style={{ display: 'flex', flexDirection: isLeft ? 'row' : 'row-reverse', alignItems: 'flex-end', gap: '10px' }}>
+                          <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isLeft ? '#4f46e5' : '#1cb0f6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 800, color: 'white', flexShrink: 0 }}>
+                            {line.speaker?.[0].toUpperCase()}
+                          </div>
+                          <div style={{ maxWidth: '80%', background: 'white', border: '1px solid #e2e8f0', borderRadius: isLeft ? '14px 14px 14px 4px' : '14px 14px 4px 14px', padding: '10px 14px', cursor: 'pointer', boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }} onClick={() => speak(line.line)}>
+                            <p style={{ margin: '0 0 4px 0', fontSize: '10px', fontWeight: 900, color: isLeft ? '#4f46e5' : '#1cb0f6', textTransform: 'uppercase' }}>{line.speaker}</p>
+                            <p style={{ margin: 0, fontSize: '15px', color: '#1e293b', fontWeight: 500, lineHeight: 1.5 }}>{line.line}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {d.questions && d.questions.length > 0 && (
+                    <div style={{ marginTop: '24px' }}>
+                      <p style={{ fontSize: '13px', fontWeight: 800, color: '#4f46e5', textTransform: 'uppercase', marginBottom: '16px' }}>Comprehension Questions:</p>
+                      {d.questions.map((q: any, i: number) => (
+                        <div key={i} style={{ background: '#eef2ff', borderRadius: '16px', padding: '16px', marginBottom: '12px', border: '1.5px solid #c7d2fe' }}>
+                          <p style={{ fontSize: '15px', fontWeight: 700, color: '#1e293b', marginBottom: '12px' }}>{q.question}</p>
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                            {q.options.map((opt: string, j: number) => (
+                              <div key={j} style={{ 
+                                background: 'white', padding: '8px 12px', borderRadius: '10px', 
+                                fontSize: '13px', fontWeight: 600, color: '#475569',
+                                border: '1px solid #e2e8f0'
+                              }}>
+                                {opt}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <p style={{ fontSize: '12px', color: '#c4c4c4', textAlign: 'center', marginTop: '16px' }}>🔊 Tap any bubble to hear the speaker</p>
+                </div>
+              );
+            })()}
+
             {/* ── SCRAMBLE / SORT WORDS ──────────────────────────────────── */}
             {step.type === 'SCRAMBLE' && (
               <>
@@ -1081,7 +1518,7 @@ export default function LessonPage() {
                 <div style={{ minHeight: '60px', borderBottom: '2px solid #e5e5e5', marginBottom: '32px', display: 'flex', gap: '8px', flexWrap: 'wrap', paddingBottom: '12px' }}>
                   {scrambleAnswer.map((w, i) => {
                     let cls = 'quiz-option';
-                    if (quizChecked) cls += feedback.correct ? ' correct' : ' wrong';
+                    if (quizChecked) cls += feedback.status === 'correct' ? ' correct' : ' wrong';
                     return (
                       <button key={`ans-${i}`} className={cls} style={{ padding: '12px 20px', width: 'auto' }} onClick={() => {
                         if (!quizChecked) setScrambleAnswer(prev => prev.filter((_, idx) => idx !== i));
@@ -1114,7 +1551,7 @@ export default function LessonPage() {
                   </svg>
                   <div className="mascot-bubble"><p className="theory-text" style={{ fontSize: '24px' }}>{step.data.source_text}</p></div>
                 </div>
-                <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.correct ? 'correct' : 'wrong') : ''}`} placeholder={`Translate to ${step.data.target_language}...`} value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
+                <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.status === 'correct' ? 'correct' : 'wrong') : ''}`} placeholder={`Translate to ${step.data.target_language}...`} value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
               </>
             )}
 
@@ -1124,7 +1561,7 @@ export default function LessonPage() {
                 <h2 className="quiz-question">Tap to listen and type what you hear</h2>
                 <button className="mic-button" onClick={() => speak(step.data.correct_answer)}>🔊</button>
                 <div style={{ height: '32px' }} />
-                <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.correct ? 'correct' : 'wrong') : ''}`} placeholder="Type here..." value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
+                <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.status === 'correct' ? 'correct' : 'wrong') : ''}`} placeholder="Type here..." value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
               </>
             )}
 
@@ -1151,7 +1588,7 @@ export default function LessonPage() {
                 )}
                 {useTypingFallback ? (
                   <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                    <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.correct ? 'correct' : 'wrong') : ''}`} placeholder="Type what you meant to say..." value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
+                    <input type="text" autoFocus className={`lesson-input ${quizChecked ? (feedback.status === 'correct' ? 'correct' : 'wrong') : ''}`} placeholder="Type what you meant to say..." value={inputText} onChange={e => setInputText(e.target.value)} disabled={quizChecked} />
                     {!quizChecked && (
                       <button onClick={() => setUseTypingFallback(false)} style={{ background: 'none', border: 'none', color: '#64748b', textDecoration: 'underline', marginTop: '12px', cursor: 'pointer', fontWeight: 600 }}>Use microphone instead</button>
                     )}
@@ -1223,7 +1660,7 @@ export default function LessonPage() {
                 <div style={{ minHeight: '60px', borderBottom: '2px solid #e5e5e5', marginBottom: '24px', display: 'flex', gap: '8px', flexWrap: 'wrap', paddingBottom: '12px' }}>
                   {scrambleAnswer.map((w, i) => {
                     let cls = 'quiz-option';
-                    if (quizChecked) cls += feedback.correct ? ' correct' : ' wrong';
+                    if (quizChecked) cls += feedback.status === 'correct' ? ' correct' : ' wrong';
                     return (
                       <button key={`sb-ans-${i}`} className={cls} style={{ padding: '12px 20px', width: 'auto' }} onClick={() => { if (!quizChecked) setScrambleAnswer(prev => prev.filter((_, idx) => idx !== i)); }}>{w}</button>
                     );
@@ -1275,40 +1712,57 @@ export default function LessonPage() {
 
             {/* ── SUMMARY ─────────────────────────────────────────────── */}
             {step.type === 'SUMMARY' && (
-              <div className="lesson-done-wrap">
-                <motion.div initial={{ scale: 0, rotate: -20 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', damping: 10, stiffness: 100 }} className="lesson-done-emoji">
-                  🥳
+              <div className="lesson-done-wrap" style={{ padding: '20px 0' }}>
+                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', bounce: 0.5 }} style={{ fontSize: '120px', marginBottom: '10px' }}>
+                  {accuracy_percent >= 80 ? '👑' : accuracy_percent >= 50 ? '🥈' : '🥉'}
                 </motion.div>
-                <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="lesson-done-title">
-                  Lesson Complete!
+                
+                <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="lesson-done-title" style={{ fontSize: '32px' }}>
+                  {accuracy_percent === 100 ? 'Perfect Lesson!' : accuracy_percent >= 80 ? 'Amazing Job!' : 'Lesson Complete!'}
                 </motion.h2>
-                {lesson?.title && (
-                  <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ fontSize: '15px', color: '#64748b', textAlign: 'center', fontWeight: 600, marginBottom: '8px' }}>
-                    {lesson.title}
-                  </motion.p>
-                )}
-                <div className="lesson-done-stats">
-                  <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }} className="lesson-done-stat">
-                    <div className="lesson-done-val">{totalQuiz}</div>
-                    <div className="lesson-done-label">Questions</div>
-                  </motion.div>
-                  <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }} className="lesson-done-stat">
-                    <div className="lesson-done-val">{Math.round((correctCount / Math.max(1, totalQuiz)) * 100)}%</div>
-                    <div className="lesson-done-label">Accuracy</div>
-                  </motion.div>
-                  {timeSpentStr && (
-                    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6 }} className="lesson-done-stat">
-                      <div className="lesson-done-val" style={{ color: '#0ea5e9' }}>{timeSpentStr}</div>
-                      <div className="lesson-done-label">Time</div>
-                    </motion.div>
-                  )}
+
+                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ fontSize: '16px', color: '#64748b', fontWeight: 700, marginBottom: '24px' }}>
+                  You just finished <span style={{ color: '#4f46e5' }}>{lesson?.title || 'this lesson'}</span>
+                </motion.p>
+
+                <div className="lesson-done-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', width: '100%', marginBottom: '24px' }}>
+                  <div className="lesson-done-stat" style={{ padding: '16px 12px' }}>
+                    <div className="lesson-done-val" style={{ fontSize: '24px' }}>{totalQuiz}</div>
+                    <div className="lesson-done-label" style={{ fontSize: '11px' }}>Questions</div>
+                  </div>
+                  <div className="lesson-done-stat" style={{ padding: '16px 12px', borderColor: '#86efac', background: '#f0fdf4' }}>
+                    <div className="lesson-done-val" style={{ fontSize: '24px', color: '#16a34a' }}>{accuracy_percent}%</div>
+                    <div className="lesson-done-label" style={{ color: '#16a34a', fontSize: '11px' }}>Accuracy</div>
+                  </div>
+                  <div className="lesson-done-stat" style={{ padding: '16px 12px' }}>
+                    <div className="lesson-done-val" style={{ fontSize: '24px', color: '#0ea5e9' }}>{timeSpentStr}</div>
+                    <div className="lesson-done-label" style={{ color: '#0ea5e9', fontSize: '11px' }}>Time Spent</div>
+                  </div>
                 </div>
+
                 {lesson?.xp_reward && (
-                  <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.7 }}
-                    style={{ background: 'linear-gradient(135deg,#fbbf24,#f59e0b)', borderRadius: '99px', padding: '10px 28px', fontWeight: 900, fontSize: '18px', color: 'white', marginTop: '16px', boxShadow: '0 4px 16px rgba(245,158,11,0.4)' }}>
-                    +{lesson.xp_reward} XP 🏆
+                  <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }}
+                    style={{ background: 'linear-gradient(135deg,#fbbf24,#f59e0b)', borderRadius: '24px', padding: '20px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', boxShadow: '0 8px 24px rgba(245,158,11,0.2)' }}>
+                    <span style={{ fontSize: '32px' }}>🏆</span>
+                    <div style={{ textAlign: 'left' }}>
+                      <p style={{ margin: 0, color: 'white', fontSize: '12px', fontWeight: 800, textTransform: 'uppercase', opacity: 0.9 }}>Daily Goal Progress</p>
+                      <p style={{ margin: 0, color: 'white', fontSize: '24px', fontWeight: 900 }}>+{lesson.xp_reward} XP Earned</p>
+                    </div>
                   </motion.div>
                 )}
+
+                <div style={{ marginTop: '32px', width: '100%', borderTop: '2px solid #f1f5f9', paddingTop: '24px', textAlign: 'left' }}>
+                  <p style={{ fontSize: '12px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', marginBottom: '16px' }}>Mastered Skills</p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {Array.from(masteredSkills).length > 0 ? Array.from(masteredSkills).map(skill => (
+                      <div key={skill} style={{ background: '#f0fdf4', border: '1.5px solid #86efac', borderRadius: '12px', padding: '8px 14px', fontSize: '13px', fontWeight: 700, color: '#16a34a', display: 'flex', alignItems: 'center', gap: '6px', textTransform: 'capitalize' }}>
+                        <span style={{ color: '#10b981' }}>✓</span> {skill}
+                      </div>
+                    )) : (
+                      <p style={{ fontSize: '13px', color: '#64748b', fontWeight: 600 }}>Keep practicing to master new skills!</p>
+                    )}
+                  </div>
+                </div>
               </div>
             )}
 
@@ -1321,18 +1775,23 @@ export default function LessonPage() {
         {feedback.show ? (
           <motion.div
             key="feedback"
-            className={`feedback-banner-area ${feedback.correct ? 'correct' : 'wrong'}`}
+            className={`feedback-banner-area ${feedback.status}`}
             initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }}
           >
             <div className="feedback-content">
-              <div className={`feedback-icon ${feedback.correct ? 'correct' : 'wrong'}`}>
-                {feedback.correct ? '✓' : '✗'}
+              <div className={`feedback-icon ${feedback.status}`}>
+                {feedback.status === 'correct' ? '✓' : feedback.status === 'almost' ? '💡' : '✗'}
               </div>
-              <div className={`feedback-text ${feedback.correct ? 'correct' : 'wrong'}`}>
-                <h2>{feedback.correct ? 'Awesome!' : 'Correct answer:'}</h2>
-                {!feedback.correct && <p>{feedback.msg}</p>}
+              <div className={`feedback-text ${feedback.status}`}>
+                <h2>{feedback.title}</h2>
+                {feedback.msg && <p>{feedback.msg}</p>}
               </div>
-              <button autoFocus className={`lesson-continue-btn ${feedback.correct ? 'primary' : 'wrong-btn'}`} style={{ marginLeft: 'auto', marginBottom: 0 }} onClick={goNext}>
+              <button 
+                autoFocus 
+                className={`lesson-continue-btn ${feedback.status === 'correct' ? 'primary' : feedback.status === 'almost' ? 'almost-btn' : 'wrong-btn'}`} 
+                style={{ marginLeft: 'auto', marginBottom: 0 }} 
+                onClick={goNext}
+              >
                 CONTINUE
               </button>
             </div>

@@ -1,0 +1,266 @@
+{
+  "lesson_id": "a1_unit3_lesson01",
+  "unit": 3, "lesson_number": 1, "level": "A1",
+  "title": "The body & health — I have a headache",
+  "description": "Learn body part vocabulary and how to describe health problems and symptoms.",
+  "estimated_minutes": 20, "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0301_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Parts of the body",
+      "content": {
+        "explanation": "Learn the most important body part words in English.",
+        "groups": [
+          { "group": "Head area", "items": ["head", "face", "eye", "ear", "nose", "mouth", "teeth", "throat", "neck"] },
+          { "group": "Upper body", "items": ["shoulder", "arm", "elbow", "wrist", "hand", "finger", "chest", "back", "stomach"] },
+          { "group": "Lower body", "items": ["hip", "leg", "knee", "ankle", "foot", "toe"] }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Health problems — I have a ___",
+      "content": {
+        "explanation": "In English, we usually say 'I have a + problem' OR 'My ___ hurts' to describe pain.",
+        "patterns": [
+          {
+            "pattern": "I have a ___ache",
+            "examples": [
+              { "phrase": "I have a headache.", "note": "Pain in your head" },
+              { "phrase": "I have a stomachache.", "note": "Pain in your stomach" },
+              { "phrase": "I have a toothache.", "note": "Pain in your tooth" },
+              { "phrase": "I have a backache.", "note": "Pain in your back" }
+            ]
+          },
+          {
+            "pattern": "I have a / an ___",
+            "examples": [
+              { "phrase": "I have a cold.", "note": "Runny nose, sneezing" },
+              { "phrase": "I have a fever.", "note": "High body temperature" },
+              { "phrase": "I have a cough.", "note": "Coughing a lot" },
+              { "phrase": "I have a sore throat.", "note": "Painful throat" },
+              { "phrase": "I have an allergy.", "note": "Reaction to food/dust/pollen" }
+            ]
+          },
+          {
+            "pattern": "My ___ hurts.",
+            "examples": [
+              { "phrase": "My knee hurts.", "note": "Pain in your knee" },
+              { "phrase": "My eyes hurt.", "note": "Pain in both eyes" },
+              { "phrase": "My back hurts.", "note": "Back pain" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Feeling words",
+      "content": {
+        "explanation": "Use these words to describe how you feel when you are sick.",
+        "items": [
+          { "phrase": "I feel sick.", "note": "Generally unwell" },
+          { "phrase": "I feel terrible.", "note": "Very unwell" },
+          { "phrase": "I feel dizzy.", "note": "The room is spinning" },
+          { "phrase": "I feel weak.", "note": "No energy" },
+          { "phrase": "I feel tired.", "note": "Need to sleep" },
+          { "phrase": "I feel better.", "note": "Improving — use after being sick" },
+          { "phrase": "I feel fine / well.", "note": "Healthy and good" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — health phrases",
+      "content": {
+        "instruction": "Repeat clearly. These phrases are very important for everyday life.",
+        "phrases": [
+          { "text": "I have a bad headache.", "audio_key": "bad_headache" },
+          { "text": "My throat is very sore.", "audio_key": "sore_throat" },
+          { "text": "I feel dizzy and weak.", "audio_key": "dizzy_weak" },
+          { "text": "I have a high fever.", "audio_key": "high_fever" },
+          { "text": "I don't feel well today.", "audio_key": "dont_feel_well" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "What's wrong?",
+      "content": {
+        "question": "Your head is painful and heavy. What do you say?",
+        "options": ["I have a stomachache.", "I have a headache.", "My knee hurts.", "I have a cough."],
+        "correct_index": 1,
+        "explanation": "Pain in the head = a headache. 'I have a headache.'"
+      }
+    },
+    {
+      "task_id": "t0301_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "a or an?",
+      "content": {
+        "question": "Choose the correct article: 'I have ___ allergy to pollen.'",
+        "options": ["a", "an", "some", "the"],
+        "correct_index": 1,
+        "explanation": "'Allergy' starts with vowel 'a' → use 'an'. An allergy. ✓"
+      }
+    },
+    {
+      "task_id": "t0301_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "My ___ hurts or I have?",
+      "content": {
+        "question": "Which sentence is correct for talking about knee pain?",
+        "options": [
+          "I have a knee.",
+          "I have a kneeache.",
+          "My knee hurts.",
+          "I hurt my knee have."
+        ],
+        "correct_index": 2,
+        "explanation": "For body parts without -ache form, use: My + [body part] + hurts."
+      }
+    },
+    {
+      "task_id": "t0301_08", "order": 8, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the health problem",
+      "content": {
+        "sentence": "I can't eat anything — I have a terrible ___ache in my tooth.",
+        "options": ["tooth", "back", "head", "stomach"],
+        "correct": "tooth",
+        "explanation": "Can't eat + pain in tooth = toothache."
+      }
+    },
+    {
+      "task_id": "t0301_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in how you feel",
+      "content": {
+        "sentence": "I had a fever last night but today I feel much ___.",
+        "options": ["sick", "terrible", "dizzy", "better"],
+        "correct": "better",
+        "explanation": "After being sick and improving → I feel better."
+      }
+    },
+    {
+      "task_id": "t0301_10", "order": 10, "type": "sort_words", "category": "vocabulary",
+      "title": "Build the health sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct sentence about a health problem.",
+        "words": ["a", "have", "and", "cold", "I", "sore", "throat", "a"],
+        "correct_sentence": "I have a cold and a sore throat.",
+        "explanation": "I have + a + [problem] + and + a + [problem]."
+      }
+    },
+    {
+      "task_id": "t0301_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match symptom to problem",
+      "content": {
+        "instruction": "Match each symptom description to the correct health problem.",
+        "pairs": [
+          { "prompt": "Your nose is running and you sneeze a lot", "answer": "a cold" },
+          { "prompt": "Your body temperature is 39 degrees", "answer": "a fever" },
+          { "prompt": "You keep coughing every few minutes", "answer": "a cough" },
+          { "prompt": "The room feels like it's spinning", "answer": "feeling dizzy" },
+          { "prompt": "Your tooth is very painful", "answer": "a toothache" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Are you okay?",
+      "content": {
+        "context": "Priya looks unwell at work. Her colleague Sanjay asks what's wrong.",
+        "dialogue": [
+          { "speaker": "Sanjay", "line": "Priya, are you okay? You look pale." },
+          { "speaker": "Priya", "line": "Not really. I don't feel very well today." },
+          { "speaker": "Sanjay", "line": "What's wrong?" },
+          { "speaker": "Priya", "line": "I have a terrible headache and my throat is really sore." },
+          { "speaker": "Sanjay", "line": "Oh no! Do you have a fever?" },
+          { "speaker": "Priya", "line": "I think so. I feel hot and I feel a bit dizzy too." },
+          { "speaker": "Sanjay", "line": "You should go home and rest. Did you take any medicine?" },
+          { "speaker": "Priya", "line": "Not yet. I don't have any tablets with me." },
+          { "speaker": "Sanjay", "line": "I have some paracetamol — here, take these." },
+          { "speaker": "Priya", "line": "Thank you so much, Sanjay. You're very kind." },
+          { "speaker": "Sanjay", "line": "Rest well! I hope you feel better soon." }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "What two health problems does Priya have?",
+            "options": [
+              "Stomachache and cough",
+              "Headache and sore throat",
+              "Fever and backache",
+              "Cold and toothache"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "What does Sanjay give Priya?",
+            "options": ["Water", "Food", "Paracetamol tablets", "A thermometer"],
+            "correct_index": 2
+          },
+          {
+            "question": "What does Sanjay say Priya should do?",
+            "options": ["Eat something", "Go home and rest", "See a doctor", "Drink water"],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0301_13", "order": 13, "type": "error_correction", "category": "vocabulary",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence correctly describes a health problem?",
+        "wrong_sentence": "I have headache and my stomach hurt.",
+        "options": [
+          "I have headache and my stomach hurt.",
+          "I have a headache and my stomach hurts.",
+          "I have a headache and my stomach hurt.",
+          "I have headache and my stomach hurts."
+        ],
+        "correct_index": 1,
+        "explanation": "Need article 'a' before headache. 'My stomach hurts' (singular → hurts not hurt)."
+      }
+    },
+    {
+      "task_id": "t0301_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You call your office to say you cannot come to work because you are sick.",
+        "question": "What is the most natural thing to say?",
+        "options": [
+          "Hello, I am not come today.",
+          "Hello, I am sorry — I don't feel well. I have a fever and a bad headache.",
+          "Hello. Sick. No work today.",
+          "Hello, my body is problem today."
+        ],
+        "correct_index": 1,
+        "explanation": "Clear, polite, and uses correct health vocabulary: I don't feel well / I have a fever."
+      }
+    },
+    {
+      "task_id": "t0301_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Talk about health",
+      "content": {
+        "instruction": "Speak for 40–50 seconds. Describe a time when you felt sick. What was wrong? How did you feel? What did you do?",
+        "prompt": "Tell me about a time you were not feeling well. What health problem did you have?",
+        "example_response": "Last week I felt terrible. I had a high fever and a really bad headache. My throat was sore too and I had a cough. I felt very weak and dizzy. I couldn't go to work. I stayed at home, drank a lot of water, and took some medicine. After two days I felt much better. I think I had a bad cold.",
+        "key_phrases": ["I had a ___", "My ___ hurt/was sore", "I felt ___", "I couldn't ___", "I felt better after ___"],
+        "min_words": 50
+      }
+    },
+    {
+      "task_id": "t0301_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Body parts: head, face, eye, ear, nose, throat, back, stomach, knee, foot etc.",
+          "I have a ___ache: headache, stomachache, toothache, backache",
+          "I have a/an ___: cold, fever, cough, sore throat, allergy",
+          "My ___ hurts: for body parts without -ache form",
+          "Feeling words: sick, terrible, dizzy, weak, tired, better, fine"
+        ],
+        "next_lesson": "a1_unit3_lesson02",
+        "next_lesson_title": "At the doctor — describing symptoms"
+      }
+    }
+  ]
+}

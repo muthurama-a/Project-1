@@ -1,0 +1,256 @@
+{
+  "lesson_id": "a1_unit2_lesson05",
+  "unit": 2, "lesson_number": 5, "level": "A1",
+  "title": "Weather & the present continuous",
+  "description": "Describe today's weather and learn to talk about what is happening right now.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0205_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Weather vocabulary",
+      "content": {
+        "explanation": "These are the most common words to describe the weather.",
+        "items": [
+          { "phrase": "sunny / it's sunny", "note": "The sun is shining" },
+          { "phrase": "cloudy / it's cloudy", "note": "The sky has clouds" },
+          { "phrase": "rainy / it's raining", "note": "Rain is falling" },
+          { "phrase": "windy / it's windy", "note": "Strong wind is blowing" },
+          { "phrase": "hot / warm", "note": "High temperature" },
+          { "phrase": "cold / cool", "note": "Low temperature" },
+          { "phrase": "humid", "note": "Wet, sticky air — common in Chennai!" },
+          { "phrase": "foggy", "note": "Hard to see — low visibility" },
+          { "phrase": "stormy", "note": "Strong wind and heavy rain together" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0205_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Grammar: Present continuous",
+      "content": {
+        "explanation": "We use the present continuous to talk about what is happening RIGHT NOW.",
+        "structure": "Subject + am/is/are + verb-ing",
+        "examples": [
+          { "sentence": "It is raining.", "note": "Happening now" },
+          { "sentence": "The sun is shining.", "note": "Happening now" },
+          { "sentence": "I am studying English.", "note": "Happening now" },
+          { "sentence": "She is cooking dinner.", "note": "Happening now" },
+          { "sentence": "They are playing outside.", "note": "Happening now" }
+        ],
+        "formation": [
+          { "subject": "I", "helper": "am", "example": "I am reading." },
+          { "subject": "He / She / It", "helper": "is", "example": "She is working." },
+          { "subject": "You / We / They", "helper": "are", "example": "They are sleeping." }
+        ],
+        "negative": "Subject + am/is/are + NOT + verb-ing: It is not raining. / She isn't working.",
+        "question": "Am/Is/Are + Subject + verb-ing? Is it raining? / Are you working?"
+      }
+    },
+    {
+      "task_id": "t0205_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Simple present vs present continuous",
+      "content": {
+        "explanation": "Know when to use each tense — this is very important!",
+        "comparison": [
+          {
+            "tense": "Simple present",
+            "use": "Habits and routines — always, usually, every day",
+            "examples": ["I walk to work every day.", "It rains a lot in July.", "She works from 9 to 5."]
+          },
+          {
+            "tense": "Present continuous",
+            "use": "Happening right now — at this moment",
+            "examples": ["I am walking to work now.", "It is raining outside!", "She is working late today."]
+          }
+        ],
+        "key_signal_words": {
+          "simple_present": ["always", "usually", "every day", "often", "never"],
+          "present_continuous": ["now", "right now", "at the moment", "today", "look!"]
+        }
+      }
+    },
+    {
+      "task_id": "t0205_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — weather sentences",
+      "content": {
+        "instruction": "Repeat naturally. Notice how we contract is → 's in speech.",
+        "phrases": [
+          { "text": "It's raining heavily outside.", "audio_key": "raining_heavily" },
+          { "text": "The sun is shining and it's very hot.", "audio_key": "sun_shining_hot" },
+          { "text": "It's not raining now — it's cloudy.", "audio_key": "not_raining_cloudy" },
+          { "text": "What's the weather like today?", "audio_key": "weather_like_today" },
+          { "text": "I'm staying inside because it's stormy.", "audio_key": "staying_inside_stormy" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0205_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Present continuous form",
+      "content": {
+        "question": "Choose the correct sentence for RIGHT NOW: 'She ___ her homework.'",
+        "options": ["She do her homework.", "She does her homework.", "She is doing her homework.", "She doing her homework."],
+        "correct_index": 2,
+        "explanation": "Right now = present continuous. She + is + doing (verb-ing)."
+      }
+    },
+    {
+      "task_id": "t0205_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Simple present or continuous?",
+      "content": {
+        "question": "'Look! It ___ !' (You can see rain out of the window right now.)",
+        "options": ["rains", "is raining", "rained", "rain"],
+        "correct_index": 1,
+        "explanation": "'Look!' signals something happening RIGHT NOW → present continuous. It is raining."
+      }
+    },
+    {
+      "task_id": "t0205_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Weather vocabulary",
+      "content": {
+        "question": "It is very hot and the air feels wet and sticky. What weather is this?",
+        "options": ["Foggy", "Windy", "Humid", "Stormy"],
+        "correct_index": 2,
+        "explanation": "Humid = hot and wet air — very common in coastal cities like Chennai."
+      }
+    },
+    {
+      "task_id": "t0205_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the present continuous",
+      "content": {
+        "sentence": "Right now I ___ (sit) at my desk and I ___ (study) English.",
+        "blanks": [
+          { "position": 1, "options": ["sit", "sitting", "am sitting", "sits"], "correct": "am sitting" },
+          { "position": 2, "options": ["study", "studying", "am studying", "studies"], "correct": "am studying" }
+        ],
+        "explanation": "Right now = present continuous. I + am + verb-ing."
+      }
+    },
+    {
+      "task_id": "t0205_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in: simple present or continuous?",
+      "content": {
+        "sentence": "It usually ___ (rain) a lot in June, but today it ___ (shine).",
+        "blanks": [
+          { "position": 1, "options": ["rain", "rains", "is raining"], "correct": "rains" },
+          { "position": 2, "options": ["shine", "shines", "is shining"], "correct": "is shining" }
+        ],
+        "explanation": "Usually → simple present (rains). Today/right now → present continuous (is shining)."
+      }
+    },
+    {
+      "task_id": "t0205_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the present continuous sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct present continuous sentence.",
+        "words": ["is", "outside", "raining", "It", "heavily"],
+        "correct_sentence": "It is raining heavily outside.",
+        "explanation": "It + is + verb-ing + [adverb] + [place]."
+      }
+    },
+    {
+      "task_id": "t0205_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match weather to activity",
+      "content": {
+        "instruction": "Match the weather to the most likely activity.",
+        "pairs": [
+          { "prompt": "It's sunny and warm.", "answer": "People are going to the beach." },
+          { "prompt": "It's raining heavily.", "answer": "People are staying inside." },
+          { "prompt": "It's very windy.", "answer": "People are holding their umbrellas." },
+          { "prompt": "It's cold and foggy.", "answer": "People are wearing coats." }
+        ]
+      }
+    },
+    {
+      "task_id": "t0205_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Talking about the weather",
+      "content": {
+        "context": "Two friends Anand and Nisha are chatting by phone on a rainy day.",
+        "dialogue": [
+          { "speaker": "Anand", "line": "Hey Nisha! What's the weather like in Chennai today?" },
+          { "speaker": "Nisha", "line": "Oh, it's terrible! It's raining very heavily right now." },
+          { "speaker": "Anand", "line": "Are you at home?" },
+          { "speaker": "Nisha", "line": "Yes! I'm sitting by the window and watching the rain. What about Bangalore?" },
+          { "speaker": "Anand", "line": "It's a bit cloudy here but it isn't raining. It's actually quite cool." },
+          { "speaker": "Nisha", "line": "Lucky you! I can't go out today — the roads are flooding." },
+          { "speaker": "Anand", "line": "Stay safe! Are you doing anything at home?" },
+          { "speaker": "Nisha", "line": "I'm cooking and reading. A perfect rainy day!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "What is the weather like in Chennai?",
+            "options": ["Sunny and hot", "Cloudy and cool", "Raining heavily", "Windy and cold"],
+            "correct_index": 2
+          },
+          {
+            "question": "What is Nisha doing right now?",
+            "options": ["Sleeping", "Sitting by the window watching the rain", "Going shopping", "Working"],
+            "correct_index": 1
+          },
+          {
+            "question": "What is the weather like in Bangalore?",
+            "options": ["Rainy", "Stormy", "A bit cloudy and cool", "Hot and sunny"],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0205_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct for something happening right now?",
+        "wrong_sentence": "Look! The children play in the garden.",
+        "options": [
+          "Look! The children play in the garden.",
+          "Look! The children are playing in the garden.",
+          "Look! The children playing in the garden.",
+          "Look! The children is playing in the garden."
+        ],
+        "correct_index": 1,
+        "explanation": "'Look!' signals right now → present continuous. They + are + playing."
+      }
+    },
+    {
+      "task_id": "t0205_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your friend calls you and asks 'What are you doing?' You are at home cooking dinner.",
+        "question": "What is the most natural reply?",
+        "options": [
+          "I cook dinner every evening.",
+          "I am cooking dinner right now.",
+          "I cooked dinner.",
+          "I cooking dinner."
+        ],
+        "correct_index": 1,
+        "explanation": "What are you doing? = right now → present continuous. I am cooking."
+      }
+    },
+    {
+      "task_id": "t0205_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Describe the weather and what you're doing",
+      "content": {
+        "instruction": "Speak for 45 seconds. Describe today's weather and what you are doing right now because of it.",
+        "prompt": "What is the weather like today? What are you doing? What are people around you doing?",
+        "example_response": "Today the weather in Chennai is very hot and humid. It's not raining but the sky is a bit cloudy. Right now I am sitting inside with the fan on because it's too hot to go outside. My mother is cooking in the kitchen and my brother is watching TV. Usually on Sundays we go for a walk but today we're all staying inside.",
+        "key_phrases": ["It's ___ today", "Right now I am ___ing", "She/He is ___ing", "Usually... but today..."],
+        "min_words": 50
+      }
+    },
+    {
+      "task_id": "t0205_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Weather: sunny, cloudy, rainy, windy, hot, cold, humid, foggy, stormy",
+          "Present continuous: Subject + am/is/are + verb-ing",
+          "Use: things happening RIGHT NOW",
+          "Negative: isn't/aren't + verb-ing",
+          "Question: Is it raining? / What are you doing?",
+          "Key difference: simple present (habits) vs present continuous (now)"
+        ],
+        "next_lesson": "a1_unit2_lesson06",
+        "next_lesson_title": "Transport — getting around"
+      }
+    }
+  ]
+}

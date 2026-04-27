@@ -1,0 +1,259 @@
+{
+  "lesson_id": "a1_unit2_lesson01",
+  "unit": 2, "lesson_number": 1, "level": "A1",
+  "title": "Food & drink — likes and ordering",
+  "description": "Learn vocabulary for food and drink, express preferences, and practise ordering politely.",
+  "estimated_minutes": 20, "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0201_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Food vocabulary groups",
+      "content": {
+        "explanation": "Learn the most common food and drink words organised by group.",
+        "groups": [
+          { "group": "Staple foods", "items": ["rice", "bread", "pasta", "noodles", "potatoes"] },
+          { "group": "Protein", "items": ["chicken", "fish", "egg", "meat", "beans"] },
+          { "group": "Fruits", "items": ["apple", "banana", "mango", "orange", "grapes"] },
+          { "group": "Vegetables", "items": ["tomato", "onion", "carrot", "spinach", "pepper"] },
+          { "group": "Drinks", "items": ["water", "tea", "coffee", "juice", "milk"] }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Taste words",
+      "content": {
+        "explanation": "Use these adjectives to describe how food tastes.",
+        "items": [
+          { "phrase": "delicious / tasty", "note": "Very good — I love this!" },
+          { "phrase": "sweet", "note": "Like sugar — cake, mango, chocolate" },
+          { "phrase": "spicy", "note": "Hot flavour — chilli, pepper" },
+          { "phrase": "salty", "note": "Like salt — chips, pickles" },
+          { "phrase": "sour", "note": "Like lemon or tamarind" },
+          { "phrase": "bitter", "note": "Like coffee or dark chocolate" },
+          { "phrase": "fresh", "note": "Good quality, not old" },
+          { "phrase": "horrible", "note": "Very bad — I hate this!" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Grammar: a / an / some",
+      "content": {
+        "explanation": "Before food words, choose 'a', 'an', or 'some' correctly.",
+        "rules": [
+          { "rule": "a + singular noun (consonant sound)", "examples": ["a banana", "a sandwich", "a biscuit"] },
+          { "rule": "an + singular noun (vowel sound: a,e,i,o,u)", "examples": ["an apple", "an orange", "an egg"] },
+          { "rule": "some + uncountable noun", "examples": ["some rice", "some water", "some bread", "some milk"] },
+          { "rule": "some + plural countable noun", "examples": ["some apples", "some eggs", "some biscuits"] }
+        ],
+        "tip": "Uncountable = things you cannot count individually (water, rice, milk)."
+      }
+    },
+    {
+      "task_id": "t0201_04", "order": 4, "type": "learn_card", "category": "vocabulary",
+      "title": "Ordering politely",
+      "content": {
+        "explanation": "These phrases are used to order food and drink politely.",
+        "items": [
+          { "phrase": "I'd like ___.", "note": "Polite way to say what you want" },
+          { "phrase": "Can I have ___, please?", "note": "Also polite — very common" },
+          { "phrase": "I'll have ___.", "note": "Casual ordering — at a restaurant" },
+          { "phrase": "Is that everything?", "note": "Waiter asks if you need more" },
+          { "phrase": "Yes, that's all. / No, I'd also like ___.", "note": "Your reply" },
+          { "phrase": "The bill, please.", "note": "Ask for the bill at the end" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_05", "order": 5, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat each phrase naturally. Focus on the polite tone.",
+        "phrases": [
+          { "text": "I'd like an orange juice, please.", "audio_key": "id_like_juice" },
+          { "text": "Can I have some rice, please?", "audio_key": "can_have_rice" },
+          { "text": "This is absolutely delicious!", "audio_key": "absolutely_delicious" },
+          { "text": "I don't like spicy food very much.", "audio_key": "dont_like_spicy" },
+          { "text": "The bill, please.", "audio_key": "the_bill_please" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "a, an, or some?",
+      "content": {
+        "question": "Choose correct: 'I want ___ apple and ___ milk for breakfast.'",
+        "options": ["a / some", "an / some", "an / a", "some / some"],
+        "correct_index": 1,
+        "explanation": "'Apple' starts with vowel sound → an. 'Milk' is uncountable → some."
+      }
+    },
+    {
+      "task_id": "t0201_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "What taste is it?",
+      "content": {
+        "question": "You eat a lemon. It makes your mouth close up. How does it taste?",
+        "options": ["sweet", "spicy", "sour", "bitter"],
+        "correct_index": 2,
+        "explanation": "Lemons taste sour — a sharp, acidic flavour."
+      }
+    },
+    {
+      "task_id": "t0201_08", "order": 8, "type": "mcq", "category": "vocabulary",
+      "title": "Polite ordering",
+      "content": {
+        "question": "You want to order soup at a restaurant. Which is the most polite way?",
+        "options": [
+          "Give me soup.",
+          "Soup!",
+          "I'd like some soup, please.",
+          "I want soup now."
+        ],
+        "correct_index": 2,
+        "explanation": "'I'd like some soup, please' is polite and natural at a restaurant."
+      }
+    },
+    {
+      "task_id": "t0201_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in: a / an / some",
+      "content": {
+        "sentence": "For lunch I have ___ egg, ___ bread, and ___ tomatoes.",
+        "blanks": [
+          { "position": 1, "options": ["a", "an", "some"], "correct": "an" },
+          { "position": 2, "options": ["a", "an", "some"], "correct": "some" },
+          { "position": 3, "options": ["a", "an", "some"], "correct": "some" }
+        ],
+        "explanation": "an egg (vowel e-), some bread (uncountable), some tomatoes (plural countable)."
+      }
+    },
+    {
+      "task_id": "t0201_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the ordering sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct polite ordering sentence.",
+        "words": ["like", "some", "I'd", "soup", "and", "bread", "please"],
+        "correct_sentence": "I'd like some soup and bread, please.",
+        "explanation": "I'd like + some/a/an + [food], please."
+      }
+    },
+    {
+      "task_id": "t0201_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match taste to food",
+      "content": {
+        "instruction": "Match each food to its most common taste.",
+        "pairs": [
+          { "prompt": "chocolate cake", "answer": "sweet" },
+          { "prompt": "green chilli", "answer": "spicy" },
+          { "prompt": "lemon", "answer": "sour" },
+          { "prompt": "black coffee", "answer": "bitter" },
+          { "prompt": "sea fish", "answer": "salty" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — At a café",
+      "content": {
+        "context": "Priya is ordering breakfast at a café for the first time.",
+        "dialogue": [
+          { "speaker": "Waiter", "line": "Good morning! Welcome. What would you like?" },
+          { "speaker": "Priya", "line": "Good morning! Can I see the menu, please?" },
+          { "speaker": "Waiter", "line": "Of course! Here you are." },
+          { "speaker": "Priya", "line": "Thank you. I'd like some eggs and toast, please." },
+          { "speaker": "Waiter", "line": "Sure. Anything to drink?" },
+          { "speaker": "Priya", "line": "An orange juice, please. Is the juice fresh?" },
+          { "speaker": "Waiter", "line": "Yes, it's freshly squeezed!" },
+          { "speaker": "Priya", "line": "Perfect. That's all, thank you." },
+          { "speaker": "Waiter", "line": "Great. I'll bring it in a few minutes." }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "What food does Priya order?",
+            "options": ["Rice and soup", "Eggs and toast", "Pasta and salad", "Bread and coffee"],
+            "correct_index": 1
+          },
+          {
+            "question": "What drink does she order?",
+            "options": ["Coffee", "Milk", "Orange juice", "Tea"],
+            "correct_index": 2
+          },
+          {
+            "question": "What does Priya ask about the juice?",
+            "options": ["If it is cold", "If it is fresh", "If it is sweet", "If it is expensive"],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0201_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "I'd like a rice and a egg, please.",
+        "options": [
+          "I'd like a rice and a egg, please.",
+          "I'd like some rice and an egg, please.",
+          "I'd like some rice and a egg, please.",
+          "I'd like a rice and an egg, please."
+        ],
+        "correct_index": 1,
+        "explanation": "Rice is uncountable → some rice. Egg starts with vowel → an egg."
+      }
+    },
+    {
+      "task_id": "t0201_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You finish your meal at a restaurant. You want to pay and leave.",
+        "question": "What do you say to the waiter?",
+        "options": [
+          "I want money!",
+          "Give me the paper.",
+          "The bill, please.",
+          "How much I pay?"
+        ],
+        "correct_index": 2,
+        "explanation": "'The bill, please.' is the standard polite phrase to ask for your bill."
+      }
+    },
+    {
+      "task_id": "t0201_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your food likes and dislikes",
+      "content": {
+        "instruction": "Speak for 40–50 seconds about your food preferences.",
+        "prompt": "What food do you love? What do you not like? Describe how some foods taste.",
+        "example_response": "I love spicy food — especially chicken curry. It's delicious! I also like fresh fruit. Mangoes are sweet and I eat them every day in summer. I don't like bitter food — I can't drink black coffee! I also don't eat salty snacks very much.",
+        "key_phrases": ["I love", "I like", "I don't like", "It's delicious / horrible", "It tastes sweet / spicy / sour"],
+        "min_words": 40
+      }
+    },
+    {
+      "task_id": "t0201_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Role play: order at a café",
+      "content": {
+        "instruction": "Imagine you are at a café. Order a meal and a drink politely. Ask one question about the food.",
+        "prompt": "Waiter says: 'Good morning! What would you like today?'",
+        "example_response": "Good morning! I'd like some eggs and toast, please. Can I also have an orange juice? Is the juice fresh? Great, thank you! That's all.",
+        "key_phrases": ["I'd like", "Can I have", "a/an/some", "Is it fresh/hot/cold?", "That's all, thank you."],
+        "min_words": 30
+      }
+    },
+    {
+      "task_id": "t0201_17", "order": 17, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Food vocabulary: staples, proteins, fruits, vegetables, drinks",
+          "Taste words: delicious, sweet, spicy, sour, salty, bitter, fresh, horrible",
+          "Articles: a (consonant), an (vowel sound), some (uncountable/plural)",
+          "Ordering: I'd like... / Can I have... please? / The bill, please.",
+          "Dialogue: café conversation — ordering food and drink"
+        ],
+        "next_lesson": "a1_unit2_lesson02",
+        "next_lesson_title": "At the market — prices and quantities"
+      }
+    }
+  ]
+}

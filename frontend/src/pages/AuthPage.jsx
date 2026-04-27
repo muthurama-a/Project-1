@@ -7,8 +7,7 @@ import OtpInput from '../components/OtpInput';
 import ThingualLogo from '../components/ThingualLogo';
 import LanguageTestStep from '../components/LanguageTestStep';
 import heroIllustration from '../assets/hero_illustration.png';
-import thingualLogoAsset from '../assets/thingual-logo-gradient.png';
-import thingualLogoNormal from '@/assets/thingual-logo.png';
+import thingualLogoAsset from '@/assets/thingual-logo.png';
 import '../styles/auth.css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -57,7 +56,7 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
 
             <h1 className="auth-heading">Welcome to the Club.</h1>
@@ -138,7 +137,7 @@ const SignupStep = ({ email, onSignupSuccess, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Create your profile.</h1>
@@ -231,7 +230,7 @@ const PasswordStep = ({ email, onVerified, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Enter password.</h1>
@@ -331,7 +330,7 @@ const OtpStep = ({ email, onVerified, onBack }) => {
     return (
         <React.Fragment>
             <div className="auth-logo">
-                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" />
+                <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
             <button className="back-btn" onClick={onBack}>← Back</button>
             <h1 className="auth-heading">Check your inbox.</h1>
@@ -364,7 +363,7 @@ const SuccessState = ({ user, onStart, onBack }) => (
                         <polyline points="12 19 5 12 12 5"></polyline>
                     </svg>
                 </button>
-                <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
+                <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
             <div className="onboarding-status-pill">Ready</div>
         </div>
@@ -401,7 +400,7 @@ const GoalSelectionStep = ({ onNext, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -441,7 +440,7 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </button>
-                    <Image src={thingualLogoNormal} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
+                    <Image src={thingualLogoAsset} alt="Thingual" className="onboarding-logo-img" style={{ mixBlendMode: 'multiply' }} />
                 </div>
             </div>
             <div className="onboarding-content">
@@ -472,7 +471,7 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
 const HeroPanel = () => (
     <div className="auth-right">
         <div className="hero-logo">
-            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" />
+            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" style={{ mixBlendMode: 'multiply' }} />
         </div>
         <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
         <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>

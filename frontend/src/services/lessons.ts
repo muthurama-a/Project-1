@@ -1,11 +1,6 @@
-import axios from 'axios';
+import api from './api';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
-
-const getAuthHeader = () => {
-  const token = localStorage.getItem('token') || localStorage.getItem('thingual_token');
-  return { Authorization: `Bearer ${token}` };
-};
 
 // Map lesson slug → JSON filename in /public/A1-unit 1/
 const A1_UNIT1_MAP: Record<string, string> = {
@@ -26,8 +21,6 @@ async function fetchLocalLesson(slug: string): Promise<any> {
     return null;
   }
 
-  // In Next.js, files in /public are served statically — DO NOT use dynamic import().
-  // Always use fetch() instead.
   const url = `/a1_unit_1/${filename}`;
   console.log(`[fetchLocalLesson] Fetching: ${url}`);
   try {
@@ -48,13 +41,13 @@ async function fetchLocalLesson(slug: string): Promise<any> {
 export const lessonService = {
   // ── Core Lessons ──────────────────────────────────────────────────────────
   getDashboard: async () => {
-    const res = await axios.get(`${API_URL}/lessons/dashboard`, { headers: getAuthHeader() });
+    const res = await api.get('/lessons/dashboard');
     return res.data;
   },
 
   getProgress: async (year?: number) => {
-    const url = year ? `${API_URL}/lessons/progress?year=${year}` : `${API_URL}/lessons/progress`;
-    const res = await axios.get(url, { headers: getAuthHeader() });
+    const url = year ? `/lessons/progress?year=${year}` : '/lessons/progress';
+    const res = await api.get(url);
     return res.data;
   },
 
@@ -63,13 +56,10 @@ export const lessonService = {
       const localData = await fetchLocalLesson(String(id));
       if (localData) return localData;
       console.warn(`[getLesson] Local data not found for ${id}, falling back...`);
-      // We shouldn't fall back to the backend if it's explicitly a local A1 Unit 1 lesson
       throw new Error(`Local lesson not found: ${id}`);
     }
 
-    const response = await axios.get(`${API_URL}/api/lessons/${id}`, {
-      headers: getAuthHeader(),
-    });
+    const response = await api.get(`/lessons/${id}`);
     
     // Check if the API returned an error payload
     if (response.data && response.data.error) {
@@ -80,23 +70,23 @@ export const lessonService = {
   },
 
   completeLesson: async (lessonId: any, payload: { accuracy?: number } = {}) => {
-    const res = await axios.post(`${API_URL}/lessons/${lessonId}/complete`, payload, { headers: getAuthHeader() });
+    const res = await api.post(`/lessons/${lessonId}/complete`, payload);
     return res.data;
   },
 
   // ── SM-2 Flashcards ───────────────────────────────────────────────────────
   getDueCards: async (limit = 20) => {
-    const res = await axios.get(`${API_URL}/lessons/sm2/due?limit=${limit}`, { headers: getAuthHeader() });
+    const res = await api.get(`/lessons/sm2/due?limit=${limit}`);
     return res.data;
   },
 
   getWeakCards: async () => {
-    const res = await axios.get(`${API_URL}/lessons/sm2/weak`, { headers: getAuthHeader() });
+    const res = await api.get('/lessons/sm2/weak');
     return res.data;
   },
 
   getAllCards: async () => {
-    const res = await axios.get(`${API_URL}/lessons/sm2/all`, { headers: getAuthHeader() });
+    const res = await api.get('/lessons/sm2/all');
     return res.data;
   },
 
@@ -108,12 +98,12 @@ export const lessonService = {
     answer_duration_ms?: number;
     transcript?: string;
   }) => {
-    const res = await axios.post(`${API_URL}/lessons/sm2/submit`, payload, { headers: getAuthHeader() });
+    const res = await api.post('/lessons/sm2/submit', payload);
     return res.data;
   },
 
   seedCards: async (lessonId: number) => {
-    const res = await axios.post(`${API_URL}/lessons/sm2/seed/${lessonId}`, {}, { headers: getAuthHeader() });
+    const res = await api.post(`/lessons/sm2/seed/${lessonId}`, {});
     return res.data;
   },
 
@@ -126,12 +116,12 @@ export const lessonService = {
     hesitation_count?: number;
     transcript?: string;
   }) => {
-    const res = await axios.post(`${API_URL}/lessons/velocity/log`, payload, { headers: getAuthHeader() });
+    const res = await api.post('/lessons/velocity/log', payload);
     return res.data;
   },
 
   getVelocityStats: async () => {
-    const res = await axios.get(`${API_URL}/lessons/velocity/stats`, { headers: getAuthHeader() });
+    const res = await api.get('/lessons/velocity/stats');
     return res.data;
   },
 };

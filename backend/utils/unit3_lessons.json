@@ -1,0 +1,3949 @@
+{
+  "unit": 3,
+  "level": "A1",
+  "unit_title": "My world \u2014 body, health, clothes, feelings, home, animals",
+  "total_lessons": 8,
+  "total_tasks": 127,
+  "lessons": [
+    {
+      "lesson_id": "a1_unit3_lesson01",
+      "unit": 3,
+      "lesson_number": 1,
+      "level": "A1",
+      "title": "The body & health \u2014 I have a headache",
+      "description": "Learn body part vocabulary and how to describe health problems and symptoms.",
+      "estimated_minutes": 20,
+      "xp_reward": 120,
+      "tasks": [
+        {
+          "task_id": "t0301_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Parts of the body",
+          "content": {
+            "explanation": "Learn the most important body part words in English.",
+            "groups": [
+              {
+                "group": "Head area",
+                "items": [
+                  "head",
+                  "face",
+                  "eye",
+                  "ear",
+                  "nose",
+                  "mouth",
+                  "teeth",
+                  "throat",
+                  "neck"
+                ]
+              },
+              {
+                "group": "Upper body",
+                "items": [
+                  "shoulder",
+                  "arm",
+                  "elbow",
+                  "wrist",
+                  "hand",
+                  "finger",
+                  "chest",
+                  "back",
+                  "stomach"
+                ]
+              },
+              {
+                "group": "Lower body",
+                "items": [
+                  "hip",
+                  "leg",
+                  "knee",
+                  "ankle",
+                  "foot",
+                  "toe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Health problems \u2014 I have a ___",
+          "content": {
+            "explanation": "In English, we usually say 'I have a + problem' OR 'My ___ hurts' to describe pain.",
+            "patterns": [
+              {
+                "pattern": "I have a ___ache",
+                "examples": [
+                  {
+                    "phrase": "I have a headache.",
+                    "note": "Pain in your head"
+                  },
+                  {
+                    "phrase": "I have a stomachache.",
+                    "note": "Pain in your stomach"
+                  },
+                  {
+                    "phrase": "I have a toothache.",
+                    "note": "Pain in your tooth"
+                  },
+                  {
+                    "phrase": "I have a backache.",
+                    "note": "Pain in your back"
+                  }
+                ]
+              },
+              {
+                "pattern": "I have a / an ___",
+                "examples": [
+                  {
+                    "phrase": "I have a cold.",
+                    "note": "Runny nose, sneezing"
+                  },
+                  {
+                    "phrase": "I have a fever.",
+                    "note": "High body temperature"
+                  },
+                  {
+                    "phrase": "I have a cough.",
+                    "note": "Coughing a lot"
+                  },
+                  {
+                    "phrase": "I have a sore throat.",
+                    "note": "Painful throat"
+                  },
+                  {
+                    "phrase": "I have an allergy.",
+                    "note": "Reaction to food/dust/pollen"
+                  }
+                ]
+              },
+              {
+                "pattern": "My ___ hurts.",
+                "examples": [
+                  {
+                    "phrase": "My knee hurts.",
+                    "note": "Pain in your knee"
+                  },
+                  {
+                    "phrase": "My eyes hurt.",
+                    "note": "Pain in both eyes"
+                  },
+                  {
+                    "phrase": "My back hurts.",
+                    "note": "Back pain"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Feeling words",
+          "content": {
+            "explanation": "Use these words to describe how you feel when you are sick.",
+            "items": [
+              {
+                "phrase": "I feel sick.",
+                "note": "Generally unwell"
+              },
+              {
+                "phrase": "I feel terrible.",
+                "note": "Very unwell"
+              },
+              {
+                "phrase": "I feel dizzy.",
+                "note": "The room is spinning"
+              },
+              {
+                "phrase": "I feel weak.",
+                "note": "No energy"
+              },
+              {
+                "phrase": "I feel tired.",
+                "note": "Need to sleep"
+              },
+              {
+                "phrase": "I feel better.",
+                "note": "Improving \u2014 use after being sick"
+              },
+              {
+                "phrase": "I feel fine / well.",
+                "note": "Healthy and good"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat \u2014 health phrases",
+          "content": {
+            "instruction": "Repeat clearly. These phrases are very important for everyday life.",
+            "phrases": [
+              {
+                "text": "I have a bad headache.",
+                "audio_key": "bad_headache"
+              },
+              {
+                "text": "My throat is very sore.",
+                "audio_key": "sore_throat"
+              },
+              {
+                "text": "I feel dizzy and weak.",
+                "audio_key": "dizzy_weak"
+              },
+              {
+                "text": "I have a high fever.",
+                "audio_key": "high_fever"
+              },
+              {
+                "text": "I don't feel well today.",
+                "audio_key": "dont_feel_well"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "What's wrong?",
+          "content": {
+            "question": "Your head is painful and heavy. What do you say?",
+            "options": [
+              "I have a stomachache.",
+              "I have a headache.",
+              "My knee hurts.",
+              "I have a cough."
+            ],
+            "correct_index": 1,
+            "explanation": "Pain in the head = a headache. 'I have a headache.'"
+          }
+        },
+        {
+          "task_id": "t0301_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "a or an?",
+          "content": {
+            "question": "Choose the correct article: 'I have ___ allergy to pollen.'",
+            "options": [
+              "a",
+              "an",
+              "some",
+              "the"
+            ],
+            "correct_index": 1,
+            "explanation": "'Allergy' starts with vowel 'a' \u2192 use 'an'. An allergy. \u2713"
+          }
+        },
+        {
+          "task_id": "t0301_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "My ___ hurts or I have?",
+          "content": {
+            "question": "Which sentence is correct for talking about knee pain?",
+            "options": [
+              "I have a knee.",
+              "I have a kneeache.",
+              "My knee hurts.",
+              "I hurt my knee have."
+            ],
+            "correct_index": 2,
+            "explanation": "For body parts without -ache form, use: My + [body part] + hurts."
+          }
+        },
+        {
+          "task_id": "t0301_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the health problem",
+          "content": {
+            "sentence": "I can't eat anything \u2014 I have a terrible ___ache in my tooth.",
+            "options": [
+              "tooth",
+              "back",
+              "head",
+              "stomach"
+            ],
+            "correct": "tooth",
+            "explanation": "Can't eat + pain in tooth = toothache."
+          }
+        },
+        {
+          "task_id": "t0301_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in how you feel",
+          "content": {
+            "sentence": "I had a fever last night but today I feel much ___.",
+            "options": [
+              "sick",
+              "terrible",
+              "dizzy",
+              "better"
+            ],
+            "correct": "better",
+            "explanation": "After being sick and improving \u2192 I feel better."
+          }
+        },
+        {
+          "task_id": "t0301_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "vocabulary",
+          "title": "Build the health sentence",
+          "content": {
+            "instruction": "Rearrange to make a correct sentence about a health problem.",
+            "words": [
+              "a",
+              "have",
+              "and",
+              "cold",
+              "I",
+              "sore",
+              "throat",
+              "a"
+            ],
+            "correct_sentence": "I have a cold and a sore throat.",
+            "explanation": "I have + a + [problem] + and + a + [problem]."
+          }
+        },
+        {
+          "task_id": "t0301_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match symptom to problem",
+          "content": {
+            "instruction": "Match each symptom description to the correct health problem.",
+            "pairs": [
+              {
+                "prompt": "Your nose is running and you sneeze a lot",
+                "answer": "a cold"
+              },
+              {
+                "prompt": "Your body temperature is 39 degrees",
+                "answer": "a fever"
+              },
+              {
+                "prompt": "You keep coughing every few minutes",
+                "answer": "a cough"
+              },
+              {
+                "prompt": "The room feels like it's spinning",
+                "answer": "feeling dizzy"
+              },
+              {
+                "prompt": "Your tooth is very painful",
+                "answer": "a toothache"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 Are you okay?",
+          "content": {
+            "context": "Priya looks unwell at work. Her colleague Sanjay asks what's wrong.",
+            "dialogue": [
+              {
+                "speaker": "Sanjay",
+                "line": "Priya, are you okay? You look pale."
+              },
+              {
+                "speaker": "Priya",
+                "line": "Not really. I don't feel very well today."
+              },
+              {
+                "speaker": "Sanjay",
+                "line": "What's wrong?"
+              },
+              {
+                "speaker": "Priya",
+                "line": "I have a terrible headache and my throat is really sore."
+              },
+              {
+                "speaker": "Sanjay",
+                "line": "Oh no! Do you have a fever?"
+              },
+              {
+                "speaker": "Priya",
+                "line": "I think so. I feel hot and I feel a bit dizzy too."
+              },
+              {
+                "speaker": "Sanjay",
+                "line": "You should go home and rest. Did you take any medicine?"
+              },
+              {
+                "speaker": "Priya",
+                "line": "Not yet. I don't have any tablets with me."
+              },
+              {
+                "speaker": "Sanjay",
+                "line": "I have some paracetamol \u2014 here, take these."
+              },
+              {
+                "speaker": "Priya",
+                "line": "Thank you so much, Sanjay. You're very kind."
+              },
+              {
+                "speaker": "Sanjay",
+                "line": "Rest well! I hope you feel better soon."
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "What two health problems does Priya have?",
+                "options": [
+                  "Stomachache and cough",
+                  "Headache and sore throat",
+                  "Fever and backache",
+                  "Cold and toothache"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "What does Sanjay give Priya?",
+                "options": [
+                  "Water",
+                  "Food",
+                  "Paracetamol tablets",
+                  "A thermometer"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "What does Sanjay say Priya should do?",
+                "options": [
+                  "Eat something",
+                  "Go home and rest",
+                  "See a doctor",
+                  "Drink water"
+                ],
+                "correct_index": 1
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0301_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "vocabulary",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Which sentence correctly describes a health problem?",
+            "wrong_sentence": "I have headache and my stomach hurt.",
+            "options": [
+              "I have headache and my stomach hurt.",
+              "I have a headache and my stomach hurts.",
+              "I have a headache and my stomach hurt.",
+              "I have headache and my stomach hurts."
+            ],
+            "correct_index": 1,
+            "explanation": "Need article 'a' before headache. 'My stomach hurts' (singular \u2192 hurts not hurt)."
+          }
+        },
+        {
+          "task_id": "t0301_14",
+          "order": 14,
+          "type": "scenario_mcq",
+          "category": "real_world",
+          "title": "Real-world situation",
+          "content": {
+            "scenario": "You call your office to say you cannot come to work because you are sick.",
+            "question": "What is the most natural thing to say?",
+            "options": [
+              "Hello, I am not come today.",
+              "Hello, I am sorry \u2014 I don't feel well. I have a fever and a bad headache.",
+              "Hello. Sick. No work today.",
+              "Hello, my body is problem today."
+            ],
+            "correct_index": 1,
+            "explanation": "Clear, polite, and uses correct health vocabulary: I don't feel well / I have a fever."
+          }
+        },
+        {
+          "task_id": "t0301_15",
+          "order": 15,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Talk about health",
+          "content": {
+            "instruction": "Speak for 40\u201350 seconds. Describe a time when you felt sick. What was wrong? How did you feel? What did you do?",
+            "prompt": "Tell me about a time you were not feeling well. What health problem did you have?",
+            "example_response": "Last week I felt terrible. I had a high fever and a really bad headache. My throat was sore too and I had a cough. I felt very weak and dizzy. I couldn't go to work. I stayed at home, drank a lot of water, and took some medicine. After two days I felt much better. I think I had a bad cold.",
+            "key_phrases": [
+              "I had a ___",
+              "My ___ hurt/was sore",
+              "I felt ___",
+              "I couldn't ___",
+              "I felt better after ___"
+            ],
+            "min_words": 50
+          }
+        },
+        {
+          "task_id": "t0301_16",
+          "order": 16,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Body parts: head, face, eye, ear, nose, throat, back, stomach, knee, foot etc.",
+              "I have a ___ache: headache, stomachache, toothache, backache",
+              "I have a/an ___: cold, fever, cough, sore throat, allergy",
+              "My ___ hurts: for body parts without -ache form",
+              "Feeling words: sick, terrible, dizzy, weak, tired, better, fine"
+            ],
+            "next_lesson": "a1_unit3_lesson02",
+            "next_lesson_title": "At the doctor \u2014 describing symptoms"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson02",
+      "unit": 3,
+      "lesson_number": 2,
+      "level": "A1",
+      "title": "At the doctor \u2014 describing symptoms",
+      "description": "Learn to have a complete doctor's appointment conversation and describe how long you have been sick.",
+      "estimated_minutes": 22,
+      "xp_reward": 130,
+      "tasks": [
+        {
+          "task_id": "t0302_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Doctor's appointment vocabulary",
+          "content": {
+            "explanation": "These words and phrases are essential for a visit to the doctor.",
+            "items": [
+              {
+                "phrase": "appointment",
+                "note": "A booked time to see the doctor"
+              },
+              {
+                "phrase": "prescription",
+                "note": "Doctor's written order for medicine"
+              },
+              {
+                "phrase": "medicine / tablet / pill",
+                "note": "What you take to get better"
+              },
+              {
+                "phrase": "injection / shot",
+                "note": "Medicine given by needle"
+              },
+              {
+                "phrase": "rest",
+                "note": "Doctor says: stay home and rest"
+              },
+              {
+                "phrase": "symptoms",
+                "note": "Signs of an illness \u2014 pain, fever, cough"
+              },
+              {
+                "phrase": "examination",
+                "note": "When the doctor checks your body"
+              },
+              {
+                "phrase": "X-ray / scan",
+                "note": "Medical image of your body"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0302_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Describing symptoms \u2014 how long",
+          "content": {
+            "explanation": "The doctor always asks 'how long' you have been sick. Use these patterns.",
+            "patterns": [
+              {
+                "phrase": "since ___",
+                "note": "From a specific point in time",
+                "examples": [
+                  "since Monday",
+                  "since yesterday",
+                  "since last week"
+                ]
+              },
+              {
+                "phrase": "for ___",
+                "note": "A period of time",
+                "examples": [
+                  "for two days",
+                  "for a week",
+                  "for three hours"
+                ]
+              }
+            ],
+            "doctor_questions": [
+              {
+                "question": "What's the matter?",
+                "meaning": "What is wrong with you?"
+              },
+              {
+                "question": "How long have you had this?",
+                "meaning": "Since when?"
+              },
+              {
+                "question": "Where does it hurt?",
+                "meaning": "Point to the pain"
+              },
+              {
+                "question": "Does it hurt when I do this?",
+                "meaning": "Doctor touches / moves your body"
+              },
+              {
+                "question": "Are you allergic to any medicine?",
+                "meaning": "Do any medicines cause a bad reaction?"
+              },
+              {
+                "question": "Do you smoke?",
+                "meaning": "Lifestyle question"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0302_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Doctor's advice \u2014 should / shouldn't",
+          "content": {
+            "explanation": "Doctors use 'should' to give advice. Learn these common phrases.",
+            "advice_phrases": [
+              {
+                "phrase": "You should rest at home.",
+                "note": "Don't go to work"
+              },
+              {
+                "phrase": "You should drink lots of water.",
+                "note": "Stay hydrated"
+              },
+              {
+                "phrase": "You should take this medicine twice a day.",
+                "note": "Instruction for tablets"
+              },
+              {
+                "phrase": "You shouldn't eat spicy food.",
+                "note": "Advice to avoid something"
+              },
+              {
+                "phrase": "You should come back in three days.",
+                "note": "Follow-up appointment"
+              },
+              {
+                "phrase": "You need an X-ray.",
+                "note": "Further tests required"
+              }
+            ],
+            "grammar_note": "Should + base verb (no -s, no 'to'). You should rest. \u2713  You should to rest. \u2717"
+          }
+        },
+        {
+          "task_id": "t0302_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat these doctor's appointment phrases clearly.",
+            "phrases": [
+              {
+                "text": "I've had a headache for three days.",
+                "audio_key": "headache_three_days"
+              },
+              {
+                "text": "Where exactly does it hurt?",
+                "audio_key": "where_does_it_hurt"
+              },
+              {
+                "text": "You should rest and drink plenty of water.",
+                "audio_key": "rest_drink_water"
+              },
+              {
+                "text": "I'll write you a prescription.",
+                "audio_key": "write_prescription"
+              },
+              {
+                "text": "I'm not allergic to any medicine.",
+                "audio_key": "no_allergy"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0302_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Since or for?",
+          "content": {
+            "question": "'I have had a fever ___ Monday.' \u2014 Choose the correct word.",
+            "options": [
+              "for",
+              "since",
+              "from",
+              "at"
+            ],
+            "correct_index": 1,
+            "explanation": "Monday is a specific point in time \u2192 use 'since'. I have had a fever since Monday."
+          }
+        },
+        {
+          "task_id": "t0302_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Since or for?",
+          "content": {
+            "question": "'My back has been painful ___ two weeks.'",
+            "options": [
+              "since",
+              "for",
+              "from",
+              "in"
+            ],
+            "correct_index": 1,
+            "explanation": "'Two weeks' is a duration/period of time \u2192 use 'for'. For two weeks."
+          }
+        },
+        {
+          "task_id": "t0302_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Doctor's question",
+          "content": {
+            "question": "The doctor asks 'What's the matter?' \u2014 What does this mean?",
+            "options": [
+              "What is your name?",
+              "What is wrong with you?",
+              "What medicine do you take?",
+              "What do you eat?"
+            ],
+            "correct_index": 1,
+            "explanation": "'What's the matter?' = 'What is wrong?' \u2014 a common phrase doctors and friends use."
+          }
+        },
+        {
+          "task_id": "t0302_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in since or for",
+          "content": {
+            "sentence": "I have had a cough ___ three days \u2014 it started ___ last Tuesday.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "since",
+                  "for"
+                ],
+                "correct": "for"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "since",
+                  "for"
+                ],
+                "correct": "since"
+              }
+            ],
+            "explanation": "Three days = duration \u2192 for. Last Tuesday = specific time \u2192 since."
+          }
+        },
+        {
+          "task_id": "t0302_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the doctor's advice",
+          "content": {
+            "sentence": "You ___ rest at home and you ___ go to work for two days.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "should",
+                  "shouldn't",
+                  "can't"
+                ],
+                "correct": "should"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "should",
+                  "shouldn't",
+                  "can't"
+                ],
+                "correct": "shouldn't"
+              }
+            ],
+            "explanation": "Rest = positive advice \u2192 should. Don't go to work = negative advice \u2192 shouldn't."
+          }
+        },
+        {
+          "task_id": "t0302_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "vocabulary",
+          "title": "Build the symptom sentence",
+          "content": {
+            "instruction": "Rearrange to tell the doctor how long you have been sick.",
+            "words": [
+              "I",
+              "a",
+              "have",
+              "sore",
+              "had",
+              "throat",
+              "since",
+              "yesterday"
+            ],
+            "correct_sentence": "I have had a sore throat since yesterday.",
+            "explanation": "I have had + a + [problem] + since + [point in time]."
+          }
+        },
+        {
+          "task_id": "t0302_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match doctor's question to patient's answer",
+          "content": {
+            "instruction": "Match each doctor's question with the best patient reply.",
+            "pairs": [
+              {
+                "prompt": "What's the matter?",
+                "answer": "I have a bad headache and a fever."
+              },
+              {
+                "prompt": "How long have you had this?",
+                "answer": "For about three days."
+              },
+              {
+                "prompt": "Where does it hurt?",
+                "answer": "Here \u2014 in my lower back."
+              },
+              {
+                "prompt": "Are you allergic to any medicine?",
+                "answer": "No, I'm not allergic to anything."
+              },
+              {
+                "prompt": "What should I do?",
+                "answer": "You should rest and drink lots of water."
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0302_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 At the doctor's clinic",
+          "content": {
+            "context": "Ravi visits the doctor after feeling unwell for a few days.",
+            "dialogue": [
+              {
+                "speaker": "Doctor",
+                "line": "Good morning! Please sit down. What's the matter?"
+              },
+              {
+                "speaker": "Ravi",
+                "line": "Good morning, Doctor. I don't feel well. I have a high fever and a very bad headache."
+              },
+              {
+                "speaker": "Doctor",
+                "line": "I see. How long have you had these symptoms?"
+              },
+              {
+                "speaker": "Ravi",
+                "line": "For about three days \u2014 since Monday."
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Do you have a cough or sore throat?"
+              },
+              {
+                "speaker": "Ravi",
+                "line": "Yes, my throat is a bit sore. And I feel very tired and weak."
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Okay. Let me examine you. Open your mouth, please. Say 'Ah'."
+              },
+              {
+                "speaker": "Ravi",
+                "line": "Aaaah."
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Your throat is a little inflamed. Are you allergic to any medicine?"
+              },
+              {
+                "speaker": "Ravi",
+                "line": "No, I'm not."
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Good. I'll prescribe you some tablets. Take one three times a day with food."
+              },
+              {
+                "speaker": "Ravi",
+                "line": "Should I rest at home?"
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Yes, you should rest for two days. Drink lots of water and avoid cold food."
+              },
+              {
+                "speaker": "Ravi",
+                "line": "Thank you, Doctor. When should I come back?"
+              },
+              {
+                "speaker": "Doctor",
+                "line": "Come back in three days if you don't feel better. Take care!"
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "How long has Ravi had his symptoms?",
+                "options": [
+                  "One day",
+                  "Two days",
+                  "Three days",
+                  "A week"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "What does the doctor prescribe?",
+                "options": [
+                  "An injection",
+                  "Tablets",
+                  "An X-ray",
+                  "A scan"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "How many times a day should Ravi take the tablets?",
+                "options": [
+                  "Once",
+                  "Twice",
+                  "Three times",
+                  "Four times"
+                ],
+                "correct_index": 2
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0302_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "vocabulary",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Which sentence correctly uses should?",
+            "wrong_sentence": "You should to rest and you should to drink water.",
+            "options": [
+              "You should to rest and you should to drink water.",
+              "You should rest and you should drink water.",
+              "You should resting and you should drinking water.",
+              "You should rests and you should drinks water."
+            ],
+            "correct_index": 1,
+            "explanation": "Should + BASE verb only. No 'to', no -ing, no -s. You should rest. \u2713"
+          }
+        },
+        {
+          "task_id": "t0302_14",
+          "order": 14,
+          "type": "scenario_mcq",
+          "category": "real_world",
+          "title": "Real-world situation",
+          "content": {
+            "scenario": "The doctor asks: 'How long have you had this stomachache?' Your pain started two days ago.",
+            "question": "Which is the most accurate and natural reply?",
+            "options": [
+              "Since two days.",
+              "From two days.",
+              "For two days.",
+              "Two days since."
+            ],
+            "correct_index": 2,
+            "explanation": "Two days = a period of time \u2192 use 'for'. For two days. \u2713"
+          }
+        },
+        {
+          "task_id": "t0302_15",
+          "order": 15,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Doctor role play",
+          "content": {
+            "instruction": "Role play a doctor's appointment. Play BOTH the doctor and the patient. Cover: greeting, symptoms, how long, doctor's advice.",
+            "prompt": "You have a bad cold and a cough for four days. Visit the doctor.",
+            "example_response": "Doctor: Good morning! What's the matter? Patient: Good morning. I have a bad cold and a terrible cough. Doctor: How long have you had these symptoms? Patient: For four days \u2014 since last Thursday. Doctor: Do you have a fever? Patient: Yes, a small one. I also feel very tired. Doctor: You should rest at home and drink lots of warm water. Take these tablets twice a day. Patient: Should I avoid cold food? Doctor: Yes, you shouldn't eat ice cream or cold drinks. Come back in three days if you're not better.",
+            "key_phrases": [
+              "What's the matter?",
+              "I have a ___",
+              "For ___ / Since ___",
+              "You should / shouldn't",
+              "Take ___ times a day"
+            ],
+            "min_words": 80
+          }
+        },
+        {
+          "task_id": "t0302_16",
+          "order": 16,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Doctor vocab: appointment, prescription, medicine, tablet, symptoms, examination",
+              "Duration: for + period (for three days) / since + specific time (since Monday)",
+              "Doctor's questions: What's the matter? / How long? / Where does it hurt? / Any allergies?",
+              "Doctor's advice: should/shouldn't + base verb",
+              "Should structure: should + BASE verb \u2014 no 'to', no -ing, no -s"
+            ],
+            "next_lesson": "a1_unit3_lesson03",
+            "next_lesson_title": "Clothes & colours \u2014 describing appearance"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson03",
+      "unit": 3,
+      "lesson_number": 3,
+      "level": "A1",
+      "title": "Clothes & colours \u2014 describing appearance",
+      "description": "Learn clothing vocabulary, colours, and how to describe what people are wearing.",
+      "estimated_minutes": 22,
+      "xp_reward": 130,
+      "tasks": [
+        {
+          "task_id": "t0303_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Clothes vocabulary",
+          "content": {
+            "explanation": "Learn the most common words for clothes in English.",
+            "groups": [
+              {
+                "group": "Tops",
+                "items": [
+                  "shirt",
+                  "t-shirt",
+                  "blouse",
+                  "jacket",
+                  "coat",
+                  "sweater / jumper",
+                  "hoodie"
+                ]
+              },
+              {
+                "group": "Bottoms",
+                "items": [
+                  "trousers / pants",
+                  "jeans",
+                  "shorts",
+                  "skirt",
+                  "leggings"
+                ]
+              },
+              {
+                "group": "Full outfits",
+                "items": [
+                  "dress",
+                  "suit",
+                  "uniform",
+                  "saree / kurta"
+                ]
+              },
+              {
+                "group": "Accessories & shoes",
+                "items": [
+                  "shoes",
+                  "sandals",
+                  "boots",
+                  "socks",
+                  "hat",
+                  "scarf",
+                  "bag",
+                  "glasses"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0303_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Colours",
+          "content": {
+            "explanation": "Colours are adjectives \u2014 they come BEFORE the noun they describe.",
+            "items": [
+              {
+                "phrase": "red, orange, yellow",
+                "note": "Warm colours"
+              },
+              {
+                "phrase": "green, blue, purple",
+                "note": "Cool colours"
+              },
+              {
+                "phrase": "pink, brown, grey",
+                "note": "Neutral/soft colours"
+              },
+              {
+                "phrase": "black, white, cream",
+                "note": "Classic colours"
+              },
+              {
+                "phrase": "light blue / dark blue",
+                "note": "Add light/dark to describe shade"
+              },
+              {
+                "phrase": "bright / pale",
+                "note": "bright red = vivid, pale yellow = soft"
+              }
+            ],
+            "word_order": "colour + noun: a red shirt, blue jeans, a black jacket"
+          }
+        },
+        {
+          "task_id": "t0303_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Describing what someone is wearing",
+          "content": {
+            "explanation": "Use 'wearing' (present continuous) to describe clothes right now.",
+            "patterns": [
+              {
+                "pattern": "He/She is wearing ___.",
+                "examples": [
+                  "She is wearing a red dress.",
+                  "He is wearing jeans and a white shirt."
+                ]
+              },
+              {
+                "pattern": "He/She is wearing a ___ [colour] + [clothing].",
+                "examples": [
+                  "She is wearing a dark blue jacket.",
+                  "He is wearing black trousers."
+                ]
+              },
+              {
+                "pattern": "What are you wearing?",
+                "note": "Question about clothes right now"
+              },
+              {
+                "pattern": "I'm wearing ___.",
+                "note": "Describe your own outfit"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0303_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat these clothing description sentences.",
+            "phrases": [
+              {
+                "text": "She is wearing a bright red saree.",
+                "audio_key": "red_saree"
+              },
+              {
+                "text": "He is wearing dark blue jeans and a white shirt.",
+                "audio_key": "jeans_white_shirt"
+              },
+              {
+                "text": "What colour is your jacket?",
+                "audio_key": "what_colour_jacket"
+              },
+              {
+                "text": "I'm wearing a light grey sweater today.",
+                "audio_key": "grey_sweater"
+              },
+              {
+                "text": "Those shoes are beautiful!",
+                "audio_key": "beautiful_shoes"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0303_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Correct word order",
+          "content": {
+            "question": "Which phrase has the correct word order?",
+            "options": [
+              "shirt blue a",
+              "a shirt blue",
+              "a blue shirt",
+              "blue shirt a"
+            ],
+            "correct_index": 2,
+            "explanation": "Colour comes BEFORE the noun: a + colour + noun = a blue shirt. \u2713"
+          }
+        },
+        {
+          "task_id": "t0303_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Which item?",
+          "content": {
+            "question": "You wear these on your feet when it is very cold outside.",
+            "options": [
+              "sandals",
+              "shorts",
+              "boots",
+              "scarves"
+            ],
+            "correct_index": 2,
+            "explanation": "Boots are warm, strong shoes for cold weather."
+          }
+        },
+        {
+          "task_id": "t0303_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Describing clothes",
+          "content": {
+            "question": "Complete: 'Look at Maya \u2014 she ___ a beautiful green dress today!'",
+            "options": [
+              "wears",
+              "wear",
+              "is wearing",
+              "wearing"
+            ],
+            "correct_index": 2,
+            "explanation": "Right now (Look!) \u2192 present continuous. She is wearing. \u2713"
+          }
+        },
+        {
+          "task_id": "t0303_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the colour",
+          "content": {
+            "sentence": "She is wearing a ___ blue jacket \u2014 not dark, quite soft and light.",
+            "options": [
+              "dark",
+              "bright",
+              "light",
+              "pale"
+            ],
+            "correct": "light",
+            "explanation": "Light blue = soft, pale shade of blue \u2014 not dark, not very vivid."
+          }
+        },
+        {
+          "task_id": "t0303_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "grammar",
+          "title": "Fill in is wearing / are wearing",
+          "content": {
+            "sentence": "He ___ a grey suit and she ___ a red blouse with black trousers.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "wear",
+                  "is wearing",
+                  "are wearing"
+                ],
+                "correct": "is wearing"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "wear",
+                  "is wearing",
+                  "are wearing"
+                ],
+                "correct": "is wearing"
+              }
+            ],
+            "explanation": "He/She \u2192 is wearing (present continuous third person singular)."
+          }
+        },
+        {
+          "task_id": "t0303_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "vocabulary",
+          "title": "Build the description",
+          "content": {
+            "instruction": "Rearrange to describe what someone is wearing.",
+            "words": [
+              "wearing",
+              "is",
+              "She",
+              "white",
+              "a",
+              "and",
+              "dress",
+              "sandals",
+              "gold"
+            ],
+            "correct_sentence": "She is wearing a white dress and gold sandals.",
+            "explanation": "She + is wearing + a + colour + clothing + and + colour + clothing."
+          }
+        },
+        {
+          "task_id": "t0303_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match clothes to occasion",
+          "content": {
+            "instruction": "Match each clothing item or outfit to the most suitable occasion.",
+            "pairs": [
+              {
+                "prompt": "suit and tie",
+                "answer": "formal business meeting"
+              },
+              {
+                "prompt": "jeans and t-shirt",
+                "answer": "casual weekend"
+              },
+              {
+                "prompt": "school uniform",
+                "answer": "going to school"
+              },
+              {
+                "prompt": "boots and coat",
+                "answer": "cold winter day"
+              },
+              {
+                "prompt": "sandals and shorts",
+                "answer": "hot summer day"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0303_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 Getting dressed for a party",
+          "content": {
+            "context": "Nisha is getting ready for a party. She asks her sister for advice.",
+            "dialogue": [
+              {
+                "speaker": "Nisha",
+                "line": "I don't know what to wear to the party tonight!"
+              },
+              {
+                "speaker": "Sister",
+                "line": "What about that blue dress? It looks beautiful on you."
+              },
+              {
+                "speaker": "Nisha",
+                "line": "The dark blue one or the light blue one?"
+              },
+              {
+                "speaker": "Sister",
+                "line": "The dark blue one. Wear it with your gold sandals."
+              },
+              {
+                "speaker": "Nisha",
+                "line": "Good idea! And should I wear a scarf?"
+              },
+              {
+                "speaker": "Sister",
+                "line": "Yes \u2014 your white scarf will look great with it."
+              },
+              {
+                "speaker": "Nisha",
+                "line": "Perfect! What are you wearing?"
+              },
+              {
+                "speaker": "Sister",
+                "line": "I'm wearing my red dress with black heels."
+              },
+              {
+                "speaker": "Nisha",
+                "line": "Oh, that's a great outfit! We'll both look amazing!"
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "Which dress does the sister recommend?",
+                "options": [
+                  "Light blue",
+                  "Dark blue",
+                  "Red",
+                  "White"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "What shoes does the sister suggest with the dress?",
+                "options": [
+                  "Black heels",
+                  "White sandals",
+                  "Gold sandals",
+                  "Brown boots"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "What is the sister wearing to the party?",
+                "options": [
+                  "A blue dress",
+                  "A red dress with black heels",
+                  "Jeans and a blouse",
+                  "A white dress"
+                ],
+                "correct_index": 1
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0303_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "grammar",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Choose the correct sentence.",
+            "wrong_sentence": "He is wearing a jacket black and trouser blue.",
+            "options": [
+              "He is wearing a jacket black and trouser blue.",
+              "He is wearing a black jacket and blue trousers.",
+              "He wear a black jacket and blue trousers.",
+              "He wearing black jacket and blue trouser."
+            ],
+            "correct_index": 1,
+            "explanation": "Colour BEFORE noun. 'Trousers' is plural. He is wearing. \u2713"
+          }
+        },
+        {
+          "task_id": "t0303_14",
+          "order": 14,
+          "type": "scenario_mcq",
+          "category": "real_world",
+          "title": "Real-world situation",
+          "content": {
+            "scenario": "A friend calls and asks what you are wearing for the office today.",
+            "question": "Which is the most natural reply?",
+            "options": [
+              "I wear blue jeans and shirt white.",
+              "I am wearing navy blue trousers and a white shirt.",
+              "I wearing navy trouser and white.",
+              "I have blue trouser and shirt."
+            ],
+            "correct_index": 1,
+            "explanation": "Present continuous (wearing), colour before noun, correct plural 'trousers'. \u2713"
+          }
+        },
+        {
+          "task_id": "t0303_15",
+          "order": 15,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Describe outfits",
+          "content": {
+            "instruction": "Speak for 45 seconds. Describe what you are wearing today AND describe one other person's outfit (real or imaginary).",
+            "prompt": "What are you wearing right now? Also describe someone else's clothes.",
+            "example_response": "Today I am wearing dark blue jeans and a light grey t-shirt. I also have white trainers. It's a casual day so I dressed comfortably. My colleague is wearing a formal black suit with a white shirt and a dark red tie. He looks very professional! My manager is wearing a beautiful purple dress with black heels.",
+            "key_phrases": [
+              "I am wearing ___",
+              "She/He is wearing ___",
+              "colour + clothing item",
+              "formal/casual"
+            ],
+            "min_words": 55
+          }
+        },
+        {
+          "task_id": "t0303_16",
+          "order": 16,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Clothes: shirt, jeans, dress, suit, jacket, coat, scarf, shoes, boots, sandals",
+              "Colours: red, blue, green, yellow, black, white, grey, pink, light/dark + colour",
+              "Word order: colour + noun (a blue shirt, dark jeans)",
+              "Describing: He/She is wearing + colour + clothing",
+              "Present continuous for clothes: is wearing / are wearing"
+            ],
+            "next_lesson": "a1_unit3_lesson04",
+            "next_lesson_title": "Feelings & emotions"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson04",
+      "unit": 3,
+      "lesson_number": 4,
+      "level": "A1",
+      "title": "Feelings & emotions",
+      "description": "Learn to express emotions, ask how people feel, and understand emotional vocabulary.",
+      "estimated_minutes": 20,
+      "xp_reward": 120,
+      "tasks": [
+        {
+          "task_id": "t0304_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Emotion words",
+          "content": {
+            "explanation": "These words describe how a person feels inside.",
+            "groups": [
+              {
+                "group": "Positive",
+                "items": [
+                  "happy",
+                  "excited",
+                  "proud",
+                  "confident",
+                  "grateful",
+                  "relaxed",
+                  "surprised (good)"
+                ]
+              },
+              {
+                "group": "Negative",
+                "items": [
+                  "sad",
+                  "angry",
+                  "upset",
+                  "worried",
+                  "nervous",
+                  "scared",
+                  "disappointed",
+                  "stressed"
+                ]
+              },
+              {
+                "group": "Neutral",
+                "items": [
+                  "tired",
+                  "bored",
+                  "confused",
+                  "surprised",
+                  "shocked"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Expressing feelings \u2014 I feel / I am",
+          "content": {
+            "explanation": "Two patterns to express how you feel.",
+            "patterns": [
+              {
+                "pattern": "I feel + adjective",
+                "examples": [
+                  "I feel happy.",
+                  "I feel nervous.",
+                  "I feel tired."
+                ]
+              },
+              {
+                "pattern": "I am + adjective",
+                "examples": [
+                  "I am excited.",
+                  "I am worried.",
+                  "I am bored."
+                ]
+              }
+            ],
+            "giving_reason": {
+              "pattern": "I feel ___ because ___.",
+              "examples": [
+                "I feel happy because it's my birthday.",
+                "I am nervous because I have an exam tomorrow.",
+                "She feels sad because her friend is leaving."
+              ]
+            },
+            "asking": [
+              "How do you feel?",
+              "How are you feeling?",
+              "What's wrong? You look upset.",
+              "Are you okay?"
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Intensifiers \u2014 very, really, a bit, quite",
+          "content": {
+            "explanation": "Add these words before the emotion to show HOW MUCH you feel it.",
+            "items": [
+              {
+                "phrase": "very ___",
+                "note": "Strong feeling \u2014 I am very happy."
+              },
+              {
+                "phrase": "really ___",
+                "note": "Strong \u2014 spoken English \u2014 I feel really tired."
+              },
+              {
+                "phrase": "a bit / a little ___",
+                "note": "Small feeling \u2014 I feel a bit nervous."
+              },
+              {
+                "phrase": "quite ___",
+                "note": "Moderately \u2014 I am quite excited."
+              },
+              {
+                "phrase": "absolutely ___",
+                "note": "Maximum \u2014 I am absolutely thrilled!"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat with natural emotion \u2014 try to FEEL what you say!",
+            "phrases": [
+              {
+                "text": "I'm really excited about the trip!",
+                "audio_key": "excited_trip"
+              },
+              {
+                "text": "I feel a bit nervous before the exam.",
+                "audio_key": "nervous_exam"
+              },
+              {
+                "text": "She looks very upset today.",
+                "audio_key": "looks_upset"
+              },
+              {
+                "text": "I'm absolutely thrilled \u2014 I got the job!",
+                "audio_key": "thrilled_job"
+              },
+              {
+                "text": "Why do you look so worried?",
+                "audio_key": "look_worried"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Which emotion?",
+          "content": {
+            "question": "You have a job interview in one hour. How do you probably feel?",
+            "options": [
+              "relaxed",
+              "bored",
+              "nervous",
+              "proud"
+            ],
+            "correct_index": 2,
+            "explanation": "Before important events like interviews, people usually feel nervous."
+          }
+        },
+        {
+          "task_id": "t0304_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "I feel or I am?",
+          "content": {
+            "question": "Both 'I feel happy' and 'I am happy' are correct \u2014 but which intensifier fits best?",
+            "options": [
+              "I feel a bit happy because it's Friday! \u2713 / I feel absolutely bored \u2713",
+              "I feel very happy / I am really excited \u2713",
+              "I feel happy I / I am happy I \u2713",
+              "I feeling happy / I being happy \u2713"
+            ],
+            "correct_index": 1,
+            "explanation": "Both 'I feel very happy' and 'I am really excited' are correct \u2014 intensifier before adjective."
+          }
+        },
+        {
+          "task_id": "t0304_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Giving a reason",
+          "content": {
+            "question": "Complete: 'I feel sad ___ my friend is moving to another city.'",
+            "options": [
+              "so",
+              "because",
+              "but",
+              "and"
+            ],
+            "correct_index": 1,
+            "explanation": "'Because' introduces a reason. I feel sad BECAUSE..."
+          }
+        },
+        {
+          "task_id": "t0304_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the emotion",
+          "content": {
+            "sentence": "She passed all her exams! She is absolutely ___.",
+            "options": [
+              "sad",
+              "nervous",
+              "thrilled",
+              "worried"
+            ],
+            "correct": "thrilled",
+            "explanation": "Passing exams is a great result \u2192 absolutely thrilled (extremely happy)."
+          }
+        },
+        {
+          "task_id": "t0304_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "grammar",
+          "title": "Fill in intensifier",
+          "content": {
+            "sentence": "I am ___ nervous \u2014 just a little. I'll be fine after the first five minutes.",
+            "options": [
+              "very",
+              "absolutely",
+              "a bit",
+              "really"
+            ],
+            "correct": "a bit",
+            "explanation": "'Just a little' tells us the feeling is small \u2192 a bit nervous."
+          }
+        },
+        {
+          "task_id": "t0304_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "grammar",
+          "title": "Build the feeling sentence",
+          "content": {
+            "instruction": "Rearrange to make a correct sentence about feelings with a reason.",
+            "words": [
+              "excited",
+              "I",
+              "really",
+              "holiday",
+              "because",
+              "am",
+              "my",
+              "starts",
+              "tomorrow"
+            ],
+            "correct_sentence": "I am really excited because my holiday starts tomorrow.",
+            "explanation": "I am + intensifier + emotion + because + reason."
+          }
+        },
+        {
+          "task_id": "t0304_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match situation to feeling",
+          "content": {
+            "instruction": "Match each situation to the most likely emotion.",
+            "pairs": [
+              {
+                "prompt": "You get a surprise birthday party",
+                "answer": "surprised and happy"
+              },
+              {
+                "prompt": "Your favourite team loses",
+                "answer": "disappointed"
+              },
+              {
+                "prompt": "You have to speak in front of 100 people",
+                "answer": "nervous"
+              },
+              {
+                "prompt": "You finish a very hard project at work",
+                "answer": "proud and relieved"
+              },
+              {
+                "prompt": "Someone takes your things without asking",
+                "answer": "angry"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 How are you feeling?",
+          "content": {
+            "context": "Kavya is about to do her first presentation at work. Her manager Suresh talks to her.",
+            "dialogue": [
+              {
+                "speaker": "Suresh",
+                "line": "Kavya, are you okay? You look a bit pale."
+              },
+              {
+                "speaker": "Kavya",
+                "line": "I'm a bit nervous, sir. It's my first big presentation."
+              },
+              {
+                "speaker": "Suresh",
+                "line": "That's completely normal! How are you feeling about the content?"
+              },
+              {
+                "speaker": "Kavya",
+                "line": "I feel quite confident about the slides \u2014 I worked really hard."
+              },
+              {
+                "speaker": "Suresh",
+                "line": "That's great. Are you worried about the questions at the end?"
+              },
+              {
+                "speaker": "Kavya",
+                "line": "Yes, a little. I'm scared I won't know all the answers."
+              },
+              {
+                "speaker": "Suresh",
+                "line": "Don't worry \u2014 if you don't know, just say 'That's a great question, let me check and come back to you.'"
+              },
+              {
+                "speaker": "Kavya",
+                "line": "Oh! That's really helpful. I feel much better now, thank you!"
+              },
+              {
+                "speaker": "Suresh",
+                "line": "You'll be brilliant. Good luck!"
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "How does Kavya feel at the beginning?",
+                "options": [
+                  "Excited",
+                  "A bit nervous",
+                  "Very confident",
+                  "Bored"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "What is Kavya scared about?",
+                "options": [
+                  "The slides",
+                  "The room",
+                  "Questions at the end",
+                  "The manager"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "How does Kavya feel at the end of the conversation?",
+                "options": [
+                  "Still nervous",
+                  "Much better",
+                  "Very scared",
+                  "Bored"
+                ],
+                "correct_index": 1
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0304_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "grammar",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Which sentence is correct?",
+            "wrong_sentence": "I am feel very nervous because my exam is tomorrow.",
+            "options": [
+              "I am feel very nervous because my exam is tomorrow.",
+              "I feel very nervous because my exam is tomorrow.",
+              "I feeling very nervous because my exam is tomorrow.",
+              "I very nervous feel because my exam tomorrow."
+            ],
+            "correct_index": 1,
+            "explanation": "Use 'I feel' OR 'I am' \u2014 never 'I am feel'. I feel very nervous. \u2713"
+          }
+        },
+        {
+          "task_id": "t0304_14",
+          "order": 14,
+          "type": "scenario_mcq",
+          "category": "real_world",
+          "title": "Real-world situation",
+          "content": {
+            "scenario": "Your friend tells you: 'I didn't get the job I wanted.'",
+            "question": "What is the most empathetic natural response?",
+            "options": [
+              "That's good!",
+              "Oh no, you must be really disappointed. Are you okay?",
+              "Never mind.",
+              "Why did you not get it?"
+            ],
+            "correct_index": 1,
+            "explanation": "Empathetic response: name the emotion (disappointed) + ask how they are."
+          }
+        },
+        {
+          "task_id": "t0304_15",
+          "order": 15,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Talk about your emotions",
+          "content": {
+            "instruction": "Speak for 45 seconds. Describe 3 different feelings you have had recently. Give a reason for each.",
+            "prompt": "Tell me about your feelings this week. How did you feel on different days? Why?",
+            "example_response": "On Monday I felt really stressed because I had a lot of work and a deadline. On Wednesday I was quite happy because I finished a big project and my manager was pleased. On Thursday I was a bit nervous because I had to speak in a team meeting. Yesterday I felt very relaxed because it was a quiet day. Today I feel quite excited because it's the weekend tomorrow!",
+            "key_phrases": [
+              "I felt / I was + emotion",
+              "because + reason",
+              "intensifiers: very/really/a bit/quite"
+            ],
+            "min_words": 55
+          }
+        },
+        {
+          "task_id": "t0304_16",
+          "order": 16,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Emotions: happy, excited, proud, sad, angry, nervous, worried, scared, bored, confused",
+              "Patterns: I feel + adjective / I am + adjective",
+              "Reasons: I feel ___ because ___",
+              "Intensifiers: very, really (strong) / quite (moderate) / a bit, a little (small)",
+              "Asking: How do you feel? / Are you okay? / You look ___."
+            ],
+            "next_lesson": "a1_unit3_lesson05",
+            "next_lesson_title": "Adjectives \u2014 opposites and comparisons"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson05",
+      "unit": 3,
+      "lesson_number": 5,
+      "level": "A1",
+      "title": "Adjectives \u2014 opposites, very/quite/a bit",
+      "description": "Expand your adjective vocabulary with opposites, learn to use intensifiers, and practise describing things.",
+      "estimated_minutes": 20,
+      "xp_reward": 120,
+      "tasks": [
+        {
+          "task_id": "t0305_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Common adjective opposites",
+          "content": {
+            "explanation": "Knowing opposite pairs doubles your vocabulary instantly.",
+            "pairs": [
+              {
+                "adj": "big / large",
+                "opposite": "small / little"
+              },
+              {
+                "adj": "tall",
+                "opposite": "short"
+              },
+              {
+                "adj": "long",
+                "opposite": "short"
+              },
+              {
+                "adj": "fast / quick",
+                "opposite": "slow"
+              },
+              {
+                "adj": "hot",
+                "opposite": "cold"
+              },
+              {
+                "adj": "old",
+                "opposite": "new / young"
+              },
+              {
+                "adj": "expensive",
+                "opposite": "cheap"
+              },
+              {
+                "adj": "easy",
+                "opposite": "difficult / hard"
+              },
+              {
+                "adj": "clean",
+                "opposite": "dirty"
+              },
+              {
+                "adj": "noisy / loud",
+                "opposite": "quiet"
+              },
+              {
+                "adj": "heavy",
+                "opposite": "light"
+              },
+              {
+                "adj": "full",
+                "opposite": "empty"
+              },
+              {
+                "adj": "strong",
+                "opposite": "weak"
+              },
+              {
+                "adj": "interesting",
+                "opposite": "boring"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0305_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Intensifiers with adjectives",
+          "content": {
+            "explanation": "Place these before an adjective to show the strength of the description.",
+            "scale": [
+              {
+                "word": "a bit / a little",
+                "strength": "small amount",
+                "example": "It's a bit cold today."
+              },
+              {
+                "word": "quite",
+                "strength": "moderate",
+                "example": "This book is quite interesting."
+              },
+              {
+                "word": "very",
+                "strength": "strong",
+                "example": "This bag is very heavy."
+              },
+              {
+                "word": "really",
+                "strength": "strong (spoken)",
+                "example": "The film is really boring!"
+              },
+              {
+                "word": "absolutely / extremely",
+                "strength": "maximum",
+                "example": "This is absolutely delicious!"
+              }
+            ],
+            "rule": "Intensifier always comes BEFORE the adjective: very + old \u2713, old very \u2717"
+          }
+        },
+        {
+          "task_id": "t0305_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Adjective position \u2014 before noun OR after 'to be'",
+          "content": {
+            "explanation": "Adjectives can go in two positions in a sentence.",
+            "positions": [
+              {
+                "position": "Before noun (attributive)",
+                "rule": "article + adjective + noun",
+                "examples": [
+                  "a tall building",
+                  "an expensive restaurant",
+                  "the cold water"
+                ]
+              },
+              {
+                "position": "After 'to be' (predicative)",
+                "rule": "subject + is/are + adjective",
+                "examples": [
+                  "The building is tall.",
+                  "The restaurant is expensive.",
+                  "The water is cold."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0305_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat these descriptive sentences. Focus on the stress on the intensifier.",
+            "phrases": [
+              {
+                "text": "This coffee is absolutely delicious.",
+                "audio_key": "absolutely_delicious"
+              },
+              {
+                "text": "The exam was really difficult.",
+                "audio_key": "really_difficult"
+              },
+              {
+                "text": "It's quite cold today \u2014 not very cold, just a bit chilly.",
+                "audio_key": "quite_cold"
+              },
+              {
+                "text": "The traffic is extremely noisy outside.",
+                "audio_key": "extremely_noisy"
+              },
+              {
+                "text": "My bag is a bit heavy \u2014 can you help?",
+                "audio_key": "bit_heavy"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0305_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Opposite adjective",
+          "content": {
+            "question": "What is the opposite of 'expensive'?",
+            "options": [
+              "noisy",
+              "heavy",
+              "cheap",
+              "slow"
+            ],
+            "correct_index": 2,
+            "explanation": "Expensive \u2194 cheap. A cheap price is low. An expensive price is high."
+          }
+        },
+        {
+          "task_id": "t0305_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Correct position",
+          "content": {
+            "question": "Which sentence has the adjective in the correct position?",
+            "options": [
+              "a building tall",
+              "tall a building",
+              "a tall building",
+              "building tall a"
+            ],
+            "correct_index": 2,
+            "explanation": "Article + adjective + noun: a + tall + building. \u2713"
+          }
+        },
+        {
+          "task_id": "t0305_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Which intensifier?",
+          "content": {
+            "question": "The room is 40 degrees. Which intensifier fits best?",
+            "options": [
+              "a bit hot",
+              "quite hot",
+              "absolutely hot",
+              "extremely hot"
+            ],
+            "correct_index": 3,
+            "explanation": "40 degrees is extreme heat \u2192 extremely hot or absolutely boiling."
+          }
+        },
+        {
+          "task_id": "t0305_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the opposite",
+          "content": {
+            "sentence": "The first question was easy but the last one was very ___.",
+            "options": [
+              "cheap",
+              "difficult",
+              "noisy",
+              "tall"
+            ],
+            "correct": "difficult",
+            "explanation": "Easy \u2194 difficult. The last question was very difficult."
+          }
+        },
+        {
+          "task_id": "t0305_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "grammar",
+          "title": "Fill in the intensifier",
+          "content": {
+            "sentence": "The hotel was ___ expensive \u2014 it cost 20,000 rupees per night!",
+            "options": [
+              "a bit",
+              "quite",
+              "extremely",
+              "a little"
+            ],
+            "correct": "extremely",
+            "explanation": "20,000 rupees per night is extreme \u2192 extremely expensive."
+          }
+        },
+        {
+          "task_id": "t0305_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "grammar",
+          "title": "Build the descriptive sentence",
+          "content": {
+            "instruction": "Rearrange to make a correct descriptive sentence.",
+            "words": [
+              "really",
+              "restaurant",
+              "The",
+              "but",
+              "expensive",
+              "is",
+              "delicious",
+              "very",
+              "food",
+              "the",
+              "is"
+            ],
+            "correct_sentence": "The restaurant is really expensive but the food is very delicious.",
+            "explanation": "subject + is + intensifier + adjective + but + subject + is + intensifier + adjective."
+          }
+        },
+        {
+          "task_id": "t0305_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match adjective to its opposite",
+          "content": {
+            "instruction": "Match each adjective to its opposite.",
+            "pairs": [
+              {
+                "prompt": "clean",
+                "answer": "dirty"
+              },
+              {
+                "prompt": "noisy",
+                "answer": "quiet"
+              },
+              {
+                "prompt": "full",
+                "answer": "empty"
+              },
+              {
+                "prompt": "heavy",
+                "answer": "light"
+              },
+              {
+                "prompt": "interesting",
+                "answer": "boring"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0305_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 Describing a new flat",
+          "content": {
+            "context": "Arjun just moved to a new flat. He tells his friend Meera about it.",
+            "dialogue": [
+              {
+                "speaker": "Meera",
+                "line": "So how's the new flat? Is it nice?"
+              },
+              {
+                "speaker": "Arjun",
+                "line": "It's quite nice, actually! The rooms are really big and clean."
+              },
+              {
+                "speaker": "Meera",
+                "line": "What about the area?"
+              },
+              {
+                "speaker": "Arjun",
+                "line": "The area is a bit noisy \u2014 there's a busy road outside. But it's very convenient."
+              },
+              {
+                "speaker": "Meera",
+                "line": "Is it far from work?"
+              },
+              {
+                "speaker": "Arjun",
+                "line": "No \u2014 it's quite close. Only about fifteen minutes by bus."
+              },
+              {
+                "speaker": "Meera",
+                "line": "And the rent? Is it expensive?"
+              },
+              {
+                "speaker": "Arjun",
+                "line": "It's a bit expensive \u2014 but not extremely. For the space and location, it's a good price."
+              },
+              {
+                "speaker": "Meera",
+                "line": "Sounds great! I'll come and visit soon."
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "How does Arjun describe the rooms?",
+                "options": [
+                  "Small and dirty",
+                  "Really big and clean",
+                  "Quite old",
+                  "A bit dark"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "What is one problem with the area?",
+                "options": [
+                  "It's far from work",
+                  "It's very expensive",
+                  "It's a bit noisy",
+                  "It's very dirty"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "How long is the commute to work?",
+                "options": [
+                  "Five minutes",
+                  "Fifteen minutes",
+                  "Half an hour",
+                  "Forty minutes"
+                ],
+                "correct_index": 1
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0305_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "grammar",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Choose the correct sentence.",
+            "wrong_sentence": "The bag is heavy very and expensive quite.",
+            "options": [
+              "The bag is heavy very and expensive quite.",
+              "The bag is very heavy and quite expensive.",
+              "Very the bag is heavy and quite expensive.",
+              "The bag very is heavy and expensive quite."
+            ],
+            "correct_index": 1,
+            "explanation": "Intensifier goes BEFORE the adjective: very heavy, quite expensive. \u2713"
+          }
+        },
+        {
+          "task_id": "t0305_14",
+          "order": 14,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Describe your home or workplace",
+          "content": {
+            "instruction": "Speak for 45 seconds. Describe a place you know well using adjectives and intensifiers.",
+            "prompt": "Describe your home, office, or school. Use at least 6 adjectives with intensifiers.",
+            "example_response": "My home is quite small but very clean and comfortable. The kitchen is a bit old but it's very functional. My bedroom is quite quiet \u2014 I like it because I sleep very well. The area is a bit noisy during the day because of traffic, but it's extremely quiet at night. The building is quite old \u2014 about 30 years \u2014 but the rooms are really big. I'm very happy there.",
+            "key_phrases": [
+              "very / really / quite / a bit / extremely + adjective",
+              "but (contrast)",
+              "adjective before noun / after 'to be'"
+            ],
+            "min_words": 60
+          }
+        },
+        {
+          "task_id": "t0305_15",
+          "order": 15,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Opposite pairs: big/small, fast/slow, hot/cold, expensive/cheap, easy/difficult, clean/dirty, full/empty",
+              "Intensifiers scale: a bit \u2192 quite \u2192 very/really \u2192 absolutely/extremely",
+              "Intensifier always BEFORE adjective: very cold \u2713, cold very \u2717",
+              "Two positions: a tall building (before noun) / The building is tall (after 'to be')"
+            ],
+            "next_lesson": "a1_unit3_lesson06",
+            "next_lesson_title": "My home \u2014 rooms and furniture"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson06",
+      "unit": 3,
+      "lesson_number": 6,
+      "level": "A1",
+      "title": "My home \u2014 rooms & furniture",
+      "description": "Learn rooms of a house, furniture vocabulary, and prepositions of place to describe where things are.",
+      "estimated_minutes": 22,
+      "xp_reward": 130,
+      "tasks": [
+        {
+          "task_id": "t0306_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Rooms in a home",
+          "content": {
+            "explanation": "Learn the names for every room in a house or flat.",
+            "items": [
+              {
+                "phrase": "bedroom",
+                "note": "Room for sleeping"
+              },
+              {
+                "phrase": "living room / sitting room",
+                "note": "Main room for relaxing"
+              },
+              {
+                "phrase": "kitchen",
+                "note": "Room for cooking"
+              },
+              {
+                "phrase": "bathroom",
+                "note": "Room with shower/bath and toilet"
+              },
+              {
+                "phrase": "toilet / WC",
+                "note": "Room with only a toilet (British English)"
+              },
+              {
+                "phrase": "dining room",
+                "note": "Room for eating meals"
+              },
+              {
+                "phrase": "study / home office",
+                "note": "Room for working or studying"
+              },
+              {
+                "phrase": "balcony",
+                "note": "Outside area attached to the flat"
+              },
+              {
+                "phrase": "garden",
+                "note": "Outdoor area with plants/grass"
+              },
+              {
+                "phrase": "hallway / corridor",
+                "note": "Passage connecting rooms"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Furniture vocabulary",
+          "content": {
+            "explanation": "Learn what is inside each room.",
+            "groups": [
+              {
+                "group": "Bedroom",
+                "items": [
+                  "bed",
+                  "wardrobe",
+                  "chest of drawers",
+                  "mirror",
+                  "lamp",
+                  "pillow"
+                ]
+              },
+              {
+                "group": "Living room",
+                "items": [
+                  "sofa / couch",
+                  "armchair",
+                  "coffee table",
+                  "TV",
+                  "bookshelf",
+                  "curtains"
+                ]
+              },
+              {
+                "group": "Kitchen",
+                "items": [
+                  "fridge",
+                  "cooker / stove",
+                  "sink",
+                  "microwave",
+                  "cupboard",
+                  "kettle"
+                ]
+              },
+              {
+                "group": "Bathroom",
+                "items": [
+                  "shower",
+                  "bathtub",
+                  "sink",
+                  "toilet",
+                  "towel",
+                  "mirror"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Prepositions of place",
+          "content": {
+            "explanation": "Use these words to say WHERE things and people are.",
+            "items": [
+              {
+                "phrase": "in",
+                "note": "Inside: The milk is in the fridge."
+              },
+              {
+                "phrase": "on",
+                "note": "On a surface: The book is on the table."
+              },
+              {
+                "phrase": "under",
+                "note": "Below: The shoes are under the bed."
+              },
+              {
+                "phrase": "next to / beside",
+                "note": "Right beside: The lamp is next to the bed."
+              },
+              {
+                "phrase": "between",
+                "note": "In the middle of two things: The sofa is between the two chairs."
+              },
+              {
+                "phrase": "opposite / in front of",
+                "note": "Facing: The TV is opposite the sofa."
+              },
+              {
+                "phrase": "behind",
+                "note": "At the back: The garden is behind the house."
+              },
+              {
+                "phrase": "above / below",
+                "note": "Higher/lower than: The mirror is above the sink."
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat these sentences about home and furniture clearly.",
+            "phrases": [
+              {
+                "text": "The sofa is in the living room, opposite the TV.",
+                "audio_key": "sofa_living_room"
+              },
+              {
+                "text": "My keys are on the table next to the door.",
+                "audio_key": "keys_on_table"
+              },
+              {
+                "text": "The bathroom is between the bedroom and the kitchen.",
+                "audio_key": "bathroom_between"
+              },
+              {
+                "text": "The fridge is in the kitchen, next to the cooker.",
+                "audio_key": "fridge_kitchen"
+              },
+              {
+                "text": "There is a mirror above the sink.",
+                "audio_key": "mirror_above_sink"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Which room?",
+          "content": {
+            "question": "Where do you sleep in a house?",
+            "options": [
+              "kitchen",
+              "living room",
+              "bedroom",
+              "hallway"
+            ],
+            "correct_index": 2,
+            "explanation": "The bedroom is the room for sleeping."
+          }
+        },
+        {
+          "task_id": "t0306_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Correct preposition",
+          "content": {
+            "question": "'The cat is sleeping ___ the sofa.' (The cat is on top of the sofa.)",
+            "options": [
+              "in",
+              "on",
+              "under",
+              "behind"
+            ],
+            "correct_index": 1,
+            "explanation": "On a surface \u2192 on. The cat is on the sofa."
+          }
+        },
+        {
+          "task_id": "t0306_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Correct preposition",
+          "content": {
+            "question": "'My shoes are ___ the bed.' (They are below the bed, not visible.)",
+            "options": [
+              "on",
+              "above",
+              "under",
+              "between"
+            ],
+            "correct_index": 2,
+            "explanation": "Below the bed \u2192 under. My shoes are under the bed."
+          }
+        },
+        {
+          "task_id": "t0306_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "grammar",
+          "title": "Fill in the preposition",
+          "content": {
+            "sentence": "The lamp is ___ the table, ___ the two chairs.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "on",
+                  "in",
+                  "under"
+                ],
+                "correct": "on"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "beside",
+                  "between",
+                  "above"
+                ],
+                "correct": "between"
+              }
+            ],
+            "explanation": "on the table (surface), between the two chairs (in the middle)."
+          }
+        },
+        {
+          "task_id": "t0306_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the furniture word",
+          "content": {
+            "sentence": "I keep my clothes in the ___ in my bedroom \u2014 it has two big doors.",
+            "options": [
+              "bookshelf",
+              "wardrobe",
+              "fridge",
+              "cupboard"
+            ],
+            "correct": "wardrobe",
+            "explanation": "A wardrobe is a large piece of bedroom furniture for clothes with doors."
+          }
+        },
+        {
+          "task_id": "t0306_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "grammar",
+          "title": "Build the location sentence",
+          "content": {
+            "instruction": "Rearrange to describe where something is.",
+            "words": [
+              "the",
+              "mirror",
+              "The",
+              "is",
+              "sink",
+              "above"
+            ],
+            "correct_sentence": "The mirror is above the sink.",
+            "explanation": "The + [item] + is + [preposition] + the + [reference object]."
+          }
+        },
+        {
+          "task_id": "t0306_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match furniture to room",
+          "content": {
+            "instruction": "Match each item of furniture to the room where you usually find it.",
+            "pairs": [
+              {
+                "prompt": "fridge and cooker",
+                "answer": "kitchen"
+              },
+              {
+                "prompt": "sofa and TV",
+                "answer": "living room"
+              },
+              {
+                "prompt": "bed and wardrobe",
+                "answer": "bedroom"
+              },
+              {
+                "prompt": "shower and towel",
+                "answer": "bathroom"
+              },
+              {
+                "prompt": "desk and bookshelf",
+                "answer": "study / home office"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 Showing a new flatmate around",
+          "content": {
+            "context": "Sara is showing her new flatmate Ahmed around their flat for the first time.",
+            "dialogue": [
+              {
+                "speaker": "Sara",
+                "line": "Welcome! Come in \u2014 I'll show you around the flat."
+              },
+              {
+                "speaker": "Ahmed",
+                "line": "Thank you! It looks nice. Is this the living room?"
+              },
+              {
+                "speaker": "Sara",
+                "line": "Yes! The sofa is in front of the TV and there's a small coffee table in the middle."
+              },
+              {
+                "speaker": "Ahmed",
+                "line": "It's really comfortable looking. Where's the kitchen?"
+              },
+              {
+                "speaker": "Sara",
+                "line": "It's just down the hallway \u2014 on the left. The fridge is next to the cooker."
+              },
+              {
+                "speaker": "Ahmed",
+                "line": "And my bedroom?"
+              },
+              {
+                "speaker": "Sara",
+                "line": "Your room is at the end of the corridor. There's a wardrobe and a desk inside."
+              },
+              {
+                "speaker": "Ahmed",
+                "line": "Is there a mirror in the room?"
+              },
+              {
+                "speaker": "Sara",
+                "line": "Yes \u2014 it's above the chest of drawers. And the bathroom is between your room and mine."
+              },
+              {
+                "speaker": "Ahmed",
+                "line": "Perfect. It all looks great \u2014 I love it!"
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "Where is the kitchen?",
+                "options": [
+                  "On the right",
+                  "At the end",
+                  "Down the hallway on the left",
+                  "Next to the living room"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "Where is Ahmed's bedroom?",
+                "options": [
+                  "Next to the kitchen",
+                  "On the left",
+                  "At the end of the corridor",
+                  "Opposite the bathroom"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "Where is the mirror in Ahmed's room?",
+                "options": [
+                  "On the wall",
+                  "Above the desk",
+                  "Above the chest of drawers",
+                  "Next to the wardrobe"
+                ],
+                "correct_index": 2
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0306_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "grammar",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Which sentence uses the preposition correctly?",
+            "wrong_sentence": "The lamp is in the table next to the window.",
+            "options": [
+              "The lamp is in the table next to the window.",
+              "The lamp is on the table next to the window.",
+              "The lamp is above the table next to the window.",
+              "The lamp is under the table next to the window."
+            ],
+            "correct_index": 1,
+            "explanation": "A lamp sits ON a table (on a surface). Not 'in the table'. \u2713"
+          }
+        },
+        {
+          "task_id": "t0306_14",
+          "order": 14,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Describe your home",
+          "content": {
+            "instruction": "Speak for 55 seconds. Describe your home \u2014 rooms, furniture, and where things are. Use at least 5 prepositions of place.",
+            "prompt": "Describe your home. How many rooms are there? What is in each room? Where are things?",
+            "example_response": "My home is a two-bedroom flat. The living room is quite big \u2014 there is a large sofa in front of the TV and a coffee table between the sofa and the wall. The kitchen is next to the living room. The fridge is in the corner, next to the cooker. My bedroom has a big wardrobe opposite the bed and a lamp on the small table beside my bed. There is a mirror above the chest of drawers. The bathroom is between the two bedrooms. We also have a small balcony behind the living room with some plants.",
+            "key_phrases": [
+              "in / on / under / next to / between / opposite / above / behind",
+              "there is/are",
+              "my room has"
+            ],
+            "min_words": 65
+          }
+        },
+        {
+          "task_id": "t0306_15",
+          "order": 15,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Rooms: bedroom, living room, kitchen, bathroom, hallway, dining room, study, balcony",
+              "Furniture: bed, wardrobe, sofa, armchair, fridge, cooker, bookshelf, curtains, mirror",
+              "Prepositions: in, on, under, next to, between, opposite, above, behind",
+              "on = surface, in = enclosed space, under = below, between = in the middle"
+            ],
+            "next_lesson": "a1_unit3_lesson07",
+            "next_lesson_title": "Animals and nature"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson07",
+      "unit": 3,
+      "lesson_number": 7,
+      "level": "A1",
+      "title": "Animals & nature",
+      "description": "Learn animals and nature vocabulary, describe animals, and use 'can' for ability in natural contexts.",
+      "estimated_minutes": 20,
+      "xp_reward": 120,
+      "tasks": [
+        {
+          "task_id": "t0307_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Animals vocabulary",
+          "content": {
+            "explanation": "Learn common animals and where they live.",
+            "groups": [
+              {
+                "group": "Pets",
+                "items": [
+                  "dog",
+                  "cat",
+                  "fish",
+                  "parrot",
+                  "rabbit",
+                  "hamster"
+                ]
+              },
+              {
+                "group": "Farm animals",
+                "items": [
+                  "cow",
+                  "chicken",
+                  "goat",
+                  "sheep",
+                  "horse",
+                  "pig"
+                ]
+              },
+              {
+                "group": "Wild animals",
+                "items": [
+                  "lion",
+                  "tiger",
+                  "elephant",
+                  "monkey",
+                  "snake",
+                  "deer"
+                ]
+              },
+              {
+                "group": "Birds",
+                "items": [
+                  "eagle",
+                  "peacock",
+                  "crow",
+                  "sparrow",
+                  "owl"
+                ]
+              },
+              {
+                "group": "Water animals",
+                "items": [
+                  "fish",
+                  "dolphin",
+                  "whale",
+                  "crocodile",
+                  "turtle"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_02",
+          "order": 2,
+          "type": "learn_card",
+          "category": "vocabulary",
+          "title": "Nature vocabulary",
+          "content": {
+            "explanation": "Words for the natural world around us.",
+            "items": [
+              {
+                "phrase": "forest / jungle",
+                "note": "Area with many trees \u2014 jungle is thick and tropical"
+              },
+              {
+                "phrase": "ocean / sea",
+                "note": "Large body of salt water"
+              },
+              {
+                "phrase": "river",
+                "note": "Moving freshwater \u2014 flows to the sea"
+              },
+              {
+                "phrase": "lake",
+                "note": "Still water surrounded by land"
+              },
+              {
+                "phrase": "mountain",
+                "note": "Very high land"
+              },
+              {
+                "phrase": "beach",
+                "note": "Sandy area near the sea"
+              },
+              {
+                "phrase": "desert",
+                "note": "Dry, sandy area with very little rain"
+              },
+              {
+                "phrase": "field / meadow",
+                "note": "Open flat area with grass"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_03",
+          "order": 3,
+          "type": "learn_card",
+          "category": "grammar",
+          "title": "Can for animal abilities",
+          "content": {
+            "explanation": "Use 'can' to describe what animals are able to do.",
+            "examples": [
+              {
+                "sentence": "An eagle can fly very high.",
+                "note": "Ability"
+              },
+              {
+                "sentence": "A fish can swim but it can't walk.",
+                "note": "Ability + negative"
+              },
+              {
+                "sentence": "Elephants can swim \u2014 did you know that?",
+                "note": "Surprising fact"
+              },
+              {
+                "sentence": "A cheetah can run very fast.",
+                "note": "Speed ability"
+              },
+              {
+                "sentence": "Monkeys can climb trees easily.",
+                "note": "Physical skill"
+              }
+            ],
+            "interesting_facts": [
+              "Dolphins can communicate with each other.",
+              "Owls can see in the dark.",
+              "Peacocks can open their feathers like a fan.",
+              "Tigers can't purr but lions can roar very loudly."
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_04",
+          "order": 4,
+          "type": "listen_repeat",
+          "category": "pronunciation",
+          "title": "Listen and repeat",
+          "content": {
+            "instruction": "Repeat these nature and animal sentences.",
+            "phrases": [
+              {
+                "text": "Tigers live in the jungle and can swim very well.",
+                "audio_key": "tigers_jungle"
+              },
+              {
+                "text": "Dolphins are intelligent and can communicate.",
+                "audio_key": "dolphins_communicate"
+              },
+              {
+                "text": "The river flows from the mountains to the sea.",
+                "audio_key": "river_mountains"
+              },
+              {
+                "text": "Eagles can fly very high in the sky.",
+                "audio_key": "eagles_fly_high"
+              },
+              {
+                "text": "My favourite animal is the elephant.",
+                "audio_key": "favourite_elephant"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Where does it live?",
+          "content": {
+            "question": "Where does a dolphin live?",
+            "options": [
+              "In the forest",
+              "On a mountain",
+              "In the ocean",
+              "In the desert"
+            ],
+            "correct_index": 2,
+            "explanation": "Dolphins are sea creatures \u2014 they live in the ocean."
+          }
+        },
+        {
+          "task_id": "t0307_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "grammar",
+          "title": "Can for ability",
+          "content": {
+            "question": "'A bat ___ see well in the dark.' Complete correctly.",
+            "options": [
+              "cans",
+              "is can",
+              "can",
+              "can to"
+            ],
+            "correct_index": 2,
+            "explanation": "Can + base verb. A bat can see in the dark. \u2713"
+          }
+        },
+        {
+          "task_id": "t0307_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "vocabulary",
+          "title": "Animal category",
+          "content": {
+            "question": "Which of these is a pet animal (kept at home)?",
+            "options": [
+              "tiger",
+              "elephant",
+              "rabbit",
+              "crocodile"
+            ],
+            "correct_index": 2,
+            "explanation": "Rabbits are common pets kept at home. The others are wild animals."
+          }
+        },
+        {
+          "task_id": "t0307_08",
+          "order": 8,
+          "type": "fill_blank",
+          "category": "grammar",
+          "title": "Fill in can / can't",
+          "content": {
+            "sentence": "Fish ___ swim but they ___ walk or breathe on land.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "can",
+                  "can't"
+                ],
+                "correct": "can"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "can",
+                  "can't"
+                ],
+                "correct": "can't"
+              }
+            ],
+            "explanation": "Fish can swim \u2713. Fish can't walk or breathe on land \u2713."
+          }
+        },
+        {
+          "task_id": "t0307_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "vocabulary",
+          "title": "Fill in the nature word",
+          "content": {
+            "sentence": "India has many large ___s like the Ganges and the Brahmaputra that flow across the country.",
+            "options": [
+              "oceans",
+              "lakes",
+              "rivers",
+              "mountains"
+            ],
+            "correct": "rivers",
+            "explanation": "The Ganges and Brahmaputra are famous rivers in India."
+          }
+        },
+        {
+          "task_id": "t0307_10",
+          "order": 10,
+          "type": "sort_words",
+          "category": "grammar",
+          "title": "Build the animal fact sentence",
+          "content": {
+            "instruction": "Rearrange to make a correct animal fact sentence.",
+            "words": [
+              "swim",
+              "can",
+              "but",
+              "Elephants",
+              "can't",
+              "fly"
+            ],
+            "correct_sentence": "Elephants can swim but can't fly.",
+            "explanation": "Subject + can + verb + but + can't + verb."
+          }
+        },
+        {
+          "task_id": "t0307_11",
+          "order": 11,
+          "type": "match_pairs",
+          "category": "vocabulary",
+          "title": "Match animal to habitat",
+          "content": {
+            "instruction": "Match each animal to where it lives.",
+            "pairs": [
+              {
+                "prompt": "lion",
+                "answer": "grassland / savannah"
+              },
+              {
+                "prompt": "whale",
+                "answer": "ocean"
+              },
+              {
+                "prompt": "monkey",
+                "answer": "jungle / forest"
+              },
+              {
+                "prompt": "camel",
+                "answer": "desert"
+              },
+              {
+                "prompt": "mountain goat",
+                "answer": "mountain"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_12",
+          "order": 12,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Dialogue \u2014 At the zoo",
+          "content": {
+            "context": "A family visits the zoo. Little Aryan asks his mother questions about the animals.",
+            "dialogue": [
+              {
+                "speaker": "Aryan",
+                "line": "Mum! Look at that big animal! What is it?"
+              },
+              {
+                "speaker": "Mother",
+                "line": "That's an elephant, Aryan. Isn't it beautiful?"
+              },
+              {
+                "speaker": "Aryan",
+                "line": "It's huge! Can elephants swim?"
+              },
+              {
+                "speaker": "Mother",
+                "line": "Yes! Elephants can swim very well. They love water."
+              },
+              {
+                "speaker": "Aryan",
+                "line": "Wow! Can they run fast?"
+              },
+              {
+                "speaker": "Mother",
+                "line": "They can run \u2014 but not as fast as a cheetah. Cheetahs are the fastest land animals."
+              },
+              {
+                "speaker": "Aryan",
+                "line": "What about those birds over there? Can they fly?"
+              },
+              {
+                "speaker": "Mother",
+                "line": "Those are peacocks. They can fly a little but they don't fly very high or far."
+              },
+              {
+                "speaker": "Aryan",
+                "line": "And can peacocks talk like parrots?"
+              },
+              {
+                "speaker": "Mother",
+                "line": "No, they can't talk \u2014 but they can make a very loud call! Let's go and see the tigers next."
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "Can elephants swim?",
+                "options": [
+                  "No, they can't",
+                  "Yes, they love water",
+                  "Only a little",
+                  "It depends"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "Which is the fastest land animal according to the mother?",
+                "options": [
+                  "Elephant",
+                  "Tiger",
+                  "Cheetah",
+                  "Horse"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "Can peacocks talk like parrots?",
+                "options": [
+                  "Yes",
+                  "A little",
+                  "No, they can't",
+                  "Only some can"
+                ],
+                "correct_index": 2
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0307_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "grammar",
+          "title": "Find the mistake",
+          "content": {
+            "instruction": "Which sentence about animals is correct?",
+            "wrong_sentence": "A tiger can swims and climb trees.",
+            "options": [
+              "A tiger can swims and climb trees.",
+              "A tiger can swim and climb trees.",
+              "A tiger cans swim and can climb trees.",
+              "A tiger can swimming and climbing trees."
+            ],
+            "correct_index": 1,
+            "explanation": "Can + BASE verb (no -s, no -ing). A tiger can swim and climb. \u2713"
+          }
+        },
+        {
+          "task_id": "t0307_14",
+          "order": 14,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Speaking \u2014 Your favourite animal",
+          "content": {
+            "instruction": "Speak for 45 seconds. Describe your favourite animal. Use can/can't and adjective vocabulary.",
+            "prompt": "What is your favourite animal? Describe it \u2014 what it looks like, where it lives, what it can do.",
+            "example_response": "My favourite animal is the tiger. Tigers are big, powerful, and beautiful. They live in forests and jungles in Asia. A tiger can swim very well \u2014 it loves water! It can also run very fast \u2014 up to 65 kilometres per hour. Tigers are mostly orange with black stripes. They are strong and quiet hunters. Unfortunately, tigers are endangered \u2014 there are not many left in the wild. I think we should protect them.",
+            "key_phrases": [
+              "My favourite animal is ___",
+              "It can/can't ___",
+              "It lives in ___",
+              "It is + adjective",
+              "It has + body description"
+            ],
+            "min_words": 60
+          }
+        },
+        {
+          "task_id": "t0307_15",
+          "order": 15,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Lesson complete!",
+          "content": {
+            "what_you_learned": [
+              "Animal groups: pets, farm animals, wild animals, birds, water animals",
+              "Nature: forest, ocean, river, lake, mountain, beach, desert",
+              "Can/can't for animal abilities: A fish can swim. An eagle can fly.",
+              "Animal descriptions: size, colour, habitat, special abilities"
+            ],
+            "next_lesson": "a1_unit3_lesson08",
+            "next_lesson_title": "Unit 3 Review"
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a1_unit3_lesson08",
+      "unit": 3,
+      "lesson_number": 8,
+      "level": "A1",
+      "title": "Unit 3 Review \u2014 My world",
+      "description": "Review Unit 3: body, health, doctor, clothes, feelings, adjectives, home, and animals.",
+      "estimated_minutes": 28,
+      "xp_reward": 200,
+      "tasks": [
+        {
+          "task_id": "t0308_01",
+          "order": 1,
+          "type": "learn_card",
+          "category": "review",
+          "title": "Unit 3 \u2014 What you learned",
+          "content": {
+            "explanation": "Quick recap of all Unit 3 lessons.",
+            "summary": [
+              {
+                "lesson": "Lesson 1",
+                "topic": "Body parts + health: I have a headache / My knee hurts / I feel sick"
+              },
+              {
+                "lesson": "Lesson 2",
+                "topic": "Doctor's appointment: since/for, should/shouldn't, symptoms"
+              },
+              {
+                "lesson": "Lesson 3",
+                "topic": "Clothes + colours: colour + noun word order, is wearing"
+              },
+              {
+                "lesson": "Lesson 4",
+                "topic": "Feelings: I feel/am + adjective, because, intensifiers"
+              },
+              {
+                "lesson": "Lesson 5",
+                "topic": "Adjective opposites + intensifiers: very/quite/a bit + adjective"
+              },
+              {
+                "lesson": "Lesson 6",
+                "topic": "Home: rooms, furniture, prepositions of place (on/in/under/between)"
+              },
+              {
+                "lesson": "Lesson 7",
+                "topic": "Animals + nature: can/can't for ability, habitats"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0308_02",
+          "order": 2,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Health",
+          "content": {
+            "question": "Which sentence about health is correct?",
+            "options": [
+              "I have headache and my stomach hurt.",
+              "I have a headache and my stomach hurts.",
+              "I have a headache and my stomach hurt.",
+              "I am headache and stomach hurts."
+            ],
+            "correct_index": 1,
+            "explanation": "I have a headache (article 'a'). My stomach hurts (singular \u2192 hurts). \u2713"
+          }
+        },
+        {
+          "task_id": "t0308_03",
+          "order": 3,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Since or for",
+          "content": {
+            "question": "'I have had a cold ___ Monday' and 'for ___ three days'.",
+            "options": [
+              "since / for",
+              "for / for",
+              "since / since",
+              "for / since"
+            ],
+            "correct_index": 0,
+            "explanation": "Monday = specific time \u2192 since. Three days = duration \u2192 for."
+          }
+        },
+        {
+          "task_id": "t0308_04",
+          "order": 4,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Clothes description",
+          "content": {
+            "question": "Which is the correct description of someone's outfit?",
+            "options": [
+              "She wearing dress red and shoes black.",
+              "She is wearing a red dress and black shoes.",
+              "She wear red dress and black shoe.",
+              "She is wearing dress red and shoes black."
+            ],
+            "correct_index": 1,
+            "explanation": "She is wearing + a + colour + noun. Colour before noun. Plural shoes. \u2713"
+          }
+        },
+        {
+          "task_id": "t0308_05",
+          "order": 5,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Feelings",
+          "content": {
+            "question": "Complete: 'I feel ___ nervous \u2014 just a small feeling, not a lot.'",
+            "options": [
+              "very",
+              "absolutely",
+              "a bit",
+              "extremely"
+            ],
+            "correct_index": 2,
+            "explanation": "Small feeling \u2192 a bit. I feel a bit nervous. \u2713"
+          }
+        },
+        {
+          "task_id": "t0308_06",
+          "order": 6,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Adjectives",
+          "content": {
+            "question": "What is the opposite of 'noisy'?",
+            "options": [
+              "heavy",
+              "quiet",
+              "dirty",
+              "slow"
+            ],
+            "correct_index": 1,
+            "explanation": "Noisy \u2194 quiet."
+          }
+        },
+        {
+          "task_id": "t0308_07",
+          "order": 7,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Prepositions of place",
+          "content": {
+            "question": "'The book is ___ the table.' (It is on top of the table.)",
+            "options": [
+              "in",
+              "under",
+              "on",
+              "between"
+            ],
+            "correct_index": 2,
+            "explanation": "On top of a surface \u2192 on. The book is on the table."
+          }
+        },
+        {
+          "task_id": "t0308_08",
+          "order": 8,
+          "type": "mcq",
+          "category": "review",
+          "title": "Review \u2014 Can for ability",
+          "content": {
+            "question": "Which sentence about animals is correct?",
+            "options": [
+              "Eagles cans fly very high.",
+              "Eagles can to fly very high.",
+              "Eagles can fly very high.",
+              "Eagles can flying very high."
+            ],
+            "correct_index": 2,
+            "explanation": "Can + base verb. Eagles can fly. \u2713 (No -s, no 'to', no -ing)"
+          }
+        },
+        {
+          "task_id": "t0308_09",
+          "order": 9,
+          "type": "fill_blank",
+          "category": "review",
+          "title": "Review Fill-in \u2014 health",
+          "content": {
+            "sentence": "The doctor said I ___ rest and I ___ eat spicy food for three days.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "should",
+                  "shouldn't"
+                ],
+                "correct": "should"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "should",
+                  "shouldn't"
+                ],
+                "correct": "shouldn't"
+              }
+            ],
+            "explanation": "Rest = positive advice \u2192 should. Avoid spicy food = negative advice \u2192 shouldn't."
+          }
+        },
+        {
+          "task_id": "t0308_10",
+          "order": 10,
+          "type": "fill_blank",
+          "category": "review",
+          "title": "Review Fill-in \u2014 home",
+          "content": {
+            "sentence": "The lamp is ___ the desk and the bed is ___ the wardrobe and the window.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "on",
+                  "in",
+                  "under"
+                ],
+                "correct": "on"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "next to",
+                  "between",
+                  "above"
+                ],
+                "correct": "between"
+              }
+            ],
+            "explanation": "on the desk (surface), between (in the middle of two things)."
+          }
+        },
+        {
+          "task_id": "t0308_11",
+          "order": 11,
+          "type": "fill_blank",
+          "category": "review",
+          "title": "Review Fill-in \u2014 feelings",
+          "content": {
+            "sentence": "She passed her driving test! She is absolutely ___ and very ___.",
+            "blanks": [
+              {
+                "position": 1,
+                "options": [
+                  "nervous",
+                  "thrilled",
+                  "worried",
+                  "bored"
+                ],
+                "correct": "thrilled"
+              },
+              {
+                "position": 2,
+                "options": [
+                  "sad",
+                  "scared",
+                  "proud",
+                  "tired"
+                ],
+                "correct": "proud"
+              }
+            ],
+            "explanation": "Passing a test = thrilled (extremely happy) and proud (good feeling about achievement)."
+          }
+        },
+        {
+          "task_id": "t0308_12",
+          "order": 12,
+          "type": "sort_words",
+          "category": "review",
+          "title": "Review \u2014 Build the sentence",
+          "content": {
+            "instruction": "Rearrange all words to make one correct sentence.",
+            "words": [
+              "have",
+              "I",
+              "sore",
+              "throat",
+              "a",
+              "and",
+              "a",
+              "since",
+              "fever",
+              "yesterday"
+            ],
+            "correct_sentence": "I have a sore throat and a fever since yesterday.",
+            "explanation": "I have + a + [problem] + and + a + [problem] + since + [time]."
+          }
+        },
+        {
+          "task_id": "t0308_13",
+          "order": 13,
+          "type": "error_correction",
+          "category": "review",
+          "title": "Review \u2014 Find all mistakes",
+          "content": {
+            "instruction": "This message has 4 mistakes. Which version corrects them all?",
+            "wrong_text": "Hi, I feel very bad today. I have headache since three days. My doctor say I should to rest. I am wearing pyjamas blue and sitting in my sofa.",
+            "options": [
+              "Hi, I feel very bad today. I have a headache for three days. My doctor says I should rest. I am wearing blue pyjamas and sitting on my sofa.",
+              "Hi, I feel very bad today. I have headache for three days. My doctor say I should rest. I am wearing blue pyjamas and sitting in my sofa.",
+              "Hi, I feel very bad today. I have a headache since three days. My doctor says I should to rest. I am wearing pyjamas blue and sitting on my sofa.",
+              "Hi, I feel very bad today. I have a headache for three days. My doctor says I should rest. I am wearing pyjamas blue and sitting in my sofa."
+            ],
+            "correct_index": 0,
+            "explanation": "4 errors: 'a headache' (article), 'for' not 'since' (duration), 'says' (3rd person), 'should rest' (no 'to'), 'blue pyjamas' (colour before noun), 'on my sofa' (on surface not 'in')."
+          }
+        },
+        {
+          "task_id": "t0308_14",
+          "order": 14,
+          "type": "match_pairs",
+          "category": "review",
+          "title": "Review \u2014 Match grammar rule to example",
+          "content": {
+            "instruction": "Match each sentence to its grammar or vocabulary rule.",
+            "pairs": [
+              {
+                "prompt": "My knee hurts.",
+                "answer": "health \u2014 body part + hurts"
+              },
+              {
+                "prompt": "She is wearing a dark red dress.",
+                "answer": "clothes \u2014 colour before noun"
+              },
+              {
+                "prompt": "The lamp is between the chairs.",
+                "answer": "preposition of place"
+              },
+              {
+                "prompt": "I feel absolutely thrilled!",
+                "answer": "intensifier + emotion"
+              },
+              {
+                "prompt": "Dolphins can communicate.",
+                "answer": "can for animal ability"
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0308_15",
+          "order": 15,
+          "type": "dialogue",
+          "category": "dialogue_reading",
+          "title": "Final dialogue \u2014 A phone call catching up",
+          "content": {
+            "context": "Old friends Vikram and Ananya haven't spoken in a while. They catch up on the phone.",
+            "dialogue": [
+              {
+                "speaker": "Vikram",
+                "line": "Ananya! How are you? It's been so long!"
+              },
+              {
+                "speaker": "Ananya",
+                "line": "Vikram! I'm really happy you called. I've been quite busy."
+              },
+              {
+                "speaker": "Vikram",
+                "line": "Are you okay? You sound a bit tired."
+              },
+              {
+                "speaker": "Ananya",
+                "line": "I was sick last week \u2014 I had a bad cold and a fever for about four days."
+              },
+              {
+                "speaker": "Vikram",
+                "line": "Oh no! Are you feeling better now?"
+              },
+              {
+                "speaker": "Ananya",
+                "line": "Yes, much better! The doctor said I should rest and drink lots of water."
+              },
+              {
+                "speaker": "Vikram",
+                "line": "Good. So what else is new? I heard you moved to a new flat!"
+              },
+              {
+                "speaker": "Ananya",
+                "line": "Yes! It's really nice \u2014 quite big, very clean, and extremely quiet."
+              },
+              {
+                "speaker": "Vikram",
+                "line": "What's your favourite room?"
+              },
+              {
+                "speaker": "Ananya",
+                "line": "Definitely the living room \u2014 there's a huge sofa in front of the window and I can see trees and birds outside."
+              },
+              {
+                "speaker": "Vikram",
+                "line": "That sounds perfect! I'm a bit jealous honestly."
+              },
+              {
+                "speaker": "Ananya",
+                "line": "Come and visit! I'll show you around."
+              }
+            ],
+            "comprehension_questions": [
+              {
+                "question": "How long was Ananya sick?",
+                "options": [
+                  "Two days",
+                  "A week",
+                  "Four days",
+                  "Three days"
+                ],
+                "correct_index": 2
+              },
+              {
+                "question": "How does Ananya describe her new flat?",
+                "options": [
+                  "Small but clean",
+                  "Really nice, quite big, very clean and quiet",
+                  "Quite noisy and small",
+                  "Old but comfortable"
+                ],
+                "correct_index": 1
+              },
+              {
+                "question": "What can Ananya see from her living room?",
+                "options": [
+                  "The sea",
+                  "Trees and birds",
+                  "The street",
+                  "Other buildings"
+                ],
+                "correct_index": 1
+              }
+            ]
+          }
+        },
+        {
+          "task_id": "t0308_16",
+          "order": 16,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Final speaking \u2014 Part 1: Health and feelings",
+          "content": {
+            "instruction": "Speak for 50 seconds combining health and feelings vocabulary.",
+            "prompt": "Describe a time you were sick. How did you feel? What did the doctor say? How do you feel now?",
+            "example_response": "Last month I felt absolutely terrible. I had a high fever and a really bad headache for about five days. I also had a sore throat and a cough. I felt very weak and quite dizzy. I went to the doctor. She asked me how long I had felt sick \u2014 I told her since the previous Monday. She said I should rest at home, drink lots of water, and take tablets three times a day. She also said I shouldn't go to work. After a week I felt much better \u2014 quite relieved and grateful! Now I feel completely fine.",
+            "key_phrases": [
+              "I had a ___",
+              "I felt very/quite/a bit ___",
+              "for ___ / since ___",
+              "The doctor said I should/shouldn't ___",
+              "Now I feel ___"
+            ],
+            "min_words": 70
+          }
+        },
+        {
+          "task_id": "t0308_17",
+          "order": 17,
+          "type": "speaking",
+          "category": "speaking",
+          "title": "Final speaking \u2014 Part 2: Describe your world",
+          "content": {
+            "instruction": "Speak for 60 seconds. Describe your home AND your favourite animal. Use adjectives, prepositions, and can/can't.",
+            "prompt": "Tell me about your home \u2014 rooms, furniture, how things are arranged. Then describe your favourite animal.",
+            "example_response": "My home is a three-bedroom flat on the fourth floor. The living room is quite large \u2014 there's a big sofa opposite the TV and a coffee table in the middle. The kitchen is very clean and organised \u2014 the fridge is next to the cooker and there are cupboards above the sink. My bedroom has a wardrobe beside the door and a lamp on the table next to my bed. It's very comfortable. My favourite animal is the tiger. It's absolutely beautiful \u2014 large, powerful, and elegant. Tigers live in forests and can swim very well. They can also run very fast. I feel very sad that they are endangered.",
+            "key_phrases": [
+              "in/on/under/next to/between/opposite/above",
+              "there is/are",
+              "very/quite/a bit + adjective",
+              "can/can't",
+              "I feel ___ about ___"
+            ],
+            "min_words": 85
+          }
+        },
+        {
+          "task_id": "t0308_18",
+          "order": 18,
+          "type": "lesson_summary",
+          "category": "review",
+          "title": "Unit 3 Complete! \ud83c\udf89",
+          "content": {
+            "congratulations": "Amazing work! You have completed Unit 3. You can now talk about your health, visit a doctor, describe clothes and colours, express your feelings, describe your home, and talk about animals \u2014 all in English!",
+            "all_grammar_covered": [
+              "I have a ___ache / My ___ hurts / I feel sick",
+              "For (duration) vs since (specific time)",
+              "Should/shouldn't + base verb (advice)",
+              "Colour + noun word order (a blue shirt)",
+              "Is/are wearing (present continuous for clothes)",
+              "I feel / I am + adjective + because ___",
+              "Intensifiers: a bit \u2192 quite \u2192 very/really \u2192 absolutely/extremely",
+              "Prepositions of place: on/in/under/next to/between/above/behind/opposite",
+              "Can/can't + base verb (ability)"
+            ],
+            "all_vocabulary_covered": [
+              "Body parts and health problems",
+              "Doctor's appointment phrases",
+              "Clothes and accessories",
+              "Colours and shades",
+              "Emotion words",
+              "Adjective opposites",
+              "Rooms and furniture",
+              "Animals and their habitats"
+            ],
+            "next_unit": "a1_unit4_lesson01",
+            "next_unit_title": "Unit 4 \u2014 Talking about the past: simple past tense"
+          }
+        }
+      ]
+    }
+  ]
+}

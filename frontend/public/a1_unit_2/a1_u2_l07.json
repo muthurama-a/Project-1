@@ -1,0 +1,263 @@
+{
+  "lesson_id": "a1_unit2_lesson07",
+  "unit": 2, "lesson_number": 7, "level": "A1",
+  "title": "At a restaurant — making requests",
+  "description": "Learn to have a full restaurant conversation — ordering, asking questions, and paying.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    {
+      "task_id": "t0207_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Restaurant vocabulary",
+      "content": {
+        "explanation": "Learn the essential words and phrases for eating at a restaurant.",
+        "items": [
+          { "phrase": "menu", "note": "The list of food and prices" },
+          { "phrase": "starter / appetiser", "note": "Small dish at the beginning of the meal" },
+          { "phrase": "main course", "note": "The biggest dish of the meal" },
+          { "phrase": "dessert", "note": "Sweet dish at the end — cake, ice cream" },
+          { "phrase": "waiter / waitress", "note": "Person who serves you" },
+          { "phrase": "table for ___", "note": "Table for two / three / four people" },
+          { "phrase": "reservation / booking", "note": "Booking a table in advance" },
+          { "phrase": "bill / check", "note": "The paper showing what you owe" },
+          { "phrase": "tip", "note": "Extra money you give for good service" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Requests at a restaurant",
+      "content": {
+        "explanation": "These are the most useful phrases for making polite requests.",
+        "items": [
+          { "phrase": "Could I have ___?", "note": "Polite request — more formal than 'can'" },
+          { "phrase": "Could we have the menu, please?", "note": "Requesting the menu" },
+          { "phrase": "I'd like ___, please.", "note": "Ordering food — polite" },
+          { "phrase": "What do you recommend?", "note": "Ask the waiter for their best dish" },
+          { "phrase": "Is there ___ in this?", "note": "Ask about ingredients (allergies)" },
+          { "phrase": "Could you bring ___?", "note": "Request something extra — water, napkin" },
+          { "phrase": "Could we have the bill, please?", "note": "Ask for the bill at the end" },
+          { "phrase": "Excuse me!", "note": "Get the waiter's attention" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Could for polite requests",
+      "content": {
+        "explanation": "'Could' is more polite than 'can' for requests. Both are correct.",
+        "comparison": [
+          { "less_formal": "Can I have water?", "more_polite": "Could I have some water, please?" },
+          { "less_formal": "Can you bring the bill?", "more_polite": "Could you bring the bill, please?" },
+          { "less_formal": "Can I see the menu?", "more_polite": "Could I see the menu, please?" }
+        ],
+        "rule": "Could + subject + base verb + please? → always polite, always correct at a restaurant.",
+        "replies_from_waiter": [
+          "Of course! Right away.",
+          "Certainly! I'll bring it now.",
+          "I'm sorry, we don't have that today.",
+          "Yes, no problem!"
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — restaurant phrases",
+      "content": {
+        "instruction": "Repeat these restaurant phrases with a polite, clear tone.",
+        "phrases": [
+          { "text": "Excuse me! Could I see the menu, please?", "audio_key": "see_menu" },
+          { "text": "I'd like the grilled fish, please.", "audio_key": "grilled_fish" },
+          { "text": "What do you recommend?", "audio_key": "recommend" },
+          { "text": "Could we have some more water, please?", "audio_key": "more_water" },
+          { "text": "Could we have the bill, please?", "audio_key": "the_bill" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "What do you call it?",
+      "content": {
+        "question": "The small dish you eat BEFORE the main meal is called a ___.",
+        "options": ["dessert", "main course", "starter", "tip"],
+        "correct_index": 2,
+        "explanation": "A starter (or appetiser) is eaten before the main course."
+      }
+    },
+    {
+      "task_id": "t0207_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Which is more polite?",
+      "content": {
+        "question": "You want more water. Which is the most polite thing to say to the waiter?",
+        "options": [
+          "Water! Now!",
+          "I need water.",
+          "Could you bring some more water, please?",
+          "Give me water."
+        ],
+        "correct_index": 2,
+        "explanation": "'Could you bring' + please = most polite. Always use at a restaurant."
+      }
+    },
+    {
+      "task_id": "t0207_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "End of the meal",
+      "content": {
+        "question": "You have finished your meal and want to pay. What do you say?",
+        "options": [
+          "What do you recommend?",
+          "Could we have the bill, please?",
+          "I'd like the main course.",
+          "Is there a table for two?"
+        ],
+        "correct_index": 1,
+        "explanation": "'Could we have the bill, please?' — the standard phrase to ask for the bill."
+      }
+    },
+    {
+      "task_id": "t0207_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in: could / can / would",
+      "content": {
+        "sentence": "Excuse me! _____ I see the menu? And _____ you tell me what today's special is?",
+        "blanks": [
+          { "position": 1, "options": ["Could", "Can", "Would"], "correct": "Could" },
+          { "position": 2, "options": ["could", "can", "would"], "correct": "could" }
+        ],
+        "explanation": "Both can and could work — but 'could' is more polite in a restaurant context."
+      }
+    },
+    {
+      "task_id": "t0207_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the restaurant word",
+      "content": {
+        "sentence": "We have a ___ at 8pm for a table for four people.",
+        "options": ["menu", "bill", "reservation", "tip"],
+        "correct": "reservation",
+        "explanation": "A reservation = a booking — you call in advance to keep a table."
+      }
+    },
+    {
+      "task_id": "t0207_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the polite request",
+      "content": {
+        "instruction": "Rearrange to make a correct polite request.",
+        "words": ["bring", "Could", "more", "some", "bread", "you", "please"],
+        "correct_sentence": "Could you bring some more bread, please?",
+        "explanation": "Could + you + bring + some + more + [item] + please?"
+      }
+    },
+    {
+      "task_id": "t0207_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match the situation to the phrase",
+      "content": {
+        "instruction": "Match each restaurant situation to the correct phrase.",
+        "pairs": [
+          { "prompt": "You arrive and want to sit down", "answer": "A table for two, please." },
+          { "prompt": "You want to see the food list", "answer": "Could I see the menu, please?" },
+          { "prompt": "You don't know what to order", "answer": "What do you recommend?" },
+          { "prompt": "You want to pay and leave", "answer": "Could we have the bill, please?" },
+          { "prompt": "You want to get the waiter's attention", "answer": "Excuse me!" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — A full restaurant experience",
+      "content": {
+        "context": "Arun and his friend go to a restaurant for dinner.",
+        "dialogue": [
+          { "speaker": "Waiter", "line": "Good evening! Do you have a reservation?" },
+          { "speaker": "Arun", "line": "Yes, I have a booking for two. The name is Arun." },
+          { "speaker": "Waiter", "line": "Of course! This way, please. Here's your table." },
+          { "speaker": "Arun", "line": "Thank you. Could we see the menu, please?" },
+          { "speaker": "Waiter", "line": "Certainly. Here you are. Can I get you any drinks to start?" },
+          { "speaker": "Arun", "line": "Could we have two glasses of water, please?" },
+          { "speaker": "Waiter", "line": "Of course. Are you ready to order?" },
+          { "speaker": "Arun", "line": "Not yet. What do you recommend for the main course?" },
+          { "speaker": "Waiter", "line": "The grilled fish is very popular tonight. It's delicious!" },
+          { "speaker": "Arun", "line": "Sounds good! I'd like the grilled fish, please." },
+          { "speaker": "Friend", "line": "And I'll have the pasta with vegetables." },
+          { "speaker": "Waiter", "line": "Excellent choices! I'll bring your food shortly." },
+          { "speaker": "Arun", "line": "(Later) Excuse me! Could we have the bill, please?" },
+          { "speaker": "Waiter", "line": "Of course! I hope you enjoyed your meal." },
+          { "speaker": "Arun", "line": "It was absolutely delicious. Thank you!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "What does Arun ask for first?",
+            "options": ["The bill", "The food", "The menu", "More water"],
+            "correct_index": 2
+          },
+          {
+            "question": "What does the waiter recommend?",
+            "options": ["Pasta", "The grilled fish", "A starter", "Dessert"],
+            "correct_index": 1
+          },
+          {
+            "question": "What does Arun's friend order?",
+            "options": ["Grilled fish", "Chicken curry", "Pasta with vegetables", "Soup"],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0207_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which is the correct polite request?",
+        "wrong_sentence": "Could you to bring the bill please?",
+        "options": [
+          "Could you to bring the bill please?",
+          "Could you bringing the bill please?",
+          "Could you bring the bill, please?",
+          "Could you brought the bill please?"
+        ],
+        "correct_index": 2,
+        "explanation": "Could + you + BASE verb (no 'to', no -ing, no past form). Could you bring ✓"
+      }
+    },
+    {
+      "task_id": "t0207_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You are at a restaurant. The waiter brings the wrong dish — you ordered fish but they brought chicken.",
+        "question": "What is the most polite way to handle this?",
+        "options": [
+          "This is wrong! Take it back!",
+          "Excuse me, I think there's a mistake. I ordered the fish, not the chicken.",
+          "No! Bad! Wrong food!",
+          "I don't want this."
+        ],
+        "correct_index": 1,
+        "explanation": "Polite complaint: Excuse me + I think there's a mistake + explain calmly. Never be rude."
+      }
+    },
+    {
+      "task_id": "t0207_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Full restaurant role play",
+      "content": {
+        "instruction": "Play BOTH parts — customer and waiter. Have a full restaurant conversation covering: arrival, menu, ordering, and bill.",
+        "prompt": "Start as a customer entering a restaurant. Have a complete conversation.",
+        "example_response": "Good evening! A table for two, please. Could I see the menu? Thank you. Excuse me, what do you recommend? The grilled fish sounds good. I'd like the grilled fish and my friend will have the pasta. Could we also have some water? (Later) Excuse me! Could we have the bill please? Thank you — it was absolutely delicious!",
+        "key_phrases": ["A table for ___", "Could I see the menu?", "What do you recommend?", "I'd like ___", "Could we have the bill?"],
+        "min_words": 65
+      }
+    },
+    {
+      "task_id": "t0207_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Restaurant words: menu, starter, main course, dessert, bill, tip, reservation",
+          "Polite requests: Could I have ___? / Could you bring ___?",
+          "Could vs Can: both correct — could is more formal/polite",
+          "Could + base verb (no 'to', no -ing)",
+          "Full restaurant flow: arrive → menu → order → eat → bill → pay",
+          "Dialogue: complete restaurant interaction"
+        ],
+        "next_lesson": "a1_unit2_lesson08",
+        "next_lesson_title": "Unit 2 Review"
+      }
+    }
+  ]
+}

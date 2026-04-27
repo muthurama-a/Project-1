@@ -1,0 +1,484 @@
+{
+  "lesson_id": "a1_unit3_lesson07",
+  "unit": 3,
+  "lesson_number": 7,
+  "level": "A1",
+  "title": "Animals & nature",
+  "description": "Learn animals and nature vocabulary, describe animals, and use 'can' for ability in natural contexts.",
+  "estimated_minutes": 20,
+  "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0307_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Animals vocabulary",
+      "content": {
+        "explanation": "Learn common animals and where they live.",
+        "groups": [
+          {
+            "group": "Pets",
+            "items": [
+              "dog",
+              "cat",
+              "fish",
+              "parrot",
+              "rabbit",
+              "hamster"
+            ]
+          },
+          {
+            "group": "Farm animals",
+            "items": [
+              "cow",
+              "chicken",
+              "goat",
+              "sheep",
+              "horse",
+              "pig"
+            ]
+          },
+          {
+            "group": "Wild animals",
+            "items": [
+              "lion",
+              "tiger",
+              "elephant",
+              "monkey",
+              "snake",
+              "deer"
+            ]
+          },
+          {
+            "group": "Birds",
+            "items": [
+              "eagle",
+              "peacock",
+              "crow",
+              "sparrow",
+              "owl"
+            ]
+          },
+          {
+            "group": "Water animals",
+            "items": [
+              "fish",
+              "dolphin",
+              "whale",
+              "crocodile",
+              "turtle"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Nature vocabulary",
+      "content": {
+        "explanation": "Words for the natural world around us.",
+        "items": [
+          {
+            "phrase": "forest / jungle",
+            "note": "Area with many trees \u2014 jungle is thick and tropical"
+          },
+          {
+            "phrase": "ocean / sea",
+            "note": "Large body of salt water"
+          },
+          {
+            "phrase": "river",
+            "note": "Moving freshwater \u2014 flows to the sea"
+          },
+          {
+            "phrase": "lake",
+            "note": "Still water surrounded by land"
+          },
+          {
+            "phrase": "mountain",
+            "note": "Very high land"
+          },
+          {
+            "phrase": "beach",
+            "note": "Sandy area near the sea"
+          },
+          {
+            "phrase": "desert",
+            "note": "Dry, sandy area with very little rain"
+          },
+          {
+            "phrase": "field / meadow",
+            "note": "Open flat area with grass"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Can for animal abilities",
+      "content": {
+        "explanation": "Use 'can' to describe what animals are able to do.",
+        "examples": [
+          {
+            "sentence": "An eagle can fly very high.",
+            "note": "Ability"
+          },
+          {
+            "sentence": "A fish can swim but it can't walk.",
+            "note": "Ability + negative"
+          },
+          {
+            "sentence": "Elephants can swim \u2014 did you know that?",
+            "note": "Surprising fact"
+          },
+          {
+            "sentence": "A cheetah can run very fast.",
+            "note": "Speed ability"
+          },
+          {
+            "sentence": "Monkeys can climb trees easily.",
+            "note": "Physical skill"
+          }
+        ],
+        "interesting_facts": [
+          "Dolphins can communicate with each other.",
+          "Owls can see in the dark.",
+          "Peacocks can open their feathers like a fan.",
+          "Tigers can't purr but lions can roar very loudly."
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these nature and animal sentences.",
+        "phrases": [
+          {
+            "text": "Tigers live in the jungle and can swim very well.",
+            "audio_key": "tigers_jungle"
+          },
+          {
+            "text": "Dolphins are intelligent and can communicate.",
+            "audio_key": "dolphins_communicate"
+          },
+          {
+            "text": "The river flows from the mountains to the sea.",
+            "audio_key": "river_mountains"
+          },
+          {
+            "text": "Eagles can fly very high in the sky.",
+            "audio_key": "eagles_fly_high"
+          },
+          {
+            "text": "My favourite animal is the elephant.",
+            "audio_key": "favourite_elephant"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Where does it live?",
+      "content": {
+        "question": "Where does a dolphin live?",
+        "options": [
+          "In the forest",
+          "On a mountain",
+          "In the ocean",
+          "In the desert"
+        ],
+        "correct_index": 2,
+        "explanation": "Dolphins are sea creatures \u2014 they live in the ocean."
+      }
+    },
+    {
+      "task_id": "t0307_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Can for ability",
+      "content": {
+        "question": "'A bat ___ see well in the dark.' Complete correctly.",
+        "options": [
+          "cans",
+          "is can",
+          "can",
+          "can to"
+        ],
+        "correct_index": 2,
+        "explanation": "Can + base verb. A bat can see in the dark. \u2713"
+      }
+    },
+    {
+      "task_id": "t0307_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Animal category",
+      "content": {
+        "question": "Which of these is a pet animal (kept at home)?",
+        "options": [
+          "tiger",
+          "elephant",
+          "rabbit",
+          "crocodile"
+        ],
+        "correct_index": 2,
+        "explanation": "Rabbits are common pets kept at home. The others are wild animals."
+      }
+    },
+    {
+      "task_id": "t0307_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in can / can't",
+      "content": {
+        "sentence": "Fish ___ swim but they ___ walk or breathe on land.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "can",
+              "can't"
+            ],
+            "correct": "can"
+          },
+          {
+            "position": 2,
+            "options": [
+              "can",
+              "can't"
+            ],
+            "correct": "can't"
+          }
+        ],
+        "explanation": "Fish can swim \u2713. Fish can't walk or breathe on land \u2713."
+      }
+    },
+    {
+      "task_id": "t0307_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the nature word",
+      "content": {
+        "sentence": "India has many large ___s like the Ganges and the Brahmaputra that flow across the country.",
+        "options": [
+          "oceans",
+          "lakes",
+          "rivers",
+          "mountains"
+        ],
+        "correct": "rivers",
+        "explanation": "The Ganges and Brahmaputra are famous rivers in India."
+      }
+    },
+    {
+      "task_id": "t0307_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the animal fact sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct animal fact sentence.",
+        "words": [
+          "swim",
+          "can",
+          "but",
+          "Elephants",
+          "can't",
+          "fly"
+        ],
+        "correct_sentence": "Elephants can swim but can't fly.",
+        "explanation": "Subject + can + verb + but + can't + verb."
+      }
+    },
+    {
+      "task_id": "t0307_11",
+      "order": 11,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match animal to habitat",
+      "content": {
+        "instruction": "Match each animal to where it lives.",
+        "pairs": [
+          {
+            "prompt": "lion",
+            "answer": "grassland / savannah"
+          },
+          {
+            "prompt": "whale",
+            "answer": "ocean"
+          },
+          {
+            "prompt": "monkey",
+            "answer": "jungle / forest"
+          },
+          {
+            "prompt": "camel",
+            "answer": "desert"
+          },
+          {
+            "prompt": "mountain goat",
+            "answer": "mountain"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_12",
+      "order": 12,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Dialogue \u2014 At the zoo",
+      "content": {
+        "context": "A family visits the zoo. Little Aryan asks his mother questions about the animals.",
+        "dialogue": [
+          {
+            "speaker": "Aryan",
+            "line": "Mum! Look at that big animal! What is it?"
+          },
+          {
+            "speaker": "Mother",
+            "line": "That's an elephant, Aryan. Isn't it beautiful?"
+          },
+          {
+            "speaker": "Aryan",
+            "line": "It's huge! Can elephants swim?"
+          },
+          {
+            "speaker": "Mother",
+            "line": "Yes! Elephants can swim very well. They love water."
+          },
+          {
+            "speaker": "Aryan",
+            "line": "Wow! Can they run fast?"
+          },
+          {
+            "speaker": "Mother",
+            "line": "They can run \u2014 but not as fast as a cheetah. Cheetahs are the fastest land animals."
+          },
+          {
+            "speaker": "Aryan",
+            "line": "What about those birds over there? Can they fly?"
+          },
+          {
+            "speaker": "Mother",
+            "line": "Those are peacocks. They can fly a little but they don't fly very high or far."
+          },
+          {
+            "speaker": "Aryan",
+            "line": "And can peacocks talk like parrots?"
+          },
+          {
+            "speaker": "Mother",
+            "line": "No, they can't talk \u2014 but they can make a very loud call! Let's go and see the tigers next."
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Can elephants swim?",
+            "options": [
+              "No, they can't",
+              "Yes, they love water",
+              "Only a little",
+              "It depends"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "Which is the fastest land animal according to the mother?",
+            "options": [
+              "Elephant",
+              "Tiger",
+              "Cheetah",
+              "Horse"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "Can peacocks talk like parrots?",
+            "options": [
+              "Yes",
+              "A little",
+              "No, they can't",
+              "Only some can"
+            ],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0307_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence about animals is correct?",
+        "wrong_sentence": "A tiger can swims and climb trees.",
+        "options": [
+          "A tiger can swims and climb trees.",
+          "A tiger can swim and climb trees.",
+          "A tiger cans swim and can climb trees.",
+          "A tiger can swimming and climbing trees."
+        ],
+        "correct_index": 1,
+        "explanation": "Can + BASE verb (no -s, no -ing). A tiger can swim and climb. \u2713"
+      }
+    },
+    {
+      "task_id": "t0307_14",
+      "order": 14,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking \u2014 Your favourite animal",
+      "content": {
+        "instruction": "Speak for 45 seconds. Describe your favourite animal. Use can/can't and adjective vocabulary.",
+        "prompt": "What is your favourite animal? Describe it \u2014 what it looks like, where it lives, what it can do.",
+        "example_response": "My favourite animal is the tiger. Tigers are big, powerful, and beautiful. They live in forests and jungles in Asia. A tiger can swim very well \u2014 it loves water! It can also run very fast \u2014 up to 65 kilometres per hour. Tigers are mostly orange with black stripes. They are strong and quiet hunters. Unfortunately, tigers are endangered \u2014 there are not many left in the wild. I think we should protect them.",
+        "key_phrases": [
+          "My favourite animal is ___",
+          "It can/can't ___",
+          "It lives in ___",
+          "It is + adjective",
+          "It has + body description"
+        ],
+        "min_words": 60
+      }
+    },
+    {
+      "task_id": "t0307_15",
+      "order": 15,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Animal groups: pets, farm animals, wild animals, birds, water animals",
+          "Nature: forest, ocean, river, lake, mountain, beach, desert",
+          "Can/can't for animal abilities: A fish can swim. An eagle can fly.",
+          "Animal descriptions: size, colour, habitat, special abilities"
+        ],
+        "next_lesson": "a1_unit3_lesson08",
+        "next_lesson_title": "Unit 3 Review"
+      }
+    }
+  ]
+}

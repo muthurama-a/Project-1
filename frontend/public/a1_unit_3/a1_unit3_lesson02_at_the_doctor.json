@@ -1,0 +1,257 @@
+{
+  "lesson_id": "a1_unit3_lesson02",
+  "unit": 3, "lesson_number": 2, "level": "A1",
+  "title": "At the doctor — describing symptoms",
+  "description": "Learn to have a complete doctor's appointment conversation and describe how long you have been sick.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0302_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Doctor's appointment vocabulary",
+      "content": {
+        "explanation": "These words and phrases are essential for a visit to the doctor.",
+        "items": [
+          { "phrase": "appointment", "note": "A booked time to see the doctor" },
+          { "phrase": "prescription", "note": "Doctor's written order for medicine" },
+          { "phrase": "medicine / tablet / pill", "note": "What you take to get better" },
+          { "phrase": "injection / shot", "note": "Medicine given by needle" },
+          { "phrase": "rest", "note": "Doctor says: stay home and rest" },
+          { "phrase": "symptoms", "note": "Signs of an illness — pain, fever, cough" },
+          { "phrase": "examination", "note": "When the doctor checks your body" },
+          { "phrase": "X-ray / scan", "note": "Medical image of your body" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0302_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Describing symptoms — how long",
+      "content": {
+        "explanation": "The doctor always asks 'how long' you have been sick. Use these patterns.",
+        "patterns": [
+          { "phrase": "since ___", "note": "From a specific point in time", "examples": ["since Monday", "since yesterday", "since last week"] },
+          { "phrase": "for ___", "note": "A period of time", "examples": ["for two days", "for a week", "for three hours"] }
+        ],
+        "doctor_questions": [
+          { "question": "What's the matter?", "meaning": "What is wrong with you?" },
+          { "question": "How long have you had this?", "meaning": "Since when?" },
+          { "question": "Where does it hurt?", "meaning": "Point to the pain" },
+          { "question": "Does it hurt when I do this?", "meaning": "Doctor touches / moves your body" },
+          { "question": "Are you allergic to any medicine?", "meaning": "Do any medicines cause a bad reaction?" },
+          { "question": "Do you smoke?", "meaning": "Lifestyle question" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0302_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Doctor's advice — should / shouldn't",
+      "content": {
+        "explanation": "Doctors use 'should' to give advice. Learn these common phrases.",
+        "advice_phrases": [
+          { "phrase": "You should rest at home.", "note": "Don't go to work" },
+          { "phrase": "You should drink lots of water.", "note": "Stay hydrated" },
+          { "phrase": "You should take this medicine twice a day.", "note": "Instruction for tablets" },
+          { "phrase": "You shouldn't eat spicy food.", "note": "Advice to avoid something" },
+          { "phrase": "You should come back in three days.", "note": "Follow-up appointment" },
+          { "phrase": "You need an X-ray.", "note": "Further tests required" }
+        ],
+        "grammar_note": "Should + base verb (no -s, no 'to'). You should rest. ✓  You should to rest. ✗"
+      }
+    },
+    {
+      "task_id": "t0302_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these doctor's appointment phrases clearly.",
+        "phrases": [
+          { "text": "I've had a headache for three days.", "audio_key": "headache_three_days" },
+          { "text": "Where exactly does it hurt?", "audio_key": "where_does_it_hurt" },
+          { "text": "You should rest and drink plenty of water.", "audio_key": "rest_drink_water" },
+          { "text": "I'll write you a prescription.", "audio_key": "write_prescription" },
+          { "text": "I'm not allergic to any medicine.", "audio_key": "no_allergy" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0302_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "Since or for?",
+      "content": {
+        "question": "'I have had a fever ___ Monday.' — Choose the correct word.",
+        "options": ["for", "since", "from", "at"],
+        "correct_index": 1,
+        "explanation": "Monday is a specific point in time → use 'since'. I have had a fever since Monday."
+      }
+    },
+    {
+      "task_id": "t0302_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "Since or for?",
+      "content": {
+        "question": "'My back has been painful ___ two weeks.'",
+        "options": ["since", "for", "from", "in"],
+        "correct_index": 1,
+        "explanation": "'Two weeks' is a duration/period of time → use 'for'. For two weeks."
+      }
+    },
+    {
+      "task_id": "t0302_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Doctor's question",
+      "content": {
+        "question": "The doctor asks 'What's the matter?' — What does this mean?",
+        "options": [
+          "What is your name?",
+          "What is wrong with you?",
+          "What medicine do you take?",
+          "What do you eat?"
+        ],
+        "correct_index": 1,
+        "explanation": "'What's the matter?' = 'What is wrong?' — a common phrase doctors and friends use."
+      }
+    },
+    {
+      "task_id": "t0302_08", "order": 8, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in since or for",
+      "content": {
+        "sentence": "I have had a cough ___ three days — it started ___ last Tuesday.",
+        "blanks": [
+          { "position": 1, "options": ["since", "for"], "correct": "for" },
+          { "position": 2, "options": ["since", "for"], "correct": "since" }
+        ],
+        "explanation": "Three days = duration → for. Last Tuesday = specific time → since."
+      }
+    },
+    {
+      "task_id": "t0302_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the doctor's advice",
+      "content": {
+        "sentence": "You ___ rest at home and you ___ go to work for two days.",
+        "blanks": [
+          { "position": 1, "options": ["should", "shouldn't", "can't"], "correct": "should" },
+          { "position": 2, "options": ["should", "shouldn't", "can't"], "correct": "shouldn't" }
+        ],
+        "explanation": "Rest = positive advice → should. Don't go to work = negative advice → shouldn't."
+      }
+    },
+    {
+      "task_id": "t0302_10", "order": 10, "type": "sort_words", "category": "vocabulary",
+      "title": "Build the symptom sentence",
+      "content": {
+        "instruction": "Rearrange to tell the doctor how long you have been sick.",
+        "words": ["I", "a", "have", "sore", "had", "throat", "since", "yesterday"],
+        "correct_sentence": "I have had a sore throat since yesterday.",
+        "explanation": "I have had + a + [problem] + since + [point in time]."
+      }
+    },
+    {
+      "task_id": "t0302_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match doctor's question to patient's answer",
+      "content": {
+        "instruction": "Match each doctor's question with the best patient reply.",
+        "pairs": [
+          { "prompt": "What's the matter?", "answer": "I have a bad headache and a fever." },
+          { "prompt": "How long have you had this?", "answer": "For about three days." },
+          { "prompt": "Where does it hurt?", "answer": "Here — in my lower back." },
+          { "prompt": "Are you allergic to any medicine?", "answer": "No, I'm not allergic to anything." },
+          { "prompt": "What should I do?", "answer": "You should rest and drink lots of water." }
+        ]
+      }
+    },
+    {
+      "task_id": "t0302_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — At the doctor's clinic",
+      "content": {
+        "context": "Ravi visits the doctor after feeling unwell for a few days.",
+        "dialogue": [
+          { "speaker": "Doctor", "line": "Good morning! Please sit down. What's the matter?" },
+          { "speaker": "Ravi", "line": "Good morning, Doctor. I don't feel well. I have a high fever and a very bad headache." },
+          { "speaker": "Doctor", "line": "I see. How long have you had these symptoms?" },
+          { "speaker": "Ravi", "line": "For about three days — since Monday." },
+          { "speaker": "Doctor", "line": "Do you have a cough or sore throat?" },
+          { "speaker": "Ravi", "line": "Yes, my throat is a bit sore. And I feel very tired and weak." },
+          { "speaker": "Doctor", "line": "Okay. Let me examine you. Open your mouth, please. Say 'Ah'." },
+          { "speaker": "Ravi", "line": "Aaaah." },
+          { "speaker": "Doctor", "line": "Your throat is a little inflamed. Are you allergic to any medicine?" },
+          { "speaker": "Ravi", "line": "No, I'm not." },
+          { "speaker": "Doctor", "line": "Good. I'll prescribe you some tablets. Take one three times a day with food." },
+          { "speaker": "Ravi", "line": "Should I rest at home?" },
+          { "speaker": "Doctor", "line": "Yes, you should rest for two days. Drink lots of water and avoid cold food." },
+          { "speaker": "Ravi", "line": "Thank you, Doctor. When should I come back?" },
+          { "speaker": "Doctor", "line": "Come back in three days if you don't feel better. Take care!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "How long has Ravi had his symptoms?",
+            "options": ["One day", "Two days", "Three days", "A week"],
+            "correct_index": 2
+          },
+          {
+            "question": "What does the doctor prescribe?",
+            "options": ["An injection", "Tablets", "An X-ray", "A scan"],
+            "correct_index": 1
+          },
+          {
+            "question": "How many times a day should Ravi take the tablets?",
+            "options": ["Once", "Twice", "Three times", "Four times"],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0302_13", "order": 13, "type": "error_correction", "category": "vocabulary",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence correctly uses should?",
+        "wrong_sentence": "You should to rest and you should to drink water.",
+        "options": [
+          "You should to rest and you should to drink water.",
+          "You should rest and you should drink water.",
+          "You should resting and you should drinking water.",
+          "You should rests and you should drinks water."
+        ],
+        "correct_index": 1,
+        "explanation": "Should + BASE verb only. No 'to', no -ing, no -s. You should rest. ✓"
+      }
+    },
+    {
+      "task_id": "t0302_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "The doctor asks: 'How long have you had this stomachache?' Your pain started two days ago.",
+        "question": "Which is the most accurate and natural reply?",
+        "options": [
+          "Since two days.",
+          "From two days.",
+          "For two days.",
+          "Two days since."
+        ],
+        "correct_index": 2,
+        "explanation": "Two days = a period of time → use 'for'. For two days. ✓"
+      }
+    },
+    {
+      "task_id": "t0302_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Doctor role play",
+      "content": {
+        "instruction": "Role play a doctor's appointment. Play BOTH the doctor and the patient. Cover: greeting, symptoms, how long, doctor's advice.",
+        "prompt": "You have a bad cold and a cough for four days. Visit the doctor.",
+        "example_response": "Doctor: Good morning! What's the matter? Patient: Good morning. I have a bad cold and a terrible cough. Doctor: How long have you had these symptoms? Patient: For four days — since last Thursday. Doctor: Do you have a fever? Patient: Yes, a small one. I also feel very tired. Doctor: You should rest at home and drink lots of warm water. Take these tablets twice a day. Patient: Should I avoid cold food? Doctor: Yes, you shouldn't eat ice cream or cold drinks. Come back in three days if you're not better.",
+        "key_phrases": ["What's the matter?", "I have a ___", "For ___ / Since ___", "You should / shouldn't", "Take ___ times a day"],
+        "min_words": 80
+      }
+    },
+    {
+      "task_id": "t0302_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Doctor vocab: appointment, prescription, medicine, tablet, symptoms, examination",
+          "Duration: for + period (for three days) / since + specific time (since Monday)",
+          "Doctor's questions: What's the matter? / How long? / Where does it hurt? / Any allergies?",
+          "Doctor's advice: should/shouldn't + base verb",
+          "Should structure: should + BASE verb — no 'to', no -ing, no -s"
+        ],
+        "next_lesson": "a1_unit3_lesson03",
+        "next_lesson_title": "Clothes & colours — describing appearance"
+      }
+    }
+  ]
+}

@@ -12,6 +12,7 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     current_streak = Column(Integer, default=0)
     last_active_date = Column(DateTime(timezone=True), nullable=True)
+    total_xp = Column(Integer, default=0)
 
 class TestResult(Base):
     __tablename__ = "test_results"
@@ -114,3 +115,11 @@ class VelocityLog(Base):
     transcript = Column(Text, nullable=True)
 
     created_at = Column(DateTime(timezone=True), server_default=func.now())
+
+class UserLessonCompletion(Base):
+    __tablename__ = "user_lesson_completions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), index=True)
+    lesson_id = Column(Integer, ForeignKey("lessons.id"), index=True)
+    completed_at = Column(DateTime(timezone=True), server_default=func.now())

@@ -1,0 +1,254 @@
+{
+  "lesson_id": "a1_unit2_lesson06",
+  "unit": 2, "lesson_number": 6, "level": "A1",
+  "title": "Transport — getting around",
+  "description": "Learn transport vocabulary, how to ask for directions, and use 'can' for ability and requests.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0206_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Types of transport",
+      "content": {
+        "explanation": "Learn the most common ways to travel in English.",
+        "items": [
+          { "phrase": "bus", "note": "Take the bus / catch the bus" },
+          { "phrase": "train / metro", "note": "Take the train / catch the metro" },
+          { "phrase": "auto-rickshaw / auto", "note": "Very common in India — take an auto" },
+          { "phrase": "taxi / cab", "note": "Book a taxi / call a cab" },
+          { "phrase": "bicycle / bike", "note": "Ride a bicycle" },
+          { "phrase": "motorbike / scooter", "note": "Ride a motorbike" },
+          { "phrase": "car", "note": "Drive a car / go by car" },
+          { "phrase": "on foot / walk", "note": "Go on foot / walk there" },
+          { "phrase": "flight / plane", "note": "Take a flight / fly to" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Grammar: can / can't",
+      "content": {
+        "explanation": "Use 'can' to talk about ability (what is possible) and to make polite requests.",
+        "uses": [
+          { "use": "Ability", "examples": ["I can drive a car.", "She can't ride a bicycle.", "Can you swim?"] },
+          { "use": "Polite request", "examples": ["Can you help me, please?", "Can I have a ticket?", "Can you tell me the way?"] },
+          { "use": "Permission", "examples": ["Can I sit here?", "You can park here.", "You can't park here."] }
+        ],
+        "structure": {
+          "positive": "Subject + can + base verb (no -s, no -ing)",
+          "negative": "Subject + can't / cannot + base verb",
+          "question": "Can + subject + base verb?"
+        },
+        "common_errors": [
+          { "wrong": "She cans drive.", "right": "She can drive. (no -s after can)" },
+          { "wrong": "I can to swim.", "right": "I can swim. (no 'to' after can)" },
+          { "wrong": "Can you driving?", "right": "Can you drive? (base verb, no -ing)" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Travel phrases",
+      "content": {
+        "explanation": "Use these phrases when using transport or asking about travel.",
+        "items": [
+          { "phrase": "How do I get to ___?", "note": "Ask for directions" },
+          { "phrase": "How far is it?", "note": "Ask about distance" },
+          { "phrase": "How long does it take?", "note": "Ask about travel time" },
+          { "phrase": "It takes about ___ minutes.", "note": "Answer about travel time" },
+          { "phrase": "It's ___ kilometres away.", "note": "Answer about distance" },
+          { "phrase": "Take the bus / auto to ___.", "note": "Give transport advice" },
+          { "phrase": "Get off at ___.", "note": "Tell someone where to leave the bus/metro" },
+          { "phrase": "Is there a direct bus?", "note": "Ask if there's a non-stop route" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these travel phrases clearly.",
+        "phrases": [
+          { "text": "Can you tell me how to get to the station?", "audio_key": "get_to_station" },
+          { "text": "How long does it take by bus?", "audio_key": "how_long_by_bus" },
+          { "text": "It takes about twenty minutes.", "audio_key": "twenty_minutes" },
+          { "text": "I can't drive — I always take the metro.", "audio_key": "cant_drive_metro" },
+          { "text": "Get off at the third stop.", "audio_key": "get_off_third_stop" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Can or can't?",
+      "content": {
+        "question": "She never drives — she didn't learn. 'She ___ drive.'",
+        "options": ["can", "can't", "cans", "don't can"],
+        "correct_index": 1,
+        "explanation": "She never learned to drive → she can't drive. Negative ability."
+      }
+    },
+    {
+      "task_id": "t0206_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Correct can sentence",
+      "content": {
+        "question": "Which sentence is correct?",
+        "options": ["She cans ride a bike.", "She can rides a bike.", "She can ride a bike.", "She can to ride a bike."],
+        "correct_index": 2,
+        "explanation": "Can + base verb (no -s, no -ing, no 'to'). She can ride. ✓"
+      }
+    },
+    {
+      "task_id": "t0206_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Which transport?",
+      "content": {
+        "question": "You want to travel from Chennai to Delhi. Which transport do you use?",
+        "options": ["Auto-rickshaw", "Bicycle", "Flight or train", "Bus in the city"],
+        "correct_index": 2,
+        "explanation": "Long distances between cities = train or flight. Auto and bicycle are for short local trips."
+      }
+    },
+    {
+      "task_id": "t0206_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in: can / can't",
+      "content": {
+        "sentence": "My father ___ drive but I ___. I always take the bus.",
+        "blanks": [
+          { "position": 1, "options": ["can", "can't"], "correct": "can" },
+          { "position": 2, "options": ["can", "can't"], "correct": "can't" }
+        ],
+        "explanation": "Father drives → can. I always take the bus (don't drive) → can't."
+      }
+    },
+    {
+      "task_id": "t0206_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the travel phrase",
+      "content": {
+        "sentence": "Excuse me, how ___ does it ___ to get to the airport by metro?",
+        "blanks": [
+          { "position": 1, "options": ["long", "far", "much", "many"], "correct": "long" },
+          { "position": 2, "options": ["take", "go", "cost", "need"], "correct": "take" }
+        ],
+        "explanation": "How long does it take? = asking about time to travel."
+      }
+    },
+    {
+      "task_id": "t0206_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the sentence with can",
+      "content": {
+        "instruction": "Rearrange to make a polite request.",
+        "words": ["you", "me", "tell", "Can", "bus", "the", "to", "station", "how"],
+        "correct_sentence": "Can you tell me how to get to the bus station?",
+        "explanation": "Can + you + tell + me + how + to + get to + [place]?"
+      }
+    },
+    {
+      "task_id": "t0206_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match transport to verb",
+      "content": {
+        "instruction": "Match each transport with the correct verb.",
+        "pairs": [
+          { "prompt": "car", "answer": "drive a car" },
+          { "prompt": "bicycle", "answer": "ride a bicycle" },
+          { "prompt": "bus", "answer": "take the bus" },
+          { "prompt": "plane", "answer": "fly / take a flight" },
+          { "prompt": "foot", "answer": "walk / go on foot" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Asking for directions",
+      "content": {
+        "context": "Sara is a tourist in Chennai. She asks a local person for help.",
+        "dialogue": [
+          { "speaker": "Sara", "line": "Excuse me! Can you help me, please?" },
+          { "speaker": "Local", "line": "Of course! What do you need?" },
+          { "speaker": "Sara", "line": "How do I get to the Marina Beach from here?" },
+          { "speaker": "Local", "line": "It's not very far. You can take bus number 21C, or you can take an auto." },
+          { "speaker": "Sara", "line": "How long does it take by bus?" },
+          { "speaker": "Local", "line": "About fifteen minutes. Get off at the beach stop — you'll see the sea!" },
+          { "speaker": "Sara", "line": "And by auto?" },
+          { "speaker": "Local", "line": "Only ten minutes, but it's more expensive." },
+          { "speaker": "Sara", "line": "Okay, I'll take the bus. Can I buy a ticket on the bus?" },
+          { "speaker": "Local", "line": "Yes, you can pay the conductor on the bus." },
+          { "speaker": "Sara", "line": "Perfect! Thank you so much!" },
+          { "speaker": "Local", "line": "You're welcome! Enjoy the beach!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Where does Sara want to go?",
+            "options": ["The city centre", "Marina Beach", "The train station", "The airport"],
+            "correct_index": 1
+          },
+          {
+            "question": "How long does the bus take?",
+            "options": ["Five minutes", "Ten minutes", "Fifteen minutes", "Twenty minutes"],
+            "correct_index": 2
+          },
+          {
+            "question": "Which transport does Sara choose?",
+            "options": ["Auto", "Bus", "Taxi", "Metro"],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0206_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct?",
+        "wrong_sentence": "Can you to tell me where is the bus stop?",
+        "options": [
+          "Can you to tell me where is the bus stop?",
+          "Can you tell me where the bus stop is?",
+          "Can you tell me where is bus stop?",
+          "You can tell me where the bus stop is?"
+        ],
+        "correct_index": 1,
+        "explanation": "No 'to' after can. Embedded question: where + subject + verb (not inverted)."
+      }
+    },
+    {
+      "task_id": "t0206_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You are in a new city. You need to get to the railway station. You see a person on the street.",
+        "question": "Which is the most complete and polite thing to say?",
+        "options": [
+          "Station where?",
+          "Railway station, please.",
+          "Excuse me, can you tell me how to get to the railway station?",
+          "I need station. How far?"
+        ],
+        "correct_index": 2,
+        "explanation": "Full polite sentence: Excuse me + Can you + tell me + how to get to + [place]?"
+      }
+    },
+    {
+      "task_id": "t0206_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — How do you get around?",
+      "content": {
+        "instruction": "Talk for 45 seconds about how you travel in your daily life. Use can/can't.",
+        "prompt": "How do you usually travel to work or school? Can you drive? What transport do you like?",
+        "example_response": "I usually travel to work by bus. I can't drive — I never learned. My commute takes about thirty minutes. I take bus number 21 and get off at the last stop. I don't like taking autos because they're expensive. On weekends I sometimes walk to the market — it's only ten minutes on foot. I'd like to learn to drive one day!",
+        "key_phrases": ["I travel by ___", "I can/can't ___", "It takes about ___", "Get off at ___", "I usually / I sometimes"],
+        "min_words": 55
+      }
+    },
+    {
+      "task_id": "t0206_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Transport: bus, train, metro, auto, taxi, bike, car, flight, on foot",
+          "Verbs: drive (car), ride (bike), take (bus/train), fly (plane), walk",
+          "Can/can't: ability (I can drive), requests (Can you help me?)",
+          "Can + base verb ONLY — no -s, no -to, no -ing",
+          "Travel questions: How do I get to? / How long does it take? / How far is it?"
+        ],
+        "next_lesson": "a1_unit2_lesson07",
+        "next_lesson_title": "At a restaurant — making requests"
+      }
+    }
+  ]
+}

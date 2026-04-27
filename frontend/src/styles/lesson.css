@@ -454,6 +454,12 @@
   border-bottom: 4px solid #cecece;
 }
 
+.lesson-continue-btn.almost-btn {
+  background: #f59e0b;
+  color: white;
+  border-bottom: 4px solid #d97706;
+}
+
 .lesson-continue-btn.wrong-btn {
   background: #ff4b4b;
   color: white;
@@ -474,6 +480,7 @@
 
 .feedback-banner-area.correct { background: #eef2ff; }
 .feedback-banner-area.wrong { background: #ffdfe0; }
+.feedback-banner-area.almost { background: #fff7ed; }
 
 .feedback-content {
   max-width: 1000px;
@@ -496,6 +503,7 @@
 
 .feedback-icon.correct { color: #4f46e5; }
 .feedback-icon.wrong { color: #ff4b4b; }
+.feedback-icon.almost { color: #f59e0b; }
 
 .feedback-text h2 {
   margin: 0 0 4px 0;
@@ -505,11 +513,24 @@
 
 .feedback-text.correct h2 { color: #4f46e5; }
 .feedback-text.wrong h2 { color: #ff4b4b; }
+.feedback-text.almost h2 { color: #f59e0b; }
 .feedback-text p {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #ea2b2b;
+  color: #3c3c3c; /* Neutral default */
+}
+
+.feedback-text.wrong p {
+  color: #ea2b2b; /* Red for errors */
+}
+
+.feedback-text.correct p {
+  color: #4f46e5; /* Theme color for correct explanations */
+}
+
+.feedback-text.almost p {
+  color: #f59e0b; /* Amber for almost */
 }
 
 /* ── Completion Screen ───────────────────────────────────────── */

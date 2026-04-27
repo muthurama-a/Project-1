@@ -1,0 +1,239 @@
+{
+  "lesson_id": "a1_unit2_lesson03",
+  "unit": 2, "lesson_number": 3, "level": "A1",
+  "title": "Telling the time",
+  "description": "Learn how to say and ask the time in English — o'clock, half past, quarter to/past.",
+  "estimated_minutes": 20, "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0203_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Telling the time — the basics",
+      "content": {
+        "explanation": "In English we read time in a specific way. Learn these patterns.",
+        "time_patterns": [
+          { "pattern": "o'clock", "use": "Exactly on the hour", "examples": ["7 o'clock", "12 o'clock", "3 o'clock"] },
+          { "pattern": "half past ___", "use": "30 minutes past the hour", "examples": ["half past seven = 7:30", "half past three = 3:30"] },
+          { "pattern": "quarter past ___", "use": "15 minutes past the hour", "examples": ["quarter past two = 2:15", "quarter past nine = 9:15"] },
+          { "pattern": "quarter to ___", "use": "15 minutes before the NEXT hour", "examples": ["quarter to eight = 7:45", "quarter to one = 12:45"] },
+          { "pattern": "___ minutes past ___", "use": "1–29 minutes past the hour", "examples": ["ten past six = 6:10", "twenty past four = 4:20"] },
+          { "pattern": "___ minutes to ___", "use": "1–29 minutes before the next hour", "examples": ["ten to nine = 8:50", "five to twelve = 11:55"] }
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "AM and PM / Morning and evening",
+      "content": {
+        "explanation": "We can say AM/PM or use words like morning, afternoon, and evening.",
+        "items": [
+          { "phrase": "in the morning", "note": "12am – 12pm (midnight to noon)" },
+          { "phrase": "in the afternoon", "note": "12pm – 6pm" },
+          { "phrase": "in the evening", "note": "6pm – bedtime" },
+          { "phrase": "at night", "note": "Late — when it's dark and quiet" },
+          { "phrase": "at midnight", "note": "Exactly 12am" },
+          { "phrase": "at noon / midday", "note": "Exactly 12pm" }
+        ],
+        "examples": [
+          "My class is at 9 o'clock in the morning.",
+          "I have lunch at half past twelve.",
+          "The film starts at quarter past seven in the evening."
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Asking and saying the time",
+      "content": {
+        "explanation": "Use these phrases to ask and answer time questions.",
+        "items": [
+          { "phrase": "What time is it?", "note": "Standard question — very common" },
+          { "phrase": "What's the time?", "note": "Casual version — same meaning" },
+          { "phrase": "Do you have the time?", "note": "Polite way to ask a stranger" },
+          { "phrase": "It's ___ o'clock.", "note": "Answer for exact hour" },
+          { "phrase": "It's half past ___.", "note": "Answer for :30" },
+          { "phrase": "It's about ___.", "note": "Approximate — 'It's about three o'clock'" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — time phrases",
+      "content": {
+        "instruction": "Repeat each time expression. Listen carefully to the rhythm.",
+        "phrases": [
+          { "text": "It's seven o'clock.", "audio_key": "seven_oclock" },
+          { "text": "It's half past three.", "audio_key": "half_past_three" },
+          { "text": "It's quarter past nine.", "audio_key": "quarter_past_nine" },
+          { "text": "It's quarter to eight.", "audio_key": "quarter_to_eight" },
+          { "text": "What time is it, please?", "audio_key": "what_time_please" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_05", "order": 5, "type": "mcq", "category": "knowledge_check",
+      "title": "What time is it?",
+      "content": {
+        "question": "The clock shows 3:30. How do you say this in English?",
+        "options": ["Three thirty o'clock", "Half past three", "Quarter to three", "Quarter past three"],
+        "correct_index": 1,
+        "explanation": "3:30 = 30 minutes past 3 = half past three."
+      }
+    },
+    {
+      "task_id": "t0203_06", "order": 6, "type": "mcq", "category": "knowledge_check",
+      "title": "What time is it?",
+      "content": {
+        "question": "The clock shows 7:45. How do you say this?",
+        "options": ["Quarter past seven", "Half past seven", "Quarter to eight", "Seven forty-five o'clock"],
+        "correct_index": 2,
+        "explanation": "7:45 = 15 minutes before 8 = quarter to eight."
+      }
+    },
+    {
+      "task_id": "t0203_07", "order": 7, "type": "mcq", "category": "knowledge_check",
+      "title": "Which time is correct?",
+      "content": {
+        "question": "'My train leaves at ten past six.' What time does the train leave?",
+        "options": ["6:00", "6:10", "6:30", "5:50"],
+        "correct_index": 1,
+        "explanation": "Ten past six = 10 minutes after 6 = 6:10."
+      }
+    },
+    {
+      "task_id": "t0203_08", "order": 8, "type": "fill_blank", "category": "knowledge_check",
+      "title": "Fill in the time expression",
+      "content": {
+        "sentence": "The meeting starts at _____ nine. (8:45)",
+        "options": ["quarter past", "quarter to", "half past", "ten past"],
+        "correct": "quarter to",
+        "explanation": "8:45 = 15 minutes before 9 = quarter to nine."
+      }
+    },
+    {
+      "task_id": "t0203_09", "order": 9, "type": "fill_blank", "category": "knowledge_check",
+      "title": "Fill in the time",
+      "content": {
+        "sentence": "My class starts at _____ past seven. (7:20)",
+        "options": ["quarter", "half", "twenty", "ten"],
+        "correct": "twenty",
+        "explanation": "7:20 = 20 minutes past 7 = twenty past seven."
+      }
+    },
+    {
+      "task_id": "t0203_10", "order": 10, "type": "sort_words", "category": "knowledge_check",
+      "title": "Build the time sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct sentence about time.",
+        "words": ["starts", "The", "film", "past", "half", "at", "seven"],
+        "correct_sentence": "The film starts at half past seven.",
+        "explanation": "at + half past + [hour] — 7:30."
+      }
+    },
+    {
+      "task_id": "t0203_11", "order": 11, "type": "match_pairs", "category": "knowledge_check",
+      "title": "Match the clock time to words",
+      "content": {
+        "instruction": "Match each digital time to its spoken English form.",
+        "pairs": [
+          { "prompt": "6:00", "answer": "six o'clock" },
+          { "prompt": "9:30", "answer": "half past nine" },
+          { "prompt": "4:15", "answer": "quarter past four" },
+          { "prompt": "11:45", "answer": "quarter to twelve" },
+          { "prompt": "2:10", "answer": "ten past two" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Asking the time",
+      "content": {
+        "context": "Arun is running late and stops someone on the street to ask the time.",
+        "dialogue": [
+          { "speaker": "Arun", "line": "Excuse me! Do you have the time?" },
+          { "speaker": "Stranger", "line": "Sure! It's quarter past nine." },
+          { "speaker": "Arun", "line": "Oh no! My meeting starts at half past nine!" },
+          { "speaker": "Stranger", "line": "You still have fifteen minutes." },
+          { "speaker": "Arun", "line": "Right. Is the office on MG Road far from here?" },
+          { "speaker": "Stranger", "line": "No, it's close. About five minutes by auto." },
+          { "speaker": "Arun", "line": "Perfect. Thank you so much!" },
+          { "speaker": "Stranger", "line": "Good luck! Don't be late!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "What time is it when Arun asks?",
+            "options": ["Half past nine", "Quarter to nine", "Quarter past nine", "Nine o'clock"],
+            "correct_index": 2
+          },
+          {
+            "question": "What time does Arun's meeting start?",
+            "options": ["9:00", "9:15", "9:30", "9:45"],
+            "correct_index": 2
+          },
+          {
+            "question": "How long does it take to reach the office by auto?",
+            "options": ["Fifteen minutes", "Ten minutes", "Five minutes", "Twenty minutes"],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0203_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence says the time correctly?",
+        "wrong_sentence": "The train leaves at seven o'clock and half.",
+        "options": [
+          "The train leaves at seven o'clock and half.",
+          "The train leaves at half seven o'clock.",
+          "The train leaves at half past seven.",
+          "The train leaves at seven and half past."
+        ],
+        "correct_index": 2,
+        "explanation": "7:30 = half past seven. 'Half past' always comes BEFORE the hour."
+      }
+    },
+    {
+      "task_id": "t0203_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You don't have your phone. You want to know the time. You see a person nearby.",
+        "question": "What is the most polite way to ask?",
+        "options": [
+          "Time! Now!",
+          "What is time?",
+          "Excuse me, do you have the time?",
+          "Tell me the time please."
+        ],
+        "correct_index": 2,
+        "explanation": "'Excuse me, do you have the time?' — polite, natural, and very common."
+      }
+    },
+    {
+      "task_id": "t0203_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your daily schedule with times",
+      "content": {
+        "instruction": "Talk about your daily schedule using specific times — at least 5 activities.",
+        "prompt": "What time do you do things in your day? Use o'clock, half past, quarter past/to.",
+        "example_response": "I wake up at six o'clock every morning. I have breakfast at quarter past six. I leave the house at half past seven. My work starts at nine o'clock. I have lunch at one o'clock. I come home at half past six in the evening. I go to sleep at quarter to eleven.",
+        "key_phrases": ["at ___ o'clock", "at half past ___", "at quarter past/to ___", "in the morning/evening"],
+        "min_words": 50
+      }
+    },
+    {
+      "task_id": "t0203_16", "order": 16, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Time expressions: o'clock, half past, quarter past, quarter to",
+          "Minutes: ten past six (6:10), twenty to four (3:40)",
+          "Asking: What time is it? / Do you have the time?",
+          "Answering: It's half past three. / It's about nine o'clock.",
+          "AM/PM: in the morning, afternoon, evening, at night"
+        ],
+        "next_lesson": "a1_unit2_lesson04",
+        "next_lesson_title": "Days, months and dates"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4221 @@
+{
+  "unit": {
+    "lessons": [
+      {
+        "lesson_id": "a1_unit2_lesson01",
+        "unit": 2,
+        "lesson_number": 1,
+        "level": "A1",
+        "title": "Food & drink \u2014 likes and ordering",
+        "description": "Learn vocabulary for food and drink, express preferences, and practise ordering politely.",
+        "estimated_minutes": 20,
+        "xp_reward": 120,
+        "tasks": [
+          {
+            "task_id": "t0201_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Food vocabulary groups",
+            "content": {
+              "explanation": "Learn the most common food and drink words organised by group.",
+              "groups": [
+                {
+                  "group": "Staple foods",
+                  "items": [
+                    "rice",
+                    "bread",
+                    "pasta",
+                    "noodles",
+                    "potatoes"
+                  ]
+                },
+                {
+                  "group": "Protein",
+                  "items": [
+                    "chicken",
+                    "fish",
+                    "egg",
+                    "meat",
+                    "beans"
+                  ]
+                },
+                {
+                  "group": "Fruits",
+                  "items": [
+                    "apple",
+                    "banana",
+                    "mango",
+                    "orange",
+                    "grapes"
+                  ]
+                },
+                {
+                  "group": "Vegetables",
+                  "items": [
+                    "tomato",
+                    "onion",
+                    "carrot",
+                    "spinach",
+                    "pepper"
+                  ]
+                },
+                {
+                  "group": "Drinks",
+                  "items": [
+                    "water",
+                    "tea",
+                    "coffee",
+                    "juice",
+                    "milk"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Taste words",
+            "content": {
+              "explanation": "Use these adjectives to describe how food tastes.",
+              "items": [
+                {
+                  "phrase": "delicious / tasty",
+                  "note": "Very good \u2014 I love this!"
+                },
+                {
+                  "phrase": "sweet",
+                  "note": "Like sugar \u2014 cake, mango, chocolate"
+                },
+                {
+                  "phrase": "spicy",
+                  "note": "Hot flavour \u2014 chilli, pepper"
+                },
+                {
+                  "phrase": "salty",
+                  "note": "Like salt \u2014 chips, pickles"
+                },
+                {
+                  "phrase": "sour",
+                  "note": "Like lemon or tamarind"
+                },
+                {
+                  "phrase": "bitter",
+                  "note": "Like coffee or dark chocolate"
+                },
+                {
+                  "phrase": "fresh",
+                  "note": "Good quality, not old"
+                },
+                {
+                  "phrase": "horrible",
+                  "note": "Very bad \u2014 I hate this!"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Grammar: a / an / some",
+            "content": {
+              "explanation": "Before food words, choose 'a', 'an', or 'some' correctly.",
+              "rules": [
+                {
+                  "rule": "a + singular noun (consonant sound)",
+                  "examples": [
+                    "a banana",
+                    "a sandwich",
+                    "a biscuit"
+                  ]
+                },
+                {
+                  "rule": "an + singular noun (vowel sound: a,e,i,o,u)",
+                  "examples": [
+                    "an apple",
+                    "an orange",
+                    "an egg"
+                  ]
+                },
+                {
+                  "rule": "some + uncountable noun",
+                  "examples": [
+                    "some rice",
+                    "some water",
+                    "some bread",
+                    "some milk"
+                  ]
+                },
+                {
+                  "rule": "some + plural countable noun",
+                  "examples": [
+                    "some apples",
+                    "some eggs",
+                    "some biscuits"
+                  ]
+                }
+              ],
+              "tip": "Uncountable = things you cannot count individually (water, rice, milk)."
+            }
+          },
+          {
+            "task_id": "t0201_04",
+            "order": 4,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Ordering politely",
+            "content": {
+              "explanation": "These phrases are used to order food and drink politely.",
+              "items": [
+                {
+                  "phrase": "I'd like ___.",
+                  "note": "Polite way to say what you want"
+                },
+                {
+                  "phrase": "Can I have ___, please?",
+                  "note": "Also polite \u2014 very common"
+                },
+                {
+                  "phrase": "I'll have ___.",
+                  "note": "Casual ordering \u2014 at a restaurant"
+                },
+                {
+                  "phrase": "Is that everything?",
+                  "note": "Waiter asks if you need more"
+                },
+                {
+                  "phrase": "Yes, that's all. / No, I'd also like ___.",
+                  "note": "Your reply"
+                },
+                {
+                  "phrase": "The bill, please.",
+                  "note": "Ask for the bill at the end"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_05",
+            "order": 5,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat",
+            "content": {
+              "instruction": "Repeat each phrase naturally. Focus on the polite tone.",
+              "phrases": [
+                {
+                  "text": "I'd like an orange juice, please.",
+                  "audio_key": "id_like_juice"
+                },
+                {
+                  "text": "Can I have some rice, please?",
+                  "audio_key": "can_have_rice"
+                },
+                {
+                  "text": "This is absolutely delicious!",
+                  "audio_key": "absolutely_delicious"
+                },
+                {
+                  "text": "I don't like spicy food very much.",
+                  "audio_key": "dont_like_spicy"
+                },
+                {
+                  "text": "The bill, please.",
+                  "audio_key": "the_bill_please"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "a, an, or some?",
+            "content": {
+              "question": "Choose correct: 'I want ___ apple and ___ milk for breakfast.'",
+              "options": [
+                "a / some",
+                "an / some",
+                "an / a",
+                "some / some"
+              ],
+              "correct_index": 1,
+              "explanation": "'Apple' starts with vowel sound \u2192 an. 'Milk' is uncountable \u2192 some."
+            }
+          },
+          {
+            "task_id": "t0201_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "What taste is it?",
+            "content": {
+              "question": "You eat a lemon. It makes your mouth close up. How does it taste?",
+              "options": [
+                "sweet",
+                "spicy",
+                "sour",
+                "bitter"
+              ],
+              "correct_index": 2,
+              "explanation": "Lemons taste sour \u2014 a sharp, acidic flavour."
+            }
+          },
+          {
+            "task_id": "t0201_08",
+            "order": 8,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Polite ordering",
+            "content": {
+              "question": "You want to order soup at a restaurant. Which is the most polite way?",
+              "options": [
+                "Give me soup.",
+                "Soup!",
+                "I'd like some soup, please.",
+                "I want soup now."
+              ],
+              "correct_index": 2,
+              "explanation": "'I'd like some soup, please' is polite and natural at a restaurant."
+            }
+          },
+          {
+            "task_id": "t0201_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in: a / an / some",
+            "content": {
+              "sentence": "For lunch I have ___ egg, ___ bread, and ___ tomatoes.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "a",
+                    "an",
+                    "some"
+                  ],
+                  "correct": "an"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "a",
+                    "an",
+                    "some"
+                  ],
+                  "correct": "some"
+                },
+                {
+                  "position": 3,
+                  "options": [
+                    "a",
+                    "an",
+                    "some"
+                  ],
+                  "correct": "some"
+                }
+              ],
+              "explanation": "an egg (vowel e-), some bread (uncountable), some tomatoes (plural countable)."
+            }
+          },
+          {
+            "task_id": "t0201_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the ordering sentence",
+            "content": {
+              "instruction": "Rearrange to make a correct polite ordering sentence.",
+              "words": [
+                "like",
+                "some",
+                "I'd",
+                "soup",
+                "and",
+                "bread",
+                "please"
+              ],
+              "correct_sentence": "I'd like some soup and bread, please.",
+              "explanation": "I'd like + some/a/an + [food], please."
+            }
+          },
+          {
+            "task_id": "t0201_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match taste to food",
+            "content": {
+              "instruction": "Match each food to its most common taste.",
+              "pairs": [
+                {
+                  "prompt": "chocolate cake",
+                  "answer": "sweet"
+                },
+                {
+                  "prompt": "green chilli",
+                  "answer": "spicy"
+                },
+                {
+                  "prompt": "lemon",
+                  "answer": "sour"
+                },
+                {
+                  "prompt": "black coffee",
+                  "answer": "bitter"
+                },
+                {
+                  "prompt": "sea fish",
+                  "answer": "salty"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 At a caf\u00e9",
+            "content": {
+              "context": "Priya is ordering breakfast at a caf\u00e9 for the first time.",
+              "dialogue": [
+                {
+                  "speaker": "Waiter",
+                  "line": "Good morning! Welcome. What would you like?"
+                },
+                {
+                  "speaker": "Priya",
+                  "line": "Good morning! Can I see the menu, please?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Of course! Here you are."
+                },
+                {
+                  "speaker": "Priya",
+                  "line": "Thank you. I'd like some eggs and toast, please."
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Sure. Anything to drink?"
+                },
+                {
+                  "speaker": "Priya",
+                  "line": "An orange juice, please. Is the juice fresh?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Yes, it's freshly squeezed!"
+                },
+                {
+                  "speaker": "Priya",
+                  "line": "Perfect. That's all, thank you."
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Great. I'll bring it in a few minutes."
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "What food does Priya order?",
+                  "options": [
+                    "Rice and soup",
+                    "Eggs and toast",
+                    "Pasta and salad",
+                    "Bread and coffee"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "What drink does she order?",
+                  "options": [
+                    "Coffee",
+                    "Milk",
+                    "Orange juice",
+                    "Tea"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What does Priya ask about the juice?",
+                  "options": [
+                    "If it is cold",
+                    "If it is fresh",
+                    "If it is sweet",
+                    "If it is expensive"
+                  ],
+                  "correct_index": 1
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0201_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Choose the correct sentence.",
+              "wrong_sentence": "I'd like a rice and a egg, please.",
+              "options": [
+                "I'd like a rice and a egg, please.",
+                "I'd like some rice and an egg, please.",
+                "I'd like some rice and a egg, please.",
+                "I'd like a rice and an egg, please."
+              ],
+              "correct_index": 1,
+              "explanation": "Rice is uncountable \u2192 some rice. Egg starts with vowel \u2192 an egg."
+            }
+          },
+          {
+            "task_id": "t0201_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "You finish your meal at a restaurant. You want to pay and leave.",
+              "question": "What do you say to the waiter?",
+              "options": [
+                "I want money!",
+                "Give me the paper.",
+                "The bill, please.",
+                "How much I pay?"
+              ],
+              "correct_index": 2,
+              "explanation": "'The bill, please.' is the standard polite phrase to ask for your bill."
+            }
+          },
+          {
+            "task_id": "t0201_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Your food likes and dislikes",
+            "content": {
+              "instruction": "Speak for 40\u201350 seconds about your food preferences.",
+              "prompt": "What food do you love? What do you not like? Describe how some foods taste.",
+              "example_response": "I love spicy food \u2014 especially chicken curry. It's delicious! I also like fresh fruit. Mangoes are sweet and I eat them every day in summer. I don't like bitter food \u2014 I can't drink black coffee! I also don't eat salty snacks very much.",
+              "key_phrases": [
+                "I love",
+                "I like",
+                "I don't like",
+                "It's delicious / horrible",
+                "It tastes sweet / spicy / sour"
+              ],
+              "min_words": 40
+            }
+          },
+          {
+            "task_id": "t0201_16",
+            "order": 16,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Role play: order at a caf\u00e9",
+            "content": {
+              "instruction": "Imagine you are at a caf\u00e9. Order a meal and a drink politely. Ask one question about the food.",
+              "prompt": "Waiter says: 'Good morning! What would you like today?'",
+              "example_response": "Good morning! I'd like some eggs and toast, please. Can I also have an orange juice? Is the juice fresh? Great, thank you! That's all.",
+              "key_phrases": [
+                "I'd like",
+                "Can I have",
+                "a/an/some",
+                "Is it fresh/hot/cold?",
+                "That's all, thank you."
+              ],
+              "min_words": 30
+            }
+          },
+          {
+            "task_id": "t0201_17",
+            "order": 17,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Food vocabulary: staples, proteins, fruits, vegetables, drinks",
+                "Taste words: delicious, sweet, spicy, sour, salty, bitter, fresh, horrible",
+                "Articles: a (consonant), an (vowel sound), some (uncountable/plural)",
+                "Ordering: I'd like... / Can I have... please? / The bill, please.",
+                "Dialogue: caf\u00e9 conversation \u2014 ordering food and drink"
+              ],
+              "next_lesson": "a1_unit2_lesson02",
+              "next_lesson_title": "At the market \u2014 prices and quantities"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson02",
+        "unit": 2,
+        "lesson_number": 2,
+        "level": "A1",
+        "title": "At the market \u2014 prices & quantities",
+        "description": "Ask for prices, talk about quantities, and complete a market shopping conversation.",
+        "estimated_minutes": 22,
+        "xp_reward": 130,
+        "tasks": [
+          {
+            "task_id": "t0202_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Shopping phrases",
+            "content": {
+              "explanation": "These are the most important phrases for buying things at a shop or market.",
+              "items": [
+                {
+                  "phrase": "How much is it?",
+                  "note": "Ask price of ONE item"
+                },
+                {
+                  "phrase": "How much are they?",
+                  "note": "Ask price of MANY items"
+                },
+                {
+                  "phrase": "It's ___ / They're ___.",
+                  "note": "Answer with price"
+                },
+                {
+                  "phrase": "I'll take it.",
+                  "note": "Decide to buy one thing"
+                },
+                {
+                  "phrase": "I'll take two / three.",
+                  "note": "Decide to buy a number"
+                },
+                {
+                  "phrase": "That's too expensive.",
+                  "note": "The price is too high"
+                },
+                {
+                  "phrase": "That's cheap / a good price.",
+                  "note": "The price is good"
+                },
+                {
+                  "phrase": "Do you have ___?",
+                  "note": "Ask if something is available"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0202_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Grammar: How much / How many",
+            "content": {
+              "explanation": "Choose 'how much' or 'how many' depending on the noun type.",
+              "rules": [
+                {
+                  "question_word": "How much",
+                  "use_for": "Uncountable nouns OR asking about price",
+                  "examples": [
+                    "How much rice do you need?",
+                    "How much is this?",
+                    "How much milk is left?"
+                  ]
+                },
+                {
+                  "question_word": "How many",
+                  "use_for": "Countable nouns \u2014 things you can count 1, 2, 3",
+                  "examples": [
+                    "How many oranges do you want?",
+                    "How many eggs are there?",
+                    "How many bags do you need?"
+                  ]
+                }
+              ],
+              "quick_test": "Can you say 1 ___, 2 ___? If YES \u2192 How many. If NO \u2192 How much."
+            }
+          },
+          {
+            "task_id": "t0202_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Quantity expressions",
+            "content": {
+              "explanation": "Use these to say how much of something you want to buy.",
+              "items": [
+                {
+                  "phrase": "a kilo of ___",
+                  "note": "a kilo of tomatoes, a kilo of chicken"
+                },
+                {
+                  "phrase": "half a kilo of ___",
+                  "note": "500 grams \u2014 half a kilo of rice"
+                },
+                {
+                  "phrase": "a litre of ___",
+                  "note": "a litre of milk, a litre of oil"
+                },
+                {
+                  "phrase": "a bottle of ___",
+                  "note": "a bottle of water, a bottle of juice"
+                },
+                {
+                  "phrase": "a bag of ___",
+                  "note": "a bag of rice, a bag of flour"
+                },
+                {
+                  "phrase": "a dozen ___",
+                  "note": "12 \u2014 a dozen eggs"
+                },
+                {
+                  "phrase": "a few ___",
+                  "note": "small number \u2014 a few tomatoes"
+                },
+                {
+                  "phrase": "a lot of ___",
+                  "note": "large amount \u2014 a lot of vegetables"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0202_04",
+            "order": 4,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat",
+            "content": {
+              "instruction": "Repeat these market phrases naturally and clearly.",
+              "phrases": [
+                {
+                  "text": "How much is this mango?",
+                  "audio_key": "how_much_mango"
+                },
+                {
+                  "text": "I'd like a kilo of tomatoes, please.",
+                  "audio_key": "kilo_tomatoes"
+                },
+                {
+                  "text": "How many do you want?",
+                  "audio_key": "how_many_want"
+                },
+                {
+                  "text": "That's too expensive for me.",
+                  "audio_key": "too_expensive"
+                },
+                {
+                  "text": "How much is that in total?",
+                  "audio_key": "total_price"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0202_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "How much or how many?",
+            "content": {
+              "question": "'___ apples do you want?'",
+              "options": [
+                "How much",
+                "How many",
+                "How lot",
+                "What much"
+              ],
+              "correct_index": 1,
+              "explanation": "Apples are countable (1 apple, 2 apples) \u2192 How many."
+            }
+          },
+          {
+            "task_id": "t0202_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "How much or how many?",
+            "content": {
+              "question": "'___ does a kilo of rice cost?'",
+              "options": [
+                "How many",
+                "How much",
+                "How lot",
+                "What many"
+              ],
+              "correct_index": 1,
+              "explanation": "For prices always use 'How much'. Rice is also uncountable."
+            }
+          },
+          {
+            "task_id": "t0202_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Correct quantity",
+            "content": {
+              "question": "You want to buy 12 eggs. What do you say?",
+              "options": [
+                "I'd like a lot of eggs.",
+                "I'd like a dozen eggs.",
+                "I'd like a bag of eggs.",
+                "I'd like some egg."
+              ],
+              "correct_index": 1,
+              "explanation": "A dozen = 12. 'A dozen eggs' is the natural expression."
+            }
+          },
+          {
+            "task_id": "t0202_08",
+            "order": 8,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in: how much / how many",
+            "content": {
+              "sentence": "_____ milk is in the fridge? And _____ bananas are on the table?",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "How much",
+                    "How many"
+                  ],
+                  "correct": "How much"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "How much",
+                    "How many"
+                  ],
+                  "correct": "How many"
+                }
+              ],
+              "explanation": "Milk = uncountable \u2192 How much. Bananas = countable \u2192 How many."
+            }
+          },
+          {
+            "task_id": "t0202_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "vocabulary",
+            "title": "Fill in the quantity word",
+            "content": {
+              "sentence": "I need ___ kilo of chicken and ___ bottle of oil for the recipe.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "a",
+                    "an",
+                    "some"
+                  ],
+                  "correct": "a"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "a",
+                    "an",
+                    "some"
+                  ],
+                  "correct": "a"
+                }
+              ],
+              "explanation": "'a kilo' (k = consonant), 'a bottle' (b = consonant) \u2192 both use 'a'."
+            }
+          },
+          {
+            "task_id": "t0202_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "vocabulary",
+            "title": "Build the market question",
+            "content": {
+              "instruction": "Rearrange to make a correct question to ask at the market.",
+              "words": [
+                "much",
+                "tomatoes",
+                "How",
+                "are",
+                "the"
+              ],
+              "correct_sentence": "How much are the tomatoes?",
+              "explanation": "How much + are + the [plural item]?"
+            }
+          },
+          {
+            "task_id": "t0202_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match quantity to product",
+            "content": {
+              "instruction": "Match the most natural quantity expression to each product.",
+              "pairs": [
+                {
+                  "prompt": "milk",
+                  "answer": "a litre of milk"
+                },
+                {
+                  "prompt": "eggs",
+                  "answer": "a dozen eggs"
+                },
+                {
+                  "prompt": "rice",
+                  "answer": "a bag of rice"
+                },
+                {
+                  "prompt": "water",
+                  "answer": "a bottle of water"
+                },
+                {
+                  "prompt": "apples",
+                  "answer": "a kilo of apples"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0202_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 At the vegetable market",
+            "content": {
+              "context": "Ravi is shopping at a local market early in the morning.",
+              "dialogue": [
+                {
+                  "speaker": "Seller",
+                  "line": "Good morning! What do you need today, sir?"
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "Good morning! How much are the tomatoes?"
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "Fifty rupees a kilo. Very fresh \u2014 arrived this morning!"
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "Okay, good. I'll take a kilo of tomatoes, please."
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "Of course. Anything else?"
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "Yes. How much are the onions?"
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "Thirty rupees a kilo."
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "Half a kilo of onions, please. Do you have fresh ginger?"
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "Yes, we do! Twenty rupees for 100 grams."
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "That's a good price. I'll take some. How much is everything in total?"
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "That's eighty rupees altogether."
+                },
+                {
+                  "speaker": "Ravi",
+                  "line": "Here you are. Thank you!"
+                },
+                {
+                  "speaker": "Seller",
+                  "line": "Thank you, sir! Come again!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "How much does one kilo of tomatoes cost?",
+                  "options": [
+                    "Thirty rupees",
+                    "Fifty rupees",
+                    "Eighty rupees",
+                    "Twenty rupees"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "How much onion does Ravi buy?",
+                  "options": [
+                    "One kilo",
+                    "A dozen",
+                    "Half a kilo",
+                    "Two kilos"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "How much does Ravi pay in total?",
+                  "options": [
+                    "Fifty rupees",
+                    "Thirty rupees",
+                    "One hundred rupees",
+                    "Eighty rupees"
+                  ],
+                  "correct_index": 3
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0202_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Which sentence is correct?",
+              "wrong_sentence": "How many does this shirt cost?",
+              "options": [
+                "How many does this shirt cost?",
+                "How much does this shirt cost?",
+                "How much is cost this shirt?",
+                "What much is this shirt?"
+              ],
+              "correct_index": 1,
+              "explanation": "For prices always use 'How much'. Structure: How much + does + subject + cost?"
+            }
+          },
+          {
+            "task_id": "t0202_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "At a market, the mango seller says the price is 200 rupees a kilo. You think this is very high.",
+              "question": "What is the most natural thing to say?",
+              "options": [
+                "No! Bad price!",
+                "That's too expensive. Do you have a cheaper price?",
+                "How many is the mango?",
+                "I don't want mango."
+              ],
+              "correct_index": 1,
+              "explanation": "'That's too expensive. Do you have a cheaper price?' is natural and polite."
+            }
+          },
+          {
+            "task_id": "t0202_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Describe a shopping trip",
+            "content": {
+              "instruction": "Speak for 40 seconds. Describe going to a market. What did you buy and how much did it cost?",
+              "prompt": "Tell me about the last time you went shopping for food. What did you buy?",
+              "example_response": "I went to the market yesterday morning. I bought a kilo of tomatoes \u2014 they were fifty rupees. I also got a dozen eggs and a bottle of oil. I asked the seller how much the mangoes were but they were too expensive \u2014 two hundred rupees a kilo! So I didn't buy them.",
+              "key_phrases": [
+                "I bought",
+                "How much are the ___?",
+                "a kilo of / a bottle of / a dozen",
+                "too expensive / a good price"
+              ],
+              "min_words": 40
+            }
+          },
+          {
+            "task_id": "t0202_16",
+            "order": 16,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Role play the market",
+            "content": {
+              "instruction": "You are at the market. Ask prices for 3 items and buy at least 2 of them.",
+              "prompt": "Seller says: 'Good morning! What are you looking for today?'",
+              "example_response": "Good morning! How much are the apples? And how much is a bag of rice? The apples are a good price \u2014 I'll take a kilo, please. And a bag of rice. Do you have fresh milk? Great \u2014 a litre of milk too, please. How much is everything in total? Here you are!",
+              "key_phrases": [
+                "How much is/are ___?",
+                "I'll take ___",
+                "Do you have ___?",
+                "How much in total?"
+              ],
+              "min_words": 50
+            }
+          },
+          {
+            "task_id": "t0202_17",
+            "order": 17,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Shopping phrases: How much is/are? I'll take. That's too expensive.",
+                "How much (price/uncountable) vs How many (countable)",
+                "Quantities: a kilo, a litre, a bottle, a bag, a dozen, a few, a lot of",
+                "Dialogue: complete market shopping conversation",
+                "Real-world: negotiating and responding to prices"
+              ],
+              "next_lesson": "a1_unit2_lesson03",
+              "next_lesson_title": "Telling the time"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson03",
+        "unit": 2,
+        "lesson_number": 3,
+        "level": "A1",
+        "title": "Telling the time",
+        "description": "Learn how to say and ask the time in English \u2014 o'clock, half past, quarter to/past.",
+        "estimated_minutes": 20,
+        "xp_reward": 120,
+        "tasks": [
+          {
+            "task_id": "t0203_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Telling the time \u2014 the basics",
+            "content": {
+              "explanation": "In English we read time in a specific way. Learn these patterns.",
+              "time_patterns": [
+                {
+                  "pattern": "o'clock",
+                  "use": "Exactly on the hour",
+                  "examples": [
+                    "7 o'clock",
+                    "12 o'clock",
+                    "3 o'clock"
+                  ]
+                },
+                {
+                  "pattern": "half past ___",
+                  "use": "30 minutes past the hour",
+                  "examples": [
+                    "half past seven = 7:30",
+                    "half past three = 3:30"
+                  ]
+                },
+                {
+                  "pattern": "quarter past ___",
+                  "use": "15 minutes past the hour",
+                  "examples": [
+                    "quarter past two = 2:15",
+                    "quarter past nine = 9:15"
+                  ]
+                },
+                {
+                  "pattern": "quarter to ___",
+                  "use": "15 minutes before the NEXT hour",
+                  "examples": [
+                    "quarter to eight = 7:45",
+                    "quarter to one = 12:45"
+                  ]
+                },
+                {
+                  "pattern": "___ minutes past ___",
+                  "use": "1\u201329 minutes past the hour",
+                  "examples": [
+                    "ten past six = 6:10",
+                    "twenty past four = 4:20"
+                  ]
+                },
+                {
+                  "pattern": "___ minutes to ___",
+                  "use": "1\u201329 minutes before the next hour",
+                  "examples": [
+                    "ten to nine = 8:50",
+                    "five to twelve = 11:55"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "AM and PM / Morning and evening",
+            "content": {
+              "explanation": "We can say AM/PM or use words like morning, afternoon, and evening.",
+              "items": [
+                {
+                  "phrase": "in the morning",
+                  "note": "12am \u2013 12pm (midnight to noon)"
+                },
+                {
+                  "phrase": "in the afternoon",
+                  "note": "12pm \u2013 6pm"
+                },
+                {
+                  "phrase": "in the evening",
+                  "note": "6pm \u2013 bedtime"
+                },
+                {
+                  "phrase": "at night",
+                  "note": "Late \u2014 when it's dark and quiet"
+                },
+                {
+                  "phrase": "at midnight",
+                  "note": "Exactly 12am"
+                },
+                {
+                  "phrase": "at noon / midday",
+                  "note": "Exactly 12pm"
+                }
+              ],
+              "examples": [
+                "My class is at 9 o'clock in the morning.",
+                "I have lunch at half past twelve.",
+                "The film starts at quarter past seven in the evening."
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Asking and saying the time",
+            "content": {
+              "explanation": "Use these phrases to ask and answer time questions.",
+              "items": [
+                {
+                  "phrase": "What time is it?",
+                  "note": "Standard question \u2014 very common"
+                },
+                {
+                  "phrase": "What's the time?",
+                  "note": "Casual version \u2014 same meaning"
+                },
+                {
+                  "phrase": "Do you have the time?",
+                  "note": "Polite way to ask a stranger"
+                },
+                {
+                  "phrase": "It's ___ o'clock.",
+                  "note": "Answer for exact hour"
+                },
+                {
+                  "phrase": "It's half past ___.",
+                  "note": "Answer for :30"
+                },
+                {
+                  "phrase": "It's about ___.",
+                  "note": "Approximate \u2014 'It's about three o'clock'"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_04",
+            "order": 4,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat \u2014 time phrases",
+            "content": {
+              "instruction": "Repeat each time expression. Listen carefully to the rhythm.",
+              "phrases": [
+                {
+                  "text": "It's seven o'clock.",
+                  "audio_key": "seven_oclock"
+                },
+                {
+                  "text": "It's half past three.",
+                  "audio_key": "half_past_three"
+                },
+                {
+                  "text": "It's quarter past nine.",
+                  "audio_key": "quarter_past_nine"
+                },
+                {
+                  "text": "It's quarter to eight.",
+                  "audio_key": "quarter_to_eight"
+                },
+                {
+                  "text": "What time is it, please?",
+                  "audio_key": "what_time_please"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "knowledge_check",
+            "title": "What time is it?",
+            "content": {
+              "question": "The clock shows 3:30. How do you say this in English?",
+              "options": [
+                "Three thirty o'clock",
+                "Half past three",
+                "Quarter to three",
+                "Quarter past three"
+              ],
+              "correct_index": 1,
+              "explanation": "3:30 = 30 minutes past 3 = half past three."
+            }
+          },
+          {
+            "task_id": "t0203_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "knowledge_check",
+            "title": "What time is it?",
+            "content": {
+              "question": "The clock shows 7:45. How do you say this?",
+              "options": [
+                "Quarter past seven",
+                "Half past seven",
+                "Quarter to eight",
+                "Seven forty-five o'clock"
+              ],
+              "correct_index": 2,
+              "explanation": "7:45 = 15 minutes before 8 = quarter to eight."
+            }
+          },
+          {
+            "task_id": "t0203_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "knowledge_check",
+            "title": "Which time is correct?",
+            "content": {
+              "question": "'My train leaves at ten past six.' What time does the train leave?",
+              "options": [
+                "6:00",
+                "6:10",
+                "6:30",
+                "5:50"
+              ],
+              "correct_index": 1,
+              "explanation": "Ten past six = 10 minutes after 6 = 6:10."
+            }
+          },
+          {
+            "task_id": "t0203_08",
+            "order": 8,
+            "type": "fill_blank",
+            "category": "knowledge_check",
+            "title": "Fill in the time expression",
+            "content": {
+              "sentence": "The meeting starts at _____ nine. (8:45)",
+              "options": [
+                "quarter past",
+                "quarter to",
+                "half past",
+                "ten past"
+              ],
+              "correct": "quarter to",
+              "explanation": "8:45 = 15 minutes before 9 = quarter to nine."
+            }
+          },
+          {
+            "task_id": "t0203_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "knowledge_check",
+            "title": "Fill in the time",
+            "content": {
+              "sentence": "My class starts at _____ past seven. (7:20)",
+              "options": [
+                "quarter",
+                "half",
+                "twenty",
+                "ten"
+              ],
+              "correct": "twenty",
+              "explanation": "7:20 = 20 minutes past 7 = twenty past seven."
+            }
+          },
+          {
+            "task_id": "t0203_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "knowledge_check",
+            "title": "Build the time sentence",
+            "content": {
+              "instruction": "Rearrange to make a correct sentence about time.",
+              "words": [
+                "starts",
+                "The",
+                "film",
+                "past",
+                "half",
+                "at",
+                "seven"
+              ],
+              "correct_sentence": "The film starts at half past seven.",
+              "explanation": "at + half past + [hour] \u2014 7:30."
+            }
+          },
+          {
+            "task_id": "t0203_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "knowledge_check",
+            "title": "Match the clock time to words",
+            "content": {
+              "instruction": "Match each digital time to its spoken English form.",
+              "pairs": [
+                {
+                  "prompt": "6:00",
+                  "answer": "six o'clock"
+                },
+                {
+                  "prompt": "9:30",
+                  "answer": "half past nine"
+                },
+                {
+                  "prompt": "4:15",
+                  "answer": "quarter past four"
+                },
+                {
+                  "prompt": "11:45",
+                  "answer": "quarter to twelve"
+                },
+                {
+                  "prompt": "2:10",
+                  "answer": "ten past two"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 Asking the time",
+            "content": {
+              "context": "Arun is running late and stops someone on the street to ask the time.",
+              "dialogue": [
+                {
+                  "speaker": "Arun",
+                  "line": "Excuse me! Do you have the time?"
+                },
+                {
+                  "speaker": "Stranger",
+                  "line": "Sure! It's quarter past nine."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Oh no! My meeting starts at half past nine!"
+                },
+                {
+                  "speaker": "Stranger",
+                  "line": "You still have fifteen minutes."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Right. Is the office on MG Road far from here?"
+                },
+                {
+                  "speaker": "Stranger",
+                  "line": "No, it's close. About five minutes by auto."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Perfect. Thank you so much!"
+                },
+                {
+                  "speaker": "Stranger",
+                  "line": "Good luck! Don't be late!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "What time is it when Arun asks?",
+                  "options": [
+                    "Half past nine",
+                    "Quarter to nine",
+                    "Quarter past nine",
+                    "Nine o'clock"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What time does Arun's meeting start?",
+                  "options": [
+                    "9:00",
+                    "9:15",
+                    "9:30",
+                    "9:45"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "How long does it take to reach the office by auto?",
+                  "options": [
+                    "Fifteen minutes",
+                    "Ten minutes",
+                    "Five minutes",
+                    "Twenty minutes"
+                  ],
+                  "correct_index": 2
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0203_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Which sentence says the time correctly?",
+              "wrong_sentence": "The train leaves at seven o'clock and half.",
+              "options": [
+                "The train leaves at seven o'clock and half.",
+                "The train leaves at half seven o'clock.",
+                "The train leaves at half past seven.",
+                "The train leaves at seven and half past."
+              ],
+              "correct_index": 2,
+              "explanation": "7:30 = half past seven. 'Half past' always comes BEFORE the hour."
+            }
+          },
+          {
+            "task_id": "t0203_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "You don't have your phone. You want to know the time. You see a person nearby.",
+              "question": "What is the most polite way to ask?",
+              "options": [
+                "Time! Now!",
+                "What is time?",
+                "Excuse me, do you have the time?",
+                "Tell me the time please."
+              ],
+              "correct_index": 2,
+              "explanation": "'Excuse me, do you have the time?' \u2014 polite, natural, and very common."
+            }
+          },
+          {
+            "task_id": "t0203_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Your daily schedule with times",
+            "content": {
+              "instruction": "Talk about your daily schedule using specific times \u2014 at least 5 activities.",
+              "prompt": "What time do you do things in your day? Use o'clock, half past, quarter past/to.",
+              "example_response": "I wake up at six o'clock every morning. I have breakfast at quarter past six. I leave the house at half past seven. My work starts at nine o'clock. I have lunch at one o'clock. I come home at half past six in the evening. I go to sleep at quarter to eleven.",
+              "key_phrases": [
+                "at ___ o'clock",
+                "at half past ___",
+                "at quarter past/to ___",
+                "in the morning/evening"
+              ],
+              "min_words": 50
+            }
+          },
+          {
+            "task_id": "t0203_16",
+            "order": 16,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Time expressions: o'clock, half past, quarter past, quarter to",
+                "Minutes: ten past six (6:10), twenty to four (3:40)",
+                "Asking: What time is it? / Do you have the time?",
+                "Answering: It's half past three. / It's about nine o'clock.",
+                "AM/PM: in the morning, afternoon, evening, at night"
+              ],
+              "next_lesson": "a1_unit2_lesson04",
+              "next_lesson_title": "Days, months and dates"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson04",
+        "unit": 2,
+        "lesson_number": 4,
+        "level": "A1",
+        "title": "Days, months & dates",
+        "description": "Learn days of the week, months, ordinal numbers for dates, and how to talk about schedules.",
+        "estimated_minutes": 22,
+        "xp_reward": 130,
+        "tasks": [
+          {
+            "task_id": "t0204_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Days of the week",
+            "content": {
+              "explanation": "There are 7 days in a week. Always write them with a capital letter in English.",
+              "items": [
+                {
+                  "phrase": "Monday",
+                  "note": "First working day of the week"
+                },
+                {
+                  "phrase": "Tuesday",
+                  "note": ""
+                },
+                {
+                  "phrase": "Wednesday",
+                  "note": "Middle of the week \u2014 tricky spelling!"
+                },
+                {
+                  "phrase": "Thursday",
+                  "note": ""
+                },
+                {
+                  "phrase": "Friday",
+                  "note": "Last working day"
+                },
+                {
+                  "phrase": "Saturday",
+                  "note": "Weekend"
+                },
+                {
+                  "phrase": "Sunday",
+                  "note": "Weekend \u2014 last day of the week"
+                }
+              ],
+              "tip": "Weekdays = Monday to Friday. Weekend = Saturday and Sunday."
+            }
+          },
+          {
+            "task_id": "t0204_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Months of the year",
+            "content": {
+              "explanation": "There are 12 months. Always capitalise them in English.",
+              "items": [
+                {
+                  "phrase": "January",
+                  "note": "Month 1"
+                },
+                {
+                  "phrase": "February",
+                  "note": "Month 2 \u2014 short month"
+                },
+                {
+                  "phrase": "March",
+                  "note": "Month 3"
+                },
+                {
+                  "phrase": "April",
+                  "note": "Month 4"
+                },
+                {
+                  "phrase": "May",
+                  "note": "Month 5"
+                },
+                {
+                  "phrase": "June",
+                  "note": "Month 6"
+                },
+                {
+                  "phrase": "July",
+                  "note": "Month 7"
+                },
+                {
+                  "phrase": "August",
+                  "note": "Month 8"
+                },
+                {
+                  "phrase": "September",
+                  "note": "Month 9"
+                },
+                {
+                  "phrase": "October",
+                  "note": "Month 10"
+                },
+                {
+                  "phrase": "November",
+                  "note": "Month 11"
+                },
+                {
+                  "phrase": "December",
+                  "note": "Month 12"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Ordinal numbers for dates",
+            "content": {
+              "explanation": "We use ordinal numbers (1st, 2nd, 3rd, 4th...) to say dates in English.",
+              "ordinals": [
+                {
+                  "number": "1st",
+                  "say": "first"
+                },
+                {
+                  "number": "2nd",
+                  "say": "second"
+                },
+                {
+                  "number": "3rd",
+                  "say": "third"
+                },
+                {
+                  "number": "4th",
+                  "say": "fourth"
+                },
+                {
+                  "number": "5th",
+                  "say": "fifth"
+                },
+                {
+                  "number": "10th",
+                  "say": "tenth"
+                },
+                {
+                  "number": "15th",
+                  "say": "fifteenth"
+                },
+                {
+                  "number": "20th",
+                  "say": "twentieth"
+                },
+                {
+                  "number": "21st",
+                  "say": "twenty-first"
+                },
+                {
+                  "number": "31st",
+                  "say": "thirty-first"
+                }
+              ],
+              "rule": "Most ordinals: add -th (four\u2192fourth). Special: 1st first, 2nd second, 3rd third.",
+              "saying_dates": [
+                {
+                  "written": "5th March",
+                  "spoken": "the fifth of March"
+                },
+                {
+                  "written": "21st June",
+                  "spoken": "the twenty-first of June"
+                },
+                {
+                  "written": "1st January",
+                  "spoken": "the first of January"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_04",
+            "order": 4,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Prepositions of time: on / in / at",
+            "content": {
+              "explanation": "Choose the correct preposition for days, months, and times.",
+              "rules": [
+                {
+                  "preposition": "on",
+                  "use": "Days and dates",
+                  "examples": [
+                    "on Monday",
+                    "on the 5th of March",
+                    "on my birthday",
+                    "on Christmas Day"
+                  ]
+                },
+                {
+                  "preposition": "in",
+                  "use": "Months, years, seasons",
+                  "examples": [
+                    "in January",
+                    "in 2024",
+                    "in summer",
+                    "in the morning"
+                  ]
+                },
+                {
+                  "preposition": "at",
+                  "use": "Specific times, holidays",
+                  "examples": [
+                    "at 7 o'clock",
+                    "at noon",
+                    "at Christmas",
+                    "at the weekend"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_05",
+            "order": 5,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat \u2014 dates",
+            "content": {
+              "instruction": "Repeat these date expressions clearly.",
+              "phrases": [
+                {
+                  "text": "My birthday is on the fifteenth of August.",
+                  "audio_key": "birthday_august"
+                },
+                {
+                  "text": "The meeting is on Monday.",
+                  "audio_key": "meeting_monday"
+                },
+                {
+                  "text": "We go on holiday in July.",
+                  "audio_key": "holiday_july"
+                },
+                {
+                  "text": "The exam is on the third of November.",
+                  "audio_key": "exam_november"
+                },
+                {
+                  "text": "What date is it today?",
+                  "audio_key": "what_date_today"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "On, in, or at?",
+            "content": {
+              "question": "My birthday is ___ March.",
+              "options": [
+                "on",
+                "in",
+                "at",
+                "by"
+              ],
+              "correct_index": 1,
+              "explanation": "Months use 'in'. In March, in July, in December."
+            }
+          },
+          {
+            "task_id": "t0204_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "On, in, or at?",
+            "content": {
+              "question": "I have a class ___ Monday.",
+              "options": [
+                "in",
+                "at",
+                "on",
+                "by"
+              ],
+              "correct_index": 2,
+              "explanation": "Days use 'on'. On Monday, on Friday, on the weekend."
+            }
+          },
+          {
+            "task_id": "t0204_08",
+            "order": 8,
+            "type": "mcq",
+            "category": "knowledge_check",
+            "title": "How do you say this date?",
+            "content": {
+              "question": "How do you say '3rd April' in English?",
+              "options": [
+                "Three April",
+                "The third of April",
+                "The three of April",
+                "April three"
+              ],
+              "correct_index": 1,
+              "explanation": "Dates: the + ordinal number + of + month. 'The third of April'."
+            }
+          },
+          {
+            "task_id": "t0204_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in on / in / at",
+            "content": {
+              "sentence": "We have a holiday ___ December. My family visits ___ the 25th. We celebrate ___ night.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "in"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "on"
+                },
+                {
+                  "position": 3,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "at"
+                }
+              ],
+              "explanation": "in December (month), on the 25th (date), at night (specific time expression)."
+            }
+          },
+          {
+            "task_id": "t0204_10",
+            "order": 10,
+            "type": "fill_blank",
+            "category": "knowledge_check",
+            "title": "Fill in the ordinal number",
+            "content": {
+              "sentence": "Independence Day in India is ___ the fifteenth of August.",
+              "options": [
+                "on",
+                "in",
+                "at",
+                "by"
+              ],
+              "correct": "on",
+              "explanation": "Dates use 'on' \u2014 on the fifteenth of August."
+            }
+          },
+          {
+            "task_id": "t0204_11",
+            "order": 11,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the date sentence",
+            "content": {
+              "instruction": "Rearrange to make a correct sentence about a date.",
+              "words": [
+                "birthday",
+                "is",
+                "My",
+                "the",
+                "of",
+                "June",
+                "twenty-first"
+              ],
+              "correct_sentence": "My birthday is the twenty-first of June.",
+              "explanation": "My birthday + is + the + ordinal + of + month."
+            }
+          },
+          {
+            "task_id": "t0204_12",
+            "order": 12,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match the ordinal number",
+            "content": {
+              "instruction": "Match the number to the correct spoken ordinal.",
+              "pairs": [
+                {
+                  "prompt": "1st",
+                  "answer": "first"
+                },
+                {
+                  "prompt": "2nd",
+                  "answer": "second"
+                },
+                {
+                  "prompt": "3rd",
+                  "answer": "third"
+                },
+                {
+                  "prompt": "12th",
+                  "answer": "twelfth"
+                },
+                {
+                  "prompt": "20th",
+                  "answer": "twentieth"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_13",
+            "order": 13,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 Making plans",
+            "content": {
+              "context": "Two colleagues Divya and Kiran are arranging a meeting.",
+              "dialogue": [
+                {
+                  "speaker": "Divya",
+                  "line": "Kiran, when are you free to meet this week?"
+                },
+                {
+                  "speaker": "Kiran",
+                  "line": "Let me check. Tuesday is busy \u2014 I have a presentation."
+                },
+                {
+                  "speaker": "Divya",
+                  "line": "What about Wednesday?"
+                },
+                {
+                  "speaker": "Kiran",
+                  "line": "Wednesday morning is free! What time works for you?"
+                },
+                {
+                  "speaker": "Divya",
+                  "line": "Is ten o'clock okay?"
+                },
+                {
+                  "speaker": "Kiran",
+                  "line": "Perfect. And what date is that? The fourteenth?"
+                },
+                {
+                  "speaker": "Divya",
+                  "line": "Yes, Wednesday the fourteenth of March."
+                },
+                {
+                  "speaker": "Kiran",
+                  "line": "Great, I'll put it in my calendar. See you then!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "Why can't Kiran meet on Tuesday?",
+                  "options": [
+                    "She is on holiday",
+                    "She has a presentation",
+                    "She is sick",
+                    "She has a class"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "What time do they decide to meet?",
+                  "options": [
+                    "Half past nine",
+                    "Eleven o'clock",
+                    "Ten o'clock",
+                    "Quarter past ten"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What is the full date of the meeting?",
+                  "options": [
+                    "Tuesday 14th March",
+                    "Wednesday 14th March",
+                    "Wednesday 4th March",
+                    "Thursday 14th March"
+                  ],
+                  "correct_index": 1
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0204_14",
+            "order": 14,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Choose the correct sentence.",
+              "wrong_sentence": "My exam is in Monday on November.",
+              "options": [
+                "My exam is in Monday on November.",
+                "My exam is on Monday in November.",
+                "My exam is at Monday in November.",
+                "My exam is on Monday at November."
+              ],
+              "correct_index": 1,
+              "explanation": "Days use 'on' (on Monday). Months use 'in' (in November)."
+            }
+          },
+          {
+            "task_id": "t0204_15",
+            "order": 15,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "Someone asks you: 'When is your birthday?'",
+              "question": "Which is the most natural and correct answer?",
+              "options": [
+                "Birthday on fifteen August.",
+                "My birthday is on the fifteenth of August.",
+                "Birthday in August fifteen.",
+                "I born in fifteen August."
+              ],
+              "correct_index": 1,
+              "explanation": "My birthday is + on + the + ordinal + of + month."
+            }
+          },
+          {
+            "task_id": "t0204_16",
+            "order": 16,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Your week and important dates",
+            "content": {
+              "instruction": "Talk about your week. What do you do on which days? Also mention one important date.",
+              "prompt": "Tell me about your weekly schedule and one special date coming up.",
+              "example_response": "On Monday and Tuesday I go to work. Wednesday is my favourite day because I finish early. On Thursday evenings I go to the gym. Fridays are busy \u2014 I have meetings. At the weekend I relax. My sister's birthday is on the twelfth of May \u2014 I'm very excited!",
+              "key_phrases": [
+                "On Monday/Tuesday...",
+                "At the weekend",
+                "My ___ is on the ___ of ___",
+                "in + month"
+              ],
+              "min_words": 50
+            }
+          },
+          {
+            "task_id": "t0204_17",
+            "order": 17,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Days: Monday to Sunday (always capital letters)",
+                "Months: January to December (always capital letters)",
+                "Ordinal numbers: first, second, third, fourth... twentieth, twenty-first",
+                "Saying dates: the + ordinal + of + month (the fifth of March)",
+                "Prepositions: on (days/dates), in (months/years), at (times/night)"
+              ],
+              "next_lesson": "a1_unit2_lesson05",
+              "next_lesson_title": "Weather & the present continuous"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson05",
+        "unit": 2,
+        "lesson_number": 5,
+        "level": "A1",
+        "title": "Weather & the present continuous",
+        "description": "Describe today's weather and learn to talk about what is happening right now.",
+        "estimated_minutes": 22,
+        "xp_reward": 130,
+        "tasks": [
+          {
+            "task_id": "t0205_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Weather vocabulary",
+            "content": {
+              "explanation": "These are the most common words to describe the weather.",
+              "items": [
+                {
+                  "phrase": "sunny / it's sunny",
+                  "note": "The sun is shining"
+                },
+                {
+                  "phrase": "cloudy / it's cloudy",
+                  "note": "The sky has clouds"
+                },
+                {
+                  "phrase": "rainy / it's raining",
+                  "note": "Rain is falling"
+                },
+                {
+                  "phrase": "windy / it's windy",
+                  "note": "Strong wind is blowing"
+                },
+                {
+                  "phrase": "hot / warm",
+                  "note": "High temperature"
+                },
+                {
+                  "phrase": "cold / cool",
+                  "note": "Low temperature"
+                },
+                {
+                  "phrase": "humid",
+                  "note": "Wet, sticky air \u2014 common in Chennai!"
+                },
+                {
+                  "phrase": "foggy",
+                  "note": "Hard to see \u2014 low visibility"
+                },
+                {
+                  "phrase": "stormy",
+                  "note": "Strong wind and heavy rain together"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0205_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Grammar: Present continuous",
+            "content": {
+              "explanation": "We use the present continuous to talk about what is happening RIGHT NOW.",
+              "structure": "Subject + am/is/are + verb-ing",
+              "examples": [
+                {
+                  "sentence": "It is raining.",
+                  "note": "Happening now"
+                },
+                {
+                  "sentence": "The sun is shining.",
+                  "note": "Happening now"
+                },
+                {
+                  "sentence": "I am studying English.",
+                  "note": "Happening now"
+                },
+                {
+                  "sentence": "She is cooking dinner.",
+                  "note": "Happening now"
+                },
+                {
+                  "sentence": "They are playing outside.",
+                  "note": "Happening now"
+                }
+              ],
+              "formation": [
+                {
+                  "subject": "I",
+                  "helper": "am",
+                  "example": "I am reading."
+                },
+                {
+                  "subject": "He / She / It",
+                  "helper": "is",
+                  "example": "She is working."
+                },
+                {
+                  "subject": "You / We / They",
+                  "helper": "are",
+                  "example": "They are sleeping."
+                }
+              ],
+              "negative": "Subject + am/is/are + NOT + verb-ing: It is not raining. / She isn't working.",
+              "question": "Am/Is/Are + Subject + verb-ing? Is it raining? / Are you working?"
+            }
+          },
+          {
+            "task_id": "t0205_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Simple present vs present continuous",
+            "content": {
+              "explanation": "Know when to use each tense \u2014 this is very important!",
+              "comparison": [
+                {
+                  "tense": "Simple present",
+                  "use": "Habits and routines \u2014 always, usually, every day",
+                  "examples": [
+                    "I walk to work every day.",
+                    "It rains a lot in July.",
+                    "She works from 9 to 5."
+                  ]
+                },
+                {
+                  "tense": "Present continuous",
+                  "use": "Happening right now \u2014 at this moment",
+                  "examples": [
+                    "I am walking to work now.",
+                    "It is raining outside!",
+                    "She is working late today."
+                  ]
+                }
+              ],
+              "key_signal_words": {
+                "simple_present": [
+                  "always",
+                  "usually",
+                  "every day",
+                  "often",
+                  "never"
+                ],
+                "present_continuous": [
+                  "now",
+                  "right now",
+                  "at the moment",
+                  "today",
+                  "look!"
+                ]
+              }
+            }
+          },
+          {
+            "task_id": "t0205_04",
+            "order": 4,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat \u2014 weather sentences",
+            "content": {
+              "instruction": "Repeat naturally. Notice how we contract is \u2192 's in speech.",
+              "phrases": [
+                {
+                  "text": "It's raining heavily outside.",
+                  "audio_key": "raining_heavily"
+                },
+                {
+                  "text": "The sun is shining and it's very hot.",
+                  "audio_key": "sun_shining_hot"
+                },
+                {
+                  "text": "It's not raining now \u2014 it's cloudy.",
+                  "audio_key": "not_raining_cloudy"
+                },
+                {
+                  "text": "What's the weather like today?",
+                  "audio_key": "weather_like_today"
+                },
+                {
+                  "text": "I'm staying inside because it's stormy.",
+                  "audio_key": "staying_inside_stormy"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0205_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "Present continuous form",
+            "content": {
+              "question": "Choose the correct sentence for RIGHT NOW: 'She ___ her homework.'",
+              "options": [
+                "She do her homework.",
+                "She does her homework.",
+                "She is doing her homework.",
+                "She doing her homework."
+              ],
+              "correct_index": 2,
+              "explanation": "Right now = present continuous. She + is + doing (verb-ing)."
+            }
+          },
+          {
+            "task_id": "t0205_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "Simple present or continuous?",
+            "content": {
+              "question": "'Look! It ___ !' (You can see rain out of the window right now.)",
+              "options": [
+                "rains",
+                "is raining",
+                "rained",
+                "rain"
+              ],
+              "correct_index": 1,
+              "explanation": "'Look!' signals something happening RIGHT NOW \u2192 present continuous. It is raining."
+            }
+          },
+          {
+            "task_id": "t0205_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Weather vocabulary",
+            "content": {
+              "question": "It is very hot and the air feels wet and sticky. What weather is this?",
+              "options": [
+                "Foggy",
+                "Windy",
+                "Humid",
+                "Stormy"
+              ],
+              "correct_index": 2,
+              "explanation": "Humid = hot and wet air \u2014 very common in coastal cities like Chennai."
+            }
+          },
+          {
+            "task_id": "t0205_08",
+            "order": 8,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in the present continuous",
+            "content": {
+              "sentence": "Right now I ___ (sit) at my desk and I ___ (study) English.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "sit",
+                    "sitting",
+                    "am sitting",
+                    "sits"
+                  ],
+                  "correct": "am sitting"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "study",
+                    "studying",
+                    "am studying",
+                    "studies"
+                  ],
+                  "correct": "am studying"
+                }
+              ],
+              "explanation": "Right now = present continuous. I + am + verb-ing."
+            }
+          },
+          {
+            "task_id": "t0205_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in: simple present or continuous?",
+            "content": {
+              "sentence": "It usually ___ (rain) a lot in June, but today it ___ (shine).",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "rain",
+                    "rains",
+                    "is raining"
+                  ],
+                  "correct": "rains"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "shine",
+                    "shines",
+                    "is shining"
+                  ],
+                  "correct": "is shining"
+                }
+              ],
+              "explanation": "Usually \u2192 simple present (rains). Today/right now \u2192 present continuous (is shining)."
+            }
+          },
+          {
+            "task_id": "t0205_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the present continuous sentence",
+            "content": {
+              "instruction": "Rearrange to make a correct present continuous sentence.",
+              "words": [
+                "is",
+                "outside",
+                "raining",
+                "It",
+                "heavily"
+              ],
+              "correct_sentence": "It is raining heavily outside.",
+              "explanation": "It + is + verb-ing + [adverb] + [place]."
+            }
+          },
+          {
+            "task_id": "t0205_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match weather to activity",
+            "content": {
+              "instruction": "Match the weather to the most likely activity.",
+              "pairs": [
+                {
+                  "prompt": "It's sunny and warm.",
+                  "answer": "People are going to the beach."
+                },
+                {
+                  "prompt": "It's raining heavily.",
+                  "answer": "People are staying inside."
+                },
+                {
+                  "prompt": "It's very windy.",
+                  "answer": "People are holding their umbrellas."
+                },
+                {
+                  "prompt": "It's cold and foggy.",
+                  "answer": "People are wearing coats."
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0205_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 Talking about the weather",
+            "content": {
+              "context": "Two friends Anand and Nisha are chatting by phone on a rainy day.",
+              "dialogue": [
+                {
+                  "speaker": "Anand",
+                  "line": "Hey Nisha! What's the weather like in Chennai today?"
+                },
+                {
+                  "speaker": "Nisha",
+                  "line": "Oh, it's terrible! It's raining very heavily right now."
+                },
+                {
+                  "speaker": "Anand",
+                  "line": "Are you at home?"
+                },
+                {
+                  "speaker": "Nisha",
+                  "line": "Yes! I'm sitting by the window and watching the rain. What about Bangalore?"
+                },
+                {
+                  "speaker": "Anand",
+                  "line": "It's a bit cloudy here but it isn't raining. It's actually quite cool."
+                },
+                {
+                  "speaker": "Nisha",
+                  "line": "Lucky you! I can't go out today \u2014 the roads are flooding."
+                },
+                {
+                  "speaker": "Anand",
+                  "line": "Stay safe! Are you doing anything at home?"
+                },
+                {
+                  "speaker": "Nisha",
+                  "line": "I'm cooking and reading. A perfect rainy day!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "What is the weather like in Chennai?",
+                  "options": [
+                    "Sunny and hot",
+                    "Cloudy and cool",
+                    "Raining heavily",
+                    "Windy and cold"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What is Nisha doing right now?",
+                  "options": [
+                    "Sleeping",
+                    "Sitting by the window watching the rain",
+                    "Going shopping",
+                    "Working"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "What is the weather like in Bangalore?",
+                  "options": [
+                    "Rainy",
+                    "Stormy",
+                    "A bit cloudy and cool",
+                    "Hot and sunny"
+                  ],
+                  "correct_index": 2
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0205_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Which sentence is correct for something happening right now?",
+              "wrong_sentence": "Look! The children play in the garden.",
+              "options": [
+                "Look! The children play in the garden.",
+                "Look! The children are playing in the garden.",
+                "Look! The children playing in the garden.",
+                "Look! The children is playing in the garden."
+              ],
+              "correct_index": 1,
+              "explanation": "'Look!' signals right now \u2192 present continuous. They + are + playing."
+            }
+          },
+          {
+            "task_id": "t0205_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "Your friend calls you and asks 'What are you doing?' You are at home cooking dinner.",
+              "question": "What is the most natural reply?",
+              "options": [
+                "I cook dinner every evening.",
+                "I am cooking dinner right now.",
+                "I cooked dinner.",
+                "I cooking dinner."
+              ],
+              "correct_index": 1,
+              "explanation": "What are you doing? = right now \u2192 present continuous. I am cooking."
+            }
+          },
+          {
+            "task_id": "t0205_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Describe the weather and what you're doing",
+            "content": {
+              "instruction": "Speak for 45 seconds. Describe today's weather and what you are doing right now because of it.",
+              "prompt": "What is the weather like today? What are you doing? What are people around you doing?",
+              "example_response": "Today the weather in Chennai is very hot and humid. It's not raining but the sky is a bit cloudy. Right now I am sitting inside with the fan on because it's too hot to go outside. My mother is cooking in the kitchen and my brother is watching TV. Usually on Sundays we go for a walk but today we're all staying inside.",
+              "key_phrases": [
+                "It's ___ today",
+                "Right now I am ___ing",
+                "She/He is ___ing",
+                "Usually... but today..."
+              ],
+              "min_words": 50
+            }
+          },
+          {
+            "task_id": "t0205_16",
+            "order": 16,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Weather: sunny, cloudy, rainy, windy, hot, cold, humid, foggy, stormy",
+                "Present continuous: Subject + am/is/are + verb-ing",
+                "Use: things happening RIGHT NOW",
+                "Negative: isn't/aren't + verb-ing",
+                "Question: Is it raining? / What are you doing?",
+                "Key difference: simple present (habits) vs present continuous (now)"
+              ],
+              "next_lesson": "a1_unit2_lesson06",
+              "next_lesson_title": "Transport \u2014 getting around"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson06",
+        "unit": 2,
+        "lesson_number": 6,
+        "level": "A1",
+        "title": "Transport \u2014 getting around",
+        "description": "Learn transport vocabulary, how to ask for directions, and use 'can' for ability and requests.",
+        "estimated_minutes": 22,
+        "xp_reward": 130,
+        "tasks": [
+          {
+            "task_id": "t0206_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Types of transport",
+            "content": {
+              "explanation": "Learn the most common ways to travel in English.",
+              "items": [
+                {
+                  "phrase": "bus",
+                  "note": "Take the bus / catch the bus"
+                },
+                {
+                  "phrase": "train / metro",
+                  "note": "Take the train / catch the metro"
+                },
+                {
+                  "phrase": "auto-rickshaw / auto",
+                  "note": "Very common in India \u2014 take an auto"
+                },
+                {
+                  "phrase": "taxi / cab",
+                  "note": "Book a taxi / call a cab"
+                },
+                {
+                  "phrase": "bicycle / bike",
+                  "note": "Ride a bicycle"
+                },
+                {
+                  "phrase": "motorbike / scooter",
+                  "note": "Ride a motorbike"
+                },
+                {
+                  "phrase": "car",
+                  "note": "Drive a car / go by car"
+                },
+                {
+                  "phrase": "on foot / walk",
+                  "note": "Go on foot / walk there"
+                },
+                {
+                  "phrase": "flight / plane",
+                  "note": "Take a flight / fly to"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Grammar: can / can't",
+            "content": {
+              "explanation": "Use 'can' to talk about ability (what is possible) and to make polite requests.",
+              "uses": [
+                {
+                  "use": "Ability",
+                  "examples": [
+                    "I can drive a car.",
+                    "She can't ride a bicycle.",
+                    "Can you swim?"
+                  ]
+                },
+                {
+                  "use": "Polite request",
+                  "examples": [
+                    "Can you help me, please?",
+                    "Can I have a ticket?",
+                    "Can you tell me the way?"
+                  ]
+                },
+                {
+                  "use": "Permission",
+                  "examples": [
+                    "Can I sit here?",
+                    "You can park here.",
+                    "You can't park here."
+                  ]
+                }
+              ],
+              "structure": {
+                "positive": "Subject + can + base verb (no -s, no -ing)",
+                "negative": "Subject + can't / cannot + base verb",
+                "question": "Can + subject + base verb?"
+              },
+              "common_errors": [
+                {
+                  "wrong": "She cans drive.",
+                  "right": "She can drive. (no -s after can)"
+                },
+                {
+                  "wrong": "I can to swim.",
+                  "right": "I can swim. (no 'to' after can)"
+                },
+                {
+                  "wrong": "Can you driving?",
+                  "right": "Can you drive? (base verb, no -ing)"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Travel phrases",
+            "content": {
+              "explanation": "Use these phrases when using transport or asking about travel.",
+              "items": [
+                {
+                  "phrase": "How do I get to ___?",
+                  "note": "Ask for directions"
+                },
+                {
+                  "phrase": "How far is it?",
+                  "note": "Ask about distance"
+                },
+                {
+                  "phrase": "How long does it take?",
+                  "note": "Ask about travel time"
+                },
+                {
+                  "phrase": "It takes about ___ minutes.",
+                  "note": "Answer about travel time"
+                },
+                {
+                  "phrase": "It's ___ kilometres away.",
+                  "note": "Answer about distance"
+                },
+                {
+                  "phrase": "Take the bus / auto to ___.",
+                  "note": "Give transport advice"
+                },
+                {
+                  "phrase": "Get off at ___.",
+                  "note": "Tell someone where to leave the bus/metro"
+                },
+                {
+                  "phrase": "Is there a direct bus?",
+                  "note": "Ask if there's a non-stop route"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_04",
+            "order": 4,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat",
+            "content": {
+              "instruction": "Repeat these travel phrases clearly.",
+              "phrases": [
+                {
+                  "text": "Can you tell me how to get to the station?",
+                  "audio_key": "get_to_station"
+                },
+                {
+                  "text": "How long does it take by bus?",
+                  "audio_key": "how_long_by_bus"
+                },
+                {
+                  "text": "It takes about twenty minutes.",
+                  "audio_key": "twenty_minutes"
+                },
+                {
+                  "text": "I can't drive \u2014 I always take the metro.",
+                  "audio_key": "cant_drive_metro"
+                },
+                {
+                  "text": "Get off at the third stop.",
+                  "audio_key": "get_off_third_stop"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "Can or can't?",
+            "content": {
+              "question": "She never drives \u2014 she didn't learn. 'She ___ drive.'",
+              "options": [
+                "can",
+                "can't",
+                "cans",
+                "don't can"
+              ],
+              "correct_index": 1,
+              "explanation": "She never learned to drive \u2192 she can't drive. Negative ability."
+            }
+          },
+          {
+            "task_id": "t0206_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "Correct can sentence",
+            "content": {
+              "question": "Which sentence is correct?",
+              "options": [
+                "She cans ride a bike.",
+                "She can rides a bike.",
+                "She can ride a bike.",
+                "She can to ride a bike."
+              ],
+              "correct_index": 2,
+              "explanation": "Can + base verb (no -s, no -ing, no 'to'). She can ride. \u2713"
+            }
+          },
+          {
+            "task_id": "t0206_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Which transport?",
+            "content": {
+              "question": "You want to travel from Chennai to Delhi. Which transport do you use?",
+              "options": [
+                "Auto-rickshaw",
+                "Bicycle",
+                "Flight or train",
+                "Bus in the city"
+              ],
+              "correct_index": 2,
+              "explanation": "Long distances between cities = train or flight. Auto and bicycle are for short local trips."
+            }
+          },
+          {
+            "task_id": "t0206_08",
+            "order": 8,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in: can / can't",
+            "content": {
+              "sentence": "My father ___ drive but I ___. I always take the bus.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "can",
+                    "can't"
+                  ],
+                  "correct": "can"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "can",
+                    "can't"
+                  ],
+                  "correct": "can't"
+                }
+              ],
+              "explanation": "Father drives \u2192 can. I always take the bus (don't drive) \u2192 can't."
+            }
+          },
+          {
+            "task_id": "t0206_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "vocabulary",
+            "title": "Fill in the travel phrase",
+            "content": {
+              "sentence": "Excuse me, how ___ does it ___ to get to the airport by metro?",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "long",
+                    "far",
+                    "much",
+                    "many"
+                  ],
+                  "correct": "long"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "take",
+                    "go",
+                    "cost",
+                    "need"
+                  ],
+                  "correct": "take"
+                }
+              ],
+              "explanation": "How long does it take? = asking about time to travel."
+            }
+          },
+          {
+            "task_id": "t0206_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence with can",
+            "content": {
+              "instruction": "Rearrange to make a polite request.",
+              "words": [
+                "you",
+                "me",
+                "tell",
+                "Can",
+                "bus",
+                "the",
+                "to",
+                "station",
+                "how"
+              ],
+              "correct_sentence": "Can you tell me how to get to the bus station?",
+              "explanation": "Can + you + tell + me + how + to + get to + [place]?"
+            }
+          },
+          {
+            "task_id": "t0206_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match transport to verb",
+            "content": {
+              "instruction": "Match each transport with the correct verb.",
+              "pairs": [
+                {
+                  "prompt": "car",
+                  "answer": "drive a car"
+                },
+                {
+                  "prompt": "bicycle",
+                  "answer": "ride a bicycle"
+                },
+                {
+                  "prompt": "bus",
+                  "answer": "take the bus"
+                },
+                {
+                  "prompt": "plane",
+                  "answer": "fly / take a flight"
+                },
+                {
+                  "prompt": "foot",
+                  "answer": "walk / go on foot"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 Asking for directions",
+            "content": {
+              "context": "Sara is a tourist in Chennai. She asks a local person for help.",
+              "dialogue": [
+                {
+                  "speaker": "Sara",
+                  "line": "Excuse me! Can you help me, please?"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "Of course! What do you need?"
+                },
+                {
+                  "speaker": "Sara",
+                  "line": "How do I get to the Marina Beach from here?"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "It's not very far. You can take bus number 21C, or you can take an auto."
+                },
+                {
+                  "speaker": "Sara",
+                  "line": "How long does it take by bus?"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "About fifteen minutes. Get off at the beach stop \u2014 you'll see the sea!"
+                },
+                {
+                  "speaker": "Sara",
+                  "line": "And by auto?"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "Only ten minutes, but it's more expensive."
+                },
+                {
+                  "speaker": "Sara",
+                  "line": "Okay, I'll take the bus. Can I buy a ticket on the bus?"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "Yes, you can pay the conductor on the bus."
+                },
+                {
+                  "speaker": "Sara",
+                  "line": "Perfect! Thank you so much!"
+                },
+                {
+                  "speaker": "Local",
+                  "line": "You're welcome! Enjoy the beach!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "Where does Sara want to go?",
+                  "options": [
+                    "The city centre",
+                    "Marina Beach",
+                    "The train station",
+                    "The airport"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "How long does the bus take?",
+                  "options": [
+                    "Five minutes",
+                    "Ten minutes",
+                    "Fifteen minutes",
+                    "Twenty minutes"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "Which transport does Sara choose?",
+                  "options": [
+                    "Auto",
+                    "Bus",
+                    "Taxi",
+                    "Metro"
+                  ],
+                  "correct_index": 1
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0206_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Which sentence is correct?",
+              "wrong_sentence": "Can you to tell me where is the bus stop?",
+              "options": [
+                "Can you to tell me where is the bus stop?",
+                "Can you tell me where the bus stop is?",
+                "Can you tell me where is bus stop?",
+                "You can tell me where the bus stop is?"
+              ],
+              "correct_index": 1,
+              "explanation": "No 'to' after can. Embedded question: where + subject + verb (not inverted)."
+            }
+          },
+          {
+            "task_id": "t0206_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "You are in a new city. You need to get to the railway station. You see a person on the street.",
+              "question": "Which is the most complete and polite thing to say?",
+              "options": [
+                "Station where?",
+                "Railway station, please.",
+                "Excuse me, can you tell me how to get to the railway station?",
+                "I need station. How far?"
+              ],
+              "correct_index": 2,
+              "explanation": "Full polite sentence: Excuse me + Can you + tell me + how to get to + [place]?"
+            }
+          },
+          {
+            "task_id": "t0206_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 How do you get around?",
+            "content": {
+              "instruction": "Talk for 45 seconds about how you travel in your daily life. Use can/can't.",
+              "prompt": "How do you usually travel to work or school? Can you drive? What transport do you like?",
+              "example_response": "I usually travel to work by bus. I can't drive \u2014 I never learned. My commute takes about thirty minutes. I take bus number 21 and get off at the last stop. I don't like taking autos because they're expensive. On weekends I sometimes walk to the market \u2014 it's only ten minutes on foot. I'd like to learn to drive one day!",
+              "key_phrases": [
+                "I travel by ___",
+                "I can/can't ___",
+                "It takes about ___",
+                "Get off at ___",
+                "I usually / I sometimes"
+              ],
+              "min_words": 55
+            }
+          },
+          {
+            "task_id": "t0206_16",
+            "order": 16,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Transport: bus, train, metro, auto, taxi, bike, car, flight, on foot",
+                "Verbs: drive (car), ride (bike), take (bus/train), fly (plane), walk",
+                "Can/can't: ability (I can drive), requests (Can you help me?)",
+                "Can + base verb ONLY \u2014 no -s, no -to, no -ing",
+                "Travel questions: How do I get to? / How long does it take? / How far is it?"
+              ],
+              "next_lesson": "a1_unit2_lesson07",
+              "next_lesson_title": "At a restaurant \u2014 making requests"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson07",
+        "unit": 2,
+        "lesson_number": 7,
+        "level": "A1",
+        "title": "At a restaurant \u2014 making requests",
+        "description": "Learn to have a full restaurant conversation \u2014 ordering, asking questions, and paying.",
+        "estimated_minutes": 25,
+        "xp_reward": 150,
+        "tasks": [
+          {
+            "task_id": "t0207_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Restaurant vocabulary",
+            "content": {
+              "explanation": "Learn the essential words and phrases for eating at a restaurant.",
+              "items": [
+                {
+                  "phrase": "menu",
+                  "note": "The list of food and prices"
+                },
+                {
+                  "phrase": "starter / appetiser",
+                  "note": "Small dish at the beginning of the meal"
+                },
+                {
+                  "phrase": "main course",
+                  "note": "The biggest dish of the meal"
+                },
+                {
+                  "phrase": "dessert",
+                  "note": "Sweet dish at the end \u2014 cake, ice cream"
+                },
+                {
+                  "phrase": "waiter / waitress",
+                  "note": "Person who serves you"
+                },
+                {
+                  "phrase": "table for ___",
+                  "note": "Table for two / three / four people"
+                },
+                {
+                  "phrase": "reservation / booking",
+                  "note": "Booking a table in advance"
+                },
+                {
+                  "phrase": "bill / check",
+                  "note": "The paper showing what you owe"
+                },
+                {
+                  "phrase": "tip",
+                  "note": "Extra money you give for good service"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_02",
+            "order": 2,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Requests at a restaurant",
+            "content": {
+              "explanation": "These are the most useful phrases for making polite requests.",
+              "items": [
+                {
+                  "phrase": "Could I have ___?",
+                  "note": "Polite request \u2014 more formal than 'can'"
+                },
+                {
+                  "phrase": "Could we have the menu, please?",
+                  "note": "Requesting the menu"
+                },
+                {
+                  "phrase": "I'd like ___, please.",
+                  "note": "Ordering food \u2014 polite"
+                },
+                {
+                  "phrase": "What do you recommend?",
+                  "note": "Ask the waiter for their best dish"
+                },
+                {
+                  "phrase": "Is there ___ in this?",
+                  "note": "Ask about ingredients (allergies)"
+                },
+                {
+                  "phrase": "Could you bring ___?",
+                  "note": "Request something extra \u2014 water, napkin"
+                },
+                {
+                  "phrase": "Could we have the bill, please?",
+                  "note": "Ask for the bill at the end"
+                },
+                {
+                  "phrase": "Excuse me!",
+                  "note": "Get the waiter's attention"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_03",
+            "order": 3,
+            "type": "learn_card",
+            "category": "grammar",
+            "title": "Could for polite requests",
+            "content": {
+              "explanation": "'Could' is more polite than 'can' for requests. Both are correct.",
+              "comparison": [
+                {
+                  "less_formal": "Can I have water?",
+                  "more_polite": "Could I have some water, please?"
+                },
+                {
+                  "less_formal": "Can you bring the bill?",
+                  "more_polite": "Could you bring the bill, please?"
+                },
+                {
+                  "less_formal": "Can I see the menu?",
+                  "more_polite": "Could I see the menu, please?"
+                }
+              ],
+              "rule": "Could + subject + base verb + please? \u2192 always polite, always correct at a restaurant.",
+              "replies_from_waiter": [
+                "Of course! Right away.",
+                "Certainly! I'll bring it now.",
+                "I'm sorry, we don't have that today.",
+                "Yes, no problem!"
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_04",
+            "order": 4,
+            "type": "listen_repeat",
+            "category": "pronunciation",
+            "title": "Listen and repeat \u2014 restaurant phrases",
+            "content": {
+              "instruction": "Repeat these restaurant phrases with a polite, clear tone.",
+              "phrases": [
+                {
+                  "text": "Excuse me! Could I see the menu, please?",
+                  "audio_key": "see_menu"
+                },
+                {
+                  "text": "I'd like the grilled fish, please.",
+                  "audio_key": "grilled_fish"
+                },
+                {
+                  "text": "What do you recommend?",
+                  "audio_key": "recommend"
+                },
+                {
+                  "text": "Could we have some more water, please?",
+                  "audio_key": "more_water"
+                },
+                {
+                  "text": "Could we have the bill, please?",
+                  "audio_key": "the_bill"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "What do you call it?",
+            "content": {
+              "question": "The small dish you eat BEFORE the main meal is called a ___.",
+              "options": [
+                "dessert",
+                "main course",
+                "starter",
+                "tip"
+              ],
+              "correct_index": 2,
+              "explanation": "A starter (or appetiser) is eaten before the main course."
+            }
+          },
+          {
+            "task_id": "t0207_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "grammar",
+            "title": "Which is more polite?",
+            "content": {
+              "question": "You want more water. Which is the most polite thing to say to the waiter?",
+              "options": [
+                "Water! Now!",
+                "I need water.",
+                "Could you bring some more water, please?",
+                "Give me water."
+              ],
+              "correct_index": 2,
+              "explanation": "'Could you bring' + please = most polite. Always use at a restaurant."
+            }
+          },
+          {
+            "task_id": "t0207_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "End of the meal",
+            "content": {
+              "question": "You have finished your meal and want to pay. What do you say?",
+              "options": [
+                "What do you recommend?",
+                "Could we have the bill, please?",
+                "I'd like the main course.",
+                "Is there a table for two?"
+              ],
+              "correct_index": 1,
+              "explanation": "'Could we have the bill, please?' \u2014 the standard phrase to ask for the bill."
+            }
+          },
+          {
+            "task_id": "t0207_08",
+            "order": 8,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill in: could / can / would",
+            "content": {
+              "sentence": "Excuse me! _____ I see the menu? And _____ you tell me what today's special is?",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "Could",
+                    "Can",
+                    "Would"
+                  ],
+                  "correct": "Could"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "could",
+                    "can",
+                    "would"
+                  ],
+                  "correct": "could"
+                }
+              ],
+              "explanation": "Both can and could work \u2014 but 'could' is more polite in a restaurant context."
+            }
+          },
+          {
+            "task_id": "t0207_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "vocabulary",
+            "title": "Fill in the restaurant word",
+            "content": {
+              "sentence": "We have a ___ at 8pm for a table for four people.",
+              "options": [
+                "menu",
+                "bill",
+                "reservation",
+                "tip"
+              ],
+              "correct": "reservation",
+              "explanation": "A reservation = a booking \u2014 you call in advance to keep a table."
+            }
+          },
+          {
+            "task_id": "t0207_10",
+            "order": 10,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the polite request",
+            "content": {
+              "instruction": "Rearrange to make a correct polite request.",
+              "words": [
+                "bring",
+                "Could",
+                "more",
+                "some",
+                "bread",
+                "you",
+                "please"
+              ],
+              "correct_sentence": "Could you bring some more bread, please?",
+              "explanation": "Could + you + bring + some + more + [item] + please?"
+            }
+          },
+          {
+            "task_id": "t0207_11",
+            "order": 11,
+            "type": "match_pairs",
+            "category": "vocabulary",
+            "title": "Match the situation to the phrase",
+            "content": {
+              "instruction": "Match each restaurant situation to the correct phrase.",
+              "pairs": [
+                {
+                  "prompt": "You arrive and want to sit down",
+                  "answer": "A table for two, please."
+                },
+                {
+                  "prompt": "You want to see the food list",
+                  "answer": "Could I see the menu, please?"
+                },
+                {
+                  "prompt": "You don't know what to order",
+                  "answer": "What do you recommend?"
+                },
+                {
+                  "prompt": "You want to pay and leave",
+                  "answer": "Could we have the bill, please?"
+                },
+                {
+                  "prompt": "You want to get the waiter's attention",
+                  "answer": "Excuse me!"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_12",
+            "order": 12,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Dialogue \u2014 A full restaurant experience",
+            "content": {
+              "context": "Arun and his friend go to a restaurant for dinner.",
+              "dialogue": [
+                {
+                  "speaker": "Waiter",
+                  "line": "Good evening! Do you have a reservation?"
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Yes, I have a booking for two. The name is Arun."
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Of course! This way, please. Here's your table."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Thank you. Could we see the menu, please?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Certainly. Here you are. Can I get you any drinks to start?"
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Could we have two glasses of water, please?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Of course. Are you ready to order?"
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Not yet. What do you recommend for the main course?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "The grilled fish is very popular tonight. It's delicious!"
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "Sounds good! I'd like the grilled fish, please."
+                },
+                {
+                  "speaker": "Friend",
+                  "line": "And I'll have the pasta with vegetables."
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Excellent choices! I'll bring your food shortly."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "(Later) Excuse me! Could we have the bill, please?"
+                },
+                {
+                  "speaker": "Waiter",
+                  "line": "Of course! I hope you enjoyed your meal."
+                },
+                {
+                  "speaker": "Arun",
+                  "line": "It was absolutely delicious. Thank you!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "What does Arun ask for first?",
+                  "options": [
+                    "The bill",
+                    "The food",
+                    "The menu",
+                    "More water"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What does the waiter recommend?",
+                  "options": [
+                    "Pasta",
+                    "The grilled fish",
+                    "A starter",
+                    "Dessert"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "What does Arun's friend order?",
+                  "options": [
+                    "Grilled fish",
+                    "Chicken curry",
+                    "Pasta with vegetables",
+                    "Soup"
+                  ],
+                  "correct_index": 2
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0207_13",
+            "order": 13,
+            "type": "error_correction",
+            "category": "grammar",
+            "title": "Find the mistake",
+            "content": {
+              "instruction": "Which is the correct polite request?",
+              "wrong_sentence": "Could you to bring the bill please?",
+              "options": [
+                "Could you to bring the bill please?",
+                "Could you bringing the bill please?",
+                "Could you bring the bill, please?",
+                "Could you brought the bill please?"
+              ],
+              "correct_index": 2,
+              "explanation": "Could + you + BASE verb (no 'to', no -ing, no past form). Could you bring \u2713"
+            }
+          },
+          {
+            "task_id": "t0207_14",
+            "order": 14,
+            "type": "scenario_mcq",
+            "category": "real_world",
+            "title": "Real-world situation",
+            "content": {
+              "scenario": "You are at a restaurant. The waiter brings the wrong dish \u2014 you ordered fish but they brought chicken.",
+              "question": "What is the most polite way to handle this?",
+              "options": [
+                "This is wrong! Take it back!",
+                "Excuse me, I think there's a mistake. I ordered the fish, not the chicken.",
+                "No! Bad! Wrong food!",
+                "I don't want this."
+              ],
+              "correct_index": 1,
+              "explanation": "Polite complaint: Excuse me + I think there's a mistake + explain calmly. Never be rude."
+            }
+          },
+          {
+            "task_id": "t0207_15",
+            "order": 15,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Speaking \u2014 Full restaurant role play",
+            "content": {
+              "instruction": "Play BOTH parts \u2014 customer and waiter. Have a full restaurant conversation covering: arrival, menu, ordering, and bill.",
+              "prompt": "Start as a customer entering a restaurant. Have a complete conversation.",
+              "example_response": "Good evening! A table for two, please. Could I see the menu? Thank you. Excuse me, what do you recommend? The grilled fish sounds good. I'd like the grilled fish and my friend will have the pasta. Could we also have some water? (Later) Excuse me! Could we have the bill please? Thank you \u2014 it was absolutely delicious!",
+              "key_phrases": [
+                "A table for ___",
+                "Could I see the menu?",
+                "What do you recommend?",
+                "I'd like ___",
+                "Could we have the bill?"
+              ],
+              "min_words": 65
+            }
+          },
+          {
+            "task_id": "t0207_16",
+            "order": 16,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Restaurant words: menu, starter, main course, dessert, bill, tip, reservation",
+                "Polite requests: Could I have ___? / Could you bring ___?",
+                "Could vs Can: both correct \u2014 could is more formal/polite",
+                "Could + base verb (no 'to', no -ing)",
+                "Full restaurant flow: arrive \u2192 menu \u2192 order \u2192 eat \u2192 bill \u2192 pay",
+                "Dialogue: complete restaurant interaction"
+              ],
+              "next_lesson": "a1_unit2_lesson08",
+              "next_lesson_title": "Unit 2 Review"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit2_lesson08",
+        "unit": 2,
+        "lesson_number": 8,
+        "level": "A1",
+        "title": "Unit 2 Review \u2014 Everyday life",
+        "description": "Review all Unit 2 topics: food, shopping, time, dates, weather, transport, and restaurant.",
+        "estimated_minutes": 25,
+        "xp_reward": 200,
+        "tasks": [
+          {
+            "task_id": "t0208_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "review",
+            "title": "Unit 2 \u2014 What you learned",
+            "content": {
+              "explanation": "Let's review everything from Unit 2 before your final test.",
+              "summary": [
+                {
+                  "lesson": "Lesson 1",
+                  "topic": "Food & drink \u2014 a/an/some, taste words, ordering"
+                },
+                {
+                  "lesson": "Lesson 2",
+                  "topic": "Market \u2014 how much/many, quantities (kilo, litre, dozen)"
+                },
+                {
+                  "lesson": "Lesson 3",
+                  "topic": "Time \u2014 o'clock, half past, quarter past/to"
+                },
+                {
+                  "lesson": "Lesson 4",
+                  "topic": "Dates \u2014 days, months, ordinals, on/in/at"
+                },
+                {
+                  "lesson": "Lesson 5",
+                  "topic": "Weather \u2014 present continuous (is raining, am sitting)"
+                },
+                {
+                  "lesson": "Lesson 6",
+                  "topic": "Transport \u2014 can/can't, travel phrases"
+                },
+                {
+                  "lesson": "Lesson 7",
+                  "topic": "Restaurant \u2014 could for requests, full conversation"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0208_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 a / an / some",
+            "content": {
+              "question": "Choose the correct sentence: 'For breakfast I have ___ egg and ___ bread.'",
+              "options": [
+                "a egg and a bread",
+                "an egg and some bread",
+                "an egg and a bread",
+                "a egg and some bread"
+              ],
+              "correct_index": 1,
+              "explanation": "an egg (vowel e), some bread (uncountable) \u2713"
+            }
+          },
+          {
+            "task_id": "t0208_03",
+            "order": 3,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 How much / How many",
+            "content": {
+              "question": "'___ rice do you want?' and '___ apples should I buy?'",
+              "options": [
+                "How many / How much",
+                "How much / How many",
+                "How much / How much",
+                "How many / How many"
+              ],
+              "correct_index": 1,
+              "explanation": "Rice = uncountable \u2192 How much. Apples = countable \u2192 How many."
+            }
+          },
+          {
+            "task_id": "t0208_04",
+            "order": 4,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 Telling the time",
+            "content": {
+              "question": "The clock shows 8:45. How do you say this?",
+              "options": [
+                "Half past eight",
+                "Quarter past eight",
+                "Quarter to nine",
+                "Eight forty-five o'clock"
+              ],
+              "correct_index": 2,
+              "explanation": "8:45 = 15 minutes before 9 = quarter to nine."
+            }
+          },
+          {
+            "task_id": "t0208_05",
+            "order": 5,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 on / in / at",
+            "content": {
+              "question": "My birthday is ___ the 10th ___ April.",
+              "options": [
+                "in / in",
+                "on / in",
+                "at / on",
+                "on / on"
+              ],
+              "correct_index": 1,
+              "explanation": "Dates \u2192 on. Months \u2192 in. On the 10th of April. \u2713"
+            }
+          },
+          {
+            "task_id": "t0208_06",
+            "order": 6,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 Present continuous",
+            "content": {
+              "question": "Look outside! It ___ and the children ___ inside.",
+              "options": [
+                "rains / are playing",
+                "is raining / play",
+                "is raining / are playing",
+                "rains / play"
+              ],
+              "correct_index": 2,
+              "explanation": "Both actions are happening right now \u2192 both need present continuous."
+            }
+          },
+          {
+            "task_id": "t0208_07",
+            "order": 7,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 can / can't",
+            "content": {
+              "question": "Which sentence is grammatically correct?",
+              "options": [
+                "She cans drive a car.",
+                "She can to drive a car.",
+                "She can drive a car.",
+                "She can driving a car."
+              ],
+              "correct_index": 2,
+              "explanation": "Can + base verb ONLY. No -s, no 'to', no -ing. She can drive. \u2713"
+            }
+          },
+          {
+            "task_id": "t0208_08",
+            "order": 8,
+            "type": "mcq",
+            "category": "review",
+            "title": "Review \u2014 Polite requests",
+            "content": {
+              "question": "You are at a restaurant and want more water. Which is MOST polite?",
+              "options": [
+                "Water!",
+                "I need water.",
+                "Could you bring some more water, please?",
+                "Can I water?"
+              ],
+              "correct_index": 2,
+              "explanation": "Could + you + bring + please = most polite restaurant request."
+            }
+          },
+          {
+            "task_id": "t0208_09",
+            "order": 9,
+            "type": "fill_blank",
+            "category": "review",
+            "title": "Review Fill-in \u2014 time and date",
+            "content": {
+              "sentence": "The meeting is ___ Wednesday ___ quarter past ten ___ the morning.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "on"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "at"
+                },
+                {
+                  "position": 3,
+                  "options": [
+                    "on",
+                    "in",
+                    "at"
+                  ],
+                  "correct": "in"
+                }
+              ],
+              "explanation": "on Wednesday (day), at quarter past ten (time), in the morning (part of day)."
+            }
+          },
+          {
+            "task_id": "t0208_10",
+            "order": 10,
+            "type": "fill_blank",
+            "category": "review",
+            "title": "Review Fill-in \u2014 present continuous",
+            "content": {
+              "sentence": "Right now my sister ___ (cook) dinner and my brother ___ (watch) TV.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "cook",
+                    "cooks",
+                    "is cooking"
+                  ],
+                  "correct": "is cooking"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "watch",
+                    "watches",
+                    "is watching"
+                  ],
+                  "correct": "is watching"
+                }
+              ],
+              "explanation": "Right now = present continuous. She is cooking. He is watching."
+            }
+          },
+          {
+            "task_id": "t0208_11",
+            "order": 11,
+            "type": "fill_blank",
+            "category": "review",
+            "title": "Review Fill-in \u2014 transport",
+            "content": {
+              "sentence": "I ___ drive so I always ___ the bus to work. It ___ about 20 minutes.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "can",
+                    "can't",
+                    "could"
+                  ],
+                  "correct": "can't"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "drive",
+                    "take",
+                    "ride"
+                  ],
+                  "correct": "take"
+                },
+                {
+                  "position": 3,
+                  "options": [
+                    "takes",
+                    "goes",
+                    "costs"
+                  ],
+                  "correct": "takes"
+                }
+              ],
+              "explanation": "can't drive (no ability), take the bus (correct verb), takes 20 minutes (travel time)."
+            }
+          },
+          {
+            "task_id": "t0208_12",
+            "order": 12,
+            "type": "sort_words",
+            "category": "review",
+            "title": "Review \u2014 Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a correct sentence.",
+              "words": [
+                "half",
+                "at",
+                "starts",
+                "The",
+                "past",
+                "film",
+                "seven"
+              ],
+              "correct_sentence": "The film starts at half past seven.",
+              "explanation": "at + half past + hour = 7:30."
+            }
+          },
+          {
+            "task_id": "t0208_13",
+            "order": 13,
+            "type": "sort_words",
+            "category": "review",
+            "title": "Review \u2014 Build the question",
+            "content": {
+              "instruction": "Rearrange to make a correct polite restaurant request.",
+              "words": [
+                "have",
+                "Could",
+                "bill",
+                "the",
+                "we",
+                "please"
+              ],
+              "correct_sentence": "Could we have the bill, please?",
+              "explanation": "Could + we + have + the + [item] + please?"
+            }
+          },
+          {
+            "task_id": "t0208_14",
+            "order": 14,
+            "type": "error_correction",
+            "category": "review",
+            "title": "Review \u2014 Find all mistakes",
+            "content": {
+              "instruction": "This paragraph has 3 mistakes. Which version corrects them all?",
+              "wrong_text": "Today it is rain and I can't going outside. I am eat breakfast at home \u2014 some rice and a egg. My meeting is in Monday at nine o'clock.",
+              "options": [
+                "Today it is raining and I can't go outside. I am eating breakfast at home \u2014 some rice and an egg. My meeting is on Monday at nine o'clock.",
+                "Today it is raining and I can't going outside. I am eating breakfast \u2014 some rice and an egg. My meeting is in Monday.",
+                "Today it rains and I can't go outside. I eat breakfast \u2014 some rice and a egg. My meeting is on Monday.",
+                "Today it is rain and I can't go outside. I am eating \u2014 some rice and an egg. My meeting is at Monday."
+              ],
+              "correct_index": 0,
+              "explanation": "3 errors: 'rain'\u2192'raining' (present continuous), 'can't going'\u2192'can't go' (can + base verb), 'a egg'\u2192'an egg' (vowel), 'in Monday'\u2192'on Monday' (day)."
+            }
+          },
+          {
+            "task_id": "t0208_15",
+            "order": 15,
+            "type": "match_pairs",
+            "category": "review",
+            "title": "Review \u2014 Match grammar rule to example",
+            "content": {
+              "instruction": "Match each sentence to its grammar rule.",
+              "pairs": [
+                {
+                  "prompt": "It is raining right now.",
+                  "answer": "present continuous"
+                },
+                {
+                  "prompt": "I can't drive.",
+                  "answer": "can for ability"
+                },
+                {
+                  "prompt": "Could I have the menu?",
+                  "answer": "could for polite request"
+                },
+                {
+                  "prompt": "How much are the tomatoes?",
+                  "answer": "how much for price"
+                },
+                {
+                  "prompt": "My birthday is on the 5th of June.",
+                  "answer": "on + date"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0208_16",
+            "order": 16,
+            "type": "dialogue",
+            "category": "dialogue_reading",
+            "title": "Final dialogue \u2014 A busy morning",
+            "content": {
+              "context": "Meera is having a busy morning. She talks to her colleague Raj at work.",
+              "dialogue": [
+                {
+                  "speaker": "Raj",
+                  "line": "Good morning, Meera! You look tired. Are you okay?"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "Morning, Raj! Yes, I'm fine \u2014 just a busy morning!"
+                },
+                {
+                  "speaker": "Raj",
+                  "line": "What happened?"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "Well, I woke up at half past six. It was raining heavily, so I couldn't take my bike."
+                },
+                {
+                  "speaker": "Raj",
+                  "line": "Oh no! How did you get here?"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "I took the bus. It took forty minutes \u2014 usually it takes twenty!"
+                },
+                {
+                  "speaker": "Raj",
+                  "line": "That's a long time. Did you have breakfast?"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "Just an apple and some tea. I didn't have time to cook."
+                },
+                {
+                  "speaker": "Raj",
+                  "line": "Do you want to go to the caf\u00e9 downstairs at lunch?"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "Yes please! What time is it now?"
+                },
+                {
+                  "speaker": "Raj",
+                  "line": "It's quarter to ten. Lunch is at one o'clock \u2014 three hours to go!"
+                },
+                {
+                  "speaker": "Meera",
+                  "line": "Perfect. I'll have a proper meal then. I'm starving!"
+                }
+              ],
+              "comprehension_questions": [
+                {
+                  "question": "Why couldn't Meera take her bike?",
+                  "options": [
+                    "She was tired",
+                    "It was raining",
+                    "It was broken",
+                    "She was late"
+                  ],
+                  "correct_index": 1
+                },
+                {
+                  "question": "How long did the bus take?",
+                  "options": [
+                    "Twenty minutes",
+                    "Half an hour",
+                    "Forty minutes",
+                    "Ten minutes"
+                  ],
+                  "correct_index": 2
+                },
+                {
+                  "question": "What time does the dialogue happen?",
+                  "options": [
+                    "Quarter past ten",
+                    "Quarter to ten",
+                    "Half past ten",
+                    "Ten o'clock"
+                  ],
+                  "correct_index": 1
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0208_17",
+            "order": 17,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Final speaking \u2014 Part 1: Your day so far",
+            "content": {
+              "instruction": "Speak for 60\u201375 seconds. Talk about your morning today using everything you learned in Unit 2.",
+              "prompt": "Describe your morning. Include: what time you woke up, the weather, what you ate, how you travelled, and what you are doing now.",
+              "example_response": "I woke up at half past six this morning. The weather was hot and sunny \u2014 not a cloud in the sky! For breakfast I had some eggs, toast, and an orange juice. I took the bus to work \u2014 it took about twenty-five minutes. I arrived at quarter to nine. Right now I am sitting at my desk and working. I'm also planning lunch \u2014 I'd like to go to a restaurant near the office at one o'clock.",
+              "key_phrases": [
+                "I woke up at",
+                "The weather was",
+                "I had some/an/a",
+                "I took the ___",
+                "It took ___",
+                "Right now I am ___ing"
+              ],
+              "min_words": 70,
+              "covers_lessons": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          {
+            "task_id": "t0208_18",
+            "order": 18,
+            "type": "speaking",
+            "category": "speaking",
+            "title": "Final speaking \u2014 Part 2: Restaurant role play",
+            "content": {
+              "instruction": "Have a complete restaurant conversation. Cover: arriving, ordering food and drink, asking a question, and paying.",
+              "prompt": "You arrive at a restaurant for lunch with a friend. Start the conversation.",
+              "example_response": "Good afternoon! A table for two, please. Thank you. Could we see the menu? Excuse me, what do you recommend for the main course? The chicken curry sounds delicious \u2014 I'll have that, please. And could we have two glasses of water? My friend will have the vegetable pasta. (Later) Excuse me! Could we have the bill, please? Thank you, everything was absolutely delicious!",
+              "key_phrases": [
+                "A table for two",
+                "Could we see the menu?",
+                "What do you recommend?",
+                "I'll have / I'd like",
+                "Could we have the bill?"
+              ],
+              "min_words": 65,
+              "covers_lessons": [
+                1,
+                7
+              ]
+            }
+          },
+          {
+            "task_id": "t0208_19",
+            "order": 19,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Unit 2 Complete! \ud83c\udf89",
+            "content": {
+              "congratulations": "Excellent! You have completed Unit 2. You can now talk about food, go shopping, tell the time and date, describe weather, use transport, and have a full restaurant conversation \u2014 all in English!",
+              "all_grammar_covered": [
+                "Articles: a (consonant), an (vowel), some (uncountable/plural)",
+                "How much (uncountable/price) vs How many (countable)",
+                "Time: o'clock, half past, quarter past, quarter to, ___ past/to",
+                "Prepositions: on (days/dates), in (months/year), at (time/night)",
+                "Present continuous: Subject + am/is/are + verb-ing",
+                "Can/can't + base verb (ability and permission)",
+                "Could + base verb (polite requests)"
+              ],
+              "all_vocabulary_covered": [
+                "Food and drink, taste words",
+                "Shopping and quantity expressions",
+                "Days, months, ordinal numbers",
+                "Weather adjectives",
+                "Transport types and travel phrases",
+                "Restaurant vocabulary and phrases"
+              ],
+              "next_unit": "a1_unit3_lesson01",
+              "next_unit_title": "Unit 3 \u2014 My world: body, health, clothes & feelings"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

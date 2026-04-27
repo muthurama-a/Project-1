@@ -6,7 +6,7 @@ import json
 from datetime import datetime, timezone, timedelta
 
 from database import get_db
-from models import Unit, Lesson, User, UserLevel, TestResult, FlashCard, VelocityLog
+from models import Unit, Lesson, User, UserLevel, TestResult, FlashCard, VelocityLog, UserLessonCompletion
 from schemas.lessons import (
     DashboardResponse, UnitResponse, LessonResponse,
     FlashCardResponse, SM2SubmitRequest, SM2SubmitResponse,
@@ -31,12 +31,19 @@ def get_progress(year: int = None, db: Session = Depends(get_db), current_user: 
 
     # ── Lesson completion ────────────────────────────────────────────────────
     all_units = db.query(Unit).filter(Unit.level == "A1").order_by(Unit.order).all()
+    
+    # Get all completed lesson IDs for this user
+    completed_ids = {
+        row[0] for row in db.query(UserLessonCompletion.lesson_id)
+        .filter(UserLessonCompletion.user_id == user_id).all()
+    }
+
     units_data = []
     total_lessons = 0
     total_completed = 0
     for u in all_units:
         lessons = db.query(Lesson).filter(Lesson.unit_id == u.id).all()
-        done = sum(1 for l in lessons if l.is_completed)
+        done = sum(1 for l in lessons if l.id in completed_ids)
         total_lessons += len(lessons)
         total_completed += done
         units_data.append({
@@ -120,8 +127,8 @@ def get_progress(year: int = None, db: Session = Depends(get_db), current_user: 
     skill_map = {"theory": "grammar", "quiz": "vocabulary", "speaking": "speaking", "listening": "listening"}
     skill_scores: dict = {"speaking": [], "vocabulary": [], "grammar": [], "listening": []}
 
-    completed_lessons = db.query(Lesson).join(Unit).filter(
-        Unit.level == "A1", Lesson.is_completed == 1
+    completed_lessons = db.query(Lesson).join(UserLessonCompletion).join(Unit).filter(
+        Unit.level == "A1", UserLessonCompletion.user_id == user_id
     ).all()
 
     for l in completed_lessons:
@@ -415,8 +422,8 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
             for u in cefr_units
         )
         done_l = sum(
-            db.query(Lesson).filter(
-                Lesson.unit_id == u.id, Lesson.is_completed == 1
+            db.query(UserLessonCompletion).join(Lesson).filter(
+                Lesson.unit_id == u.id, UserLessonCompletion.user_id == user_id
             ).count()
             for u in cefr_units
         )
@@ -431,8 +438,8 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
     accuracy_avg = db.query(func.avg(TestResult.score)).filter(TestResult.user_id == user_id).scalar() or 0.0
     accuracy_percent = round(accuracy_avg * 100, 1)
 
-    completed_lessons_count = db.query(Lesson).join(Unit).filter(
-        Unit.level == content_level, Lesson.is_completed == 1
+    completed_lessons_count = db.query(UserLessonCompletion).join(Lesson).join(Unit).filter(
+        Unit.level == content_level, UserLessonCompletion.user_id == user_id
     ).count()
     
     base_words = {"A1": 0, "A2": 500, "B1": 1500, "B2": 3000, "C1": 5000, "C2": 10000}.get(content_level, 0)
@@ -452,6 +459,11 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
     weak_areas = [row[0] for row in weak_cards]
 
     # ── 5. Build unit/lesson response ─────────────────────────────────────────
+    completed_ids = {
+        row[0] for row in db.query(UserLessonCompletion.lesson_id)
+        .filter(UserLessonCompletion.user_id == user_id).all()
+    }
+
     unit_responses = []
     for u in units:
         lessons = db.query(Lesson).filter(Lesson.unit_id == u.id).order_by(Lesson.order).all()
@@ -460,7 +472,7 @@ def get_dashboard_data(db: Session = Depends(get_db), current_user: User = Depen
                 id=l.id, unit_id=l.unit_id, title=l.title,
                 content_type=l.content_type,
                 content_data=json.loads(l.content_data),
-                order=l.order, is_completed=bool(l.is_completed)
+                order=l.order, is_completed=(l.id in completed_ids)
             )
             for l in lessons
         ]
@@ -494,10 +506,16 @@ def get_lesson_details(lesson_id: int, db: Session = Depends(get_db), current_us
     lesson = db.query(Lesson).filter(Lesson.id == lesson_id).first()
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
+    
+    is_completed = db.query(UserLessonCompletion).filter(
+        UserLessonCompletion.user_id == current_user.id,
+        UserLessonCompletion.lesson_id == lesson_id
+    ).count() > 0
+
     return LessonResponse(id=lesson.id, unit_id=lesson.unit_id, title=lesson.title,
                           content_type=lesson.content_type,
                           content_data=json.loads(lesson.content_data),
-                          order=lesson.order, is_completed=bool(lesson.is_completed))
+                          order=lesson.order, is_completed=is_completed)
 
 
 @router.post("/{lesson_id}/complete")
@@ -522,7 +540,14 @@ def complete_lesson(lesson_id: str, payload: CompleteLessonRequest, db: Session 
     if not lesson:
         raise HTTPException(status_code=404, detail="Lesson not found")
         
-    lesson.is_completed = 1
+    # Record completion for this user
+    existing_completion = db.query(UserLessonCompletion).filter(
+        UserLessonCompletion.user_id == current_user.id,
+        UserLessonCompletion.lesson_id == lesson.id
+    ).first()
+    if not existing_completion:
+        new_completion = UserLessonCompletion(user_id=current_user.id, lesson_id=lesson.id)
+        db.add(new_completion)
 
     # Log accuracy as TestResult so dashboard query picks it up
     tr = TestResult(
@@ -547,10 +572,37 @@ def complete_lesson(lesson_id: str, payload: CompleteLessonRequest, db: Session 
         current_user.current_streak = 1
     
     current_user.last_active_date = now_utc
+    
+    # ── XP CALCULATION ────────────────────────────────────────────────────────
+    # Base XP for completing the lesson
+    base_xp = 10 
+    # Accuracy Bonus (0-10 XP)
+    acc_bonus = int((payload.accuracy or 0) * 10)
+    
+    # Velocity Bonus (0 or 5 XP)
+    # Check recent response times for this specific lesson session
+    velocity_bonus = 0
+    recent_logs = db.query(VelocityLog).filter(
+        VelocityLog.user_id == current_user.id,
+        VelocityLog.lesson_id == lesson.id
+    ).order_by(VelocityLog.id.desc()).limit(10).all()
+    
+    if recent_logs:
+        avg_rt = sum(l.response_time_ms for l in recent_logs) / len(recent_logs)
+        if avg_rt < 4000: # If average response is under 4 seconds, they are fast!
+            velocity_bonus = 5
+            
+    earned_xp = base_xp + acc_bonus + velocity_bonus
+    current_user.total_xp = (current_user.total_xp or 0) + earned_xp
 
     db.commit()
     _seed_cards_for_lesson(db, current_user.id, lesson)
-    return {"message": "Lesson completed", "lesson_id": lesson_id}
+    return {
+        "message": "Lesson completed", 
+        "lesson_id": lesson_id, 
+        "earned_xp": earned_xp,
+        "total_xp": current_user.total_xp
+    }
 
 
 # ─────────────────────────────────────────────────────────────────────────────

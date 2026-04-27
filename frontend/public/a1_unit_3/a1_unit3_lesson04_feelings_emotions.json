@@ -1,0 +1,464 @@
+{
+  "lesson_id": "a1_unit3_lesson04",
+  "unit": 3,
+  "lesson_number": 4,
+  "level": "A1",
+  "title": "Feelings & emotions",
+  "description": "Learn to express emotions, ask how people feel, and understand emotional vocabulary.",
+  "estimated_minutes": 20,
+  "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0304_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Emotion words",
+      "content": {
+        "explanation": "These words describe how a person feels inside.",
+        "groups": [
+          {
+            "group": "Positive",
+            "items": [
+              "happy",
+              "excited",
+              "proud",
+              "confident",
+              "grateful",
+              "relaxed",
+              "surprised (good)"
+            ]
+          },
+          {
+            "group": "Negative",
+            "items": [
+              "sad",
+              "angry",
+              "upset",
+              "worried",
+              "nervous",
+              "scared",
+              "disappointed",
+              "stressed"
+            ]
+          },
+          {
+            "group": "Neutral",
+            "items": [
+              "tired",
+              "bored",
+              "confused",
+              "surprised",
+              "shocked"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Expressing feelings \u2014 I feel / I am",
+      "content": {
+        "explanation": "Two patterns to express how you feel.",
+        "patterns": [
+          {
+            "pattern": "I feel + adjective",
+            "examples": [
+              "I feel happy.",
+              "I feel nervous.",
+              "I feel tired."
+            ]
+          },
+          {
+            "pattern": "I am + adjective",
+            "examples": [
+              "I am excited.",
+              "I am worried.",
+              "I am bored."
+            ]
+          }
+        ],
+        "giving_reason": {
+          "pattern": "I feel ___ because ___.",
+          "examples": [
+            "I feel happy because it's my birthday.",
+            "I am nervous because I have an exam tomorrow.",
+            "She feels sad because her friend is leaving."
+          ]
+        },
+        "asking": [
+          "How do you feel?",
+          "How are you feeling?",
+          "What's wrong? You look upset.",
+          "Are you okay?"
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Intensifiers \u2014 very, really, a bit, quite",
+      "content": {
+        "explanation": "Add these words before the emotion to show HOW MUCH you feel it.",
+        "items": [
+          {
+            "phrase": "very ___",
+            "note": "Strong feeling \u2014 I am very happy."
+          },
+          {
+            "phrase": "really ___",
+            "note": "Strong \u2014 spoken English \u2014 I feel really tired."
+          },
+          {
+            "phrase": "a bit / a little ___",
+            "note": "Small feeling \u2014 I feel a bit nervous."
+          },
+          {
+            "phrase": "quite ___",
+            "note": "Moderately \u2014 I am quite excited."
+          },
+          {
+            "phrase": "absolutely ___",
+            "note": "Maximum \u2014 I am absolutely thrilled!"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat with natural emotion \u2014 try to FEEL what you say!",
+        "phrases": [
+          {
+            "text": "I'm really excited about the trip!",
+            "audio_key": "excited_trip"
+          },
+          {
+            "text": "I feel a bit nervous before the exam.",
+            "audio_key": "nervous_exam"
+          },
+          {
+            "text": "She looks very upset today.",
+            "audio_key": "looks_upset"
+          },
+          {
+            "text": "I'm absolutely thrilled \u2014 I got the job!",
+            "audio_key": "thrilled_job"
+          },
+          {
+            "text": "Why do you look so worried?",
+            "audio_key": "look_worried"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Which emotion?",
+      "content": {
+        "question": "You have a job interview in one hour. How do you probably feel?",
+        "options": [
+          "relaxed",
+          "bored",
+          "nervous",
+          "proud"
+        ],
+        "correct_index": 2,
+        "explanation": "Before important events like interviews, people usually feel nervous."
+      }
+    },
+    {
+      "task_id": "t0304_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "I feel or I am?",
+      "content": {
+        "question": "Both 'I feel happy' and 'I am happy' are correct \u2014 but which intensifier fits best?",
+        "options": [
+          "I feel a bit happy because it's Friday! \u2713 / I feel absolutely bored \u2713",
+          "I feel very happy / I am really excited \u2713",
+          "I feel happy I / I am happy I \u2713",
+          "I feeling happy / I being happy \u2713"
+        ],
+        "correct_index": 1,
+        "explanation": "Both 'I feel very happy' and 'I am really excited' are correct \u2014 intensifier before adjective."
+      }
+    },
+    {
+      "task_id": "t0304_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Giving a reason",
+      "content": {
+        "question": "Complete: 'I feel sad ___ my friend is moving to another city.'",
+        "options": [
+          "so",
+          "because",
+          "but",
+          "and"
+        ],
+        "correct_index": 1,
+        "explanation": "'Because' introduces a reason. I feel sad BECAUSE..."
+      }
+    },
+    {
+      "task_id": "t0304_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the emotion",
+      "content": {
+        "sentence": "She passed all her exams! She is absolutely ___.",
+        "options": [
+          "sad",
+          "nervous",
+          "thrilled",
+          "worried"
+        ],
+        "correct": "thrilled",
+        "explanation": "Passing exams is a great result \u2192 absolutely thrilled (extremely happy)."
+      }
+    },
+    {
+      "task_id": "t0304_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in intensifier",
+      "content": {
+        "sentence": "I am ___ nervous \u2014 just a little. I'll be fine after the first five minutes.",
+        "options": [
+          "very",
+          "absolutely",
+          "a bit",
+          "really"
+        ],
+        "correct": "a bit",
+        "explanation": "'Just a little' tells us the feeling is small \u2192 a bit nervous."
+      }
+    },
+    {
+      "task_id": "t0304_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the feeling sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct sentence about feelings with a reason.",
+        "words": [
+          "excited",
+          "I",
+          "really",
+          "holiday",
+          "because",
+          "am",
+          "my",
+          "starts",
+          "tomorrow"
+        ],
+        "correct_sentence": "I am really excited because my holiday starts tomorrow.",
+        "explanation": "I am + intensifier + emotion + because + reason."
+      }
+    },
+    {
+      "task_id": "t0304_11",
+      "order": 11,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match situation to feeling",
+      "content": {
+        "instruction": "Match each situation to the most likely emotion.",
+        "pairs": [
+          {
+            "prompt": "You get a surprise birthday party",
+            "answer": "surprised and happy"
+          },
+          {
+            "prompt": "Your favourite team loses",
+            "answer": "disappointed"
+          },
+          {
+            "prompt": "You have to speak in front of 100 people",
+            "answer": "nervous"
+          },
+          {
+            "prompt": "You finish a very hard project at work",
+            "answer": "proud and relieved"
+          },
+          {
+            "prompt": "Someone takes your things without asking",
+            "answer": "angry"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_12",
+      "order": 12,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Dialogue \u2014 How are you feeling?",
+      "content": {
+        "context": "Kavya is about to do her first presentation at work. Her manager Suresh talks to her.",
+        "dialogue": [
+          {
+            "speaker": "Suresh",
+            "line": "Kavya, are you okay? You look a bit pale."
+          },
+          {
+            "speaker": "Kavya",
+            "line": "I'm a bit nervous, sir. It's my first big presentation."
+          },
+          {
+            "speaker": "Suresh",
+            "line": "That's completely normal! How are you feeling about the content?"
+          },
+          {
+            "speaker": "Kavya",
+            "line": "I feel quite confident about the slides \u2014 I worked really hard."
+          },
+          {
+            "speaker": "Suresh",
+            "line": "That's great. Are you worried about the questions at the end?"
+          },
+          {
+            "speaker": "Kavya",
+            "line": "Yes, a little. I'm scared I won't know all the answers."
+          },
+          {
+            "speaker": "Suresh",
+            "line": "Don't worry \u2014 if you don't know, just say 'That's a great question, let me check and come back to you.'"
+          },
+          {
+            "speaker": "Kavya",
+            "line": "Oh! That's really helpful. I feel much better now, thank you!"
+          },
+          {
+            "speaker": "Suresh",
+            "line": "You'll be brilliant. Good luck!"
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "How does Kavya feel at the beginning?",
+            "options": [
+              "Excited",
+              "A bit nervous",
+              "Very confident",
+              "Bored"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "What is Kavya scared about?",
+            "options": [
+              "The slides",
+              "The room",
+              "Questions at the end",
+              "The manager"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "How does Kavya feel at the end of the conversation?",
+            "options": [
+              "Still nervous",
+              "Much better",
+              "Very scared",
+              "Bored"
+            ],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0304_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is correct?",
+        "wrong_sentence": "I am feel very nervous because my exam is tomorrow.",
+        "options": [
+          "I am feel very nervous because my exam is tomorrow.",
+          "I feel very nervous because my exam is tomorrow.",
+          "I feeling very nervous because my exam is tomorrow.",
+          "I very nervous feel because my exam tomorrow."
+        ],
+        "correct_index": 1,
+        "explanation": "Use 'I feel' OR 'I am' \u2014 never 'I am feel'. I feel very nervous. \u2713"
+      }
+    },
+    {
+      "task_id": "t0304_14",
+      "order": 14,
+      "type": "scenario_mcq",
+      "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your friend tells you: 'I didn't get the job I wanted.'",
+        "question": "What is the most empathetic natural response?",
+        "options": [
+          "That's good!",
+          "Oh no, you must be really disappointed. Are you okay?",
+          "Never mind.",
+          "Why did you not get it?"
+        ],
+        "correct_index": 1,
+        "explanation": "Empathetic response: name the emotion (disappointed) + ask how they are."
+      }
+    },
+    {
+      "task_id": "t0304_15",
+      "order": 15,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking \u2014 Talk about your emotions",
+      "content": {
+        "instruction": "Speak for 45 seconds. Describe 3 different feelings you have had recently. Give a reason for each.",
+        "prompt": "Tell me about your feelings this week. How did you feel on different days? Why?",
+        "example_response": "On Monday I felt really stressed because I had a lot of work and a deadline. On Wednesday I was quite happy because I finished a big project and my manager was pleased. On Thursday I was a bit nervous because I had to speak in a team meeting. Yesterday I felt very relaxed because it was a quiet day. Today I feel quite excited because it's the weekend tomorrow!",
+        "key_phrases": [
+          "I felt / I was + emotion",
+          "because + reason",
+          "intensifiers: very/really/a bit/quite"
+        ],
+        "min_words": 55
+      }
+    },
+    {
+      "task_id": "t0304_16",
+      "order": 16,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Emotions: happy, excited, proud, sad, angry, nervous, worried, scared, bored, confused",
+          "Patterns: I feel + adjective / I am + adjective",
+          "Reasons: I feel ___ because ___",
+          "Intensifiers: very, really (strong) / quite (moderate) / a bit, a little (small)",
+          "Asking: How do you feel? / Are you okay? / You look ___."
+        ],
+        "next_lesson": "a1_unit3_lesson05",
+        "next_lesson_title": "Adjectives \u2014 opposites and comparisons"
+      }
+    }
+  ]
+}

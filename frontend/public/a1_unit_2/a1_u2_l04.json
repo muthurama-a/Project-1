@@ -1,0 +1,261 @@
+{
+  "lesson_id": "a1_unit2_lesson04",
+  "unit": 2, "lesson_number": 4, "level": "A1",
+  "title": "Days, months & dates",
+  "description": "Learn days of the week, months, ordinal numbers for dates, and how to talk about schedules.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0204_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Days of the week",
+      "content": {
+        "explanation": "There are 7 days in a week. Always write them with a capital letter in English.",
+        "items": [
+          { "phrase": "Monday", "note": "First working day of the week" },
+          { "phrase": "Tuesday", "note": "" },
+          { "phrase": "Wednesday", "note": "Middle of the week — tricky spelling!" },
+          { "phrase": "Thursday", "note": "" },
+          { "phrase": "Friday", "note": "Last working day" },
+          { "phrase": "Saturday", "note": "Weekend" },
+          { "phrase": "Sunday", "note": "Weekend — last day of the week" }
+        ],
+        "tip": "Weekdays = Monday to Friday. Weekend = Saturday and Sunday."
+      }
+    },
+    {
+      "task_id": "t0204_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Months of the year",
+      "content": {
+        "explanation": "There are 12 months. Always capitalise them in English.",
+        "items": [
+          { "phrase": "January", "note": "Month 1" }, { "phrase": "February", "note": "Month 2 — short month" },
+          { "phrase": "March", "note": "Month 3" }, { "phrase": "April", "note": "Month 4" },
+          { "phrase": "May", "note": "Month 5" }, { "phrase": "June", "note": "Month 6" },
+          { "phrase": "July", "note": "Month 7" }, { "phrase": "August", "note": "Month 8" },
+          { "phrase": "September", "note": "Month 9" }, { "phrase": "October", "note": "Month 10" },
+          { "phrase": "November", "note": "Month 11" }, { "phrase": "December", "note": "Month 12" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Ordinal numbers for dates",
+      "content": {
+        "explanation": "We use ordinal numbers (1st, 2nd, 3rd, 4th...) to say dates in English.",
+        "ordinals": [
+          { "number": "1st", "say": "first" }, { "number": "2nd", "say": "second" },
+          { "number": "3rd", "say": "third" }, { "number": "4th", "say": "fourth" },
+          { "number": "5th", "say": "fifth" }, { "number": "10th", "say": "tenth" },
+          { "number": "15th", "say": "fifteenth" }, { "number": "20th", "say": "twentieth" },
+          { "number": "21st", "say": "twenty-first" }, { "number": "31st", "say": "thirty-first" }
+        ],
+        "rule": "Most ordinals: add -th (four→fourth). Special: 1st first, 2nd second, 3rd third.",
+        "saying_dates": [
+          { "written": "5th March", "spoken": "the fifth of March" },
+          { "written": "21st June", "spoken": "the twenty-first of June" },
+          { "written": "1st January", "spoken": "the first of January" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_04", "order": 4, "type": "learn_card", "category": "grammar",
+      "title": "Prepositions of time: on / in / at",
+      "content": {
+        "explanation": "Choose the correct preposition for days, months, and times.",
+        "rules": [
+          { "preposition": "on", "use": "Days and dates", "examples": ["on Monday", "on the 5th of March", "on my birthday", "on Christmas Day"] },
+          { "preposition": "in", "use": "Months, years, seasons", "examples": ["in January", "in 2024", "in summer", "in the morning"] },
+          { "preposition": "at", "use": "Specific times, holidays", "examples": ["at 7 o'clock", "at noon", "at Christmas", "at the weekend"] }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_05", "order": 5, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — dates",
+      "content": {
+        "instruction": "Repeat these date expressions clearly.",
+        "phrases": [
+          { "text": "My birthday is on the fifteenth of August.", "audio_key": "birthday_august" },
+          { "text": "The meeting is on Monday.", "audio_key": "meeting_monday" },
+          { "text": "We go on holiday in July.", "audio_key": "holiday_july" },
+          { "text": "The exam is on the third of November.", "audio_key": "exam_november" },
+          { "text": "What date is it today?", "audio_key": "what_date_today" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "On, in, or at?",
+      "content": {
+        "question": "My birthday is ___ March.",
+        "options": ["on", "in", "at", "by"],
+        "correct_index": 1,
+        "explanation": "Months use 'in'. In March, in July, in December."
+      }
+    },
+    {
+      "task_id": "t0204_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "On, in, or at?",
+      "content": {
+        "question": "I have a class ___ Monday.",
+        "options": ["in", "at", "on", "by"],
+        "correct_index": 2,
+        "explanation": "Days use 'on'. On Monday, on Friday, on the weekend."
+      }
+    },
+    {
+      "task_id": "t0204_08", "order": 8, "type": "mcq", "category": "knowledge_check",
+      "title": "How do you say this date?",
+      "content": {
+        "question": "How do you say '3rd April' in English?",
+        "options": [
+          "Three April",
+          "The third of April",
+          "The three of April",
+          "April three"
+        ],
+        "correct_index": 1,
+        "explanation": "Dates: the + ordinal number + of + month. 'The third of April'."
+      }
+    },
+    {
+      "task_id": "t0204_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in on / in / at",
+      "content": {
+        "sentence": "We have a holiday ___ December. My family visits ___ the 25th. We celebrate ___ night.",
+        "blanks": [
+          { "position": 1, "options": ["on", "in", "at"], "correct": "in" },
+          { "position": 2, "options": ["on", "in", "at"], "correct": "on" },
+          { "position": 3, "options": ["on", "in", "at"], "correct": "at" }
+        ],
+        "explanation": "in December (month), on the 25th (date), at night (specific time expression)."
+      }
+    },
+    {
+      "task_id": "t0204_10", "order": 10, "type": "fill_blank", "category": "knowledge_check",
+      "title": "Fill in the ordinal number",
+      "content": {
+        "sentence": "Independence Day in India is ___ the fifteenth of August.",
+        "options": ["on", "in", "at", "by"],
+        "correct": "on",
+        "explanation": "Dates use 'on' — on the fifteenth of August."
+      }
+    },
+    {
+      "task_id": "t0204_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the date sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct sentence about a date.",
+        "words": ["birthday", "is", "My", "the", "of", "June", "twenty-first"],
+        "correct_sentence": "My birthday is the twenty-first of June.",
+        "explanation": "My birthday + is + the + ordinal + of + month."
+      }
+    },
+    {
+      "task_id": "t0204_12", "order": 12, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match the ordinal number",
+      "content": {
+        "instruction": "Match the number to the correct spoken ordinal.",
+        "pairs": [
+          { "prompt": "1st", "answer": "first" },
+          { "prompt": "2nd", "answer": "second" },
+          { "prompt": "3rd", "answer": "third" },
+          { "prompt": "12th", "answer": "twelfth" },
+          { "prompt": "20th", "answer": "twentieth" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_13", "order": 13, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Making plans",
+      "content": {
+        "context": "Two colleagues Divya and Kiran are arranging a meeting.",
+        "dialogue": [
+          { "speaker": "Divya", "line": "Kiran, when are you free to meet this week?" },
+          { "speaker": "Kiran", "line": "Let me check. Tuesday is busy — I have a presentation." },
+          { "speaker": "Divya", "line": "What about Wednesday?" },
+          { "speaker": "Kiran", "line": "Wednesday morning is free! What time works for you?" },
+          { "speaker": "Divya", "line": "Is ten o'clock okay?" },
+          { "speaker": "Kiran", "line": "Perfect. And what date is that? The fourteenth?" },
+          { "speaker": "Divya", "line": "Yes, Wednesday the fourteenth of March." },
+          { "speaker": "Kiran", "line": "Great, I'll put it in my calendar. See you then!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Why can't Kiran meet on Tuesday?",
+            "options": ["She is on holiday", "She has a presentation", "She is sick", "She has a class"],
+            "correct_index": 1
+          },
+          {
+            "question": "What time do they decide to meet?",
+            "options": ["Half past nine", "Eleven o'clock", "Ten o'clock", "Quarter past ten"],
+            "correct_index": 2
+          },
+          {
+            "question": "What is the full date of the meeting?",
+            "options": ["Tuesday 14th March", "Wednesday 14th March", "Wednesday 4th March", "Thursday 14th March"],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0204_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "My exam is in Monday on November.",
+        "options": [
+          "My exam is in Monday on November.",
+          "My exam is on Monday in November.",
+          "My exam is at Monday in November.",
+          "My exam is on Monday at November."
+        ],
+        "correct_index": 1,
+        "explanation": "Days use 'on' (on Monday). Months use 'in' (in November)."
+      }
+    },
+    {
+      "task_id": "t0204_15", "order": 15, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Someone asks you: 'When is your birthday?'",
+        "question": "Which is the most natural and correct answer?",
+        "options": [
+          "Birthday on fifteen August.",
+          "My birthday is on the fifteenth of August.",
+          "Birthday in August fifteen.",
+          "I born in fifteen August."
+        ],
+        "correct_index": 1,
+        "explanation": "My birthday is + on + the + ordinal + of + month."
+      }
+    },
+    {
+      "task_id": "t0204_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your week and important dates",
+      "content": {
+        "instruction": "Talk about your week. What do you do on which days? Also mention one important date.",
+        "prompt": "Tell me about your weekly schedule and one special date coming up.",
+        "example_response": "On Monday and Tuesday I go to work. Wednesday is my favourite day because I finish early. On Thursday evenings I go to the gym. Fridays are busy — I have meetings. At the weekend I relax. My sister's birthday is on the twelfth of May — I'm very excited!",
+        "key_phrases": ["On Monday/Tuesday...", "At the weekend", "My ___ is on the ___ of ___", "in + month"],
+        "min_words": 50
+      }
+    },
+    {
+      "task_id": "t0204_17", "order": 17, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Days: Monday to Sunday (always capital letters)",
+          "Months: January to December (always capital letters)",
+          "Ordinal numbers: first, second, third, fourth... twentieth, twenty-first",
+          "Saying dates: the + ordinal + of + month (the fifth of March)",
+          "Prepositions: on (days/dates), in (months/years), at (times/night)"
+        ],
+        "next_lesson": "a1_unit2_lesson05",
+        "next_lesson_title": "Weather & the present continuous"
+      }
+    }
+  ]
+}

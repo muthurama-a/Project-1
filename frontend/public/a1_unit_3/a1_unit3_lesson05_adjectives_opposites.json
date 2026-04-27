@@ -1,0 +1,461 @@
+{
+  "lesson_id": "a1_unit3_lesson05",
+  "unit": 3,
+  "lesson_number": 5,
+  "level": "A1",
+  "title": "Adjectives \u2014 opposites, very/quite/a bit",
+  "description": "Expand your adjective vocabulary with opposites, learn to use intensifiers, and practise describing things.",
+  "estimated_minutes": 20,
+  "xp_reward": 120,
+  "tasks": [
+    {
+      "task_id": "t0305_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Common adjective opposites",
+      "content": {
+        "explanation": "Knowing opposite pairs doubles your vocabulary instantly.",
+        "pairs": [
+          {
+            "adj": "big / large",
+            "opposite": "small / little"
+          },
+          {
+            "adj": "tall",
+            "opposite": "short"
+          },
+          {
+            "adj": "long",
+            "opposite": "short"
+          },
+          {
+            "adj": "fast / quick",
+            "opposite": "slow"
+          },
+          {
+            "adj": "hot",
+            "opposite": "cold"
+          },
+          {
+            "adj": "old",
+            "opposite": "new / young"
+          },
+          {
+            "adj": "expensive",
+            "opposite": "cheap"
+          },
+          {
+            "adj": "easy",
+            "opposite": "difficult / hard"
+          },
+          {
+            "adj": "clean",
+            "opposite": "dirty"
+          },
+          {
+            "adj": "noisy / loud",
+            "opposite": "quiet"
+          },
+          {
+            "adj": "heavy",
+            "opposite": "light"
+          },
+          {
+            "adj": "full",
+            "opposite": "empty"
+          },
+          {
+            "adj": "strong",
+            "opposite": "weak"
+          },
+          {
+            "adj": "interesting",
+            "opposite": "boring"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0305_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Intensifiers with adjectives",
+      "content": {
+        "explanation": "Place these before an adjective to show the strength of the description.",
+        "scale": [
+          {
+            "word": "a bit / a little",
+            "strength": "small amount",
+            "example": "It's a bit cold today."
+          },
+          {
+            "word": "quite",
+            "strength": "moderate",
+            "example": "This book is quite interesting."
+          },
+          {
+            "word": "very",
+            "strength": "strong",
+            "example": "This bag is very heavy."
+          },
+          {
+            "word": "really",
+            "strength": "strong (spoken)",
+            "example": "The film is really boring!"
+          },
+          {
+            "word": "absolutely / extremely",
+            "strength": "maximum",
+            "example": "This is absolutely delicious!"
+          }
+        ],
+        "rule": "Intensifier always comes BEFORE the adjective: very + old \u2713, old very \u2717"
+      }
+    },
+    {
+      "task_id": "t0305_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Adjective position \u2014 before noun OR after 'to be'",
+      "content": {
+        "explanation": "Adjectives can go in two positions in a sentence.",
+        "positions": [
+          {
+            "position": "Before noun (attributive)",
+            "rule": "article + adjective + noun",
+            "examples": [
+              "a tall building",
+              "an expensive restaurant",
+              "the cold water"
+            ]
+          },
+          {
+            "position": "After 'to be' (predicative)",
+            "rule": "subject + is/are + adjective",
+            "examples": [
+              "The building is tall.",
+              "The restaurant is expensive.",
+              "The water is cold."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0305_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these descriptive sentences. Focus on the stress on the intensifier.",
+        "phrases": [
+          {
+            "text": "This coffee is absolutely delicious.",
+            "audio_key": "absolutely_delicious"
+          },
+          {
+            "text": "The exam was really difficult.",
+            "audio_key": "really_difficult"
+          },
+          {
+            "text": "It's quite cold today \u2014 not very cold, just a bit chilly.",
+            "audio_key": "quite_cold"
+          },
+          {
+            "text": "The traffic is extremely noisy outside.",
+            "audio_key": "extremely_noisy"
+          },
+          {
+            "text": "My bag is a bit heavy \u2014 can you help?",
+            "audio_key": "bit_heavy"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0305_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Opposite adjective",
+      "content": {
+        "question": "What is the opposite of 'expensive'?",
+        "options": [
+          "noisy",
+          "heavy",
+          "cheap",
+          "slow"
+        ],
+        "correct_index": 2,
+        "explanation": "Expensive \u2194 cheap. A cheap price is low. An expensive price is high."
+      }
+    },
+    {
+      "task_id": "t0305_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Correct position",
+      "content": {
+        "question": "Which sentence has the adjective in the correct position?",
+        "options": [
+          "a building tall",
+          "tall a building",
+          "a tall building",
+          "building tall a"
+        ],
+        "correct_index": 2,
+        "explanation": "Article + adjective + noun: a + tall + building. \u2713"
+      }
+    },
+    {
+      "task_id": "t0305_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Which intensifier?",
+      "content": {
+        "question": "The room is 40 degrees. Which intensifier fits best?",
+        "options": [
+          "a bit hot",
+          "quite hot",
+          "absolutely hot",
+          "extremely hot"
+        ],
+        "correct_index": 3,
+        "explanation": "40 degrees is extreme heat \u2192 extremely hot or absolutely boiling."
+      }
+    },
+    {
+      "task_id": "t0305_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the opposite",
+      "content": {
+        "sentence": "The first question was easy but the last one was very ___.",
+        "options": [
+          "cheap",
+          "difficult",
+          "noisy",
+          "tall"
+        ],
+        "correct": "difficult",
+        "explanation": "Easy \u2194 difficult. The last question was very difficult."
+      }
+    },
+    {
+      "task_id": "t0305_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the intensifier",
+      "content": {
+        "sentence": "The hotel was ___ expensive \u2014 it cost 20,000 rupees per night!",
+        "options": [
+          "a bit",
+          "quite",
+          "extremely",
+          "a little"
+        ],
+        "correct": "extremely",
+        "explanation": "20,000 rupees per night is extreme \u2192 extremely expensive."
+      }
+    },
+    {
+      "task_id": "t0305_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the descriptive sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct descriptive sentence.",
+        "words": [
+          "really",
+          "restaurant",
+          "The",
+          "but",
+          "expensive",
+          "is",
+          "delicious",
+          "very",
+          "food",
+          "the",
+          "is"
+        ],
+        "correct_sentence": "The restaurant is really expensive but the food is very delicious.",
+        "explanation": "subject + is + intensifier + adjective + but + subject + is + intensifier + adjective."
+      }
+    },
+    {
+      "task_id": "t0305_11",
+      "order": 11,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match adjective to its opposite",
+      "content": {
+        "instruction": "Match each adjective to its opposite.",
+        "pairs": [
+          {
+            "prompt": "clean",
+            "answer": "dirty"
+          },
+          {
+            "prompt": "noisy",
+            "answer": "quiet"
+          },
+          {
+            "prompt": "full",
+            "answer": "empty"
+          },
+          {
+            "prompt": "heavy",
+            "answer": "light"
+          },
+          {
+            "prompt": "interesting",
+            "answer": "boring"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0305_12",
+      "order": 12,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Dialogue \u2014 Describing a new flat",
+      "content": {
+        "context": "Arjun just moved to a new flat. He tells his friend Meera about it.",
+        "dialogue": [
+          {
+            "speaker": "Meera",
+            "line": "So how's the new flat? Is it nice?"
+          },
+          {
+            "speaker": "Arjun",
+            "line": "It's quite nice, actually! The rooms are really big and clean."
+          },
+          {
+            "speaker": "Meera",
+            "line": "What about the area?"
+          },
+          {
+            "speaker": "Arjun",
+            "line": "The area is a bit noisy \u2014 there's a busy road outside. But it's very convenient."
+          },
+          {
+            "speaker": "Meera",
+            "line": "Is it far from work?"
+          },
+          {
+            "speaker": "Arjun",
+            "line": "No \u2014 it's quite close. Only about fifteen minutes by bus."
+          },
+          {
+            "speaker": "Meera",
+            "line": "And the rent? Is it expensive?"
+          },
+          {
+            "speaker": "Arjun",
+            "line": "It's a bit expensive \u2014 but not extremely. For the space and location, it's a good price."
+          },
+          {
+            "speaker": "Meera",
+            "line": "Sounds great! I'll come and visit soon."
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "How does Arjun describe the rooms?",
+            "options": [
+              "Small and dirty",
+              "Really big and clean",
+              "Quite old",
+              "A bit dark"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "What is one problem with the area?",
+            "options": [
+              "It's far from work",
+              "It's very expensive",
+              "It's a bit noisy",
+              "It's very dirty"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "How long is the commute to work?",
+            "options": [
+              "Five minutes",
+              "Fifteen minutes",
+              "Half an hour",
+              "Forty minutes"
+            ],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0305_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "The bag is heavy very and expensive quite.",
+        "options": [
+          "The bag is heavy very and expensive quite.",
+          "The bag is very heavy and quite expensive.",
+          "Very the bag is heavy and quite expensive.",
+          "The bag very is heavy and expensive quite."
+        ],
+        "correct_index": 1,
+        "explanation": "Intensifier goes BEFORE the adjective: very heavy, quite expensive. \u2713"
+      }
+    },
+    {
+      "task_id": "t0305_14",
+      "order": 14,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking \u2014 Describe your home or workplace",
+      "content": {
+        "instruction": "Speak for 45 seconds. Describe a place you know well using adjectives and intensifiers.",
+        "prompt": "Describe your home, office, or school. Use at least 6 adjectives with intensifiers.",
+        "example_response": "My home is quite small but very clean and comfortable. The kitchen is a bit old but it's very functional. My bedroom is quite quiet \u2014 I like it because I sleep very well. The area is a bit noisy during the day because of traffic, but it's extremely quiet at night. The building is quite old \u2014 about 30 years \u2014 but the rooms are really big. I'm very happy there.",
+        "key_phrases": [
+          "very / really / quite / a bit / extremely + adjective",
+          "but (contrast)",
+          "adjective before noun / after 'to be'"
+        ],
+        "min_words": 60
+      }
+    },
+    {
+      "task_id": "t0305_15",
+      "order": 15,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Opposite pairs: big/small, fast/slow, hot/cold, expensive/cheap, easy/difficult, clean/dirty, full/empty",
+          "Intensifiers scale: a bit \u2192 quite \u2192 very/really \u2192 absolutely/extremely",
+          "Intensifier always BEFORE adjective: very cold \u2713, cold very \u2717",
+          "Two positions: a tall building (before noun) / The building is tall (after 'to be')"
+        ],
+        "next_lesson": "a1_unit3_lesson06",
+        "next_lesson_title": "My home \u2014 rooms and furniture"
+      }
+    }
+  ]
+}

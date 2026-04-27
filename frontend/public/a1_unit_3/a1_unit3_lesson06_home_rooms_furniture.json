@@ -1,0 +1,489 @@
+{
+  "lesson_id": "a1_unit3_lesson06",
+  "unit": 3,
+  "lesson_number": 6,
+  "level": "A1",
+  "title": "My home \u2014 rooms & furniture",
+  "description": "Learn rooms of a house, furniture vocabulary, and prepositions of place to describe where things are.",
+  "estimated_minutes": 22,
+  "xp_reward": 130,
+  "tasks": [
+    {
+      "task_id": "t0306_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Rooms in a home",
+      "content": {
+        "explanation": "Learn the names for every room in a house or flat.",
+        "items": [
+          {
+            "phrase": "bedroom",
+            "note": "Room for sleeping"
+          },
+          {
+            "phrase": "living room / sitting room",
+            "note": "Main room for relaxing"
+          },
+          {
+            "phrase": "kitchen",
+            "note": "Room for cooking"
+          },
+          {
+            "phrase": "bathroom",
+            "note": "Room with shower/bath and toilet"
+          },
+          {
+            "phrase": "toilet / WC",
+            "note": "Room with only a toilet (British English)"
+          },
+          {
+            "phrase": "dining room",
+            "note": "Room for eating meals"
+          },
+          {
+            "phrase": "study / home office",
+            "note": "Room for working or studying"
+          },
+          {
+            "phrase": "balcony",
+            "note": "Outside area attached to the flat"
+          },
+          {
+            "phrase": "garden",
+            "note": "Outdoor area with plants/grass"
+          },
+          {
+            "phrase": "hallway / corridor",
+            "note": "Passage connecting rooms"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_02",
+      "order": 2,
+      "type": "learn_card",
+      "category": "vocabulary",
+      "title": "Furniture vocabulary",
+      "content": {
+        "explanation": "Learn what is inside each room.",
+        "groups": [
+          {
+            "group": "Bedroom",
+            "items": [
+              "bed",
+              "wardrobe",
+              "chest of drawers",
+              "mirror",
+              "lamp",
+              "pillow"
+            ]
+          },
+          {
+            "group": "Living room",
+            "items": [
+              "sofa / couch",
+              "armchair",
+              "coffee table",
+              "TV",
+              "bookshelf",
+              "curtains"
+            ]
+          },
+          {
+            "group": "Kitchen",
+            "items": [
+              "fridge",
+              "cooker / stove",
+              "sink",
+              "microwave",
+              "cupboard",
+              "kettle"
+            ]
+          },
+          {
+            "group": "Bathroom",
+            "items": [
+              "shower",
+              "bathtub",
+              "sink",
+              "toilet",
+              "towel",
+              "mirror"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_03",
+      "order": 3,
+      "type": "learn_card",
+      "category": "grammar",
+      "title": "Prepositions of place",
+      "content": {
+        "explanation": "Use these words to say WHERE things and people are.",
+        "items": [
+          {
+            "phrase": "in",
+            "note": "Inside: The milk is in the fridge."
+          },
+          {
+            "phrase": "on",
+            "note": "On a surface: The book is on the table."
+          },
+          {
+            "phrase": "under",
+            "note": "Below: The shoes are under the bed."
+          },
+          {
+            "phrase": "next to / beside",
+            "note": "Right beside: The lamp is next to the bed."
+          },
+          {
+            "phrase": "between",
+            "note": "In the middle of two things: The sofa is between the two chairs."
+          },
+          {
+            "phrase": "opposite / in front of",
+            "note": "Facing: The TV is opposite the sofa."
+          },
+          {
+            "phrase": "behind",
+            "note": "At the back: The garden is behind the house."
+          },
+          {
+            "phrase": "above / below",
+            "note": "Higher/lower than: The mirror is above the sink."
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_04",
+      "order": 4,
+      "type": "listen_repeat",
+      "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these sentences about home and furniture clearly.",
+        "phrases": [
+          {
+            "text": "The sofa is in the living room, opposite the TV.",
+            "audio_key": "sofa_living_room"
+          },
+          {
+            "text": "My keys are on the table next to the door.",
+            "audio_key": "keys_on_table"
+          },
+          {
+            "text": "The bathroom is between the bedroom and the kitchen.",
+            "audio_key": "bathroom_between"
+          },
+          {
+            "text": "The fridge is in the kitchen, next to the cooker.",
+            "audio_key": "fridge_kitchen"
+          },
+          {
+            "text": "There is a mirror above the sink.",
+            "audio_key": "mirror_above_sink"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "vocabulary",
+      "title": "Which room?",
+      "content": {
+        "question": "Where do you sleep in a house?",
+        "options": [
+          "kitchen",
+          "living room",
+          "bedroom",
+          "hallway"
+        ],
+        "correct_index": 2,
+        "explanation": "The bedroom is the room for sleeping."
+      }
+    },
+    {
+      "task_id": "t0306_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Correct preposition",
+      "content": {
+        "question": "'The cat is sleeping ___ the sofa.' (The cat is on top of the sofa.)",
+        "options": [
+          "in",
+          "on",
+          "under",
+          "behind"
+        ],
+        "correct_index": 1,
+        "explanation": "On a surface \u2192 on. The cat is on the sofa."
+      }
+    },
+    {
+      "task_id": "t0306_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "grammar",
+      "title": "Correct preposition",
+      "content": {
+        "question": "'My shoes are ___ the bed.' (They are below the bed, not visible.)",
+        "options": [
+          "on",
+          "above",
+          "under",
+          "between"
+        ],
+        "correct_index": 2,
+        "explanation": "Below the bed \u2192 under. My shoes are under the bed."
+      }
+    },
+    {
+      "task_id": "t0306_08",
+      "order": 8,
+      "type": "fill_blank",
+      "category": "grammar",
+      "title": "Fill in the preposition",
+      "content": {
+        "sentence": "The lamp is ___ the table, ___ the two chairs.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "on",
+              "in",
+              "under"
+            ],
+            "correct": "on"
+          },
+          {
+            "position": 2,
+            "options": [
+              "beside",
+              "between",
+              "above"
+            ],
+            "correct": "between"
+          }
+        ],
+        "explanation": "on the table (surface), between the two chairs (in the middle)."
+      }
+    },
+    {
+      "task_id": "t0306_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "vocabulary",
+      "title": "Fill in the furniture word",
+      "content": {
+        "sentence": "I keep my clothes in the ___ in my bedroom \u2014 it has two big doors.",
+        "options": [
+          "bookshelf",
+          "wardrobe",
+          "fridge",
+          "cupboard"
+        ],
+        "correct": "wardrobe",
+        "explanation": "A wardrobe is a large piece of bedroom furniture for clothes with doors."
+      }
+    },
+    {
+      "task_id": "t0306_10",
+      "order": 10,
+      "type": "sort_words",
+      "category": "grammar",
+      "title": "Build the location sentence",
+      "content": {
+        "instruction": "Rearrange to describe where something is.",
+        "words": [
+          "the",
+          "mirror",
+          "The",
+          "is",
+          "sink",
+          "above"
+        ],
+        "correct_sentence": "The mirror is above the sink.",
+        "explanation": "The + [item] + is + [preposition] + the + [reference object]."
+      }
+    },
+    {
+      "task_id": "t0306_11",
+      "order": 11,
+      "type": "match_pairs",
+      "category": "vocabulary",
+      "title": "Match furniture to room",
+      "content": {
+        "instruction": "Match each item of furniture to the room where you usually find it.",
+        "pairs": [
+          {
+            "prompt": "fridge and cooker",
+            "answer": "kitchen"
+          },
+          {
+            "prompt": "sofa and TV",
+            "answer": "living room"
+          },
+          {
+            "prompt": "bed and wardrobe",
+            "answer": "bedroom"
+          },
+          {
+            "prompt": "shower and towel",
+            "answer": "bathroom"
+          },
+          {
+            "prompt": "desk and bookshelf",
+            "answer": "study / home office"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_12",
+      "order": 12,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Dialogue \u2014 Showing a new flatmate around",
+      "content": {
+        "context": "Sara is showing her new flatmate Ahmed around their flat for the first time.",
+        "dialogue": [
+          {
+            "speaker": "Sara",
+            "line": "Welcome! Come in \u2014 I'll show you around the flat."
+          },
+          {
+            "speaker": "Ahmed",
+            "line": "Thank you! It looks nice. Is this the living room?"
+          },
+          {
+            "speaker": "Sara",
+            "line": "Yes! The sofa is in front of the TV and there's a small coffee table in the middle."
+          },
+          {
+            "speaker": "Ahmed",
+            "line": "It's really comfortable looking. Where's the kitchen?"
+          },
+          {
+            "speaker": "Sara",
+            "line": "It's just down the hallway \u2014 on the left. The fridge is next to the cooker."
+          },
+          {
+            "speaker": "Ahmed",
+            "line": "And my bedroom?"
+          },
+          {
+            "speaker": "Sara",
+            "line": "Your room is at the end of the corridor. There's a wardrobe and a desk inside."
+          },
+          {
+            "speaker": "Ahmed",
+            "line": "Is there a mirror in the room?"
+          },
+          {
+            "speaker": "Sara",
+            "line": "Yes \u2014 it's above the chest of drawers. And the bathroom is between your room and mine."
+          },
+          {
+            "speaker": "Ahmed",
+            "line": "Perfect. It all looks great \u2014 I love it!"
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Where is the kitchen?",
+            "options": [
+              "On the right",
+              "At the end",
+              "Down the hallway on the left",
+              "Next to the living room"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "Where is Ahmed's bedroom?",
+            "options": [
+              "Next to the kitchen",
+              "On the left",
+              "At the end of the corridor",
+              "Opposite the bathroom"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "Where is the mirror in Ahmed's room?",
+            "options": [
+              "On the wall",
+              "Above the desk",
+              "Above the chest of drawers",
+              "Next to the wardrobe"
+            ],
+            "correct_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0306_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence uses the preposition correctly?",
+        "wrong_sentence": "The lamp is in the table next to the window.",
+        "options": [
+          "The lamp is in the table next to the window.",
+          "The lamp is on the table next to the window.",
+          "The lamp is above the table next to the window.",
+          "The lamp is under the table next to the window."
+        ],
+        "correct_index": 1,
+        "explanation": "A lamp sits ON a table (on a surface). Not 'in the table'. \u2713"
+      }
+    },
+    {
+      "task_id": "t0306_14",
+      "order": 14,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Speaking \u2014 Describe your home",
+      "content": {
+        "instruction": "Speak for 55 seconds. Describe your home \u2014 rooms, furniture, and where things are. Use at least 5 prepositions of place.",
+        "prompt": "Describe your home. How many rooms are there? What is in each room? Where are things?",
+        "example_response": "My home is a two-bedroom flat. The living room is quite big \u2014 there is a large sofa in front of the TV and a coffee table between the sofa and the wall. The kitchen is next to the living room. The fridge is in the corner, next to the cooker. My bedroom has a big wardrobe opposite the bed and a lamp on the small table beside my bed. There is a mirror above the chest of drawers. The bathroom is between the two bedrooms. We also have a small balcony behind the living room with some plants.",
+        "key_phrases": [
+          "in / on / under / next to / between / opposite / above / behind",
+          "there is/are",
+          "my room has"
+        ],
+        "min_words": 65
+      }
+    },
+    {
+      "task_id": "t0306_15",
+      "order": 15,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Rooms: bedroom, living room, kitchen, bathroom, hallway, dining room, study, balcony",
+          "Furniture: bed, wardrobe, sofa, armchair, fridge, cooker, bookshelf, curtains, mirror",
+          "Prepositions: in, on, under, next to, between, opposite, above, behind",
+          "on = surface, in = enclosed space, under = below, between = in the middle"
+        ],
+        "next_lesson": "a1_unit3_lesson07",
+        "next_lesson_title": "Animals and nature"
+      }
+    }
+  ]
+}

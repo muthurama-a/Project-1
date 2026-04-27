@@ -1,0 +1,301 @@
+{
+  "lesson_id": "a1_unit2_lesson08",
+  "unit": 2, "lesson_number": 8, "level": "A1",
+  "title": "Unit 2 Review — Everyday life",
+  "description": "Review all Unit 2 topics: food, shopping, time, dates, weather, transport, and restaurant.",
+  "estimated_minutes": 25, "xp_reward": 200,
+  "tasks": [
+    {
+      "task_id": "t0208_01", "order": 1, "type": "learn_card", "category": "review",
+      "title": "Unit 2 — What you learned",
+      "content": {
+        "explanation": "Let's review everything from Unit 2 before your final test.",
+        "summary": [
+          { "lesson": "Lesson 1", "topic": "Food & drink — a/an/some, taste words, ordering" },
+          { "lesson": "Lesson 2", "topic": "Market — how much/many, quantities (kilo, litre, dozen)" },
+          { "lesson": "Lesson 3", "topic": "Time — o'clock, half past, quarter past/to" },
+          { "lesson": "Lesson 4", "topic": "Dates — days, months, ordinals, on/in/at" },
+          { "lesson": "Lesson 5", "topic": "Weather — present continuous (is raining, am sitting)" },
+          { "lesson": "Lesson 6", "topic": "Transport — can/can't, travel phrases" },
+          { "lesson": "Lesson 7", "topic": "Restaurant — could for requests, full conversation" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0208_02", "order": 2, "type": "mcq", "category": "review",
+      "title": "Review — a / an / some",
+      "content": {
+        "question": "Choose the correct sentence: 'For breakfast I have ___ egg and ___ bread.'",
+        "options": [
+          "a egg and a bread",
+          "an egg and some bread",
+          "an egg and a bread",
+          "a egg and some bread"
+        ],
+        "correct_index": 1,
+        "explanation": "an egg (vowel e), some bread (uncountable) ✓"
+      }
+    },
+    {
+      "task_id": "t0208_03", "order": 3, "type": "mcq", "category": "review",
+      "title": "Review — How much / How many",
+      "content": {
+        "question": "'___ rice do you want?' and '___ apples should I buy?'",
+        "options": [
+          "How many / How much",
+          "How much / How many",
+          "How much / How much",
+          "How many / How many"
+        ],
+        "correct_index": 1,
+        "explanation": "Rice = uncountable → How much. Apples = countable → How many."
+      }
+    },
+    {
+      "task_id": "t0208_04", "order": 4, "type": "mcq", "category": "review",
+      "title": "Review — Telling the time",
+      "content": {
+        "question": "The clock shows 8:45. How do you say this?",
+        "options": [
+          "Half past eight",
+          "Quarter past eight",
+          "Quarter to nine",
+          "Eight forty-five o'clock"
+        ],
+        "correct_index": 2,
+        "explanation": "8:45 = 15 minutes before 9 = quarter to nine."
+      }
+    },
+    {
+      "task_id": "t0208_05", "order": 5, "type": "mcq", "category": "review",
+      "title": "Review — on / in / at",
+      "content": {
+        "question": "My birthday is ___ the 10th ___ April.",
+        "options": ["in / in", "on / in", "at / on", "on / on"],
+        "correct_index": 1,
+        "explanation": "Dates → on. Months → in. On the 10th of April. ✓"
+      }
+    },
+    {
+      "task_id": "t0208_06", "order": 6, "type": "mcq", "category": "review",
+      "title": "Review — Present continuous",
+      "content": {
+        "question": "Look outside! It ___ and the children ___ inside.",
+        "options": [
+          "rains / are playing",
+          "is raining / play",
+          "is raining / are playing",
+          "rains / play"
+        ],
+        "correct_index": 2,
+        "explanation": "Both actions are happening right now → both need present continuous."
+      }
+    },
+    {
+      "task_id": "t0208_07", "order": 7, "type": "mcq", "category": "review",
+      "title": "Review — can / can't",
+      "content": {
+        "question": "Which sentence is grammatically correct?",
+        "options": [
+          "She cans drive a car.",
+          "She can to drive a car.",
+          "She can drive a car.",
+          "She can driving a car."
+        ],
+        "correct_index": 2,
+        "explanation": "Can + base verb ONLY. No -s, no 'to', no -ing. She can drive. ✓"
+      }
+    },
+    {
+      "task_id": "t0208_08", "order": 8, "type": "mcq", "category": "review",
+      "title": "Review — Polite requests",
+      "content": {
+        "question": "You are at a restaurant and want more water. Which is MOST polite?",
+        "options": [
+          "Water!",
+          "I need water.",
+          "Could you bring some more water, please?",
+          "Can I water?"
+        ],
+        "correct_index": 2,
+        "explanation": "Could + you + bring + please = most polite restaurant request."
+      }
+    },
+    {
+      "task_id": "t0208_09", "order": 9, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — time and date",
+      "content": {
+        "sentence": "The meeting is ___ Wednesday ___ quarter past ten ___ the morning.",
+        "blanks": [
+          { "position": 1, "options": ["on", "in", "at"], "correct": "on" },
+          { "position": 2, "options": ["on", "in", "at"], "correct": "at" },
+          { "position": 3, "options": ["on", "in", "at"], "correct": "in" }
+        ],
+        "explanation": "on Wednesday (day), at quarter past ten (time), in the morning (part of day)."
+      }
+    },
+    {
+      "task_id": "t0208_10", "order": 10, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — present continuous",
+      "content": {
+        "sentence": "Right now my sister ___ (cook) dinner and my brother ___ (watch) TV.",
+        "blanks": [
+          { "position": 1, "options": ["cook", "cooks", "is cooking"], "correct": "is cooking" },
+          { "position": 2, "options": ["watch", "watches", "is watching"], "correct": "is watching" }
+        ],
+        "explanation": "Right now = present continuous. She is cooking. He is watching."
+      }
+    },
+    {
+      "task_id": "t0208_11", "order": 11, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — transport",
+      "content": {
+        "sentence": "I ___ drive so I always ___ the bus to work. It ___ about 20 minutes.",
+        "blanks": [
+          { "position": 1, "options": ["can", "can't", "could"], "correct": "can't" },
+          { "position": 2, "options": ["drive", "take", "ride"], "correct": "take" },
+          { "position": 3, "options": ["takes", "goes", "costs"], "correct": "takes" }
+        ],
+        "explanation": "can't drive (no ability), take the bus (correct verb), takes 20 minutes (travel time)."
+      }
+    },
+    {
+      "task_id": "t0208_12", "order": 12, "type": "sort_words", "category": "review",
+      "title": "Review — Build the sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct sentence.",
+        "words": ["half", "at", "starts", "The", "past", "film", "seven"],
+        "correct_sentence": "The film starts at half past seven.",
+        "explanation": "at + half past + hour = 7:30."
+      }
+    },
+    {
+      "task_id": "t0208_13", "order": 13, "type": "sort_words", "category": "review",
+      "title": "Review — Build the question",
+      "content": {
+        "instruction": "Rearrange to make a correct polite restaurant request.",
+        "words": ["have", "Could", "bill", "the", "we", "please"],
+        "correct_sentence": "Could we have the bill, please?",
+        "explanation": "Could + we + have + the + [item] + please?"
+      }
+    },
+    {
+      "task_id": "t0208_14", "order": 14, "type": "error_correction", "category": "review",
+      "title": "Review — Find all mistakes",
+      "content": {
+        "instruction": "This paragraph has 3 mistakes. Which version corrects them all?",
+        "wrong_text": "Today it is rain and I can't going outside. I am eat breakfast at home — some rice and a egg. My meeting is in Monday at nine o'clock.",
+        "options": [
+          "Today it is raining and I can't go outside. I am eating breakfast at home — some rice and an egg. My meeting is on Monday at nine o'clock.",
+          "Today it is raining and I can't going outside. I am eating breakfast — some rice and an egg. My meeting is in Monday.",
+          "Today it rains and I can't go outside. I eat breakfast — some rice and a egg. My meeting is on Monday.",
+          "Today it is rain and I can't go outside. I am eating — some rice and an egg. My meeting is at Monday."
+        ],
+        "correct_index": 0,
+        "explanation": "3 errors: 'rain'→'raining' (present continuous), 'can't going'→'can't go' (can + base verb), 'a egg'→'an egg' (vowel), 'in Monday'→'on Monday' (day)."
+      }
+    },
+    {
+      "task_id": "t0208_15", "order": 15, "type": "match_pairs", "category": "review",
+      "title": "Review — Match grammar rule to example",
+      "content": {
+        "instruction": "Match each sentence to its grammar rule.",
+        "pairs": [
+          { "prompt": "It is raining right now.", "answer": "present continuous" },
+          { "prompt": "I can't drive.", "answer": "can for ability" },
+          { "prompt": "Could I have the menu?", "answer": "could for polite request" },
+          { "prompt": "How much are the tomatoes?", "answer": "how much for price" },
+          { "prompt": "My birthday is on the 5th of June.", "answer": "on + date" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0208_16", "order": 16, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Final dialogue — A busy morning",
+      "content": {
+        "context": "Meera is having a busy morning. She talks to her colleague Raj at work.",
+        "dialogue": [
+          { "speaker": "Raj", "line": "Good morning, Meera! You look tired. Are you okay?" },
+          { "speaker": "Meera", "line": "Morning, Raj! Yes, I'm fine — just a busy morning!" },
+          { "speaker": "Raj", "line": "What happened?" },
+          { "speaker": "Meera", "line": "Well, I woke up at half past six. It was raining heavily, so I couldn't take my bike." },
+          { "speaker": "Raj", "line": "Oh no! How did you get here?" },
+          { "speaker": "Meera", "line": "I took the bus. It took forty minutes — usually it takes twenty!" },
+          { "speaker": "Raj", "line": "That's a long time. Did you have breakfast?" },
+          { "speaker": "Meera", "line": "Just an apple and some tea. I didn't have time to cook." },
+          { "speaker": "Raj", "line": "Do you want to go to the café downstairs at lunch?" },
+          { "speaker": "Meera", "line": "Yes please! What time is it now?" },
+          { "speaker": "Raj", "line": "It's quarter to ten. Lunch is at one o'clock — three hours to go!" },
+          { "speaker": "Meera", "line": "Perfect. I'll have a proper meal then. I'm starving!" }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "Why couldn't Meera take her bike?",
+            "options": ["She was tired", "It was raining", "It was broken", "She was late"],
+            "correct_index": 1
+          },
+          {
+            "question": "How long did the bus take?",
+            "options": ["Twenty minutes", "Half an hour", "Forty minutes", "Ten minutes"],
+            "correct_index": 2
+          },
+          {
+            "question": "What time does the dialogue happen?",
+            "options": ["Quarter past ten", "Quarter to ten", "Half past ten", "Ten o'clock"],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0208_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Final speaking — Part 1: Your day so far",
+      "content": {
+        "instruction": "Speak for 60–75 seconds. Talk about your morning today using everything you learned in Unit 2.",
+        "prompt": "Describe your morning. Include: what time you woke up, the weather, what you ate, how you travelled, and what you are doing now.",
+        "example_response": "I woke up at half past six this morning. The weather was hot and sunny — not a cloud in the sky! For breakfast I had some eggs, toast, and an orange juice. I took the bus to work — it took about twenty-five minutes. I arrived at quarter to nine. Right now I am sitting at my desk and working. I'm also planning lunch — I'd like to go to a restaurant near the office at one o'clock.",
+        "key_phrases": ["I woke up at", "The weather was", "I had some/an/a", "I took the ___", "It took ___", "Right now I am ___ing"],
+        "min_words": 70,
+        "covers_lessons": [1, 2, 3, 4, 5, 6]
+      }
+    },
+    {
+      "task_id": "t0208_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Final speaking — Part 2: Restaurant role play",
+      "content": {
+        "instruction": "Have a complete restaurant conversation. Cover: arriving, ordering food and drink, asking a question, and paying.",
+        "prompt": "You arrive at a restaurant for lunch with a friend. Start the conversation.",
+        "example_response": "Good afternoon! A table for two, please. Thank you. Could we see the menu? Excuse me, what do you recommend for the main course? The chicken curry sounds delicious — I'll have that, please. And could we have two glasses of water? My friend will have the vegetable pasta. (Later) Excuse me! Could we have the bill, please? Thank you, everything was absolutely delicious!",
+        "key_phrases": ["A table for two", "Could we see the menu?", "What do you recommend?", "I'll have / I'd like", "Could we have the bill?"],
+        "min_words": 65,
+        "covers_lessons": [1, 7]
+      }
+    },
+    {
+      "task_id": "t0208_19", "order": 19, "type": "lesson_summary", "category": "review",
+      "title": "Unit 2 Complete! 🎉",
+      "content": {
+        "congratulations": "Excellent! You have completed Unit 2. You can now talk about food, go shopping, tell the time and date, describe weather, use transport, and have a full restaurant conversation — all in English!",
+        "all_grammar_covered": [
+          "Articles: a (consonant), an (vowel), some (uncountable/plural)",
+          "How much (uncountable/price) vs How many (countable)",
+          "Time: o'clock, half past, quarter past, quarter to, ___ past/to",
+          "Prepositions: on (days/dates), in (months/year), at (time/night)",
+          "Present continuous: Subject + am/is/are + verb-ing",
+          "Can/can't + base verb (ability and permission)",
+          "Could + base verb (polite requests)"
+        ],
+        "all_vocabulary_covered": [
+          "Food and drink, taste words",
+          "Shopping and quantity expressions",
+          "Days, months, ordinal numbers",
+          "Weather adjectives",
+          "Transport types and travel phrases",
+          "Restaurant vocabulary and phrases"
+        ],
+        "next_unit": "a1_unit3_lesson01",
+        "next_unit_title": "Unit 3 — My world: body, health, clothes & feelings"
+      }
+    }
+  ]
+}

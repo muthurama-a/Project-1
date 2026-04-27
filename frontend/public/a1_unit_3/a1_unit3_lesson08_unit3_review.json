@@ -1,0 +1,511 @@
+{
+  "lesson_id": "a1_unit3_lesson08",
+  "unit": 3,
+  "lesson_number": 8,
+  "level": "A1",
+  "title": "Unit 3 Review \u2014 My world",
+  "description": "Review Unit 3: body, health, doctor, clothes, feelings, adjectives, home, and animals.",
+  "estimated_minutes": 28,
+  "xp_reward": 200,
+  "tasks": [
+    {
+      "task_id": "t0308_01",
+      "order": 1,
+      "type": "learn_card",
+      "category": "review",
+      "title": "Unit 3 \u2014 What you learned",
+      "content": {
+        "explanation": "Quick recap of all Unit 3 lessons.",
+        "summary": [
+          {
+            "lesson": "Lesson 1",
+            "topic": "Body parts + health: I have a headache / My knee hurts / I feel sick"
+          },
+          {
+            "lesson": "Lesson 2",
+            "topic": "Doctor's appointment: since/for, should/shouldn't, symptoms"
+          },
+          {
+            "lesson": "Lesson 3",
+            "topic": "Clothes + colours: colour + noun word order, is wearing"
+          },
+          {
+            "lesson": "Lesson 4",
+            "topic": "Feelings: I feel/am + adjective, because, intensifiers"
+          },
+          {
+            "lesson": "Lesson 5",
+            "topic": "Adjective opposites + intensifiers: very/quite/a bit + adjective"
+          },
+          {
+            "lesson": "Lesson 6",
+            "topic": "Home: rooms, furniture, prepositions of place (on/in/under/between)"
+          },
+          {
+            "lesson": "Lesson 7",
+            "topic": "Animals + nature: can/can't for ability, habitats"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0308_02",
+      "order": 2,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Health",
+      "content": {
+        "question": "Which sentence about health is correct?",
+        "options": [
+          "I have headache and my stomach hurt.",
+          "I have a headache and my stomach hurts.",
+          "I have a headache and my stomach hurt.",
+          "I am headache and stomach hurts."
+        ],
+        "correct_index": 1,
+        "explanation": "I have a headache (article 'a'). My stomach hurts (singular \u2192 hurts). \u2713"
+      }
+    },
+    {
+      "task_id": "t0308_03",
+      "order": 3,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Since or for",
+      "content": {
+        "question": "'I have had a cold ___ Monday' and 'for ___ three days'.",
+        "options": [
+          "since / for",
+          "for / for",
+          "since / since",
+          "for / since"
+        ],
+        "correct_index": 0,
+        "explanation": "Monday = specific time \u2192 since. Three days = duration \u2192 for."
+      }
+    },
+    {
+      "task_id": "t0308_04",
+      "order": 4,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Clothes description",
+      "content": {
+        "question": "Which is the correct description of someone's outfit?",
+        "options": [
+          "She wearing dress red and shoes black.",
+          "She is wearing a red dress and black shoes.",
+          "She wear red dress and black shoe.",
+          "She is wearing dress red and shoes black."
+        ],
+        "correct_index": 1,
+        "explanation": "She is wearing + a + colour + noun. Colour before noun. Plural shoes. \u2713"
+      }
+    },
+    {
+      "task_id": "t0308_05",
+      "order": 5,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Feelings",
+      "content": {
+        "question": "Complete: 'I feel ___ nervous \u2014 just a small feeling, not a lot.'",
+        "options": [
+          "very",
+          "absolutely",
+          "a bit",
+          "extremely"
+        ],
+        "correct_index": 2,
+        "explanation": "Small feeling \u2192 a bit. I feel a bit nervous. \u2713"
+      }
+    },
+    {
+      "task_id": "t0308_06",
+      "order": 6,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Adjectives",
+      "content": {
+        "question": "What is the opposite of 'noisy'?",
+        "options": [
+          "heavy",
+          "quiet",
+          "dirty",
+          "slow"
+        ],
+        "correct_index": 1,
+        "explanation": "Noisy \u2194 quiet."
+      }
+    },
+    {
+      "task_id": "t0308_07",
+      "order": 7,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Prepositions of place",
+      "content": {
+        "question": "'The book is ___ the table.' (It is on top of the table.)",
+        "options": [
+          "in",
+          "under",
+          "on",
+          "between"
+        ],
+        "correct_index": 2,
+        "explanation": "On top of a surface \u2192 on. The book is on the table."
+      }
+    },
+    {
+      "task_id": "t0308_08",
+      "order": 8,
+      "type": "mcq",
+      "category": "review",
+      "title": "Review \u2014 Can for ability",
+      "content": {
+        "question": "Which sentence about animals is correct?",
+        "options": [
+          "Eagles cans fly very high.",
+          "Eagles can to fly very high.",
+          "Eagles can fly very high.",
+          "Eagles can flying very high."
+        ],
+        "correct_index": 2,
+        "explanation": "Can + base verb. Eagles can fly. \u2713 (No -s, no 'to', no -ing)"
+      }
+    },
+    {
+      "task_id": "t0308_09",
+      "order": 9,
+      "type": "fill_blank",
+      "category": "review",
+      "title": "Review Fill-in \u2014 health",
+      "content": {
+        "sentence": "The doctor said I ___ rest and I ___ eat spicy food for three days.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "should",
+              "shouldn't"
+            ],
+            "correct": "should"
+          },
+          {
+            "position": 2,
+            "options": [
+              "should",
+              "shouldn't"
+            ],
+            "correct": "shouldn't"
+          }
+        ],
+        "explanation": "Rest = positive advice \u2192 should. Avoid spicy food = negative advice \u2192 shouldn't."
+      }
+    },
+    {
+      "task_id": "t0308_10",
+      "order": 10,
+      "type": "fill_blank",
+      "category": "review",
+      "title": "Review Fill-in \u2014 home",
+      "content": {
+        "sentence": "The lamp is ___ the desk and the bed is ___ the wardrobe and the window.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "on",
+              "in",
+              "under"
+            ],
+            "correct": "on"
+          },
+          {
+            "position": 2,
+            "options": [
+              "next to",
+              "between",
+              "above"
+            ],
+            "correct": "between"
+          }
+        ],
+        "explanation": "on the desk (surface), between (in the middle of two things)."
+      }
+    },
+    {
+      "task_id": "t0308_11",
+      "order": 11,
+      "type": "fill_blank",
+      "category": "review",
+      "title": "Review Fill-in \u2014 feelings",
+      "content": {
+        "sentence": "She passed her driving test! She is absolutely ___ and very ___.",
+        "blanks": [
+          {
+            "position": 1,
+            "options": [
+              "nervous",
+              "thrilled",
+              "worried",
+              "bored"
+            ],
+            "correct": "thrilled"
+          },
+          {
+            "position": 2,
+            "options": [
+              "sad",
+              "scared",
+              "proud",
+              "tired"
+            ],
+            "correct": "proud"
+          }
+        ],
+        "explanation": "Passing a test = thrilled (extremely happy) and proud (good feeling about achievement)."
+      }
+    },
+    {
+      "task_id": "t0308_12",
+      "order": 12,
+      "type": "sort_words",
+      "category": "review",
+      "title": "Review \u2014 Build the sentence",
+      "content": {
+        "instruction": "Rearrange all words to make one correct sentence.",
+        "words": [
+          "have",
+          "I",
+          "sore",
+          "throat",
+          "a",
+          "and",
+          "a",
+          "since",
+          "fever",
+          "yesterday"
+        ],
+        "correct_sentence": "I have a sore throat and a fever since yesterday.",
+        "explanation": "I have + a + [problem] + and + a + [problem] + since + [time]."
+      }
+    },
+    {
+      "task_id": "t0308_13",
+      "order": 13,
+      "type": "error_correction",
+      "category": "review",
+      "title": "Review \u2014 Find all mistakes",
+      "content": {
+        "instruction": "This message has 4 mistakes. Which version corrects them all?",
+        "wrong_text": "Hi, I feel very bad today. I have headache since three days. My doctor say I should to rest. I am wearing pyjamas blue and sitting in my sofa.",
+        "options": [
+          "Hi, I feel very bad today. I have a headache for three days. My doctor says I should rest. I am wearing blue pyjamas and sitting on my sofa.",
+          "Hi, I feel very bad today. I have headache for three days. My doctor say I should rest. I am wearing blue pyjamas and sitting in my sofa.",
+          "Hi, I feel very bad today. I have a headache since three days. My doctor says I should to rest. I am wearing pyjamas blue and sitting on my sofa.",
+          "Hi, I feel very bad today. I have a headache for three days. My doctor says I should rest. I am wearing pyjamas blue and sitting in my sofa."
+        ],
+        "correct_index": 0,
+        "explanation": "4 errors: 'a headache' (article), 'for' not 'since' (duration), 'says' (3rd person), 'should rest' (no 'to'), 'blue pyjamas' (colour before noun), 'on my sofa' (on surface not 'in')."
+      }
+    },
+    {
+      "task_id": "t0308_14",
+      "order": 14,
+      "type": "match_pairs",
+      "category": "review",
+      "title": "Review \u2014 Match grammar rule to example",
+      "content": {
+        "instruction": "Match each sentence to its grammar or vocabulary rule.",
+        "pairs": [
+          {
+            "prompt": "My knee hurts.",
+            "answer": "health \u2014 body part + hurts"
+          },
+          {
+            "prompt": "She is wearing a dark red dress.",
+            "answer": "clothes \u2014 colour before noun"
+          },
+          {
+            "prompt": "The lamp is between the chairs.",
+            "answer": "preposition of place"
+          },
+          {
+            "prompt": "I feel absolutely thrilled!",
+            "answer": "intensifier + emotion"
+          },
+          {
+            "prompt": "Dolphins can communicate.",
+            "answer": "can for animal ability"
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0308_15",
+      "order": 15,
+      "type": "dialogue",
+      "category": "dialogue_reading",
+      "title": "Final dialogue \u2014 A phone call catching up",
+      "content": {
+        "context": "Old friends Vikram and Ananya haven't spoken in a while. They catch up on the phone.",
+        "dialogue": [
+          {
+            "speaker": "Vikram",
+            "line": "Ananya! How are you? It's been so long!"
+          },
+          {
+            "speaker": "Ananya",
+            "line": "Vikram! I'm really happy you called. I've been quite busy."
+          },
+          {
+            "speaker": "Vikram",
+            "line": "Are you okay? You sound a bit tired."
+          },
+          {
+            "speaker": "Ananya",
+            "line": "I was sick last week \u2014 I had a bad cold and a fever for about four days."
+          },
+          {
+            "speaker": "Vikram",
+            "line": "Oh no! Are you feeling better now?"
+          },
+          {
+            "speaker": "Ananya",
+            "line": "Yes, much better! The doctor said I should rest and drink lots of water."
+          },
+          {
+            "speaker": "Vikram",
+            "line": "Good. So what else is new? I heard you moved to a new flat!"
+          },
+          {
+            "speaker": "Ananya",
+            "line": "Yes! It's really nice \u2014 quite big, very clean, and extremely quiet."
+          },
+          {
+            "speaker": "Vikram",
+            "line": "What's your favourite room?"
+          },
+          {
+            "speaker": "Ananya",
+            "line": "Definitely the living room \u2014 there's a huge sofa in front of the window and I can see trees and birds outside."
+          },
+          {
+            "speaker": "Vikram",
+            "line": "That sounds perfect! I'm a bit jealous honestly."
+          },
+          {
+            "speaker": "Ananya",
+            "line": "Come and visit! I'll show you around."
+          }
+        ],
+        "comprehension_questions": [
+          {
+            "question": "How long was Ananya sick?",
+            "options": [
+              "Two days",
+              "A week",
+              "Four days",
+              "Three days"
+            ],
+            "correct_index": 2
+          },
+          {
+            "question": "How does Ananya describe her new flat?",
+            "options": [
+              "Small but clean",
+              "Really nice, quite big, very clean and quiet",
+              "Quite noisy and small",
+              "Old but comfortable"
+            ],
+            "correct_index": 1
+          },
+          {
+            "question": "What can Ananya see from her living room?",
+            "options": [
+              "The sea",
+              "Trees and birds",
+              "The street",
+              "Other buildings"
+            ],
+            "correct_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "t0308_16",
+      "order": 16,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Final speaking \u2014 Part 1: Health and feelings",
+      "content": {
+        "instruction": "Speak for 50 seconds combining health and feelings vocabulary.",
+        "prompt": "Describe a time you were sick. How did you feel? What did the doctor say? How do you feel now?",
+        "example_response": "Last month I felt absolutely terrible. I had a high fever and a really bad headache for about five days. I also had a sore throat and a cough. I felt very weak and quite dizzy. I went to the doctor. She asked me how long I had felt sick \u2014 I told her since the previous Monday. She said I should rest at home, drink lots of water, and take tablets three times a day. She also said I shouldn't go to work. After a week I felt much better \u2014 quite relieved and grateful! Now I feel completely fine.",
+        "key_phrases": [
+          "I had a ___",
+          "I felt very/quite/a bit ___",
+          "for ___ / since ___",
+          "The doctor said I should/shouldn't ___",
+          "Now I feel ___"
+        ],
+        "min_words": 70
+      }
+    },
+    {
+      "task_id": "t0308_17",
+      "order": 17,
+      "type": "speaking",
+      "category": "speaking",
+      "title": "Final speaking \u2014 Part 2: Describe your world",
+      "content": {
+        "instruction": "Speak for 60 seconds. Describe your home AND your favourite animal. Use adjectives, prepositions, and can/can't.",
+        "prompt": "Tell me about your home \u2014 rooms, furniture, how things are arranged. Then describe your favourite animal.",
+        "example_response": "My home is a three-bedroom flat on the fourth floor. The living room is quite large \u2014 there's a big sofa opposite the TV and a coffee table in the middle. The kitchen is very clean and organised \u2014 the fridge is next to the cooker and there are cupboards above the sink. My bedroom has a wardrobe beside the door and a lamp on the table next to my bed. It's very comfortable. My favourite animal is the tiger. It's absolutely beautiful \u2014 large, powerful, and elegant. Tigers live in forests and can swim very well. They can also run very fast. I feel very sad that they are endangered.",
+        "key_phrases": [
+          "in/on/under/next to/between/opposite/above",
+          "there is/are",
+          "very/quite/a bit + adjective",
+          "can/can't",
+          "I feel ___ about ___"
+        ],
+        "min_words": 85
+      }
+    },
+    {
+      "task_id": "t0308_18",
+      "order": 18,
+      "type": "lesson_summary",
+      "category": "review",
+      "title": "Unit 3 Complete! \ud83c\udf89",
+      "content": {
+        "congratulations": "Amazing work! You have completed Unit 3. You can now talk about your health, visit a doctor, describe clothes and colours, express your feelings, describe your home, and talk about animals \u2014 all in English!",
+        "all_grammar_covered": [
+          "I have a ___ache / My ___ hurts / I feel sick",
+          "For (duration) vs since (specific time)",
+          "Should/shouldn't + base verb (advice)",
+          "Colour + noun word order (a blue shirt)",
+          "Is/are wearing (present continuous for clothes)",
+          "I feel / I am + adjective + because ___",
+          "Intensifiers: a bit \u2192 quite \u2192 very/really \u2192 absolutely/extremely",
+          "Prepositions of place: on/in/under/next to/between/above/behind/opposite",
+          "Can/can't + base verb (ability)"
+        ],
+        "all_vocabulary_covered": [
+          "Body parts and health problems",
+          "Doctor's appointment phrases",
+          "Clothes and accessories",
+          "Colours and shades",
+          "Emotion words",
+          "Adjective opposites",
+          "Rooms and furniture",
+          "Animals and their habitats"
+        ],
+        "next_unit": "a1_unit4_lesson01",
+        "next_unit_title": "Unit 4 \u2014 Talking about the past: simple past tense"
+      }
+    }
+  ]
+}
