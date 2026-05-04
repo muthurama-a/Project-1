@@ -8,7 +8,7 @@ import ThingualLogo from '../components/ThingualLogo';
 import LanguageTestStep from '../components/LanguageTestStep';
 import heroIllustration from '../assets/hero_illustration.png';
 import thingualLogoAsset from '@/assets/thingual-logo.png';
-import thingualAnimationAsset from '../assets/animation/Thingual Animation.svg';
+import thingualAnimationAsset from '../assets/thingual-animated.svg';
 import '../styles/auth.css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
