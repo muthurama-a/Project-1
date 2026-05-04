@@ -1,0 +1,1187 @@
+{
+  "unit": {
+    "unit_number": 6,
+    "lessons": [
+      {
+        "lesson_id": "a1_unit6_lesson01",
+        "unit": 6,
+        "lesson_number": 1,
+        "level": "A1",
+        "title": "Daily Routine Part 1",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0601_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 1",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0601_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0601_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0601_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0601_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson02",
+              "next_lesson_title": "Daily Routine Part 2"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson02",
+        "unit": 6,
+        "lesson_number": 2,
+        "level": "A1",
+        "title": "Daily Routine Part 2",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0602_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 2",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0602_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0602_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0602_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0602_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson03",
+              "next_lesson_title": "Daily Routine Part 3"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson03",
+        "unit": 6,
+        "lesson_number": 3,
+        "level": "A1",
+        "title": "Daily Routine Part 3",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0603_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 3",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0603_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0603_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0603_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0603_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson04",
+              "next_lesson_title": "Daily Routine Part 4"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson04",
+        "unit": 6,
+        "lesson_number": 4,
+        "level": "A1",
+        "title": "Daily Routine Part 4",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0604_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 4",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0604_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0604_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0604_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0604_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson05",
+              "next_lesson_title": "Daily Routine Part 5"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson05",
+        "unit": 6,
+        "lesson_number": 5,
+        "level": "A1",
+        "title": "Daily Routine Part 5",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0605_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 5",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0605_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0605_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0605_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0605_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson06",
+              "next_lesson_title": "Daily Routine Part 6"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson06",
+        "unit": 6,
+        "lesson_number": 6,
+        "level": "A1",
+        "title": "Daily Routine Part 6",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0606_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 6",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0606_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0606_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0606_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0606_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson07",
+              "next_lesson_title": "Daily Routine Part 7"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson07",
+        "unit": 6,
+        "lesson_number": 7,
+        "level": "A1",
+        "title": "Daily Routine Part 7",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0607_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 7",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0607_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0607_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0607_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0607_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson08",
+              "next_lesson_title": "Daily Routine Part 8"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson08",
+        "unit": 6,
+        "lesson_number": 8,
+        "level": "A1",
+        "title": "Daily Routine Part 8",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0608_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 8",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0608_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0608_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0608_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0608_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson09",
+              "next_lesson_title": "Daily Routine Part 9"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson09",
+        "unit": 6,
+        "lesson_number": 9,
+        "level": "A1",
+        "title": "Daily Routine Part 9",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0609_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 9",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0609_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0609_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0609_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0609_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "a1_unit6_lesson10",
+              "next_lesson_title": "Daily Routine Part 10"
+            }
+          }
+        ]
+      },
+      {
+        "lesson_id": "a1_unit6_lesson10",
+        "unit": 6,
+        "lesson_number": 10,
+        "level": "A1",
+        "title": "Daily Routine Part 10",
+        "description": "Learn to talk about your daily habits.",
+        "estimated_minutes": 15,
+        "xp_reward": 100,
+        "tasks": [
+          {
+            "task_id": "t0610_01",
+            "order": 1,
+            "type": "learn_card",
+            "category": "vocabulary",
+            "title": "Wake up & Morning 10",
+            "content": {
+              "explanation": "Let's learn some morning routine verbs.",
+              "structure": "I wake up at 7 AM.",
+              "examples": [
+                {
+                  "sentence": "I brush my teeth.",
+                  "note": "Every morning"
+                },
+                {
+                  "sentence": "She eats breakfast.",
+                  "note": "At 8 AM"
+                }
+              ]
+            }
+          },
+          {
+            "task_id": "t0610_02",
+            "order": 2,
+            "type": "mcq",
+            "category": "vocabulary",
+            "title": "Select the correct verb",
+            "content": {
+              "question": "I ___ my face in the morning.",
+              "options": [
+                "wash",
+                "watch",
+                "walk",
+                "wake"
+              ],
+              "correct_index": 0,
+              "explanation": "Wash is the action for cleaning your face."
+            }
+          },
+          {
+            "task_id": "t0610_03",
+            "order": 3,
+            "type": "fill_blank",
+            "category": "grammar",
+            "title": "Fill the blanks",
+            "content": {
+              "sentence": "I ___ up at 6 AM. Then I ___ breakfast.",
+              "blanks": [
+                {
+                  "position": 1,
+                  "options": [
+                    "wake",
+                    "woke",
+                    "wakes"
+                  ],
+                  "correct": "wake"
+                },
+                {
+                  "position": 2,
+                  "options": [
+                    "eat",
+                    "eats",
+                    "ate"
+                  ],
+                  "correct": "eat"
+                }
+              ],
+              "explanation": "Present simple for routines: I wake, I eat."
+            }
+          },
+          {
+            "task_id": "t0610_04",
+            "order": 4,
+            "type": "sort_words",
+            "category": "grammar",
+            "title": "Build the sentence",
+            "content": {
+              "instruction": "Rearrange to make a routine sentence.",
+              "words": [
+                "I",
+                "always",
+                "drink",
+                "coffee",
+                "morning",
+                "in",
+                "the"
+              ],
+              "correct_sentence": "I always drink coffee in the morning.",
+              "explanation": "Subject + adverb + verb + object + time."
+            }
+          },
+          {
+            "task_id": "t0610_05",
+            "order": 5,
+            "type": "lesson_summary",
+            "category": "review",
+            "title": "Lesson complete!",
+            "content": {
+              "what_you_learned": [
+                "Morning routine verbs",
+                "Present simple for habits"
+              ],
+              "next_lesson": "unit_complete",
+              "next_lesson_title": "Unit Complete"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

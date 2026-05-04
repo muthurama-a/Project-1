@@ -248,19 +248,7 @@
   gap: 0;
 }
 
-/* Vertical connector line */
-.lesson-path::before {
-  content: '';
-  position: absolute;
-  top: 32px;
-  bottom: 0;
-  left: 50%;
-  width: 6px;
-  margin-left: -3px;
-  background: #e2e8f0;
-  border-radius: 99px;
-  z-index: 0;
-}
+/* Vertical connector line - Removed in favor of per-node lines */
 
 .lesson-node-wrap {
   position: relative;
@@ -270,6 +258,29 @@
   align-items: center;
   margin-bottom: 28px;
   width: 100%;
+}
+
+/* Line connecting to the next node */
+.lesson-node-wrap::before {
+  content: '';
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  width: 6px;
+  height: calc(100% - 88px + 28px);
+  margin-left: -3px;
+  background: #e2e8f0;
+  z-index: -1;
+}
+
+/* Hide line on last node if unit is not complete */
+.lesson-path:not(.is-complete) .lesson-node-wrap:last-of-type::before {
+  display: none;
+}
+
+/* Extend line to badge if unit is complete */
+.lesson-path.is-complete .lesson-node-wrap:last-of-type::before {
+  height: calc(100% - 88px + 28px + 24px); /* 24px is badge margin-top */
 }
 
 /* Snake offset: alternate left / right */
@@ -390,18 +401,41 @@
 /* ── Unit Complete Banner ──────────────────────────────────── */
 .unit-complete-badge {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: linear-gradient(90deg, #dcfce7, #f0fdf4);
-  border: 2px solid #86efac;
-  border-radius: 14px;
-  padding: 16px 24px;
+  gap: 8px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border: 4px solid white;
+  border-radius: 24px;
+  padding: 24px 32px;
   margin: 24px auto 0;
-  max-width: 340px;
-  font-size: 15px;
-  font-weight: 800;
-  color: #15803d;
+  max-width: 380px;
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  box-shadow: 0 12px 32px rgba(34, 197, 94, 0.35);
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.unit-complete-badge .badge-icon {
+  font-size: 48px;
+  margin-bottom: 4px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.unit-complete-badge .badge-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 4px;
 }
 
 /* ── AI Personalization Tag ────────────────────────────────── */

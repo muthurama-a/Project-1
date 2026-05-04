@@ -8,6 +8,7 @@ import ThingualLogo from '../components/ThingualLogo';
 import LanguageTestStep from '../components/LanguageTestStep';
 import heroIllustration from '../assets/hero_illustration.png';
 import thingualLogoAsset from '@/assets/thingual-logo.png';
+import thingualAnimationAsset from '../assets/animation/Thingual Animation.svg';
 import '../styles/auth.css';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -27,10 +28,11 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [googleErr, setGoogleErr] = useState('');
+    const [isLoginMode, setIsLoginMode] = useState(true);
 
     const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
-    const handleEmailCheck = async (e) => {
+    const handleEmailSubmit = async (e) => {
         e.preventDefault();
         setError('');
         if (!isValidEmail(email)) {
@@ -45,7 +47,14 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
                 body: JSON.stringify({ email }),
             });
             const data = await res.json();
-            onContinue(email, data.exists);
+            
+            if (isLoginMode && !data.exists) {
+                setError("Account not found. Please sign up instead.");
+            } else if (!isLoginMode && data.exists) {
+                setError("Account already exists. Please log in instead.");
+            } else {
+                onContinue(email, data.exists);
+            }
         } catch (err) {
             setError('Connection failed. Please try again.');
         } finally {
@@ -59,18 +68,24 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
                 <Image src={thingualLogoAsset} alt="Thingual" className="auth-logo-img" style={{ mixBlendMode: 'multiply' }} />
             </div>
 
-            <h1 className="auth-heading">Welcome to the Club.</h1>
+            <h1 className="auth-heading">
+                {isLoginMode ? "Welcome back." : "Welcome to the Club."}
+            </h1>
             <p className="auth-subheading">
-                Experience the next generation of language learning.
+                {isLoginMode 
+                    ? "Log in to continue your learning journey." 
+                    : "Experience the next generation of language learning."}
             </p>
 
             {googleErr && <div className="alert-banner error">⚠ {googleErr}</div>}
 
             <GoogleButton onSuccess={onGoogleSuccess} onError={setGoogleErr} disabled={loading} />
 
-            <div className="auth-divider">or continue with email</div>
+            <div className="auth-divider">
+                {isLoginMode ? "or log in with email" : "or sign up with email"}
+            </div>
 
-            <form onSubmit={handleEmailCheck} noValidate>
+            <form onSubmit={handleEmailSubmit} noValidate>
                 <div className="form-group">
                     <label className="form-label">Email</label>
                     <input
@@ -84,8 +99,26 @@ const EmailStep = ({ onContinue, onGoogleSuccess }) => {
                     {error && <p className="form-error">{error}</p>}
                 </div>
                 <button className="btn-primary" type="submit" disabled={loading || !email}>
-                    {loading ? <span className="btn-spinner" /> : 'Continue'}
+                    {loading ? <span className="btn-spinner" /> : (isLoginMode ? 'Log In' : 'Sign Up')}
                 </button>
+                
+                <div className="auth-switch-mode">
+                    {isLoginMode ? (
+                        <p>
+                            Don&apos;t have an account?{' '}
+                            <button type="button" className="text-link" onClick={() => { setIsLoginMode(false); setError(''); }}>
+                                Sign up
+                            </button>
+                        </p>
+                    ) : (
+                        <p>
+                            Already have an account?{' '}
+                            <button type="button" className="text-link" onClick={() => { setIsLoginMode(true); setError(''); }}>
+                                Log in
+                            </button>
+                        </p>
+                    )}
+                </div>
             </form>
         </React.Fragment>
     );
@@ -468,16 +501,24 @@ const InterestSelectionStep = ({ onFinish, onBack }) => {
 // ════════════════════════════════════
 // RIGHT PANEL — Hero
 // ════════════════════════════════════
-const HeroPanel = () => (
-    <div className="auth-right">
-        <div className="hero-logo">
-            <Image src={thingualLogoAsset} alt="Thingual" className="hero-logo-img" style={{ mixBlendMode: 'multiply' }} />
+const HeroPanel = () => {
+    const baseSrc = thingualAnimationAsset?.src || thingualAnimationAsset;
+    const [svgSrc, setSvgSrc] = useState(baseSrc);
+    
+    useEffect(() => {
+        setSvgSrc(`${baseSrc}?v=${Date.now()}`);
+    }, [baseSrc]);
+    return (
+        <div className="auth-right">
+            <div className="hero-logo">
+                <object type="image/svg+xml" data={svgSrc} className="hero-logo-img" aria-label="Thingual Animation"></object>
+            </div>
+            <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
+            <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>
+            <Image src={heroIllustration} alt="Hero" className="hero-illustration" />
         </div>
-        <p className="hero-tagline"><span>&quot;Learn Languages.</span> Speak Confidently.&quot;</p>
-        <p className="hero-sub">Practice daily. Improve faster. Achieve fluency.</p>
-        <Image src={heroIllustration} alt="Hero" className="hero-illustration" />
-    </div>
-);
+    );
+};
 
 // ════════════════════════════════════
 // MAIN PAGE

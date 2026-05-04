@@ -1,0 +1,2109 @@
+[
+{
+  "lesson_id": "a1_unit5_lesson01",
+  "unit": 5, "lesson_number": 1, "level": "A1",
+  "title": "Plans & future — going to",
+  "description": "Learn to talk about future plans and intentions using 'going to'.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0501_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Going to — future plans",
+      "content": {
+        "explanation": "Use 'going to' to talk about plans and intentions you have decided before speaking.",
+        "structure": "Subject + am/is/are + going to + base verb",
+        "examples": [
+          { "sentence": "I am going to visit my grandparents this weekend.", "note": "Already planned" },
+          { "sentence": "She is going to start a new job next month.", "note": "Decided before" },
+          { "sentence": "We are going to cook a big dinner tonight.", "note": "Planned intention" }
+        ],
+        "contractions": ["I'm going to", "She's going to", "They're going to"],
+        "tip": "In spoken English 'going to' often sounds like 'gonna' — you will hear this a lot!"
+      }
+    },
+    { "task_id": "t0501_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Negative and question forms",
+      "content": {
+        "explanation": "Make negatives and questions the same way as with other am/is/are structures.",
+        "forms": [
+          { "form": "Positive", "example": "I am going to travel to Goa." },
+          { "form": "Negative", "example": "I am not going to travel to Goa. (I'm not going to)" },
+          { "form": "Question", "example": "Are you going to travel to Goa?" },
+          { "form": "Short answers", "example": "Yes, I am. / No, I'm not." },
+          { "form": "Wh- question", "example": "Where are you going to travel?" }
+        ]
+      }
+    },
+    { "task_id": "t0501_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Future time expressions",
+      "content": {
+        "explanation": "Use these time words to say WHEN your plan is.",
+        "items": [
+          { "phrase": "tonight / this evening", "note": "Later today" },
+          { "phrase": "tomorrow / tomorrow morning", "note": "The next day" },
+          { "phrase": "this weekend", "note": "Saturday and Sunday coming up" },
+          { "phrase": "next week / month / year", "note": "The following period" },
+          { "phrase": "in two days / in a week", "note": "A specific future period" },
+          { "phrase": "soon", "note": "In the near future" },
+          { "phrase": "one day", "note": "At some undefined future point" }
+        ]
+      }
+    },
+    { "task_id": "t0501_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat naturally. Notice how 'going to' flows quickly in speech.",
+        "phrases": [
+          { "text": "I'm going to visit my family this weekend.", "audio_key": "going_to_visit" },
+          { "text": "She's going to start a new job next Monday.", "audio_key": "going_to_start" },
+          { "text": "Are you going to come to the party tonight?", "audio_key": "are_you_going" },
+          { "text": "We're not going to be at the office tomorrow.", "audio_key": "not_going_office" },
+          { "text": "What are you going to do this weekend?", "audio_key": "what_going_weekend" }
+        ]
+      }
+    },
+    { "task_id": "t0501_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct going to form",
+      "content": {
+        "question": "'She ___ to travel to Mumbai next week.'",
+        "options": ["is going", "are going", "am going", "is go"],
+        "correct_index": 0,
+        "explanation": "She → is going to + base verb. She is going to travel. ✓"
+      }
+    },
+    { "task_id": "t0501_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Negative going to",
+      "content": {
+        "question": "'They ___ to come to the meeting — they have another appointment.'",
+        "options": ["aren't going", "isn't going", "am not going", "don't going"],
+        "correct_index": 0,
+        "explanation": "They → are not going to = aren't going to. ✓"
+      }
+    },
+    { "task_id": "t0501_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Going to question",
+      "content": {
+        "question": "'___ you ___ to cook dinner tonight or order food?'",
+        "options": ["Do / going", "Are / go", "Are / going", "Is / going"],
+        "correct_index": 2,
+        "explanation": "Question: Are + you + going to + base verb? Are you going to cook? ✓"
+      }
+    },
+    { "task_id": "t0501_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "What or Are?",
+      "content": {
+        "question": "'___ are they going to do after the film?'",
+        "options": ["Are", "Is", "What", "Where"],
+        "correct_index": 2,
+        "explanation": "We need a question word asking about an activity (thing to do) → What."
+      }
+    },
+    { "task_id": "t0501_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in going to forms",
+      "content": {
+        "sentence": "This summer I ___ (travel) to Kerala. My sister ___ (come) with me. We ___ (not stay) in a hotel — we ___ (stay) at our cousin's house.",
+        "blanks": [
+          { "position": 1, "options": ["am going to travel", "is going to travel", "going to travel"], "correct": "am going to travel" },
+          { "position": 2, "options": ["is going to come", "are going to come", "am going to come"], "correct": "is going to come" },
+          { "position": 3, "options": ["aren't going to stay", "isn't going to stay", "am not going to stay"], "correct": "aren't going to stay" },
+          { "position": 4, "options": ["am going to stay", "is going to stay", "are going to stay"], "correct": "are going to stay" }
+        ],
+        "explanation": "I→am, sister→is, we→aren't (negative), we→are going to stay."
+      }
+    },
+    { "task_id": "t0501_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the future time expression",
+      "content": {
+        "sentence": "I have a big meeting ___ so I'm going to prepare my presentation ___ and sleep early ___.",
+        "blanks": [
+          { "position": 1, "options": ["tomorrow", "yesterday", "last week"], "correct": "tomorrow" },
+          { "position": 2, "options": ["tomorrow", "tonight", "next year"], "correct": "tonight" },
+          { "position": 3, "options": ["ago", "yesterday", "tonight"], "correct": "tonight" }
+        ],
+        "explanation": "Meeting tomorrow (future) → prepare tonight (this evening) → sleep early tonight."
+      }
+    },
+    { "task_id": "t0501_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the going to sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct future plan sentence.",
+        "words": ["going", "to", "We're", "new", "a", "flat", "next", "move", "month", "to"],
+        "correct_sentence": "We're going to move to a new flat next month.",
+        "explanation": "We're + going to + base verb + object + time expression."
+      }
+    },
+    { "task_id": "t0501_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the going to question",
+      "content": {
+        "instruction": "Rearrange to make a Wh- question about future plans.",
+        "words": ["going", "you", "are", "Where", "to", "holiday", "go", "this"],
+        "correct_sentence": "Where are you going to go on holiday this year?",
+        "explanation": "Where + are + you + going to + base verb + extra information?"
+      }
+    },
+    { "task_id": "t0501_13", "order": 13, "type": "match_pairs", "category": "grammar",
+      "title": "Match plan to going to sentence",
+      "content": {
+        "instruction": "Match each future plan with the correct going to sentence.",
+        "pairs": [
+          { "prompt": "I have decided to learn guitar.", "answer": "I'm going to learn guitar." },
+          { "prompt": "She has booked a flight to Singapore.", "answer": "She's going to fly to Singapore." },
+          { "prompt": "We decided to eat out tonight.", "answer": "We're going to eat out tonight." },
+          { "prompt": "He plans to quit his job next month.", "answer": "He's going to quit his job." },
+          { "prompt": "They are not planning to come.", "answer": "They aren't going to come." }
+        ]
+      }
+    },
+    { "task_id": "t0501_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "She is go to visit her parents next weekend.",
+        "options": [
+          "She is go to visit her parents next weekend.",
+          "She are going to visit her parents next weekend.",
+          "She is going to visit her parents next weekend.",
+          "She going to visit her parents next weekend."
+        ],
+        "correct_index": 2,
+        "explanation": "She + is + going to + base verb. She is going to visit. ✓"
+      }
+    },
+    { "task_id": "t0501_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Weekend plans",
+      "content": {
+        "context": "Friday afternoon. Office colleagues Ritu and Dev talk about their plans.",
+        "dialogue": [
+          { "speaker": "Ritu", "line": "Dev, what are you going to do this weekend?" },
+          { "speaker": "Dev", "line": "I'm going to visit my parents in Coimbatore. I haven't seen them in two months!" },
+          { "speaker": "Ritu", "line": "Oh nice! Are you going to take the train?" },
+          { "speaker": "Dev", "line": "Yes, I'm going to take the night train tonight and arrive early tomorrow." },
+          { "speaker": "Ritu", "line": "That sounds wonderful. What are you going to do there?" },
+          { "speaker": "Dev", "line": "We're going to have a big family lunch on Sunday. My mum is going to cook all my favourite dishes!" },
+          { "speaker": "Ritu", "line": "Lucky you! I'm not going to do anything exciting. I'm going to clean my flat and do laundry." },
+          { "speaker": "Dev", "line": "Ha! Are you going to go out at all?" },
+          { "speaker": "Ritu", "line": "Maybe. I'm going to meet a friend for coffee on Sunday afternoon." },
+          { "speaker": "Dev", "line": "That sounds nice too! Have a good weekend, Ritu." }
+        ],
+        "comprehension_questions": [
+          { "question": "Where is Dev going to go this weekend?", "options": ["Chennai", "Mumbai", "Coimbatore", "Bangalore"], "correct_index": 2 },
+          { "question": "How is Dev going to travel?", "options": ["By bus", "By car", "By plane", "By night train"], "correct_index": 3 },
+          { "question": "What is Ritu going to do on Sunday afternoon?", "options": ["Clean her flat", "Go to the gym", "Meet a friend for coffee", "Visit family"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0501_16", "order": 16, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your friend asks what your plans are for your next holiday. You have already booked a trip to Ooty.",
+        "question": "Which is the most natural reply?",
+        "options": [
+          "I will maybe go Ooty.",
+          "I'm going to go to Ooty — I already booked the train!",
+          "I go to Ooty next month.",
+          "I am going Ooty soon."
+        ],
+        "correct_index": 1,
+        "explanation": "Already decided/booked → going to. I'm going to go to Ooty ✓ + extra detail makes it natural."
+      }
+    },
+    { "task_id": "t0501_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your plans for the week",
+      "content": {
+        "instruction": "Speak for 60 seconds. Tell me your plans for the next 7 days — at least one plan for each part of the week. Use going to.",
+        "prompt": "What are you going to do this week? Tell me your plans — evenings, weekend, special events.",
+        "example_response": "This week I have quite a few plans! Tonight I'm going to cook dinner at home and prepare for an important meeting tomorrow. Tomorrow morning I'm going to present my project to the team — I'm a bit nervous! In the evening I'm going to meet a college friend for dinner. On Wednesday I'm going to go to the gym after work. I'm not going to go out Thursday — I'm going to stay in and rest. This weekend I'm really excited — I'm going to visit my sister and she's going to take me to a new restaurant. On Sunday we're going to watch a film together. I'm really looking forward to it!",
+        "key_phrases": ["I'm going to ___", "We're going to ___", "I'm not going to ___", "Are you going to ___?"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0501_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Life goals",
+      "content": {
+        "instruction": "Speak for 55 seconds. Talk about 4–5 bigger life plans or goals using going to.",
+        "prompt": "What are you going to do in your life? What are your plans for the next year? Five years?",
+        "example_response": "In the next year I'm going to focus on improving my English — that's my main goal. I'm also going to save money and try to travel to two new places. In terms of work, I'm going to look for a better opportunity in my field. I'm going to try to exercise more regularly too — I'm going to join a gym next month. One day I'm going to buy my own flat. It's not going to happen immediately but I'm working towards it. I'm also going to learn to cook properly — right now I only know about five dishes!",
+        "key_phrases": ["I'm going to ___ (specific plan)", "One day I'm going to ___", "I'm not going to ___"],
+        "min_words": 85
+      }
+    },
+    { "task_id": "t0501_19", "order": 19, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the conversation",
+      "content": {
+        "sentence": "A: What ___ you going to do after the exam? B: I ___ going to take a long break! A: ___ you going to travel? B: Yes, I'm ___ to visit my aunt in Pune. A: How long ___ you going to stay? B: About a week.",
+        "blanks": [
+          { "position": 1, "options": ["are", "is", "am"], "correct": "are" },
+          { "position": 2, "options": ["am", "is", "are"], "correct": "am" },
+          { "position": 3, "options": ["Is", "Are", "Am"], "correct": "Are" },
+          { "position": 4, "options": ["going", "go", "gone"], "correct": "going" },
+          { "position": 5, "options": ["are", "is", "am"], "correct": "are" }
+        ],
+        "explanation": "are (you), am (I), Are (you - question), going (I'm going to), are (you)."
+      }
+    },
+    { "task_id": "t0501_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Going to = decided future plans and intentions",
+          "Structure: Subject + am/is/are + going to + BASE verb",
+          "Negative: am not / isn't / aren't + going to + base verb",
+          "Question: Am/Is/Are + subject + going to + base verb?",
+          "Wh- questions: What/Where/When + are + you + going to + base verb?",
+          "Future time words: tonight, tomorrow, next week, this weekend, soon, one day"
+        ],
+        "next_lesson": "a1_unit5_lesson02",
+        "next_lesson_title": "Will — predictions and offers"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson02",
+  "unit": 5, "lesson_number": 2, "level": "A1",
+  "title": "Will — predictions & offers",
+  "description": "Learn to use 'will' for predictions, promises, and spontaneous offers.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0502_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Will — three main uses",
+      "content": {
+        "explanation": "Will is used in 3 key situations at A1 level.",
+        "uses": [
+          { "use": "Prediction", "explanation": "What you think will happen in the future", "examples": ["I think it will rain tomorrow.", "She will probably pass the exam.", "The new café will be popular."] },
+          { "use": "Spontaneous offer/decision", "explanation": "Decision made AT the moment of speaking", "examples": ["I'll help you carry that.", "I'll open the window — it's hot in here.", "Don't worry — I'll call them."] },
+          { "use": "Promise", "explanation": "Something you commit to doing", "examples": ["I'll be there at 7 — I promise.", "I won't tell anyone.", "I'll always be honest with you."] }
+        ],
+        "structure": "Subject + will + BASE verb (same for ALL subjects — no -s!)",
+        "contraction": "will = 'll (I'll, she'll, they'll). will not = won't"
+      }
+    },
+    { "task_id": "t0502_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Will vs Going to",
+      "content": {
+        "explanation": "Both talk about the future but in different situations.",
+        "comparison": [
+          { "situation": "Plan decided before speaking", "use": "going to", "example": "I'm going to visit Delhi next month. (I booked tickets)" },
+          { "situation": "Decision at the moment of speaking", "use": "will", "example": "'The phone is ringing.' 'I'll answer it!' (decided just now)" },
+          { "situation": "Prediction about the future", "use": "will", "example": "I think it will be a good year." },
+          { "situation": "Prediction based on evidence now", "use": "going to", "example": "Look at those clouds — it's going to rain!" }
+        ]
+      }
+    },
+    { "task_id": "t0502_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Prediction words",
+      "content": {
+        "explanation": "Use these words with 'will' to show how certain you are.",
+        "items": [
+          { "phrase": "I think ___ will ___", "note": "You believe it — I think she will pass." },
+          { "phrase": "I don't think ___ will ___", "note": "You doubt it — I don't think it will rain." },
+          { "phrase": "probably", "note": "More likely than not — She'll probably be late." },
+          { "phrase": "maybe / perhaps", "note": "Possible but not sure — Maybe it will snow." },
+          { "phrase": "definitely", "note": "100% certain — He'll definitely come." }
+        ]
+      }
+    },
+    { "task_id": "t0502_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat naturally. Notice 'll is very short and attached to the subject.",
+        "phrases": [
+          { "text": "I'll help you with that — don't worry.", "audio_key": "ill_help_you" },
+          { "text": "I think it'll be a beautiful day tomorrow.", "audio_key": "think_beautiful_day" },
+          { "text": "She'll probably arrive late — she always does.", "audio_key": "probably_arrive_late" },
+          { "text": "I won't forget — I promise!", "audio_key": "wont_forget" },
+          { "text": "Will you be at the party on Saturday?", "audio_key": "will_you_party" }
+        ]
+      }
+    },
+    { "task_id": "t0502_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Will or going to?",
+      "content": {
+        "question": "The phone rings. You decide to answer it right now. What do you say?",
+        "options": ["I'm going to answer it.", "I answer it.", "I'll answer it!", "I am answering it."],
+        "correct_index": 2,
+        "explanation": "Decision made AT the moment → will. I'll answer it! ✓"
+      }
+    },
+    { "task_id": "t0502_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Will for prediction",
+      "content": {
+        "question": "'I think the new restaurant ___ very popular.'",
+        "options": ["going to be", "will be", "is be", "will being"],
+        "correct_index": 1,
+        "explanation": "Prediction with 'I think' → will. will + BASE verb. will be ✓"
+      }
+    },
+    { "task_id": "t0502_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Won't — negative will",
+      "content": {
+        "question": "'I promise I ___ tell anyone your secret.'",
+        "options": ["won't", "will not to", "am not going to tell", "don't will"],
+        "correct_index": 0,
+        "explanation": "Promise negative → won't (will not). I won't tell anyone. ✓"
+      }
+    },
+    { "task_id": "t0502_08", "order": 8, "type": "mcq", "category": "vocabulary",
+      "title": "Which prediction word?",
+      "content": {
+        "question": "You are 100% sure your friend will win the competition. What do you say?",
+        "options": ["She'll maybe win.", "She'll probably win.", "She'll definitely win!", "I think she'll win possibly."],
+        "correct_index": 2,
+        "explanation": "100% certain → definitely. She'll definitely win! ✓"
+      }
+    },
+    { "task_id": "t0502_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in will or won't",
+      "content": {
+        "sentence": "I think this film ___ be great — everyone is saying it's wonderful. The lead actor ___ probably win an award. But the ending? I don't think I ___ like it — I heard it's very sad.",
+        "blanks": [
+          { "position": 1, "options": ["will", "won't", "going to"], "correct": "will" },
+          { "position": 2, "options": ["will", "won't", "is going to"], "correct": "will" },
+          { "position": 3, "options": ["will", "won't", "am going to"], "correct": "won't" }
+        ],
+        "explanation": "Positive prediction → will. I don't think → won't (negative prediction)."
+      }
+    },
+    { "task_id": "t0502_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Will vs going to",
+      "content": {
+        "sentence": "A: It's very heavy. Can you help? B: Sure, I ___ carry it for you! A: Thanks. So ___ you come to the party tomorrow? You planned it weeks ago. B: Yes, I ___ go — I already told her.",
+        "blanks": [
+          { "position": 1, "options": ["will", "'m going to"], "correct": "will" },
+          { "position": 2, "options": ["will", "are"], "correct": "are" },
+          { "position": 3, "options": ["'m going to", "will"], "correct": "'m going to" }
+        ],
+        "explanation": "Spontaneous offer → will. Question about plans → are. Already planned → going to."
+      }
+    },
+    { "task_id": "t0502_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the prediction sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct prediction sentence.",
+        "words": ["think", "I", "will", "next", "year", "better", "be", "things"],
+        "correct_sentence": "I think things will be better next year.",
+        "explanation": "I think + subject + will + base verb + adjective + time."
+      }
+    },
+    { "task_id": "t0502_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the spontaneous offer",
+      "content": {
+        "instruction": "Rearrange to make a spontaneous offer using will.",
+        "words": ["call", "I'll", "you", "don't", "worry", "them"],
+        "correct_sentence": "Don't worry — I'll call them.",
+        "explanation": "Don't worry + I'll (spontaneous decision) + base verb + object."
+      }
+    },
+    { "task_id": "t0502_13", "order": 13, "type": "match_pairs", "category": "grammar",
+      "title": "Match use to sentence",
+      "content": {
+        "instruction": "Match each will sentence to its use.",
+        "pairs": [
+          { "prompt": "I'll open the door for you.", "answer": "spontaneous offer" },
+          { "prompt": "I think it will snow this winter.", "answer": "prediction" },
+          { "prompt": "I won't tell anyone — I promise.", "answer": "promise" },
+          { "prompt": "She'll probably be tired after the trip.", "answer": "prediction with probably" },
+          { "prompt": "I'll be there at 8. Don't worry.", "answer": "promise / reassurance" }
+        ]
+      }
+    },
+    { "task_id": "t0502_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correctly formed will sentence.",
+        "wrong_sentence": "I thinks she wills pass the exam — she studied really hard.",
+        "options": [
+          "I thinks she wills pass the exam — she studied really hard.",
+          "I think she will passes the exam — she studied really hard.",
+          "I think she will pass the exam — she studied really hard.",
+          "I think she will passed the exam — she studied really hard."
+        ],
+        "correct_index": 2,
+        "explanation": "I think (not thinks), will (same for all subjects — no -s), pass (base verb after will). ✓"
+      }
+    },
+    { "task_id": "t0502_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Predictions and offers",
+      "content": {
+        "context": "Meena and her roommate Jaya are preparing for a big family dinner.",
+        "dialogue": [
+          { "speaker": "Meena", "line": "Jaya, do you think everyone will come tonight?" },
+          { "speaker": "Jaya", "line": "I think so! Uncle Raj will definitely come — he never misses a family dinner." },
+          { "speaker": "Meena", "line": "What about Aunty Priya?" },
+          { "speaker": "Jaya", "line": "Hmm. She'll probably come but maybe a bit late — she always gets stuck in traffic." },
+          { "speaker": "Meena", "line": "I'm worried the food won't be enough." },
+          { "speaker": "Jaya", "line": "Don't worry! I'll make some extra rice. And I'll prepare another salad too." },
+          { "speaker": "Meena", "line": "Are you sure? You're already cooking so much." },
+          { "speaker": "Jaya", "line": "It's fine! I'll do it. It won't take long." },
+          { "speaker": "Meena", "line": "You're the best. Do you think they'll like the new recipe?" },
+          { "speaker": "Jaya", "line": "I think they'll love it! It smells amazing already." }
+        ],
+        "comprehension_questions": [
+          { "question": "What does Jaya predict about Uncle Raj?", "options": ["He won't come", "He'll definitely come", "He'll probably be late", "He might not come"], "correct_index": 1 },
+          { "question": "Why might Aunty Priya be late?", "options": ["She doesn't want to come", "She has work", "She always gets stuck in traffic", "She lives far away"], "correct_index": 2 },
+          { "question": "What does Jaya offer to do?", "options": ["Buy more food", "Make extra rice and a salad", "Call the family", "Clean the house"], "correct_index": 1 }
+        ]
+      }
+    },
+    { "task_id": "t0502_16", "order": 16, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your colleague says: 'I can't carry all these files upstairs.' You want to help immediately.",
+        "question": "What do you say?",
+        "options": [
+          "I am going to help you.",
+          "I help you.",
+          "I'll carry some for you — don't worry!",
+          "I will helping you."
+        ],
+        "correct_index": 2,
+        "explanation": "Spontaneous decision to help → will. I'll carry + reassurance = natural offer. ✓"
+      }
+    },
+    { "task_id": "t0502_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Predictions about the future",
+      "content": {
+        "instruction": "Speak for 60 seconds. Make 5–6 predictions about the future — your life, technology, your city, the world. Use I think, probably, definitely, maybe.",
+        "prompt": "What do you think will happen in the future? Make predictions about your own life and the world.",
+        "example_response": "I think technology will change everything in the next ten years. Robots will probably do many jobs that humans do now. I think electric cars will definitely become more common. In my own life, I think I'll probably move to a different city in the next two years for work. I don't think I'll stay in my current job forever. Maybe I'll start my own small business one day — that's a dream of mine. I think AI will get much smarter but I don't think it will replace human creativity. And I definitely think renewable energy will become the main source of power very soon.",
+        "key_phrases": ["I think ___ will ___", "I don't think ___ will ___", "probably / definitely / maybe + will"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0502_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Offers and promises",
+      "content": {
+        "instruction": "Speak for 50 seconds. Respond to each situation with a spontaneous offer or promise using will.",
+        "prompt": "Respond: 1) Your friend is moving house next week. 2) Your colleague forgot their lunch. 3) Your mother is tired and the dishes are dirty. 4) A stranger dropped their bag. 5) Your friend is nervous about a presentation.",
+        "example_response": "My friend is moving house — I'll come and help you on Saturday! My colleague forgot their lunch — Don't worry, I'll share mine with you. My mother is tired — Sit down, I'll wash the dishes tonight. A stranger dropped their bag — Excuse me! I'll pick that up for you. My friend is nervous — Don't worry — you'll do brilliantly! I'll be in the audience cheering for you.",
+        "key_phrases": ["I'll + base verb (offer)", "Don't worry — I'll ___", "You'll + adjective (reassurance)"],
+        "min_words": 75
+      }
+    },
+    { "task_id": "t0502_19", "order": 19, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the prediction paragraph",
+      "content": {
+        "sentence": "I think next year ___ be a good one for me. I ___ probably get a promotion at work — I have worked very hard. My sister ___ definitely finish her studies and find a good job. I don't think prices ___ go down — they ___ probably increase. But I think people ___ adapt and find ways to manage.",
+        "blanks": [
+          { "position": 1, "options": ["will", "won't", "going to"], "correct": "will" },
+          { "position": 2, "options": ["will", "won't", "am going to"], "correct": "will" },
+          { "position": 3, "options": ["will", "won't", "is going to"], "correct": "will" },
+          { "position": 4, "options": ["will", "won't", "don't"], "correct": "won't" },
+          { "position": 5, "options": ["will", "won't", "are going to"], "correct": "will" },
+          { "position": 6, "options": ["will", "won't", "are going to"], "correct": "will" }
+        ],
+        "explanation": "Positive predictions → will. I don't think → won't (negative prediction)."
+      }
+    },
+    { "task_id": "t0502_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Will = prediction, spontaneous offer/decision, promise",
+          "Structure: Subject + will + BASE verb (no -s, no -ing, no 'to')",
+          "Contractions: I'll, she'll, they'll, won't (will not)",
+          "Prediction words: I think, probably, definitely, maybe, perhaps",
+          "Will vs going to: spontaneous (will) vs already planned (going to)",
+          "Offers: I'll help you / Don't worry, I'll do it!"
+        ],
+        "next_lesson": "a1_unit5_lesson03",
+        "next_lesson_title": "Making invitations — Would you like to?"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson03",
+  "unit": 5, "lesson_number": 3, "level": "A1",
+  "title": "Making invitations — Would you like to?",
+  "description": "Learn to invite people, accept and refuse invitations politely using 'would you like to' and related phrases.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    { "task_id": "t0503_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Making invitations",
+      "content": {
+        "explanation": "These are the most natural ways to invite someone to do something in English.",
+        "phrases": [
+          { "phrase": "Would you like to ___?", "note": "Polite invitation — most common and formal" },
+          { "phrase": "Do you want to ___?", "note": "Casual — with friends" },
+          { "phrase": "Would you like to come to ___?", "note": "Inviting to a place" },
+          { "phrase": "Are you free on ___?", "note": "First check if they are available" },
+          { "phrase": "Can you make it on ___?", "note": "Ask if a time works for them" },
+          { "phrase": "Why don't we ___?", "note": "Suggest an activity together" },
+          { "phrase": "Let's ___!", "note": "Casual suggestion — Let's have dinner!" }
+        ]
+      }
+    },
+    { "task_id": "t0503_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Accepting and refusing politely",
+      "content": {
+        "explanation": "When someone invites you, respond politely — whether you say yes or no.",
+        "accepting": [
+          { "phrase": "Yes, I'd love to!", "note": "Very enthusiastic — most common" },
+          { "phrase": "That sounds great!", "note": "Enthusiastic acceptance" },
+          { "phrase": "I'd be happy to.", "note": "Formal / polite" },
+          { "phrase": "Sure! When?", "note": "Casual and direct" }
+        ],
+        "refusing_politely": [
+          { "phrase": "I'm sorry, I can't — I'm busy.", "note": "Basic polite refusal" },
+          { "phrase": "That sounds lovely but I'm afraid I can't.", "note": "Very polite formal refusal" },
+          { "phrase": "I'd love to but I have other plans.", "note": "Polite — show you want to go but can't" },
+          { "phrase": "Maybe another time?", "note": "Soften the refusal — leaves it open" }
+        ]
+      }
+    },
+    { "task_id": "t0503_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Would like to — structure",
+      "content": {
+        "explanation": "'Would like' is the polite form of 'want'. Use it for invitations, offers and requests.",
+        "structure": "Would + subject + like + to + base verb?",
+        "examples": [
+          { "sentence": "Would you like to have dinner with us tonight?", "note": "Invitation" },
+          { "sentence": "I'd like to come — thank you!", "note": "I + would + like (I'd like)" },
+          { "sentence": "She'd like to join if possible.", "note": "She + would (she'd)" }
+        ],
+        "contractions": ["I'd like = I would like", "She'd like = She would like", "They'd like = They would like"]
+      }
+    },
+    { "task_id": "t0503_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat with warm, friendly intonation — invitations should sound welcoming!",
+        "phrases": [
+          { "text": "Would you like to come to my birthday party on Saturday?", "audio_key": "birthday_invite" },
+          { "text": "Yes, I'd love to! What time does it start?", "audio_key": "id_love_to" },
+          { "text": "I'm sorry, I can't — I have other plans.", "audio_key": "sorry_other_plans" },
+          { "text": "That sounds great — maybe another time?", "audio_key": "maybe_another_time" },
+          { "text": "Are you free this Friday evening?", "audio_key": "free_friday" }
+        ]
+      }
+    },
+    { "task_id": "t0503_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct invitation form",
+      "content": {
+        "question": "Which is the most polite way to invite someone for coffee?",
+        "options": ["Do you want coffee?", "Would you like to have coffee with me?", "You come for coffee.", "Let's coffee!"],
+        "correct_index": 1,
+        "explanation": "Would you like to + base verb = polite formal invitation. ✓"
+      }
+    },
+    { "task_id": "t0503_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "Polite refusal",
+      "content": {
+        "question": "You cannot attend your friend's party. Which is the MOST polite refusal?",
+        "options": ["No.", "I can't come.", "I'd love to but I'm afraid I can't — I have a family commitment. Maybe next time?", "Not possible."],
+        "correct_index": 2,
+        "explanation": "I'd love to (show you want to) + but I can't (polite reason) + maybe next time (leave it open). ✓"
+      }
+    },
+    { "task_id": "t0503_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Which phrase?",
+      "content": {
+        "question": "You want to suggest watching a film together tonight. What do you say?",
+        "options": ["Would you like to watch a film tonight?", "Do you want to film tonight?", "Let's watch to film.", "Would you like film?"],
+        "correct_index": 0,
+        "explanation": "Would you like to + base verb (watch). ✓"
+      }
+    },
+    { "task_id": "t0503_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the invitation phrase",
+      "content": {
+        "sentence": "___ you like to join us for dinner tonight? We're going to try the new restaurant on MG Road.",
+        "options": ["Would", "Will", "Do", "Are"],
+        "correct": "Would",
+        "explanation": "Would you like to = polite invitation. ✓"
+      }
+    },
+    { "task_id": "t0503_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the acceptance or refusal",
+      "content": {
+        "sentence": "A: Would you like to come to my graduation party? B: I ___ love to! When is it? A: Saturday the 15th. B: Perfect — I'll be there! A: What about your sister? Do you think she can come? B: She ___ love to come but she ___ be away that weekend.",
+        "blanks": [
+          { "position": 1, "options": ["'d", "will", "going to"], "correct": "'d" },
+          { "position": 2, "options": ["'d", "will", "won't"], "correct": "'d" },
+          { "position": 3, "options": ["will", "'ll", "won't"], "correct": "'ll" }
+        ],
+        "explanation": "I'd love to (I would), She'd love to (she would), she'll be away (will = future fact)."
+      }
+    },
+    { "task_id": "t0503_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the invitation",
+      "content": {
+        "instruction": "Rearrange to make a complete polite invitation.",
+        "words": ["like", "this", "weekend", "trekking", "to", "go", "Would", "you"],
+        "correct_sentence": "Would you like to go trekking this weekend?",
+        "explanation": "Would + you + like + to + base verb + activity + time."
+      }
+    },
+    { "task_id": "t0503_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match invitation to best response",
+      "content": {
+        "instruction": "Match each invitation to the most appropriate response.",
+        "pairs": [
+          { "prompt": "Would you like to have lunch together?", "answer": "Yes, I'd love to! What time?" },
+          { "prompt": "Are you free on Sunday?", "answer": "Yes, I am! What did you have in mind?" },
+          { "prompt": "Why don't we go for a walk?", "answer": "Great idea! I need some fresh air." },
+          { "prompt": "Can you make it to the party on Friday?", "answer": "I'm afraid I can't — I have a prior commitment." },
+          { "prompt": "Would you like to come to dinner?", "answer": "That sounds lovely but I'm busy tonight. Maybe another time?" }
+        ]
+      }
+    },
+    { "task_id": "t0503_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — A birthday invitation",
+      "content": {
+        "context": "Kavya is inviting her colleague Rohan to her birthday dinner.",
+        "dialogue": [
+          { "speaker": "Kavya", "line": "Hey Rohan, it's my birthday next Saturday! I'm having a small dinner at home." },
+          { "speaker": "Rohan", "line": "Oh happy birthday! When is it exactly?" },
+          { "speaker": "Kavya", "line": "The 22nd. Would you like to come? It starts at 7pm." },
+          { "speaker": "Rohan", "line": "I'd love to! That sounds wonderful. Should I bring anything?" },
+          { "speaker": "Kavya", "line": "Just yourself! But if you want, you could bring a dessert — I didn't plan one." },
+          { "speaker": "Rohan", "line": "Of course! I'll bring a cake. I know a great bakery near my house." },
+          { "speaker": "Kavya", "line": "That's so kind! Do you want to invite Preethi too? She's in our team." },
+          { "speaker": "Rohan", "line": "Good idea. I'll ask her. Actually — is she free that evening?" },
+          { "speaker": "Kavya", "line": "I think so. Would you like me to send her the details?" },
+          { "speaker": "Rohan", "line": "Yes please! We'll both be there. I'm really looking forward to it!" }
+        ],
+        "comprehension_questions": [
+          { "question": "When is Kavya's birthday dinner?", "options": ["Friday the 22nd", "Saturday the 22nd", "Sunday the 22nd", "Saturday the 21st"], "correct_index": 1 },
+          { "question": "What does Rohan offer to bring?", "options": ["Wine", "Flowers", "A cake", "Snacks"], "correct_index": 2 },
+          { "question": "Who else does Kavya want to invite?", "options": ["A college friend", "Her manager", "Preethi from their team", "Her neighbour"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0503_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correctly formed invitation.",
+        "wrong_sentence": "Would you like come to the cinema tonight?",
+        "options": [
+          "Would you like come to the cinema tonight?",
+          "Would you like to come to the cinema tonight?",
+          "Would you like coming to the cinema tonight?",
+          "Would you like to came to the cinema tonight?"
+        ],
+        "correct_index": 1,
+        "explanation": "Would you like + TO + BASE verb. to come ✓ (not 'come', 'coming', or 'came')"
+      }
+    },
+    { "task_id": "t0503_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You want to invite your manager to your team's celebration lunch. Choose the most professionally appropriate invitation.",
+        "question": "What do you say?",
+        "options": [
+          "Come eat with us!",
+          "You want lunch?",
+          "Would you like to join us for a team lunch to celebrate our project?",
+          "Are you free for eating with team?"
+        ],
+        "correct_index": 2,
+        "explanation": "Would you like to join us = formal, professional, complete invitation with context. ✓"
+      }
+    },
+    { "task_id": "t0503_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Make and respond to invitations",
+      "content": {
+        "instruction": "Play both roles. Make 3 different invitations and give responses — one acceptance, one polite refusal, one counter-suggestion.",
+        "prompt": "Invite someone for: 1) a film tonight. 2) a day trip next Sunday. 3) dinner at your home next Friday.",
+        "example_response": "Invitation 1: Would you like to see the new film tonight? It starts at 8pm. Response: Yes, I'd love to! I've been wanting to see it. Shall we meet at the cinema at 7:45? Invitation 2: Are you free next Sunday? Would you like to go on a day trip to Mahabalipuram? Response: That sounds amazing but I'm afraid I can't — I have family visiting. Maybe another weekend? Invitation 3: Would you like to come for dinner at my place next Friday evening? I'm going to cook a special meal. Response: I'd be happy to! What time should I arrive? And should I bring anything?",
+        "key_phrases": ["Would you like to ___?", "Yes, I'd love to!", "I'm afraid I can't — I ___", "Maybe another time?", "That sounds ___!"],
+        "min_words": 100
+      }
+    },
+    { "task_id": "t0503_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Plan an event together",
+      "content": {
+        "instruction": "Speak for 55 seconds. You are organising a small get-together. Describe who you are going to invite, what you will say, and how you will plan it.",
+        "prompt": "You are planning a small gathering at your home. How will you invite people? What will you say? What are you going to prepare?",
+        "example_response": "I'm going to organise a small dinner at my home next Saturday for about six people. First I'm going to call my friends and say: 'Would you like to come to dinner at my place on Saturday at 7pm? I'm going to cook biryani and make some desserts.' I'll also send them a message on WhatsApp with the details. For the food I'm going to prepare biryani, raita, and a chocolate cake. I'll ask everyone to come at 7 but I think they'll probably arrive around 7:30! I'm going to decorate the living room a little. I think it will be a wonderful evening — I'm really excited!",
+        "key_phrases": ["I'm going to ___", "Would you like to come to ___?", "I'll ___", "I think it will be ___"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0503_17", "order": 17, "type": "fill_blank", "category": "vocabulary",
+      "title": "Complete the invitation conversation",
+      "content": {
+        "sentence": "A: Are you ___ this Saturday? B: Yes, I think so. Why? A: Would you ___ to come to our house for lunch? B: I ___ love to! What time? A: Around 1pm. B: Perfect. ___ I bring anything? A: No — just ___! B: See you Saturday then!",
+        "blanks": [
+          { "position": 1, "options": ["free", "busy", "available"], "correct": "free" },
+          { "position": 2, "options": ["like", "want", "love"], "correct": "like" },
+          { "position": 3, "options": ["'d", "will", "would"], "correct": "'d" },
+          { "position": 4, "options": ["Should", "Will", "Do"], "correct": "Should" },
+          { "position": 5, "options": ["yourself", "something", "nothing"], "correct": "yourself" }
+        ],
+        "explanation": "Are you free?, Would you like to (invitation), I'd love to (acceptance), Should I bring (polite question), just yourself (warm response)."
+      }
+    },
+    { "task_id": "t0503_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Accept and decline gracefully",
+      "content": {
+        "instruction": "Respond to 4 invitations in the most natural and polite way. 2 acceptances, 2 refusals.",
+        "prompt": "Respond to: 1) Cinema invitation for a film you don't want to see. 2) Dinner with an old friend you miss. 3) A morning run at 5am. 4) A cooking class you want to try.",
+        "example_response": "Cinema invitation: That sounds lovely but I've already seen that film! Would you like to see something else instead? Dinner with old friend: Yes! I'd absolutely love to — I've missed you so much. Let's set a date soon! Morning run at 5am: I'm afraid I can't — 5am is way too early for me! I don't think I'll be very good company at that hour! Maybe a weekend walk later in the morning? Cooking class: Oh yes — I'd love to! I've been wanting to learn to cook properly. Count me in — when is it?",
+        "key_phrases": ["I'd love to! / Yes absolutely!", "I'm afraid I can't — ___", "Maybe ___? / Instead ___?"],
+        "min_words": 85
+      }
+    },
+    { "task_id": "t0503_19", "order": 19, "type": "error_correction", "category": "grammar",
+      "title": "Correct the invitation dialogue",
+      "content": {
+        "instruction": "Choose the version of this dialogue that is fully correct.",
+        "wrong_text": "A: Would you like coming to the party? B: I'd love come! When it is? A: It is on Saturday at 8. B: That's sound great. I will be there!",
+        "options": [
+          "A: Would you like to come to the party? B: I'd love to come! When is it? A: It's on Saturday at 8. B: That sounds great. I'll be there!",
+          "A: Would you like to come to the party? B: I'd love come! When is it? A: It's on Saturday at 8. B: That sounds great. I'll be there!",
+          "A: Would you like coming to the party? B: I'd love to come! When is it? A: It's on Saturday at 8. B: That sounds great. I'll be there!",
+          "A: Would you like to come to the party? B: I'd love to come! When is it? A: It's on Saturday at 8. B: That's sound great. I will be there!"
+        ],
+        "correct_index": 0,
+        "explanation": "Would you like TO come ✓, I'd love TO come ✓, When IS it ✓ (question word order), That sounds ✓, I'll be there ✓ (contraction)."
+      }
+    },
+    { "task_id": "t0503_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Invitations: Would you like to + base verb? / Are you free on ___? / Let's ___! / Why don't we ___?",
+          "Accepting: Yes, I'd love to! / That sounds great! / I'd be happy to.",
+          "Refusing politely: I'm afraid I can't / I'd love to but... / Maybe another time?",
+          "Would like to structure: Would + you + like + TO + base verb?",
+          "Contractions: I'd = I would, She'd = She would",
+          "Always add a reason when refusing — it's more polite"
+        ],
+        "next_lesson": "a1_unit5_lesson04",
+        "next_lesson_title": "I want to / I'd like to — expressing wishes and goals"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson04",
+  "unit": 5, "lesson_number": 4, "level": "A1",
+  "title": "I want to / I'd like to — wishes & goals",
+  "description": "Express personal wishes, ambitions, and goals using want to and would like to.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    { "task_id": "t0504_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Want to vs Would like to",
+      "content": {
+        "explanation": "Both express desire but with different levels of formality.",
+        "comparison": [
+          { "phrase": "I want to ___", "formality": "Neutral/direct", "examples": ["I want to travel.", "She wants to learn French.", "Do you want to eat now?"] },
+          { "phrase": "I'd like to ___", "formality": "More polite/formal", "examples": ["I'd like to travel one day.", "She'd like to improve her English.", "Would you like to order now?"] }
+        ],
+        "structure": {
+          "want_to": "Subject + want/wants + to + base verb",
+          "would_like_to": "Subject + would like + to + base verb (I'd like, she'd like)"
+        },
+        "tip": "Use 'I'd like to' in formal situations (restaurants, interviews, requests). Use 'I want to' with friends."
+      }
+    },
+    { "task_id": "t0504_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Talking about wishes and dreams",
+      "content": {
+        "explanation": "These phrases help you express hopes, dreams, and ambitions.",
+        "items": [
+          { "phrase": "I really want to ___", "note": "Strong desire" },
+          { "phrase": "One day I'd like to ___", "note": "Future dream" },
+          { "phrase": "My dream is to ___", "note": "Biggest wish" },
+          { "phrase": "I've always wanted to ___", "note": "Long-time wish" },
+          { "phrase": "I hope to ___", "note": "Wish with optimism" },
+          { "phrase": "I'm planning to ___", "note": "Strong intention" },
+          { "phrase": "I'd love to ___", "note": "Very strong desire" }
+        ]
+      }
+    },
+    { "task_id": "t0504_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Want someone else to do something",
+      "content": {
+        "explanation": "Use 'want + person + to + verb' to say what you want someone else to do.",
+        "structure": "Subject + want + [person] + to + base verb",
+        "examples": [
+          { "sentence": "I want you to help me.", "note": "Asking for help" },
+          { "sentence": "She wants her son to study medicine.", "note": "Parent's wish for child" },
+          { "sentence": "He doesn't want me to go.", "note": "Negative — doesn't want" },
+          { "sentence": "Do you want me to call them?", "note": "Offering to do something" }
+        ]
+      }
+    },
+    { "task_id": "t0504_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat with genuine feeling. Wishes and goals should sound heartfelt!",
+        "phrases": [
+          { "text": "I've always wanted to visit Japan.", "audio_key": "wanted_japan" },
+          { "text": "My dream is to open my own restaurant one day.", "audio_key": "dream_restaurant" },
+          { "text": "I'd like to improve my English this year.", "audio_key": "improve_english" },
+          { "text": "Do you want me to help you with that?", "audio_key": "want_me_help" },
+          { "text": "One day I'd love to live near the sea.", "audio_key": "love_near_sea" }
+        ]
+      }
+    },
+    { "task_id": "t0504_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Want or wants?",
+      "content": {
+        "question": "'My brother ___ to become a doctor — he studies very hard.'",
+        "options": ["want", "wants", "would like", "is want"],
+        "correct_index": 1,
+        "explanation": "My brother = He (third person singular) → wants (add -s). He wants to become. ✓"
+      }
+    },
+    { "task_id": "t0504_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Want to or would like to?",
+      "content": {
+        "question": "You are at a formal job interview. The interviewer asks about your career goals. Which sounds more professional?",
+        "options": [
+          "I want to become a project manager.",
+          "I'd like to grow into a project management role.",
+          "I want become project manager.",
+          "I like to become manager."
+        ],
+        "correct_index": 1,
+        "explanation": "I'd like to = more polite/formal → better for interviews. Full structure: I'd like + to + base verb. ✓"
+      }
+    },
+    { "task_id": "t0504_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Want someone to do something",
+      "content": {
+        "question": "'Do you ___ me ___ book the tickets?'",
+        "options": ["want / to", "want / that", "would like / to", "want / and"],
+        "correct_index": 0,
+        "explanation": "Do you want + me + to + base verb? Do you want me to book ✓"
+      }
+    },
+    { "task_id": "t0504_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in want to / would like to",
+      "content": {
+        "sentence": "I ___ (want) to learn Spanish one day. My sister ___ (want) to study abroad — she's always dreamed of it. We both ___ (would like) to travel more this year if possible.",
+        "blanks": [
+          { "position": 1, "options": ["want", "wants", "would like"], "correct": "want" },
+          { "position": 2, "options": ["want", "wants", "would like"], "correct": "wants" },
+          { "position": 3, "options": ["want", "would like", "wants"], "correct": "would like" }
+        ],
+        "explanation": "I want ✓, sister (she) wants ✓, We would like ✓ (both correct — slightly more polite)."
+      }
+    },
+    { "task_id": "t0504_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the wish phrase",
+      "content": {
+        "sentence": "I've ___ wanted to see the Taj Mahal. My ___ is to visit all seven wonders of the world before I turn forty. I ___ to start next year.",
+        "blanks": [
+          { "position": 1, "options": ["always", "never", "usually"], "correct": "always" },
+          { "position": 2, "options": ["hope", "dream", "plan"], "correct": "dream" },
+          { "position": 3, "options": ["want", "hope", "dream"], "correct": "hope" }
+        ],
+        "explanation": "I've always wanted ✓ (long-time wish), My dream is ✓ (biggest wish), I hope to ✓ (optimistic wish)."
+      }
+    },
+    { "task_id": "t0504_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the wish sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct wish/goal sentence.",
+        "words": ["to", "I've", "to", "always", "start", "my", "own", "business", "wanted"],
+        "correct_sentence": "I've always wanted to start my own business.",
+        "explanation": "I've always wanted + to + base verb + object."
+      }
+    },
+    { "task_id": "t0504_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match wish phrase to meaning",
+      "content": {
+        "instruction": "Match each phrase to its meaning.",
+        "pairs": [
+          { "prompt": "I've always wanted to ___", "answer": "a long-time wish from the past to now" },
+          { "prompt": "My dream is to ___", "answer": "your biggest, most important wish" },
+          { "prompt": "I hope to ___", "answer": "a wish you are optimistic about" },
+          { "prompt": "One day I'd like to ___", "answer": "a future wish with no fixed date" },
+          { "prompt": "I'm planning to ___", "answer": "a definite intention you are preparing for" }
+        ]
+      }
+    },
+    { "task_id": "t0504_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Dreams and ambitions",
+      "content": {
+        "context": "Two students Aisha and Rahul talk about their future ambitions after finishing their degrees.",
+        "dialogue": [
+          { "speaker": "Aisha", "line": "Rahul, what do you want to do after you finish your degree?" },
+          { "speaker": "Rahul", "line": "Honestly, I've always wanted to travel before I start working. I'd like to spend six months exploring South-East Asia." },
+          { "speaker": "Aisha", "line": "That sounds amazing! And after that?" },
+          { "speaker": "Rahul", "line": "I want to work in technology. My dream is to build an app that solves a real problem." },
+          { "speaker": "Aisha", "line": "Wow! Do you have an idea?" },
+          { "speaker": "Rahul", "line": "Actually yes — I'd like to create something for farmers in rural areas. Something simple." },
+          { "speaker": "Aisha", "line": "That's really noble. What about you — what are your goals?" },
+          { "speaker": "Aisha", "line": "I'd like to get into research. I hope to do a PhD one day." },
+          { "speaker": "Rahul", "line": "Really? In what field?" },
+          { "speaker": "Aisha", "line": "Environmental science. I want to work on climate solutions. I want the world to be better for the next generation." },
+          { "speaker": "Rahul", "line": "We both have big dreams! I hope we both achieve them." }
+        ],
+        "comprehension_questions": [
+          { "question": "What does Rahul want to do before he starts working?", "options": ["Study more", "Start a business", "Travel for six months", "Learn a language"], "correct_index": 2 },
+          { "question": "What is Rahul's dream app idea?", "options": ["A gaming app", "Something for farmers", "A fitness tracker", "A travel guide"], "correct_index": 1 },
+          { "question": "What does Aisha want to study for her PhD?", "options": ["Technology", "Medicine", "Economics", "Environmental science"], "correct_index": 3 }
+        ]
+      }
+    },
+    { "task_id": "t0504_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the correct sentence.",
+        "wrong_sentence": "She want to becomes a teacher and she'd likes to work in a village school.",
+        "options": [
+          "She want to becomes a teacher and she'd likes to work in a village school.",
+          "She wants to become a teacher and she'd like to work in a village school.",
+          "She wants to becomes a teacher and she'd like to work in a village school.",
+          "She want to become a teacher and she'd like to work in a village school."
+        ],
+        "correct_index": 1,
+        "explanation": "wants (she=3rd person+s), to become (base verb after to), she'd like (would+like, no -s). ✓"
+      }
+    },
+    { "task_id": "t0504_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "At a job interview, the interviewer asks: 'Where do you see yourself in five years?'",
+        "question": "Which is the most professional and complete answer?",
+        "options": [
+          "I want a better job and more money.",
+          "I'd like to grow within this company and develop my skills in project management. I hope to lead a small team one day.",
+          "I want to become boss.",
+          "I don't know yet."
+        ],
+        "correct_index": 1,
+        "explanation": "I'd like to (polite) + specific goal + I hope to (ambition) = complete professional answer. ✓"
+      }
+    },
+    { "task_id": "t0504_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your dreams and ambitions",
+      "content": {
+        "instruction": "Speak for 65 seconds. Talk about your personal wishes and ambitions. Include: things you've always wanted to do, your biggest dream, a goal for this year, and something you want for other people.",
+        "prompt": "Tell me about your dreams and ambitions — short-term and long-term.",
+        "example_response": "I have many dreams! In the short term, I'd like to improve my English significantly this year — that's my main goal. I've always wanted to write a book too — I have ideas but I haven't started yet. My biggest dream is to travel to at least twenty countries before I'm forty. I want to see different cultures and experience different ways of living. One day I'd like to have my own small business — maybe a café or a creative studio. I also want to learn to play the piano — I've always wanted to do it but never had time. For my family, I want my parents to be healthy and comfortable. I hope they get to travel and enjoy their retirement. I think having clear dreams gives your life direction and energy!",
+        "key_phrases": ["I'd like to ___", "I've always wanted to ___", "My dream is to ___", "I hope to ___", "I want ___ to ___"],
+        "min_words": 95
+      }
+    },
+    { "task_id": "t0504_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Want someone to do something",
+      "content": {
+        "instruction": "Speak for 45 seconds. Talk about 4 things you want other people to do — family, friends, colleagues, or the world.",
+        "prompt": "What do you want your family / friends / government / the world to do?",
+        "example_response": "I want my parents to take a proper holiday — they work too hard and need a rest. I want my best friend to be happy in her new job — she was very stressed before. I want my government to improve public transport in our city — the traffic is terrible! I want my colleagues to communicate more openly in meetings — sometimes people are afraid to share ideas. And I want the world to take climate change more seriously — I want future generations to have clean air and clean water. These are simple things but they would make a big difference.",
+        "key_phrases": ["I want ___ to ___", "I want ___ to be ___", "I don't want ___ to ___"],
+        "min_words": 75
+      }
+    },
+    { "task_id": "t0504_17", "order": 17, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the goals paragraph",
+      "content": {
+        "sentence": "This year I ___ (want) to focus on three things. First, I ___ (would like) to read at least twelve books. Second, I ___ (want) to exercise more — I ___ (would like) to go to the gym three times a week. Third, my dream ___ (be) to save enough money to travel abroad. I ___ (hope) to visit two new countries. I ___ (not want) to waste another year without progress!",
+        "blanks": [
+          { "position": 1, "options": ["want", "wants", "would like"], "correct": "want" },
+          { "position": 2, "options": ["would like", "want", "wants"], "correct": "would like" },
+          { "position": 3, "options": ["want", "wants", "would like"], "correct": "want" },
+          { "position": 4, "options": ["would like", "want", "wants"], "correct": "would like" },
+          { "position": 5, "options": ["is", "are", "was"], "correct": "is" },
+          { "position": 6, "options": ["hope", "hopes", "would like"], "correct": "hope" },
+          { "position": 7, "options": ["don't want", "doesn't want", "wouldn't like"], "correct": "don't want" }
+        ],
+        "explanation": "I want/would like (1st person), My dream is (singular), I hope, I don't want (negative)."
+      }
+    },
+    { "task_id": "t0504_18", "order": 18, "type": "match_pairs", "category": "grammar",
+      "title": "Match sentence to grammar rule",
+      "content": {
+        "instruction": "Match each sentence to its grammar pattern.",
+        "pairs": [
+          { "prompt": "She wants to become a doctor.", "answer": "she + wants + to + base verb" },
+          { "prompt": "I'd like to improve my English.", "answer": "I + would like + to + base verb" },
+          { "prompt": "Do you want me to call them?", "answer": "want + person + to + base verb" },
+          { "prompt": "My dream is to travel the world.", "answer": "My dream + is + to + base verb" },
+          { "prompt": "I've always wanted to learn piano.", "answer": "I've always wanted + to + base verb" }
+        ]
+      }
+    },
+    { "task_id": "t0504_19", "order": 19, "type": "error_correction", "category": "grammar",
+      "title": "Correct the paragraph",
+      "content": {
+        "instruction": "This paragraph has 3 mistakes. Choose the corrected version.",
+        "wrong_text": "My sister wants become a nurse. She'd like to works in a big hospital. Our parents want her to studying hard and succeed.",
+        "options": [
+          "My sister wants to become a nurse. She'd like to work in a big hospital. Our parents want her to study hard and succeed.",
+          "My sister wants become a nurse. She'd like to work in a big hospital. Our parents want her to study hard and succeed.",
+          "My sister wants to become a nurse. She'd like to works in a big hospital. Our parents want her to study hard and succeed.",
+          "My sister wants to become a nurse. She'd like to work in a big hospital. Our parents want her studying hard and succeed."
+        ],
+        "correct_index": 0,
+        "explanation": "wants TO become ✓, like TO work ✓ (not 'works'), want her TO study ✓ (not 'studying')."
+      }
+    },
+    { "task_id": "t0504_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Want to + base verb: I want to travel. She wants to study. (3rd person adds -s to want)",
+          "Would like to + base verb: I'd like to improve. She'd like to go. (more polite)",
+          "Want + person + to + verb: I want you to help. Do you want me to call?",
+          "Wish/dream phrases: I've always wanted to, My dream is to, I hope to, One day I'd like to",
+          "Formal vs casual: I'd like to (interview, formal) vs I want to (friends, casual)"
+        ],
+        "next_lesson": "a1_unit5_lesson05",
+        "next_lesson_title": "Talking about abilities — can, could, be able to"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson05",
+  "unit": 5, "lesson_number": 5, "level": "A1",
+  "title": "Abilities — can, could, be able to",
+  "description": "Talk about current and past abilities, and learn to compare what you can do now vs what you could do before.",
+  "estimated_minutes": 22, "xp_reward": 130,
+  "tasks": [
+    { "task_id": "t0505_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Can — present ability",
+      "content": {
+        "explanation": "Use CAN to talk about what you are able to do RIGHT NOW.",
+        "structure": "Subject + can + base verb (no -s, no 'to', no -ing)",
+        "examples": [
+          { "sentence": "I can speak three languages.", "note": "Current ability" },
+          { "sentence": "She can drive.", "note": "Current skill" },
+          { "sentence": "They can't swim.", "note": "No ability" },
+          { "sentence": "Can you play the guitar?", "note": "Question about ability" }
+        ]
+      }
+    },
+    { "task_id": "t0505_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Could — past ability",
+      "content": {
+        "explanation": "COULD is the past form of CAN — what you were able to do in the past.",
+        "structure": "Subject + could + base verb",
+        "examples": [
+          { "sentence": "When I was young, I could run very fast.", "note": "Past ability — not now" },
+          { "sentence": "She could speak French when she lived in Paris.", "note": "Past ability — context" },
+          { "sentence": "I couldn't swim until I was ten.", "note": "Past inability — negative" },
+          { "sentence": "Could you play chess as a child?", "note": "Question about past ability" }
+        ],
+        "could_vs_can": [
+          { "present": "I can run 5km.", "past": "When I was young I could run 10km!" },
+          { "present": "She can't drive.", "past": "She couldn't drive before she took lessons." }
+        ]
+      }
+    },
+    { "task_id": "t0505_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Ability expressions",
+      "content": {
+        "explanation": "More natural ways to talk about abilities in everyday English.",
+        "items": [
+          { "phrase": "I'm good at ___", "note": "I have a skill — I'm good at cooking." },
+          { "phrase": "I'm not very good at ___", "note": "Weak skill — I'm not good at singing." },
+          { "phrase": "I'm terrible at ___", "note": "Very bad at — I'm terrible at maths." },
+          { "phrase": "I'm a natural at ___", "note": "Talent — she's a natural at dancing." },
+          { "phrase": "I managed to ___", "note": "I succeeded in doing something difficult." },
+          { "phrase": "I couldn't manage to ___", "note": "I tried but failed." }
+        ]
+      }
+    },
+    { "task_id": "t0505_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat with confidence for can, regret for couldn't, pride for 'I managed to'.",
+        "phrases": [
+          { "text": "I can speak Tamil and English fluently.", "audio_key": "speak_fluently" },
+          { "text": "When I was a child I could climb any tree!", "audio_key": "could_climb_tree" },
+          { "text": "I couldn't cook at all before I moved out.", "audio_key": "couldnt_cook" },
+          { "text": "I'm really good at maths but terrible at drawing.", "audio_key": "good_maths_terrible_drawing" },
+          { "text": "Can you play any musical instruments?", "audio_key": "play_instruments" }
+        ]
+      }
+    },
+    { "task_id": "t0505_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Can or could?",
+      "content": {
+        "question": "'When she was a child, she ___ run very fast — she won every race!'",
+        "options": ["can", "could", "is able to", "was able"],
+        "correct_index": 1,
+        "explanation": "Past ability → could. When she was a child → past context. She could run. ✓"
+      }
+    },
+    { "task_id": "t0505_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Negative ability",
+      "content": {
+        "question": "'I tried to read the sign but I ___ see it from where I was standing.'",
+        "options": ["can't", "couldn't", "don't", "wasn't"],
+        "correct_index": 1,
+        "explanation": "Past attempt that failed → couldn't. I tried (past) + couldn't see (past inability). ✓"
+      }
+    },
+    { "task_id": "t0505_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Good at or terrible at?",
+      "content": {
+        "question": "'He always burns the food and can't follow recipes. He is ___ cooking.'",
+        "options": ["good at", "a natural at", "terrible at", "managed to"],
+        "correct_index": 2,
+        "explanation": "Burns food, can't follow recipes = very bad → terrible at cooking. ✓"
+      }
+    },
+    { "task_id": "t0505_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in can / could / can't / couldn't",
+      "content": {
+        "sentence": "As a child I ___ swim at all but now I ___ swim 2km without stopping. I still ___ dive though — I'm too scared!",
+        "blanks": [
+          { "position": 1, "options": ["can", "can't", "could", "couldn't"], "correct": "couldn't" },
+          { "position": 2, "options": ["can", "can't", "could", "couldn't"], "correct": "can" },
+          { "position": 3, "options": ["can", "can't", "could", "couldn't"], "correct": "can't" }
+        ],
+        "explanation": "Past inability → couldn't. Present ability → can. Current inability → can't."
+      }
+    },
+    { "task_id": "t0505_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the ability expression",
+      "content": {
+        "sentence": "She's ___ at languages — she learned Japanese in just one year! I'm ___ at learning languages though — I'm still struggling with French after three years.",
+        "blanks": [
+          { "position": 1, "options": ["a natural", "terrible", "managed"], "correct": "a natural" },
+          { "position": 2, "options": ["a natural", "terrible", "good"], "correct": "terrible" }
+        ],
+        "explanation": "Learned Japanese in one year = natural talent → a natural. Struggling after 3 years → terrible at. ✓"
+      }
+    },
+    { "task_id": "t0505_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the ability sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct ability sentence contrasting past and present.",
+        "words": ["swim", "couldn't", "I", "child", "a", "but", "now", "as", "I", "can"],
+        "correct_sentence": "As a child I couldn't swim but now I can.",
+        "explanation": "As a child (past context) + couldn't + base verb + but now + can (present)."
+      }
+    },
+    { "task_id": "t0505_11", "order": 11, "type": "match_pairs", "category": "grammar",
+      "title": "Match ability to time",
+      "content": {
+        "instruction": "Match each sentence to the correct time frame.",
+        "pairs": [
+          { "prompt": "I can cook very well.", "answer": "present ability" },
+          { "prompt": "She could run fast as a child.", "answer": "past ability" },
+          { "prompt": "He couldn't read until he was seven.", "answer": "past inability" },
+          { "prompt": "They can't speak Japanese.", "answer": "present inability" },
+          { "prompt": "I managed to finish the project on time.", "answer": "succeeded after difficulty" }
+        ]
+      }
+    },
+    { "task_id": "t0505_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Talking about abilities",
+      "content": {
+        "context": "At a dinner party, friends Vikram and Sonal discover hidden talents.",
+        "dialogue": [
+          { "speaker": "Sonal", "line": "Vikram, I didn't know you could play the violin!" },
+          { "speaker": "Vikram", "line": "Ha! I could play quite well as a teenager but I haven't practised in years. Now I'm a bit rusty." },
+          { "speaker": "Sonal", "line": "Can you still play something?" },
+          { "speaker": "Vikram", "line": "Maybe a simple tune! I can't play anything complicated anymore." },
+          { "speaker": "Sonal", "line": "I couldn't play any instrument as a child — I was terrible at music." },
+          { "speaker": "Vikram", "line": "What about now? Can you play anything?" },
+          { "speaker": "Sonal", "line": "Actually I started learning the guitar two years ago. I can play a few songs now!" },
+          { "speaker": "Vikram", "line": "That's amazing! Are you good at it?" },
+          { "speaker": "Sonal", "line": "I'm okay — I'm not a natural but I managed to learn three full songs last month. I was so proud!" },
+          { "speaker": "Vikram", "line": "That's fantastic. You should play for us later." }
+        ],
+        "comprehension_questions": [
+          { "question": "When could Vikram play the violin well?", "options": ["Now", "As a teenager", "As a child", "Last year"], "correct_index": 1 },
+          { "question": "What instrument does Sonal play now?", "options": ["Piano", "Violin", "Guitar", "Flute"], "correct_index": 2 },
+          { "question": "How many full songs can Sonal play?", "options": ["One", "Two", "Three", "Five"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0505_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the fully correct sentence.",
+        "wrong_sentence": "When I was young I could to swim very well but now I can't to swim at all.",
+        "options": [
+          "When I was young I could to swim very well but now I can't to swim at all.",
+          "When I was young I could swim very well but now I can't swim at all.",
+          "When I was young I could swam very well but now I can't swim at all.",
+          "When I was young I could swimming very well but now I can't swim at all."
+        ],
+        "correct_index": 1,
+        "explanation": "Can and could + BASE verb only. No 'to', no -ed, no -ing. could swim ✓, can't swim ✓"
+      }
+    },
+    { "task_id": "t0505_14", "order": 14, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your abilities then and now",
+      "content": {
+        "instruction": "Speak for 60 seconds. Talk about 4–5 things you can do now and compare with what you could or couldn't do as a child. Use good at/terrible at too.",
+        "prompt": "Tell me about your abilities — things you can do now that you couldn't before, and things you were better at as a child.",
+        "example_response": "I can cook quite well now — I'm good at making South Indian food especially. But when I was young I couldn't cook anything at all — not even rice! I've improved a lot. I could run much faster as a child — now I can't run even one kilometre without stopping! I'm terrible at sports now but I was quite athletic as a teenager. I can speak English much better than I could three years ago — I'm proud of that. I've always been good at maths and I still am — that hasn't changed. One thing I still can't do is draw — I was terrible at art as a child and I'm still terrible now!",
+        "key_phrases": ["I can ___ now", "I could ___ as a child / when I was young", "I couldn't ___ before", "I'm good/terrible at ___"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0505_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — What can you do? Hidden talents!",
+      "content": {
+        "instruction": "Speak for 50 seconds. Tell me 5 things you can do — including one surprising hidden talent. Then ask imaginary questions about someone else's abilities.",
+        "prompt": "What are your abilities and skills? Do you have any hidden talents?",
+        "example_response": "I can speak three languages — Tamil, English and a little Hindi. I can cook a full meal for ten people without any help! I'm quite good at public speaking — I was scared before but I managed to overcome it. I can drive in city traffic without getting stressed — that took years to learn. And here's my hidden talent: I can solve a Rubik's cube in under two minutes! I taught myself during lockdown. I can't play music though — I'm terrible at anything to do with instruments. What about you — can you do anything surprising? Could you do it as a child or did you learn later?",
+        "key_phrases": ["I can ___", "I'm good at ___", "I managed to ___", "I can't ___ / I'm terrible at ___"],
+        "min_words": 80
+      }
+    },
+    { "task_id": "t0505_16", "order": 16, "type": "fill_blank", "category": "grammar",
+      "title": "Full ability paragraph",
+      "content": {
+        "sentence": "My grandmother is amazing. She ___ cook over fifty different dishes and she ___ sew her own clothes — skills I completely lack! When she was young she ___ run very fast and ___ climb trees. Now she ___ run but she ___ still walk five kilometres every morning. I ___ do half of what she does!",
+        "blanks": [
+          { "position": 1, "options": ["can", "can't", "could"], "correct": "can" },
+          { "position": 2, "options": ["can", "can't", "could"], "correct": "can" },
+          { "position": 3, "options": ["can", "could", "couldn't"], "correct": "could" },
+          { "position": 4, "options": ["can", "could", "couldn't"], "correct": "could" },
+          { "position": 5, "options": ["can", "can't", "could"], "correct": "can't" },
+          { "position": 6, "options": ["can", "can't", "could"], "correct": "can" },
+          { "position": 7, "options": ["can", "can't", "could"], "correct": "can't" }
+        ],
+        "explanation": "Present abilities → can. Past abilities → could. Current limitation → can't."
+      }
+    },
+    { "task_id": "t0505_17", "order": 17, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "In a job interview, you are asked: 'What skills can you bring to this role?'",
+        "question": "Which is the most effective answer?",
+        "options": [
+          "I can do many things.",
+          "I could do things before.",
+          "I can communicate clearly in both English and Tamil, I'm good at data analysis, and I can manage multiple projects simultaneously.",
+          "I am not terrible at things."
+        ],
+        "correct_index": 2,
+        "explanation": "Specific + professional: I can + skill + I'm good at + skill + I can + skill. Complete answer. ✓"
+      }
+    },
+    { "task_id": "t0505_18", "order": 18, "type": "sort_words", "category": "grammar",
+      "title": "Build the contrast sentence",
+      "content": {
+        "instruction": "Rearrange to make a complete present/past ability contrast.",
+        "words": ["at", "now", "terrible", "am", "I'm", "at", "drawing", "was", "but", "good", "child", "a", "I", "as"],
+        "correct_sentence": "I'm terrible at drawing now but I was good at it as a child.",
+        "explanation": "I'm + terrible at + [skill] + now + but + I was + good at + it + as a child."
+      }
+    },
+    { "task_id": "t0505_19", "order": 19, "type": "match_pairs", "category": "grammar",
+      "title": "Match to correct form",
+      "content": {
+        "instruction": "Match each context to the correct modal verb.",
+        "pairs": [
+          { "prompt": "I am able to solve this problem right now.", "answer": "can" },
+          { "prompt": "When he was 5, he was able to read.", "answer": "could" },
+          { "prompt": "I tried hard but was not able to finish.", "answer": "couldn't" },
+          { "prompt": "She has a great talent for music.", "answer": "She's a natural at music." },
+          { "prompt": "I tried but eventually succeeded!", "answer": "I managed to do it." }
+        ]
+      }
+    },
+    { "task_id": "t0505_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Can = present ability: I can swim. She can't drive. Can you cook?",
+          "Could = past ability: I could run fast. She couldn't read until seven.",
+          "Can/could + BASE verb ONLY (no to, no -s, no -ing)",
+          "Ability expressions: good at, terrible at, a natural at, managed to",
+          "Contrast: I could ___ as a child but now I can't / I couldn't ___ before but now I can"
+        ],
+        "next_lesson": "a1_unit5_lesson06",
+        "next_lesson_title": "Comparatives — bigger, better, more expensive"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson06",
+  "unit": 5, "lesson_number": 6, "level": "A1",
+  "title": "Comparing things — bigger, better, more expensive",
+  "description": "Learn to compare two things using comparative adjectives and superlatives.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0506_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Comparative adjectives",
+      "content": {
+        "explanation": "Use comparatives to compare TWO things. Structure: adjective + -er + than OR more + adjective + than.",
+        "rules": [
+          { "rule": "Short adjectives (1 syllable): add -er + than", "examples": ["tall → taller than", "cold → colder than", "fast → faster than", "cheap → cheaper than"] },
+          { "rule": "Short adjective ending in -e: add -r + than", "examples": ["large → larger than", "nice → nicer than", "safe → safer than"] },
+          { "rule": "Short adjective ending in consonant + vowel + consonant: double + -er", "examples": ["big → bigger than", "hot → hotter than", "thin → thinner than"] },
+          { "rule": "Adjective ending in -y: change y → i + -er", "examples": ["happy → happier than", "busy → busier than", "easy → easier than"] },
+          { "rule": "Long adjectives (2+ syllables): more + adjective + than", "examples": ["expensive → more expensive than", "interesting → more interesting than", "comfortable → more comfortable than"] }
+        ]
+      }
+    },
+    { "task_id": "t0506_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Irregular comparatives + Superlatives",
+      "content": {
+        "explanation": "Some important adjectives have irregular comparative and superlative forms.",
+        "irregular": [
+          { "adjective": "good", "comparative": "better than", "superlative": "the best" },
+          { "adjective": "bad", "comparative": "worse than", "superlative": "the worst" },
+          { "adjective": "far", "comparative": "farther/further than", "superlative": "the farthest/furthest" }
+        ],
+        "superlatives": {
+          "explanation": "Superlatives describe the MOST extreme — comparing 3 or more things.",
+          "rules": [
+            { "type": "Short adjectives", "form": "the + adjective + -est", "examples": ["the tallest", "the cheapest", "the fastest"] },
+            { "type": "Long adjectives", "form": "the most + adjective", "examples": ["the most expensive", "the most interesting"] }
+          ]
+        }
+      }
+    },
+    { "task_id": "t0506_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "As ___ as — equal comparisons",
+      "content": {
+        "explanation": "Use 'as + adjective + as' to say two things are EQUAL.",
+        "examples": [
+          { "sentence": "Chennai is as hot as Mumbai in summer.", "note": "Same temperature" },
+          { "sentence": "This café is as good as the one near my office.", "note": "Equal quality" },
+          { "sentence": "He's not as tall as his brother.", "note": "Negative — he is shorter" }
+        ],
+        "structure": "Subject + verb + as + adjective + as + comparison"
+      }
+    },
+    { "task_id": "t0506_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat naturally. 'Than' is usually unstressed in spoken English.",
+        "phrases": [
+          { "text": "This phone is much cheaper than that one.", "audio_key": "cheaper_than" },
+          { "text": "The train is faster than the bus.", "audio_key": "faster_than_bus" },
+          { "text": "This is the most expensive restaurant I've ever been to!", "audio_key": "most_expensive" },
+          { "text": "Is this hotel better than the other one?", "audio_key": "better_than_other" },
+          { "text": "She's not as experienced as her colleague.", "audio_key": "not_as_experienced" }
+        ]
+      }
+    },
+    { "task_id": "t0506_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct comparative",
+      "content": {
+        "question": "'This jacket is ___ than the blue one.'",
+        "options": ["more expensive", "expensiver", "more expensiver", "expensivest"],
+        "correct_index": 0,
+        "explanation": "Long adjective (3 syllables) → more + adjective + than. more expensive than ✓"
+      }
+    },
+    { "task_id": "t0506_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Correct comparative form",
+      "content": {
+        "question": "'The new road is ___ than the old one.' (wide)",
+        "options": ["more wider", "widder", "wider", "more wide"],
+        "correct_index": 2,
+        "explanation": "Short adjective (1 syllable) → add -er. wide → wider than. ✓"
+      }
+    },
+    { "task_id": "t0506_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Superlative form",
+      "content": {
+        "question": "'Mount Everest is ___ mountain in the world.'",
+        "options": ["the tallest", "the most tall", "taller", "most tallest"],
+        "correct_index": 0,
+        "explanation": "Superlative (1 syllable): the + adjective + -est. the tallest ✓"
+      }
+    },
+    { "task_id": "t0506_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "Irregular comparative",
+      "content": {
+        "question": "'Today's weather is ___ than yesterday — it's terrible!'",
+        "options": ["badder", "more bad", "worse", "worser"],
+        "correct_index": 2,
+        "explanation": "Bad is irregular → worse (not 'badder' or 'more bad'). worse than ✓"
+      }
+    },
+    { "task_id": "t0506_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the comparative",
+      "content": {
+        "sentence": "The metro is ___ (fast) than the bus but the bus is ___ (cheap). For long distances, the metro is ___ (comfortable) option.",
+        "blanks": [
+          { "position": 1, "options": ["faster", "more faster", "fastest"], "correct": "faster" },
+          { "position": 2, "options": ["cheaper", "more cheap", "cheapest"], "correct": "cheaper" },
+          { "position": 3, "options": ["the more comfortable", "the most comfortable", "most comfortable"], "correct": "the most comfortable" }
+        ],
+        "explanation": "fast→faster ✓, cheap→cheaper ✓, comfortable (long)→the most comfortable (superlative) ✓"
+      }
+    },
+    { "task_id": "t0506_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in as ___ as",
+      "content": {
+        "sentence": "This hotel is ___ expensive ___ the five-star one but it's not ___ luxurious ___ the five-star.",
+        "blanks": [
+          { "position": 1, "options": ["as", "more", "not"], "correct": "as" },
+          { "position": 2, "options": ["as", "than", "so"], "correct": "as" },
+          { "position": 3, "options": ["as", "more", "not"], "correct": "as" },
+          { "position": 4, "options": ["as", "than", "so"], "correct": "as" }
+        ],
+        "explanation": "Equal: as + adjective + as. Negative equal: not + as + adjective + as."
+      }
+    },
+    { "task_id": "t0506_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the comparative sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct comparative sentence.",
+        "words": ["the", "comfortable", "sofa", "is", "than", "The", "more", "new", "old", "the", "one"],
+        "correct_sentence": "The new sofa is more comfortable than the old one.",
+        "explanation": "Subject + is + more + adjective (long) + than + comparison."
+      }
+    },
+    { "task_id": "t0506_12", "order": 12, "type": "match_pairs", "category": "grammar",
+      "title": "Match adjective to correct comparative",
+      "content": {
+        "instruction": "Match each adjective to its correct comparative form.",
+        "pairs": [
+          { "prompt": "good", "answer": "better than" },
+          { "prompt": "bad", "answer": "worse than" },
+          { "prompt": "happy", "answer": "happier than" },
+          { "prompt": "interesting", "answer": "more interesting than" },
+          { "prompt": "big", "answer": "bigger than" }
+        ]
+      }
+    },
+    { "task_id": "t0506_13", "order": 13, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Comparing two flats",
+      "content": {
+        "context": "Priya and her husband Raj are choosing between two flats to rent.",
+        "dialogue": [
+          { "speaker": "Priya", "line": "So which flat do you prefer — Flat A or Flat B?" },
+          { "speaker": "Raj", "line": "Flat B is bigger than Flat A — the rooms are much more spacious." },
+          { "speaker": "Priya", "line": "But Flat A is cheaper! It's five thousand less per month." },
+          { "speaker": "Raj", "line": "True. But Flat B is closer to the metro. The commute will be easier." },
+          { "speaker": "Priya", "line": "The neighbourhood in Flat A is quieter though. Flat B is on a main road." },
+          { "speaker": "Raj", "line": "That's fair. But the kitchen in Flat B is so much better — it's modern and well-equipped." },
+          { "speaker": "Priya", "line": "Hmm. I think Flat B is the better option overall — but it's more expensive." },
+          { "speaker": "Raj", "line": "We could negotiate the rent. The landlord seemed flexible." },
+          { "speaker": "Priya", "line": "Good idea! If we get it at a similar price, Flat B is definitely the best choice." }
+        ],
+        "comprehension_questions": [
+          { "question": "Which flat is bigger?", "options": ["Flat A", "Flat B", "They are the same", "We don't know"], "correct_index": 1 },
+          { "question": "What advantage does Flat A have?", "options": ["Better kitchen", "Closer to metro", "Cheaper rent", "Bigger rooms"], "correct_index": 2 },
+          { "question": "Which flat do they prefer overall?", "options": ["Flat A", "Flat B", "Neither", "They can't decide"], "correct_index": 1 }
+        ]
+      }
+    },
+    { "task_id": "t0506_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistakes",
+      "content": {
+        "instruction": "Choose the version with all comparatives correct.",
+        "wrong_text": "This restaurant is more better than the last one. The food is deliciouser and the service is more faster. It's the most good place I've visited this year!",
+        "options": [
+          "This restaurant is better than the last one. The food is more delicious and the service is faster. It's the best place I've visited this year!",
+          "This restaurant is more better than the last one. The food is more delicious and the service is faster. It's the best place I've visited this year!",
+          "This restaurant is better than the last one. The food is deliciouser and the service is faster. It's the best place I've visited this year!",
+          "This restaurant is better than the last one. The food is more delicious and the service is more faster. It's the best place this year!"
+        ],
+        "correct_index": 0,
+        "explanation": "good→better (irregular), delicious→more delicious (long adj), fast→faster (short adj), good→best (superlative irregular). ✓"
+      }
+    },
+    { "task_id": "t0506_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Compare two places",
+      "content": {
+        "instruction": "Speak for 65 seconds. Compare two cities, restaurants, or modes of transport you know. Use comparatives, superlatives, and as...as.",
+        "prompt": "Compare two places or things you know well. Which is better? Why?",
+        "example_response": "I'd like to compare Chennai and Bangalore — two cities I know well. Chennai is hotter than Bangalore — the weather there is much more humid and exhausting. Bangalore is more comfortable in terms of climate — it's one of the most pleasant cities in India. However, Chennai is cheaper than Bangalore — rent and food are more affordable. Bangalore is more modern and has a bigger tech industry — it's the best city for IT jobs in my opinion. Chennai has the best beaches though — Marina Beach is the longest urban beach in India! In terms of food, I think Chennai's food is as good as Bangalore's — both cities have amazing South Indian cuisine. Personally I prefer Bangalore for living but Chennai is closer to my heart!",
+        "key_phrases": ["___ is ___er than ___", "___ is more ___ than ___", "the most ___", "as ___ as"],
+        "min_words": 100
+      }
+    },
+    { "task_id": "t0506_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — What's the best?",
+      "content": {
+        "instruction": "Speak for 50 seconds. Answer 5 superlative questions about your own life.",
+        "prompt": "Answer: 1) What is the best meal you ever had? 2) What is the most interesting place you visited? 3) Who is the most important person in your life? 4) What was the worst day you remember? 5) What is the most useful thing you own?",
+        "example_response": "The best meal I ever had was a home-cooked Sunday lunch at my grandmother's house — the food was absolutely the most delicious I've ever tasted. The most interesting place I visited was Hampi — the ruins are stunning. The most important person in my life is my mother — she's the wisest and kindest person I know. The worst day I remember was when I missed an important exam because I overslept — I was devastated. The most useful thing I own is my mobile phone — I use it for everything!",
+        "key_phrases": ["the best / the most ___/ the worst / the most important"],
+        "min_words": 80
+      }
+    },
+    { "task_id": "t0506_17", "order": 17, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the comparison paragraph",
+      "content": {
+        "sentence": "I think working from home is ___ (comfortable) than working in an office but the office is ___ (good) for teamwork. The commute to the office is ___ (bad) part of the day for many people. But home can be ___ (noisy) than the office if you have children! I think the ___ (good) solution is a mix of both.",
+        "blanks": [
+          { "position": 1, "options": ["more comfortable", "comfortabler", "most comfortable"], "correct": "more comfortable" },
+          { "position": 2, "options": ["better", "more good", "gooder"], "correct": "better" },
+          { "position": 3, "options": ["the worse", "the worst", "the baddest"], "correct": "the worst" },
+          { "position": 4, "options": ["noisier", "more noisy", "noisiest"], "correct": "noisier" },
+          { "position": 5, "options": ["better", "best", "the best"], "correct": "best" }
+        ],
+        "explanation": "more comfortable ✓, better (irregular) ✓, the worst (superlative irregular) ✓, noisier (y→ier) ✓, best (superlative irregular) ✓."
+      }
+    },
+    { "task_id": "t0506_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Shopping comparison",
+      "content": {
+        "instruction": "Speak for 45 seconds. You are helping a friend choose between two options. Use comparatives to explain which is better and why.",
+        "prompt": "Your friend is choosing between two laptops: Laptop A (cheaper, lighter, smaller screen) vs Laptop B (more expensive, heavier, bigger screen, faster). Which do you recommend?",
+        "example_response": "Laptop B is definitely better for most uses! Yes, it's more expensive than Laptop A, but the screen is much bigger which makes everything easier to see and work with. It's also faster — you'll notice the difference when you open many programmes at once. Laptop A is lighter and cheaper — that's true — but if you're using it for work and video calls, Laptop B is the better investment. The screen quality is the most important thing when you use a laptop all day. I'd recommend Laptop B — it's worth the extra money!",
+        "key_phrases": ["___ is more ___ than ___", "___ is ___er than ___", "the most ___", "worth + noun"],
+        "min_words": 75
+      }
+    },
+    { "task_id": "t0506_19", "order": 19, "type": "error_correction", "category": "grammar",
+      "title": "Correct all comparative errors",
+      "content": {
+        "instruction": "This paragraph has 4 comparative errors. Choose the correct version.",
+        "wrong_text": "My new job is gooder than my old one. The office is more closer to my home and the salary is higher. My manager is more nicer than my previous one. It's the more satisfying job I've ever had.",
+        "options": [
+          "My new job is better than my old one. The office is closer to my home and the salary is higher. My manager is nicer than my previous one. It's the most satisfying job I've ever had.",
+          "My new job is better than my old one. The office is more closer to my home and the salary is higher. My manager is nicer than my previous one. It's the most satisfying job I've ever had.",
+          "My new job is gooder than my old one. The office is closer to my home and the salary is higher. My manager is nicer than my previous one. It's the most satisfying job I've ever had.",
+          "My new job is better than my old one. The office is closer to my home and the salary is higher. My manager is more nicer than my previous one. It's the most satisfying job I've ever had."
+        ],
+        "correct_index": 0,
+        "explanation": "good→better (irregular, not gooder), close→closer (not more closer), nice→nicer (not more nicer), most satisfying (superlative long adj, not 'more'). ✓"
+      }
+    },
+    { "task_id": "t0506_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Short adjective + er + than: taller, cheaper, faster, bigger (double), happier (y→i)",
+          "Long adjective: more + adjective + than: more expensive, more comfortable",
+          "Irregular: good→better/best, bad→worse/worst",
+          "Superlative: the + adjective + est OR the most + adjective",
+          "Equal: as + adjective + as / not as + adjective + as"
+        ],
+        "next_lesson": "a1_unit5_lesson07",
+        "next_lesson_title": "Speaking English in social situations"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson07",
+  "unit": 5, "lesson_number": 7, "level": "A1",
+  "title": "Social English — small talk & real conversations",
+  "description": "Learn to have natural social conversations — small talk, reacting, asking follow-up questions, and keeping conversations going.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0507_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Small talk topics",
+      "content": {
+        "explanation": "Small talk is light, friendly conversation about everyday topics. These are safe, universal topics.",
+        "topics": [
+          { "topic": "Weather", "starter": "Lovely day today, isn't it?" },
+          { "topic": "Weekend / holidays", "starter": "Did you have a good weekend?" },
+          { "topic": "Work / studies", "starter": "How's work going?" },
+          { "topic": "Family", "starter": "How's your family?" },
+          { "topic": "Food", "starter": "Have you tried any good restaurants recently?" },
+          { "topic": "Films / TV", "starter": "Have you seen anything good recently?" },
+          { "topic": "Current plans", "starter": "Got any plans for the weekend?" }
+        ]
+      }
+    },
+    { "task_id": "t0507_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Reaction phrases — show you are listening",
+      "content": {
+        "explanation": "These expressions show you are engaged and interested. They keep conversation flowing naturally.",
+        "reactions": [
+          { "phrase": "Really?", "use": "Surprised reaction" },
+          { "phrase": "Oh wow!", "use": "Impressed or surprised" },
+          { "phrase": "That's great / wonderful!", "use": "Positive reaction" },
+          { "phrase": "Oh no! / That's terrible!", "use": "Sympathetic negative reaction" },
+          { "phrase": "I know what you mean.", "use": "You understand and agree" },
+          { "phrase": "That sounds amazing!", "use": "Enthusiastic positive reaction" },
+          { "phrase": "Lucky you!", "use": "Light envy/admiration" },
+          { "phrase": "Tell me more!", "use": "Show interest, want details" }
+        ]
+      }
+    },
+    { "task_id": "t0507_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Keeping conversation going — follow-up questions",
+      "content": {
+        "explanation": "After someone speaks, ask a follow-up question to keep the conversation going.",
+        "examples": [
+          { "they_say": "I went to Goa last weekend.", "follow_up": "Oh lovely! Was it your first time there?" },
+          { "they_say": "I'm quite tired today.", "follow_up": "Oh really? Did you not sleep well?" },
+          { "they_say": "I tried a new restaurant yesterday.", "follow_up": "Ooh, what was it like? What did you have?" },
+          { "they_say": "I'm going on holiday next week.", "follow_up": "How exciting! Where are you going?" }
+        ],
+        "tip": "After your question, SHARE something about yourself too. Conversation is a 50-50 exchange!"
+      }
+    },
+    { "task_id": "t0507_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — social phrases",
+      "content": {
+        "instruction": "Repeat with natural, warm, conversational tone. These should sound effortless!",
+        "phrases": [
+          { "text": "That sounds amazing — tell me more!", "audio_key": "sounds_amazing" },
+          { "text": "Oh really? I know what you mean!", "audio_key": "oh_really" },
+          { "text": "How long have you been doing that?", "audio_key": "how_long_doing" },
+          { "text": "Lucky you! I'm a bit jealous honestly.", "audio_key": "lucky_you" },
+          { "text": "Did you have a good weekend? — Not bad, thanks! And you?", "audio_key": "good_weekend" }
+        ]
+      }
+    },
+    { "task_id": "t0507_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "Best reaction phrase",
+      "content": {
+        "question": "Your friend tells you they just got a promotion at work. What is the most natural reaction?",
+        "options": ["That's terrible!", "Oh really? I know what you mean.", "That's fantastic! You deserve it!", "How long?"],
+        "correct_index": 2,
+        "explanation": "Promotion = positive news → enthusiastic positive reaction. That's fantastic! You deserve it! ✓"
+      }
+    },
+    { "task_id": "t0507_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "Follow-up question",
+      "content": {
+        "question": "Someone says: 'I'm going to Japan next month!' What is the best follow-up?",
+        "options": ["Oh.", "Do you?", "How exciting! Is it your first time? What are you going to do there?", "Japan is expensive."],
+        "correct_index": 2,
+        "explanation": "Enthusiastic reaction + follow-up questions = keeps conversation alive and shows genuine interest. ✓"
+      }
+    },
+    { "task_id": "t0507_07", "order": 7, "type": "mcq", "category": "vocabulary",
+      "title": "Small talk starter",
+      "content": {
+        "question": "You are in a lift with a colleague you don't know well. Which is the best small talk opener?",
+        "options": ["How much do you earn?", "Busy day today?", "What's your password?", "Why are you here?"],
+        "correct_index": 1,
+        "explanation": "Work-related, neutral, non-invasive → Busy day today? Perfect small talk for a professional setting. ✓"
+      }
+    },
+    { "task_id": "t0507_08", "order": 8, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the reaction phrase",
+      "content": {
+        "sentence": "A: I just got back from a week in Bali! B: ___ ! I've always wanted to go there. Was it everything you expected? A: Even better! The beaches were stunning. B: ___! Did you try the local food?",
+        "blanks": [
+          { "position": 1, "options": ["Oh wow", "Oh no", "Really terrible"], "correct": "Oh wow" },
+          { "position": 2, "options": ["That's terrible", "Lucky you", "How boring"], "correct": "Lucky you" }
+        ],
+        "explanation": "Bali trip = positive news → Oh wow (surprised/impressed). Stunning beaches → Lucky you (admiration). ✓"
+      }
+    },
+    { "task_id": "t0507_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the follow-up question",
+      "content": {
+        "sentence": "A: I've started learning to paint recently. B: ___ ! How long have you been doing it? A: About three months. B: ___ you enjoying it? A: Absolutely! It's so relaxing.",
+        "blanks": [
+          { "position": 1, "options": ["That's so interesting", "That's terrible", "How boring"], "correct": "That's so interesting" },
+          { "position": 2, "options": ["Are", "Is", "Do"], "correct": "Are" }
+        ],
+        "explanation": "New hobby = interesting → positive reaction. Are you enjoying it? (present continuous question). ✓"
+      }
+    },
+    { "task_id": "t0507_10", "order": 10, "type": "sort_words", "category": "vocabulary",
+      "title": "Build the follow-up exchange",
+      "content": {
+        "instruction": "Rearrange to make a natural conversational exchange.",
+        "words": ["your", "How", "holiday", "was"],
+        "correct_sentence": "How was your holiday?",
+        "explanation": "How + was + possessive + noun? Simple but very common follow-up question."
+      }
+    },
+    { "task_id": "t0507_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match situation to reaction",
+      "content": {
+        "instruction": "Match each piece of news to the most appropriate natural reaction.",
+        "pairs": [
+          { "prompt": "My cat was sick but she's better now.", "answer": "Oh, that's such a relief!" },
+          { "prompt": "I passed my driving test on the first try!", "answer": "That's amazing! Well done!" },
+          { "prompt": "My flight got cancelled and I missed my holiday.", "answer": "Oh no! That's terrible — I'm so sorry." },
+          { "prompt": "I'm going to Paris next week for work.", "answer": "Lucky you! I love Paris." },
+          { "prompt": "I tried to bake a cake but it was a disaster!", "answer": "Ha! That sounds like something I would do too!" }
+        ]
+      }
+    },
+    { "task_id": "t0507_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Natural small talk",
+      "content": {
+        "context": "Two neighbours Parvati and Santhosh meet in the building corridor.",
+        "dialogue": [
+          { "speaker": "Parvati", "line": "Good morning, Santhosh! You're up early today." },
+          { "speaker": "Santhosh", "line": "Yes — I have an early meeting. How are you?" },
+          { "speaker": "Parvati", "line": "I'm great, thanks! I just got back from a family trip to Kodaikanal." },
+          { "speaker": "Santhosh", "line": "Oh lovely! How was it?" },
+          { "speaker": "Parvati", "line": "Absolutely beautiful — cooler than I expected! And so peaceful." },
+          { "speaker": "Santhosh", "line": "Lucky you! I need a holiday. How long were you there?" },
+          { "speaker": "Parvati", "line": "Four days. Not long enough! Did you have a good weekend?" },
+          { "speaker": "Santhosh", "line": "Not bad — I stayed home mostly. I watched a really good film though." },
+          { "speaker": "Parvati", "line": "Oh really? Which one?" },
+          { "speaker": "Santhosh", "line": "It was an old Tamil classic — I'd never seen it before. Highly recommend it!" },
+          { "speaker": "Parvati", "line": "That sounds great. You'll have to tell me the title! Right, I should go — have a good meeting!" },
+          { "speaker": "Santhosh", "line": "Thank you! Have a lovely day, Parvati!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did Parvati go on her trip?", "options": ["Ooty", "Munnar", "Kodaikanal", "Mysore"], "correct_index": 2 },
+          { "question": "How long was her trip?", "options": ["Two days", "Three days", "Four days", "A week"], "correct_index": 2 },
+          { "question": "What did Santhosh do over the weekend?", "options": ["Went out with friends", "Stayed home and watched a film", "Went on a trip", "Worked"], "correct_index": 1 }
+        ]
+      }
+    },
+    { "task_id": "t0507_13", "order": 13, "type": "error_correction", "category": "vocabulary",
+      "title": "Find the unnatural response",
+      "content": {
+        "instruction": "Your friend says 'I'm going on holiday to the Maldives!' Which response is MOST unnatural?",
+        "wrong_sentence": "That's amazing! Lucky you! Where in the Maldives? How long are you going for?",
+        "options": [
+          "That's amazing! Lucky you! Where in the Maldives? How long are you going for?",
+          "Oh wow! I've always wanted to go there. When do you leave?",
+          "The Maldives? That sounds incredible — you'll have such a good time!",
+          "Okay. The Maldives is expensive. You should save money."
+        ],
+        "correct_index": 3,
+        "explanation": "Option D is unnatural — it's negative and discouraging. Natural responses are warm, enthusiastic, and show genuine interest with follow-up questions."
+      }
+    },
+    { "task_id": "t0507_14", "order": 14, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Have a small talk conversation",
+      "content": {
+        "instruction": "Speak for 65 seconds. Play both sides of a small talk conversation between two people who haven't seen each other in a month. Include reactions, follow-up questions, and sharing.",
+        "prompt": "Create a natural small talk conversation covering: how they've been, recent news, plans for the weekend.",
+        "example_response": "A: Hey! I haven't seen you in ages — how have you been? B: Really good thanks! I just got back from a wedding in Jaipur — it was incredible! A: Oh wow! How long were you there? B: Five days. The city was absolutely beautiful — more colourful than I imagined. A: Lucky you! I've always wanted to visit Rajasthan. Was the weather okay? B: It was actually a bit cooler than Chennai — very pleasant! And the food was amazing. A: That sounds wonderful! Any plans this weekend? B: I'm going to rest and catch up on sleep! I'm exhausted. What about you? A: I'm going to try a new café that opened near the beach — you should come! B: That sounds perfect — count me in! What time?",
+        "key_phrases": ["Reaction phrases", "Follow-up questions", "Going to for plans", "Comparatives"],
+        "min_words": 100
+      }
+    },
+    { "task_id": "t0507_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Introduce yourself socially",
+      "content": {
+        "instruction": "Speak for 55 seconds. You are at a social event and meet someone new. Have a complete introduction conversation — name, job, interests, plan.",
+        "prompt": "Introduce yourself to a new person at a social gathering and find common interests.",
+        "example_response": "Hi! I'm Ananya — nice to meet you! Are you a friend of Vikram's? Oh great — I'm his colleague from work. I'm a graphic designer. What do you do? Really? That's interesting — how long have you been doing that? I've been at my current company for three years. Do you live in Chennai? I just moved here from Bangalore six months ago — it's hotter here but I love the food and the people! Have you tried the filter coffee here? It's so much better than Bangalore! So do you have any plans this weekend? Oh that sounds lovely — I might join if that's okay? I'd love to explore more of the city!",
+        "key_phrases": ["Nice to meet you!", "What do you do?", "How long have you been ___?", "Have you tried ___?", "Follow-up questions"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0507_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — React and respond",
+      "content": {
+        "instruction": "Speak for 45 seconds. React naturally to 5 pieces of news with different reactions and always add a follow-up question.",
+        "prompt": "React to: 1) I got engaged last weekend! 2) My grandmother passed away. 3) I failed my driving test. 4) I'm going to run a marathon next month. 5) I found my lost dog!",
+        "example_response": "You got engaged! Oh my goodness — congratulations! That's the best news! When's the wedding going to be? I'm so sorry about your grandmother — that must be really hard. How are you doing? Are you okay? Oh no about the driving test — don't worry, so many people fail the first time! When are you going to try again? A marathon — wow, that's incredibly impressive! How long have you been training? That must take real dedication! Your dog — oh thank goodness! I know how worried you were. Where did you find them?",
+        "key_phrases": ["Congratulations! / I'm so sorry / Oh no! / Wow / Thank goodness!", "Follow-up: When? / How? / Are you okay? / Where?"],
+        "min_words": 75
+      }
+    },
+    { "task_id": "t0507_17", "order": 17, "type": "fill_blank", "category": "vocabulary",
+      "title": "Complete the small talk",
+      "content": {
+        "sentence": "A: ___ day today, isn't it? B: Gorgeous! Perfect for the weekend. ___ you have any plans? A: Yes! I'm ___ to take the kids to the beach. B: ___ fun! Have you been to Bessy recently? A: Not in months — ___ it still as nice? B: Even nicer — they've cleaned it up a lot.",
+        "blanks": [
+          { "position": 1, "options": ["Lovely", "Terrible", "Bad"], "correct": "Lovely" },
+          { "position": 2, "options": ["Do", "Did", "Are"], "correct": "Do" },
+          { "position": 3, "options": ["going", "going to", "went"], "correct": "going to" },
+          { "position": 4, "options": ["What", "How", "Lucky"], "correct": "How" },
+          { "position": 5, "options": ["is", "was", "are"], "correct": "is" }
+        ],
+        "explanation": "Lovely day ✓ (weather small talk), Do you have plans ✓, going to (plan) ✓, How fun ✓ (reaction), is it still ✓ (present)."
+      }
+    },
+    { "task_id": "t0507_18", "order": 18, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match opener to topic",
+      "content": {
+        "instruction": "Match each small talk opener to its topic.",
+        "pairs": [
+          { "prompt": "Got any big plans for the long weekend?", "answer": "holidays/plans" },
+          { "prompt": "Have you seen any good films recently?", "answer": "entertainment" },
+          { "prompt": "How's the family?", "answer": "personal/family" },
+          { "prompt": "Busy week?", "answer": "work" },
+          { "prompt": "Trying to stay cool in this heat?", "answer": "weather" }
+        ]
+      }
+    },
+    { "task_id": "t0507_19", "order": 19, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You are at a work social event. You want to start a conversation with a colleague you don't know well. It's Monday morning.",
+        "question": "Which is the best opening line?",
+        "options": [
+          "How much do you earn?",
+          "Did you have a good weekend? I heard you went to a wedding!",
+          "What's wrong with you?",
+          "Why are you here?"
+        ],
+        "correct_index": 1,
+        "explanation": "Reference to a specific thing you know about them + question = warm, personal, conversation-starting opener. ✓"
+      }
+    },
+    { "task_id": "t0507_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Small talk topics: weather, weekend, work, food, film, travel",
+          "Reaction phrases: Really? / Oh wow! / That's amazing! / Lucky you! / That's terrible!",
+          "Follow-up questions: How long? / Where? / Was it ___? / Are you going to ___?",
+          "Conversation tip: React → ask follow-up → share something about yourself",
+          "Small talk rule: keep topics neutral, show genuine interest, be warm and positive"
+        ],
+        "next_lesson": "a1_unit5_lesson08",
+        "next_lesson_title": "Unit 5 Review — final test"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit5_lesson08",
+  "unit": 5, "lesson_number": 8, "level": "A1",
+  "title": "Unit 5 Review — Plans, abilities & conversations",
+  "description": "Final review of Unit 5: going to, will, invitations, wants/wishes, can/could, comparatives, and social English.",
+  "estimated_minutes": 30, "xp_reward": 250,
+  "tasks": [
+    { "task_id": "t0508_01", "order": 1, "type": "learn_card", "category": "review",
+      "title": "Unit 5 — Complete summary",
+      "content": {
+        "explanation": "Everything covered in Unit 5 — the final A1 unit.",
+        "summary": [
+          { "lesson": "Lesson 1", "topic": "Going to — decided future plans: I'm going to travel next month." },
+          { "lesson": "Lesson 2", "topic": "Will — predictions, offers, promises: I think it'll rain. I'll help you!" },
+          { "lesson": "Lesson 3", "topic": "Invitations: Would you like to? / I'd love to! / I'm afraid I can't." },
+          { "lesson": "Lesson 4", "topic": "Wants and wishes: I want to / I'd like to / My dream is to." },
+          { "lesson": "Lesson 5", "topic": "Abilities: can (now), could (past), good at, terrible at." },
+          { "lesson": "Lesson 6", "topic": "Comparatives: bigger than, more expensive, the best, as good as." },
+          { "lesson": "Lesson 7", "topic": "Social English: small talk, reactions, follow-up questions." }
+        ]
+      }
+    },
+    { "task_id": "t0508_02", "order": 2, "type": "mcq", "category": "review",
+      "title": "Review — Going to or Will?",
+      "content": {
+        "question": "The phone rings. You decide to answer it right now. What do you say?",
+        "options": ["I'm going to answer it.", "I'll answer it!", "I answered it.", "I am answering it."],
+        "correct_index": 1,
+        "explanation": "Spontaneous decision at the moment → will. I'll answer it! ✓"
+      }
+    },
+    { "task_id": "t0508_03", "order": 3, "type": "mcq", "category": "review",
+      "title": "Review — Going to",
+      "content": {
+        "question": "'She ___ to start her own business next year — she's already planning everything.'",
+        "options": ["will", "is going", "are going", "goes"],
+        "correct_index": 1,
+        "explanation": "Already planned before speaking → going to. She is going to start. ✓"
+      }
+    },
+    { "task_id": "t0508_04", "order": 4, "type": "mcq", "category": "review",
+      "title": "Review — Invitation",
+      "content": {
+        "question": "Which is the most polite invitation?",
+        "options": [
+          "Come for dinner.",
+          "I want you to dinner.",
+          "Would you like to come for dinner on Saturday?",
+          "You should dinner with us."
+        ],
+        "correct_index": 2,
+        "explanation": "Would you like to + base verb = polite invitation. ✓"
+      }
+    },
+    { "task_id": "t0508_05", "order": 5, "type": "mcq", "category": "review",
+      "title": "Review — Wants and wishes",
+      "content": {
+        "question": "'My brother ___ to become a pilot — he's been dreaming about it since childhood.'",
+        "options": ["want", "wants", "would like", "is going"],
+        "correct_index": 1,
+        "explanation": "My brother = He (third person) → wants (add -s). He wants to become. ✓"
+      }
+    },
+    { "task_id": "t0508_06", "order": 6, "type": "mcq", "category": "review",
+      "title": "Review — Can or Could?",
+      "content": {
+        "question": "'When she was three years old, she ___ already read simple books.'",
+        "options": ["can", "could", "can't", "couldn't"],
+        "correct_index": 1,
+        "explanation": "When she was three = past context → could. She could read. ✓"
+      }
+    },
+    { "task_id": "t0508_07", "order": 7, "type": "mcq", "category": "review",
+      "title": "Review — Comparative",
+      "content": {
+        "question": "'This year's exam was ___ than last year's.'",
+        "options": ["more difficult", "difficulter", "most difficult", "more difficulter"],
+        "correct_index": 0,
+        "explanation": "Long adjective → more + adjective + than. more difficult than ✓"
+      }
+    },
+    { "task_id": "t0508_08", "order": 8, "type": "mcq", "category": "review",
+      "title": "Review — Social English",
+      "content": {
+        "question": "Your colleague says: 'I'm going to present to 200 people tomorrow — I'm terrified!' What is the most supportive response?",
+        "options": [
+          "That's terrible.",
+          "200 is a lot.",
+          "Oh wow — that's exciting though! You'll be brilliant. Have you practised?",
+          "Why 200?"
+        ],
+        "correct_index": 2,
+        "explanation": "Supportive: acknowledge their feeling + positive prediction + follow-up question. ✓"
+      }
+    },
+    { "task_id": "t0508_09", "order": 9, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — future forms",
+      "content": {
+        "sentence": "I ___ (going to) travel to Nepal next month — I've booked everything. I think it ___ (will) be an amazing experience. I ___ (will) probably take thousands of photos!",
+        "blanks": [
+          { "position": 1, "options": ["am going to", "will", "going to"], "correct": "am going to" },
+          { "position": 2, "options": ["will", "'m going to", "going"], "correct": "will" },
+          { "position": 3, "options": ["will", "'m going to", "am"], "correct": "will" }
+        ],
+        "explanation": "Already booked → going to. Prediction → will. Spontaneous extra thought → will. ✓"
+      }
+    },
+    { "task_id": "t0508_10", "order": 10, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — abilities",
+      "content": {
+        "sentence": "I ___ speak three languages now but I ___ even speak English properly five years ago. I'm really ___ at languages — I love studying them. I ___ manage to learn 500 new words last month!",
+        "blanks": [
+          { "position": 1, "options": ["can", "could", "can't"], "correct": "can" },
+          { "position": 2, "options": ["can", "couldn't", "can't"], "correct": "couldn't" },
+          { "position": 3, "options": ["good", "terrible", "natural"], "correct": "good" },
+          { "position": 4, "options": ["managed to", "could", "can"], "correct": "managed to" }
+        ],
+        "explanation": "Present ability → can. Past inability → couldn't. Skill → good at. Succeeded after effort → managed to. ✓"
+      }
+    },
+    { "task_id": "t0508_11", "order": 11, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — comparatives",
+      "content": {
+        "sentence": "Bangalore is ___ (cool) than Chennai. But Chennai has ___ (good) beaches. Bangalore is ___ (expensive) city I've lived in — prices are very high. But the quality of life is ___ (high) than in many other Indian cities.",
+        "blanks": [
+          { "position": 1, "options": ["cooler", "more cool", "coolest"], "correct": "cooler" },
+          { "position": 2, "options": ["better", "more good", "gooder"], "correct": "better" },
+          { "position": 3, "options": ["the most expensive", "the expensivest", "more expensive"], "correct": "the most expensive" },
+          { "position": 4, "options": ["higher", "more high", "highest"], "correct": "higher" }
+        ],
+        "explanation": "cool→cooler ✓, good→better (irregular) ✓, the most expensive (superlative) ✓, high→higher ✓."
+      }
+    },
+    { "task_id": "t0508_12", "order": 12, "type": "sort_words", "category": "review",
+      "title": "Review — Build the sentence",
+      "content": {
+        "instruction": "Rearrange to make a complete, correct sentence.",
+        "words": ["to", "I've", "always", "own", "my", "start", "wanted", "business"],
+        "correct_sentence": "I've always wanted to start my own business.",
+        "explanation": "I've always wanted + to + base verb + object."
+      }
+    },
+    { "task_id": "t0508_13", "order": 13, "type": "sort_words", "category": "review",
+      "title": "Review — Build the comparison",
+      "content": {
+        "instruction": "Rearrange to make a correct comparative sentence.",
+        "words": ["than", "interesting", "film", "more", "This", "was", "the", "previous", "one"],
+        "correct_sentence": "This film was more interesting than the previous one.",
+        "explanation": "Subject + was + more + adjective + than + comparison."
+      }
+    },
+    { "task_id": "t0508_14", "order": 14, "type": "error_correction", "category": "review",
+      "title": "Review — Find all 4 mistakes",
+      "content": {
+        "instruction": "This paragraph has 4 errors. Choose the corrected version.",
+        "wrong_text": "I'm plan to go to Japan next year — it's the most exciting country I want visit. I think it will be more better than I expect. I couldn't speak Japanese at all but I hope to learning some basics before I go.",
+        "options": [
+          "I'm planning to go to Japan next year — it's the most exciting country I want to visit. I think it will be better than I expect. I can't speak Japanese at all but I hope to learn some basics before I go.",
+          "I'm planning to go to Japan next year — it's the most exciting country I want to visit. I think it will be more better than I expect. I can't speak Japanese at all but I hope to learn some basics before I go.",
+          "I'm planning to go to Japan next year — it's the most exciting country I want to visit. I think it will be better than I expect. I couldn't speak Japanese at all but I hope to learning some basics before I go.",
+          "I'm plan to go to Japan next year — it's the most exciting country I want to visit. I think it will be better than I expect. I can't speak Japanese but I hope to learn some basics before I go."
+        ],
+        "correct_index": 0,
+        "explanation": "planning (not plan), to visit (want + to + base), better (not more better), can't (not could - present), to learn (hope + to + base, not learning)."
+      }
+    },
+    { "task_id": "t0508_15", "order": 15, "type": "match_pairs", "category": "review",
+      "title": "Review — Grammar rules",
+      "content": {
+        "instruction": "Match each sentence to its grammar rule.",
+        "pairs": [
+          { "prompt": "I'm going to study tonight.", "answer": "going to = already planned" },
+          { "prompt": "I'll help you with that!", "answer": "will = spontaneous offer" },
+          { "prompt": "She could swim at age four.", "answer": "could = past ability" },
+          { "prompt": "This hotel is more comfortable than the last.", "answer": "more + long adjective + than" },
+          { "prompt": "Would you like to come?", "answer": "polite invitation" }
+        ]
+      }
+    },
+    { "task_id": "t0508_16", "order": 16, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Final dialogue — A complete conversation",
+      "content": {
+        "context": "Old friends Mala and Dev meet for coffee after a long time.",
+        "dialogue": [
+          { "speaker": "Mala", "line": "Dev! It's so good to see you — it's been at least six months!" },
+          { "speaker": "Dev", "line": "Mala! You look great! How have you been?" },
+          { "speaker": "Mala", "line": "Really well, thanks! I've just started a new job actually." },
+          { "speaker": "Dev", "line": "Oh wow! That's exciting — what are you doing?" },
+          { "speaker": "Mala", "line": "I'm working as a UX designer at a tech startup. I'm absolutely loving it!" },
+          { "speaker": "Dev", "line": "That's amazing! Is it better than your previous job?" },
+          { "speaker": "Mala", "line": "So much better! The team is younger and more creative. And the office is much closer to home — which is great." },
+          { "speaker": "Dev", "line": "Lucky you! So what are your plans — are you going to stay there long-term?" },
+          { "speaker": "Mala", "line": "I hope so! I'd like to grow into a senior role in the next two years. What about you? Still at the same place?" },
+          { "speaker": "Dev", "line": "Actually no — I'm going to start my own business next year! I've always wanted to." },
+          { "speaker": "Mala", "line": "Oh that's brilliant! I know you can do it. What kind of business?" },
+          { "speaker": "Dev", "line": "A small food delivery service focusing on healthy home-cooked meals. I think there's a market for it." },
+          { "speaker": "Mala", "line": "I think you're right! I'll be your first customer!" }
+        ],
+        "comprehension_questions": [
+          { "question": "What is Mala's new job?", "options": ["Software engineer", "UX designer", "Project manager", "Teacher"], "correct_index": 1 },
+          { "question": "What does Mala want to achieve in two years?", "options": ["Start her own business", "Move to a new city", "Grow into a senior role", "Go back to her old job"], "correct_index": 2 },
+          { "question": "What business does Dev want to start?", "options": ["A café", "A tech startup", "A healthy food delivery service", "A clothing brand"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0508_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Final speaking — Part 1: Future and ambitions",
+      "content": {
+        "instruction": "Speak for 75 seconds. Talk about your plans for the next year AND your long-term dreams. Use going to, will, want to, I'd like to, My dream is to.",
+        "prompt": "Tell me about your plans and ambitions — near future and far future.",
+        "example_response": "For the next few months I'm going to focus on improving my English — I'm going to practice every day and try to speak with more confidence. I'm also going to look for opportunities to grow at work — I'd like to take on more responsibility. In terms of bigger goals, my dream is to travel to at least ten countries before I turn 35. I've always wanted to see Japan especially — I think it will be the most fascinating place I ever visit. I also want to learn to cook properly — I'm terrible at cooking right now but I'm going to take a class next month! One day I'd like to have my own place — a flat of my own. I don't know exactly when that will happen but I think it will — I'll make it happen!",
+        "key_phrases": ["I'm going to ___", "I'd like to ___", "I want to ___", "My dream is to ___", "I think it will ___", "I've always wanted to ___"],
+        "min_words": 105,
+        "covers_lessons": [1, 2, 3, 4]
+      }
+    },
+    { "task_id": "t0508_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Final speaking — Part 2: Abilities and comparison",
+      "content": {
+        "instruction": "Speak for 65 seconds. Describe your abilities and compare yourself to someone else or compare two periods of your life. Use can/could, good at, and comparatives.",
+        "prompt": "What can you do well? What couldn't you do before that you can now? Compare yourself to someone you know.",
+        "example_response": "I can speak English much better now than I could two years ago — I'm quite proud of that improvement. I'm good at writing — always have been. I'm also quite good at cooking now but I couldn't cook anything when I first moved out! I had to learn from scratch. Compared to my colleague, I'm better at presenting but she's much better than me at technical work — she can solve complex problems much faster than I can. As a child I could run very fast — I was one of the fastest in my class! Now I can't run very far without getting out of breath. My fitness is definitely worse than it was before. But my thinking is sharper — I'm better at analysing problems than I was five years ago. We all change in different ways!",
+        "key_phrases": ["I can ___ now", "I couldn't ___ before", "I'm good/terrible at ___", "___ is ___er/more ___ than ___"],
+        "min_words": 100,
+        "covers_lessons": [5, 6]
+      }
+    },
+    { "task_id": "t0508_19", "order": 19, "type": "speaking", "category": "speaking",
+      "title": "Final speaking — Part 3: Social conversation",
+      "content": {
+        "instruction": "Speak for 55 seconds. Have a complete social conversation. Include small talk, an invitation, a reaction, and a plan.",
+        "prompt": "You run into an old friend. Have a warm, natural conversation that covers: how they are, recent news, an invitation to do something, and future plans.",
+        "example_response": "Oh wow — it's so good to see you! How have you been? I heard you just moved to a new flat — is it nice? Oh that's wonderful — bigger than the old one? Lucky you! I'm still in the same place — maybe I'll move next year. Hey — would you like to get lunch this weekend? There's a new place near the beach I've been wanting to try. Saturday? I'd love to! I'm going to visit the market in the morning but I'm free from noon. Let's say 1pm? Perfect. I think you'll love it — the food is meant to be the best in the area. I'm really looking forward to catching up properly — it's been too long!",
+        "key_phrases": ["How have you been?", "That's ___!", "Lucky you!", "Would you like to ___?", "I'd love to!", "I'm going to ___"],
+        "min_words": 85,
+        "covers_lessons": [1, 2, 3, 7]
+      }
+    },
+    { "task_id": "t0508_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "🎓 A1 Level — ALL 5 UNITS COMPLETE!",
+      "content": {
+        "congratulations": "OUTSTANDING ACHIEVEMENT! You have completed all 5 units of A1 English. You are now a confident A1 speaker. You can introduce yourself, talk about your past, describe your world, plan for the future, compare things, invite people, and have natural social conversations — all in English!",
+        "complete_a1_grammar": [
+          "Verb to be: am/is/are + was/were",
+          "Simple present: I work / She works + negatives and questions",
+          "Present continuous: I am working / She is working",
+          "Articles: a / an / some + How much/many",
+          "There is / There are",
+          "Possessive adjectives and pronouns",
+          "Can/can't for ability + Could for past ability",
+          "Could for polite requests",
+          "Simple past regular: worked, walked, studied",
+          "Simple past irregular: went, ate, saw, bought...",
+          "Past negative: didn't + base verb",
+          "Past questions: Did + subject + base verb?",
+          "Used to for past habits",
+          "Going to for future plans",
+          "Will for predictions, offers, promises",
+          "Would like to for polite requests",
+          "Want to vs would like to",
+          "Comparative adjectives + superlatives",
+          "As ___ as for equal comparisons",
+          "Prepositions of time and place"
+        ],
+        "ready_for": "A2 Level",
+        "next_unit": "a2_unit06_lesson01",
+        "next_unit_title": "A2 Unit 6 — Abilities, obligations & giving advice"
+      }
+    }
+  ]
+}
+]

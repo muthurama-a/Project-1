@@ -1,0 +1,273 @@
+{
+  "lesson_id": "a1_unit4_lesson01",
+  "unit": 4, "lesson_number": 1, "level": "A1",
+  "title": "Was & were — past of 'to be'",
+  "description": "Learn to use 'was' and 'were' to talk about the past — states, feelings, and descriptions.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    {
+      "task_id": "t0401_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Was and Were — the basics",
+      "content": {
+        "explanation": "Just like 'am/is/are' is the present of 'to be', 'was/were' is the PAST of 'to be'.",
+        "table": [
+          { "subject": "I", "present": "am", "past": "was", "example": "I was tired yesterday." },
+          { "subject": "He / She / It", "present": "is", "past": "was", "example": "She was happy last night." },
+          { "subject": "You / We / They", "present": "are", "past": "were", "example": "They were at home." }
+        ],
+        "rule": "I / He / She / It → WAS. You / We / They → WERE."
+      }
+    },
+    {
+      "task_id": "t0401_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Negative and question forms",
+      "content": {
+        "explanation": "Making negatives and questions with was/were is simple — just like with am/is/are.",
+        "forms": [
+          { "form": "Positive", "examples": ["I was at school.", "They were tired."] },
+          { "form": "Negative", "examples": ["I wasn't at school. (was + not)", "They weren't tired. (were + not)"] },
+          { "form": "Question", "examples": ["Was she at home?", "Were they at the party?"] },
+          { "form": "Short answers", "examples": ["Yes, she was. / No, she wasn't.", "Yes, they were. / No, they weren't."] }
+        ],
+        "contractions": { "was not": "wasn't", "were not": "weren't" }
+      }
+    },
+    {
+      "task_id": "t0401_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Past time expressions",
+      "content": {
+        "explanation": "Use these time words with was/were to say WHEN something happened.",
+        "items": [
+          { "phrase": "yesterday", "note": "The day before today — I was at work yesterday." },
+          { "phrase": "last night", "note": "The previous evening — She was tired last night." },
+          { "phrase": "last week / month / year", "note": "The previous period — We were on holiday last week." },
+          { "phrase": "ago", "note": "Before now — Three days ago, I was sick." },
+          { "phrase": "in 2020 / in 2015", "note": "A specific year in the past." },
+          { "phrase": "when I was young / a child", "note": "Earlier time in life." },
+          { "phrase": "at that time", "note": "At that specific point in the past." }
+        ]
+      }
+    },
+    {
+      "task_id": "t0401_04", "order": 4, "type": "learn_card", "category": "grammar",
+      "title": "Was/were with adjectives, nouns and places",
+      "content": {
+        "explanation": "Was/were can be followed by adjectives, nouns, or places — just like am/is/are.",
+        "examples": [
+          { "type": "adjective", "sentences": ["The food was delicious.", "We were very tired after the trip.", "He was angry yesterday."] },
+          { "type": "noun", "sentences": ["She was a student in 2018.", "They were good friends.", "It was a beautiful day."] },
+          { "type": "place", "sentences": ["I was at the hospital.", "They were in Chennai last week.", "He was at home all day."] }
+        ]
+      }
+    },
+    {
+      "task_id": "t0401_05", "order": 5, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat clearly. Notice how 'was' and 'were' sound in natural speech — often short and unstressed.",
+        "phrases": [
+          { "text": "I was really tired yesterday.", "audio_key": "was_tired_yesterday" },
+          { "text": "They were at the market this morning.", "audio_key": "were_at_market" },
+          { "text": "Was she at the party last night?", "audio_key": "was_she_party" },
+          { "text": "No, she wasn't. She was at home.", "audio_key": "wasnt_was_home" },
+          { "text": "We were very happy when we heard the news.", "audio_key": "were_happy_news" }
+        ]
+      }
+    },
+    {
+      "task_id": "t0401_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Was or were?",
+      "content": {
+        "question": "'She ___ very excited about the trip yesterday.'",
+        "options": ["were", "was", "is", "are"],
+        "correct_index": 1,
+        "explanation": "She = singular (He/She/It) → was. Past tense."
+      }
+    },
+    {
+      "task_id": "t0401_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Was or were?",
+      "content": {
+        "question": "'My parents ___ at the hospital all day yesterday.'",
+        "options": ["was", "is", "were", "are"],
+        "correct_index": 2,
+        "explanation": "My parents = They (plural) → were."
+      }
+    },
+    {
+      "task_id": "t0401_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "Negative form",
+      "content": {
+        "question": "'I ___ at school yesterday — I was sick at home.'",
+        "options": ["wasn't", "weren't", "isn't", "don't was"],
+        "correct_index": 0,
+        "explanation": "I + negative past = wasn't (was + not). I wasn't at school."
+      }
+    },
+    {
+      "task_id": "t0401_09", "order": 9, "type": "mcq", "category": "grammar",
+      "title": "Question form",
+      "content": {
+        "question": "'___ you at home last night?' — 'No, I wasn't. I was at a friend's house.'",
+        "options": ["Are", "Is", "Were", "Was"],
+        "correct_index": 2,
+        "explanation": "Question with 'you' in past tense → Were. Were you...?"
+      }
+    },
+    {
+      "task_id": "t0401_10", "order": 10, "type": "mcq", "category": "grammar",
+      "title": "Short answer",
+      "content": {
+        "question": "'Was the film good?' — '___, it was excellent!'",
+        "options": ["No, it wasn't", "Yes, it was", "Yes, it is", "No, it weren't"],
+        "correct_index": 1,
+        "explanation": "Positive short answer: Yes, + subject + was/were. Yes, it was. ✓"
+      }
+    },
+    {
+      "task_id": "t0401_11", "order": 11, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in was / were / wasn't / weren't",
+      "content": {
+        "sentence": "Last summer ___ really hot. My friends and I ___ at the beach every day. We ___ bored at all — it ___ the best holiday!",
+        "blanks": [
+          { "position": 1, "options": ["was", "were"], "correct": "was" },
+          { "position": 2, "options": ["was", "were"], "correct": "were" },
+          { "position": 3, "options": ["wasn't", "weren't"], "correct": "weren't" },
+          { "position": 4, "options": ["was", "were"], "correct": "was" }
+        ],
+        "explanation": "summer (it) → was. friends and I (we) → were. we (negative plural) → weren't. it → was."
+      }
+    },
+    {
+      "task_id": "t0401_12", "order": 12, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in with correct past form",
+      "content": {
+        "sentence": "___ the market busy yesterday? Yes, it ___ very crowded and noisy.",
+        "blanks": [
+          { "position": 1, "options": ["Was", "Were", "Is"], "correct": "Was" },
+          { "position": 2, "options": ["was", "were", "is"], "correct": "was" }
+        ],
+        "explanation": "Question: Was + it. Answer: it + was (singular)."
+      }
+    },
+    {
+      "task_id": "t0401_13", "order": 13, "type": "sort_words", "category": "grammar",
+      "title": "Build the past sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct past tense sentence.",
+        "words": ["at", "wasn't", "I", "home", "yesterday", "office", "the", "at", "was", "I"],
+        "correct_sentence": "I wasn't at home yesterday — I was at the office.",
+        "explanation": "I + wasn't + place + time — I + was + place."
+      }
+    },
+    {
+      "task_id": "t0401_14", "order": 14, "type": "sort_words", "category": "grammar",
+      "title": "Build the past question",
+      "content": {
+        "instruction": "Rearrange to make a question using 'were'.",
+        "words": ["your", "parents", "were", "yesterday", "where"],
+        "correct_sentence": "Where were your parents yesterday?",
+        "explanation": "Where + were + subject + time? Question word first."
+      }
+    },
+    {
+      "task_id": "t0401_15", "order": 15, "type": "match_pairs", "category": "grammar",
+      "title": "Match present to past",
+      "content": {
+        "instruction": "Match each present tense sentence with its past tense version.",
+        "pairs": [
+          { "prompt": "I am happy today.", "answer": "I was happy yesterday." },
+          { "prompt": "She is at work.", "answer": "She was at work." },
+          { "prompt": "They are tired.", "answer": "They were tired." },
+          { "prompt": "It is a beautiful day.", "answer": "It was a beautiful day." },
+          { "prompt": "We are not at home.", "answer": "We weren't at home." }
+        ]
+      }
+    },
+    {
+      "task_id": "t0401_16", "order": 16, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Choose the fully correct sentence.",
+        "wrong_sentence": "They was at the cinema last night but the film weren't good.",
+        "options": [
+          "They was at the cinema last night but the film weren't good.",
+          "They were at the cinema last night but the film wasn't good.",
+          "They were at the cinema last night but the film weren't good.",
+          "They was at the cinema last night but the film wasn't good."
+        ],
+        "correct_index": 1,
+        "explanation": "They (plural) → were. The film (singular) → wasn't. Both errors fixed."
+      }
+    },
+    {
+      "task_id": "t0401_17", "order": 17, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — How was your weekend?",
+      "content": {
+        "context": "Monday morning. Colleagues Divya and Karthik chat at the office.",
+        "dialogue": [
+          { "speaker": "Karthik", "line": "Hey Divya! How was your weekend?" },
+          { "speaker": "Divya", "line": "It was wonderful! We were at my cousin's wedding on Saturday." },
+          { "speaker": "Karthik", "line": "Oh nice! Was it a big wedding?" },
+          { "speaker": "Divya", "line": "Very big — there were about 500 guests! The food was absolutely delicious." },
+          { "speaker": "Karthik", "line": "Wow! Was the weather okay?" },
+          { "speaker": "Divya", "line": "It was a bit hot in the afternoon but it was perfect in the evening." },
+          { "speaker": "Karthik", "line": "Were you tired afterwards?" },
+          { "speaker": "Divya", "line": "Completely exhausted! I was in bed by 9pm on Sunday!" },
+          { "speaker": "Karthik", "line": "Ha! What about you — what was your weekend like?" },
+          { "speaker": "Divya", "line": "And your weekend — was it good?" },
+          { "speaker": "Karthik", "line": "It was quiet. I wasn't feeling well — I had a cold. I was at home all weekend." },
+          { "speaker": "Divya", "line": "Oh, I'm sorry! Are you okay now?" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where was Divya on Saturday?", "options": ["At a concert", "At a wedding", "At home", "At the market"], "correct_index": 1 },
+          { "question": "How was the weather in the afternoon?", "options": ["Cold and rainy", "A bit hot", "Very windy", "Perfect"], "correct_index": 1 },
+          { "question": "Why was Karthik at home all weekend?", "options": ["He was tired", "He was busy", "He wasn't feeling well", "He had a trip"], "correct_index": 2 }
+        ]
+      }
+    },
+    {
+      "task_id": "t0401_18", "order": 18, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "A friend asks: 'Was the food good at the new restaurant?' You loved it.",
+        "question": "Which is the most natural enthusiastic reply?",
+        "options": [
+          "Yes, it was good.",
+          "Yes, it is good.",
+          "Yes, it was absolutely delicious — the best meal I had in a long time!",
+          "Yes, the food were very nice."
+        ],
+        "correct_index": 2,
+        "explanation": "Was (past), singular it → was, enthusiastic detail makes it natural."
+      }
+    },
+    {
+      "task_id": "t0401_19", "order": 19, "type": "speaking", "category": "speaking",
+      "title": "Speaking — How was your last weekend?",
+      "content": {
+        "instruction": "Speak for 60 seconds. Describe your last weekend using was/were. Include where you were, who you were with, how you felt, and what the weather was like.",
+        "prompt": "Tell me about your last weekend. Where were you? How was it?",
+        "example_response": "My last weekend was really enjoyable. On Saturday I was at a friend's birthday party. There were about twenty people and the food was absolutely delicious. The weather was warm and sunny — perfect for the garden party. I was very happy to see everyone. On Sunday I was at home — I was quite tired after the party! The weather wasn't great on Sunday — it was a bit cloudy. My family was also at home so we were all together. It was a lovely, relaxed day.",
+        "key_phrases": ["I was at ___", "We were ___", "It was ___", "There were ___", "I wasn't ___", "The weather was ___"],
+        "min_words": 70
+      }
+    },
+    {
+      "task_id": "t0401_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Was: I / He / She / It + was (past of am/is)",
+          "Were: You / We / They + were (past of are)",
+          "Negative: wasn't / weren't",
+          "Question: Was she...? / Were they...?",
+          "Short answers: Yes, she was / No, they weren't",
+          "Past time words: yesterday, last week, ago, in 2020"
+        ],
+        "next_lesson": "a1_unit4_lesson02",
+        "next_lesson_title": "Simple past — regular verbs (-ed)"
+      }
+    }
+  ]
+}

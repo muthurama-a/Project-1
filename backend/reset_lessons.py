@@ -7,6 +7,7 @@ from sqlalchemy import text
 
 db = SessionLocal()
 try:
+    db.execute(text("DELETE FROM user_lesson_completions"))
     db.execute(text("DELETE FROM velocity_logs"))
     db.execute(text("DELETE FROM flashcards"))
     db.execute(text("DELETE FROM lessons"))

@@ -106,7 +106,7 @@ body {
 }
 
 .hero-logo-img {
-  height: 60px;
+  height: 65px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -1044,4 +1044,29 @@ body {
   100% {
     box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
   }
+}
+
+/* ─── Switch Mode Text ───────────────────────────────────────── */
+.auth-switch-mode {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13.5px;
+  color: var(--gray-500);
+}
+
+.text-link {
+  background: none;
+  border: none;
+  color: var(--brand-blue);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: color var(--transition);
+}
+
+.text-link:hover {
+  color: var(--brand-blue-dark);
+  text-decoration: underline;
 }

@@ -1,0 +1,1089 @@
+[
+{
+  "lesson_id": "a1_unit4_lesson05",
+  "unit": 4, "lesson_number": 5, "level": "A1",
+  "title": "Past questions — Did you...?",
+  "description": "Learn to ask and answer past tense questions confidently using Did, What, Where, When, Who, Why, How.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0405_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Yes/No questions with Did",
+      "content": {
+        "explanation": "Form yes/no past questions by putting Did before the subject + BASE verb.",
+        "structure": "Did + subject + base verb + rest?",
+        "examples": [
+          { "statement": "She went to the market.", "question": "Did she go to the market?" },
+          { "statement": "They enjoyed the film.", "question": "Did they enjoy the film?" },
+          { "statement": "You ate breakfast.", "question": "Did you eat breakfast?" }
+        ],
+        "short_answers": {
+          "positive": "Yes, I/she/they did.",
+          "negative": "No, I/she/they didn't."
+        }
+      }
+    },
+    { "task_id": "t0405_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Wh- questions in the past",
+      "content": {
+        "explanation": "Add a question word before 'did' to ask for specific information.",
+        "structure": "Question word + did + subject + base verb?",
+        "questions": [
+          { "word": "What", "example": "What did you eat for lunch?", "answer_type": "thing" },
+          { "word": "Where", "example": "Where did she go yesterday?", "answer_type": "place" },
+          { "word": "When", "example": "When did they arrive?", "answer_type": "time" },
+          { "word": "Who", "example": "Who did you meet?", "answer_type": "person" },
+          { "word": "Why", "example": "Why did he leave early?", "answer_type": "reason" },
+          { "word": "How", "example": "How did you travel there?", "answer_type": "manner" },
+          { "word": "How long", "example": "How long did the journey take?", "answer_type": "duration" },
+          { "word": "How much", "example": "How much did it cost?", "answer_type": "price" }
+        ]
+      }
+    },
+    { "task_id": "t0405_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Who as subject — no Did needed",
+      "content": {
+        "explanation": "When 'Who' is the SUBJECT of the question, we don't use Did.",
+        "examples": [
+          { "type": "Who as object (use Did)", "example": "Who did you call? (you = subject, who = object)" },
+          { "type": "Who as subject (no Did)", "example": "Who called you? (who = subject)" },
+          { "type": "Who as object", "example": "Who did she meet?" },
+          { "type": "Who as subject", "example": "Who came to the party?" }
+        ]
+      }
+    },
+    { "task_id": "t0405_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — past questions",
+      "content": {
+        "instruction": "Repeat with natural question intonation — voice rises for yes/no, falls for wh- questions.",
+        "phrases": [
+          { "text": "Did you enjoy the film last night?", "audio_key": "did_enjoy_film" },
+          { "text": "Where did you go for your holiday?", "audio_key": "where_did_go_holiday" },
+          { "text": "How long did the journey take?", "audio_key": "how_long_journey" },
+          { "text": "Why did she leave so early?", "audio_key": "why_leave_early" },
+          { "text": "Who did you meet at the party?", "audio_key": "who_did_meet" }
+        ]
+      }
+    },
+    { "task_id": "t0405_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct question form",
+      "content": {
+        "question": "Turn into a question: 'She bought a new phone.'",
+        "options": ["Did she bought a new phone?", "Did she buy a new phone?", "Was she buy a new phone?", "Did she buys a new phone?"],
+        "correct_index": 1,
+        "explanation": "Did + she + BASE verb. buy (not bought). Did she buy? ✓"
+      }
+    },
+    { "task_id": "t0405_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Which question word?",
+      "content": {
+        "question": "You want to know the reason someone didn't come to work. Which question do you ask?",
+        "options": ["What did you not come?", "Where did you not come?", "Why didn't you come?", "How didn't you come?"],
+        "correct_index": 2,
+        "explanation": "Reason → Why. Why didn't you come? ✓"
+      }
+    },
+    { "task_id": "t0405_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "What or Where?",
+      "content": {
+        "question": "'___ did you go after the meeting?' — 'I went to a café.'",
+        "options": ["What", "Who", "Why", "Where"],
+        "correct_index": 3,
+        "explanation": "The answer is a PLACE (café) → use Where."
+      }
+    },
+    { "task_id": "t0405_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "How much or How long?",
+      "content": {
+        "question": "'___ did the film last?' — 'About two and a half hours.'",
+        "options": ["How much", "How many", "How long", "How often"],
+        "correct_index": 2,
+        "explanation": "Duration (time) → How long. How long did it last?"
+      }
+    },
+    { "task_id": "t0405_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the question word",
+      "content": {
+        "sentence": "___ did you travel to Delhi? By train or by plane?",
+        "options": ["Where", "When", "How", "Why"],
+        "correct": "How",
+        "explanation": "The answer is about method of travel → How."
+      }
+    },
+    { "task_id": "t0405_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in Did or question word",
+      "content": {
+        "sentence": "___ did you buy at the market? And ___ did it cost?",
+        "blanks": [
+          { "position": 1, "options": ["What", "Where", "Why", "Did"], "correct": "What" },
+          { "position": 2, "options": ["what", "how much", "how long", "when"], "correct": "how much" }
+        ],
+        "explanation": "Thing bought → What. Price → How much."
+      }
+    },
+    { "task_id": "t0405_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the past Wh- question",
+      "content": {
+        "instruction": "Rearrange to make a correct past Wh- question.",
+        "words": ["did", "she", "Why", "come", "not"],
+        "correct_sentence": "Why didn't she come?",
+        "explanation": "Why + didn't + subject + base verb? (negative question)"
+      }
+    },
+    { "task_id": "t0405_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the full exchange",
+      "content": {
+        "instruction": "Rearrange to make a question, then its answer.",
+        "words": ["long", "take", "the", "How", "did", "journey"],
+        "correct_sentence": "How long did the journey take?",
+        "explanation": "How long + did + subject + base verb?"
+      }
+    },
+    { "task_id": "t0405_13", "order": 13, "type": "match_pairs", "category": "grammar",
+      "title": "Match question to answer",
+      "content": {
+        "instruction": "Match each question to the most logical answer.",
+        "pairs": [
+          { "prompt": "Where did you go last night?", "answer": "I went to a friend's house." },
+          { "prompt": "What did you eat for dinner?", "answer": "I had dal rice and salad." },
+          { "prompt": "Why didn't you come to class?", "answer": "Because I wasn't feeling well." },
+          { "prompt": "How long did the film last?", "answer": "About two hours." },
+          { "prompt": "Who did you meet at the party?", "answer": "I met some old college friends." }
+        ]
+      }
+    },
+    { "task_id": "t0405_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the question mistake",
+      "content": {
+        "instruction": "Which question is grammatically correct?",
+        "wrong_sentence": "What did you ate for breakfast?",
+        "options": [
+          "What did you ate for breakfast?",
+          "What you ate for breakfast?",
+          "What did you eat for breakfast?",
+          "What did ate you for breakfast?"
+        ],
+        "correct_index": 2,
+        "explanation": "Did + subject + BASE verb. eat (not ate). What did you eat? ✓"
+      }
+    },
+    { "task_id": "t0405_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Interview about a trip",
+      "content": {
+        "context": "Meera just returned from a trip to Kerala. Her friend Raj asks her about it.",
+        "dialogue": [
+          { "speaker": "Raj", "line": "Welcome back! How was Kerala? Did you enjoy it?" },
+          { "speaker": "Meera", "line": "It was absolutely wonderful! I loved every minute." },
+          { "speaker": "Raj", "line": "Where exactly did you go?" },
+          { "speaker": "Meera", "line": "We went to Alleppey for the backwaters and then to Munnar for the tea gardens." },
+          { "speaker": "Raj", "line": "How long did the trip take?" },
+          { "speaker": "Meera", "line": "Five days. We left on Wednesday and came back on Sunday." },
+          { "speaker": "Raj", "line": "Did you take a houseboat?" },
+          { "speaker": "Meera", "line": "Yes! We stayed on a houseboat for one night — it was the most amazing experience!" },
+          { "speaker": "Raj", "line": "Who did you go with?" },
+          { "speaker": "Meera", "line": "My sister and two friends. Four of us altogether." },
+          { "speaker": "Raj", "line": "What did you eat there?" },
+          { "speaker": "Meera", "line": "So much fish! And appam with stew. It was delicious. I didn't want to leave!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did Meera go on her trip?", "options": ["Goa and Mumbai", "Alleppey and Munnar", "Chennai and Bangalore", "Delhi and Agra"], "correct_index": 1 },
+          { "question": "How many people went on the trip?", "options": ["Two", "Three", "Four", "Five"], "correct_index": 2 },
+          { "question": "What was the most amazing experience?", "options": ["The tea gardens", "The food", "Staying on a houseboat", "The journey there"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0405_16", "order": 16, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You want to know why your colleague came to work very late this morning.",
+        "question": "Which is the most natural and polite question?",
+        "options": [
+          "Why you came late?",
+          "Why did you came late today?",
+          "Why did you come in late today?",
+          "What time did you came?"
+        ],
+        "correct_index": 2,
+        "explanation": "Why + did + you + BASE verb. come (not came). Why did you come in late? ✓"
+      }
+    },
+    { "task_id": "t0405_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Interview about last holiday",
+      "content": {
+        "instruction": "Play both roles. Ask 6 different past questions about a holiday and give detailed answers.",
+        "prompt": "Interview your friend about their last holiday. Ask: Where, When, How long, Who with, What did you do, Did you enjoy it, What did you eat.",
+        "example_response": "Where did you go for your last holiday? — I went to Coorg in Karnataka. When did you go? — We went in March last year. How long did you stay? — About four days. Who did you go with? — I went with my family — four of us. What did you do there? — We visited a coffee plantation, went on nature walks, and ate at local restaurants. Did you enjoy it? — Absolutely! It was one of the best holidays I ever had. What was the food like? — Amazing — fresh, simple, and delicious.",
+        "key_phrases": ["Where/When/Who/What/How long/Did + did + subject + base verb?"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0405_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Question and answer game",
+      "content": {
+        "instruction": "Answer 5 past tense questions about yourself. Give full, detailed answers.",
+        "prompt": "Answer: 1) What did you do last Saturday? 2) Where did you go last month? 3) Who did you talk to yesterday? 4) What did you eat for your last birthday dinner? 5) How did you feel when you finished school or college?",
+        "example_response": "Last Saturday I went to a family gathering — we had a small celebration for my uncle's birthday. Last month I went to Pondicherry for a day trip with friends. Yesterday I talked to my manager about a project, and also called my mother in the evening. For my last birthday dinner I ate at a rooftop restaurant — I had grilled chicken and a wonderful chocolate cake. When I finished college I felt absolutely proud and a little scared — I didn't know what the future held!",
+        "key_phrases": ["I went / ate / talked / felt / finished / had / called + details"],
+        "min_words": 85
+      }
+    },
+    { "task_id": "t0405_19", "order": 19, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the conversation",
+      "content": {
+        "sentence": "A: ___ did you do last weekend? B: I ___ to my friend's house. A: ___ did you go? B: On Saturday evening. A: ___ did you get home? B: I ___ home quite late — around midnight.",
+        "blanks": [
+          { "position": 1, "options": ["What", "Where", "When"], "correct": "What" },
+          { "position": 2, "options": ["go", "went", "goed"], "correct": "went" },
+          { "position": 3, "options": ["What", "Where", "When"], "correct": "When" },
+          { "position": 4, "options": ["What time", "When", "How long"], "correct": "What time" },
+          { "position": 5, "options": ["come", "came", "comed"], "correct": "came" }
+        ],
+        "explanation": "What (thing/activity), went (go→went), When (time), What time (specific time), came (come→came)."
+      }
+    },
+    { "task_id": "t0405_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Yes/No: Did + subject + BASE verb? → Yes, I did. / No, I didn't.",
+          "What (thing), Where (place), When (time), Who (person), Why (reason), How (manner), How long (duration), How much (price)",
+          "All wh- questions: Question word + did + subject + BASE verb?",
+          "Never use irregular/past form in questions: Did she go ✓, Did she went ✗",
+          "Who as subject: Who came? (no did needed)"
+        ],
+        "next_lesson": "a1_unit4_lesson06",
+        "next_lesson_title": "My last holiday — telling a story"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit4_lesson06",
+  "unit": 4, "lesson_number": 6, "level": "A1",
+  "title": "My last holiday — telling a story",
+  "description": "Learn to tell a complete past story using narrative connectors, all past tenses, and descriptive language.",
+  "estimated_minutes": 28, "xp_reward": 160,
+  "tasks": [
+    { "task_id": "t0406_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Narrative connectors — telling a story",
+      "content": {
+        "explanation": "Use these words to connect events in a story and make it flow naturally.",
+        "connectors": [
+          { "word": "First / Firstly", "use": "The first event", "example": "First, we took the train to Ooty." },
+          { "word": "Then / After that", "use": "The next event", "example": "Then we checked into our hotel." },
+          { "word": "Next", "use": "The following event", "example": "Next, we visited the tea gardens." },
+          { "word": "Later", "use": "Some time after", "example": "Later in the afternoon, we went shopping." },
+          { "word": "Finally / In the end", "use": "The last event", "example": "Finally, we took a long train ride home." },
+          { "word": "Suddenly", "use": "Unexpected event", "example": "Suddenly, it started to rain!" },
+          { "word": "Unfortunately", "use": "Something bad happened", "example": "Unfortunately, I lost my bag." },
+          { "word": "Luckily", "use": "Something good happened", "example": "Luckily, someone found it." }
+        ]
+      }
+    },
+    { "task_id": "t0406_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Using all past forms together",
+      "content": {
+        "explanation": "A good story uses all three past forms naturally.",
+        "usage": [
+          { "form": "was/were", "use": "State, description, feeling at that time", "examples": ["It was sunny.", "We were very excited.", "The hotel was beautiful."] },
+          { "form": "Regular -ed", "use": "Action that happened", "examples": ["We walked along the beach.", "I cooked breakfast.", "She called home."] },
+          { "form": "Irregular past", "use": "Action that happened (irregular verb)", "examples": ["We went to the market.", "I ate amazing food.", "She bought souvenirs."] }
+        ],
+        "example_story_sentence": "The day was sunny (was), so we went to the beach (irregular), ate fresh fish (irregular), and walked for hours (regular). It was the best day of the trip (was)!"
+      }
+    },
+    { "task_id": "t0406_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Holiday vocabulary",
+      "content": {
+        "explanation": "Useful words for talking about holidays and travel experiences.",
+        "items": [
+          { "phrase": "book / reserve", "note": "book a hotel, reserve a table" },
+          { "phrase": "check in / check out", "note": "arrive at / leave a hotel" },
+          { "phrase": "sightseeing", "note": "visiting famous places as a tourist" },
+          { "phrase": "souvenir", "note": "a gift you buy to remember a place" },
+          { "phrase": "tour / guided tour", "note": "organised trip with a guide" },
+          { "phrase": "local food", "note": "traditional food of that area" },
+          { "phrase": "landmark", "note": "famous building or place" },
+          { "phrase": "breathtaking", "note": "extremely beautiful — the view was breathtaking" }
+        ]
+      }
+    },
+    { "task_id": "t0406_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — storytelling phrases",
+      "content": {
+        "instruction": "Repeat naturally with good rhythm. Storytelling has a flowing pace.",
+        "phrases": [
+          { "text": "First, we took the train to Mysore. Then we checked into our hotel.", "audio_key": "first_then_story" },
+          { "text": "The view from the top was absolutely breathtaking!", "audio_key": "breathtaking_view" },
+          { "text": "Suddenly, it started to rain heavily and we ran inside.", "audio_key": "suddenly_rain" },
+          { "text": "Luckily, we found a great restaurant nearby.", "audio_key": "luckily_restaurant" },
+          { "text": "Finally, we came home tired but very happy.", "audio_key": "finally_came_home" }
+        ]
+      }
+    },
+    { "task_id": "t0406_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "Correct connector",
+      "content": {
+        "question": "You want to describe the LAST event in your story. Which word do you use?",
+        "options": ["Suddenly", "First", "Finally", "Next"],
+        "correct_index": 2,
+        "explanation": "Finally / In the end = the last event in a sequence."
+      }
+    },
+    { "task_id": "t0406_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "Which connector?",
+      "content": {
+        "question": "Something unexpected and bad happened. Which word do you use?",
+        "options": ["Luckily", "Finally", "First", "Unfortunately"],
+        "correct_index": 3,
+        "explanation": "Unfortunately = bad unexpected event. Luckily = good unexpected event."
+      }
+    },
+    { "task_id": "t0406_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Past form in a story",
+      "content": {
+        "question": "Choose the sentence that uses ALL past forms correctly:",
+        "options": [
+          "The weather was beautiful so we go to the beach and swam.",
+          "The weather was beautiful so we went to the beach and swam.",
+          "The weather is beautiful so we went to the beach and swam.",
+          "The weather was beautiful so we went to the beach and swimmed."
+        ],
+        "correct_index": 1,
+        "explanation": "was (state) ✓, went (go→went) ✓, swam (swim→swam) ✓ — all correct past forms."
+      }
+    },
+    { "task_id": "t0406_08", "order": 8, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the connector",
+      "content": {
+        "sentence": "___, we checked into the hotel. ___, we went for a walk. ___, it started to rain. ___, a nearby café was open so we went inside.",
+        "blanks": [
+          { "position": 1, "options": ["Finally", "First", "Suddenly"], "correct": "First" },
+          { "position": 2, "options": ["First", "Then", "Finally"], "correct": "Then" },
+          { "position": 3, "options": ["Luckily", "Unfortunately", "Suddenly"], "correct": "Suddenly" },
+          { "position": 4, "options": ["Unfortunately", "Luckily", "First"], "correct": "Luckily" }
+        ],
+        "explanation": "Story order: First→Then→Suddenly (unexpected bad)→Luckily (unexpected good)."
+      }
+    },
+    { "task_id": "t0406_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in all past forms in a story",
+      "content": {
+        "sentence": "Last month I ___ (go) to Hampi with my friends. The ruins ___ (be) absolutely breathtaking. We ___ (walk) for hours and ___ (take) many photos. Then we ___ (eat) at a local restaurant — the food ___ (be) delicious!",
+        "blanks": [
+          { "position": 1, "options": ["go", "went", "goed"], "correct": "went" },
+          { "position": 2, "options": ["was", "were", "are"], "correct": "were" },
+          { "position": 3, "options": ["walked", "walk", "walking"], "correct": "walked" },
+          { "position": 4, "options": ["took", "take", "taked"], "correct": "took" },
+          { "position": 5, "options": ["eat", "ate", "eated"], "correct": "ate" },
+          { "position": 6, "options": ["was", "were", "is"], "correct": "was" }
+        ],
+        "explanation": "went, were, walked, took, ate, was — mix of irregular, regular, and was/were."
+      }
+    },
+    { "task_id": "t0406_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the story sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct past narrative sentence.",
+        "words": ["breathtaking", "view", "the", "mountains", "from", "was", "top", "The"],
+        "correct_sentence": "The view from the top was breathtaking.",
+        "explanation": "The + noun + from + the top + was + adjective."
+      }
+    },
+    { "task_id": "t0406_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match connector to its use",
+      "content": {
+        "instruction": "Match each narrative connector to when you use it.",
+        "pairs": [
+          { "prompt": "First", "answer": "to introduce the first event" },
+          { "prompt": "Then / After that", "answer": "to introduce the next event" },
+          { "prompt": "Suddenly", "answer": "an unexpected event happens" },
+          { "prompt": "Unfortunately", "answer": "something bad happened" },
+          { "prompt": "Finally", "answer": "the last event in the story" }
+        ]
+      }
+    },
+    { "task_id": "t0406_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — A holiday story",
+      "content": {
+        "context": "Vikram tells his colleague Ananya about his trip to Rajasthan.",
+        "dialogue": [
+          { "speaker": "Ananya", "line": "I heard you went to Rajasthan! How was it?" },
+          { "speaker": "Vikram", "line": "It was incredible! We went to Jaipur first. The Pink City was absolutely breathtaking." },
+          { "speaker": "Ananya", "line": "What did you do there?" },
+          { "speaker": "Vikram", "line": "First, we visited Amber Fort — it was magnificent. Then we went to the bazaars and bought beautiful textiles and jewellery." },
+          { "speaker": "Ananya", "line": "Did anything unexpected happen?" },
+          { "speaker": "Vikram", "line": "Yes! Suddenly, our auto broke down on the way to the hotel. Unfortunately, we had to walk in the heat for twenty minutes!" },
+          { "speaker": "Ananya", "line": "Oh no! Was everything else okay?" },
+          { "speaker": "Vikram", "line": "Luckily, yes! After that, everything was perfect. We went to Jodhpur next — the Blue City. It was stunning." },
+          { "speaker": "Ananya", "line": "What was the food like?" },
+          { "speaker": "Vikram", "line": "Amazing! I ate dal baati churma for the first time and it was the best food I tasted on the trip." },
+          { "speaker": "Ananya", "line": "And how did the trip end?" },
+          { "speaker": "Vikram", "line": "Finally, we came back to Chennai on a night train. I was exhausted but I already want to go back!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did they go first?", "options": ["Jodhpur", "Udaipur", "Jaipur", "Bikaner"], "correct_index": 2 },
+          { "question": "What went wrong on the trip?", "options": ["They lost their luggage", "Their auto broke down", "The hotel was bad", "It rained heavily"], "correct_index": 1 },
+          { "question": "How did they travel back to Chennai?", "options": ["By plane", "By bus", "By car", "By night train"], "correct_index": 3 }
+        ]
+      }
+    },
+    { "task_id": "t0406_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Correct the story",
+      "content": {
+        "instruction": "Choose the correctly written version of this holiday story.",
+        "wrong_text": "Last year I goed to Goa with my friends. First we checked in our hotel. Then we go to the beach and swimed. The water was clear and the view was breathtaken.",
+        "options": [
+          "Last year I went to Goa with my friends. First we checked into our hotel. Then we went to the beach and swam. The water was clear and the view was breathtaking.",
+          "Last year I went to Goa with my friends. First we checked in our hotel. Then we go to the beach and swim. The water was clear and the view was breathtaking.",
+          "Last year I went to Goa with my friends. First we checked into our hotel. Then we went to the beach and swimed. The water was clear and view was breathtaking.",
+          "Last year I goed to Goa with my friends. First we checked into hotel. Then we went to beach and swam. The water clear and view was breathtaking."
+        ],
+        "correct_index": 0,
+        "explanation": "went ✓ (not goed), checked into ✓, went ✓ (not go), swam ✓ (not swimed), breathtaking ✓ (adjective)."
+      }
+    },
+    { "task_id": "t0406_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "You are telling a story. Something very unexpected and bad happened in the middle — you got lost!",
+        "question": "Which sentence most naturally introduces this event?",
+        "options": [
+          "Then we got lost.",
+          "Suddenly, we realised we were completely lost!",
+          "Finally we were lost.",
+          "First we were lost."
+        ],
+        "correct_index": 1,
+        "explanation": "Suddenly = unexpected event. Suddenly, we realised... adds drama and surprise. ✓"
+      }
+    },
+    { "task_id": "t0406_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Tell your holiday story",
+      "content": {
+        "instruction": "Speak for 75 seconds. Tell a complete story about a holiday, trip, or day out you had. Use narrative connectors, all past forms, and descriptive adjectives.",
+        "prompt": "Tell me about the best (or most interesting!) trip or day out you remember. Use First, Then, After that, Suddenly, Luckily/Unfortunately, Finally.",
+        "example_response": "Last year I went on an amazing trip to Munnar in Kerala with my family. First, we took an overnight bus from Chennai and arrived early in the morning. The mountains were covered in mist — it was absolutely stunning. Then we checked into our homestay — the hosts were incredibly warm and welcoming. After that, we visited a tea plantation. I walked through the green fields and drank the freshest tea I ever tasted. Suddenly, a huge elephant appeared on the road nearby! We were a bit scared but also very excited. Luckily, it walked away peacefully. In the evening we ate a traditional Kerala meal — it was delicious. Unfortunately, the trip was only three days. Finally, we came home on Sunday feeling relaxed and very happy. I want to go back very soon!",
+        "key_phrases": ["First / Then / After that / Suddenly / Luckily / Unfortunately / Finally", "was/were, went/ate/saw/bought/walked", "absolutely/breathtaking/stunning/delicious"],
+        "min_words": 100
+      }
+    },
+    { "task_id": "t0406_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Ask about someone's trip",
+      "content": {
+        "instruction": "Ask 6 questions about a friend's recent trip. Then give imaginary answers as your friend.",
+        "prompt": "Your friend just came back from a trip. Interview them about it.",
+        "example_response": "Where did you go? — I went to Pondicherry. How long did you stay? — Three days. Who did you go with? — I went with my sister. What did you do there? — We visited the French Quarter, ate amazing seafood, and walked along the promenade. Did anything unexpected happen? — Yes! Suddenly it rained heavily on our second day but luckily we found a beautiful café and spent three hours there. What did you enjoy most? — The food was breathtaking — we ate at a little restaurant right by the sea.",
+        "key_phrases": ["Where/How long/Who/What/Did + past question", "Narrative connectors in answers"],
+        "min_words": 85
+      }
+    },
+    { "task_id": "t0406_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — A day that went wrong",
+      "content": {
+        "instruction": "Speak for 60 seconds. Tell a story about a day when things didn't go according to plan. Use Unfortunately, Suddenly, Luckily.",
+        "prompt": "Tell me about a day when everything went wrong (or almost wrong!).",
+        "example_response": "Last month I had a really difficult day. First, I woke up late because my alarm didn't ring. Then I rushed to get ready but I couldn't find my keys — I looked everywhere! Unfortunately, I missed my bus and had to take an auto. Then suddenly the auto broke down in traffic and I was stuck for twenty minutes! I was very stressed. Luckily, my colleague covered for me in the meeting. After work I wanted to go to the gym but I didn't go because I was completely exhausted. Finally, I came home, ate a simple dinner, and went to bed at 9pm. It wasn't my best day!",
+        "key_phrases": ["First/Then/Suddenly/Unfortunately/Luckily/Finally", "didn't + base verb", "was/were for feelings"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0406_18", "order": 18, "type": "fill_blank", "category": "grammar",
+      "title": "Story fill-in — full narrative",
+      "content": {
+        "sentence": "Last summer ___ (be) the best of my life. I ___ (travel) to Kerala with my family. First we ___ (go) to Alleppey and ___ (take) a houseboat. The backwaters ___ (be) beautiful and peaceful. Then we ___ (drive) to Munnar. Unfortunately the weather ___ (be) a bit cloudy but we still ___ (see) stunning views. Finally we ___ (come) home feeling completely refreshed.",
+        "blanks": [
+          { "position": 1, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 2, "options": ["travel", "travelled", "traveling"], "correct": "travelled" },
+          { "position": 3, "options": ["go", "went", "goed"], "correct": "went" },
+          { "position": 4, "options": ["take", "took", "taked"], "correct": "took" },
+          { "position": 5, "options": ["was", "were", "is"], "correct": "were" },
+          { "position": 6, "options": ["drive", "drived", "drove"], "correct": "drove" },
+          { "position": 7, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 8, "options": ["see", "saw", "seed"], "correct": "saw" },
+          { "position": 9, "options": ["come", "came", "comed"], "correct": "came" }
+        ],
+        "explanation": "was(summer), travelled(regular), went, took, were(backwaters), drove(drive→drove), was(weather), saw, came."
+      }
+    },
+    { "task_id": "t0406_19", "order": 19, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match holiday word to meaning",
+      "content": {
+        "instruction": "Match each holiday vocabulary word to its definition.",
+        "pairs": [
+          { "prompt": "souvenir", "answer": "a gift bought to remember a place" },
+          { "prompt": "breathtaking", "answer": "so beautiful it takes your breath away" },
+          { "prompt": "check in", "answer": "arrive and register at a hotel" },
+          { "prompt": "sightseeing", "answer": "visiting famous tourist places" },
+          { "prompt": "guided tour", "answer": "organised visit with someone showing the way" }
+        ]
+      }
+    },
+    { "task_id": "t0406_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Narrative connectors: First, Then, After that, Later, Next, Finally, Suddenly, Unfortunately, Luckily",
+          "Story uses all 3 past forms together: was/were + regular -ed + irregular",
+          "Holiday vocabulary: check in, sightseeing, souvenir, breathtaking, guided tour",
+          "Storytelling tip: use adjectives and connectors to make stories interesting",
+          "Sudden/unexpected events: use 'Suddenly' or 'Luckily/Unfortunately'"
+        ],
+        "next_lesson": "a1_unit4_lesson07",
+        "next_lesson_title": "Childhood memories — when I was young"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit4_lesson07",
+  "unit": 4, "lesson_number": 7, "level": "A1",
+  "title": "Childhood memories — when I was young",
+  "description": "Talk about childhood using was/were, past verbs, used to (introduction), and memory vocabulary.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0407_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "When I was young / a child",
+      "content": {
+        "explanation": "Use these phrases to set the context for childhood memories.",
+        "phrases": [
+          { "phrase": "When I was young / a child / little", "example": "When I was young, I loved climbing trees." },
+          { "phrase": "When I was (age)", "example": "When I was ten, I got my first bicycle." },
+          { "phrase": "As a child / As a kid", "example": "As a child, I was very shy." },
+          { "phrase": "In my childhood", "example": "In my childhood, we didn't have mobile phones." },
+          { "phrase": "I grew up in ___", "example": "I grew up in a small village." }
+        ]
+      }
+    },
+    { "task_id": "t0407_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Introduction to 'used to'",
+      "content": {
+        "explanation": "'Used to' describes habits or states that were TRUE in the past but are NOT true now.",
+        "structure": "Subject + used to + base verb",
+        "examples": [
+          { "sentence": "I used to wake up very early.", "note": "I woke up early as a child — but not now" },
+          { "sentence": "We used to play outside all day.", "note": "We played outside — not anymore" },
+          { "sentence": "She used to have long hair.", "note": "She had long hair — she cut it" },
+          { "sentence": "I didn't use to like vegetables.", "note": "Negative: didn't use to + base" },
+          { "sentence": "Did you use to walk to school?", "note": "Question: Did + subject + use to + base?" }
+        ],
+        "vs_simple_past": "Simple past: happened once. Used to: happened regularly/continuously in the past."
+      }
+    },
+    { "task_id": "t0407_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Childhood vocabulary",
+      "content": {
+        "explanation": "Vocabulary to talk about growing up and childhood memories.",
+        "items": [
+          { "phrase": "school / primary school", "note": "Where you studied as a child" },
+          { "phrase": "best friend / childhood friend", "note": "Friend from when you were young" },
+          { "phrase": "favourite teacher", "note": "The teacher you liked most" },
+          { "phrase": "games / toys", "note": "What children play with" },
+          { "phrase": "summer holidays", "note": "School holidays in summer" },
+          { "phrase": "village / hometown", "note": "Where you grew up" },
+          { "phrase": "strict / kind", "note": "Describing parents or teachers" },
+          { "phrase": "naughty / well-behaved", "note": "Describing yourself as a child" }
+        ]
+      }
+    },
+    { "task_id": "t0407_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat with a warm, nostalgic tone — childhood memories are happy!",
+        "phrases": [
+          { "text": "When I was young, I used to climb trees with my friends.", "audio_key": "climb_trees" },
+          { "text": "I grew up in a small village near Chennai.", "audio_key": "grew_up_village" },
+          { "text": "I didn't use to like school — I preferred playing outside!", "audio_key": "didnt_like_school" },
+          { "text": "My best friend and I used to walk to school together every day.", "audio_key": "walk_to_school" },
+          { "text": "As a child I was quite naughty — my teachers knew my name very well!", "audio_key": "quite_naughty" }
+        ]
+      }
+    },
+    { "task_id": "t0407_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct used to form",
+      "content": {
+        "question": "'I ___ love sweets when I was a child, but now I prefer savoury food.'",
+        "options": ["used to", "use to", "was use to", "am used to"],
+        "correct_index": 0,
+        "explanation": "Positive form: used to + base verb. I used to love. ✓"
+      }
+    },
+    { "task_id": "t0407_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Negative used to",
+      "content": {
+        "question": "'She ___ like reading but now she loves it.'",
+        "options": ["didn't used to", "didn't use to", "used not to", "wasn't use to"],
+        "correct_index": 1,
+        "explanation": "Negative: didn't use to + base verb. didn't use to like ✓"
+      }
+    },
+    { "task_id": "t0407_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Used to vs simple past",
+      "content": {
+        "question": "Which sentence describes a REPEATED habit in the past (not just once)?",
+        "options": [
+          "I went to school yesterday.",
+          "I used to walk to school every day.",
+          "I walked to school on Monday.",
+          "I was at school last week."
+        ],
+        "correct_index": 1,
+        "explanation": "'Used to' = repeated habit in the past. 'Every day' confirms it was regular."
+      }
+    },
+    { "task_id": "t0407_08", "order": 8, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in used to",
+      "content": {
+        "sentence": "As a child I ___ (play) cricket every evening after school. We ___ (not have) video games so we ___ (spend) all our time outdoors.",
+        "blanks": [
+          { "position": 1, "options": ["used to play", "play", "played"], "correct": "used to play" },
+          { "position": 2, "options": ["didn't use to have", "used to have", "don't have"], "correct": "didn't use to have" },
+          { "position": 3, "options": ["spend", "used to spend", "spent"], "correct": "used to spend" }
+        ],
+        "explanation": "All habits/states as a child → used to. Negative = didn't use to."
+      }
+    },
+    { "task_id": "t0407_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Mix: was/were + used to + simple past",
+      "content": {
+        "sentence": "When I ___ (be) eight, I ___ (be) very shy. I ___ (not use to) speak in class. Then one day my teacher ___ (ask) me to tell a story and I ___ (love) it!",
+        "blanks": [
+          { "position": 1, "options": ["was", "were", "am"], "correct": "was" },
+          { "position": 2, "options": ["was", "were", "am"], "correct": "was" },
+          { "position": 3, "options": ["didn't use to", "used to", "didn't used to"], "correct": "didn't use to" },
+          { "position": 4, "options": ["asked", "ask", "used to ask"], "correct": "asked" },
+          { "position": 5, "options": ["loved", "love", "used to love"], "correct": "loved" }
+        ],
+        "explanation": "was (age/state), was (shy=state), didn't use to (habit), asked (one time), loved (one-time reaction)."
+      }
+    },
+    { "task_id": "t0407_10", "order": 10, "type": "sort_words", "category": "grammar",
+      "title": "Build the childhood sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct childhood memory sentence.",
+        "words": ["used", "to", "I", "play", "friends", "my", "outside", "with", "every", "day"],
+        "correct_sentence": "I used to play outside with my friends every day.",
+        "explanation": "Subject + used to + base verb + place + with + person + time."
+      }
+    },
+    { "task_id": "t0407_11", "order": 11, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match childhood description to word",
+      "content": {
+        "instruction": "Match each description to the correct childhood vocabulary word.",
+        "pairs": [
+          { "prompt": "The teacher you liked most", "answer": "favourite teacher" },
+          { "prompt": "You didn't follow rules", "answer": "naughty" },
+          { "prompt": "Long break from school in hot season", "answer": "summer holidays" },
+          { "prompt": "The town or city where you grew up", "answer": "hometown" },
+          { "prompt": "Friend from when you were very young", "answer": "childhood friend" }
+        ]
+      }
+    },
+    { "task_id": "t0407_12", "order": 12, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — Childhood memories",
+      "content": {
+        "context": "Two colleagues Amrit and Shalini share childhood memories during a lunch break.",
+        "dialogue": [
+          { "speaker": "Amrit", "line": "Shalini, where did you grow up?" },
+          { "speaker": "Shalini", "line": "I grew up in a small town in Tamil Nadu — Kumbakonam. And you?" },
+          { "speaker": "Amrit", "line": "I grew up in Chennai. Were you happy as a child?" },
+          { "speaker": "Shalini", "line": "Very! We used to play outside all evening. There were so many kids in the street." },
+          { "speaker": "Amrit", "line": "Did you use to walk to school?" },
+          { "speaker": "Shalini", "line": "Yes, every day! My best friend and I used to walk together and talk the whole way." },
+          { "speaker": "Amrit", "line": "What were you like at school? Were you a good student?" },
+          { "speaker": "Shalini", "line": "I was quite studious actually! But I was also a bit naughty sometimes. My maths teacher used to call me by my full name when I was in trouble!" },
+          { "speaker": "Amrit", "line": "Ha! I didn't use to like school much. I used to pretend I was sick to stay home!" },
+          { "speaker": "Shalini", "line": "Really? What did you enjoy doing as a kid?" },
+          { "speaker": "Amrit", "line": "I used to read comics, play cricket, and watch cartoons all day. Simple times!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did Shalini grow up?", "options": ["Chennai", "Kumbakonam", "Madurai", "Coimbatore"], "correct_index": 1 },
+          { "question": "What did Shalini and her best friend do every day?", "options": ["Played cricket", "Walked to school together", "Studied together", "Went to the market"], "correct_index": 1 },
+          { "question": "How did Amrit feel about school?", "options": ["He loved it", "He was a top student", "He didn't use to like it much", "He was very naughty"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0407_13", "order": 13, "type": "error_correction", "category": "grammar",
+      "title": "Find the used to mistake",
+      "content": {
+        "instruction": "Which sentence uses 'used to' correctly?",
+        "wrong_sentence": "When I was young, I use to wake up early and I used to played outside.",
+        "options": [
+          "When I was young, I use to wake up early and I used to played outside.",
+          "When I was young, I used to wake up early and I used to play outside.",
+          "When I was young, I used to woke up early and I used to play outside.",
+          "When I was young, I used to wake up early and I use to play outside."
+        ],
+        "correct_index": 1,
+        "explanation": "used to + BASE verb. wake (not woke), play (not played). I used to wake... used to play ✓"
+      }
+    },
+    { "task_id": "t0407_14", "order": 14, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Someone asks: 'Are you a morning person?' You weren't as a child but now you are.",
+        "question": "Which is the most natural reply?",
+        "options": [
+          "Yes I am. I am morning person.",
+          "Yes! I used to sleep late as a child but now I wake up early naturally.",
+          "Yes. I didn't sleep early before but now yes.",
+          "Yes! I use to sleep late but I wake up early."
+        ],
+        "correct_index": 1,
+        "explanation": "used to sleep late (past habit, not now) + now I wake up early (present change). Natural contrast. ✓"
+      }
+    },
+    { "task_id": "t0407_15", "order": 15, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Your childhood memories",
+      "content": {
+        "instruction": "Speak for 70 seconds. Describe your childhood — where you grew up, what you used to do, what you were like. Include used to at least 5 times.",
+        "prompt": "Tell me about your childhood. What do you remember most clearly? What did you use to do?",
+        "example_response": "I grew up in a small town called Vellore in Tamil Nadu. As a child I was quite active and a bit naughty! I used to wake up very early and go outside to play before school. My friends and I used to play cricket and tag in the evenings until it was dark. When I was young I didn't use to like studying much — I preferred playing! But I used to love reading comics and adventure stories. In summer holidays we used to visit my grandparents in a village. Those were wonderful times — we used to help with the cows, eat fresh mangoes from the tree, and sleep on the terrace under the stars. I didn't use to appreciate it then but now I miss it deeply.",
+        "key_phrases": ["I grew up in ___", "As a child / When I was young", "I used to + verb", "I didn't use to + verb", "Those were + adjective + times"],
+        "min_words": 95
+      }
+    },
+    { "task_id": "t0407_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Then and now",
+      "content": {
+        "instruction": "Speak for 50 seconds. Compare your life as a child to your life now. Use 'used to' for the past and present tense for now.",
+        "prompt": "How is your life different now from when you were a child?",
+        "example_response": "My life is very different now! When I was a child I used to sleep ten hours a night — now I sleep only six. I used to eat everything my mother cooked without complaint. Now I cook for myself and I'm much more careful about what I eat. I didn't use to care about money — now I think about it every day! I used to have so much free time — now I have almost none. I used to laugh at everything. I still laugh but I also worry more. I miss the simplicity of childhood sometimes!",
+        "key_phrases": ["I used to ___ but now I ___", "I didn't use to ___ but now I ___"],
+        "min_words": 75
+      }
+    },
+    { "task_id": "t0407_17", "order": 17, "type": "fill_blank", "category": "grammar",
+      "title": "Complete the childhood paragraph",
+      "content": {
+        "sentence": "When I ___ (be) a child, I ___ (grow) up in a village. I ___ (use to / walk) to school with my older sister every morning. We ___ (not / use to / take) the bus — it ___ (be) too expensive. Our school ___ (be) small but our teacher ___ (be) wonderful. She ___ (use to / tell) us stories every Friday and we all ___ (love) it.",
+        "blanks": [
+          { "position": 1, "options": ["was", "were"], "correct": "was" },
+          { "position": 2, "options": ["grew", "grown", "grow"], "correct": "grew" },
+          { "position": 3, "options": ["used to walk", "walked", "used to walked"], "correct": "used to walk" },
+          { "position": 4, "options": ["didn't use to take", "didn't used to take", "used to not take"], "correct": "didn't use to take" },
+          { "position": 5, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 6, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 7, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 8, "options": ["used to tell", "told", "use to tell"], "correct": "used to tell" },
+          { "position": 9, "options": ["loved", "love", "used to love"], "correct": "loved" }
+        ],
+        "explanation": "was (age), grew (grow→grew), used to walk (habit), didn't use to take (negative habit), was×3 (states/descriptions), used to tell (teacher's habit), loved (simple past reaction)."
+      }
+    },
+    { "task_id": "t0407_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Describe your favourite memory",
+      "content": {
+        "instruction": "Speak for 60 seconds. Describe one specific favourite memory from your childhood in detail. Use was/were, simple past, and used to.",
+        "prompt": "What is your favourite memory from childhood? Describe it as if you are re-living it.",
+        "example_response": "My favourite memory is from summer holidays when I was about nine years old. We used to go to my grandmother's house in the village every May. The house was big and old with a huge mango tree in the garden. Every morning we used to wake up early and pick fresh mangoes — they were sweet and absolutely delicious. In the evenings all the cousins used to play games on the terrace. My grandmother used to tell us stories at night before we slept under the stars. I remember feeling completely safe and happy. Those evenings were magical. I didn't use to realise how special they were at the time, but now I treasure that memory deeply.",
+        "key_phrases": ["I was ___ years old", "used to + verb (habit)", "was/were (description)", "simple past (specific events)"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0407_19", "order": 19, "type": "error_correction", "category": "grammar",
+      "title": "Full paragraph — multiple corrections",
+      "content": {
+        "instruction": "This childhood story has 4 errors. Choose the correct version.",
+        "wrong_text": "When I was young I use to love football. I played every day after school. My friends and I used to went to the park near our house. We didn't used to come home until it was dark. Those were the best days of my life.",
+        "options": [
+          "When I was young I used to love football. I played every day after school. My friends and I used to go to the park near our house. We didn't use to come home until it was dark. Those were the best days of my life.",
+          "When I was young I used to love football. I played every day after school. My friends and I used to went to the park near our house. We didn't use to come home until it was dark. Those were the best days of my life.",
+          "When I was young I use to love football. I played every day after school. My friends and I used to go to the park. We didn't use to come home until dark. Those were the best days of my life.",
+          "When I was young I used to love football. I played every day after school. My friends and I used to go to the park near our house. We didn't used to come home until it was dark. Those are the best days of my life."
+        ],
+        "correct_index": 0,
+        "explanation": "use to→used to (positive), used to went→used to go (base verb), didn't used to→didn't use to. Those were (past) ✓."
+      }
+    },
+    { "task_id": "t0407_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Context phrases: When I was young, As a child, In my childhood, I grew up in",
+          "Used to + base verb = past habit no longer true (I used to wake up early.)",
+          "Negative: didn't use to + base verb (I didn't use to like vegetables.)",
+          "Question: Did you use to ___? (Did you use to walk to school?)",
+          "Childhood vocabulary: naughty, well-behaved, strict, kind, summer holidays, hometown",
+          "Three past forms together: was/were (state) + used to (habit) + simple past (specific event)"
+        ],
+        "next_lesson": "a1_unit4_lesson08",
+        "next_lesson_title": "A1 Unit 4 Review + Final Exit Test"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit4_lesson08",
+  "unit": 4, "lesson_number": 8, "level": "A1",
+  "title": "Unit 4 Review — Talking about the past",
+  "description": "Final review of all Unit 4 past tenses: was/were, regular -ed, irregular verbs, didn't, did questions, and used to.",
+  "estimated_minutes": 30, "xp_reward": 250,
+  "tasks": [
+    { "task_id": "t0408_01", "order": 1, "type": "learn_card", "category": "review",
+      "title": "Unit 4 — Complete past tense summary",
+      "content": {
+        "explanation": "Everything you learned in Unit 4 — the complete A1 past tense system.",
+        "summary": [
+          { "form": "was / were", "use": "State, description, feeling in past", "examples": ["I was tired.", "They were at home."] },
+          { "form": "Regular -ed", "use": "Past action (regular verbs)", "examples": ["She cooked dinner.", "We walked to the park."] },
+          { "form": "Irregular past", "use": "Past action (irregular verbs)", "examples": ["He went to the market.", "I ate rice."] },
+          { "form": "didn't + base", "use": "Past negative (all verbs)", "examples": ["I didn't go.", "She didn't eat."] },
+          { "form": "Did + base?", "use": "Past question", "examples": ["Did you enjoy it?", "Where did she go?"] },
+          { "form": "used to + base", "use": "Past habit no longer true", "examples": ["I used to walk to school."] }
+        ]
+      }
+    },
+    { "task_id": "t0408_02", "order": 2, "type": "mcq", "category": "review",
+      "title": "Review — Was or were",
+      "content": {
+        "question": "'My parents ___ very happy when I got the job.'",
+        "options": ["was", "were", "is", "are"],
+        "correct_index": 1,
+        "explanation": "My parents = They (plural) → were."
+      }
+    },
+    { "task_id": "t0408_03", "order": 3, "type": "mcq", "category": "review",
+      "title": "Review — Regular past",
+      "content": {
+        "question": "Choose the correct past form of 'carry'.",
+        "options": ["carryed", "carrid", "carried", "carry'd"],
+        "correct_index": 2,
+        "explanation": "Consonant + y → change y to i + ed. carry → carried ✓"
+      }
+    },
+    { "task_id": "t0408_04", "order": 4, "type": "mcq", "category": "review",
+      "title": "Review — Irregular past",
+      "content": {
+        "question": "'Last night she ___ a long email to her manager.'",
+        "options": ["writed", "write", "wrote", "writing"],
+        "correct_index": 2,
+        "explanation": "Write is irregular → wrote. She wrote a long email. ✓"
+      }
+    },
+    { "task_id": "t0408_05", "order": 5, "type": "mcq", "category": "review",
+      "title": "Review — Negative past",
+      "content": {
+        "question": "'He ___ to the meeting because he forgot about it.'",
+        "options": ["didn't came", "didn't come", "don't come", "wasn't come"],
+        "correct_index": 1,
+        "explanation": "didn't + BASE verb. come (not came). He didn't come. ✓"
+      }
+    },
+    { "task_id": "t0408_06", "order": 6, "type": "mcq", "category": "review",
+      "title": "Review — Past question",
+      "content": {
+        "question": "'___ you ___ breakfast this morning?'",
+        "options": ["Did / ate", "Did / eat", "Was / eat", "Were / eating"],
+        "correct_index": 1,
+        "explanation": "Did + subject + BASE verb. eat (not ate). Did you eat? ✓"
+      }
+    },
+    { "task_id": "t0408_07", "order": 7, "type": "mcq", "category": "review",
+      "title": "Review — Used to",
+      "content": {
+        "question": "Which sentence correctly describes a past habit?",
+        "options": [
+          "I use to go to school by bus.",
+          "I used to went to school by bus.",
+          "I used to go to school by bus.",
+          "I was use to go to school by bus."
+        ],
+        "correct_index": 2,
+        "explanation": "used to + BASE verb. go (not went). I used to go. ✓"
+      }
+    },
+    { "task_id": "t0408_08", "order": 8, "type": "mcq", "category": "review",
+      "title": "Review — Which past form?",
+      "content": {
+        "question": "Which is the BEST sentence to describe a habit that was true for many years in the past?",
+        "options": [
+          "I walked to school yesterday.",
+          "I used to walk to school every day for ten years.",
+          "I was walked to school.",
+          "I did walk to school."
+        ],
+        "correct_index": 1,
+        "explanation": "Long repeated past habit → used to. I used to walk (every day for ten years). ✓"
+      }
+    },
+    { "task_id": "t0408_09", "order": 9, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — all past forms",
+      "content": {
+        "sentence": "Last week I ___ (go) to a wedding. It ___ (be) beautiful. I ___ (wear) a new outfit and ___ (meet) many old friends. I ___ (not know) half the people but everyone ___ (be) very friendly.",
+        "blanks": [
+          { "position": 1, "options": ["went", "go", "goed"], "correct": "went" },
+          { "position": 2, "options": ["was", "were", "is"], "correct": "was" },
+          { "position": 3, "options": ["wore", "wear", "weared"], "correct": "wore" },
+          { "position": 4, "options": ["meet", "met", "meeted"], "correct": "met" },
+          { "position": 5, "options": ["didn't know", "didn't knew", "don't know"], "correct": "didn't know" },
+          { "position": 6, "options": ["was", "were", "is"], "correct": "were" }
+        ],
+        "explanation": "went ✓, was ✓, wore (wear→wore) ✓, met ✓, didn't know ✓ (base after didn't), were (everyone treated as plural here) ✓."
+      }
+    },
+    { "task_id": "t0408_10", "order": 10, "type": "fill_blank", "category": "review",
+      "title": "Review Fill-in — used to contrast",
+      "content": {
+        "sentence": "I ___ (used to / wake up) late every morning but now I wake up at 6am. I ___ (used to / not enjoy) exercise but now I go to the gym every day. My whole lifestyle ___ (change) completely!",
+        "blanks": [
+          { "position": 1, "options": ["used to wake up", "used to woke up", "wake up"], "correct": "used to wake up" },
+          { "position": 2, "options": ["didn't use to enjoy", "didn't used to enjoy", "used to not enjoy"], "correct": "didn't use to enjoy" },
+          { "position": 3, "options": ["change", "changed", "has change"], "correct": "changed" }
+        ],
+        "explanation": "used to wake up ✓, didn't use to enjoy ✓ (negative), changed ✓ (regular past)."
+      }
+    },
+    { "task_id": "t0408_11", "order": 11, "type": "sort_words", "category": "review",
+      "title": "Review — Build the past story sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct, complete past sentence with a connector.",
+        "words": ["arrived", "then", "hotel", "We", "tired", "checked", "were", "in", "and", "very", "we", "the"],
+        "correct_sentence": "We arrived and then checked into the hotel. We were very tired.",
+        "explanation": "arrived (regular) + then + checked (regular) + were very tired (state)."
+      }
+    },
+    { "task_id": "t0408_12", "order": 12, "type": "sort_words", "category": "review",
+      "title": "Review — Build the past question",
+      "content": {
+        "instruction": "Rearrange to make a correct past question.",
+        "words": ["long", "How", "the", "take", "journey", "did"],
+        "correct_sentence": "How long did the journey take?",
+        "explanation": "How long + did + subject + base verb?"
+      }
+    },
+    { "task_id": "t0408_13", "order": 13, "type": "error_correction", "category": "review",
+      "title": "Review — Find all 4 mistakes",
+      "content": {
+        "instruction": "This paragraph has 4 past tense errors. Which version corrects all of them?",
+        "wrong_text": "Last year I use to go to the gym every day. Then I injuried my knee and I didn't went for three months. When I came back I was surprise — I felt so weak! Fortunately I recovered quickly and now I exercise regular.",
+        "options": [
+          "Last year I used to go to the gym every day. Then I injured my knee and I didn't go for three months. When I came back I was surprised — I felt so weak! Fortunately I recovered quickly and now I exercise regularly.",
+          "Last year I used to go to the gym every day. Then I injured my knee and I didn't went for three months. When I came back I was surprised — I felt so weak! Fortunately I recovered quickly and now I exercise regularly.",
+          "Last year I use to go to the gym every day. Then I injured my knee and I didn't go for three months. When I came back I was surprised — I felt so weak! Fortunately I recovered quickly and now I exercise regularly.",
+          "Last year I used to go to the gym every day. Then I injured my knee and I didn't go for three months. When I came back I was surprise — I felt so weak! Fortunately I recovered quickly and now I exercise regular."
+        ],
+        "correct_index": 0,
+        "explanation": "use to→used to, injuried→injured (regular), didn't went→didn't go (base), surprise→surprised (adjective), regular→regularly (adverb)."
+      }
+    },
+    { "task_id": "t0408_14", "order": 14, "type": "match_pairs", "category": "review",
+      "title": "Review — Match past form to rule",
+      "content": {
+        "instruction": "Match each sentence to the grammar rule it demonstrates.",
+        "pairs": [
+          { "prompt": "The hotel was beautiful.", "answer": "was/were for past state" },
+          { "prompt": "She cooked dinner and cleaned up.", "answer": "regular past -ed" },
+          { "prompt": "They went to the beach.", "answer": "irregular past verb" },
+          { "prompt": "I didn't eat lunch.", "answer": "didn't + base verb (negative)" },
+          { "prompt": "I used to play cricket as a child.", "answer": "used to = past habit" }
+        ]
+      }
+    },
+    { "task_id": "t0408_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Final A1 dialogue — Looking back",
+      "content": {
+        "context": "At a school reunion, two old friends Kavitha and Suresh see each other after 15 years.",
+        "dialogue": [
+          { "speaker": "Kavitha", "line": "Suresh! Is that you? You haven't changed at all!" },
+          { "speaker": "Suresh", "line": "Kavitha! Wow, fifteen years! How are you?" },
+          { "speaker": "Kavitha", "line": "I'm great, thank you! Do you remember our old classroom?" },
+          { "speaker": "Suresh", "line": "Of course! We used to sit in the front row together. I was terrified of Mr Sharma!" },
+          { "speaker": "Kavitha", "line": "He was very strict! But do you remember the school trips we took?" },
+          { "speaker": "Suresh", "line": "Yes! We went to Mysore in Class 8. It was incredible — we visited the palace and ate at a big hotel." },
+          { "speaker": "Kavitha", "line": "I remember you were so naughty on that trip! Didn't you get into trouble?" },
+          { "speaker": "Suresh", "line": "I didn't mean to! I accidentally set off the fire alarm in the hotel. The teacher was absolutely furious!" },
+          { "speaker": "Kavitha", "line": "I forgot about that! What did she say to you?" },
+          { "speaker": "Suresh", "line": "She didn't speak to me for two days! But then we laughed about it later." },
+          { "speaker": "Kavitha", "line": "Those were amazing days. I used to think school was boring — now I miss it so much!" },
+          { "speaker": "Suresh", "line": "Me too. We were young and carefree. Life was simpler then." }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did the class trip go in Class 8?", "options": ["Chennai", "Mysore", "Ooty", "Goa"], "correct_index": 1 },
+          { "question": "What did Suresh accidentally do at the hotel?", "options": ["Break a window", "Set off the fire alarm", "Lose his bag", "Fall asleep at dinner"], "correct_index": 1 },
+          { "question": "How did Kavitha feel about school as a child?", "options": ["She loved it", "She was scared", "She thought it was boring", "She was the top student"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0408_16", "order": 16, "type": "speaking", "category": "speaking",
+      "title": "A1 Final speaking test — Part 1: Last weekend",
+      "content": {
+        "instruction": "Speak for 70 seconds. Describe your last weekend using ALL past forms: was/were, regular -ed, irregular past, and didn't.",
+        "prompt": "Tell me everything about your last weekend from Saturday morning to Sunday night.",
+        "example_response": "Last weekend was really enjoyable. On Saturday morning I woke up quite late — about 9am. Then I cooked breakfast and cleaned the house. In the afternoon I went to the market and bought vegetables and fruit. It was quite crowded! Then I met a friend for coffee. We sat in a nice café and talked for about two hours. In the evening I cooked a proper meal — I made dal and rice. I didn't watch TV that night — I read a book instead and went to sleep early. On Sunday I didn't do very much — I was quite tired. I stayed home, did some laundry, called my parents, and rested. It wasn't an exciting weekend but it was peaceful and I felt very refreshed on Monday morning.",
+        "key_phrases": ["was/were (state)", "walked/cooked/cleaned (regular -ed)", "went/bought/met/made/read (irregular)", "didn't + base verb (negative)"],
+        "min_words": 100,
+        "covers_lessons": [1, 2, 3, 4]
+      }
+    },
+    { "task_id": "t0408_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "A1 Final speaking test — Part 2: Childhood",
+      "content": {
+        "instruction": "Speak for 65 seconds. Talk about your childhood using used to, was/were, and past verbs. Describe at least ONE specific memory.",
+        "prompt": "Tell me about your childhood and one specific memory you treasure.",
+        "example_response": "I grew up in a town called Tiruppur. As a child I was very active and a bit naughty! I used to play cricket every evening with my friends in the street. We didn't use to go home until it was dark. My mother used to call us from the balcony when dinner was ready. One memory I treasure is from when I was about eight years old. My father took me to watch my first cricket match at the stadium. We went by bus — it was very exciting. The crowd was enormous and noisy. I don't remember who won but I remember feeling the most excited I ever felt in my life. My father used to say it was one of our best days together. I still think about it sometimes.",
+        "key_phrases": ["I grew up in ___", "used to + verb (habit)", "didn't use to ___", "specific memory: past narrative"],
+        "min_words": 95,
+        "covers_lessons": [5, 6, 7]
+      }
+    },
+    { "task_id": "t0408_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "A1 Final speaking test — Part 3: Ask past questions",
+      "content": {
+        "instruction": "Ask 5 past questions and give answers. Use What, Where, When, Why, How long, Did.",
+        "prompt": "Imagine you are interviewing someone about a memorable event in their life. Ask 5 good questions and give detailed answers.",
+        "example_response": "What was the most exciting thing you did last year? — I went trekking in Coorg with three friends. Where exactly did you go? — We hiked through the coffee estates near Madikeri — it was stunning. How long did the trip take? — Four days. Did you face any difficulties? — Yes! On the second day it rained heavily and we got a bit lost but luckily a local farmer showed us the way. Why did you choose Coorg? — Because I used to dream about going there as a child — I finally made it happen!",
+        "key_phrases": ["What/Where/When/Why/How long + did + subject + base verb?", "Did + subject + ___?"],
+        "min_words": 85,
+        "covers_lessons": [5]
+      }
+    },
+    { "task_id": "t0408_19", "order": 19, "type": "fill_blank", "category": "review",
+      "title": "Final comprehensive fill-in",
+      "content": {
+        "sentence": "When I ___ (be) a teenager, I ___ (use to / love) football. Every weekend my friends and I ___ (go) to the park and ___ (play) for hours. One day we ___ (see) a scout from a local team — he ___ (watch) us. He ___ (come) over and ___ (ask) if I wanted to join. I ___ (be) absolutely thrilled! I ___ (not tell) my parents immediately because I ___ (be) nervous. Finally I ___ (say) yes and it ___ (be) one of the best decisions I ever made.",
+        "blanks": [
+          { "position": 1, "options": ["was", "were"], "correct": "was" },
+          { "position": 2, "options": ["used to love", "used to loved", "love"], "correct": "used to love" },
+          { "position": 3, "options": ["went", "go", "goed"], "correct": "went" },
+          { "position": 4, "options": ["played", "play", "plays"], "correct": "played" },
+          { "position": 5, "options": ["saw", "see", "seed"], "correct": "saw" },
+          { "position": 6, "options": ["watched", "watch", "was watching"], "correct": "was watching" },
+          { "position": 7, "options": ["come", "came", "comed"], "correct": "came" },
+          { "position": 8, "options": ["ask", "asked", "asks"], "correct": "asked" },
+          { "position": 9, "options": ["was", "were", "am"], "correct": "was" },
+          { "position": 10, "options": ["didn't tell", "didn't told", "don't tell"], "correct": "didn't tell" },
+          { "position": 11, "options": ["was", "were", "am"], "correct": "was" },
+          { "position": 12, "options": ["said", "say", "sayed"], "correct": "said" },
+          { "position": 13, "options": ["was", "were", "is"], "correct": "was" }
+        ],
+        "explanation": "Comprehensive test of all A1 past tense forms: was/were, used to, irregular, regular, didn't+base."
+      }
+    },
+    { "task_id": "t0408_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "🎓 A1 Level Complete!",
+      "content": {
+        "congratulations": "OUTSTANDING! You have completed ALL FOUR UNITS of the A1 level. You can now speak about yourself, your family, your daily life, your health, your home, and your past experiences — all in correct English. You are ready for A2!",
+        "all_a1_grammar_mastered": [
+          "Verb to be: am/is/are + was/were",
+          "Simple present: I work / She works + negatives and questions",
+          "Present continuous: I am working / She is working",
+          "Articles: a / an / some",
+          "There is / There are",
+          "Possessive adjectives: my, your, his, her, our, their",
+          "Can/can't + Could for requests",
+          "Simple past regular: worked, walked, studied",
+          "Simple past irregular: went, ate, saw, bought, felt, slept...",
+          "Past negative: didn't + base verb",
+          "Past questions: Did + subject + base verb? + wh- questions",
+          "Used to for past habits",
+          "Prepositions: in/on/at (time) + in/on/under/next to/between (place)",
+          "Adjectives + intensifiers: very, quite, a bit, absolutely"
+        ],
+        "next_level": "A2",
+        "next_unit": "a2_unit5_lesson01",
+        "next_unit_title": "Unit 5 — Plans & future: going to, will, invitations"
+      }
+    }
+  ]
+}
+]

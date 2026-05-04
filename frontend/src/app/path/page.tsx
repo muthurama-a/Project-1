@@ -224,7 +224,7 @@ export default function PathPage() {
 
               {/* Lesson Snake Path */}
               {!locked && (
-                <div className="lesson-path">
+                <div className={`lesson-path ${allDone ? 'is-complete' : ''}`}>
                   {unit.lessons.map((lesson, lIndex) => {
                     const isCompleted = lesson.is_completed;
                     const isActive    = lesson.id === firstActiveId;
@@ -275,11 +275,13 @@ export default function PathPage() {
                   {allDone && (
                     <motion.div
                       className="unit-complete-badge"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ type: 'spring' }}
+                      initial={{ scale: 0, y: 20 }}
+                      animate={{ scale: 1, y: 0 }}
+                      transition={{ type: 'spring', bounce: 0.5 }}
                     >
-                      🏆 Unit Complete!
+                      <div className="badge-icon">🏆</div>
+                      <div>Unit Complete!</div>
+                      <div className="badge-subtitle">You've mastered this unit. Keep it up!</div>
                     </motion.div>
                   )}
                 </div>

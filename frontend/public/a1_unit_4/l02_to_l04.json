@@ -1,0 +1,797 @@
+[
+{
+  "lesson_id": "a1_unit4_lesson02",
+  "unit": 4, "lesson_number": 2, "level": "A1",
+  "title": "Simple past — regular verbs (-ed)",
+  "description": "Learn how to form and use the simple past tense with regular verbs that end in -ed.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0402_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Forming the simple past — regular verbs",
+      "content": {
+        "explanation": "Most English verbs are 'regular' — you simply add -ed to make the past tense.",
+        "rules": [
+          { "rule": "Most verbs: add -ed", "examples": ["work → worked", "play → played", "watch → watched", "clean → cleaned"] },
+          { "rule": "Verb ends in -e: add only -d", "examples": ["like → liked", "love → loved", "live → lived", "arrive → arrived"] },
+          { "rule": "Short verb + consonant: double the final consonant + -ed", "examples": ["stop → stopped", "plan → planned", "drop → dropped"] },
+          { "rule": "Verb ends in consonant + y: change y → i + -ed", "examples": ["study → studied", "carry → carried", "try → tried"] }
+        ],
+        "important": "The past form is the SAME for all subjects — I worked, She worked, They worked."
+      }
+    },
+    { "task_id": "t0402_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Negative and question with DID",
+      "content": {
+        "explanation": "For negatives and questions in simple past, use 'did' or 'didn't' + BASE verb.",
+        "forms": [
+          { "form": "Positive", "example": "She worked yesterday.", "note": "verb + -ed" },
+          { "form": "Negative", "example": "She didn't work yesterday.", "note": "didn't + BASE verb (no -ed)" },
+          { "form": "Question", "example": "Did she work yesterday?", "note": "Did + subject + BASE verb" },
+          { "form": "Short answers", "example": "Yes, she did. / No, she didn't.", "note": "" }
+        ],
+        "common_error": { "wrong": "She didn't worked.", "right": "She didn't work. (base verb after didn't)" }
+      }
+    },
+    { "task_id": "t0402_03", "order": 3, "type": "learn_card", "category": "vocabulary",
+      "title": "Common regular past verbs",
+      "content": {
+        "explanation": "Learn these very common regular verbs and their past forms.",
+        "verbs": [
+          { "base": "walk", "past": "walked", "example": "I walked to the market." },
+          { "base": "talk", "past": "talked", "example": "We talked for hours." },
+          { "base": "watch", "past": "watched", "example": "She watched a film last night." },
+          { "base": "cook", "past": "cooked", "example": "He cooked dinner." },
+          { "base": "call", "past": "called", "example": "I called my mother." },
+          { "base": "visit", "past": "visited", "example": "They visited their grandparents." },
+          { "base": "play", "past": "played", "example": "We played cricket on Sunday." },
+          { "base": "study", "past": "studied", "example": "She studied all evening." },
+          { "base": "open", "past": "opened", "example": "He opened the window." },
+          { "base": "finish", "past": "finished", "example": "I finished work at 6pm." },
+          { "base": "clean", "past": "cleaned", "example": "We cleaned the house." },
+          { "base": "arrive", "past": "arrived", "example": "The train arrived on time." }
+        ]
+      }
+    },
+    { "task_id": "t0402_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat — -ed pronunciation",
+      "content": {
+        "instruction": "The -ed ending has 3 different sounds. Listen carefully.",
+        "pronunciation_groups": [
+          { "sound": "/t/ sound", "verbs": ["watched", "walked", "cooked", "stopped"], "note": "After voiceless sounds: k, p, f, s, ch" },
+          { "sound": "/d/ sound", "verbs": ["played", "called", "cleaned", "studied"], "note": "After voiced sounds: most others" },
+          { "sound": "/id/ sound", "verbs": ["visited", "started", "wanted", "needed"], "note": "After t or d sounds" }
+        ],
+        "phrases": [
+          { "text": "I walked to work and arrived at nine.", "audio_key": "walked_arrived" },
+          { "text": "She studied hard and finished the exam.", "audio_key": "studied_finished" },
+          { "text": "They visited their family and stayed for a week.", "audio_key": "visited_stayed" }
+        ]
+      }
+    },
+    { "task_id": "t0402_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct past form",
+      "content": {
+        "question": "Which is the correct past tense of 'study'?",
+        "options": ["studyed", "studiyed", "studied", "studid"],
+        "correct_index": 2,
+        "explanation": "Consonant + y → change y to i + ed. study → studied ✓"
+      }
+    },
+    { "task_id": "t0402_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Correct past form",
+      "content": {
+        "question": "Which is the correct past form of 'stop'?",
+        "options": ["stoped", "stopped", "stopted", "stop'd"],
+        "correct_index": 1,
+        "explanation": "Short verb ending in consonant → double consonant + ed. stop → stopped ✓"
+      }
+    },
+    { "task_id": "t0402_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Negative — correct form",
+      "content": {
+        "question": "'She ___ finish her homework last night.'",
+        "options": ["didn't finished", "didn't finishes", "didn't finish", "don't finished"],
+        "correct_index": 2,
+        "explanation": "Negative past: didn't + BASE verb. didn't finish ✓ (never add -ed after didn't)"
+      }
+    },
+    { "task_id": "t0402_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "Question form",
+      "content": {
+        "question": "Make a question: 'You watched the match.' → '___ you ___ the match?'",
+        "options": ["Were / watch", "Did / watched", "Did / watch", "Was / watch"],
+        "correct_index": 2,
+        "explanation": "Question: Did + subject + BASE verb (no -ed). Did you watch? ✓"
+      }
+    },
+    { "task_id": "t0402_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the correct past form",
+      "content": {
+        "sentence": "Yesterday I ___ (walk) to the office, ___ (talk) to my manager, and ___ (finish) my report by noon.",
+        "blanks": [
+          { "position": 1, "options": ["walk", "walked", "walking"], "correct": "walked" },
+          { "position": 2, "options": ["talk", "talked", "talking"], "correct": "talked" },
+          { "position": 3, "options": ["finish", "finished", "finishing"], "correct": "finished" }
+        ],
+        "explanation": "All regular verbs in simple past: add -ed. walked, talked, finished."
+      }
+    },
+    { "task_id": "t0402_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in negative or positive",
+      "content": {
+        "sentence": "I ___ (not cook) dinner last night — I ___ (order) food from outside. It ___ (arrive) quickly.",
+        "blanks": [
+          { "position": 1, "options": ["didn't cook", "don't cooked", "wasn't cook"], "correct": "didn't cook" },
+          { "position": 2, "options": ["order", "ordered", "did ordered"], "correct": "ordered" },
+          { "position": 3, "options": ["arrive", "arrived", "was arrive"], "correct": "arrived" }
+        ],
+        "explanation": "Negative: didn't + base (didn't cook). Positive: verb+ed (ordered, arrived)."
+      }
+    },
+    { "task_id": "t0402_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the past sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct past tense sentence.",
+        "words": ["visited", "last", "weekend", "grandparents", "my", "We"],
+        "correct_sentence": "We visited my grandparents last weekend.",
+        "explanation": "Subject + past verb + object + time expression."
+      }
+    },
+    { "task_id": "t0402_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the past question",
+      "content": {
+        "instruction": "Rearrange to make a correct question.",
+        "words": ["you", "film", "Did", "the", "enjoy"],
+        "correct_sentence": "Did you enjoy the film?",
+        "explanation": "Did + subject + base verb + object?"
+      }
+    },
+    { "task_id": "t0402_13", "order": 13, "type": "match_pairs", "category": "grammar",
+      "title": "Match base verb to past form",
+      "content": {
+        "instruction": "Match each verb to its correct regular past form.",
+        "pairs": [
+          { "prompt": "arrive", "answer": "arrived" },
+          { "prompt": "carry", "answer": "carried" },
+          { "prompt": "stop", "answer": "stopped" },
+          { "prompt": "clean", "answer": "cleaned" },
+          { "prompt": "study", "answer": "studied" },
+          { "prompt": "love", "answer": "loved" }
+        ]
+      }
+    },
+    { "task_id": "t0402_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistake",
+      "content": {
+        "instruction": "Which sentence is fully correct?",
+        "wrong_sentence": "She didn't cooked dinner and they didn't watched the film.",
+        "options": [
+          "She didn't cooked dinner and they didn't watched the film.",
+          "She didn't cook dinner and they didn't watch the film.",
+          "She didn't cook dinner and they didn't watched the film.",
+          "She didn't cooked dinner and they didn't watch the film."
+        ],
+        "correct_index": 1,
+        "explanation": "didn't + BASE verb (never add -ed after didn't). didn't cook ✓, didn't watch ✓"
+      }
+    },
+    { "task_id": "t0402_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — What did you do yesterday?",
+      "content": {
+        "context": "Two friends Nisha and Arjun talk about their day over a phone call.",
+        "dialogue": [
+          { "speaker": "Nisha", "line": "Hey Arjun! What did you do yesterday?" },
+          { "speaker": "Arjun", "line": "I had a really busy day! I woke up early and walked to the gym." },
+          { "speaker": "Nisha", "line": "Oh nice! Did you work out for long?" },
+          { "speaker": "Arjun", "line": "About an hour. Then I cooked breakfast, cleaned the kitchen, and started working." },
+          { "speaker": "Nisha", "line": "Did you finish your project?" },
+          { "speaker": "Arjun", "line": "Almost! I worked until 7pm. Then I called my parents and talked with them for a while." },
+          { "speaker": "Nisha", "line": "Did you go out at all?" },
+          { "speaker": "Arjun", "line": "No, I didn't. I was really tired. I just watched a show and went to bed early." },
+          { "speaker": "Nisha", "line": "Sounds productive! I didn't do much — I just relaxed at home all day!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Where did Arjun go in the morning?", "options": ["Office", "Market", "Gym", "Hospital"], "correct_index": 2 },
+          { "question": "Until what time did Arjun work?", "options": ["5pm", "6pm", "7pm", "8pm"], "correct_index": 2 },
+          { "question": "Did Arjun go out in the evening?", "options": ["Yes, he went for a walk", "Yes, he went to a restaurant", "No, he stayed home", "No, he went to sleep early"], "correct_index": 2 }
+        ]
+      }
+    },
+    { "task_id": "t0402_16", "order": 16, "type": "error_correction", "category": "grammar",
+      "title": "Correct the story",
+      "content": {
+        "instruction": "This paragraph has 3 past tense errors. Choose the corrected version.",
+        "wrong_text": "Yesterday I walk to the park and played with my dog. After that I cook lunch and clean my room. I didn't watched TV because I studied for my exam.",
+        "options": [
+          "Yesterday I walked to the park and played with my dog. After that I cooked lunch and cleaned my room. I didn't watch TV because I studied for my exam.",
+          "Yesterday I walked to the park and played with my dog. After that I cook lunch and cleaned my room. I didn't watched TV because I studied for my exam.",
+          "Yesterday I walk to the park and played with my dog. After that I cooked lunch and cleaned my room. I didn't watch TV because I studied for my exam.",
+          "Yesterday I walked to the park and played with my dog. After that I cooked lunch and cleaned my room. I didn't watched TV because I study for my exam."
+        ],
+        "correct_index": 0,
+        "explanation": "walk→walked, cook→cooked, didn't watched→didn't watch (base after didn't)."
+      }
+    },
+    { "task_id": "t0402_17", "order": 17, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your manager asks: 'Did you finish the report I asked for?' You did finish it.",
+        "question": "What is the most professional and natural reply?",
+        "options": [
+          "Yes, I finished it this morning and sent it to you by email.",
+          "Yes, I finish it this morning.",
+          "Yes, I did finished it.",
+          "Yes, I was finishing it morning."
+        ],
+        "correct_index": 0,
+        "explanation": "finished (past ✓), sent (irregular past ✓), by email (natural addition)."
+      }
+    },
+    { "task_id": "t0402_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — What did you do yesterday?",
+      "content": {
+        "instruction": "Speak for 60 seconds. Describe everything you did yesterday from morning to night. Use at least 8 different past tense verbs.",
+        "prompt": "Tell me about your yesterday. What did you do?",
+        "example_response": "Yesterday I woke up at 6:30. I walked to the gym and exercised for forty minutes. Then I arrived home, cooked breakfast, and cleaned my room. I worked from nine in the morning until about six in the evening. I called my friend in the afternoon and we talked for half an hour. In the evening I cooked dinner, watched a film, and then studied English for thirty minutes. I finished at about ten o'clock. I didn't go out but I had a productive day!",
+        "key_phrases": ["I walked/cooked/watched/called/studied/finished/cleaned/arrived", "I didn't ___", "at / in the morning/evening", "until / for + time"],
+        "min_words": 80
+      }
+    },
+    { "task_id": "t0402_19", "order": 19, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Ask and answer past questions",
+      "content": {
+        "instruction": "Play both roles. Ask 4 questions about what someone did last weekend and give natural answers.",
+        "prompt": "Have a conversation about last weekend. Ask: what did you do / where did you go / did you enjoy it / who did you talk to?",
+        "example_response": "What did you do last weekend? — I visited my grandparents in Madurai. It was a long drive! Did you enjoy it? — Yes, I loved it! We talked, cooked together, and played cards. Did you go anywhere interesting? — We walked to the temple on Sunday morning. Did you call anyone? — I called my college friend on Saturday evening and we talked for ages!",
+        "key_phrases": ["What did you do?", "Did you ___?", "Yes, I did. / No, I didn't.", "I ___ed / We ___ed"],
+        "min_words": 70
+      }
+    },
+    { "task_id": "t0402_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Regular past: add -ed (work→worked, cook→cooked)",
+          "Spelling rules: -e verbs add -d (live→lived), -y verbs change y→i+ed (study→studied), short consonant doubles (stop→stopped)",
+          "Same form for ALL subjects: I/she/they worked",
+          "Negative: didn't + BASE verb (no -ed!)",
+          "Question: Did + subject + BASE verb?",
+          "Short answers: Yes, I did. / No, she didn't."
+        ],
+        "next_lesson": "a1_unit4_lesson03",
+        "next_lesson_title": "Simple past — irregular verbs"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit4_lesson03",
+  "unit": 4, "lesson_number": 3, "level": "A1",
+  "title": "Simple past — irregular verbs",
+  "description": "Learn the most important irregular past tense verbs — verbs that do NOT follow the -ed pattern.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0403_01", "order": 1, "type": "learn_card", "category": "vocabulary",
+      "title": "Irregular verbs — Group 1: completely different form",
+      "content": {
+        "explanation": "These very common verbs have a completely different past tense form. You must memorise them!",
+        "verbs": [
+          { "base": "go", "past": "went", "example": "I went to the market." },
+          { "base": "come", "past": "came", "example": "She came home late." },
+          { "base": "see", "past": "saw", "example": "We saw a good film." },
+          { "base": "have", "past": "had", "example": "He had breakfast at 8." },
+          { "base": "get", "past": "got", "example": "I got a message from her." },
+          { "base": "give", "past": "gave", "example": "She gave me a gift." },
+          { "base": "take", "past": "took", "example": "They took the bus." },
+          { "base": "make", "past": "made", "example": "He made dinner." },
+          { "base": "say", "past": "said", "example": "She said goodbye." },
+          { "base": "know", "past": "knew", "example": "I knew the answer." }
+        ]
+      }
+    },
+    { "task_id": "t0403_02", "order": 2, "type": "learn_card", "category": "vocabulary",
+      "title": "Irregular verbs — Group 2: more key verbs",
+      "content": {
+        "explanation": "More essential irregular verbs you need for everyday conversation.",
+        "verbs": [
+          { "base": "eat", "past": "ate", "example": "We ate at a restaurant." },
+          { "base": "drink", "past": "drank", "example": "She drank two cups of tea." },
+          { "base": "sleep", "past": "slept", "example": "He slept for nine hours." },
+          { "base": "wake", "past": "woke", "example": "I woke up early." },
+          { "base": "meet", "past": "met", "example": "They met at the airport." },
+          { "base": "buy", "past": "bought", "example": "She bought a new dress." },
+          { "base": "think", "past": "thought", "example": "I thought about it." },
+          { "base": "feel", "past": "felt", "example": "I felt tired after work." },
+          { "base": "write", "past": "wrote", "example": "He wrote a long email." },
+          { "base": "read", "past": "read", "example": "She read two books (sounds like 'red')." }
+        ]
+      }
+    },
+    { "task_id": "t0403_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "Key rule: didn't + BASE verb always",
+      "content": {
+        "explanation": "Even for irregular verbs, the negative and question use DID/DIDN'T + the BASE verb (not the past form).",
+        "examples": [
+          { "positive": "She went to the cinema.", "negative": "She didn't go to the cinema.", "wrong": "She didn't went ✗" },
+          { "positive": "He ate breakfast.", "negative": "He didn't eat breakfast.", "wrong": "He didn't ate ✗" },
+          { "positive": "They slept well.", "question": "Did they sleep well?", "wrong": "Did they slept? ✗" }
+        ],
+        "rule": "Positive → use irregular past (went, ate, slept). Negative/Question → didn't / did + BASE verb."
+      }
+    },
+    { "task_id": "t0403_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat these sentences with irregular past verbs. Focus on the irregular forms.",
+        "phrases": [
+          { "text": "I woke up late and had a quick breakfast.", "audio_key": "woke_had_breakfast" },
+          { "text": "She went to the market and bought some vegetables.", "audio_key": "went_bought" },
+          { "text": "We ate dinner at a nice restaurant and drank mango juice.", "audio_key": "ate_drank" },
+          { "text": "He didn't sleep well — he felt tired all day.", "audio_key": "didnt_sleep_felt" },
+          { "text": "Did you see that film? — Yes, I thought it was excellent!", "audio_key": "did_see_thought" }
+        ]
+      }
+    },
+    { "task_id": "t0403_05", "order": 5, "type": "mcq", "category": "vocabulary",
+      "title": "Correct irregular past",
+      "content": {
+        "question": "What is the past tense of 'go'?",
+        "options": ["goed", "went", "gone", "goted"],
+        "correct_index": 1,
+        "explanation": "Go is irregular → went. I went to school. ✓"
+      }
+    },
+    { "task_id": "t0403_06", "order": 6, "type": "mcq", "category": "vocabulary",
+      "title": "Correct irregular past",
+      "content": {
+        "question": "What is the past tense of 'buy'?",
+        "options": ["buyed", "boughted", "bought", "buyd"],
+        "correct_index": 2,
+        "explanation": "Buy is irregular → bought. She bought a dress. ✓"
+      }
+    },
+    { "task_id": "t0403_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Correct negative form",
+      "content": {
+        "question": "'They ___ to the party last night — they were busy.'",
+        "options": ["didn't went", "don't go", "didn't go", "weren't go"],
+        "correct_index": 2,
+        "explanation": "Negative past: didn't + BASE verb. didn't go ✓ (never 'didn't went')"
+      }
+    },
+    { "task_id": "t0403_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "Correct question form",
+      "content": {
+        "question": "'___ she ___ the new café yesterday?'",
+        "options": ["Did / saw", "Did / see", "Was / see", "Did / seen"],
+        "correct_index": 1,
+        "explanation": "Question: Did + subject + BASE verb. Did she see ✓ (not 'saw')"
+      }
+    },
+    { "task_id": "t0403_09", "order": 9, "type": "fill_blank", "category": "vocabulary",
+      "title": "Fill in the irregular past verb",
+      "content": {
+        "sentence": "Yesterday I ___ (wake) up at 7, ___ (have) tea, and ___ (go) to the office by metro.",
+        "blanks": [
+          { "position": 1, "options": ["waked", "woke", "woken"], "correct": "woke" },
+          { "position": 2, "options": ["had", "haved", "have"], "correct": "had" },
+          { "position": 3, "options": ["go", "goed", "went"], "correct": "went" }
+        ],
+        "explanation": "wake→woke, have→had, go→went. All irregular."
+      }
+    },
+    { "task_id": "t0403_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Positive or negative irregular past",
+      "content": {
+        "sentence": "We ___ (eat) at home last night — we ___ (go) to a restaurant because it was our anniversary.",
+        "blanks": [
+          { "position": 1, "options": ["ate", "didn't eat", "don't eat"], "correct": "didn't eat" },
+          { "position": 2, "options": ["didn't go", "went", "go"], "correct": "went" }
+        ],
+        "explanation": "Negative: didn't eat (base after didn't). Positive: went (irregular past of go)."
+      }
+    },
+    { "task_id": "t0403_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the past sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct past tense sentence with irregular verbs.",
+        "words": ["She", "met", "friend", "and", "her", "coffee", "drank", "they"],
+        "correct_sentence": "She met her friend and they drank coffee.",
+        "explanation": "met (meet→met), drank (drink→drank) — both irregular."
+      }
+    },
+    { "task_id": "t0403_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the negative irregular sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct negative past tense sentence.",
+        "words": ["know", "I", "the", "didn't", "answer"],
+        "correct_sentence": "I didn't know the answer.",
+        "explanation": "didn't + BASE verb. know is the base of knew → I didn't know. ✓"
+      }
+    },
+    { "task_id": "t0403_13", "order": 13, "type": "match_pairs", "category": "vocabulary",
+      "title": "Match base verb to irregular past",
+      "content": {
+        "instruction": "Match each base verb to its correct irregular past form.",
+        "pairs": [
+          { "prompt": "eat", "answer": "ate" },
+          { "prompt": "sleep", "answer": "slept" },
+          { "prompt": "give", "answer": "gave" },
+          { "prompt": "see", "answer": "saw" },
+          { "prompt": "feel", "answer": "felt" },
+          { "prompt": "write", "answer": "wrote" }
+        ]
+      }
+    },
+    { "task_id": "t0403_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find both mistakes",
+      "content": {
+        "instruction": "This sentence has 2 errors. Choose the corrected version.",
+        "wrong_sentence": "He didn't went to work because he felt sick, so he sleeped all day.",
+        "options": [
+          "He didn't went to work because he felt sick, so he sleeped all day.",
+          "He didn't go to work because he felt sick, so he slept all day.",
+          "He didn't go to work because he feeled sick, so he slept all day.",
+          "He didn't go to work because he felt sick, so he sleeped all day."
+        ],
+        "correct_index": 1,
+        "explanation": "didn't + BASE verb (go not went). sleep→slept (irregular). felt is already correct."
+      }
+    },
+    { "task_id": "t0403_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — A story from the past",
+      "content": {
+        "context": "Grandma tells young Ananya about a special memory from her youth.",
+        "dialogue": [
+          { "speaker": "Ananya", "line": "Grandma, tell me a story from when you were young!" },
+          { "speaker": "Grandma", "line": "Okay! When I was seventeen, my friend and I went on a trip to Ooty." },
+          { "speaker": "Ananya", "line": "Just the two of you? Weren't you scared?" },
+          { "speaker": "Grandma", "line": "A little! We took the train — it was a long journey. We ate snacks and sang songs all the way." },
+          { "speaker": "Ananya", "line": "Did you stay there long?" },
+          { "speaker": "Grandma", "line": "Three days. We slept in a small guesthouse. We woke up early every morning and saw the sunrise in the mountains." },
+          { "speaker": "Ananya", "line": "That sounds amazing! Did you buy anything?" },
+          { "speaker": "Grandma", "line": "I bought a beautiful shawl — I still have it! And we drank the most delicious tea I ever tasted." },
+          { "speaker": "Ananya", "line": "I want to go to Ooty too!" },
+          { "speaker": "Grandma", "line": "You should! I thought about that trip for years. It made me so happy." }
+        ],
+        "comprehension_questions": [
+          { "question": "How old was Grandma when she went to Ooty?", "options": ["Fifteen", "Seventeen", "Twenty", "Eighteen"], "correct_index": 1 },
+          { "question": "How did they travel?", "options": ["By bus", "By car", "By train", "By plane"], "correct_index": 2 },
+          { "question": "What did Grandma buy?", "options": ["A dress", "A hat", "Chocolates", "A shawl"], "correct_index": 3 }
+        ]
+      }
+    },
+    { "task_id": "t0403_16", "order": 16, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your friend asks: 'Did you go to Ravi's party last night?'",
+        "question": "You went but left early. Which is the most natural reply?",
+        "options": [
+          "Yes, I went but I didn't stay long — I left early because I felt tired.",
+          "Yes, I goed but I leaved early.",
+          "Yes, I went but I didn't stayed long.",
+          "Yes, I go but left before."
+        ],
+        "correct_index": 0,
+        "explanation": "went ✓ (irregular), didn't stay ✓ (base after didn't), left ✓ (irregular past of leave), felt ✓."
+      }
+    },
+    { "task_id": "t0403_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Tell a story from last week",
+      "content": {
+        "instruction": "Speak for 65 seconds. Tell a story about something you did last week. Use at least 8 irregular past verbs.",
+        "prompt": "Tell me about something interesting you did last week. Use: went, had, ate, saw, met, bought, felt, thought, woke, took, got.",
+        "example_response": "Last week I did something really fun. On Thursday I woke up early and took the metro to Marina Beach. I met my college friend there and we had breakfast at a small café near the beach. I ate idli and drank strong filter coffee. We saw the sunrise — it was absolutely beautiful. After that we walked along the beach for an hour. I felt so relaxed and happy. We went to a bookshop later and I bought a novel I wanted for a long time. In the evening I came home, felt tired, and slept for nine hours! I thought it was one of the best days I had in months.",
+        "key_phrases": ["went, had, ate, saw, met, bought, felt, thought, woke, took, got, came, slept, drank"],
+        "min_words": 90
+      }
+    },
+    { "task_id": "t0403_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Irregular verb rapid fire",
+      "content": {
+        "instruction": "Make one sentence for each irregular verb: went, ate, saw, bought, slept, met, felt, woke, drank, gave. 10 verbs = 10 sentences.",
+        "prompt": "Use each irregular past verb in a complete sentence about your own life.",
+        "example_response": "I went to the market on Sunday. I ate dal rice for lunch today. I saw a beautiful rainbow last week. I bought new shoes last month. I slept for only five hours last night. I met my neighbour at the bus stop this morning. I felt very proud when I finished my project. I woke up at 6am today. I drank chai three times yesterday. I gave my friend a birthday gift last week.",
+        "key_phrases": ["went / ate / saw / bought / slept / met / felt / woke / drank / gave"],
+        "min_words": 80
+      }
+    },
+    { "task_id": "t0403_19", "order": 19, "type": "error_correction", "category": "grammar",
+      "title": "Full paragraph correction",
+      "content": {
+        "instruction": "Choose the paragraph with all irregular verbs correct.",
+        "wrong_text": "Last Sunday I goed to the temple with my family. We waked up at 5am and taked the bus. We seed many people there. Afterwards we eated at a hotel and drinkd fresh juice. I feeled very happy and peaceful.",
+        "options": [
+          "Last Sunday I went to the temple with my family. We woke up at 5am and took the bus. We saw many people there. Afterwards we ate at a hotel and drank fresh juice. I felt very happy and peaceful.",
+          "Last Sunday I went to the temple with my family. We woke up at 5am and took the bus. We saw many people there. Afterwards we ate at a hotel and drink fresh juice. I felt very happy and peaceful.",
+          "Last Sunday I went to the temple with my family. We waked up at 5am and took the bus. We saw many people there. Afterwards we ate at a hotel and drank fresh juice. I feeled very happy and peaceful.",
+          "Last Sunday I goed to the temple with my family. We woke up at 5am and took the bus. We saw many people there. Afterwards we eaten at a hotel and drank juice. I felt very happy."
+        ],
+        "correct_index": 0,
+        "explanation": "went, woke, took, saw, ate, drank, felt — all correct irregular past forms."
+      }
+    },
+    { "task_id": "t0403_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Group 1 irregular: go→went, come→came, see→saw, have→had, get→got, give→gave, take→took, make→made",
+          "Group 2 irregular: eat→ate, drink→drank, sleep→slept, wake→woke, meet→met, buy→bought, feel→felt, write→wrote",
+          "Negative ALWAYS: didn't + BASE verb (not past form)",
+          "Question ALWAYS: Did + subject + BASE verb?",
+          "Positive uses irregular form, negative/question uses BASE verb"
+        ],
+        "next_lesson": "a1_unit4_lesson04",
+        "next_lesson_title": "Past negative — didn't (practice and confidence)"
+      }
+    }
+  ]
+},
+{
+  "lesson_id": "a1_unit4_lesson04",
+  "unit": 4, "lesson_number": 4, "level": "A1",
+  "title": "Past negative — didn't (practice & fluency)",
+  "description": "Deep practice with past negatives — contrasting what you did and didn't do, building natural fluency.",
+  "estimated_minutes": 25, "xp_reward": 150,
+  "tasks": [
+    { "task_id": "t0404_01", "order": 1, "type": "learn_card", "category": "grammar",
+      "title": "Didn't — full review",
+      "content": {
+        "explanation": "Didn't (did + not) makes the negative past for ALL verbs — regular and irregular.",
+        "structure": "Subject + didn't + BASE verb + rest of sentence",
+        "examples": [
+          { "positive": "I went to the gym.", "negative": "I didn't go to the gym." },
+          { "positive": "She ate breakfast.", "negative": "She didn't eat breakfast." },
+          { "positive": "They played cricket.", "negative": "They didn't play cricket." },
+          { "positive": "He bought a car.", "negative": "He didn't buy a car." }
+        ],
+        "contrast_pattern": {
+          "explanation": "Very useful: say what you DID and what you DIDN'T do in the same sentence.",
+          "examples": [
+            "I went to work but I didn't finish my report.",
+            "She cooked dinner but she didn't wash the dishes.",
+            "We went to the market but we didn't buy anything."
+          ]
+        }
+      }
+    },
+    { "task_id": "t0404_02", "order": 2, "type": "learn_card", "category": "grammar",
+      "title": "Explaining reasons with because",
+      "content": {
+        "explanation": "When you say you DIDN'T do something, give a reason with 'because'.",
+        "examples": [
+          "I didn't go to the party because I was tired.",
+          "She didn't eat lunch because she wasn't hungry.",
+          "They didn't come to class because it was a holiday.",
+          "He didn't call because his phone was out of battery."
+        ],
+        "structure": "didn't + verb + because + reason"
+      }
+    },
+    { "task_id": "t0404_03", "order": 3, "type": "learn_card", "category": "grammar",
+      "title": "But / however — contrasting past actions",
+      "content": {
+        "explanation": "Use 'but' to connect a positive and negative past action naturally.",
+        "patterns": [
+          { "pattern": "did ___ but didn't ___", "examples": ["I studied but I didn't understand everything.", "She came to the office but she didn't stay long."] },
+          { "pattern": "didn't ___ but did ___", "examples": ["I didn't go to the gym but I walked for an hour.", "He didn't cook but he ordered food."] }
+        ]
+      }
+    },
+    { "task_id": "t0404_04", "order": 4, "type": "listen_repeat", "category": "pronunciation",
+      "title": "Listen and repeat",
+      "content": {
+        "instruction": "Repeat naturally. Notice 'didn't' is often spoken quickly as one unit.",
+        "phrases": [
+          { "text": "I didn't sleep well last night because it was too hot.", "audio_key": "didnt_sleep_hot" },
+          { "text": "She didn't come to work today because she felt sick.", "audio_key": "didnt_come_sick" },
+          { "text": "We went to the restaurant but we didn't order dessert.", "audio_key": "went_didnt_dessert" },
+          { "text": "He didn't know the answer, so he didn't say anything.", "audio_key": "didnt_know_say" },
+          { "text": "I didn't buy anything because everything was too expensive.", "audio_key": "didnt_buy_expensive" }
+        ]
+      }
+    },
+    { "task_id": "t0404_05", "order": 5, "type": "mcq", "category": "grammar",
+      "title": "Correct negative",
+      "content": {
+        "question": "'I ___ the match because my TV was broken.'",
+        "options": ["didn't watched", "didn't watch", "don't watch", "wasn't watch"],
+        "correct_index": 1,
+        "explanation": "didn't + BASE verb. didn't watch ✓ (not 'watched')"
+      }
+    },
+    { "task_id": "t0404_06", "order": 6, "type": "mcq", "category": "grammar",
+      "title": "Correct negative — irregular",
+      "content": {
+        "question": "'She ___ to the doctor because she felt better.'",
+        "options": ["didn't went", "didn't go", "don't go", "wasn't go"],
+        "correct_index": 1,
+        "explanation": "Irregular verb 'go' → didn't + BASE verb (go, not went). didn't go ✓"
+      }
+    },
+    { "task_id": "t0404_07", "order": 7, "type": "mcq", "category": "grammar",
+      "title": "Did or didn't?",
+      "content": {
+        "question": "'___ you eat breakfast this morning?' — 'No, I ___. I wasn't hungry.'",
+        "options": ["Did / did", "Did / didn't", "Didn't / didn't", "Was / wasn't"],
+        "correct_index": 1,
+        "explanation": "Question: Did you ___? Negative short answer: No, I didn't."
+      }
+    },
+    { "task_id": "t0404_08", "order": 8, "type": "mcq", "category": "grammar",
+      "title": "But contrast",
+      "content": {
+        "question": "Choose the most natural sentence:",
+        "options": [
+          "I studied but I didn't understood the topic.",
+          "I studied but I didn't understand the topic.",
+          "I studied but I don't understand the topic.",
+          "I studied but I wasn't understand the topic."
+        ],
+        "correct_index": 1,
+        "explanation": "didn't + BASE verb. understand (not understood). I didn't understand ✓"
+      }
+    },
+    { "task_id": "t0404_09", "order": 9, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in didn't + correct base verb",
+      "content": {
+        "sentence": "Last night I ___ (sleep) well and I ___ (feel) tired this morning. I ___ (want) to get up but I had to.",
+        "blanks": [
+          { "position": 1, "options": ["didn't sleep", "didn't slept", "didn't sleeping"], "correct": "didn't sleep" },
+          { "position": 2, "options": ["felt", "feel", "didn't feel"], "correct": "felt" },
+          { "position": 3, "options": ["didn't want", "didn't wanted", "don't want"], "correct": "didn't want" }
+        ],
+        "explanation": "didn't sleep ✓, felt (positive irregular) ✓, didn't want ✓ (base after didn't)."
+      }
+    },
+    { "task_id": "t0404_10", "order": 10, "type": "fill_blank", "category": "grammar",
+      "title": "Fill in the contrast",
+      "content": {
+        "sentence": "We ___ to the beach but we ___ in the sea because it was too cold.",
+        "blanks": [
+          { "position": 1, "options": ["went", "didn't go", "go"], "correct": "went" },
+          { "position": 2, "options": ["swam", "didn't swim", "didn't swam"], "correct": "didn't swim" }
+        ],
+        "explanation": "went (positive, irregular) + didn't swim (negative, base verb after didn't)."
+      }
+    },
+    { "task_id": "t0404_11", "order": 11, "type": "sort_words", "category": "grammar",
+      "title": "Build the negative sentence",
+      "content": {
+        "instruction": "Rearrange to make a correct past negative sentence with a reason.",
+        "words": ["because", "didn't", "I", "was", "tired", "the", "party", "go", "I", "to"],
+        "correct_sentence": "I didn't go to the party because I was tired.",
+        "explanation": "Subject + didn't + base verb + object + because + reason."
+      }
+    },
+    { "task_id": "t0404_12", "order": 12, "type": "sort_words", "category": "grammar",
+      "title": "Build the contrast sentence",
+      "content": {
+        "instruction": "Rearrange to make a sentence contrasting what you did and didn't do.",
+        "words": ["didn't", "She", "cooked", "but", "dishes", "the", "she", "wash"],
+        "correct_sentence": "She cooked but she didn't wash the dishes.",
+        "explanation": "Positive past + but + subject + didn't + base verb + object."
+      }
+    },
+    { "task_id": "t0404_13", "order": 13, "type": "match_pairs", "category": "grammar",
+      "title": "Match the positive to its negative",
+      "content": {
+        "instruction": "Match each positive past sentence to its negative version.",
+        "pairs": [
+          { "prompt": "I ate lunch.", "answer": "I didn't eat lunch." },
+          { "prompt": "She went to work.", "answer": "She didn't go to work." },
+          { "prompt": "They bought groceries.", "answer": "They didn't buy groceries." },
+          { "prompt": "He slept well.", "answer": "He didn't sleep well." },
+          { "prompt": "We saw the film.", "answer": "We didn't see the film." }
+        ]
+      }
+    },
+    { "task_id": "t0404_14", "order": 14, "type": "error_correction", "category": "grammar",
+      "title": "Find the mistakes",
+      "content": {
+        "instruction": "This has 3 errors. Choose the correct version.",
+        "wrong_text": "I didn't went to the gym because I didn't felt well. I stayed home but I didn't rested — I worked.",
+        "options": [
+          "I didn't went to the gym because I didn't felt well. I stayed home but I didn't rested — I worked.",
+          "I didn't go to the gym because I didn't feel well. I stayed home but I didn't rest — I worked.",
+          "I didn't go to the gym because I didn't feel well. I stayed home but I didn't rested — I worked.",
+          "I didn't go to the gym because I didn't felt well. I stayed home but I didn't rest — I worked."
+        ],
+        "correct_index": 1,
+        "explanation": "didn't go ✓ (not went), didn't feel ✓ (not felt), didn't rest ✓ (not rested) — always base verb after didn't."
+      }
+    },
+    { "task_id": "t0404_15", "order": 15, "type": "dialogue", "category": "dialogue_reading",
+      "title": "Dialogue — I didn't do what I planned!",
+      "content": {
+        "context": "Priya planned a productive Sunday but nothing went to plan. She talks to her sister.",
+        "dialogue": [
+          { "speaker": "Sister", "line": "How was your Sunday? Did you do all the things you planned?" },
+          { "speaker": "Priya", "line": "No! I didn't do anything I planned!" },
+          { "speaker": "Sister", "line": "Really? What happened?" },
+          { "speaker": "Priya", "line": "I didn't wake up early — I slept until 11! I planned to go to the gym but I didn't go." },
+          { "speaker": "Sister", "line": "What about the cleaning?" },
+          { "speaker": "Priya", "line": "I cleaned the kitchen but I didn't clean my room. And I didn't cook — I ordered food." },
+          { "speaker": "Sister", "line": "Did you study?" },
+          { "speaker": "Priya", "line": "I tried! I opened my book but I didn't read much — I kept watching videos." },
+          { "speaker": "Sister", "line": "So what did you actually do?" },
+          { "speaker": "Priya", "line": "I slept, ate, and watched films. It wasn't productive but it was very relaxing!" },
+          { "speaker": "Sister", "line": "Sounds like a perfect Sunday to me!" }
+        ],
+        "comprehension_questions": [
+          { "question": "Did Priya go to the gym?", "options": ["Yes, she did", "No, she didn't", "Yes, for an hour", "She doesn't remember"], "correct_index": 1 },
+          { "question": "What did she clean?", "options": ["Her room only", "The whole house", "The kitchen only", "Nothing"], "correct_index": 2 },
+          { "question": "Why didn't she study well?", "options": ["She was tired", "She kept watching videos", "She went out", "She felt sick"], "correct_index": 1 }
+        ]
+      }
+    },
+    { "task_id": "t0404_16", "order": 16, "type": "scenario_mcq", "category": "real_world",
+      "title": "Real-world situation",
+      "content": {
+        "scenario": "Your friend asks why you didn't come to their party last week.",
+        "question": "Which is the most natural and grammatically correct reply?",
+        "options": [
+          "I didn't came because I wasn't feeling well and I didn't wanted to make others sick.",
+          "I didn't come because I wasn't feeling well and I didn't want to make others sick.",
+          "I don't come because I wasn't feel well.",
+          "I came not because I was not feeling well."
+        ],
+        "correct_index": 1,
+        "explanation": "didn't come ✓, wasn't feeling ✓, didn't want ✓ — all base verbs after didn't."
+      }
+    },
+    { "task_id": "t0404_17", "order": 17, "type": "speaking", "category": "speaking",
+      "title": "Speaking — What you planned but didn't do",
+      "content": {
+        "instruction": "Speak for 60 seconds. Talk about things you planned to do recently but DIDN'T do. Give reasons.",
+        "prompt": "Tell me 4–5 things you planned to do this week but didn't do. Why not?",
+        "example_response": "This week I planned to wake up early every day but I didn't — I slept late because I was tired. I planned to go to the gym three times but I only went once because work was very busy. I wanted to call my grandmother but I didn't call her — I kept forgetting! I planned to cook healthy food but I didn't cook much — I ordered from outside almost every day. And I planned to finish reading my book but I didn't finish it because I was too distracted by my phone!",
+        "key_phrases": ["I planned to ___ but I didn't ___", "I didn't ___ because ___", "I wanted to ___ but ___"],
+        "min_words": 80
+      }
+    },
+    { "task_id": "t0404_18", "order": 18, "type": "speaking", "category": "speaking",
+      "title": "Speaking — Contrasting your week",
+      "content": {
+        "instruction": "Speak for 50 seconds. For each day of the week, say ONE thing you did and ONE thing you didn't do.",
+        "prompt": "Tell me what you did and didn't do on different days this week.",
+        "example_response": "On Monday I went to work but I didn't finish my project. On Tuesday I cooked dinner but I didn't clean up after. On Wednesday I exercised but I didn't eat well. On Thursday I called a friend but I didn't meet them in person. On Friday I went out for dinner but I didn't stay out late. On Saturday I slept in but I didn't waste the whole day — I read for two hours.",
+        "key_phrases": ["On [day] I ___ed but I didn't ___"],
+        "min_words": 70
+      }
+    },
+    { "task_id": "t0404_19", "order": 19, "type": "fill_blank", "category": "grammar",
+      "title": "Full story fill-in",
+      "content": {
+        "sentence": "Last Saturday I ___ (plan) to clean my house but I ___ (do) it. Instead I ___ (go) to the mall with my friend. We ___ (buy) clothes and ___ (eat) at a nice café. I ___ (come) home late and ___ (not finish) any housework. But I ___ (have) a great time!",
+        "blanks": [
+          { "position": 1, "options": ["planned", "plan", "plans"], "correct": "planned" },
+          { "position": 2, "options": ["did", "didn't do", "don't do"], "correct": "didn't do" },
+          { "position": 3, "options": ["went", "go", "goed"], "correct": "went" },
+          { "position": 4, "options": ["buyed", "bought", "buy"], "correct": "bought" },
+          { "position": 5, "options": ["eated", "ate", "eat"], "correct": "ate" },
+          { "position": 6, "options": ["came", "come", "comed"], "correct": "came" },
+          { "position": 7, "options": ["didn't finish", "didn't finished", "don't finish"], "correct": "didn't finish" },
+          { "position": 8, "options": ["have", "had", "haved"], "correct": "had" }
+        ],
+        "explanation": "planned✓, didn't do✓, went✓, bought✓, ate✓, came✓, didn't finish✓, had✓"
+      }
+    },
+    { "task_id": "t0404_20", "order": 20, "type": "lesson_summary", "category": "review",
+      "title": "Lesson complete!",
+      "content": {
+        "what_you_learned": [
+          "Didn't + BASE verb = past negative for ALL verbs (regular and irregular)",
+          "Never: didn't + -ed form or irregular past form",
+          "Contrast: I did ___ but I didn't ___",
+          "Reason: I didn't ___ because ___",
+          "Short answer: Yes, I did. / No, I didn't.",
+          "All subjects use same form: I/she/they didn't ___"
+        ],
+        "next_lesson": "a1_unit4_lesson05",
+        "next_lesson_title": "Past questions — Did you...?"
+      }
+    }
+  ]
+}
+]
